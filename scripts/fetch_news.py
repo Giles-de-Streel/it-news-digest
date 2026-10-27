@@ -24,6 +24,10 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
+# python -I (used in the workflow) leaves the script's folder off sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import page_sources  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -115,7 +119,7 @@ def _text(el, *tags):
     return ""
 
 
-def parse_feed(data, source):
+def parse_feed(data):
     root = ET.fromstring(data)
     items = []
     for it in root.iter("item"):
@@ -144,6 +148,11 @@ def parse_feed(data, source):
             "summary": _text(it, f"{ATOM}summary", f"{ATOM}content"),
             "published": _text(it, f"{ATOM}published", f"{ATOM}updated"),
         })
+    return items
+
+
+def build_items(items, source):
+    """Turn raw {title, url, summary, published} entries into stored story items."""
     out = []
     for raw in items:
         title = clean_text(raw["title"])
@@ -164,11 +173,23 @@ def parse_feed(data, source):
 
 
 def fetch_source(source):
+    """Fetch one source: an RSS/Atom feed (default) or a listing page read by a parser in page_sources."""
     try:
+        if source.get("type") == "page":
+            parser = page_sources.PARSERS[source["parser"]]
+            if not page_sources.robots_allows(source["url"], USER_AGENT):
+                return source, [], "Blocked by the site's robots.txt, not fetched"
+            req = Request(source["url"], headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
+            with urlopen(req, timeout=30) as resp:
+                page = resp.read().decode(resp.headers.get_content_charset() or "utf-8", "replace")
+                raw = parser(page, resp.geturl())
+            if not raw:
+                return source, [], "Page fetched but no items found; the site's layout may have changed"
+            return source, build_items(raw, source), None
         req = Request(source["url"], headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"})
         with urlopen(req, timeout=30) as resp:
-            return source, parse_feed(resp.read(), source), None
-    except Exception as exc:  # one bad feed must not sink the run
+            return source, build_items(parse_feed(resp.read()), source), None
+    except Exception as exc:  # one bad source must not sink the run
         return source, [], f"{type(exc).__name__}: {str(exc)[:200]}"
 
 
@@ -215,6 +236,10 @@ def cluster(items):
     groups = []
     for item in items:
         for group in groups:
+            # A source reports a story once; two items from one source are different stories
+            # (e.g. two CISA KEV entries whose titles share a template)
+            if any(other["source"] == item["source"] for other in group):
+                continue
             if any(same_story(item, other, idf) for other in group):
                 group.append(item)
                 break

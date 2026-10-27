@@ -1,24 +1,17 @@
 # IT News Digest
 
-A daily list of IT and security news pulled from 19 feeds, with duplicate stories merged across sources. You review each story, approve or reject it, and the approved ones make up the day's digest, ready to copy as Markdown or plain text.
+A daily list of IT and security news from 22 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
 
 ## How it works
 
-1. `scripts/fetch_news.py` reads every feed in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library.
+1. `scripts/fetch_news.py` reads every source in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library.
 2. The **Fetch news** GitHub Actions workflow runs that script and commits the result. It's manual for now (Actions tab, Run workflow). The daily schedule is in the workflow file, commented out.
-3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the candidates. Approve or reject a story with the buttons or the keys `a` / `r` (`j` / `k` to move, `u` to undo, `o` to open). Decisions stay in your browser until you press **Save to GitHub**, which commits `data/vetting.json`.
-4. The **Digest** tab lists that day's approved stories by topic. **Sources** shows what each feed returned and any fetch errors.
+3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
+   - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
+   - **Other stories:** single-source stories, newest first.
+   - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
 
-Summaries come from each source's own feed text, shortened. No AI service is involved.
-
-## Saving decisions
-
-Saving needs a fine-grained personal access token:
-
-- Repository access: **only this repository**
-- Permissions: **Contents: Read and write** (Metadata: Read is added automatically)
-
-Paste it under ⚙ Settings. It's kept in that browser's local storage and sent only to `api.github.com`. Anyone can read the page, but without a token they can't change anything in the repo.
+Summaries come from each source's own text, shortened. No AI service is involved.
 
 ## Run locally
 
@@ -28,8 +21,20 @@ python -I scripts/fetch_news.py --hours 48 # wider window
 python -m http.server 8000                 # then open http://localhost:8000
 ```
 
-Running the fetch again on the same day adds new stories and keeps existing ones, so decisions already made still match.
+Running the fetch again on the same day adds new stories and keeps existing ones.
 
 ## Sources
 
-Edit `sources.json` to add or remove feeds (`name`, `url`, `category`). The Sources tab shows any feed that fails. Checked and left out in Oct 2026: CISA advisories (403 to scripted clients), MSRC blog (malformed XML), Windows release health RSS (404), SANS NewsBites (no feed, web page only). SANS is covered by the Internet Storm Center diaries. The fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.
+`sources.json` lists each source (`name`, `url`, `category`). Most are RSS or Atom feeds; the fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.
+
+Sources without a usable feed have `"type": "page"` and a `parser` from `scripts/page_sources.py`:
+
+| Source | What's read | Notes |
+|---|---|---|
+| CISA KEV | CISA's Known Exploited Vulnerabilities JSON feed | One story per newly added CVE, linked to NVD. CISA's advisory pages and RSS return 403 to scripts, so they aren't used. |
+| MSRC Blog | microsoft.com/en-us/msrc/blog | The full post list loads with JavaScript; the page's HTML only carries the newest featured post. |
+| SANS NewsBites | sans.org/newsletters/newsbites | One story per issue (semiweekly), titled with the issue's headlines. |
+
+Page sources check the site's robots.txt (fetched with the fetcher's own User-Agent) and send that honest User-Agent; nothing imitates a browser. Page parsers depend on each site's current layout. If a site changes, its row on the Sources tab shows "no items found", which means the parser needs updating.
+
+Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused). SANS is also covered by the Internet Storm Center diaries feed.

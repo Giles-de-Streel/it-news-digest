@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-10-27T11:48:34+00:00",
+ "generated": "2026-10-27T11:56:14+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -116,9 +116,47 @@
    "fetched": 10,
    "recent": 4,
    "error": null
+  },
+  {
+   "source": "CISA KEV",
+   "fetched": 1758,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "MSRC Blog",
+   "fetched": 1,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "SANS NewsBites",
+   "fetched": 12,
+   "recent": 0,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "e602499dbe92",
+   "title": "Cyberattack on University of Copenhagen exposes data of 525,000 people",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/university-of-copenhagen-cyberattack-data-breach/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T11:39:22+00:00",
+   "summary": "The University of Copenhagen (UCPH) has ruled out a second cyberattack, saying the activity that led it to shut down several administrative systems on Monday is tied to the breach it disclosed last week, which exposed personal data belonging to some 525,000 people.",
+   "also_covered_by": [
+    {
+     "id": "3888d3892c7a",
+     "source": "BleepingComputer",
+     "title": "University of Copenhagen data breach exposes data of 525,000 people",
+     "url": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/"
+    }
+   ],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
   {
    "id": "44ee0c832ce5",
    "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
@@ -281,7 +319,7 @@
    "source": "The Register",
    "source_category": "IT industry",
    "published": "2026-10-27T10:15:00+00:00",
-   "summary": "Daemonarchy in unaffiliated with the Linux original, built with AI help, and could complicate FreeBSD's debate over AI contributions",
+   "summary": "Daemonarchy is unaffiliated with the Linux original, built with AI help, and could complicate FreeBSD's debate over AI contributions",
    "also_covered_by": [],
    "topics": [
     "Linux & open source",
@@ -442,14 +480,7 @@
    "source_category": "Security",
    "published": "2026-10-27T08:20:54+00:00",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
-   "also_covered_by": [
-    {
-     "id": "65542b011d66",
-     "source": "Slashdot",
-     "title": "PHP2Shell Security Flaws Now Successfully Exploited",
-     "url": "https://yro.slashdot.org/story/26/10/26/2150206/php2shell-security-flaws-now-successfully-exploited?utm_source=rss1.0mainlinkanon&utm_medium=feed"
-    }
-   ],
+   "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches",
     "Policy & regulation"
@@ -643,6 +674,19 @@
    ]
   },
   {
+   "id": "34ec0f91485a",
+   "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
+   "url": "https://isc.sans.edu/diary/rss/33462",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-10-27T02:55:13+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "39fb6abcb30e",
    "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
    "url": "https://isc.sans.edu/diary/rss/33458",
@@ -750,6 +794,26 @@
    ]
   },
   {
+   "id": "65542b011d66",
+   "title": "PHP2Shell Security Flaws Now Successfully Exploited",
+   "url": "https://yro.slashdot.org/story/26/10/26/2150206/php2shell-security-flaws-now-successfully-exploited?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-26T23:00:00+00:00",
+   "summary": "The critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) have now been successfully exploited in the wild, just days after patches were released and initial exploitation attempts failed.",
+   "also_covered_by": [
+    {
+     "id": "0ed9de79250d",
+     "source": "BleepingComputer",
+     "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+     "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/"
+    }
+   ],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "a3e6628ceeb1",
    "title": "Worm armed 42 GitHub repos by hiding a payload too big to fail",
    "url": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
@@ -760,26 +824,6 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
-   ]
-  },
-  {
-   "id": "3888d3892c7a",
-   "title": "University of Copenhagen data breach exposes data of 525,000 people",
-   "url": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
-   "source": "BleepingComputer",
-   "source_category": "Security",
-   "published": "2026-10-26T22:20:36+00:00",
-   "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
-   "also_covered_by": [
-    {
-     "id": "e602499dbe92",
-     "source": "Help Net Security",
-     "title": "Cyberattack on University of Copenhagen exposes data of 525,000 people",
-     "url": "https://www.helpnetsecurity.com/2026/10/27/university-of-copenhagen-cyberattack-data-breach/"
-    }
-   ],
-   "topics": [
-    "Ransomware & breaches"
    ]
   },
   {
@@ -919,32 +963,6 @@
    "published": "2026-10-26T20:30:53+00:00",
    "summary": "A 'strong illustration of the risks associated with failing to rotate a potentially exposed key'",
    "also_covered_by": [],
-   "topics": [
-    "AI"
-   ]
-  },
-  {
-   "id": "74e602ae0cf1",
-   "title": "Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI",
-   "url": "https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/",
-   "source": "SecurityWeek",
-   "source_category": "Security",
-   "published": "2026-10-26T20:20:56+00:00",
-   "summary": "A string of hacking incidents by rogue AI agents also has raised fears the technology will slip free of human control to carry out harmful, life-threatening tasks.",
-   "also_covered_by": [
-    {
-     "id": "95ebe0f0acb0",
-     "source": "Slashdot",
-     "title": "Anthropic Files For IPO",
-     "url": "https://slashdot.org/story/26/10/26/156218/anthropic-files-for-ipo?utm_source=rss1.0mainlinkanon&utm_medium=feed"
-    },
-    {
-     "id": "0484546ab1e6",
-     "source": "The Register",
-     "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
-     "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456"
-    }
-   ],
    "topics": [
     "AI"
    ]
@@ -1145,14 +1163,7 @@
    "source_category": "Security",
    "published": "2026-10-26T16:27:57+00:00",
    "summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]",
-   "also_covered_by": [
-    {
-     "id": "58e679e292e6",
-     "source": "The Register",
-     "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
-     "url": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515"
-    }
-   ],
+   "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
    ]
@@ -1199,19 +1210,6 @@
    ]
   },
   {
-   "id": "0484546ab1e6",
-   "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
-   "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456",
-   "source": "The Register",
-   "source_category": "IT industry",
-   "published": "2026-10-26T15:47:05+00:00",
-   "summary": "Claude maker reveals financials and warns investors its AI models could blackmail humans, resist shutdown, or go rogue",
-   "also_covered_by": [],
-   "topics": [
-    "AI"
-   ]
-  },
-  {
    "id": "a08645118c94",
    "title": "Microsoft Teams to get AI protection against phishing and fraud",
    "url": "https://www.computerworld.com/article/4240393/microsoft-teams-gets-ai-protection-against-phishing-and-fraud.html",
@@ -1225,6 +1223,53 @@
     "Microsoft & Windows",
     "AI",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "177485d16a0a",
+   "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-26T15:38:24+00:00",
+   "summary": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]",
+   "also_covered_by": [
+    {
+     "id": "58e679e292e6",
+     "source": "The Register",
+     "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
+     "url": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515"
+    }
+   ],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "95ebe0f0acb0",
+   "title": "Anthropic Files For IPO",
+   "url": "https://slashdot.org/story/26/10/26/156218/anthropic-files-for-ipo?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-26T15:07:00+00:00",
+   "summary": "Anthropic has filed to go public on the Nasdaq under the ticker ANT, setting the stage for a potentially record-setting IPO that could value the Claude developer at more than $2 trillion.",
+   "also_covered_by": [
+    {
+     "id": "74e602ae0cf1",
+     "source": "SecurityWeek",
+     "title": "Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI",
+     "url": "https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/"
+    },
+    {
+     "id": "0484546ab1e6",
+     "source": "The Register",
+     "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
+     "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456"
+    }
+   ],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1410,19 +1455,6 @@
    ]
   },
   {
-   "id": "c967f2433590",
-   "title": "Kali Linux 2026.3 ships kernel 7.1.5, brings wardriving to the TicWatch Pro 3",
-   "url": "https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/",
-   "source": "Help Net Security",
-   "source_category": "Security",
-   "published": "2026-10-26T13:24:24+00:00",
-   "summary": "The Kali Linux team released version 2026.3 after overhauling the public build scripts it uses to produce every official image. The refreshed scripts share the same features, command-line arguments and, where possible, the same layout, so a pipeline written against an older script may need edits.",
-   "also_covered_by": [],
-   "topics": [
-    "Linux & open source"
-   ]
-  },
-  {
    "id": "1a44d05f6353",
    "title": "We shouldn't be surprised about the PHPocalypse, as the internet is built on sticks and glue",
    "url": "https://www.theregister.com/security/2026/10/26/we-shouldnt-be-surprised-about-the-phpocalypse-as-the-internet-is-built-on-sticks-and-glue/5305186",
@@ -1472,6 +1504,36 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5943b3ba0784",
+   "title": "CISA KEV adds CVE-2026-109618: PHP Memory Corruption Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-10-26T12:00:00+00:00",
+   "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. Federal agencies must fix by 2026-10-29.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "989022c91bd1",
+   "title": "CISA KEV adds CVE-2026-109619: PHP Stale Internal Request-State Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-10-26T12:00:00+00:00",
+   "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. Federal agencies must fix by 2026-10-29.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access",
+    "Policy & regulation"
    ]
   },
   {
@@ -1777,6 +1839,19 @@
    ]
   },
   {
+   "id": "a9d5557b92f4",
+   "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
+   "url": "https://isc.sans.edu/diary/rss/33456",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-10-26T03:30:12+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "06309c4ea358",
    "title": "After threatening AI export bans, China allows DeepSeek to keep selling",
    "url": "https://www.theregister.com/ai-and-ml/2026/10/26/after-threatening-ai-export-bans-china-allows-deepseek-to-keep-selling/5305267",
@@ -1828,6 +1903,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "9b9b82e5c90c",
+   "title": "Using risk cohorts to prioritize security updates",
+   "url": "https://www.microsoft.com/en-us/msrc/blog/2026/10/using-risk-cohorts-to-prioritize-security-updates",
+   "source": "MSRC Blog",
+   "source_category": "Vendor",
+   "published": null,
+   "summary": "Learn how risk cohorts can help organizations make more informed decisions about which security updates to prioritize.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   }
  ]
