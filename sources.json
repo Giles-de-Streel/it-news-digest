@@ -20,5 +20,8 @@
   {"name": "Red Hat Blog", "url": "https://www.redhat.com/en/rss/blog", "category": "Vendor"},
   {"name": "CISA KEV", "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "category": "Security", "type": "page", "parser": "cisa_kev"},
   {"name": "MSRC Blog", "url": "https://www.microsoft.com/en-us/msrc/blog", "category": "Vendor", "type": "page", "parser": "msrc_blog"},
-  {"name": "SANS NewsBites", "url": "https://www.sans.org/newsletters/newsbites/", "category": "Security", "type": "page", "parser": "sans_newsbites"}
+  {"name": "SANS NewsBites", "url": "https://www.sans.org/newsletters/newsbites/", "category": "Security", "type": "page", "parser": "sans_newsbites"},
+  {"name": "MITRE ATT&CK Blog", "url": "https://medium.com/feed/mitre-attack", "category": "Security"},
+  {"name": "CVE Program Blog", "url": "https://medium.com/feed/@cve_program", "category": "Security"},
+  {"name": "NVD new CVEs", "url": "https://services.nvd.nist.gov/rest/json/cves/2.0", "category": "Vulnerabilities", "type": "api", "fetcher": "nvd_cves", "min_cvss": 9.0}
 ]

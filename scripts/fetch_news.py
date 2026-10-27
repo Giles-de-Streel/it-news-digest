@@ -168,13 +168,18 @@ def build_items(items, source):
             "source_category": source.get("category", ""),
             "published": published.isoformat() if published else None,
             "summary": shorten(clean_text(raw["summary"])),
+            **raw.get("extra", {}),  # e.g. kind/cve/cvss for vulnerability records
         })
     return out
 
 
-def fetch_source(source):
-    """Fetch one source: an RSS/Atom feed (default) or a listing page read by a parser in page_sources."""
+def fetch_source(source, hours):
+    """Fetch one source: an RSS/Atom feed (default), a listing page read by a parser in
+    page_sources ("page"), or a data API queried for the fetch window ("api")."""
     try:
+        if source.get("type") == "api":
+            raw = page_sources.API_FETCHERS[source["fetcher"]](source, USER_AGENT, hours)
+            return source, build_items(raw, source), None
         if source.get("type") == "page":
             parser = page_sources.PARSERS[source["parser"]]
             if not page_sources.robots_allows(source["url"], USER_AGENT):
@@ -235,10 +240,14 @@ def cluster(items):
     idf = {w: math.log((len(items) + 1) / n) for w, n in doc_freq.items()}
     groups = []
     for item in items:
+        # Raw CVE records (NVD) are listed on their own, never merged into news stories
+        if item.get("kind") == "cve":
+            groups.append([item])
+            continue
         for group in groups:
             # A source reports a story once; two items from one source are different stories
             # (e.g. two CISA KEV entries whose titles share a template)
-            if any(other["source"] == item["source"] for other in group):
+            if group[0].get("kind") == "cve" or any(other["source"] == item["source"] for other in group):
                 continue
             if any(same_story(item, other, idf) for other in group):
                 group.append(item)
@@ -305,7 +314,7 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
 
     with ThreadPoolExecutor(max_workers=8) as pool:
-        results = list(pool.map(fetch_source, sources))
+        results = list(pool.map(lambda s: fetch_source(s, args.hours), sources))
 
     items, status = [], []
     seen_ids = set()

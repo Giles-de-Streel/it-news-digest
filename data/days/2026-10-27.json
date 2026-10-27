@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-10-27T11:56:14+00:00",
+ "generated": "2026-10-27T12:03:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -78,7 +78,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 4,
+   "recent": 1,
    "error": null
   },
   {
@@ -134,9 +134,53 @@
    "fetched": 12,
    "recent": 0,
    "error": null
+  },
+  {
+   "source": "MITRE ATT&CK Blog",
+   "fetched": 9,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "CVE Program Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "NVD new CVEs",
+   "fetched": 50,
+   "recent": 50,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "fe60a41db3e8",
+   "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+   "url": "https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-27T11:49:57+00:00",
+   "summary": "Apple patched 286 vulnerabilities in iOS and macOS 27.2 and brought the fix for an exploited CoreGraphics zero-day to older iPhones.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f9eb56af8308",
+   "title": "Attack on email hosting provider for German far right party AfD exposed 345k accounts",
+   "url": "https://www.theregister.com/cyber-crime/2026/10/27/attack-on-email-hosting-provider-for-german-far-right-party-afd-exposed-345k-accounts/5305660",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T11:49:30+00:00",
+   "summary": "Alternative für Deutschland swats away scandals as reporters swarm leaked email tranche",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
   {
    "id": "e602499dbe92",
    "title": "Cyberattack on University of Copenhagen exposes data of 525,000 people",
@@ -155,6 +199,29 @@
    ],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "422d5d14fff8",
+   "title": "CVE-2026-117532: REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117532",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T11:17:33.597000+00:00",
+   "summary": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens.",
+   "kind": "cve",
+   "cve": "CVE-2026-117532",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-117532",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
    ]
   },
   {
@@ -313,6 +380,450 @@
    ]
   },
   {
+   "id": "c29eb842c7a8",
+   "title": "CVE-2026-86577: Out-of-bounds Write Vulnerability in JP1 Products.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86577",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.993000+00:00",
+   "summary": "Out-of-bounds Write Vulnerability in JP1 Products. This issue affects JP1/Integrated Management 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 13-00 before 13-50-31; JP1/Automatic Job Management…",
+   "kind": "cve",
+   "cve": "CVE-2026-86577",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86577",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "681dccd5e2e9",
+   "title": "CVE-2026-86576: Heap-based Buffer Overflow Vulnerability in JP1 Products.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86576",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.880000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in JP1 Products. This issue affects JP1/Integrated Management 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 13-00 before 13-50-31; JP1/Automatic Job…",
+   "kind": "cve",
+   "cve": "CVE-2026-86576",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86576",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "91cb289a6f7b",
+   "title": "CVE-2026-86575: Stack-based Buffer Overflow Vulnerability in JP1 Products.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86575",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.760000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in JP1 Products. This issue affects JP1/Integrated Management 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 13-00 before 13-50-31; JP1/Automatic Job…",
+   "kind": "cve",
+   "cve": "CVE-2026-86575",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86575",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "a385bbb80ace",
+   "title": "CVE-2026-86574: Heap-based Buffer Overflow Vulnerability in JP1/Base.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86574",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.643000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in JP1/Base. This issue affects JP1/Base: from 11-00 before 12-50-54.",
+   "kind": "cve",
+   "cve": "CVE-2026-86574",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86574",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "a50999a36093",
+   "title": "CVE-2026-82122: Stack-based Buffer Overflow Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82122",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.380000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through 09-66-22; HiRDB…",
+   "kind": "cve",
+   "cve": "CVE-2026-82122",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82122",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "90a5341b90ed",
+   "title": "CVE-2026-82120: Heap-based Buffer Overflow Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82120",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.147000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through 09-66-22; HiRDB…",
+   "kind": "cve",
+   "cve": "CVE-2026-82120",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82120",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b58d40af7c31",
+   "title": "CVE-2026-82119: OS Command Injection Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82119",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:56.033000+00:00",
+   "summary": "OS Command Injection Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through 09-66-22; HiRDB Server…",
+   "kind": "cve",
+   "cve": "CVE-2026-82119",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82119",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7b256fa6b8ac",
+   "title": "CVE-2026-82118: Stack-based Buffer Overflow Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82118",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.917000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through 09-66-22; HiRDB…",
+   "kind": "cve",
+   "cve": "CVE-2026-82118",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82118",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "51333efd8063",
+   "title": "CVE-2026-82117: Authentication Bypass by Spoofing Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82117",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.797000+00:00",
+   "summary": "Authentication Bypass by Spoofing Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through 09-66-22;…",
+   "kind": "cve",
+   "cve": "CVE-2026-82117",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82117",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4c745f19ada3",
+   "title": "CVE-2026-82116: Missing Authentication for Critical Function Vulnerability in HiRDB.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82116",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.680000+00:00",
+   "summary": "Missing Authentication for Critical Function Vulnerability in HiRDB. This issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional Function Version 9: from 09-00 through 09-66/V; HiRDB Server Version 9(32): from 09-02 through…",
+   "kind": "cve",
+   "cve": "CVE-2026-82116",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82116",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "35d86b6b1dde",
+   "title": "CVE-2026-76939: Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76939",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.563000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 11-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 11-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76939",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76939",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9cfeca291a70",
+   "title": "CVE-2026-76938: Authentication Bypass Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76938",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.450000+00:00",
+   "summary": "Authentication Bypass Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 10-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76938",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76938",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4e1eab002f18",
+   "title": "CVE-2026-76937: Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76937",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.337000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 10-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76937",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76937",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6ee3dd9dc669",
+   "title": "CVE-2026-76936: Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76936",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.223000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 10-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76936",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76936",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b9032cbb30e5",
+   "title": "CVE-2026-76935: Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76935",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:55.110000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 10-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76935",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76935",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0ab4cab7bf5e",
+   "title": "CVE-2026-76934: Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76934",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:54.990000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 11-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 11-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76934",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76934",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5a957835e92c",
+   "title": "CVE-2026-76933: Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76933",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:54.870000+00:00",
+   "summary": "Heap-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 11-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 11-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76933",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76933",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0c1fd00f705b",
+   "title": "CVE-2026-76932: Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76932",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:54.730000+00:00",
+   "summary": "Stack-based Buffer Overflow Vulnerability in JP1/Automatic Job Management System 3. This issue affects JP1/Automatic Job Management System 3 - Manager: from 11-00 before 13-50-31; JP1/Automatic Job Management System 3 - Agent: from 11-00 before 13-50-31.",
+   "kind": "cve",
+   "cve": "CVE-2026-76932",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76932",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5702cd1ab243",
+   "title": "CVE-2026-102789: Joomla Extension - balbooa.com - Missing Authorization Check on Editor Controller Task in Gridbox < 2.20.4.2…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102789",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:53.907000+00:00",
+   "summary": "Joomla Extension - balbooa.com - Missing Authorization Check on Editor Controller Task in Gridbox < 2.20.4.2 - EditorController::getBlogPosts() reads the order parameter and invokes getBlogPosts() . Unlike other tasks in this controller, it omits the GridboxHelper::checkUserEditLevel() check.",
+   "kind": "cve",
+   "cve": "CVE-2026-102789",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102789",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4f10ac4736d6",
+   "title": "CVE-2026-102788: Joomla Extension - balbooa.com - Unauthenticated SQL injection in Gridbox < 2.20.4.2 - On store product list…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102788",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T10:16:53.780000+00:00",
+   "summary": "Joomla Extension - balbooa.com - Unauthenticated SQL injection in Gridbox < 2.20.4.2 - On store product list pages, the value of the sort-by URL parameter is retrieved using a string filter and passed directly to GridboxHelper::getBlogPosts().",
+   "kind": "cve",
+   "cve": "CVE-2026-102788",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102788",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "5a9bffd402d8",
    "title": "FreeBSD founder ports Omarchy to FreeBSD in ten days, ten releases",
    "url": "https://www.theregister.com/os-platforms/2026/10/27/freebsd-founder-ports-omarchy-to-freebsd-in-ten-days-ten-releases/5305446",
@@ -390,6 +901,29 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "f1a2698cff63",
+   "title": "CVE-2026-92885: The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92885",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T09:16:34.630000+00:00",
+   "summary": "The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.0.6.2 via the qode_membership_check_facebook_user AJAX action.",
+   "kind": "cve",
+   "cve": "CVE-2026-92885",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-92885",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
    ]
   },
   {
@@ -484,6 +1018,28 @@
    "topics": [
     "Vulnerabilities & patches",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "1afc61061b0c",
+   "title": "CVE-2026-18450: The BMC does not correctly enforce integrity and encryption requirements for IPMI commands.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18450",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T08:16:53.710000+00:00",
+   "summary": "The BMC does not correctly enforce integrity and encryption requirements for IPMI commands. An attacker may be able to craft packets that execute arbitrary commands on an active session.",
+   "kind": "cve",
+   "cve": "CVE-2026-18450",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-18450",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
@@ -827,6 +1383,51 @@
    ]
   },
   {
+   "id": "cac136e7464a",
+   "title": "CVE-2026-116747: Kener 3.0.0 before 4.1.10 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116747",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T22:16:59.463000+00:00",
+   "summary": "Kener 3.0.0 before 4.1.10 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge session tokens by using the hardcoded DUMMY_SECRET fallback key.",
+   "kind": "cve",
+   "cve": "CVE-2026-116747",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116747",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5fe1beb9a046",
+   "title": "CVE-2026-116508: A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116508",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T22:16:54.373000+00:00",
+   "summary": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Performing a manipulation of the argument CONTENT_LENGTH results in stack-based buffer overflow.",
+   "kind": "cve",
+   "cve": "CVE-2026-116508",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116508",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "8d87de6069c7",
    "title": "Skydance Offers Buyouts, Gives 5-Day RTO Order",
    "url": "https://slashdot.org/story/26/10/26/2128235/skydance-offers-buyouts-gives-5-day-rto-order?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -877,6 +1478,74 @@
    "topics": [
     "Networking",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3fb35ab93021",
+   "title": "CVE-2026-116506: A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116506",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T21:18:13.047000+00:00",
+   "summary": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected is the function apmib_set of the file firewall.so. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
+   "kind": "cve",
+   "cve": "CVE-2026-116506",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116506",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "db0601dd4d80",
+   "title": "CVE-2026-116505: A vulnerability was found in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116505",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T21:18:12.730000+00:00",
+   "summary": "A vulnerability was found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. This impacts the function getDeviceInfo of the file /var/lib/misc/udhcpd.leases of the component device-information Handler. The manipulation of the argument MAC address results in command injection. The attack can be launched remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-116505",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116505",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "10e56ee8f21c",
+   "title": "CVE-2026-116504: A vulnerability has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116504",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T21:18:12.420000+00:00",
+   "summary": "A vulnerability has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. This affects the function setCloudUpgradeFW of the file lib/cste_modules/upgrade.so of the component Cloud Upgrade. The manipulation of the argument FileName leads to command injection. The attack can be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-116504",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116504",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -948,6 +1617,12 @@
      "source": "The Register",
      "title": "OpenAI rolls out budget-priced mid-tier GPT-6.1 Terra",
      "url": "https://www.theregister.com/ai-and-ml/2026/10/26/openai-rolls-out-budget-priced-mid-tier-gpt-61-terra/5305574"
+    },
+    {
+     "id": "e66b2dce6469",
+     "source": "InfoWorld",
+     "title": "OpenAI bets on AI economics with lower-cost GPT-6.1 Terra",
+     "url": "https://www.infoworld.com/article/4241006/openai-bets-on-ai-economics-with-lower-cost-gpt-6-1-terra.html"
     }
    ],
    "topics": [
@@ -1023,6 +1698,28 @@
    ]
   },
   {
+   "id": "b8d32b6f9f04",
+   "title": "CVE-2026-110720: Consul-k8s versions 0.42.0 and later are vulnerable to a cross-namespace authorization bypass in component…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110720",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T19:16:29.940000+00:00",
+   "summary": "Consul-k8s versions 0.42.0 and later are vulnerable to a cross-namespace authorization bypass in component ACL binding rules that may allow an attacker to obtain elevated Consul privileges. This vulnerability (CVE-2026-110720) is fixed in consul-k8s 2.1.0 and 1.8.18.",
+   "kind": "cve",
+   "cve": "CVE-2026-110720",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-110720",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "e24081429094",
    "title": "Walter Koenig, Chekov On Original 'Star Trek,' Dies At 90",
    "url": "https://entertainment.slashdot.org/story/26/10/26/1828230/walter-koenig-chekov-on-original-star-trek-dies-at-90?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -1033,6 +1730,54 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5c135f9cffea",
+   "title": "CVE-2026-10757: There is a SQL injection vulnerability in Esri ArcGIS Server versions 12.1 and earlier on Windows and Linux…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10757",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T18:17:34.580000+00:00",
+   "summary": "There is a SQL injection vulnerability in Esri ArcGIS Server versions 12.1 and earlier on Windows and Linux that may allow a remote attacker with privileges to access the service (which could, depending on the service being configured in a non-default access configuration “public”, include an anonymous attacker) to…",
+   "kind": "cve",
+   "cve": "CVE-2026-10757",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-10757",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "2dd8c9f922a9",
+   "title": "CVE-2026-102649: Burrito is a Terraform Automation Collaboration Software (TACoS) Kubernetes operator.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102649",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T18:17:21.803000+00:00",
+   "summary": "Burrito is a Terraform Automation Collaboration Software (TACoS) Kubernetes operator. Prior to 0.13.0, `POST /api/webhook` accepts unsigned GitHub and GitLab events when a `TerraformRepository`'s credentials omit `webhookSecret` or set it to an empty value, including credentials configured for git authentication and…",
+   "kind": "cve",
+   "cve": "CVE-2026-102649",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102649",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Identity & access"
    ]
   },
   {
@@ -1117,6 +1862,29 @@
    ]
   },
   {
+   "id": "8b13aee9339b",
+   "title": "CVE-2026-115905: zip is a zip library for Rust that supports reading and writing simple ZIP files.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115905",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T17:17:17.823000+00:00",
+   "summary": "zip is a zip library for Rust that supports reading and writing simple ZIP files. Through 9.0.4, ZipArchive treats Central Directory File Header filenames as authoritative while ZipStreamReader extracts using Local File Header filenames without reconciling the duplicate metadata in src/read/stream.rs.",
+   "kind": "cve",
+   "cve": "CVE-2026-115905",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115905",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "d80b90a04fbd",
    "title": "Reddit's r/opensource bans AI slop, and quite a few humans for good measure",
    "url": "https://www.theregister.com/software/2026/10/26/reddits-r/opensource-bans-ai-slop-and-quite-a-few-humans-for-good-measure/5305392",
@@ -1166,6 +1934,30 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "521e4956d45e",
+   "title": "CVE-2026-112346: OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112346",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T16:17:14.110000+00:00",
+   "summary": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default.",
+   "kind": "cve",
+   "cve": "CVE-2026-112346",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-112346",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
    ]
   },
   {
@@ -1244,6 +2036,77 @@
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "05be40a214a3",
+   "title": "CVE-2026-93328: Path Traversal and Missing Authorization in cloud-storage source in Google Cloud MCP Toolbox for Databases…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93328",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T15:16:45.813000+00:00",
+   "summary": "Path Traversal and Missing Authorization in cloud-storage source in Google Cloud MCP Toolbox for Databases (googleapis/mcp-toolbox) versions 1.2.0 through 1.4.0 allows an unauthenticated remote attacker to exfiltrate host files to external Google Cloud Storage buckets and overwrite arbitrary local files via crafted…",
+   "kind": "cve",
+   "cve": "CVE-2026-93328",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-93328",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d0e5d3f76b39",
+   "title": "CVE-2026-77055: boneIO black_debian_images gives the boneio service account excessive privileges, including full passwordless…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77055",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T15:16:43.123000+00:00",
+   "summary": "boneIO black_debian_images gives the boneio service account excessive privileges, including full passwordless sudo access and membership in the docker group. A local attacker who compromises the boneio user can use these privileges to escalate to root.",
+   "kind": "cve",
+   "cve": "CVE-2026-77055",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-77055",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1ebba6feb814",
+   "title": "CVE-2026-65184: The root-privileged `wsserver` terminal-bridge daemon builds a shell command from client-supplied WebSocket…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65184",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T15:16:41.627000+00:00",
+   "summary": "The root-privileged `wsserver` terminal-bridge daemon builds a shell command from client-supplied WebSocket fields and passes it to `system()` and `popen()` without quoting, escaping, or character-set validation. The daemon's public-key session path performs no appliance-session check.",
+   "kind": "cve",
+   "cve": "CVE-2026-65184",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-65184",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
@@ -1370,6 +2233,213 @@
    "topics": [
     "Vulnerabilities & patches",
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "3e70071ef94b",
+   "title": "CVE-2026-59107: A security vulnerability has been identified in the vSolution Matrix file sharing feature.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59107",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:38.973000+00:00",
+   "summary": "A security vulnerability has been identified in the vSolution Matrix file sharing feature. A shared cryptographic trust configuration could allow an attacker who obtains the matching private key to authenticate to an affected device via SSH as root.",
+   "kind": "cve",
+   "cve": "CVE-2026-59107",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-59107",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "6921611e6453",
+   "title": "CVE-2026-59106: A security vulnerability has been identified in the WolfProt interface implementation.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59106",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:38.813000+00:00",
+   "summary": "A security vulnerability has been identified in the WolfProt interface implementation. Insufficient neutralization of user-controlled input could allow an unauthenticated attacker with network access to a vulnerable service to execute operating-system commands with the privileges of the affected application service.",
+   "kind": "cve",
+   "cve": "CVE-2026-59106",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-59106",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5ad62c2b564e",
+   "title": "CVE-2026-116485: danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116485",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:37.040000+00:00",
+   "summary": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset.",
+   "kind": "cve",
+   "cve": "CVE-2026-116485",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116485",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "80ef7069dbb6",
+   "title": "CVE-2026-116214: MacCMS v10 before 2026.1000.4054 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116214",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:34.173000+00:00",
+   "summary": "MacCMS v10 before 2026.1000.4054 contains an authentication bypass vulnerability that allows unauthenticated attackers to reset any member's password because check_msg() never compares msg_to.",
+   "kind": "cve",
+   "cve": "CVE-2026-116214",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116214",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a7789deefea8",
+   "title": "CVE-2026-115693: Improper Certificate Validation vulnerability in hackney_ssl in benoitc hackney allows an on-path attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115693",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:31.853000+00:00",
+   "summary": "Improper Certificate Validation vulnerability in hackney_ssl in benoitc hackney allows an on-path attacker to impersonate a server pinned to a private certificate authority via a certificate chain that ends in a publicly trusted root.",
+   "kind": "cve",
+   "cve": "CVE-2026-115693",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115693",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "51e6a83b3194",
+   "title": "CVE-2026-115188: An unrestricted file upload vulnerability exists in the campaign import feature of Mautic 7.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115188",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:30.047000+00:00",
+   "summary": "An unrestricted file upload vulnerability exists in the campaign import feature of Mautic 7. When processing an uploaded campaign archive, the application copies the bundled asset files into a publicly accessible media directory without restricting their file names or types.",
+   "kind": "cve",
+   "cve": "CVE-2026-115188",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115188",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "80ef7ea273de",
+   "title": "CVE-2026-110475: This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110475",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:26.573000+00:00",
+   "summary": "This vulnerability exists in the CreditNirvana Collections Platform due to improper authentication and authorization controls at the platform login service. An unauthenticated remote attacker could exploit this vulnerability by manipulating authentication requests and accessing APIs without a valid authenticated…",
+   "kind": "cve",
+   "cve": "CVE-2026-110475",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-110475",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ae2e0dd63a75",
+   "title": "CVE-2026-107656: An authentication bypass using an alternate path or channel vulnerability in Fortinet FortiSandbox 5.0.0…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107656",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:24.147000+00:00",
+   "summary": "An authentication bypass using an alternate path or channel vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.6, FortiSandbox 4.4.0 through 4.4.9, FortiSandbox 4.2 all versions, FortiSandbox PaaS 5.0.0 through 5.0.6, FortiSandbox PaaS 4.4 all versions, FortiSandbox PaaS 4.2 all versions may allow attacker to…",
+   "kind": "cve",
+   "cve": "CVE-2026-107656",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107656",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "36e453caa986",
+   "title": "CVE-2026-107092: NexoPOS v6.2.4 is vulnerable to Directory Traversal via the api/update endpoint.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107092",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T14:16:23.737000+00:00",
+   "summary": "NexoPOS v6.2.4 is vulnerable to Directory Traversal via the api/update endpoint.",
+   "kind": "cve",
+   "cve": "CVE-2026-107092",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107092",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
@@ -1670,6 +2740,73 @@
    ]
   },
   {
+   "id": "ca4169233793",
+   "title": "CVE-2026-116235: A flaw has been found in Oray Pugongying X5 Pro 7.6.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116235",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T09:16:35.163000+00:00",
+   "summary": "A flaw has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this vulnerability is an unknown functionality of the component L2TP Authentication. This manipulation of the argument Username causes crlf injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-116235",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116235",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "de9255b934ad",
+   "title": "CVE-2026-116234: A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116234",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T09:16:34.953000+00:00",
+   "summary": "A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1. Affected is an unknown function of the file /etc/ipsec.conf of the component IPsec Policy Handler. The manipulation of the argument secproto results in crlf injection. The attack can be launched remotely. The exploit is now public and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-116234",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116234",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "09eb9acdd9c0",
+   "title": "CVE-2026-116233: A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116233",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T09:16:34.787000+00:00",
+   "summary": "A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1. This impacts an unknown function of the component Dnsmasq. The manipulation of the argument rent_time leads to crlf injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-116233",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116233",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "18a91d839a73",
    "title": "Technology has changed. So should the conversation.",
    "url": "https://www.computerworld.com/article/4239947/technology-has-changed-so-should-the-conversation.html",
@@ -1735,6 +2872,50 @@
     "Ransomware & breaches",
     "Threats & malware",
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "4722ec0dc9a3",
+   "title": "CVE-2026-116232: A weakness has been identified in Oray Pugongying X5 Pro 7.6.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116232",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T08:17:17.837000+00:00",
+   "summary": "A weakness has been identified in Oray Pugongying X5 Pro 7.6.1. This affects the function snmp_set of the component SNMP Handler. Executing a manipulation of the argument info.community can lead to crlf injection. It is possible to launch the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-116232",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116232",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "358c6afd15e0",
+   "title": "CVE-2026-116231: A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116231",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-26T08:17:17.620000+00:00",
+   "summary": "A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in crlf injection. It is possible to initiate the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-116231",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116231",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {

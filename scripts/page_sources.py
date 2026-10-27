@@ -1,7 +1,8 @@
-"""Parsers for sources that have no usable RSS feed, read from their public listing pages.
+"""Sources that have no usable RSS feed: listing pages (PARSERS) and data APIs (API_FETCHERS).
 
-Each parser takes the page HTML and returns raw items shaped like feed items:
-  {"title", "url", "summary", "published"}  (published: ISO string or "")
+Each one returns raw items shaped like feed items:
+  {"title", "url", "summary", "published", "extra"?}  (published: ISO string or "")
+"extra" holds fields copied onto the stored item as-is, e.g. kind/cve/cvss for CVE records.
 
 Rules every parser follows:
 - robots.txt is checked first (see robots_allows); a disallowed page is reported as an error, not fetched.
@@ -12,7 +13,9 @@ Rules every parser follows:
 import html
 import json
 import re
-from urllib.parse import urljoin, urlsplit
+import time
+from datetime import datetime, timedelta, timezone
+from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from urllib.robotparser import RobotFileParser
@@ -112,6 +115,70 @@ def parse_cisa_kev(page, base_url):
             "published": f"{v['dateAdded']}T12:00:00+00:00" if v.get("dateAdded") else "",
         })
     return items
+
+
+NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+NVD_PAGE_SIZE = 2000
+NVD_MAX_PAGES = 5
+NVD_PAUSE_SECONDS = 7  # public rate limit without an API key is 5 requests per 30 seconds
+
+
+def _best_cvss(cve):
+    """Highest base score across CVSS v4.0/v3.1/v3.0 metrics (NVD's own or the CNA's)."""
+    best = None
+    for key, version in (("cvssMetricV40", "4.0"), ("cvssMetricV31", "3.1"), ("cvssMetricV30", "3.0")):
+        for metric in cve.get("metrics", {}).get(key, []):
+            data = metric.get("cvssData", {})
+            score = data.get("baseScore")
+            if score is not None and (best is None or score > best["score"]):
+                best = {"score": score, "severity": (data.get("baseSeverity") or "").title(), "version": version,
+                        "scored_by": "NVD" if metric.get("type") == "Primary" else "CNA"}
+    return best
+
+
+def _first_sentence(text, limit=110):
+    sentence = re.split(r"(?<=[.!?])\s", text.strip(), maxsplit=1)[0]
+    return sentence if len(sentence) <= limit else sentence[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def fetch_nvd_cves(source, user_agent, hours):
+    """CVEs published to NIST's NVD in the fetch window with a CVSS base score >= source["min_cvss"]."""
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(hours=hours)
+    stamp = lambda d: d.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    min_score = float(source.get("min_cvss", 9.0))
+    items, start_index = [], 0
+    for page in range(NVD_MAX_PAGES):
+        if page:
+            time.sleep(NVD_PAUSE_SECONDS)
+        query = urlencode({"pubStartDate": stamp(start), "pubEndDate": stamp(end),
+                           "resultsPerPage": NVD_PAGE_SIZE, "startIndex": start_index})
+        with urlopen(Request(f"{NVD_API}?{query}", headers={"User-Agent": user_agent}), timeout=90) as resp:
+            data = json.load(resp)
+        for vuln in data.get("vulnerabilities", []):
+            cve = vuln.get("cve", {})
+            cvss = _best_cvss(cve)
+            if not cvss or cvss["score"] < min_score or cve.get("vulnStatus") == "Rejected":
+                continue
+            cve_id = cve.get("id", "")
+            desc = next((d["value"] for d in cve.get("descriptions", []) if d.get("lang") == "en"), "")
+            items.append({
+                "title": f"{cve_id}: {_first_sentence(desc)}",
+                "url": f"https://nvd.nist.gov/vuln/detail/{cve_id}",
+                "summary": desc,
+                "published": cve.get("published", "") + ("" if cve.get("published", "").endswith("Z") else "Z"),
+                "extra": {"kind": "cve", "cve": cve_id, "cvss": cvss,
+                          "cve_org_url": f"https://www.cve.org/CVERecord?id={cve_id}"},
+            })
+        start_index += NVD_PAGE_SIZE
+        if start_index >= data.get("totalResults", 0):
+            break
+    return items
+
+
+API_FETCHERS = {
+    "nvd_cves": fetch_nvd_cves,
+}
 
 
 PARSERS = {

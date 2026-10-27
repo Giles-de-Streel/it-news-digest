@@ -1,6 +1,6 @@
 # IT News Digest
 
-A daily list of IT and security news from 22 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 25 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
 
 ## How it works
 
@@ -9,6 +9,7 @@ A daily list of IT and security news from 22 sources, with the same story from d
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
    - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
    - **Other stories:** single-source stories, newest first.
+   - **New critical CVEs:** CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. These are listed separately and never merged into news stories.
    - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
 
 Summaries come from each source's own text, shortened. No AI service is involved.
@@ -34,7 +35,10 @@ Sources without a usable feed have `"type": "page"` and a `parser` from `scripts
 | CISA KEV | CISA's Known Exploited Vulnerabilities JSON feed | One story per newly added CVE, linked to NVD. CISA's advisory pages and RSS return 403 to scripts, so they aren't used. |
 | MSRC Blog | microsoft.com/en-us/msrc/blog | The full post list loads with JavaScript; the page's HTML only carries the newest featured post. |
 | SANS NewsBites | sans.org/newsletters/newsbites | One story per issue (semiweekly), titled with the issue's headlines. |
+| NVD new CVEs | NVD CVE API 2.0 (`"type": "api"`) | CVEs published in the fetch window. Score = highest CVSS v4.0/v3.1/v3.0 base score, from NVD or the reporting CNA. About 900 CVEs a day are published, around 50 of them critical. No API key; public rate limit respected. |
 
 Page sources check the site's robots.txt (fetched with the fetcher's own User-Agent) and send that honest User-Agent; nothing imitates a browser. Page parsers depend on each site's current layout. If a site changes, its row on the Sources tab shows "no items found", which means the parser needs updating.
+
+MITRE sources are the ATT&CK blog and the CVE Program blog (Medium feeds). mitre.org's own news pages return 403 to scripts, so they aren't used.
 
 Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused). SANS is also covered by the Internet Storm Center diaries feed.

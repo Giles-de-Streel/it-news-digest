@@ -56,14 +56,26 @@
   // Most-reported first; ties go to the most recent
   const rank = (a, b) => coverage(b) - coverage(a) || (b.published || "").localeCompare(a.published || "");
 
-  function visibleItems() {
+  const isCve = (it) => it.kind === "cve";
+  const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it));
+  const cveItems = () => (state.dayData?.items || []).filter(isCve);
+
+  // Search and source filters apply to both lists; topic filters apply to news only
+  function matches(it, useTopic) {
     const q = state.query.toLowerCase();
-    return (state.dayData?.items || []).filter((it) => {
-      if (state.topic && !it.topics.includes(state.topic)) return false;
-      if (state.source && !sourcesOf(it).includes(state.source)) return false;
-      if (q && !`${it.title} ${it.summary}`.toLowerCase().includes(q)) return false;
-      return true;
-    }).sort(rank);
+    if (useTopic && state.topic && !it.topics.includes(state.topic)) return false;
+    if (state.source && !sourcesOf(it).includes(state.source)) return false;
+    if (q && !`${it.title} ${it.summary}`.toLowerCase().includes(q)) return false;
+    return true;
+  }
+
+  function visibleItems() {
+    return newsItems().filter((it) => matches(it, true)).sort(rank);
+  }
+
+  function visibleCves() {
+    return cveItems().filter((it) => matches(it, false))
+      .sort((a, b) => b.cvss.score - a.cvss.score || (b.published || "").localeCompare(a.published || ""));
   }
 
   // ---------- rendering ----------
@@ -78,19 +90,21 @@
   }
 
   function renderNews() {
-    const items = state.dayData?.items || [];
+    const items = newsItems();
     const topicCounts = {};
     for (const it of items) for (const t of it.topics) topicCounts[t] = (topicCounts[t] || 0) + 1;
     $("#topic-filter").replaceChildren(
       el("button", { class: `chip${state.topic ? "" : " on"}`, text: `All topics ${items.length}`, onclick: () => { state.topic = ""; render(); } }),
       ...Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
         el("button", { class: `chip${state.topic === t ? " on" : ""}`, text: `${t} ${n}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } })),
+      cveItems().length ? el("button", { class: "chip jump", text: `Critical CVEs ${cveItems().length} ↓`, onclick: () => $("#cves")?.scrollIntoView({ behavior: "smooth" }) }) : null,
     );
 
     const list = visibleItems();
+    const cves = visibleCves();
     const box = $("#news");
-    if (!list.length) {
-      box.replaceChildren(el("p", { class: "empty", text: items.length ? "Nothing matches these filters." : "No stories for this day yet." }));
+    if (!list.length && !cves.length) {
+      box.replaceChildren(el("p", { class: "empty", text: (state.dayData?.items || []).length ? "Nothing matches these filters." : "No stories for this day yet." }));
       return;
     }
     const top = list.filter((it) => coverage(it) > 1);
@@ -98,6 +112,35 @@
     box.replaceChildren(
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
       rest.length ? section(top.length ? "Other stories" : "Stories", `${rest.length} from a single source, newest first`, rest) : null,
+      cves.length ? cveSection(cves) : null,
+    );
+  }
+
+  function cveSection(cves) {
+    const nvd = (state.dayData?.sources || []).find((s) => s.source === "NVD new CVEs");
+    const hours = state.dayData?.window_hours || 36;
+    return el("section", { class: "news-section", id: "cves" },
+      el("div", { class: "section-head" },
+        el("h2", { text: "New critical CVEs" }),
+        el("span", { class: "muted", text: `${cves.length} published to NVD in the last ${hours} hours with a CVSS score of 9.0 or higher, highest first${nvd?.error ? " (NVD fetch failed, see Sources)" : ""}` }),
+      ),
+      el("ul", { class: "cve-list" }, ...cves.map(cveRow)),
+    );
+  }
+
+  function cveRow(it) {
+    const c = it.cvss || {};
+    return el("li", { class: "cve" },
+      el("span", { class: `score sev-${(c.severity || "").toLowerCase()}`, title: `CVSS ${c.version} base score, scored by ${c.scored_by}`, text: Number(c.score).toFixed(1) }),
+      el("div", { class: "cve-body" },
+        el("div", { class: "meta" },
+          link(it.url, it.cve),
+          link(it.cve_org_url, "cve.org"),
+          el("span", { text: `CVSS ${c.version} · ${c.severity} · scored by ${c.scored_by}` }),
+          el("span", { text: fmtTime(it.published) }),
+        ),
+        el("p", { class: "summary", text: it.summary }),
+      ),
     );
   }
 
