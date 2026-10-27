@@ -1,0 +1,331 @@
+"""Fetch IT news feeds, de-duplicate across sources, and write the day's candidate list.
+
+Output:
+  data/days/YYYY-MM-DD.json   candidate items for that day (merged if the script runs again)
+  data/index.json             list of available days, newest first
+
+Vetting decisions live in data/vetting.json and are written by the web page, never by this script.
+Standard library only, so it runs the same locally and in GitHub Actions.
+"""
+import argparse
+import hashlib
+import html
+import json
+import math
+import re
+import sys
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
+from email.utils import parsedate_to_datetime
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.request import Request, urlopen
+import xml.etree.ElementTree as ET
+
+ROOT = Path(__file__).resolve().parent.parent
+USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
+ATOM = "{http://www.w3.org/2005/Atom}"
+CONTENT = "{http://purl.org/rss/1.0/modules/content/}"
+SUMMARY_CHARS = 320
+
+# Keyword rules for topic tags. A story can carry several tags.
+TOPICS = {
+    "Vulnerabilities & patches": r"\bcve-\d|vulnerab|zero-day|0-day|patch(es|ed)?\b|exploit|security update|hotfix|advisory|kev\b",
+    "Ransomware & breaches": r"ransomware|breach|leak(ed)?\b|stolen|extortion|data theft|hacked|compromise",
+    "Threats & malware": r"malware|phishing|botnet|trojan|backdoor|apt\d*\b|threat actor|infostealer|campaign|spyware",
+    "Microsoft & Windows": r"microsoft|windows|azure|entra|intune|exchange|sharepoint|office 365|microsoft 365|defender|teams\b|sql server",
+    "Linux & open source": r"linux|red hat|rhel|ubuntu|debian|open source|kernel|ansible|openssl",
+    "Cloud & infrastructure": r"\baws\b|amazon web services|google cloud|\bgcp\b|cloud|kubernetes|vmware|broadcom|data center|datacenter|virtuali",
+    "AI": r"\bai\b|artificial intelligence|llm|chatgpt|openai|copilot|gemini|claude|machine learning|genai",
+    "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
+    "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
+    "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",
+}
+TOPIC_RES = {name: re.compile(rx, re.I) for name, rx in TOPICS.items()}
+STOPWORDS = set("a an the and or of to in on for with by from at as is are was be it its this that new how why what after over into via up out".split())
+
+
+class _TextExtractor(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts = []
+
+    def handle_data(self, data):
+        self.parts.append(data)
+
+
+def clean_text(raw):
+    if not raw:
+        return ""
+    parser = _TextExtractor()
+    try:
+        parser.feed(raw)
+        text = " ".join(parser.parts)
+    except Exception:
+        text = re.sub(r"<[^>]+>", " ", raw)
+    text = html.unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    # Common feed boilerplate
+    text = re.sub(r"(The post .* appeared first on .*|Continue reading.*|Read more.*)$", "", text).strip()
+    return text
+
+
+def shorten(text, limit=SUMMARY_CHARS):
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    end = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "))
+    if end > limit * 0.5:
+        return cut[: end + 1]
+    return cut.rsplit(" ", 1)[0] + "…"
+
+
+def normalize_url(url):
+    parts = urlsplit(url.strip())
+    query = [(k, v) for k, v in parse_qsl(parts.query) if not k.lower().startswith(("utm_", "mc_", "fbclid", "gclid"))]
+    path = parts.path.rstrip("/") or "/"
+    return urlunsplit((parts.scheme.lower() or "https", parts.netloc.lower(), path, urlencode(query), ""))
+
+
+def parse_date(value):
+    if not value:
+        return None
+    value = value.strip()
+    try:
+        dt = parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        try:
+            dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def _text(el, *tags):
+    for tag in tags:
+        found = el.find(tag)
+        if found is not None and (found.text or "").strip():
+            return found.text
+    return ""
+
+
+def parse_feed(data, source):
+    root = ET.fromstring(data)
+    items = []
+    for it in root.iter("item"):
+        items.append({
+            "title": _text(it, "title"),
+            "url": _text(it, "link", "guid"),
+            "summary": _text(it, "description", f"{CONTENT}encoded"),
+            "published": _text(it, "pubDate", "{http://purl.org/dc/elements/1.1/}date"),
+        })
+    for it in root.iter(f"{ATOM}entry"):
+        link = ""
+        for ln in it.findall(f"{ATOM}link"):
+            if ln.get("rel", "alternate") == "alternate" and ln.get("href"):
+                link = ln.get("href")
+                break
+        items.append({
+            "title": _text(it, f"{ATOM}title"),
+            "url": link,
+            "summary": _text(it, f"{ATOM}summary", f"{ATOM}content"),
+            "published": _text(it, f"{ATOM}published", f"{ATOM}updated"),
+        })
+    out = []
+    for raw in items:
+        title = clean_text(raw["title"])
+        url = (raw["url"] or "").strip()
+        if not title or not url.startswith("http"):
+            continue
+        published = parse_date(raw["published"])
+        out.append({
+            "id": hashlib.sha1(normalize_url(url).encode()).hexdigest()[:12],
+            "title": title,
+            "url": url,
+            "source": source["name"],
+            "source_category": source.get("category", ""),
+            "published": published.isoformat() if published else None,
+            "summary": shorten(clean_text(raw["summary"])),
+        })
+    return out
+
+
+def fetch_source(source):
+    try:
+        req = Request(source["url"], headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"})
+        with urlopen(req, timeout=30) as resp:
+            return source, parse_feed(resp.read(), source), None
+    except Exception as exc:  # one bad feed must not sink the run
+        return source, [], f"{type(exc).__name__}: {str(exc)[:200]}"
+
+
+def tag_topics(item):
+    text = f"{item['title']} {item['summary']}"
+    return [name for name, rx in TOPIC_RES.items() if rx.search(text)] or ["General IT"]
+
+
+def _stem(word):
+    for suffix in ("ing", "es", "ed", "s"):
+        if len(word) > 4 and word.endswith(suffix):
+            return word[: -len(suffix)]
+    return word
+
+
+def title_tokens(title):
+    words = re.findall(r"[a-z0-9]+", title.lower())
+    return {_stem(w) for w in words if w not in STOPWORDS and len(w) > 1}
+
+
+# Headlines for the same story share few words, but the shared ones are rare that day
+# ("Gheist", "DreamHost", "Brotli"). Weighting overlap by rarity separates them from
+# unrelated stories that only share common words ("AI", "vulnerability"). 0.2 was tuned
+# against a real day of feeds: all clear duplicates merged, no false merges.
+SAME_STORY_THRESHOLD = 0.2
+
+
+def same_story(a, b, idf):
+    ta, tb = a["_tokens"], b["_tokens"]
+    union = sum(idf[w] for w in ta | tb)
+    if union and sum(idf[w] for w in ta & tb) / union >= SAME_STORY_THRESHOLD:
+        return True
+    return SequenceMatcher(None, a["title"].lower(), b["title"].lower()).ratio() >= 0.85
+
+
+def cluster(items):
+    """Group the same story reported by several sources; keep the richest version as primary."""
+    doc_freq = {}
+    for item in items:
+        item["_tokens"] = title_tokens(item["title"])
+        for word in item["_tokens"]:
+            doc_freq[word] = doc_freq.get(word, 0) + 1
+    idf = {w: math.log((len(items) + 1) / n) for w, n in doc_freq.items()}
+    groups = []
+    for item in items:
+        for group in groups:
+            if any(same_story(item, other, idf) for other in group):
+                group.append(item)
+                break
+        else:
+            groups.append([item])
+    result = []
+    for group in groups:
+        group.sort(key=lambda x: (-len(x["summary"]), x["published"] or ""))
+        primary = dict(group[0])
+        seen_sources = {primary["source"]}
+        primary["also_covered_by"] = []
+        for other in group[1:]:
+            if other["source"] in seen_sources:
+                continue
+            seen_sources.add(other["source"])
+            primary["also_covered_by"].append({"id": other["id"], "source": other["source"], "title": other["title"], "url": other["url"]})
+        primary.pop("_tokens", None)
+        primary["topics"] = tag_topics(primary)
+        result.append(primary)
+    return result
+
+
+def local_today():
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("America/New_York")).date()
+    except Exception:  # Windows without tzdata
+        return datetime.now().astimezone().date()
+
+
+def merge_day(existing, fresh):
+    """Keep every item already on the day (vetting refers to them by id); add new ones."""
+    by_id = {it["id"]: it for it in existing}
+    # Any article id (primary or merged) -> the existing story it belongs to
+    owner = {}
+    for it in existing:
+        owner[it["id"]] = it
+        for c in it.get("also_covered_by", []):
+            owner[c.get("id", "")] = it
+    for it in fresh:
+        members = [it] + it.get("also_covered_by", [])
+        old = next((owner[m["id"]] for m in members if m.get("id") in owner), None)
+        if old is None:
+            by_id[it["id"]] = it
+            continue
+        # Same story as one already listed: fold in any new sources, keep the existing id
+        known = {c["source"] for c in old.get("also_covered_by", [])} | {old["source"]}
+        for m in members:
+            if m["source"] not in known:
+                known.add(m["source"])
+                old.setdefault("also_covered_by", []).append({k: m[k] for k in ("id", "source", "title", "url")})
+    return sorted(by_id.values(), key=lambda x: x["published"] or "", reverse=True)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--hours", type=int, default=36, help="only keep stories published in the last N hours (default 36)")
+    ap.add_argument("--date", help="day file to write, YYYY-MM-DD (default: today, US Eastern)")
+    args = ap.parse_args()
+
+    sources = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
+    day = args.date or local_today().isoformat()
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        results = list(pool.map(fetch_source, sources))
+
+    items, status = [], []
+    seen_ids = set()
+    for source, found, error in results:
+        recent = [it for it in found if not it["published"] or datetime.fromisoformat(it["published"]) >= cutoff]
+        status.append({"source": source["name"], "fetched": len(found), "recent": len(recent), "error": error})
+        for it in recent:
+            if it["id"] not in seen_ids:
+                seen_ids.add(it["id"])
+                items.append(it)
+
+    days_dir = ROOT / "data" / "days"
+    days_dir.mkdir(parents=True, exist_ok=True)
+    day_path = days_dir / f"{day}.json"
+
+    # The fetch window overlaps the previous day, so drop anything an earlier day already lists
+    week_before = (datetime.fromisoformat(day) - timedelta(days=7)).date().isoformat()
+    earlier_ids = set()
+    for path in days_dir.glob("*.json"):
+        if week_before <= path.stem < day:
+            for it in json.loads(path.read_text(encoding="utf-8")).get("items", []):
+                earlier_ids.add(it["id"])
+                earlier_ids.update(c.get("id", "") for c in it.get("also_covered_by", []))
+    items = [it for it in items if it["id"] not in earlier_ids]
+
+    # Earlier-published items first, so the first report of a story is clustered against later ones
+    items.sort(key=lambda x: x["published"] or "")
+    clustered = cluster(items)
+
+    existing = json.loads(day_path.read_text(encoding="utf-8")).get("items", []) if day_path.exists() else []
+    merged = merge_day(existing, clustered)
+
+    payload = {
+        "date": day,
+        "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "window_hours": args.hours,
+        "sources": status,
+        "items": merged,
+    }
+    day_path.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    index = []
+    for path in sorted(days_dir.glob("*.json"), reverse=True):
+        count = len(json.loads(path.read_text(encoding="utf-8")).get("items", []))
+        index.append({"date": path.stem, "count": count})
+    (ROOT / "data" / "index.json").write_text(json.dumps({"days": index}, indent=1) + "\n", encoding="utf-8")
+
+    failed = [s for s in status if s["error"]]
+    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources)")
+    for s in failed:
+        print(f"  FAILED {s['source']}: {s['error']}", file=sys.stderr)
+    # Fail the run only if every source failed
+    return 1 if len(failed) == len(sources) else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

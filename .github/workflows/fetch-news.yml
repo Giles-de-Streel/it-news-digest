@@ -1,0 +1,50 @@
+name: Fetch news
+
+on:
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Only keep stories published in the last N hours"
+        default: "36"
+  # Daily run, disabled until reviewed. Uncomment to enable.
+  # Times are UTC: 10:30 UTC is 06:30 Eastern in summer, 05:30 in winter.
+  # schedule:
+  #   - cron: "30 10 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-news
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch feeds
+        run: python -I scripts/fetch_news.py --hours "${{ github.event.inputs.hours || '36' }}"
+
+      - name: Commit new stories
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/days data/index.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "News for $(TZ=America/New_York date +%F)"
+          # The vetting page may have committed in the meantime; rebase onto it
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push && exit 0
+            sleep 5
+          done
+          exit 1

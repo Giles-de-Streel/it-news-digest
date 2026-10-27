@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT News Digest</title>
+  <meta name="description" content="Daily IT and security news from multiple sources, de-duplicated and vetted.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <h1>IT News Digest</h1>
+      <div class="controls">
+        <label class="sr" for="day">Day</label>
+        <select id="day"></select>
+        <nav class="tabs" role="tablist">
+          <button role="tab" data-view="review" aria-selected="true">Review</button>
+          <button role="tab" data-view="digest" aria-selected="false">Digest</button>
+          <button role="tab" data-view="sources" aria-selected="false">Sources</button>
+        </nav>
+        <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="view-review" class="view">
+      <div class="filters">
+        <div class="seg" id="status-filter">
+          <button data-status="pending" class="on">Pending <span data-count="pending"></span></button>
+          <button data-status="approved">Approved <span data-count="approved"></span></button>
+          <button data-status="rejected">Rejected <span data-count="rejected"></span></button>
+          <button data-status="all">All <span data-count="all"></span></button>
+        </div>
+        <input id="search" type="search" placeholder="Search titles and summaries">
+        <select id="source-filter"><option value="">All sources</option></select>
+      </div>
+      <div class="chips" id="topic-filter"></div>
+      <p class="hint">Keys: <kbd>j</kbd>/<kbd>k</kbd> move, <kbd>a</kbd> approve, <kbd>r</kbd> reject, <kbd>u</kbd> undo, <kbd>o</kbd> open</p>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section id="view-digest" class="view" hidden>
+      <div class="digest-head">
+        <h2 id="digest-title"></h2>
+        <div class="actions">
+          <button id="copy-md">Copy as Markdown</button>
+          <button id="copy-text">Copy as plain text</button>
+        </div>
+      </div>
+      <div id="digest"></div>
+    </section>
+
+    <section id="view-sources" class="view" hidden>
+      <h2>Sources for this day</h2>
+      <p id="sources-meta" class="muted"></p>
+      <table class="src-table">
+        <thead><tr><th>Source</th><th>In feed</th><th>In window</th><th>Status</th></tr></thead>
+        <tbody id="sources-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <div id="savebar" class="savebar" hidden>
+    <div class="wrap savebar-inner">
+      <span id="save-msg"></span>
+      <div class="actions">
+        <button id="discard-btn" class="ghost">Discard</button>
+        <button id="save-btn" class="primary">Save to GitHub</button>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="settings">
+    <form method="dialog" class="settings-form">
+      <h2>Settings</h2>
+      <p class="muted">Saving decisions commits <code>data/vetting.json</code> to the repo. Use a fine-grained token limited to this one repository with <b>Contents: Read and write</b>. It's stored only in this browser.</p>
+      <label>Owner <input id="set-owner" autocomplete="off"></label>
+      <label>Repository <input id="set-repo" autocomplete="off"></label>
+      <label>Token <input id="set-token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+      <p id="set-status" class="muted" aria-live="polite"></p>
+      <div class="actions">
+        <button type="button" id="set-test">Test</button>
+        <button type="button" id="set-clear" class="ghost">Forget token</button>
+        <button value="close" class="primary" id="set-save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
