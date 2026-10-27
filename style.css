@@ -43,7 +43,8 @@ body {
 }
 a { color: var(--accent); }
 h1, h2, h3 { line-height: 1.25; }
-.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 2200px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 600px) { .wrap { padding: 0 16px; } }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .muted { color: var(--muted); }
 kbd { font: 12px ui-monospace, monospace; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; background: var(--surface); }
@@ -84,14 +85,17 @@ button:disabled { opacity: .6; cursor: progress; }
 .hint { font-size: 12px; color: var(--muted); margin: 4px 0 12px; }
 @media (hover: none) { .hint { display: none; } }
 
-.cards { display: grid; gap: 10px; }
+.cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); }
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-left: 4px solid var(--border);
   border-radius: var(--radius);
   padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
 }
+.card .card-foot { margin-top: auto; }
 .card.focus { box-shadow: 0 0 0 2px var(--focus); }
 .card.st-approved { border-left-color: var(--good); }
 .card.st-rejected { border-left-color: var(--bad); opacity: .75; }
@@ -117,13 +121,16 @@ button.reject:hover { border-color: var(--bad); }
 
 .digest-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; }
 .digest-head h2 { font-size: 20px; margin: 0; }
-.digest-group h3 { font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 4px; margin-top: 24px; }
+#digest { columns: 440px; column-gap: 40px; }
+.digest-group { break-inside: avoid; padding-bottom: 20px; }
+#digest { margin-top: 16px; }
+.digest-group h3 { font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 4px; margin: 0 0 4px; }
 .digest-group ul { list-style: none; padding: 0; margin: 0; }
 .digest-group li { padding: 8px 0; }
 .digest-group li a { font-weight: 600; }
 .digest-group .summary { margin: 4px 0 0; font-size: 14px; }
 
-.src-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; font-size: 14px; }
+.src-table { width: 100%; max-width: 1100px; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; font-size: 14px; }
 .src-table th, .src-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
 .src-table td.good { color: var(--good); }
 .src-table td.bad { color: var(--bad); overflow-wrap: anywhere; }
