@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-10-27T12:10:51+00:00",
+ "generated": "2026-10-27T12:28:32+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 14,
+   "recent": 18,
    "error": null
   },
   {
@@ -149,12 +149,194 @@
   },
   {
    "source": "NVD new CVEs",
+   "fetched": 52,
+   "recent": 52,
+   "error": null
+  },
+  {
+   "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 50,
+   "recent": 25,
+   "error": null
+  },
+  {
+   "source": "ServeTheHome",
+   "fetched": 6,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "The Next Platform",
+   "fetched": 88,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Data Center Dynamics",
+   "fetched": 20,
+   "recent": 20,
+   "error": null
+  },
+  {
+   "source": "Blocks & Files",
+   "fetched": 50,
+   "recent": 4,
+   "error": null
+  },
+  {
+   "source": "StorageReview",
+   "fetched": 30,
+   "recent": 4,
+   "error": null
+  },
+  {
+   "source": "Phoronix",
+   "fetched": 32,
+   "recent": 19,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "2b097371828a",
+   "title": "Cyberattack disrupts University of New Mexico hospitals, extortion group claims attack",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/university-of-new-mexico-hospitals-cyberattack/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T12:24:14+00:00",
+   "summary": "University of New Mexico (UNM) Health Sciences Center (HSC), the academic medical arm of the University of New Mexico, has suffered a cyberattack that has temporarily disrupted the operation of its hospitals and may have resulted in a substantial data breach.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b8e87f6e0ae5",
+   "title": "Microcapsules in the walls of data centers could help absorb server heat",
+   "url": "https://www.datacenterdynamics.com/en/news/microcapsules-in-the-walls-of-data-centers-could-help-absorb-server-heat/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:21:46+00:00",
+   "summary": "Novel material could supplement main cooling systems in emergencies",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "193d8a44333e",
+   "title": "CVE-2026-115216: In Eclipse ioFog Operator versions 3.8.0 before 3.9.2, TLS certificate verification is disabled when the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115216",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T12:17:07.090000+00:00",
+   "summary": "In Eclipse ioFog Operator versions 3.8.0 before 3.9.2, TLS certificate verification is disabled when the operator contacts the Controller API and when it logs in to an external OIDC issuer.",
+   "kind": "cve",
+   "cve": "CVE-2026-115216",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115216",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "eea20fdbf6da",
+   "title": "CVE-2026-112362: @fastify/express is a Fastify plugin that runs Express middleware inside Fastify.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112362",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T12:17:04.970000+00:00",
+   "summary": "@fastify/express is a Fastify plugin that runs Express middleware inside Fastify. In versions 4.0.5 through 4.0.8, when Fastify runs with the non-default ignoreDuplicateSlashes option enabled, the plugin matches path-scoped Express middleware against a URL whose duplicate-slash normalization has also collapsed the…",
+   "kind": "cve",
+   "cve": "CVE-2026-112362",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-112362",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bc4ef5f7c043",
+   "title": "520MW data center planned in Eatonton, Georgia",
+   "url": "https://www.datacenterdynamics.com/en/news/520mw-data-center-planned-in-eatonton-georgia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:15:41+00:00",
+   "summary": "11 buildings planned on greenfield site",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "137b05a2c5f1",
+   "title": "CISA lays out plan to push cyber adversaries out of US critical infrastructure",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/cisa-2030-cyber-resilience-strategy/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T12:14:03+00:00",
+   "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has released CISA 2030: Defend, Harden, Prevail, a strategy to strengthen national security and the resilience of critical infrastructure. It addresses intersecting cyber, physical, and geopolitical threats that can disrupt essential services.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a9836676809d",
+   "title": "ThreatAware brings governance to AI-built security applications",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/threataware-dimension-governed-workspace/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T12:13:25+00:00",
+   "summary": "ThreatAware has announced the launch of Dimension, its governed workspace that provides organisations with a foundation for building, running and managing their own customised security applications.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "3609b3f65d8e",
+   "title": "CoreWeave leasing 22.5MW from atNorth data center in Denmark",
+   "url": "https://www.datacenterdynamics.com/en/news/coreweave-leasing-225mw-from-atnorth-data-center-in-denmark/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:12:40+00:00",
+   "summary": "Company goes live in another European market, plans global backbone expansion",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8ff26cf89076",
+   "title": "AMD EPYC Zen 6 PML Support, ARM64 On s390 Merged For Linux 7.4 KVM",
+   "url": "https://www.phoronix.com/news/Linux-7.4-KVM",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:00:00+00:00",
+   "summary": "The many Kernel-based Virtual Machine (KVM) improvements have been merged for Linux 7.4 to deliver a number of new features for different server processors...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
   {
    "id": "fe60a41db3e8",
    "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
@@ -182,6 +364,34 @@
    ]
   },
   {
+   "id": "3fba9192c925",
+   "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+   "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-27T11:46:00+00:00",
+   "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26. Someone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "50a1158b7aa4",
+   "title": "DCD Studio: Rethinking thermal management for AI scale with Oakley Roberts, Trane",
+   "url": "https://www.datacenterdynamics.com/en/videos/dcd-studio-rethinking-thermal-management-for-ai-scale-with-oakley-roberts-trane/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:45:46+00:00",
+   "summary": "Oakley Roberts of Trane joins DCD's James Raddings to discuss how AI is transforming data center construction and thermal management and the importance of collaboration for future-ready data centers",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "e602499dbe92",
    "title": "Cyberattack on University of Copenhagen exposes data of 525,000 people",
    "url": "https://www.helpnetsecurity.com/2026/10/27/university-of-copenhagen-cyberattack-data-breach/",
@@ -199,6 +409,87 @@
    ],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "1ce9ccf10a03",
+   "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+   "url": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-27T11:32:46+00:00",
+   "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. Some fake login pages go beyond stealing passwords.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "cf5c346fcefd",
+   "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+   "url": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-27T11:32:31+00:00",
+   "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "3ba176bd5797",
+   "title": "Intel's APX offers 'better performance' in Windows 11 according to new Insider setting",
+   "url": "https://www.tomshardware.com/software/windows/intels-apx-offers-better-performance-in-windows-11-according-to-new-insider-setting-microsoft-begins-early-enablement-for-advanced-performance-extensions-on-nova-lake-cpus",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:30:00+00:00",
+   "summary": "Microsoft has begun testing the option to enable Intel's Advanced Performance Extensions, or APX, which will bring a performance boost to some apps — although no chips with APX support are available as yet.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2c3973fde674",
+   "title": "Architecting AI infrastructure",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/architecting-ai-infrastructure/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:27:33+00:00",
+   "summary": "Building AI training clusters at 128K accelerators",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "34b4585f4167",
+   "title": "Kushagra Vaid appointed CEO of Omniva",
+   "url": "https://www.datacenterdynamics.com/en/news/kushagra-vaid-appointed-ceo-of-omniva/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:27:00+00:00",
+   "summary": "But the neocloud remains shrouded in mystery",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "2d1725b625e9",
+   "title": "easyJet to offer Starlink in-flight WiFi from next year",
+   "url": "https://www.datacenterdynamics.com/en/news/easyjet-to-offer-starlink-in-flight-wifi-from-next-year/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:23:25+00:00",
+   "summary": "The airline carrier becomes the latest to partner with Starlink",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -222,6 +513,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "b10d91daf782",
+   "title": "Grab 32GB of DDR5 RAM for just $151 in this 4-in-1 Newegg bundle with the 9800X3D and a 2TB SSD",
+   "url": "https://www.tomshardware.com/pc-components/grab-32gb-of-ddr5-ram-for-just-usd151-in-this-4-in-1-newegg-bundle-with-the-9800x3d-and-a-2tb-ssd-start-building-a-high-end-4k-gaming-pc-with-this-combo-deal-that-also-includes-an-am5-gigabyte-motherboard-and-a-free-msi-aio-liquid-cooler",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:11:37+00:00",
+   "summary": "Grab the 9800X3D with a matching Gigabyte motherboard, 32GB of DDR5 RAM, and a 2TB SSD, all for just $1,180.99, giving you a $358.98 discount that makes the equivalent RAM price just $151.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -274,9 +578,30 @@
    "source_category": "IT industry",
    "published": "2026-10-27T11:00:00+00:00",
    "summary": "Denmark's Ministry of Digitization reportedly abandoned a pilot to replace Microsoft Office with the open-source Collabora suite less than six months after it began.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b40a816997cb",
+     "source": "Tom's Hardware",
+     "title": "Denmark’s bid to ditch Microsoft Office for open-source alternative Collabora collapses in under six months",
+     "url": "https://www.tomshardware.com/software/microsoft-office/denmarks-bid-to-ditch-microsoft-office-for-open-source-alternative-collabora-collapses-in-under-six-months-employees-cite-issues-with-style-formatting-and-tracking-changes"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "3d2a934ff377",
+   "title": "Nvidia is bankrolling AI accelerator supply chain buildout to reserve production capacity",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-is-bankrolling-ai-accelerator-supply-chain-buildout-to-reserve-production-capacity-announces-billion-dollar-deals-with-six-major-suppliers-across-substrates-advanced-packaging-semiconductor-testing-and-optical-engines",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T11:00:00+00:00",
+   "summary": "Nvidia is committing billions to expand substrate, co-packaged optics, advanced packaging, and chip-testing capacity through 2028, reserving capacity at nearly every stage of its AI accelerator supply chain.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -307,6 +632,20 @@
    ]
   },
   {
+   "id": "e711c5ea2aec",
+   "title": "Spain revises data center renewable mandate",
+   "url": "https://www.datacenterdynamics.com/en/news/spain-revises-data-center-renewable-mandate/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:55:37+00:00",
+   "summary": "Facilities with a capacity of 10MW or more are now subject to the rules",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "22024160fd49",
    "title": "Oracle pushes AI deeper into enterprise workflows with Fusion Companion",
    "url": "https://www.infoworld.com/article/4240962/oracle-pushes-ai-deeper-into-enterprise-workflows-with-fusion-companion.html",
@@ -318,6 +657,21 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "672e8f260575",
+   "title": "OpenAI applies for federal permit to build portion of Effingham County, Georgia, data center on wetlands - report",
+   "url": "https://www.datacenterdynamics.com/en/news/openai-applies-for-federal-permit-to-build-portion-of-effingham-county-georgia-data-center-on-wetlands-report/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:45:00+00:00",
+   "summary": "Would permit OpenAI to build on 72 acres of wetland",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -357,6 +711,35 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "d5158845f8cf",
+   "title": "60,000 Microsoft employees offered voluntary buyouts as AI buildout costs bite",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/60-000-microsoft-employees-offered-voluntary-buyouts-as-ai-buildout-costs-bite-program-covers-roughly-27-percent-of-workforce-across-us-canada-india-and-the-uk",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:30:00+00:00",
+   "summary": "Microsoft is offering buyouts to around 60,000 members of its workforce as it looks to balance the books amid a ramp-up in AI data center spending.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b554bdc03100",
+   "title": "Accelerating HTTP Web Servers With In-Kernel eBPF Deliver Up To 4.5x Throughput",
+   "url": "https://www.phoronix.com/news/Beeper-In-Kernel-Parsing-eBPF",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:26:22+00:00",
+   "summary": "An interesting new open-source project born out of university research is Beeper to provide application-layer parsing within the in-kernel eBPF. With an HTTP parser implemented by Beeper in eBPF and providing an in-kernel HTTP cache, the throughput for web servers could be improved by 3x at high rates...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -844,6 +1227,20 @@
    ]
   },
   {
+   "id": "1ac54bc7d593",
+   "title": "Linux's Modern NTFS Driver Now Supports Alternate Data Streams (ADS)",
+   "url": "https://www.phoronix.com/news/NTFS-Linux-7.4-Improvements",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:11:29+00:00",
+   "summary": "Merged back in Linux 7.1 was the new NTFS kernel driver implementation for better supporting Microsoft's NTFS file-system on Linux. Since then new features and improvements have continued to land for this NTFS driver with some more notable additions also coming in Linux 7.4...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "1a4b93ebb4aa",
    "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
    "url": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
@@ -858,6 +1255,33 @@
    ]
   },
   {
+   "id": "2f927aa8ccac",
+   "title": "Anthropic prepares for potential $2 trillion IPO valuation after reporting billions in revenue",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-prepares-for-potential-usd2-trillion-ipo-valuation-after-reporting-billions-in-revenue-company-warns-ai-could-pose-catastrophic-existential-risks-to-humanity",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T10:00:00+00:00",
+   "summary": "Anthropic has filed to go public as it pursues a potential multitrillion-dollar valuation, reporting $16.3 billion in revenue for the first half of 2026. The company’s filing also warns that its AI safety measures may not prevent catastrophic risks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "d919c5b05a2a",
+   "title": "Linux 7.4 Expands Sensor Monitoring For More ASUS & MSI Motherboards, New Minisforum Driver",
+   "url": "https://www.phoronix.com/news/Linux-7.4-HWMON",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T09:52:30+00:00",
+   "summary": "With the Linux 7.4 kernel there are more MSI and ASUS motherboards with sensor monitoring support along with a variety of other additions to help broaden the selection of supported systems for hardware sensor monitoring under Linux. It's another busy cycle for the HWMON subsystem...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
    "id": "b38fde355a96",
    "title": "Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover",
    "url": "https://www.securityweek.com/dead-popcorn-time-updater-put-millions-of-computers-at-risk-of-takeover/",
@@ -868,6 +1292,35 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "03cebfeae6ba",
+   "title": "Data center gear is being hijacked in transit to the tune of hundreds of millions",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/data-center-gear-is-being-hijacked-in-transit-to-the-tune-of-hundreds-of-millions-grand-theft-gpu-thieves-hack-accounts-perform-hit-and-runs-spoof-gps-signals-and-funnel-hardware-to-china",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T09:40:00+00:00",
+   "summary": "Data center gear is being stolen in transit to the tune of hundreds of millions — grand-theft-GPU thieves hack accounts, perform hit-and-runs, and spoof GPS signals",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3a73872eab72",
+   "title": "Firefox 159 Released With AMD Linux Graphics Fix For Excessive Memory Use",
+   "url": "https://www.phoronix.com/news/Firefox-159-Released",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T09:35:49+00:00",
+   "summary": "Firefox 159 is out today as the latest bi-weekly feature release for Mozilla's web browser...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
    ]
   },
   {
@@ -907,6 +1360,20 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "15f20e9fe3bb",
+   "title": "SpaceX closes $40 billion debt financing for GPUs expected in the first half of 2027, Musk says",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/spacex-closes-usd40-billion-debt-financing-for-gpus-expected-in-the-first-half-of-2027-musk-says-company-faces-up-to-usd40-billion-in-additional-fourth-quarter-capital-spending-as-ai-infrastructure-costs-soar",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T09:20:00+00:00",
+   "summary": "SpaceX expects fourth-quarter capital expenditure of $35 billion to $40 billion, CFO Bret Johnsen said, as Elon Musk pushes to expand the company’s AI computing infrastructure.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -1049,6 +1516,21 @@
    ]
   },
   {
+   "id": "a24fe516c617",
+   "title": "Sponsored: The extinction of data breaches: Degauss, destroy, recycle",
+   "url": "https://www.datacenterdynamics.com/en/marketwatch/the-extinction-of-data-breaches-degauss-destroy-recycle/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T08:00:00+00:00",
+   "summary": "Meeting stringent data privacy and destruction regulations in the AI age doesn’t have to come at the cost of sustainability",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "60558591a418",
    "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
    "url": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
@@ -1109,7 +1591,14 @@
    "source_category": "Security",
    "published": "2026-10-27T06:14:22+00:00",
    "summary": "If you use Microsoft Authenticator on Android, update it. Researchers at Enclave found a flaw that let any app on your phone quietly take over your work account. The app didn’t need permissions, and you didn’t need to tap anything. Here’s what happened Authenticator does more than show six-digit codes.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a6006728be28",
+     "source": "The Hacker News",
+     "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+     "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows",
@@ -1323,6 +1812,33 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "9c37425a3915",
+   "title": "Initial Support For The Apple M4 & Apple A18 Pro Make It Into Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-SoCs",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T00:52:15+00:00",
+   "summary": "The many SoC patches have landed within the Linux 7.4 kernel providing support for dozens of new boards as well as a number of new SoCs like the Apple M4 and the A18 Pro as found in the MacBook Neo. The Google Tensor 5 was also finally mainlined along with Pixel 10 devices.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "8f4282a3a6ad",
+   "title": "Steam Frame VR Headset Sees Mainline Support With Linux 7.4",
+   "url": "https://www.phoronix.com/news/Steam-Frame-FR-Linux-7.4",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T00:36:40+00:00",
+   "summary": "The mainline Linux 7.4 kernel will be capable of running on the Steam Frame VR headset...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -1594,6 +2110,19 @@
    ]
   },
   {
+   "id": "854d35c94fe9",
+   "title": "Linux 7.4 Preps CXL For Very Neat Dynamic Capacity Devices \"DCD\"",
+   "url": "https://www.phoronix.com/news/Linux-7.4-CXL",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T21:05:32+00:00",
+   "summary": "The Compute Express Link (CXL) subsystem changes were merged today for the Linux 7.4 kernel. The fun work this cycle is preparing to support Dynamic Capacity Devices...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "327318fb5def",
    "title": "Texas sues OpenAI for deceiving consumers about safety, seeks sweeping reforms and fines",
    "url": "https://therecord.media/texas-sues-openai-deceiving-customers",
@@ -1667,6 +2196,19 @@
    ]
   },
   {
+   "id": "3936e4696618",
+   "title": "Lenovo ThinkPad P1 Gen 9 Review: Panther Lake and a 50W RTX PRO 2000 in the Thin ThinkPad Flagship",
+   "url": "https://www.storagereview.com/review/lenovo-thinkpad-p1-gen-9-review-panther-lake-rtx-pro-2000",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-26T20:32:05+00:00",
+   "summary": "The Lenovo ThinkPad P1 Gen 9 is Lenovo’s thin flagship mobile workstation. This 16-inch machine carries the premium features the rest of the ThinkPad P line trims to meet weight and price targets.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "1a47a5dbcb81",
    "title": "LiteLLM supply chain attack started with an exposed master key",
    "url": "https://www.theregister.com/security/2026/10/26/litellm-supply-chain-attack-started-with-an-exposed-master-key/5305544",
@@ -1690,6 +2232,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "1210fc62a91e",
+   "title": "Cisco IQ Goes GA for Partners With an MCP Server, Model Foundry, and a Quantum-Resilient Wi-Fi 7 AP",
+   "url": "https://www.storagereview.com/news/cisco-iq-general-availability-partners-model-foundry-live-protect-wifi-7",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-26T20:00:00+00:00",
+   "summary": "Cisco today made Cisco IQ generally available to partners at Cisco Partner Summit in Vancouver, opening the support platform’s telemetry and automation to partner workflows through a Cisco IQ MCP Server, expanded API access, and role-based access control that lets a customer grant its partner direct visibility into…",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -1751,6 +2306,19 @@
    ]
   },
   {
+   "id": "e06091961637",
+   "title": "KMSCON 10.1 Released With Support For Per-Monitor Configurations",
+   "url": "https://www.phoronix.com/news/KMSCON-10.1-Released",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T19:17:21+00:00",
+   "summary": "KMSCON as the user-space terminal emulator targeting Linux DRM/KMS interfaces as an alternative to the in-kernel VT now is able to individually configure monitors in multi-monitor setups. Plus a variety of other improvements with today's KMSCON 10.1 release...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "b8d32b6f9f04",
    "title": "CVE-2026-110720: Consul-k8s versions 0.42.0 and later are vulnerable to a cross-namespace authorization bypass in component…",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110720",
@@ -1783,6 +2351,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "a0c44c87097c",
+   "title": "Intel quietly confirms Raptor Lake Next CPUs through internal driver publication",
+   "url": "https://www.tomshardware.com/pc-components/cpus/intel-quietly-confirms-raptor-lake-next-cpus-through-internal-driver-publication-lga-1700-chips-also-appear-in-shipping-manifests-dating-back-to-august",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T18:50:28+00:00",
+   "summary": "An internal driver and a shipping manifest reveal that Intel's desktop Raptor Lake Next parts may be on the way right now.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -1847,6 +2428,20 @@
    ]
   },
   {
+   "id": "9f0524a2bd14",
+   "title": "ASRock Creator Radeon AI Pro R9700 Review: Workstation Inference, AMD Style",
+   "url": "https://www.servethehome.com/asrock-creator-radeon-ai-pro-r9700-review-workstation-inference-amd-style/",
+   "source": "ServeTheHome",
+   "source_category": "Hardware",
+   "published": "2026-10-26T18:07:04+00:00",
+   "summary": "Today we are taking a look at ASRock's high-end Radeon AI inference card for workstations, the Creator Radeon AI Pro R9700. With 32GB of RAM and a $1700 price tag, the card is a highly affordable way to fill out a workstation for local AI inference",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "f6b5fe11552f",
    "title": "Highway Thieves Are Spoofing GPS To Steal Millions In Data Center-Bound Cargo",
    "url": "https://yro.slashdot.org/story/26/10/26/1759233/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -1858,6 +2453,20 @@
    "topics": [
     "Ransomware & breaches",
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "ba0e4feb176a",
+   "title": "Intel IPU8 Support Upstreamed In Linux 7.4 For Nova Lake Laptops",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Media",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:48:22+00:00",
+   "summary": "The media subsystem changes have been merged for the Linux 7.4 kernel. Most notable is Intel IPU8 support being introduced for the next-gen image processing unit in high-end Nova Lake laptops..",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
    ]
   },
   {
@@ -1895,6 +2504,20 @@
    "topics": [
     "Threats & malware",
     "Networking"
+   ]
+  },
+  {
+   "id": "65bf2f38b612",
+   "title": "Ecoblox partners with Rimac on modular data center solution",
+   "url": "https://www.datacenterdynamics.com/en/news/ecoblox-partners-with-rimac-on-modular-data-center-solution/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:30:24+00:00",
+   "summary": "First deployment slated for Rimac's campus in Kerestinec, Croatia",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
    ]
   },
   {
@@ -1947,6 +2570,69 @@
    ]
   },
   {
+   "id": "c11f7a7a0d8d",
+   "title": "Cadence unveils Nvidia-powered AI data center in Munich, Germany",
+   "url": "https://www.datacenterdynamics.com/en/news/cadence-unveils-nvidia-powered-ai-data-center-in-munich-germany/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:17:15+00:00",
+   "summary": "Facility will support electronic design automation (EDA), simulation, and offer sovereign AI cloud services",
+   "also_covered_by": [
+    {
+     "id": "74a7af53477f",
+     "source": "The Next Platform",
+     "title": "Cadence, Nvidia Unveil New AI Models To Put EDA On Autopilot",
+     "url": "https://www.nextplatform.com/hpc/2026/10/26/cadence-nvidia-unveil-new-ai-models-to-put-eda-on-autopilot/5305228"
+    }
+   ],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "04da28b91aec",
+   "title": "KWin-Type Introduced To Address KDE Wayland Usability Gap For Auto-Typing Text",
+   "url": "https://www.phoronix.com/news/KDE-KWin-Type",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:11:02+00:00",
+   "summary": "Open-source developer Jason Donenfeld known for his work on WireGuard announced today the release of kwin-type. KWin-type is a new Wayland-compatible program for auto-typing text from the standard input under the KWin Wayland compositor...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7aa0e89e2e4a",
+   "title": "Verizon signs $2bn AWS AI infrastructure deal",
+   "url": "https://www.datacenterdynamics.com/en/news/verizon-signs-2bn-aws-ai-infrastructure-deal/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:10:00+00:00",
+   "summary": "As carrier posts strong Q3 earnings",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "51eb114c2a1d",
+   "title": "Sponsored: The next evolution of data center backup power",
+   "url": "https://www.datacenterdynamics.com/en/opinions/the-next-evolution-of-data-center-backup-power/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T17:05:00+00:00",
+   "summary": "Building flexibility from the engine up",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "d80b90a04fbd",
    "title": "Reddit's r/opensource bans AI slop, and quite a few humans for good measure",
    "url": "https://www.theregister.com/software/2026/10/26/reddits-r/opensource-bans-ai-slop-and-quite-a-few-humans-for-good-measure/5305392",
@@ -1983,6 +2669,32 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "7e3ebf2b0498",
+   "title": "JSAUX FlipGo dual-screen portable monitor review: Gorgeous displays with touch support and a built-in USB hub",
+   "url": "https://www.tomshardware.com/monitors/portable-monitors/jsaux-flipgo-dual-screen-portable-monitor-review",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:33:31+00:00",
+   "summary": "The JSAUX FlipGo features dual 16-inch touch displays and a built-in hub.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bb1a2f0c6151",
+   "title": "AWS capacity \"largely\" sold out in 2027, Amazon CEO claims",
+   "url": "https://www.datacenterdynamics.com/en/news/aws-capacity-largely-sold-out-in-2027-amazon-ceo-claims/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:30:32+00:00",
+   "summary": "\"A good chunk\" of 2028 pre-sold, although this doesn't include EC2",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -2023,6 +2735,34 @@
    ]
   },
   {
+   "id": "6a48fe0441eb",
+   "title": "ZutaCore details new two-phase boiling technology for liquid-cooled data centers",
+   "url": "https://www.datacenterdynamics.com/en/news/zutacore-details-new-two-phase-boiling-technology-for-liquid-cooled-data-centers/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:15:00+00:00",
+   "summary": "New boiling design available in company's ultra-thin cold plate",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "abefb3e85507",
+   "title": "Fireworks to lease data center capacity in Dallas, Texas",
+   "url": "https://www.datacenterdynamics.com/en/news/fireworks-to-lease-data-center-capacity-in-dallas-texas/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:14:50+00:00",
+   "summary": "Company to lease capacity from Forum Markets/Edge Node venture",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "8d7305202070",
    "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
    "url": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429",
@@ -2036,6 +2776,36 @@
    ]
   },
   {
+   "id": "6c2a3fad3056",
+   "title": "Theft of AI equipment hits $150m in 2026, with fraud responsible for 92% of incidents – report",
+   "url": "https://www.datacenterdynamics.com/en/news/theft-of-ai-equipment-hits-150m-in-2026-with-fraud-responsible-for-92-of-incidents-report/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:12:17+00:00",
+   "summary": "Reports of stolen data center equipment up 34 percent since 2024, cargo risk management firm Overhaul said",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d84b64bda61e",
+   "title": "Karman completes power orchestration pilot at NexGen Cloud's data center in Montreal, Canada",
+   "url": "https://www.datacenterdynamics.com/en/news/karman-completes-power-orchestration-pilot-at-nextgen-data-center-in-montreal-canada/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:12:00+00:00",
+   "summary": "To extend software rollout across NexGen's European operations",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "3dff3a7c8281",
    "title": "Microsoft Offers Mass Buyouts For Roughly a Quarter of Its Workforce",
    "url": "https://slashdot.org/story/26/10/26/1544243/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -2046,6 +2816,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "27739bce8362",
+   "title": "Save $134 on this WD Red Plus 10TB HDD bundle at Newegg",
+   "url": "https://www.tomshardware.com/pc-components/hdds/save-usd134-on-this-wd-red-plus-10tb-hdd-bundle-at-newegg-this-double-drive-deal-lands-you-with-20tb-of-total-capacity-for-your-nas",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T16:00:00+00:00",
+   "summary": "Grab two 10TB NAS Hard Disk Drives and save $134 — this two-pack WD Red Plus bundle is the best deal for adding capacity to your NAS",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2098,6 +2881,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "ed602b4ce9c7",
+   "title": "Dedicated Smartbird AI Clusters Integrate WEKA NeuralMesh for Managed Enterprise AI",
+   "url": "https://www.storagereview.com/news/smartbird-dedicated-ai-clusters-weka-neuralmesh-managed-enterprise-ai",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-26T15:35:30+00:00",
+   "summary": "Smartbird and WEKA have announced a partnership that puts WEKA NeuralMesh inside Smartbird’s dedicated AI clusters, sold as a managed service for enterprise AI workloads.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2172,6 +2968,20 @@
    ]
   },
   {
+   "id": "3208d70cde7c",
+   "title": "DapuStor's KV Cache NVMe SSD offload explainer",
+   "url": "https://www.blocksandfiles.com/flash/2026/10/26/dapustors-kv-cache-nvme-ssd-offload-explainer/5305417",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-26T15:09:06+00:00",
+   "summary": "AI inferencing is memory-limited, bottlenecked by KV Cache capacity limits dictated by a GPU's high-bandwidth memory (HBM) amount and then by the tiered KV caching scheme via the x86 hosts DRAM, through to internal and external NVMe SSDs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "95ebe0f0acb0",
    "title": "Anthropic Files For IPO",
    "url": "https://slashdot.org/story/26/10/26/156218/anthropic-files-for-ipo?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -2191,10 +3001,44 @@
      "source": "The Register",
      "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
      "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456"
+    },
+    {
+     "id": "367e947ec2ad",
+     "source": "Data Center Dynamics",
+     "title": "Anthropic files S-1 for IPO, with $417bn in compute commitments",
+     "url": "https://www.datacenterdynamics.com/en/news/anthropic-files-s-1-for-ipo-with-417bn-in-compute-commitments/"
     }
    ],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "f46f1c906be8",
+   "title": "NVIDIA Minerva Brings AIOps to AI Factories Through Dell, Lenovo, and Supermicro",
+   "url": "https://www.storagereview.com/news/nvidia-minerva-aiops-ai-factory-observability-dell-lenovo-supermicro",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-26T15:06:57+00:00",
+   "summary": "NVIDIA announced Minerva at GTC Berlin, an AIOps platform that pulls telemetry from GPUs, networking, storage, schedulers, and the AI workloads running on them, then applies machine learning to find a degrading component before it slows a training job.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "98b3c93980f4",
+   "title": "Nvidia sidesteps JEDEC HBM standard",
+   "url": "https://www.blocksandfiles.com/ai-ml/2026/10/26/nvidia-sidesteps-jedec-hbm-standard/5305323",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-26T15:06:32+00:00",
+   "summary": "GPU king and dominant HBM buyer Nvidia has effectively sent JEDEC back to the drawing board with its high-bandwidth memory (HBM) standard. HBM is the interposer-connected stacked memory for GPUs that by-passes x86 socket-connected DRAM capacity and bandwidth limits.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2231,6 +3075,19 @@
    ]
   },
   {
+   "id": "ec8fc5c275b1",
+   "title": "Asus ROG Xbox Ally X20 tested: Same performance, more comfortable, and a glorious OLED screen",
+   "url": "https://www.tomshardware.com/video-games/handheld-gaming/asus-rog-xbox-ally-x20-tested-same-performance-more-comfortable-and-a-glorious-oled-screen",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T15:00:00+00:00",
+   "summary": "Asus adds an OLED screen, TMR sticks, and more comfortable grips to its AMD-powered gaming handheld.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "7421334ef9e6",
    "title": "Industrial Vendors Check Products for PHP2Shell Vulnerabilities",
    "url": "https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/",
@@ -2257,6 +3114,19 @@
    ]
   },
   {
+   "id": "7b7c829233c6",
+   "title": "3.2 Petabits per second real-time optical fiber transfer speed world record claimed by Chinese team",
+   "url": "https://www.tomshardware.com/networking/3-2-pb-s-real-time-optical-fiber-transfer-speed-world-record-claimed-by-chinese-team-speed-fast-enough-to-download-more-than-20-000-4k-movies-in-one-second",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T14:43:37+00:00",
+   "summary": "A Chinese team has claimed a new world record for real-time transfer speeds across a 24-core optical fiber cable.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "d78bfcfe4427",
    "title": "Genesys Hack Exposes Customer Data From Internal Systems",
    "url": "https://www.securityweek.com/genesys-hack-exposes-customer-data-from-internal-systems/",
@@ -2267,6 +3137,20 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "f452d1f82d5d",
+   "title": "Leaked 256-core Zen 6c EPYC CPU destroys Zen 5 in early single-threaded benchmarks hints at 24% IPC gain",
+   "url": "https://www.tomshardware.com/pc-components/cpus/leaked-256-core-zen-6c-epyc-cpu-destroys-zen-5-in-early-single-threaded-benchmarks-hints-at-24-percent-ipc-gain-early-single-threaded-benchmarks-point-to-huge-amd-zen-6-improvements",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T14:31:43+00:00",
+   "summary": "A benchmark leak and a direct clock-matched comparison from an enthusiast seed the idea that Zen 6 may come with a decent IPC bump as well as increased clocks.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Hardware"
    ]
   },
   {
@@ -2281,6 +3165,19 @@
    "topics": [
     "Ransomware & breaches",
     "AI"
+   ]
+  },
+  {
+   "id": "07851b9a489a",
+   "title": "Mesa 27.0 Switching To Kraid Compiler By Default For Arm Mali GPUs",
+   "url": "https://www.phoronix.com/news/Mesa-27.0-Goes-Kraid",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T14:28:59+00:00",
+   "summary": "In development for a number of months now has been Kraid as a modern graphics compiler for recent Arm Mali GPUs. Kraid was merged for Mesa 26.2 back in June while in Mesa 27.0 due out in Q1 it will be switching to this new shader compiler by default...",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2548,6 +3445,19 @@
    ]
   },
   {
+   "id": "17007dba2c63",
+   "title": "Micron plans to use wafer bonding and High-NA EUV for next-gen DRAM",
+   "url": "https://www.tomshardware.com/pc-components/dram/micron-plans-to-use-wafer-bonding-and-high-na-euv-for-next-gen-dram-company-also-developing-vertical-high-bandwidth-memory-and-vertical-edge-inference-memory-integrated-directly-on-top-of-processors",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T14:00:00+00:00",
+   "summary": "Micron rejects 4F2, intends to use wafer bonding and High-NA EUV before going 3D NAND over the next few years.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "b4f37ed55a9f",
    "title": "Private equity giant: AI payoff strictly limited to Big Tech",
    "url": "https://www.theregister.com/ai-and-ml/2026/10/26/private-equity-giant-ai-payoff-strictly-limited-to-big-tech/5305358",
@@ -2574,6 +3484,46 @@
    ]
   },
   {
+   "id": "764a79c692c8",
+   "title": "Snapdragon X1 Elite / Acer Swift 14 AI Performance On The Ubuntu 26.10 X1E Concept",
+   "url": "https://www.phoronix.com/review/ubuntu-2610-snapdragon-x1e",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T13:55:24+00:00",
+   "summary": "For those curious about the Snapdragon X1 Elite performance on the recently released Ubuntu 26.10 Concept X1E ISO, here are some benchmarks showing the performance relative to Ubuntu 26.04 LTS X1E state on the same hardware.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "0330065e9f57",
+   "title": "Nvidia Simulates Its Way Into Google's Magic State Cultivation Party",
+   "url": "https://www.nextplatform.com/compute/2026/10/26/nvidia-simulates-its-way-into-googles-magic-state-cultivation-party/5305405",
+   "source": "The Next Platform",
+   "source_category": "Hardware",
+   "published": "2026-10-26T13:50:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7c3ae3164237",
+   "title": "Windows 11’s ‘whole ISO’ squeezed into a CD-ROM",
+   "url": "https://www.tomshardware.com/software/windows/windows-11s-whole-iso-squeezed-into-a-cd-rom-sub-700mb-disk-boots-to-the-desktop-runs-apps-just-like-the-microsoft-original",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T13:40:00+00:00",
+   "summary": "Professional Windows crusher NTDEV has showcased their next-generation tool for compressing Windows 11 with a video of an install that fits on a single CD-ROM.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "cf9d3ee81896",
    "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
    "url": "https://www.securityweek.com/php2shell-exploitation-moves-from-probes-to-working-shells/",
@@ -2587,6 +3537,21 @@
    ]
   },
   {
+   "id": "96a56164d7fe",
+   "title": "Cadence reveals Maestro, fine-tuned AI models built to run specialized chip design agents, with early access coming for 'select customers' in Q4 2026",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/cadence-reveals-maestro-fine-tuned-ai-models-built-to-run-specialized-chip-design-agents-with-early-access-coming-for-select-customers-in-q4-2026-claims-up-to-30-percent-higher-quality-results-and-up-to-5x-token-efficiency-over-a-general-purpose-ai-model",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T13:20:00+00:00",
+   "summary": "Cadence unveiled Maestro, domain-specialized AI models for its chip design agents, with early access for select customers in Q4 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "1a44d05f6353",
    "title": "We shouldn't be surprised about the PHPocalypse, as the internet is built on sticks and glue",
    "url": "https://www.theregister.com/security/2026/10/26/we-shouldnt-be-surprised-about-the-phpocalypse-as-the-internet-is-built-on-sticks-and-glue/5305186",
@@ -2597,6 +3562,45 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "82c3bed01d35",
+   "title": "Chinese research vessels loiter near Pacific undersea cables more than any other nation, report finds",
+   "url": "https://www.tomshardware.com/tech-industry/chinese-research-vessels-loiter-near-pacific-undersea-cables-more-than-any-other-nation-report-finds-civilian-fleet-using-lawnmower-patterns-may-be-mapping-seafloor-for-future-sabotage",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T13:00:00+00:00",
+   "summary": "Chinese vessels are spending more time near undersea cables in the Pacific than nearly 50 other nations, according to a new report by the Center for Strategic and International Studies.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "69d57909bfd2",
+   "title": "Linux 7.4 EFI Brings Improvement For Helping Systemd When Kernel Booted Directly",
+   "url": "https://www.phoronix.com/news/Linux-7.4-EFI",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T12:54:13+00:00",
+   "summary": "The EFI updates have been merged for the Linux 7.4 kernel and include an improvement for when the system was booted directly into the kernel on EFI-based systems without using a bootloader like GRUB or systemd-boot...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "23a75ff332d3",
+   "title": "Intel's Lip-Bu Tan has spoken with Lisa Su about potential collaboration with AMD",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-explores-potential-collaboration-with-amd-as-lip-bu-tan-pushes-customer-focused-turnaround-ceo-targets-custom-chips-advanced-packaging-and-stronger-foundry-business",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T12:40:00+00:00",
+   "summary": "Intel CEO Lip-Bu Tan has reportedly discussed potential areas of cooperation with AMD chief Lisa Su as Intel works to rebuild its CPU business and expand its foundry operations.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2623,6 +3627,32 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "437a82d5b907",
+   "title": "Nouveau-DKMS Aims For Better NVIDIA Open-Source Experience On Old GPUs",
+   "url": "https://www.phoronix.com/news/Nouveau-DKMS",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T12:24:01+00:00",
+   "summary": "Nouveau-DKMS is in development as an out-of-tree spin-off of the open-source NVIDIA \"Nouveau\" driver focused on providing better support for NVIDIA GeForce 400/500 \"Fermi\" series graphics processors and potentially other generations too pre-Turing where the modern Nova driver is in development by NVIDIA...",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bc247d1dfc4a",
+   "title": "Save over $1,000 on this Alienware gaming PC with an RTX 5070 and 32GB DDR5",
+   "url": "https://www.tomshardware.com/desktops/gaming-pcs/save-over-usd1-000-on-this-alienware-gaming-pc-with-an-rtx-5070-and-32gb-ddr5-unlock-1440p-and-4k-gameplay-with-this-aurora-act1250-rig-with-a-20-core-intel-cpu-and-a-1tb-ssd-for-usd2-199-99",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T12:20:00+00:00",
+   "summary": "Newegg have cut this Alienware Aurora gaming PC by over $1,000, netting yo ua 4K-ready machine with an RTX 5070 and 32GB of DDR5 RAM for $2,199.99.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2700,6 +3730,19 @@
    ]
   },
   {
+   "id": "ad338b0ad54b",
+   "title": "Lack of staff and funding likely led to the recent PHP security snafu; project has only one full-time employee, but that's just the tip of the iceberg",
+   "url": "https://www.tomshardware.com/tech-industry/cyber-security/lack-of-funding-likely-led-to-the-recent-php-security-snafu-but-thats-just-the-tip-of-the-iceberg-a-dreary-situation-caused-by-services-running-old-versions-with-no-support",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T11:50:00+00:00",
+   "summary": "Lack of funding likely led to the recent PHP security snafu, but that's just the tip of the iceberg — dreary situation caused by services running old versions with no support",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "6ac1d64ada21",
    "title": "iFixit dismantles Apple's Duo: 'You'd better baby that screen'",
    "url": "https://www.theregister.com/personal-tech/2026/10/26/ifixit-dismantles-apples-duo-youd-better-baby-that-screen/5305296",
@@ -2710,6 +3753,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c03b1d1f1706",
+   "title": "Linux 7.4 Begins Employing New \"Core MM\" Tree",
+   "url": "https://www.phoronix.com/news/Linux-Core-MM-Tree",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T11:42:27+00:00",
+   "summary": "Core memory management patches to the Linux kernel have typically been routed to mainline via Andrew Morton's \"MM\" branch, which is where also a variety of broader memory management related patches are also queued like all the ongoing work to DAMON/DAMOS.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -2740,6 +3797,20 @@
    ]
   },
   {
+   "id": "e7e9f2402701",
+   "title": "Modder turns NES into a Windows-like desktop with original hardware",
+   "url": "https://www.tomshardware.com/video-games/retro-gaming/modder-turns-nes-into-a-windows-like-desktop-with-original-hardware-emulates-a-full-retro-experience-with-a-cd-drive-and-slow-internet",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T11:20:00+00:00",
+   "summary": "Throaty Mumbo turns his NES into a Windows-like desktop using an FPGA cartridge emulating an old Intel CPU, complete with a CD drive and internet capabilities, all without tearing the NES apart.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
    "id": "c452ea552861",
    "title": "Britain bets big on AI to defend against the threats AI is helping create",
    "url": "https://www.theregister.com/security/2026/10/26/britain-bets-big-on-ai-to-defend-against-the-threats-ai-is-helping-create/5305319",
@@ -2749,6 +3820,52 @@
    "summary": "Whitehall wants agents guarding critical infrastructure as part of a wider £600M spending spree",
    "also_covered_by": [],
    "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "5453dea16792",
+   "title": "Nvidia RTX 20, 30, and 40-series GPUs hacked to remove a half-speed AI throttle",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-20-30-and-40-series-gpus-hacked-to-remove-a-half-speed-ai-throttle-firmware-exploit-doubles-rtx-4090s-peak-tensor-rate-lifts-rtx-3090-ti-matrix-math-up-to-80-percent",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T11:00:00+00:00",
+   "summary": "Linux kernel modules lift Nvidia’s half-rate AI tensor limit on GeForce RTX 20, 30, and 40-series GPUs.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Linux & open source",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2f79c5af300f",
+   "title": "Neocloud Nebul's five storage options",
+   "url": "https://www.blocksandfiles.com/object/2026/10/26/neocloud-nebuls-five-storage-options/5305288",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-26T10:38:00+00:00",
+   "summary": "European Neo cloud Nebul has five storage options it provides to its GPU-using clients and they’re intended for different workloads. When we found about the four storage options: DDN EXAScaler and Infinia, NetApp ONTAP and VAST Data’s AI OS, we were intrigued and approached Nebul with some questions.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "dd439739b716",
+   "title": "Bitcoin reward offered to anyone who could break into an unpatched server running PHP, hacker cracks site and claims bounty",
+   "url": "https://www.tomshardware.com/tech-industry/cryptomining/hacker-offers-bitcoin-reward-to-anyone-who-can-break-into-an-unpatched-server-running-php-still-remains-unhacked-php2shell-challenge-tests-claims-that-ai-makes-exploiting-vulnerabilities-easy",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T10:30:00+00:00",
+   "summary": "The “Steal My Bitcoin” challenge offers a bounty to anyone who can breach a deliberately vulnerable PHP website using the recently disclosed PHP2Shell flaws. The challenge follows previous recoveries of locked Bitcoin fortunes through software vulnerabilities and AI-assisted investigation, but no successful claim has…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
     "AI"
    ]
   },
@@ -2766,6 +3883,21 @@
    ]
   },
   {
+   "id": "f0ad779cc9d0",
+   "title": "Linux Fixes AMD Ryzen AI 9 HX 370 Regression Due To Cache Aware Scheduling",
+   "url": "https://www.phoronix.com/news/Linux-CAS-Regression-AMD-HX-370",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T10:22:28+00:00",
+   "summary": "Merged for Linux 7.4 Git and marked for back-porting to Linux 7.2/7.3 stable is a regression fix affecting at least the AMD Ryzen AI 9 HX 370 \"Strix Point\" laptop SoC when making use of Cache Aware Scheduling...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "464face35a74",
    "title": "Euro open source specialist proposes LLM gateway to ease token bills",
    "url": "https://www.theregister.com/ai-and-ml/2026/10/26/euro-open-source-specialist-proposes-llm-gateway-to-ease-token-bills/5305170",
@@ -2776,6 +3908,32 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "eb94f37b3c38",
+   "title": "Moxnox: NT-Like, POSIX-Compatible Hobby OS Running Atop Btrfs",
+   "url": "https://www.phoronix.com/news/Moxnox-OS",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T10:04:34+00:00",
+   "summary": "Open-source developer Mark Harmstone who is known for his work on developing a Btrfs file-system driver for Windows has spent the past few years working on a new hobby operating system. Moxnox is an NT-like, POSIX-compatible operating system...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "b8a102558476",
+   "title": "Reddit’s r/opensource bans AI-made and AI-focused projects, also bans non-English speakers",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/reddits-r-opensource-bans-ai-made-and-ai-focused-projects-also-bans-non-english-speakers-sweeping-new-rules-spark-backlash-over-linux-kernel-contributions-and-solo-developers",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-26T10:00:00+00:00",
+   "summary": "Reddit’s r/opensource has barred AI-built, AI-focused, and AI-using projects under new rules announced October 24. The crackdown also imposes strict requirements on project age and contributors, while restrictions on non-English speakers have sparked further backlash.",
+   "also_covered_by": [],
+   "topics": [
     "AI"
    ]
   },
@@ -2791,6 +3949,32 @@
    "topics": [
     "Threats & malware",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "949996ad5aab",
+   "title": "EXT4 Lands Optional Buffered IOmap For Significant Performance Win With Large Writes",
+   "url": "https://www.phoronix.com/news/Linux-7.4-EXT4",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-26T09:53:55+00:00",
+   "summary": "The EXT4 file-system changes were merged Sunday night for the ongoing Linux 7.4 merge window. The headline feature of EXT4 in this new kernel version is opt-in support for buffered IOmap usage that can lead to \"significant\" performance improvements for large writes...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "1b2c66941f72",
+   "title": "Breaking the KV cache memory wall using Dynamo and Liqid CXL shared memory",
+   "url": "https://www.blocksandfiles.com/architecture/2026/10/26/breaking-the-kv-cache-memory-wall-using-dynamo-and-liqid-cxl-shared-memory/5305130",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-26T09:38:16+00:00",
+   "summary": "Micron has found that KV cache memory wall limitations on a GPU server can be substantially reduced by using a Liqid CXL-accessed memory pool to enlarge the DRAM cache.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {

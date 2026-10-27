@@ -46,6 +46,7 @@ TOPICS = {
     "Linux & open source": r"linux|red hat|rhel|ubuntu|debian|open source|kernel|ansible|openssl",
     "Cloud & infrastructure": r"\baws\b|amazon web services|google cloud|\bgcp\b|cloud|kubernetes|vmware|broadcom|data center|datacenter|virtuali",
     "AI": r"\bai\b|artificial intelligence|llm|chatgpt|openai|copilot|gemini|claude|machine learning|genai",
+    "Hardware": r"\bcpus?\b|\bgpus?\b|processor|semiconductor|\bchips?\b|chipmaker|nvidia|\bamd\b|\bintel\b|ryzen|epyc|xeon|\barm\b|qualcomm|tsmc|\bssds?\b|nvme|\bhdds?\b|hard drive|\bdram\b|\bddr\d|\bhbm\d?\b|flash storage|storage array|firmware|\bbios\b|uefi|motherboard|laptop|workstation|\brack\b|data cent(er|re)|datacenter|liquid cooling|power supply",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",

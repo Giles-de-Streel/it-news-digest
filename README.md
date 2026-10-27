@@ -1,6 +1,6 @@
 # IT News Digest
 
-A daily list of IT and security news from 25 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 32 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
 
 ## How it works
 
@@ -42,4 +42,6 @@ Page sources check the site's robots.txt (fetched with the fetcher's own User-Ag
 
 MITRE sources are the ATT&CK blog and the CVE Program blog (Medium feeds). mitre.org's own news pages return 403 to scripts, so they aren't used.
 
-Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused). SANS is also covered by the Internet Storm Center diaries feed.
+Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center Dynamics, Blocks & Files, StorageReview, Phoronix) feed a **Hardware** topic.
+
+Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused), TechPowerUp and HotHardware (mostly consumer/gaming hardware), Notebookcheck (feed full of deals). SANS is also covered by the Internet Storm Center diaries feed.
