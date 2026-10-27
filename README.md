@@ -1,4 +1,4 @@
-# IT News Digest
+# IT News
 
 A daily list of IT and security news from 32 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
 
