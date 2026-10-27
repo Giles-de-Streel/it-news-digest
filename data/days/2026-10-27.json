@@ -1,12 +1,12 @@
 {
  "date": "2026-10-27",
- "generated": "2026-10-27T12:28:32+00:00",
+ "generated": "2026-10-27T14:19:20+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -54,13 +54,13 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 34,
+   "recent": 36,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 8,
    "error": null
   },
   {
@@ -84,7 +84,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -96,7 +96,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 3,
+   "recent": 5,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 52,
-   "recent": 52,
+   "fetched": 56,
+   "recent": 56,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 32,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "The Next Platform",
    "fetched": 88,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "Blocks & Files",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -192,11 +192,532 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 19,
+   "recent": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "a77cd8b307cf",
+   "title": "CVE-2026-117603: Electrum before 4.7.2 contains a spending limit bypass vulnerability in the Nostr Wallet Connect plugin that…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117603",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T14:16:40.233000+00:00",
+   "summary": "Electrum before 4.7.2 contains a spending limit bypass vulnerability in the Nostr Wallet Connect plugin that allows malicious NWC clients to exceed daily_limit_sat by exploiting non-atomic budget checks and millisatoshi truncation.",
+   "kind": "cve",
+   "cve": "CVE-2026-117603",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-117603",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "ec2164f9cf97",
+   "title": "CVE-2026-117601: Electrum before 4.8.3 fails to verify signatures of wallet-owned inputs in unconfirmed mempool transactions,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117601",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T14:16:39.947000+00:00",
+   "summary": "Electrum before 4.8.3 fails to verify signatures of wallet-owned inputs in unconfirmed mempool transactions, allowing malicious servers to replace a just-broadcast transaction with a conflicting one.",
+   "kind": "cve",
+   "cve": "CVE-2026-117601",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-117601",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bd6754a80b5a",
+   "title": "CVE-2026-117564: nest-admin before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117564",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T14:16:38.720000+00:00",
+   "summary": "nest-admin before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens by using a hardcoded JWT_SECRET committed in .env.production.",
+   "kind": "cve",
+   "cve": "CVE-2026-117564",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-117564",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "7234c15033d8",
+   "title": "Intel acquires quantum software firm Classiq for $2.2bn",
+   "url": "https://www.datacenterdynamics.com/en/news/intel-acquires-quantum-software-firm-classiq-for-22bn/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T14:15:07+00:00",
+   "summary": "Acquisition of Israeli quantum firm will allow Intel to become a “full-stack quantum solutions provider,” chipmaker said",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3d97e60810b9",
+   "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+   "url": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T14:09:46+00:00",
+   "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "916bdcf47641",
+   "title": "Too Many Providers, More Moving Parts: The Challenge of SSL Certificate Fragmentation",
+   "url": "https://circleid.com/posts/too-many-providers-more-moving-parts-the-challenge-of-ssl-certificate-fragmentation",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-10-27T14:07:00+00:00",
+   "summary": "Research into SSL certificates at Forbes Global 2000 companies reveals widespread provider fragmentation, raising operational concerns as certificate validity periods shorten to 100 days in March 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8995a18f5918",
+   "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+   "url": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T14:01:11+00:00",
+   "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "cc868f471c49",
+   "title": "Attackers Hijack Government and School DNS Records to Promote Illegal Gambling",
+   "url": "https://circleid.com/posts/attackers-hijack-government-and-school-dns-records-to-promote-illegal-gambling",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-10-27T14:01:00+00:00",
+   "summary": "Infoblox researchers uncovered two operations exploiting government and educational DNS infrastructure across three countries to promote illegal gambling, exposing security weaknesses that conventional website monitoring may overlook.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "6d202f2bec8e",
+   "title": "Samsung Portable SSD P9 review: speedy USB4 in a slim, pricey package",
+   "url": "https://www.tomshardware.com/pc-components/external-ssds/samsung-portable-ssd-p9-review",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T14:00:00+00:00",
+   "summary": "Samsung’s Portable SSD P9 is the new USB4 external drive to beat. It feels premium and performed very well in our testing. But you’ll have to pay a lot for it, or any similarly performing drive, these days.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2049ba099feb",
+   "title": "Police are reportedly pulling motorists over because AI algorithms deem their driving patterns 'suspicious'",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/police-reportedly-pulling-motorists-over-because-ai-algorithms-deem-their-driving-patterns-suspicious-rights-group-report-warns-ai-surveillance-systems-will-sweep-in-more-innocent-people-than-wrongdoers",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:53:32+00:00",
+   "summary": "An ACLU report claims police are increasingly using AI to analyze license plate-reader data and flag motorists based on travel patterns, raising concerns that innocent drivers could be pulled over because an algorithm deemed their movements suspicious.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "da9f45e1cbb1",
+   "title": "Walmart slashes $750 off this MSI gaming laptop — 16-inch Crosshair sports an RTX 5060 GPU and a fast 240Hz QHD display",
+   "url": "https://www.tomshardware.com/laptops/gaming-laptops/walmart-slashes-usd750-off-this-msi-gaming-laptop-16-inch-crosshair-sports-an-rtx-5060-gpu-and-a-fast-240hz-qhd-display",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:47:15+00:00",
+   "summary": "A massive $750 discount at Walmart brings the price of MSI's Crosshair gaming laptop crashing down. RTX 5060 graphics and a bright 240Hz IPS display are just two of the standout features of this laptop.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "37d79b832298",
+   "title": "Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes",
+   "url": "https://therecord.media/malicious-apps-russian-anxiety-gas-prices-drone-strikes",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-27T13:36:00+00:00",
+   "summary": "Cybercriminals are stuffing infostealer malware into bogus apps aimed at tracking gas prices, police activity, drone strikes and other information of concern to average Russians, researchers said.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "12e5bdb8a8e8",
+   "title": "Keybytes ‘truly modular keyboard’ starts with one key and is assembled like Legos",
+   "url": "https://www.tomshardware.com/peripherals/mechanical-keyboards/keybytes-truly-modular-keyboard-starts-with-one-key-and-is-assembled-like-legos-each-magnetic-key-module-has-its-own-risc-v-microcontroller-for-the-ultimate-in-customizability",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:34:43+00:00",
+   "summary": "The modular Keybytes project combines a Keyword hub that is magnetically connected to Keybit keys, with each key having its own microcontroller.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "714a20e7a495",
+   "title": "An education on transfer switch neutral options",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/an-education-on-transfer-switch-neutral-options/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:30:45+00:00",
+   "summary": "How transfer switch neutral configurations affect grounding, fault protection and power continuity",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2fcc0979afd1",
+   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+   "url": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-27T13:30:28+00:00",
+   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "7344aea1d436",
+   "title": "Socure links AI agents to verified people and businesses",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/socure-agent-intelligence/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T13:28:31+00:00",
+   "summary": "Socure has launched Agent Intelligence, a suite that detects AI agents, scores whether they should be trusted, and ties each agent to the verified person or business that authorized it.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "674a117ca796",
+   "title": "Apple adds M6 to 14-inch MacBook Pro and iMac",
+   "url": "https://www.tomshardware.com/laptops/macbooks/apple-adds-m6-to-14-inch-macbook-pro-and-imac-starts-at-usd1-999",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:28:23+00:00",
+   "summary": "Apple updated its 14-inch MacBook Pro and iMac lineup with the M6 chip.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "da6d01b698de",
+   "title": "Hacker awarded $50k bounty for reporting bug to Sony that allowed PS5 Linux exploit",
+   "url": "https://www.tomshardware.com/video-games/playstation/hacker-awarded-usd50k-bounty-for-reporting-bug-to-sony-that-allowed-ps5-linux-exploit-move-sparks-backlash-from-jailbreaking-community",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:22:04+00:00",
+   "summary": "The hypervisor bug that allowed PS5 users to install Linux on their consoles was patched before the launch of GTA VI, meaning they have to choose between experimenting with Linux and running the game.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "97bc4572c0ee",
+   "title": "Spectra Logic reclaiming under-used storage",
+   "url": "https://www.blocksandfiles.com/flash/2026/10/27/spectra-logic-reclaiming-under-used-storage/5305634",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:21:00+00:00",
+   "summary": "Storage Reclaim is a Spectra Logic offering that identifies the least-used files and objects in a customer’s SSD and disk drive data estate and can move them to lower-costs storage to free up space.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "933843ff30ab",
+   "title": "Moscow faces internet disruptions as foreign leaders gather for summits",
+   "url": "https://therecord.media/moscow-faces-internet-disruptions-as-foreign-leaders-gather",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-27T13:20:00+00:00",
+   "summary": "The restrictions will be in place from October 27 to 29, coinciding with the Gas Exporting Countries Forum summit and the Russia-Africa summit, Russia's Ministry of Digital Development said Monday.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ef6055ec4a3f",
+   "title": "CVE-2026-65145: NVIDIA NeMo Agent Toolkit contains a vulnerability where a attacker could cause a missing authentication…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65145",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T13:16:59.860000+00:00",
+   "summary": "NVIDIA NeMo Agent Toolkit contains a vulnerability where a attacker could cause a missing authentication issue. This vulnerability might lead to code execution, escalation of privileges, data tampering, denial of service, and information disclosure.",
+   "kind": "cve",
+   "cve": "CVE-2026-65145",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-65145",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4e5f0d814761",
+   "title": "CISA warns of PHP bug exploitation attempts, gives federal agencies days to patch",
+   "url": "https://therecord.media/php-vulnerabilities-cisa-kev",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-27T13:16:00+00:00",
+   "summary": "CISA added the widely publicized PHP vulnerabilities to the KEV, but didn't specify what kind of exploitation it was observing.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3e2145a23516",
+   "title": "Microsoft offers exits to thousands, including employees on AI and Copilot teams",
+   "url": "https://www.computerworld.com/article/4241056/microsoft-offers-exits-to-thousands-including-employees-on-ai-and-copilot-teams.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-27T13:15:49+00:00",
+   "summary": "Microsoft is offering voluntary exit packages to about 60,000 employees, roughly 27% of its workforce, including staff on teams building Copilot and other AI products, as the company looks for ways to fund its AI investments.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "91f51a36ac9c",
+   "title": "Apple's foldable phone has a crease in its reputation",
+   "url": "https://www.theregister.com/personal-tech/2026/10/27/apples-foldable-phone-has-a-crease-in-its-reputation/5305669",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T13:15:00+00:00",
+   "summary": "Admits a 'small number' of iPhone Duos have display problems, and no, you're not folding it wrong.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "372f6f54af20",
+   "title": "Australia’s spies are sharing intelligence with hacking targets — and want them to share back",
+   "url": "https://therecord.media/australia-spies-share-intel-and-want-victims-to-share-back",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-27T13:13:00+00:00",
+   "summary": "More than half of the individual warnings from the Australian Signals Directorate (ASD) drew on previously secret material that had been cleared for disclosure, underscoring the growing role of intelligence sharing to prevent attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "90a530cd5e89",
+   "title": "Sekoia introduces self-hosted deployment for organizations with strict data controls",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/sekoia-self-hosted/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T13:11:59+00:00",
+   "summary": "Sekoia has introduced Sekoia Self-Hosted, a deployment model that brings the Sekoia SOC platform into the customer’s own infrastructure. Designed for large organizations, including government agencies, defense organizations, critical infrastructure operators and highly regulated enterprises, Sekoia Self-Hosted enables…",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3802f8e2f99f",
+   "title": "Pavee OS: Ikey Doherty's New Daily-Driver Desktop Distro Being Built Atop Barney",
+   "url": "https://www.phoronix.com/news/Pavee-OS",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T13:11:30+00:00",
+   "summary": "Back in September Ikey Doherty of Solus Linux and Serpent OS notoriety as well as being a former Intel Clear Linux developer announced Barney as his planned showcase for how to \"properly\" build a modern Linux distribution in 2026+.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a184c98f99a0",
+   "title": "DNSFilter LUMINATE unifies DNS security, AI controls and remote work protection",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/dnsfilter-luminate/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T13:00:49+00:00",
+   "summary": "DNSFilter has launched LUMINATE by DNSFilter, a security platform that allows organizations to deliver five security solutions from one agent, one console and one policy. Shadow AI is now one of the fastest-growing risks in business.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "35dee6826d1f",
+   "title": "Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era",
+   "url": "https://www.tenable.com/blog/whole-of-state-security-sled-critical-infrastructure",
+   "source": "Tenable Blog",
+   "source_category": "Security",
+   "published": "2026-10-27T13:00:00+00:00",
+   "summary": "AI is widening the attack surface of the critical infrastructure facilities and services that state, local, and education (SLED) organizations run. In the final post of our Cybersecurity Awareness Month series, we explain how a whole-of-state security approach can help SLED agencies protect their critical…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "8b2e21430cb7",
+   "title": "When file infrastructure becomes the bottleneck",
+   "url": "https://www.theregister.com/storage/2026/10/27/sponsored-when-file-infrastructure-becomes-the-bottleneck/5305523",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T13:00:00+00:00",
+   "summary": "Legacy NAS, VPNs, and file-sync workflows leave hidden costs in their wake. Is the way your organization manages files still fit for purpose?",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "a1babdcf39a3",
+   "title": "FireMon Agentic AI helps teams investigate access and prepare policy changes",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/firemon-agentic-ai/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T12:51:04+00:00",
+   "summary": "FireMon has announced FireMon Agentic AI, changing how enterprises investigate network access, make policy decisions, and prepare security changes. Built into FireMon’s network security management solutions, the new agentic AI capabilities makes agents first-class citizens alongside practitioners, putting them to work…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "598629750471",
+   "title": "Cisco taps AI, partners to modernize IT operations and fortify network security",
+   "url": "https://www.networkworld.com/article/4240556/cisco-taps-ai-partners-to-modernize-it-operations-and-fortify-network-security.html",
+   "source": "Network World",
+   "source_category": "IT industry",
+   "published": "2026-10-27T12:45:41+00:00",
+   "summary": "Cisco’s annual Partner Summit is underway in Vancouver, where the vendor unveiled features and capabilities directed at partners and end-user organizations. “IT teams must modernize their networks and rethink how they operate while keeping systems secure against fast-changing threats,” wrote Joe Vaccaro , senior vice…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "1a539994d315",
+   "title": "Exeon expands threat detection to shadow AI and autonomous agents",
+   "url": "https://www.helpnetsecurity.com/2026/10/27/exeon-expands-threat-detection-to-shadow-ai-and-autonomous-agents/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-27T12:36:08+00:00",
+   "summary": "Exeon Analytics has introduced Exeon.AgentGuard, a new AI security solution designed to give organizations visibility into approved and shadow AI use, autonomous agent activity and the data flows created through connected tools and external services.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "76d0e91a3a3a",
+   "title": "Vodafone Ukraine to install solar arrays across 400 base stations",
+   "url": "https://www.datacenterdynamics.com/en/news/vodafone-ukraine-to-install-solar-arrays-across-400-base-stations/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:33:32+00:00",
+   "summary": "Completed the first phase of deployments in June 2026",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e0a16a2e2ffa",
+   "title": "Microsoft releases out-of-band Windows fixes with certificate updates",
+   "url": "https://www.theregister.com/security/2026/10/27/microsoft-releases-out-of-band-windows-fixes-with-certificate-updates/5305637",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T12:30:00+00:00",
+   "summary": "Did you hear the one about eMudhra and the power of 4? Time to get connected to certificate trust list updates",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "3abadd55fd21",
+   "title": "Open3DLab accuses Roblox of downloading 145GB of 3D assets for AI training purposes",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/open3dlab-accuses-roblox-of-downloading-145gb-of-3d-assets-for-ai-training-purposes-automated-crawler-ignored-site-rules-to-grab-over-1-000-files-including-adult-content-during-scraping-spree",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-27T12:26:13+00:00",
+   "summary": "Independent 3D modeling community Open3DLab has publicly claimed that a web crawler, attributed to Roblox, downloaded 145.5GB of its data, for what it assumes is for AI training purposes.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "2b097371828a",
    "title": "Cyberattack disrupts University of New Mexico hospitals, extortion group claims attack",
@@ -629,6 +1150,19 @@
    "topics": [
     "Ransomware & breaches",
     "Threats & malware"
+   ]
+  },
+  {
+   "id": "89f2ca953091",
+   "title": "Apple confirms iPhone Duo problem. What will it do next?",
+   "url": "https://www.computerworld.com/article/4241017/apple-confirms-iphone-duo-problem-what-will-it-do-next.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-27T10:57:00+00:00",
+   "summary": "Apple has responded to recent reports complaining that iPhone Duo displays have become damaged in normal use. The company is “aware” of the issue and suggests any of the “small number” of customers who encounter the problem contact AppleCare for a replacement.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1868,6 +2402,33 @@
    ]
   },
   {
+   "id": "4ceba527c017",
+   "title": "AI agent security with policy-driven access control",
+   "url": "https://www.redhat.com/en/blog/ai-agent-security-policy-driven-access-control",
+   "source": "Red Hat Blog",
+   "source_category": "Vendor",
+   "published": "2026-10-27T00:00:00+00:00",
+   "summary": "Agentic AI deployments are accelerating across enterprises. Recent research from the Cloud Security Alliance shows 70% of organizations now have AI components in production, yet 82% lack real-time visibility into AI runtime behavior.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "36737bf7fc10",
+   "title": "Skills to Power the Future",
+   "url": "https://intelligence.theregister.com/paper/view/21154",
+   "source": "The Next Platform",
+   "source_category": "Hardware",
+   "published": "2026-10-27T00:00:00+00:00",
+   "summary": "Getting certifications, along with practical, role-based, integrated workflow learning means IT teams apply the skills needed for innovation at scale",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "4f8c3a88f097",
    "title": "Humanity can't afford not to spend $800B on AI, Anthropic insists",
    "url": "https://www.theregister.com/ai-and-ml/2026/10/26/humanity-cant-afford-not-to-spend-800b-on-ai-anthropic-insists/5305580",
@@ -2876,6 +3437,18 @@
      "source": "The Register",
      "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
      "url": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515"
+    },
+    {
+     "id": "6c9836931132",
+     "source": "Phoronix",
+     "title": "KDE Plasma 6.8.2 Released With Dozens Of Additional Bug Fixes",
+     "url": "https://www.phoronix.com/news/KDE-Plasma-6.8.2"
+    },
+    {
+     "id": "0d87d49d4803",
+     "source": "SecurityWeek",
+     "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
+     "url": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/"
     }
    ],
    "topics": [
