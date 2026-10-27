@@ -9,7 +9,7 @@ A daily list of IT and security news from 32 sources, with the same story from d
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
    - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
    - **Other stories:** single-source stories, newest first.
-   - **CVEs tab** (direct link: ): CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. They have their own tab and search, and are never merged into news stories.
+   - **CVEs tab** (direct link: `#cves`): CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. They have their own tab and search, and are never merged into news stories.
    - Stories that mention a CVE scored High (7.0+) or Critical (9.0+) get a **CVSS badge** linking to NVD. Scores come from the CVE Program's record API (cveawg.mitre.org), using the highest of the CNA's and enrichers' (e.g. CISA's) scores, and are cached in `data/cve_scores.json`.
    - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
 
