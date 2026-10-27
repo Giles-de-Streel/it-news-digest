@@ -5,7 +5,7 @@ A daily list of IT and security news from 32 sources, with the same story from d
 ## How it works
 
 1. `scripts/fetch_news.py` reads every source in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library.
-2. The **Fetch news** GitHub Actions workflow runs that script daily at 10:30 UTC (06:30 Eastern in summer, 05:30 in winter) and commits the result. To fetch on demand, use Actions → Fetch news → Run workflow on GitHub.
+2. The **Fetch news** GitHub Actions workflow runs that script 8 times a day, every 3 hours from 01:30 UTC (01:30, 04:30, 07:30, 10:30, 13:30, 16:30, 19:30, 22:30 UTC), and commits the result. Each run adds new stories to the current day (US Eastern date) and keeps the ones already there. To fetch on demand, use Actions → Fetch news → Run workflow on GitHub.
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
    - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
    - **Other stories:** single-source stories, newest first.
