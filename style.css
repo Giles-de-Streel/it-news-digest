@@ -72,6 +72,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: .14em; line-height: 1; color: var(--text); }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
+.updated { font-size: 13px; color: var(--muted); white-space: nowrap; }
+.updated:empty { display: none; }
 .tabs { display: flex; gap: 2px; padding: 3px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; }
 .tabs button { border: 0; background: transparent; border-radius: 9px; padding: 5px 14px; color: var(--muted); font-weight: 600; }
 .tabs button:hover { color: var(--text); }

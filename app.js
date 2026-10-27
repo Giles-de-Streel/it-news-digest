@@ -86,6 +86,9 @@
     for (const tab of document.querySelectorAll(".tabs button")) tab.setAttribute("aria-selected", String(tab.dataset.view === state.view));
     for (const v of VIEWS) $(`#view-${v}`).hidden = state.view !== v;
     $("#cve-tab-count").textContent = cveItems().length ? String(cveItems().length) : "";
+    const generated = state.dayData?.generated;
+    $("#updated").textContent = generated ? `Updated ${fmtTime(generated)}` : "";
+    $("#updated").title = generated ? `Last fetch for this day: ${new Date(generated).toLocaleString()}` : "";
     if (state.view === "news") renderNews();
     else if (state.view === "cves") renderCves();
     else renderSources();
