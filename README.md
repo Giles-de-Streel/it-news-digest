@@ -1,6 +1,6 @@
 # IT News Digest
 
-A daily list of IT and security news pulled from 17 feeds, with duplicate stories merged across sources. You review each story, approve or reject it, and the approved ones make up the day's digest, ready to copy as Markdown or plain text.
+A daily list of IT and security news pulled from 19 feeds, with duplicate stories merged across sources. You review each story, approve or reject it, and the approved ones make up the day's digest, ready to copy as Markdown or plain text.
 
 ## How it works
 
@@ -32,4 +32,4 @@ Running the fetch again on the same day adds new stories and keeps existing ones
 
 ## Sources
 
-Edit `sources.json` to add or remove feeds (`name`, `url`, `category`). The Sources tab shows any feed that fails. Checked and left out in Oct 2026: CISA advisories (403 to scripted clients), MSRC blog (malformed XML), Windows release health RSS (404).
+Edit `sources.json` to add or remove feeds (`name`, `url`, `category`). The Sources tab shows any feed that fails. Checked and left out in Oct 2026: CISA advisories (403 to scripted clients), MSRC blog (malformed XML), Windows release health RSS (404), SANS NewsBites (no feed, web page only). SANS is covered by the Internet Storm Center diaries. The fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.

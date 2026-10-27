@@ -28,6 +28,8 @@ ROOT = Path(__file__).resolve().parent.parent
 USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
 ATOM = "{http://www.w3.org/2005/Atom}"
 CONTENT = "{http://purl.org/rss/1.0/modules/content/}"
+RSS1 = "{http://purl.org/rss/1.0/}"
+DC = "{http://purl.org/dc/elements/1.1/}"
 SUMMARY_CHARS = 320
 
 # Keyword rules for topic tags. A story can carry several tags.
@@ -121,7 +123,14 @@ def parse_feed(data, source):
             "title": _text(it, "title"),
             "url": _text(it, "link", "guid"),
             "summary": _text(it, "description", f"{CONTENT}encoded"),
-            "published": _text(it, "pubDate", "{http://purl.org/dc/elements/1.1/}date"),
+            "published": _text(it, "pubDate", f"{DC}date"),
+        })
+    for it in root.iter(f"{RSS1}item"):  # RSS 1.0 / RDF (e.g. Slashdot)
+        items.append({
+            "title": _text(it, f"{RSS1}title"),
+            "url": _text(it, f"{RSS1}link"),
+            "summary": _text(it, f"{RSS1}description", f"{CONTENT}encoded"),
+            "published": _text(it, f"{DC}date"),
         })
     for it in root.iter(f"{ATOM}entry"):
         link = ""
