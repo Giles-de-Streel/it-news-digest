@@ -4,8 +4,6 @@
   "use strict";
 
   const LS_VIEW = "ind.view";
-  const LS_TOKEN = "ind.fetchToken";
-  const WORKFLOW = "fetch-news.yml";
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
 
   const state = {
@@ -207,110 +205,12 @@
     state.source = srcSel.value;
   }
 
-  // ---------- manual fetch (dispatches the GitHub Actions workflow) ----------
-  function repo() {
-    const host = location.hostname.match(/^([^.]+)\.github\.io$/i);
-    const seg = location.pathname.split("/").filter(Boolean)[0];
-    return host && seg ? `${host[1]}/${seg}` : "Giles-de-Streel/it-news-digest";
-  }
-  const token = () => store.get(LS_TOKEN, "");
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-  const todayEastern = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
-
-  async function gh(path, opts = {}) {
-    return fetch(`https://api.github.com/repos/${repo()}${path}`, {
-      ...opts,
-      cache: "no-store",
-      headers: { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", Authorization: `Bearer ${token()}`, ...(opts.headers || {}) },
-    });
-  }
-
-  function fetchStatus(text, href) {
-    const box = $("#fetch-status");
-    box.hidden = !text;
-    box.replaceChildren(el("div", { class: "wrap" }, el("span", { text: text || "" }), href ? link(href, "View run on GitHub") : null));
-  }
-
-  function openFetchSetup(message) {
-    $("#fetch-token").value = token();
-    $("#fetch-gh-link").href = `https://github.com/${repo()}/actions/workflows/${WORKFLOW}`;
-    $("#fetch-setup-status").textContent = message || "";
-    $("#fetch-setup").showModal();
-  }
-
-  let fetching = false;
-  async function runFetch() {
-    if (fetching) return;
-    if (!token()) { openFetchSetup(); return; }
-    fetching = true;
-    $("#fetch-btn").disabled = true;
-    const started = new Date(Date.now() - 60_000); // allow for clock skew when matching the run
-    try {
-      fetchStatus("Starting the fetch…");
-      const res = await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {
-        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ref: "main" }),
-      });
-      if (res.status === 401 || res.status === 403 || res.status === 404) {
-        fetchStatus("");
-        openFetchSetup(`GitHub refused the request (${res.status}). Check the token has Actions: Read and write on this repository.`);
-        return;
-      }
-      if (!res.ok) throw new Error(`GitHub ${res.status}`);
-
-      // Find the run we just started and follow it
-      let run = null;
-      for (let i = 0; i < 90; i++) {
-        await sleep(i ? 10_000 : 4_000);
-        const r = await gh(`/actions/workflows/${WORKFLOW}/runs?event=workflow_dispatch&per_page=5`);
-        if (!r.ok) continue;
-        run = (await r.json()).workflow_runs.find((x) => new Date(x.created_at) >= started) || null;
-        if (!run) { fetchStatus("Waiting for GitHub to start the fetch…"); continue; }
-        if (run.status === "completed") break;
-        fetchStatus(`Fetching news (${run.status.replace("_", " ")})…`, run.html_url);
-      }
-      if (!run || run.status !== "completed") throw new Error("the fetch is taking longer than expected");
-      if (run.conclusion !== "success") { fetchStatus(`The fetch ${run.conclusion}.`, run.html_url); return; }
-
-      // The run committed new data; wait for GitHub Pages to publish it
-      fetchStatus("Fetched. Waiting for the site to publish the update…", run.html_url);
-      const day = todayEastern();
-      for (let i = 0; i < 30; i++) {
-        await sleep(10_000);
-        const d = await fetch(`data/days/${day}.json?t=${Date.now()}`, { cache: "no-store" }).then((x) => (x.ok ? x.json() : null)).catch(() => null);
-        if (d && new Date(d.generated) >= new Date(run.created_at)) {
-          await loadIndex();
-          await loadDay(day);
-          populateFilters();
-          render();
-          fetchStatus(`Updated at ${fmtTime(d.generated)}.`);
-          setTimeout(() => fetchStatus(""), 8000);
-          return;
-        }
-      }
-      fetchStatus("Fetched, but the site hasn't published it yet. Reload the page in a minute.", run.html_url);
-    } catch (e) {
-      fetchStatus(`Fetch failed: ${e.message}`);
-    } finally {
-      fetching = false;
-      $("#fetch-btn").disabled = false;
-    }
-  }
-
   // ---------- events ----------
   function wire() {
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; store.set(LS_VIEW, state.view); render(); }));
     $("#search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; render(); });
     $("#day").addEventListener("change", async (e) => { await loadDay(e.target.value); populateFilters(); render(); });
-    $("#fetch-btn").addEventListener("click", runFetch);
-    $("#fetch-forget").addEventListener("click", () => { store.set(LS_TOKEN, ""); $("#fetch-token").value = ""; $("#fetch-setup-status").textContent = "Token removed from this browser."; });
-    $("#fetch-save-run").addEventListener("click", () => {
-      const value = $("#fetch-token").value.trim();
-      if (!value) { $("#fetch-setup-status").textContent = "Paste a token first."; return; }
-      store.set(LS_TOKEN, value);
-      $("#fetch-setup").close();
-      runFetch();
-    });
   }
 
   async function init() {

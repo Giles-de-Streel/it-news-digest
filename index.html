@@ -19,26 +19,9 @@
           <button role="tab" data-view="news" aria-selected="true">News</button>
           <button role="tab" data-view="sources" aria-selected="false">Sources</button>
         </nav>
-        <button id="fetch-btn" class="primary" title="Fetch the latest news now">Fetch now</button>
       </div>
     </div>
-    <div id="fetch-status" class="fetch-status" role="status" aria-live="polite" hidden></div>
   </header>
-
-  <dialog id="fetch-setup">
-    <form method="dialog" class="settings-form">
-      <h2>Fetch news now</h2>
-      <p class="muted">The button starts the repo's <b>Fetch news</b> workflow on GitHub. That needs a fine-grained token with access to <b>only this repository</b> and the permission <b>Actions: Read and write</b>. It's stored only in this browser and sent only to api.github.com.</p>
-      <label>Token <input id="fetch-token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
-      <p class="muted">No token? <a id="fetch-gh-link" target="_blank" rel="noopener noreferrer">Run the workflow on GitHub</a> instead (Run workflow button).</p>
-      <p id="fetch-setup-status" class="muted" aria-live="polite"></p>
-      <div class="actions">
-        <button type="button" id="fetch-forget" class="ghost">Forget token</button>
-        <button value="cancel" class="ghost">Cancel</button>
-        <button type="button" id="fetch-save-run" class="primary">Save and fetch</button>
-      </div>
-    </form>
-  </dialog>
 
   <main class="wrap">
     <section id="view-news" class="view">
