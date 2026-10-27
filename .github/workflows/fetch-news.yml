@@ -6,10 +6,10 @@ on:
       hours:
         description: "Only keep stories published in the last N hours"
         default: "36"
-  # Daily run, disabled until reviewed. Uncomment to enable.
-  # Times are UTC: 10:30 UTC is 06:30 Eastern in summer, 05:30 in winter.
-  # schedule:
-  #   - cron: "30 10 * * *"
+  # Daily run. Times are UTC: 10:30 UTC is 06:30 Eastern in summer, 05:30 in winter.
+  # GitHub may start scheduled runs some minutes late at busy times.
+  schedule:
+    - cron: "30 10 * * *"
 
 permissions:
   contents: write
@@ -36,13 +36,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/days data/index.json
+          git add data/days data/index.json data/cve_scores.json
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
           git commit -m "News for $(TZ=America/New_York date +%F)"
-          # The vetting page may have committed in the meantime; rebase onto it
+          # Another push may have landed in the meantime; rebase onto it
           for i in 1 2 3; do
             git pull --rebase --quiet && git push && exit 0
             sleep 5

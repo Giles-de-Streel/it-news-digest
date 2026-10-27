@@ -118,3 +118,25 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .cve .summary { margin: 4px 0 0; font-size: 14px; }
 .chip.jump { border-color: var(--bad-strong); color: var(--bad); font-weight: 600; }
 #cves { scroll-margin-top: 70px; }
+
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button.ghost { background: transparent; }
+button:disabled { opacity: .6; cursor: progress; }
+@media (prefers-color-scheme: dark) { button.primary { color: #0d1117; } }
+.actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+
+.fetch-status { background: var(--accent-soft); color: var(--text); border-top: 1px solid var(--border); font-size: 14px; }
+.fetch-status .wrap { display: flex; flex-wrap: wrap; gap: 4px 12px; padding-top: 6px; padding-bottom: 6px; }
+
+dialog { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); width: min(480px, calc(100vw - 32px)); padding: 0; }
+dialog::backdrop { background: rgba(0,0,0,.4); }
+.settings-form { display: grid; gap: 10px; padding: 18px; }
+.settings-form h2 { margin: 0; font-size: 18px; }
+.settings-form p { margin: 0; font-size: 13.5px; }
+.settings-form label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+.settings-form input { width: 100%; }
+
+.meta .cvss { color: #fff; font-weight: 700; border-radius: 999px; padding: 0 8px; text-decoration: none; }
+.meta .cvss.sev-critical { background: var(--bad-strong); }
+.meta .cvss.sev-high { background: var(--warn-strong); }
+.meta .cvss:hover { text-decoration: underline; }

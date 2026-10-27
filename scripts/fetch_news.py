@@ -27,6 +27,7 @@ import xml.etree.ElementTree as ET
 # python -I (used in the workflow) leaves the script's folder off sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_sources  # noqa: E402
+import cve_scores  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
@@ -271,6 +272,32 @@ def cluster(items):
     return result
 
 
+def add_cve_scores(items):
+    """Attach CVSS scores for every CVE a news story mentions (title, summary, other outlets' titles).
+
+    Sets item["cves"] = [{"id", "score", "severity", "version", "scored_by"}], highest first.
+    NVD CVE records (kind "cve") already carry their own score and are skipped.
+    """
+    mentions = {}
+    for it in items:
+        if it.get("kind") == "cve":
+            continue
+        ids = cve_scores.find_cves(it["title"], it["summary"], *(c["title"] for c in it.get("also_covered_by", [])))
+        if ids:
+            mentions[it["id"]] = ids
+    all_ids = sorted({c for ids in mentions.values() for c in ids})
+    if not all_ids:
+        return "no CVEs mentioned"
+    scores, looked_up, errors = cve_scores.scores_for(all_ids, ROOT / "data" / "cve_scores.json", USER_AGENT)
+    for it in items:
+        if it["id"] in mentions:
+            found = [{"id": c, **scores[c]} for c in mentions[it["id"]] if scores.get(c)]
+            it["cves"] = sorted(found, key=lambda x: -x["score"])
+    scored = sum(1 for c in all_ids if scores.get(c))
+    note = f"{len(all_ids)} CVEs mentioned, {scored} with a CVSS score ({looked_up} looked up"
+    return note + (f", {errors} lookups failed)" if errors else ")")
+
+
 def local_today():
     try:
         from zoneinfo import ZoneInfo
@@ -346,6 +373,7 @@ def main():
 
     existing = json.loads(day_path.read_text(encoding="utf-8")).get("items", []) if day_path.exists() else []
     merged = merge_day(existing, clustered)
+    cve_note = add_cve_scores(merged)
 
     payload = {
         "date": day,
@@ -363,7 +391,7 @@ def main():
     (ROOT / "data" / "index.json").write_text(json.dumps({"days": index}, indent=1) + "\n", encoding="utf-8")
 
     failed = [s for s in status if s["error"]]
-    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources)")
+    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}")
     for s in failed:
         print(f"  FAILED {s['source']}: {s['error']}", file=sys.stderr)
     # Fail the run only if every source failed

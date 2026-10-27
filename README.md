@@ -5,11 +5,12 @@ A daily list of IT and security news from 25 sources, with the same story from d
 ## How it works
 
 1. `scripts/fetch_news.py` reads every source in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library.
-2. The **Fetch news** GitHub Actions workflow runs that script and commits the result. It's manual for now (Actions tab, Run workflow). The daily schedule is in the workflow file, commented out.
+2. The **Fetch news** GitHub Actions workflow runs that script daily at 10:30 UTC (06:30 Eastern in summer, 05:30 in winter) and commits the result. To fetch on demand, use **Fetch now** on the page, or Actions → Fetch news → Run workflow on GitHub. The page button needs a fine-grained token limited to this repository with **Actions: Read and write**; it's stored only in that browser and sent only to api.github.com.
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
    - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
    - **Other stories:** single-source stories, newest first.
    - **New critical CVEs:** CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. These are listed separately and never merged into news stories.
+   - Stories that mention a CVE scored High (7.0+) or Critical (9.0+) get a **CVSS badge** linking to NVD. Scores come from the CVE Program's record API (cveawg.mitre.org), using the highest of the CNA's and enrichers' (e.g. CISA's) scores, and are cached in `data/cve_scores.json`.
    - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
 
 Summaries come from each source's own text, shortened. No AI service is involved.
