@@ -187,7 +187,8 @@
   function renderSources() {
     const d = state.dayData || {};
     $("#sources-meta").textContent = d.generated ? `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.` : "";
-    $("#sources-body").replaceChildren(...(d.sources || []).map((s) => el("tr", {},
+    const sorted = [...(d.sources || [])].sort((a, b) => a.source.localeCompare(b.source, undefined, { sensitivity: "base" }));
+    $("#sources-body").replaceChildren(...sorted.map((s) => el("tr", {},
       el("td", { text: s.source }),
       el("td", { text: String(s.fetched) }),
       el("td", { text: String(s.recent) }),
