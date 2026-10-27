@@ -128,8 +128,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .cve-body { min-width: 0; }
 .cve .meta a { font-weight: 600; }
 .cve .summary { margin: 4px 0 0; font-size: 14px; }
-.chip.jump { border-color: var(--bad-strong); color: var(--bad); font-weight: 600; }
-#cves { scroll-margin-top: 70px; }
+.tab-count { font-size: 12px; font-weight: 600; color: var(--bad); margin-left: 2px; }
+.tab-count:empty { display: none; }
+.page-head { margin-top: 20px; }
 .meta .cvss { color: #fff; font-weight: 700; border-radius: 999px; padding: 0 8px; text-decoration: none; }
 .meta .cvss.sev-critical { background: var(--bad-strong); }
 .meta .cvss.sev-high { background: var(--warn-strong); }

@@ -6,7 +6,7 @@
   <title>IT News</title>
   <meta name="description" content="Daily IT and security news from multiple sources, de-duplicated and ranked by how widely each story is reported.">
   <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="style.css?v=2026102704">
+  <link rel="stylesheet" href="style.css?v=2026102705">
 </head>
 <body>
   <header class="topbar">
@@ -25,6 +25,7 @@
         <select id="day"></select>
         <nav class="tabs" role="tablist">
           <button role="tab" data-view="news" aria-selected="true">News</button>
+          <button role="tab" data-view="cves" aria-selected="false">CVEs <span id="cve-tab-count" class="tab-count"></span></button>
           <button role="tab" data-view="sources" aria-selected="false">Sources</button>
         </nav>
       </div>
@@ -41,6 +42,17 @@
       <div id="news"></div>
     </section>
 
+    <section id="view-cves" class="view" hidden>
+      <div class="section-head page-head">
+        <h2>New critical CVEs</h2>
+        <span id="cves-meta" class="muted"></span>
+      </div>
+      <div class="filters">
+        <input id="cve-search" type="search" placeholder="Search CVE IDs, products and descriptions">
+      </div>
+      <div id="cves-list"></div>
+    </section>
+
     <section id="view-sources" class="view" hidden>
       <h2>Sources for this day</h2>
       <p id="sources-meta" class="muted"></p>
@@ -51,6 +63,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026102704"></script>
+  <script src="app.js?v=2026102705"></script>
 </body>
 </html>

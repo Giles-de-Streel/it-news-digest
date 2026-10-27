@@ -4,6 +4,7 @@
   "use strict";
 
   const LS_VIEW = "ind.view";
+  const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
 
   const state = {
@@ -14,6 +15,7 @@
     topic: "",
     source: "",
     query: "",
+    cveQuery: "",
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -61,21 +63,19 @@
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it));
   const cveItems = () => (state.dayData?.items || []).filter(isCve);
 
-  // Search and source filters apply to both lists; topic filters apply to news only
-  function matches(it, useTopic) {
-    const q = state.query.toLowerCase();
-    if (useTopic && state.topic && !it.topics.includes(state.topic)) return false;
-    if (state.source && !sourcesOf(it).includes(state.source)) return false;
-    if (q && !`${it.title} ${it.summary}`.toLowerCase().includes(q)) return false;
-    return true;
-  }
-
   function visibleItems() {
-    return newsItems().filter((it) => matches(it, true)).sort(rank);
+    const q = state.query.toLowerCase();
+    return newsItems().filter((it) => {
+      if (state.topic && !it.topics.includes(state.topic)) return false;
+      if (state.source && !sourcesOf(it).includes(state.source)) return false;
+      if (q && !`${it.title} ${it.summary}`.toLowerCase().includes(q)) return false;
+      return true;
+    }).sort(rank);
   }
 
   function visibleCves() {
-    return cveItems().filter((it) => matches(it, false))
+    const q = state.cveQuery.toLowerCase();
+    return cveItems().filter((it) => !q || `${it.title} ${it.summary}`.toLowerCase().includes(q))
       .sort((a, b) => b.cvss.score - a.cvss.score || (b.published || "").localeCompare(a.published || ""));
   }
 
@@ -84,9 +84,10 @@
 
   function render() {
     for (const tab of document.querySelectorAll(".tabs button")) tab.setAttribute("aria-selected", String(tab.dataset.view === state.view));
-    $("#view-news").hidden = state.view !== "news";
-    $("#view-sources").hidden = state.view !== "sources";
+    for (const v of VIEWS) $(`#view-${v}`).hidden = state.view !== v;
+    $("#cve-tab-count").textContent = cveItems().length ? String(cveItems().length) : "";
     if (state.view === "news") renderNews();
+    else if (state.view === "cves") renderCves();
     else renderSources();
   }
 
@@ -98,14 +99,12 @@
       el("button", { class: `chip${state.topic ? "" : " on"}`, text: `All topics ${items.length}`, onclick: () => { state.topic = ""; render(); } }),
       ...Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
         el("button", { class: `chip${state.topic === t ? " on" : ""}`, text: `${t} ${n}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } })),
-      cveItems().length ? el("button", { class: "chip jump", text: `Critical CVEs ${cveItems().length} ↓`, onclick: () => $("#cves")?.scrollIntoView({ behavior: "smooth" }) }) : null,
     );
 
     const list = visibleItems();
-    const cves = visibleCves();
     const box = $("#news");
-    if (!list.length && !cves.length) {
-      box.replaceChildren(el("p", { class: "empty", text: (state.dayData?.items || []).length ? "Nothing matches these filters." : "No stories for this day yet." }));
+    if (!list.length) {
+      box.replaceChildren(el("p", { class: "empty", text: items.length ? "Nothing matches these filters." : "No stories for this day yet." }));
       return;
     }
     const top = list.filter((it) => coverage(it) > 1);
@@ -113,20 +112,20 @@
     box.replaceChildren(
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
       rest.length ? section(top.length ? "Other stories" : "Stories", `${rest.length} from a single source, newest first`, rest) : null,
-      cves.length ? cveSection(cves) : null,
     );
   }
 
-  function cveSection(cves) {
+  function renderCves() {
+    const all = cveItems();
+    const cves = visibleCves();
     const nvd = (state.dayData?.sources || []).find((s) => s.source === "NVD new CVEs");
     const hours = state.dayData?.window_hours || 36;
-    return el("section", { class: "news-section", id: "cves" },
-      el("div", { class: "section-head" },
-        el("h2", { text: "New critical CVEs" }),
-        el("span", { class: "muted", text: `${cves.length} published to NVD in the last ${hours} hours with a CVSS score of 9.0 or higher, highest first${nvd?.error ? " (NVD fetch failed, see Sources)" : ""}` }),
-      ),
-      el("ul", { class: "cve-list" }, ...cves.map(cveRow)),
-    );
+    $("#cves-meta").textContent = nvd?.error
+      ? `The NVD fetch failed for this day: ${nvd.error}`
+      : `${all.length} CVEs published to NIST's NVD in the ${hours} hours before this fetch with a CVSS score of 9.0 or higher, highest first.`;
+    $("#cves-list").replaceChildren(cves.length
+      ? el("ul", { class: "cve-list" }, ...cves.map(cveRow))
+      : el("p", { class: "empty", text: all.length ? "Nothing matches this search." : "No critical CVEs for this day." }));
   }
 
   function cveRow(it) {
@@ -198,16 +197,26 @@
     const daySel = $("#day");
     daySel.replaceChildren(...state.days.map((d) => el("option", { value: d.date, text: `${d.date} (${d.count})` })));
     daySel.value = state.day || "";
-    const sources = [...new Set((state.dayData?.items || []).flatMap(sourcesOf))].sort();
+    const sources = [...new Set(newsItems().flatMap(sourcesOf))].sort();
     const srcSel = $("#source-filter");
     srcSel.replaceChildren(el("option", { value: "", text: "All sources" }), ...sources.map((s) => el("option", { value: s, text: s })));
     srcSel.value = sources.includes(state.source) ? state.source : "";
     state.source = srcSel.value;
   }
 
+  function setView(view) {
+    state.view = view;
+    store.set(LS_VIEW, view);
+    history.replaceState(null, "", view === "news" ? location.pathname + location.search : `#${view}`);
+    render();
+    window.scrollTo(0, 0);
+  }
+
   // ---------- events ----------
   function wire() {
-    document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; store.set(LS_VIEW, state.view); render(); }));
+    document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+    window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
+    $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
     $("#search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; render(); });
     $("#day").addEventListener("change", async (e) => { await loadDay(e.target.value); populateFilters(); render(); });
@@ -215,8 +224,10 @@
 
   async function init() {
     wire();
+    // A link like ...#cves opens that tab; otherwise reopen the last tab used
+    const fromHash = location.hash.slice(1);
     const saved = store.get(LS_VIEW, "news");
-    state.view = saved === "sources" ? "sources" : "news";
+    state.view = VIEWS.includes(fromHash) ? fromHash : VIEWS.includes(saved) ? saved : "news";
     await loadIndex();
     if (state.days.length) await loadDay(state.days[0].date);
     populateFilters();
