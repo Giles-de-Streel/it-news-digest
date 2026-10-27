@@ -68,13 +68,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 }
 .topbar-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; min-height: 60px; padding-top: 8px; padding-bottom: 8px; }
 .brand { display: inline-flex; flex-wrap: nowrap; align-items: center; gap: 0; margin: 0; font-size: inherit; white-space: nowrap; }
-.brand-icon { display: block; width: 18px; height: 18px; flex: 0 0 18px; margin-left: 14px; }
-.brand-icon .stop-a { stop-color: #2563eb; }
-.brand-icon .stop-b { stop-color: #7c3aed; }
-@media (prefers-color-scheme: dark) {
-  .brand-icon .stop-a { stop-color: #60a5fa; }
-  .brand-icon .stop-b { stop-color: #a78bfa; }
-}
+.brand-icon { display: block; width: 18px; height: 18px; flex: 0 0 18px; margin-left: 14px; color: var(--text); }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: .14em; line-height: 1; color: var(--text); }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
