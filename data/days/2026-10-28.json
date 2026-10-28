@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-28T18:58:48+00:00",
+ "generated": "2026-10-28T20:30:30+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -119,8 +119,8 @@
   },
   {
    "source": "CISA KEV",
-   "fetched": 1760,
-   "recent": 2,
+   "fetched": 1762,
+   "recent": 4,
    "error": null
   },
   {
@@ -149,8 +149,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 93,
-   "recent": 93,
+   "fetched": 96,
+   "recent": 96,
    "error": null
   },
   {
@@ -186,17 +186,179 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 22,
+   "recent": 23,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "c61374f33082",
+   "title": "CVE-2026-63190: FearlessCMS is a flat-file `content` management system centered on simplicity and open source.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63190",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T20:18:37.470000+00:00",
+   "summary": "FearlessCMS is a flat-file `content` management system centered on simplicity and open source. Prior to version 0.1.4, five debug/test PHP scripts under `admin/` perform privileged operations without `isLoggedIn()` authentication checks, CSRF protection or adequate `path` validation.",
+   "kind": "cve",
+   "cve": "CVE-2026-63190",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63190",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1dc070bc1dee",
+   "title": "CVE-2026-117574: A flaw was found in ai-gateway-payload-processing.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117574",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T20:17:21.417000+00:00",
+   "summary": "A flaw was found in ai-gateway-payload-processing. An authenticated remote attacker can exploit this vulnerability by submitting a request specifying another tenant's model identifier in the request body or header.",
+   "kind": "cve",
+   "cve": "CVE-2026-117574",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-117574",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "170a46e06f48",
+   "title": "Are AI Execs Too Out of Touch To Build For the General Public?",
+   "url": "https://slashdot.org/story/26/10/28/199238/are-ai-execs-too-out-of-touch-to-build-for-the-general-public?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T20:00:00+00:00",
+   "summary": "An anonymous reader quotes a report from TechCrunch: Former Yahoo CEO and early Google engineer Marissa Mayer is catching a lot of flak for how she uses AI. In an interview about her new app Dazzle, an AI assistant that learns from your camera roll, Mayer poses what she believes is an impressive flex for the product:…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "f9e63558f306",
+   "title": "CVE-2026-118633: A path traversal vulnerability allows a remote unauthenticated attacker to execute arbitrary code as root in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118633",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T19:17:31.537000+00:00",
+   "summary": "A path traversal vulnerability allows a remote unauthenticated attacker to execute arbitrary code as root in Sophos UTM (all versions) after winning a race condition by sustaining repeated attacks for a few minutes when the email proxy is used with scanning enabled.",
+   "kind": "cve",
+   "cve": "CVE-2026-118633",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118633",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "69b848859558",
+   "title": "CVE-2026-118264: Echo is a Go web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118264",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T19:17:31.237000+00:00",
+   "summary": "Echo is a Go web framework. From 4.0.0 until 4.16.1 and 5.4.1, Echo's Proxy middleware selects a raw tunnel from a client WebSocket upgrade request before verifying that the configured upstream accepted the upgrade.",
+   "kind": "cve",
+   "cve": "CVE-2026-118264",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118264",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e782ffdc06ed",
+   "title": "Linux Kernel Developers Considering Removal Of KGDB Debugging Functionality",
+   "url": "https://www.phoronix.com/news/Linux-Considers-Dropping--KGDB",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T19:15:07+00:00",
+   "summary": "Merged to the kernel all the way back in Linux 2.6.26 in 2008 was KGDB for improving the kernel debugging experience. KGDB works in conjunction with the GNU Debugger (GDB) to debug the kernel in a similar fashion to user-space debugging. KGDB requires the use of a second computer connected via serial or network cable.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Networking"
+   ]
+  },
+  {
+   "id": "4c26b0f2c6e6",
+   "title": "Seagate Exos M HAMR SMR Drives Join Broadcom’s eHBA 9600 Approved Vendor List After Azure Qualification",
+   "url": "https://www.storagereview.com/news/seagate-exos-m-hamr-smr-broadcom-ehba-9600-approved-vendor-list-azure",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-28T19:12:31+00:00",
+   "summary": "Seagate announced that its Mozaic hard drives built on heat-assisted magnetic recording (HAMR) and configured for shingled magnetic recording (SMR) have been added to Broadcom’s approved vendor list for its host bus adapters, which Seagate calls the first and only SMR drives on the list.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a6ba081222c4",
+   "title": "Ollama 0.40.11 Hands-On: Running Local LLMs on Windows",
+   "url": "https://www.storagereview.com/review/ollama-0-40-11-hands-on-running-local-llms-on-windows",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-10-28T19:11:35+00:00",
+   "summary": "Ollama 0.40.11 gives Windows users a desktop chat application and a local model runtime for other software. Ollama has also moved beyond its original command-line interface, adding a searchable model selector, image attachments, and links to coding tools.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "673e8d59294e",
+   "title": "Amazon Finds 'Tokenmaxxing' Lacks Productivity Gains",
+   "url": "https://tech.slashdot.org/story/26/10/28/1816223/amazon-finds-tokenmaxxing-lacks-productivity-gains?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T19:00:00+00:00",
+   "summary": "Ancient Slashdot reader Gilmoure shares a report from Tom's Hardware, adding: \"Huh. Looks like consuming one's own slop does not turn the wheels of industry.\" From the report: Amazon wants its engineers to quit chasing token counts, warning that heavy AI usage does not automatically mean better work.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "fd8b4e646928",
    "title": "Altera Agilex 27 is the First Agilex 2X Platform Adding 800GbE and 1.6TbE and More",
@@ -1743,6 +1905,84 @@
    "topics": [
     "General IT"
    ]
+  },
+  {
+   "id": "ce69bcf7884b",
+   "title": "CISA KEV adds CVE-2026-41709: Broadcom VMWare ESX Insufficient Logging Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-10-28T12:00:00+00:00",
+   "summary": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged. Federal agencies must fix by 2026-11-11.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-41709",
+     "score": 2.7,
+     "severity": "Low",
+     "version": "3.1",
+     "scored_by": "vmware"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-41709",
+      "added": "2026-10-28",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-41709",
+     "score": 0.00297,
+     "percentile": 0.22291,
+     "date": "2026-10-28"
+    }
+   }
+  },
+  {
+   "id": "98eb0ea8b2ed",
+   "title": "CISA KEV adds CVE-2026-46300: Linux Kernel Missing Initialization of a Variable Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-10-28T12:00:00+00:00",
+   "summary": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-46300",
+     "score": 7.8,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-46300",
+      "added": "2026-10-28",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-46300",
+     "score": 0.10192,
+     "percentile": 0.95651,
+     "date": "2026-10-28"
+    }
+   }
   },
   {
    "id": "ce2e9511cbab",
