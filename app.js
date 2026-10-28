@@ -6,6 +6,9 @@
   const LS_VIEW = "ind.view";
   const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
+  const SOURCE_CAP = 8; // single-source stories shown per source before the rest fold away
+  const WEEK = "week"; // day-picker value for the combined last-7-days view
+  const WEEK_DAYS = 7;
 
   const state = {
     days: [],
@@ -47,9 +50,21 @@
     const res = await fetch(`data/index.json?t=${Date.now()}`, { cache: "no-store" });
     state.days = res.ok ? (await res.json()).days || [] : [];
   }
-  async function loadDay(day) {
+  async function fetchDay(day) {
     const res = await fetch(`data/days/${day}.json`, { cache: "no-store" });
-    state.dayData = res.ok ? await res.json() : { items: [], sources: [] };
+    return res.ok ? await res.json() : { date: day, items: [], sources: [] };
+  }
+  async function loadDay(day) {
+    if (day === WEEK) {
+      // Each day file only holds stories no earlier day listed, so the days combine without overlap
+      const days = await Promise.all(state.days.slice(0, WEEK_DAYS).map((d) => fetchDay(d.date)));
+      const seen = new Set();
+      const items = days.flatMap((d) => d.items || []).filter((it) => !seen.has(it.id) && seen.add(it.id));
+      const latest = days[0] || {};
+      state.dayData = { ...latest, items, week: days.map((d) => d.date) };
+    } else {
+      state.dayData = await fetchDay(day);
+    }
     state.day = day;
   }
 
@@ -112,10 +127,24 @@
     }
     const top = list.filter((it) => coverage(it) > 1);
     const rest = list.filter((it) => coverage(it) === 1);
+    // Keep busy sources from crowding the list: show each source's newest few, fold the rest.
+    // Picking that source or searching shows everything.
+    const capped = !state.source && !state.query;
+    const shown = [], folded = new Map(), perSource = {};
+    for (const it of rest) {
+      perSource[it.source] = (perSource[it.source] || 0) + 1;
+      if (!capped || perSource[it.source] <= SOURCE_CAP) shown.push(it);
+      else folded.set(it.source, [...(folded.get(it.source) || []), it]);
+    }
+    const more = [...folded].map(([src, items]) => el("details", { class: "more" },
+      el("summary", { text: `${items.length} more from ${src}` }),
+      el("div", { class: "cards" }, ...items.map(card))));
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
     box.replaceChildren(...[
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
-      rest.length ? section(top.length ? "Other stories" : "Stories", `${rest.length} from a single source, newest first`, rest) : null,
+      rest.length ? section(top.length ? "Other stories" : "Stories",
+        `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
+        shown, more) : null,
     ].filter(Boolean));
   }
 
@@ -124,9 +153,10 @@
     const cves = visibleCves();
     const nvd = (state.dayData?.sources || []).find((s) => s.source === "NVD new CVEs");
     const hours = state.dayData?.window_hours || 36;
-    $("#cves-meta").textContent = nvd?.error
+    const span = state.dayData?.week ? `over the last ${state.dayData.week.length} days` : `in the ${hours} hours before this fetch`;
+    $("#cves-meta").textContent = nvd?.error && !state.dayData?.week
       ? `The NVD fetch failed for this day: ${nvd.error}`
-      : `${all.length} CVEs published to NIST's NVD in the ${hours} hours before this fetch with a CVSS score of 9.0 or higher, highest first.`;
+      : `${all.length} CVEs published to NIST's NVD ${span} with a CVSS score of 9.0 or higher, highest first. EPSS is the estimated chance of exploitation in the next 30 days; "Exploited" means CISA lists it as known exploited.`;
     $("#cves-list").replaceChildren(cves.length
       ? el("ul", { class: "cve-list" }, ...cves.map(cveRow))
       : el("p", { class: "empty", text: all.length ? "Nothing matches this search." : "No critical CVEs for this day." }));
@@ -140,6 +170,8 @@
         el("div", { class: "meta" },
           link(it.url, it.cve),
           link(it.cve_org_url, "cve.org"),
+          kevBadge(it),
+          epssBadge(it),
           el("span", { text: `CVSS ${c.version} · ${c.severity} · scored by ${c.scored_by}` }),
           el("span", { text: fmtTime(it.published) }),
         ),
@@ -148,11 +180,38 @@
     );
   }
 
-  function section(title, note, items) {
+  function section(title, note, items, extra = []) {
     return el("section", { class: "news-section" },
       el("div", { class: "section-head" }, el("h2", { text: title }), el("span", { class: "muted", text: note })),
       el("div", { class: "cards" }, ...items.map(card)),
+      ...extra,
     );
+  }
+
+  // EPSS: FIRST.org's estimated probability of exploitation in the next 30 days
+  const fmtPct = (p) => (p >= 0.01 ? `${Math.round(p * 100)}%` : p >= 0.001 ? `${(p * 100).toFixed(1)}%` : "<0.1%");
+  function epssBadge(it) {
+    const e = it.exploit?.epss;
+    if (!e) return null;
+    const level = e.score >= 0.1 ? "high" : e.score >= 0.01 ? "mid" : "low";
+    return el("a", {
+      class: `epss epss-${level}`, href: "https://www.first.org/epss/", target: "_blank", rel: "noopener noreferrer",
+      title: `${e.id}: EPSS ${fmtPct(e.score)} chance of exploitation in the next 30 days, higher than ${(e.percentile * 100).toFixed(1)}% of all CVEs (FIRST.org, ${e.date})`,
+      text: `EPSS ${fmtPct(e.score)}`,
+    });
+  }
+
+  // KEV: CISA's catalog of vulnerabilities known to be exploited
+  function kevBadge(it) {
+    const kev = it.exploit?.kev || [];
+    if (!kev.length) return null;
+    const ransomware = kev.some((k) => k.ransomware);
+    return el("a", {
+      class: "kev", target: "_blank", rel: "noopener noreferrer",
+      href: `https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=${encodeURIComponent(kev[0].id)}`,
+      title: kev.map((k) => `${k.id}: in CISA's Known Exploited Vulnerabilities catalog since ${k.added}${k.ransomware ? ", used in ransomware campaigns" : ""}`).join("\n"),
+      text: `Exploited${ransomware ? " · ransomware" : ""}`,
+    });
   }
 
   function cvssBadge(it) {
@@ -173,7 +232,9 @@
     return el("article", { class: `card${n > 1 ? " multi" : ""}` },
       el("div", { class: "meta" },
         n > 1 ? el("span", { class: "count", text: `${n} sources` }) : null,
+        kevBadge(it),
         cvssBadge(it),
+        epssBadge(it),
         el("span", { class: "source", text: it.source }),
         el("span", { text: fmtTime(it.published) }),
       ),
@@ -187,7 +248,9 @@
 
   function renderSources() {
     const d = state.dayData || {};
-    $("#sources-meta").textContent = d.generated ? `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.` : "";
+    $("#sources-meta").textContent = !d.generated ? ""
+      : d.week ? `Showing the latest day's fetch (${d.date}, ${fmtTime(d.generated)}). Pick a single day to see its sources.`
+      : `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.`;
     const sorted = [...(d.sources || [])].sort((a, b) => a.source.localeCompare(b.source, undefined, { sensitivity: "base" }));
     $("#sources-body").replaceChildren(...sorted.map((s) => el("tr", {},
       el("td", { text: s.source }),
@@ -199,7 +262,10 @@
 
   function populateFilters() {
     const daySel = $("#day");
-    daySel.replaceChildren(...state.days.map((d) => el("option", { value: d.date, text: `${d.date} (${d.count})` })));
+    const weekCount = state.days.slice(0, WEEK_DAYS).reduce((n, d) => n + d.count, 0);
+    daySel.replaceChildren(
+      ...(state.days.length > 1 ? [el("option", { value: WEEK, text: `Last ${Math.min(WEEK_DAYS, state.days.length)} days (${weekCount})` })] : []),
+      ...state.days.map((d) => el("option", { value: d.date, text: `${d.date} (${d.count})` })));
     daySel.value = state.day || "";
     const sources = [...new Set(newsItems().flatMap(sourcesOf))].sort();
     const srcSel = $("#source-filter");

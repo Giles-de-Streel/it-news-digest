@@ -10,6 +10,8 @@
   --bad: #b3261e;
   --bad-strong: #b3261e;
   --warn-strong: #b45309;
+  --warn: #9a4a06;
+  --kev: #7f1d1d;
   --radius: 10px;
   color-scheme: light;
 }
@@ -26,6 +28,8 @@
     --bad: #f08a80;
     --bad-strong: #c62828;
     --warn-strong: #b45309;
+    --warn: #f0a960;
+    --kev: #991b1b;
     color-scheme: dark;
   }
 }
@@ -137,3 +141,12 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .meta .cvss.sev-critical { background: var(--bad-strong); }
 .meta .cvss.sev-high { background: var(--warn-strong); }
 .meta .cvss:hover { text-decoration: underline; }
+.meta .kev { color: #fff; font-weight: 700; border-radius: 999px; padding: 0 8px; text-decoration: none; background: var(--kev); }
+.meta .epss { font-weight: 600; border-radius: 999px; padding: 0 7px; text-decoration: none; border: 1px solid currentColor; }
+.meta .epss-high { color: var(--bad); }
+.meta .epss-mid { color: var(--warn); }
+.meta .epss-low { color: var(--muted); }
+.meta .kev:hover, .meta .epss:hover { text-decoration: underline; }
+.more { margin-top: 10px; }
+.more summary { cursor: pointer; color: var(--accent); font-size: 14px; padding: 4px 0; }
+.more .cards { margin-top: 8px; }

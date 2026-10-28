@@ -28,6 +28,7 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_sources  # noqa: E402
 import cve_scores  # noqa: E402
+import exploit_signals  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
@@ -299,6 +300,48 @@ def add_cve_scores(items):
     return note + (f", {errors} lookups failed)" if errors else ")")
 
 
+def add_exploit_signals(items, sources):
+    """Attach EPSS and CISA KEV status for every CVE an item mentions, scored by CVSS or not.
+
+    Sets item["exploit"] = {"kev": [{"id", "added", "ransomware"}], "epss": {"id", "score",
+    "percentile", "date"}} with the highest-EPSS CVE, or leaves it out when neither applies.
+    """
+    mentions = {}
+    for it in items:
+        if it.get("kind") == "cve":
+            mentions[it["id"]] = [it["cve"]]
+        else:
+            ids = cve_scores.find_cves(it["title"], it["summary"], *(c["title"] for c in it.get("also_covered_by", [])))
+            if ids:
+                mentions[it["id"]] = ids
+    all_ids = sorted({c for ids in mentions.values() for c in ids})
+    if not all_ids:
+        return "no CVEs for EPSS/KEV"
+    kev_url = next((s["url"] for s in sources if s.get("parser") == "cisa_kev"), None)
+    kev, kev_note = exploit_signals.kev_catalog(kev_url, ROOT / "data" / "kev.json", USER_AGENT) if kev_url else ({}, "no KEV source")
+    epss, looked_up, errors = exploit_signals.epss_for(all_ids, ROOT / "data" / "epss.json", USER_AGENT)
+    for it in items:
+        ids = mentions.get(it["id"])
+        if not ids:
+            continue
+        signal = {}
+        listed = [{"id": c, **kev[c]} for c in ids if c in kev]
+        if listed:
+            signal["kev"] = listed
+        scored = [(c, epss[c]) for c in ids if epss.get(c)]
+        if scored:
+            cve, e = max(scored, key=lambda x: x[1]["score"])
+            signal["epss"] = {"id": cve, **e}
+        if signal:
+            it["exploit"] = signal
+        else:
+            it.pop("exploit", None)
+    with_epss = sum(1 for c in all_ids if epss.get(c))
+    in_kev = sum(1 for c in all_ids if c in kev)
+    note = f"EPSS for {with_epss}/{len(all_ids)} CVEs ({looked_up} looked up{f', {errors} batches failed' if errors else ''}), {in_kev} in KEV; {kev_note}"
+    return note
+
+
 def local_today():
     try:
         from zoneinfo import ZoneInfo
@@ -375,6 +418,7 @@ def main():
     existing = json.loads(day_path.read_text(encoding="utf-8")).get("items", []) if day_path.exists() else []
     merged = merge_day(existing, clustered)
     cve_note = add_cve_scores(merged)
+    exploit_note = add_exploit_signals(merged, sources)
 
     payload = {
         "date": day,
@@ -392,7 +436,7 @@ def main():
     (ROOT / "data" / "index.json").write_text(json.dumps({"days": index}, indent=1) + "\n", encoding="utf-8")
 
     failed = [s for s in status if s["error"]]
-    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}")
+    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}; {exploit_note}")
     for s in failed:
         print(f"  FAILED {s['source']}: {s['error']}", file=sys.stderr)
     # Fail the run only if every source failed

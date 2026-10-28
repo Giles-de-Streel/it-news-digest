@@ -37,7 +37,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/days data/index.json data/cve_scores.json
+          # Day files plus the CVSS/EPSS/KEV caches; some caches only appear once a story mentions a CVE
+          git add -A data
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0

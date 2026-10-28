@@ -11,6 +11,13 @@ A daily list of IT and security news from 32 sources, with the same story from d
    - **Other stories:** single-source stories, newest first.
    - **CVEs tab** (direct link: `#cves`): CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. They have their own tab and search, and are never merged into news stories.
    - Stories that mention a CVE scored High (7.0+) or Critical (9.0+) get a **CVSS badge** linking to NVD. Scores come from the CVE Program's record API (cveawg.mitre.org), using the highest of the CNA's and enrichers' (e.g. CISA's) scores, and are cached in `data/cve_scores.json`.
+   - **Exploitation signals** for every CVE a story or CVE record mentions, scored by CVSS or not:
+     - **EPSS** badge: FIRST.org's estimated chance the CVE is exploited in the next 30 days (red at 10% or more, amber at 1% or more). Scores come from api.first.org in batches of 100, one request at a time, and are cached in `data/epss.json`, refreshed once a day. A brand-new CVE usually gets its first EPSS score the next day.
+     - **Exploited** badge: the CVE is in CISA's Known Exploited Vulnerabilities catalog ("· ransomware" when CISA records ransomware use). The catalog is downloaded each run and cached in `data/kev.json`; if CISA can't be reached, the last good copy is used.
+
+     Signals are attached when a day's file is written, so older days keep the scores they had then.
+   - **Other stories** shows at most 8 single-source stories per source; the rest fold under "N more from …". Choosing that source or searching shows all of them.
+   - **Last 7 days** in the day picker combines the last seven day files. Stories are ranked across the whole week and each card shows its date. The Sources tab then shows the latest day's fetch.
    - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
 
 Summaries come from each source's own text, shortened. No AI service is involved.
