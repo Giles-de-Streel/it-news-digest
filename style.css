@@ -156,6 +156,25 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .meta .epss-mid { color: var(--warn); }
 .meta .epss-low { color: var(--muted); }
 .meta .kev:hover, .meta .epss:hover { text-decoration: underline; }
+/* Cards / List switch */
+.seg { display: flex; gap: 2px; padding: 3px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
+.seg button { border: 0; background: transparent; border-radius: 7px; padding: 3px 12px; color: var(--muted); font-weight: 600; font-size: 14px; }
+.seg button:hover { color: var(--text); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(15, 23, 42, .15); }
+
+/* Compact list layout */
+.rows { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 16px; padding: 7px 14px; border-top: 1px solid var(--border); }
+.row:first-child { border-top: 0; }
+.row.multi { box-shadow: inset 3px 0 0 color-mix(in srgb, var(--accent) 55%, var(--border)); }
+.row-main { flex: 1 1 420px; min-width: 0; display: flex; align-items: baseline; gap: 4px 10px; }
+.row-badges { flex: none; gap: 6px; }
+.row-title { color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
+.row-title:hover { color: var(--accent); text-decoration: underline; }
+.row-meta { flex: none; font-size: 13px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 600px) { .row-main { flex-wrap: wrap; } }
+.more .rows { margin-top: 8px; }
+
 .more { margin-top: 10px; }
 .more summary { cursor: pointer; color: var(--accent); font-size: 14px; padding: 4px 0; }
 .more .cards { margin-top: 8px; }

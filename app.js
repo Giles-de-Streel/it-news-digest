@@ -4,6 +4,7 @@
   "use strict";
 
   const LS_VIEW = "ind.view";
+  const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
   const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
   const SOURCE_CAP = 8; // single-source stories shown per source before the rest fold away
@@ -19,6 +20,7 @@
     source: "",
     query: "",
     cveQuery: "",
+    layout: "cards",
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -100,6 +102,7 @@
   function render() {
     for (const tab of document.querySelectorAll(".tabs button")) tab.setAttribute("aria-selected", String(tab.dataset.view === state.view));
     for (const v of VIEWS) $(`#view-${v}`).hidden = state.view !== v;
+    for (const b of document.querySelectorAll(".seg button")) b.setAttribute("aria-pressed", String(b.dataset.layout === state.layout));
     $("#cve-tab-count").textContent = cveItems().length ? String(cveItems().length) : "";
     const generated = state.dayData?.generated;
     $("#updated").textContent = generated ? `Updated ${fmtTime(generated)}` : "";
@@ -138,7 +141,7 @@
     }
     const more = [...folded].map(([src, items]) => el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
       el("summary", { text: `${items.length} more from ${src}` }),
-      el("div", { class: "cards" }, ...items.map(card))));
+      storyList(items)));
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
     box.replaceChildren(...[
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
@@ -202,8 +205,30 @@
   function section(title, note, items, extra = []) {
     return el("section", { class: "news-section" },
       el("div", { class: "section-head" }, el("h2", { text: title }), el("span", { class: "muted", text: note })),
-      el("div", { class: "cards" }, ...items.map(card)),
+      storyList(items),
       ...extra,
+    );
+  }
+
+  const storyList = (items) => (state.layout === "list"
+    ? el("ul", { class: "rows" }, ...items.map(row))
+    : el("div", { class: "cards" }, ...items.map(card)));
+
+  // Compact layout: one line per story; the summary is in the headline's tooltip
+  function row(it) {
+    const also = it.also_covered_by || [];
+    const n = coverage(it);
+    const badges = [n > 1 ? el("span", { class: "count", text: `${n} sources` }) : null, kevBadge(it), cvssBadge(it), epssBadge(it)].filter(Boolean);
+    return el("li", { class: `row${n > 1 ? " multi" : ""}` },
+      el("div", { class: "row-main" },
+        badges.length ? el("span", { class: "meta row-badges" }, ...badges) : null,
+        el("a", { class: "row-title", href: safeUrl(it.url), target: "_blank", rel: "noopener noreferrer", title: it.summary || it.title, text: it.title }),
+      ),
+      el("span", {
+        class: "row-meta",
+        title: also.length ? `Also covered by: ${also.map((c) => c.source).join(", ")}` : "",
+        text: `${it.source}${also.length ? ` +${also.length}` : ""} · ${fmtTime(it.published)}`,
+      }),
     );
   }
 
@@ -308,6 +333,11 @@
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
     $("#search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; render(); });
+    document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+      state.layout = b.dataset.layout;
+      store.set(LS_LAYOUT, state.layout);
+      render();
+    }));
     $("#day").addEventListener("change", async (e) => { await loadDay(e.target.value); populateFilters(); render(); });
   }
 
@@ -317,6 +347,7 @@
     const fromHash = location.hash.slice(1);
     const saved = store.get(LS_VIEW, "news");
     state.view = VIEWS.includes(fromHash) ? fromHash : VIEWS.includes(saved) ? saved : "news";
+    state.layout = store.get(LS_LAYOUT, "cards") === "list" ? "list" : "cards";
     await loadIndex();
     if (state.days.length) await loadDay(state.days[0].date);
     populateFilters();

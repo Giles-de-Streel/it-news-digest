@@ -6,7 +6,7 @@
   <title>IT News</title>
   <meta name="description" content="Daily IT and security news from multiple sources, de-duplicated and ranked by how widely each story is reported.">
   <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="style.css?v=2026102803">
+  <link rel="stylesheet" href="style.css?v=2026102804">
 </head>
 <body>
   <header class="topbar">
@@ -38,6 +38,10 @@
       <div class="filters">
         <input id="search" type="search" placeholder="Search titles and summaries">
         <select id="source-filter"><option value="">All sources</option></select>
+        <div class="seg" role="group" aria-label="Layout">
+          <button type="button" data-layout="cards" aria-pressed="true">Cards</button>
+          <button type="button" data-layout="list" aria-pressed="false">List</button>
+        </div>
       </div>
       <div class="chips" id="topic-filter"></div>
       <div id="news"></div>
@@ -64,6 +68,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026102803"></script>
+  <script src="app.js?v=2026102804"></script>
 </body>
 </html>
