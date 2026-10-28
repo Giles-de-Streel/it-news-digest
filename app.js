@@ -112,10 +112,11 @@
     }
     const top = list.filter((it) => coverage(it) > 1);
     const rest = list.filter((it) => coverage(it) === 1);
-    box.replaceChildren(
+    // replaceChildren() turns a null argument into the text "null", so drop the empty section
+    box.replaceChildren(...[
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
       rest.length ? section(top.length ? "Other stories" : "Stories", `${rest.length} from a single source, newest first`, rest) : null,
-    );
+    ].filter(Boolean));
   }
 
   function renderCves() {
