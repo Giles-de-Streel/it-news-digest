@@ -1,18 +1,18 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-28T12:21:46+00:00",
+ "generated": "2026-10-28T14:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 19,
+   "recent": 22,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -54,13 +54,13 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 29,
+   "recent": 31,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -96,7 +96,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 71,
-   "recent": 71,
+   "fetched": 77,
+   "recent": 77,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 26,
+   "recent": 30,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "The Next Platform",
    "fetched": 88,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "Blocks & Files",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -192,11 +192,570 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 18,
+   "recent": 19,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "b0acd4a9239b",
+   "title": "345,000 email addresses stolen in cyberattack on Germany’s far-right party AfD",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/afd-data-breach-email-leak/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T14:28:43+00:00",
+   "summary": "Over 345,000 unique email addresses were exposed in the September 2026 breach at German far-right political party Alternative für Deutschland (AfD). Breach notification service Have I Been Pwned (HIBP) added the data to its database on 27 October, listing email addresses and email messages as the compromised…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "03316748c1c0",
+   "title": "Swimlane connects custom detections to AI-led investigation and response",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/swimlane-turbine-platform-capabilities/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T14:26:24+00:00",
+   "summary": "Swimlane has announced new capabilities in the Swimlane Turbine platform that allow security teams to run their own detection logic against large volumes of data and send resulting alerts directly into Swimlane AI SOC for investigation and response.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "9d498748b266",
+   "title": "CVE-2026-115968: Deserialization of Untrusted Data vulnerability in Ultimate Member Ultimate Member ultimate-member allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115968",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T14:16:58.013000+00:00",
+   "summary": "Deserialization of Untrusted Data vulnerability in Ultimate Member Ultimate Member ultimate-member allows Object Injection.This issue affects Ultimate Member: from n/a through 2.13.1.",
+   "kind": "cve",
+   "cve": "CVE-2026-115968",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115968",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "85471ada93fd",
+   "title": "CVE-2026-105420: Wing FTP Server does not verify user's base folder.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105420",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T14:16:56.230000+00:00",
+   "summary": "Wing FTP Server does not verify user's base folder. An attacker with admin privileges can add user directories via scripts, allowing the added directories to escape the base folder.",
+   "kind": "cve",
+   "cve": "CVE-2026-105420",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-105420",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "477e9dcdae26",
+   "title": "Microsoft faces potential vote: Shareholders curious about its plans to tackle emissions",
+   "url": "https://www.theregister.com/on-prem/2026/10/28/microsoft-faces-potential-vote-shareholders-curious-about-its-plans-to-tackle-emissions/5305953",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T14:15:00+00:00",
+   "summary": "Greenhouse gas output has risen dramatically since the company promised to become carbon-negative by 2030",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "cf2787e8bc16",
+   "title": "VikingCloud gives businesses a scorecard for AI governance readiness",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/vikingcloud-ai-governance-services/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T14:06:13+00:00",
+   "summary": "VikingCloud has launched AI Governance Services, a new set of compliance and risk assessments that find the AI tools in use across a business, show where security controls fall short, and deliver a remediation plan to close the gaps. Multi-location brands struggle to hold every location to one security standard.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "b5afc28bbbe3",
+   "title": "Otter adds ‘Work’ mode to automate more meeting-related tasks",
+   "url": "https://www.computerworld.com/article/4241172/otter-adds-work-mode-to-automate-more-meeting-related-tasks.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-28T14:00:25+00:00",
+   "summary": "Otter has added a new Work mode to its AI Chat assistant, expanding the range of tasks it can carry out before and after meetings. It’s part of a wider drive by Otter — which received $320 million in funding last week — to move beyond meeting transcription and into automating tasks and workflows.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "3bc8c2dc80c6",
+   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+   "url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-28T14:00:00+00:00",
+   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "7061598ce4e3",
+   "title": "Corsair Warthog case review: A rugged, military-themed chassis with plenty of airflow",
+   "url": "https://www.tomshardware.com/pc-components/pc-cases/corsair-warthog-case-review",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T14:00:00+00:00",
+   "summary": "The military-inspired Warthog mid-tower borrows from Corsair’s Vengeance C70 and takes the military aesthetic up a couple of notches. Is the rugged look worth it?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2fefc90ef91e",
+   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
+   "url": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-28T13:56:50+00:00",
+   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "53e7060b24d7",
+   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+   "url": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-28T13:50:59+00:00",
+   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "AI"
+   ]
+  },
+  {
+   "id": "ccf0f20ff6d6",
+   "title": "NetBSD Adds Alternative Text Editor To vi & xedit For Easing New Users",
+   "url": "https://www.phoronix.com/news/NetBSD-New-Text-Editor",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:48:00+00:00",
+   "summary": "NetBSD-current has added a new command line text editor to its base set of packages for helping out new users as an alternative to their vi and xedit editors currently included...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1392040dc24f",
+   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
+   "url": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-28T13:39:35+00:00",
+   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6595658b856d",
+   "title": "Upwind secures $400 million to protect AI across endpoints, code, and cloud",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/upwind-400-million-series-c-funding/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T13:31:26+00:00",
+   "summary": "Upwind Security has raised $400 million in Series C funding to expand its cloud and AI security platform, bringing the company’s total funding to more than $800 million.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "18f762a63b70",
+   "title": "US Marines join NATO mission in the Baltic Sea to protect undersea cables from sabotage as Russia continues to lurk",
+   "url": "https://www.tomshardware.com/tech-industry/us-marines-join-nato-mission-in-the-baltic-sea-to-protect-undersea-cables-from-sabotage-as-russia-continues-to-lurk-around-four-dozen-recon-and-intel-specialists-deployed-to-deter-seabed-threats",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:24:14+00:00",
+   "summary": "50 U.S. marines are joining a NATO mission to help protect and monitor undersea infrastructure in the Baltic Sea.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d9daa3ca5b85",
+   "title": "Storage news ticker - 28 October",
+   "url": "https://www.blocksandfiles.com/flash/2026/10/28/storage-news-ticker-28-october/5305899",
+   "source": "Blocks & Files",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:22:40+00:00",
+   "summary": "ETL supplier Adeptia announced Automate 5.3, its latest agentic platform release. Automate 5.3 expands its native MCP capabilities, enabling users and AI agents to create data mappings using natural language and apply context-aware insights.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "594f26ed2496",
+   "title": "CVE-2026-67074: HCL BigFix AEX is affected by a Remote Code Execution Vulnerability .",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67074",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T13:17:08.463000+00:00",
+   "summary": "HCL BigFix AEX is affected by a Remote Code Execution Vulnerability . It may allow attackers to execute code with the privileges of the affected application or service, potentially leading to unauthorized access, data exposure, or system compromise.",
+   "kind": "cve",
+   "cve": "CVE-2026-67074",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-67074",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "6c4c3e4df184",
+   "title": "CVE-2026-115904: Topluyo is a social networking platform.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115904",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T13:17:05.400000+00:00",
+   "summary": "Topluyo is a social networking platform. A vulnerability exists in Topluyo Desktop for Linux prior to version 2026.9.2410 where user-controlled URLs are unsafely processed, leading to OS Command Injection via the `openExternalLinks()` routine in `utils.js`.",
+   "kind": "cve",
+   "cve": "CVE-2026-115904",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115904",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Networking"
+   ]
+  },
+  {
+   "id": "116e812c2ecd",
+   "title": "CVE-2026-115607: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crowd…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115607",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T13:17:04.993000+00:00",
+   "summary": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crowd Favorite DXP ToolKit dxp-toolkit allows SQL Injection.This issue affects DXP ToolKit: from n/a through 2.0.1.",
+   "kind": "cve",
+   "cve": "CVE-2026-115607",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115607",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7ccdddb119fa",
+   "title": "CVE-2026-111411: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Aman…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111411",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T13:17:04.167000+00:00",
+   "summary": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Aman FunnelKit Automations wp-marketing-automations allows Blind SQL Injection.This issue affects FunnelKit Automations: from n/a through 3.8.5.2.",
+   "kind": "cve",
+   "cve": "CVE-2026-111411",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111411",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d2eeb025d6ee",
+   "title": "China's spaceplane bears striking resemblance to America's X-37B",
+   "url": "https://www.theregister.com/offbeat/2026/10/28/chinas-spaceplane-bears-striking-resemblance-to-americas-x-37b/5305983",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T13:15:00+00:00",
+   "summary": "Defense Intelligence Agency space report includes a rare orbital snap of the Chinese craft, and it looks rather familiar",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9a53da853ae9",
+   "title": "Gigawatt-scale off-grid data center campus proposed in Western Australia",
+   "url": "https://www.datacenterdynamics.com/en/news/gigawatt-scale-off-grid-data-center-campus-proposed-in-western-australia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:12:25+00:00",
+   "summary": "Project pivots from green hydrogen and ammonia to data centers",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "13324a3fcbc0",
+   "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
+   "url": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-28T13:10:34+00:00",
+   "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d4ee531add0e",
+   "title": "Microsoft signs two PPAs with Macquarie-backed Blueleaf Energy in Japan",
+   "url": "https://www.datacenterdynamics.com/en/news/microsoft-signs-two-ppas-with-macquarie-backed-blueleaf-energy-in-japan/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:07:24+00:00",
+   "summary": "Blueleaf has a portfolio of around 1.2GW of solar projects in the Japanese market",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "37e1838209e5",
+   "title": "SK hynix-owned Solidigm is plotting a new $45 billion flash memory factory for the US, report claims",
+   "url": "https://www.tomshardware.com/tech-industry/manufacturing/sk-hynix-owned-solidigm-is-plotting-a-new-usd45-billion-flash-memory-factory-for-the-us-report-claims-wants-go-ahead-to-export-equipment-for-china-upgrades-in-return",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:01:21+00:00",
+   "summary": "Solidigm, an American subsidiary of SK hynix, is in discussions about potentially investing $45 billion in a new flash chip factory that would be built in the United States.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "532a94180ef7",
+   "title": "Seagate's 16TB external HDD falls to 0.025 cents per GB at Newegg",
+   "url": "https://www.tomshardware.com/pc-components/external-hdds/seagates-16tb-external-hdd-falls-to-0-025-cents-per-gb-at-newegg-this-storage-deal-is-usd50-cheaper-than-even-its-prime-day-sale-price",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T13:00:00+00:00",
+   "summary": "Save $150 on this 16TB Seagate Expansion Desktop External HDD when you make use of this Newegg deal.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8d3adbfb02fe",
+   "title": "US Signal acquires data center in Hillsboro, Oregon",
+   "url": "https://www.datacenterdynamics.com/en/news/us-signal-acquires-data-center-in-hillsboro-oregon/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:56:17+00:00",
+   "summary": "Company takes over facility previously occupied by Oracle",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "61f768386744",
+   "title": "X.Org XCB Co-Creator Praises Wayland's Protocol Design",
+   "url": "https://www.phoronix.com/news/Jamey-Sharp-Praises-Wayland",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:54:28+00:00",
+   "summary": "Open-source developer Jamey Sharp who is a longtime X.Org developer and co-creator of the X protocol C-language Binding (XCB) finally had the need to write a Wayland client and ended up praising its design...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e0dc3ebd0e2e",
+   "title": "A taxonomy of American data center opposition: The neighbors",
+   "url": "https://www.datacenterdynamics.com/en/analysis/a-taxonomy-of-american-data-center-opposition-the-neighbors/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:50:34+00:00",
+   "summary": "Data centers have become a key issue in the US mid-term elections",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "29d08fa787d9",
+   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+   "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-28T12:48:03+00:00",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) in the Oracle Application Object Library of Oracle E-Business Suite.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-101767",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "oracle"
+    }
+   ]
+  },
+  {
+   "id": "dfd7b691fef7",
+   "title": "Nxera Singapore signs MoU with Sembcorp for the supply of low carbon power in Singapore",
+   "url": "https://www.datacenterdynamics.com/en/news/nxere-singapore-signs-mou-with-sembcorp-for-the-supply-of-low-carbon-power-in-singapore/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:45:12+00:00",
+   "summary": "Potential power solutions include hydrogen, biomethane, vertical solar, and floating solar",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2249dbd86c4b",
+   "title": "Intel gets tax breaks while local authorities lose revenue, claims policy org",
+   "url": "https://www.theregister.com/systems/2026/10/28/intel-gets-tax-breaks-while-local-authorities-lose-revenue-claims-policy-org/5305902",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T12:45:00+00:00",
+   "summary": "Report accuses corp of getting subsidies for its fabs from Oregon and New Mexico that deprive those states of vital funds",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "eb185d18601e",
+   "title": "US broadband provider RiverStreet files for Chapter 11, enters asset purchase agreement with Oaktree Capital Management",
+   "url": "https://www.datacenterdynamics.com/en/news/us-broadband-provider-riverstreet-files-for-chapter-11-enters-asset-purchase-agreement-with-oaktree-capital-management/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:40:58+00:00",
+   "summary": "Will transition ownership to Oaktree Capital Management",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cd80ba53f670",
+   "title": "NIP Group agrees $27.3m Bitcoin mining hardware deal",
+   "url": "https://www.datacenterdynamics.com/en/news/nip-group-agrees-273m-bitcoin-mining-hardware-deal/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:40:28+00:00",
+   "summary": "E-sports company continues to expand Bitcoin mining efforts",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0b5d78c6255a",
+   "title": "FCC approves Amazon Leo's $11.5bn acquisition of Globalstar",
+   "url": "https://www.datacenterdynamics.com/en/news/fcc-approves-amazon-leos-115bn-acquisition-of-globalstar/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:38:21+00:00",
+   "summary": "The move is set to boost Amazon's D2D vision",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "54341376eaab",
+   "title": "Tailscale fixes SSH flaws allowing lateral movement within tailnets",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/tailscale-fixes-tailworm-ssh-flaws/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T12:25:04+00:00",
+   "summary": "Tailscale, the company behind the popular software-defined mesh networking and connectivity platform of the same name, has shipped fixes for several vulnerabilities, including some in Tailscale SSH that could let an attacker who already had access to a device in the network gain more privileges on other machines that…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "b281c401a289",
+   "title": "Provenance Time Proposed As A New Timestamp For Linux",
+   "url": "https://www.phoronix.com/news/Linux-Provenance-Time-PTIME",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:23:10+00:00",
+   "summary": "While the Linux kernel and various file-system drivers already support the notion of the birth time for tracking a file/directory's birth/creation time, a slightly different provenance time \"ptime\" is now being proposed for the Linux kernel...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
   {
    "id": "47dc87ef8b42",
    "title": "Hackers now scanning systems for recently-patched Oracle flaw",
@@ -253,6 +812,20 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "fa11e95ace42",
+   "title": "Ukrainian ransomware hacker sentenced, $11 million reward offered for co-conspirator",
+   "url": "https://www.helpnetsecurity.com/2026/10/28/doj-ukrainian-ransomware-hacker-sentenced/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-28T12:17:33+00:00",
+   "summary": "A Ukrainian national who participated in ransomware attacks targeting hospitals, government entities, law firms, and other businesses was sentenced to five years and 10 months in prison.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Policy & regulation"
    ]
   },
   {
@@ -328,6 +901,20 @@
    ]
   },
   {
+   "id": "eb93de238d98",
+   "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+   "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-28T11:50:00+00:00",
+   "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
    "id": "58b135884231",
    "title": "Save $249 on 32GB of DDR5 with this 9800X3D parts bundle",
    "url": "https://www.tomshardware.com/pc-components/save-usd249-on-32gb-of-ddr5-with-this-9800x3d-parts-bundle-grab-one-of-amds-top-cpus-with-an-msi-x870e-motherboard-and-a-free-aio-cooler-for-under-usd1-100",
@@ -394,6 +981,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "ce5fe177d9da",
+   "title": "Wazuh and AI for Enhanced SOC Workflows",
+   "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-28T11:30:00+00:00",
+   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1515,6 +2115,48 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "23904a4a9cdf",
+   "title": "How Atos uses Red Hat AI to build smaller, specialized models for sovereign AI",
+   "url": "https://www.redhat.com/en/blog/how-atos-uses-red-hat-ai-build-smaller-specialized-models-sovereign-ai",
+   "source": "Red Hat Blog",
+   "source_category": "Vendor",
+   "published": "2026-10-28T00:00:00+00:00",
+   "summary": "For an enterprise, AI sovereignty starts with this primary requirement: Retain control of its own data and infrastructure. But as organizations move from experimenting with AI to deploying it in real business processes, control over the models themselves has become increasingly important.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "7268e876b055",
+   "title": "Building for tomorrow on Red Hat OpenShift",
+   "url": "https://www.redhat.com/en/blog/building-tomorrow-red-hat-openshift",
+   "source": "Red Hat Blog",
+   "source_category": "Vendor",
+   "published": "2026-10-28T00:00:00+00:00",
+   "summary": "IT leaders today must balance core operations to run smoothly while rapidly transforming infrastructure to drive new business value. From navigating budget constraints and complex multicloud environments to accelerating developer productivity and integrating AI, the pressure to modernize without risk has never been…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "bb2309118c0c",
+   "title": "Context engineering with hybrid search for agentic AI",
+   "url": "https://intelligence.theregister.com/paper/view/21171",
+   "source": "The Next Platform",
+   "source_category": "Hardware",
+   "published": "2026-10-28T00:00:00+00:00",
+   "summary": "This white paper is designed for developers, data engineers, and AI practitioners who want to build smarter, more reliable agentic AI systems.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   }
  ]
