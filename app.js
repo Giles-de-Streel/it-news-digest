@@ -136,7 +136,7 @@
       if (!capped || perSource[it.source] <= SOURCE_CAP) shown.push(it);
       else folded.set(it.source, [...(folded.get(it.source) || []), it]);
     }
-    const more = [...folded].map(([src, items]) => el("details", { class: "more" },
+    const more = [...folded].map(([src, items]) => el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
       el("summary", { text: `${items.length} more from ${src}` }),
       el("div", { class: "cards" }, ...items.map(card))));
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
@@ -146,6 +146,24 @@
         `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
         shown, more) : null,
     ].filter(Boolean));
+    addMoreToggles(box);
+  }
+
+  // Summaries are clamped to 3 lines by CSS; add a More/Less toggle only where text is cut off.
+  // Hidden cards (inside a closed <details>) measure 0 and are checked when opened.
+  function addMoreToggles(root) {
+    for (const p of root.querySelectorAll(".summary.clamp:not([data-checked])")) {
+      if (!p.clientHeight) continue;
+      p.dataset.checked = "1";
+      if (p.scrollHeight <= p.clientHeight + 2) continue;
+      const btn = el("button", { class: "more-toggle", type: "button", text: "More", "aria-expanded": "false" });
+      btn.addEventListener("click", () => {
+        const open = p.classList.toggle("clamp") === false;
+        btn.textContent = open ? "Less" : "More";
+        btn.setAttribute("aria-expanded", String(open));
+      });
+      p.after(btn);
+    }
   }
 
   function renderCves() {
@@ -160,6 +178,7 @@
     $("#cves-list").replaceChildren(cves.length
       ? el("ul", { class: "cve-list" }, ...cves.map(cveRow))
       : el("p", { class: "empty", text: all.length ? "Nothing matches this search." : "No critical CVEs for this day." }));
+    addMoreToggles($("#cves-list"));
   }
 
   function cveRow(it) {
@@ -175,7 +194,7 @@
           el("span", { text: `CVSS ${c.version} · ${c.severity} · scored by ${c.scored_by}` }),
           el("span", { text: fmtTime(it.published) }),
         ),
-        el("p", { class: "summary", text: it.summary }),
+        el("p", { class: "summary clamp", text: it.summary }),
       ),
     );
   }
@@ -239,7 +258,7 @@
         el("span", { text: fmtTime(it.published) }),
       ),
       el("h3", {}, link(it.url, it.title)),
-      it.summary ? el("p", { class: "summary", text: it.summary }) : null,
+      it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
       also.length ? el("ul", { class: "also-list" }, ...also.map((c) =>
         el("li", {}, el("span", { class: "source", text: `${c.source}: ` }), link(c.url, c.title)))) : null,
       el("div", { class: "tags" }, ...it.topics.map((t) => el("span", { class: "tag", text: t }))),
