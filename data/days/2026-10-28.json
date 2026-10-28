@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-28T20:30:30+00:00",
+ "generated": "2026-10-28T23:23:38+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -72,19 +72,19 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 12,
+   "recent": 7,
    "error": null
   },
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -96,7 +96,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 7,
+   "recent": 9,
    "error": null
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 96,
-   "recent": 96,
+   "fetched": 78,
+   "recent": 78,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 29,
    "error": null
   },
   {
@@ -192,11 +192,240 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 23,
+   "recent": 19,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "4c9e18805acc",
+   "title": "CVE-2026-118579: A weakness has been identified in D-Link DIR-505 1.10B02.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118579",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T23:17:09.940000+00:00",
+   "summary": "A weakness has been identified in D-Link DIR-505 1.10B02. The impacted element is the function main of the file /secmark1524.cgi of the component Web Management CGI. This manipulation of the argument accu/pass/code/hash/cmds causes backdoor. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-118579",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118579",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "63a3986bdf68",
+   "title": "Who Still Governs Africa’s Internet Resources?",
+   "url": "https://circleid.com/posts/who-still-governs-africas-internet-resources",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-10-28T23:05:00+00:00",
+   "summary": "Cloud Innovation's reappearance in AFRINIC's Mauritian membership register raises questions about governance, judicial oversight and institutional independence. The author calls for transparent records, scrutiny of conflicts of interest and an orderly end to receivership.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "502f4c7e3dda",
+   "title": "Anthropic Engineer Declares the Coding Interview Dead",
+   "url": "https://slashdot.org/story/26/10/28/2222217/anthropic-engineer-declares-the-coding-interview-dead?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T23:00:00+00:00",
+   "summary": "An Anthropic engineering manager says he has stopped using traditional coding interviews because AI can now outperform candidates on the kinds of programming challenges they typically contain.",
+   "also_covered_by": [
+    {
+     "id": "273d2a2f1a0e",
+     "source": "The Register",
+     "title": "Anthropic engineer declares the coding interview dead",
+     "url": "https://www.theregister.com/ai-and-ml/2026/10/28/anthropic-engineer-declares-the-coding-interview-dead/5306115"
+    }
+   ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a6c7ef47507f",
+   "title": "Iran Escalates Threats Against Gulf Undersea Internet Cables",
+   "url": "https://circleid.com/posts/iran-escalates-threats-against-gulf-undersea-internet-cables",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-10-28T22:45:00+00:00",
+   "summary": "Iranian officials have outlined plans to target undersea Internet cables in the Strait of Hormuz, while a new propaganda video depicts attacks that could disrupt connectivity across Gulf states.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b67c2e98925e",
+   "title": "CVE-2026-61567: AVideo is a video-sharing Platform.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61567",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T22:17:15.900000+00:00",
+   "summary": "AVideo is a video-sharing Platform. Prior to 8.1.0, the live-streaming endpoint `view/videosListToLive.php` accepts an attacker-named streamer in `webSiteRootURL`, calls `Login::run` in `objects/Login.php`, and trusts the returned JSON as session state.",
+   "kind": "cve",
+   "cve": "CVE-2026-61567",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-61567",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "47a1c8ae976d",
+   "title": "CVE-2026-61564: AVideo is a video-sharing Platform.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61564",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T22:17:15.750000+00:00",
+   "summary": "AVideo is a video-sharing Platform. Prior to 8.1.0, the unauthenticated installer endpoint `install/checkConfiguration.php` assembles `videos/configuration.php` by interpolating request parameters, including `webSiteRootURL`, into single-quoted PHP string literals without escaping.",
+   "kind": "cve",
+   "cve": "CVE-2026-61564",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-61564",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "94b9343fea78",
+   "title": "CVE-2026-118690: Signal K Server before 2.33.0 contains a missing authentication vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118690",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T22:17:13.070000+00:00",
+   "summary": "Signal K Server before 2.33.0 contains a missing authentication vulnerability that allows unauthenticated remote attackers to download log archives via the /skServer/ziplogs endpoint.",
+   "kind": "cve",
+   "cve": "CVE-2026-118690",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118690",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "dae21d8379e1",
+   "title": "Massive Leak Exposes 41,000 Homeland Security Workers",
+   "url": "https://yro.slashdot.org/story/26/10/28/2158201/massive-leak-exposes-41000-homeland-security-workers?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T22:00:00+00:00",
+   "summary": "A massive leak has exposed records tied to more than 41,000 DHS employees and contractors, including roughly 10,000 ICE personnel. The data, reportedly taken from DHS's Okta login system, reveals phone numbers, email and office addresses, reporting relationships, and permission groups associated with undercover…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "6c3291092728",
+   "title": "Amazon Puts a Camera In Its Echo Studio So Alexa Can See",
+   "url": "https://yro.slashdot.org/story/26/10/28/191236/amazon-puts-a-camera-in-its-echo-studio-so-alexa-can-see?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T21:00:00+00:00",
+   "summary": "Amazon has added a camera to its Echo Studio speaker, allowing Alexa to visually identify objects, help with tasks and remotely monitor a room. For those concerned about privacy, Amazon is keeping a camera-free version available. The Next Web reports: The camera speaker ships today for $249.99.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ff05f431c3a7",
+   "title": "Building liquid cooling systems that last: the critical role of sustaining engineering",
+   "url": "https://www.datacenterdynamics.com/en/opinions/building-liquid-cooling-systems-that-last-the-critical-role-of-sustaining-engineering/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T20:58:39+00:00",
+   "summary": "Liquid cooling must remain reliable, serviceable, and adaptable to what the future holds",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bf65784fd277",
+   "title": "Court strikes down West Virginia law barring disclosure of public officials’ personal data",
+   "url": "https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-28T20:50:00+00:00",
+   "summary": "A federal appellate court panel said West Virginia's version of Daniel's Law — meant to shield the personal data of police and other officials — is unconstitutional.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "218525b586ca",
+   "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
+   "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-28T20:47:22+00:00",
+   "summary": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "e0b8db569d8d",
+   "title": "Please state the nature of the medical emergency: Google is building a robot medic for NASA",
+   "url": "https://www.theregister.com/offbeat/2026/10/28/please-state-the-nature-of-the-medical-emergency-google-is-building-a-robot-medic-for-nasa/5306130",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T20:44:22+00:00",
+   "summary": "The AI medical assistant is still being tested. Now the space boffins want to give it hands",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6297f1390dfa",
+   "title": "Japan Airlines warns of data breach as country grapples with multiple cyber incidents",
+   "url": "https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-28T20:33:00+00:00",
+   "summary": "Hackers stole passport numbers, frequent flyer numbers, email addresses and phone numbers for about 2,000 customers.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
   {
    "id": "c61374f33082",
    "title": "CVE-2026-63190: FearlessCMS is a flat-file `content` management system centered on simplicity and open source.",
@@ -256,6 +485,33 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "c96bde332f1d",
+   "title": "Oracle celebrates end of Cybersecurity Awareness Month with quadruple trouble",
+   "url": "https://www.theregister.com/security/2026/10/28/oracle-celebrates-end-of-cybersecurity-awareness-month-with-quadruple-trouble/5306121",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T19:56:56+00:00",
+   "summary": "Attackers probe another EBS bug, and ShinyHunters' PeopleSoft 0-day turns out to involve three vulns",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "89379326868d",
+   "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
+   "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-10-28T19:39:00+00:00",
+   "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -1343,6 +1599,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c259dce9c452",
+   "title": "It costs a lot more to use AI models in some languages",
+   "url": "https://www.computerworld.com/article/4241844/ai-models-are-much-more-expensive-for-less-common-languages.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-28T13:52:00+00:00",
+   "summary": "A new study from the Coalition for Language Equity in AI Research shows that AI models require significantly more tokens to process certain languages than others. These differences mean that users of underrepresented languages risk paying more for the same services, reports Rest of World .",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2439,6 +2708,19 @@
    "id": "783fc65cb392",
    "title": "Man spends 35 years collecting corporate waffle, turns it into an app",
    "url": "https://www.theregister.com/offbeat/2026/10/28/man-spends-35-years-collecting-corporate-waffle-turns-it-into-an-app/5305765",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T10:15:00+00:00",
+   "summary": "Why waste time thinking of something useful to say when an app can leverage synergies for you?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4e19880a2bba",
+   "title": "Man spends 35 years collecting corporatespeak, turns it into an app",
+   "url": "https://www.theregister.com/offbeat/2026/10/28/man-spends-35-years-collecting-corporatespeak-turns-it-into-an-app/5305765",
    "source": "The Register",
    "source_category": "IT industry",
    "published": "2026-10-28T10:15:00+00:00",
