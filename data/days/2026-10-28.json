@@ -1,18 +1,18 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-28T10:43:29+00:00",
+ "generated": "2026-10-28T12:21:46+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 14,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 19,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -72,13 +72,13 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 65,
-   "recent": 65,
+   "fetched": 71,
+   "recent": 71,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 21,
+   "recent": 26,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "The Next Platform",
    "fetched": 88,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -192,11 +192,393 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 17,
+   "recent": 18,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "47dc87ef8b42",
+   "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-28T12:19:57+00:00",
+   "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "fdcc3d745cc2",
+   "title": "CVE-2026-118477: The ei_git_repo_url parameter in the Git remote configuration endpoint of KaliFast is vulnerable to OS…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118477",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T12:17:40.227000+00:00",
+   "summary": "The ei_git_repo_url parameter in the Git remote configuration endpoint of KaliFast is vulnerable to OS Command Injection. This OS Command Injection vulnerability allows an authenticated attacker (free registration available) to execute arbitrary commands on the KaliFast server with www-data privileges.",
+   "kind": "cve",
+   "cve": "CVE-2026-118477",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118477",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "276dd8fa0ce4",
+   "title": "CVE-2026-114278: The che-machine-exec service constructs a shell command by concatenating user-controlled input (the username…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114278",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T12:17:39.773000+00:00",
+   "summary": "The che-machine-exec service constructs a shell command by concatenating user-controlled input (the username and namespace fields from the /exec/init and /exec/config JSON endpoints) into a double-quoted sh -c \"echo \"...\" > ...\" invocation without any escaping.",
+   "kind": "cve",
+   "cve": "CVE-2026-114278",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-114278",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4d4fe0f6be82",
+   "title": "Gheist turns GitHub Actions into a secret extraction service",
+   "url": "https://www.infoworld.com/article/4241628/gheist-turns-github-actions-into-a-secret-extraction-service-2.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-10-28T12:11:01+00:00",
+   "summary": "A threat actor dubbed Gheist is turning compromised GitHub accounts into credential-harvesting platforms. By planting malicious GitHub Actions workflows in private repositories, attackers can expose repository and environment secrets, then retrieve them through GitHub APIs before deleting evidence of the activity.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d217e14c2913",
+   "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
+   "url": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-28T12:00:59+00:00",
+   "summary": "The attackers chained PHP2Shell and Fragnesia exploits and hacked two servers of a US government-affiliated organization.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "d1d6e819b341",
+   "title": "Cisco open sources tool for detecting AI agents on hacking sprees",
+   "url": "https://www.theregister.com/security/2026/10/28/cisco-open-sources-tool-for-detecting-ai-agents-on-hacking-sprees/5305867",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T12:00:00+00:00",
+   "summary": "Project Quarry aims to provide a 'shared language' for evaluating agent behavior",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "22ccf86aa0f7",
+   "title": "Why native PC ports of console games are suddenly everywhere",
+   "url": "https://www.tomshardware.com/video-games/why-native-pc-ports-of-console-games-are-suddenly-everywhere-reverse-engineer-anything-gives-ai-agents-a-unified-toolkit-and-byte-for-byte-checks-keep-hallucinations-in-line",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T12:00:00+00:00",
+   "summary": "With dozens of titles unofficially ported to PC over the past few months, the big questions are: why is this now possible, and what changed?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ce2e9511cbab",
+   "title": "Nvidia RTX GPU vendor Palit denies its Galax factory has closed due to a shortage of chips",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-gpu-vendor-palit-denies-its-galax-factory-has-closed-due-to-a-shortage-of-chips-company-says-brand-continues-to-operate-as-usual",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:56:26+00:00",
+   "summary": "Palit denies news that Galax is going out of production.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "58b135884231",
+   "title": "Save $249 on 32GB of DDR5 with this 9800X3D parts bundle",
+   "url": "https://www.tomshardware.com/pc-components/save-usd249-on-32gb-of-ddr5-with-this-9800x3d-parts-bundle-grab-one-of-amds-top-cpus-with-an-msi-x870e-motherboard-and-a-free-aio-cooler-for-under-usd1-100",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:48:55+00:00",
+   "summary": "Save $248.99 on this AMD Ryzen 7 9800X3D bundle at Newegg with an MSI MAG X870E Tomahawk Max Wifi motherboard and 32GB of DDR5-6000 RAM, now just $1,094.99.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "b713694bd675",
+   "title": "Hyprland 0.57 Released With Compiz Inspired Wobbly Windows",
+   "url": "https://www.phoronix.com/news/Hyprland-0.57",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:45:33+00:00",
+   "summary": "For those that want to reminisce over the days long ago of Compiz and Beryl on the Linux desktop, the Hyprland 0.57 Wayland compositor released today and has added Compiz-inspired wobbly windows support...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "59f567c7bd3c",
+   "title": "Gigawatt-scale data center and energy project proposed outside Adelaide, Australia",
+   "url": "https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-and-energy-project-proposed-outside-adelaide-australia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:45:13+00:00",
+   "summary": "Project to feature on-site natural gas and adjacent BESS",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "dda9773dd3c9",
+   "title": "123 Reg discloses 'AI cyberattack' on customer data, suspects China nexus",
+   "url": "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T11:45:00+00:00",
+   "summary": "Company chiefs believe the attackers could be the same as those who used ARTEX to breach South Korea’s financial giants",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI"
+   ]
+  },
+  {
+   "id": "1dbab41f9e8f",
+   "title": "Taiwan working on autonomous drone swarms to counter China’s increasingly aggressive grey-zone military tactics — island has already completed flight simulations, now working towards flight trials over maritime areas",
+   "url": "https://www.tomshardware.com/tech-industry/drones/taiwan-working-on-autonomous-drone-swarms-to-counter-chinas-increasingly-aggressive-grey-zone-military-tactics-island-has-already-completed-flight-simulations-now-working-towards-flight-trials-over-maritime-areas",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:30:00+00:00",
+   "summary": "The island is building an autonomous system that would work with various drones, allowing it to extend the reach and endurance of its coast guard ships.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "20e6e62214a5",
+   "title": "CVE-2026-112197: Vulnerability due to a lack of authentication in critical functions of the NoviGest Desktop App's Java RMI…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112197",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T11:17:15.073000+00:00",
+   "summary": "Vulnerability due to a lack of authentication in critical functions of the NoviGest Desktop App's Java RMI service. An attacker with network access to the service can invoke remote methods without authentication, obtain sensitive credentials, and execute arbitrary SQL queries on PostgreSQL.",
+   "kind": "cve",
+   "cve": "CVE-2026-112197",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-112197",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a35a2322c462",
+   "title": "CVE-2026-103799: Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103799",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T11:17:14.390000+00:00",
+   "summary": "Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Missing Authorization vulnerability.",
+   "kind": "cve",
+   "cve": "CVE-2026-103799",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-103799",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "77936aa2e200",
+   "title": "CVE-2026-103792: Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103792",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T11:17:14.250000+00:00",
+   "summary": "Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Improper Neutralization of Special Elements used in an SQL…",
+   "kind": "cve",
+   "cve": "CVE-2026-103792",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-103792",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "64f0ba2ef6d7",
+   "title": "CVE-2026-103780: Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103780",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T11:17:14.113000+00:00",
+   "summary": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Stack-based Buffer Overflow vulnerability.",
+   "kind": "cve",
+   "cve": "CVE-2026-103780",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-103780",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "42a9e60af11b",
+   "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+   "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-28T11:15:51+00:00",
+   "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "0493d4fd9fbf",
+   "title": "Open Cosmos steps up Europe's space sovereignty game, shows off ConnectedCosmos satellites",
+   "url": "https://www.theregister.com/networks/2026/10/28/open-cosmos-steps-up-europes-space-sovereignty-game-shows-off-connectedcosmos-satellites/5305479",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-28T11:00:00+00:00",
+   "summary": "El Reg takes a tour of a satellite nursery for customers thinking about de-risking dependence",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "741b6a1b6196",
+   "title": "Trump says Microsoft abuses visa laws. Microsoft disagrees. Who’s telling the truth?",
+   "url": "https://www.computerworld.com/article/4241156/trump-says-microsoft-abuses-visa-laws-microsoft-disagrees-whos-telling-the-truth.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-28T11:00:00+00:00",
+   "summary": "Decades ago, the United States established programs that allow businesses to hire highly skilled foreign workers — the H-1B visa program and a related green card program. They’re designed to make sure we lead the world in technology.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "a0b16c498f8f",
+   "title": "Astronomers May Have Just Discovered Our Solar System's Sixth Dwarf Planet",
+   "url": "https://science.slashdot.org/story/26/10/28/035218/astronomers-may-have-just-discovered-our-solar-systems-sixth-dwarf-planet?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-28T11:00:00+00:00",
+   "summary": "Astronomers using the Vera C. Rubin Observatory have discovered 2026 ED138, a large object beyond Neptune that could become the solar system's sixth recognized dwarf planet if further observations confirm it is massive enough to be round.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cba62211eec4",
+   "title": "Standalone Nvidia Vera CPUs land in Oracle Cloud's multi-gigawatt deployment — our independent benchmarking of a local server reveals Vera's massive memory bandwidth lead over dual Xeon 6 server",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-oracle-bring-vera-cpu-instances-online-in-multi-gigawatt-deployment-oci-superclusters-also-set-to-expand-with-rubin-only-clusters-attached-to-dual-xeon-6-hosts",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-28T11:00:00+00:00",
+   "summary": "Nvidia’s Vera CPU is now generally available on Oracle’s OCI Superclusters, a win for Nvidia as it moves past NVL72 to a standalone Vera deployment at a major hyperscaler.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b3782b9e100a",
+   "title": "DCD Studio: Hiring in the age of AI with Taylor Stockton, US Department of Labor",
+   "url": "https://www.datacenterdynamics.com/en/videos/dcd-studio-hiring-in-the-age-of-ai-with-taylor-stockton-us-department-of-labor/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T10:54:05+00:00",
+   "summary": "Zachary Skidmore speaks with Taylor Stockton of the US Department of Labor about preparing American workers for the AI age through AI literacy, skills development, registered apprenticeships, and on-the-job learning",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "230b4d17e7e9",
+   "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
+   "url": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-28T10:48:00+00:00",
+   "summary": "Four EPICS Base flaws found by an autonomous system could let attackers crash processes at particle accelerators and fusion labs.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "4fbbafb2aa16",
    "title": "DCD Studio: The physical constraints of AI scaling with Sean James, Nvidia",
@@ -237,6 +619,22 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "169a3a02ba4a",
+   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+   "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-28T10:30:00+00:00",
+   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Cloud & infrastructure",
+    "Identity & access"
    ]
   },
   {
@@ -712,7 +1110,14 @@
    "source_category": "Security",
    "published": "2026-10-28T08:37:24+00:00",
    "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "12e09d9f33b8",
+     "source": "BleepingComputer",
+     "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Policy & regulation"
@@ -755,7 +1160,20 @@
    "source_category": "Security",
    "published": "2026-10-28T07:37:50+00:00",
    "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually explicit images of…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "577257e730db",
+     "source": "Help Net Security",
+     "title": "FBI seizes Virtualine, bulletproof hosting provider that promised to shield criminals from police",
+     "url": "https://www.helpnetsecurity.com/2026/10/28/fbi-seizure-virtualine-bulletproof-hosting-domain/"
+    },
+    {
+     "id": "12185b0bd2c8",
+     "source": "The Record",
+     "title": "FBI seizes ‘bulletproof’ hosting site accused of facilitating child abuse, money laundering",
+     "url": "https://therecord.media/fbi-seizure-csam-virtualine"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure"
    ]
