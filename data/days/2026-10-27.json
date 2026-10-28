@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-10-27T20:49:54+00:00",
+ "generated": "2026-10-28T01:32:26+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 18,
+   "recent": 15,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 7,
+   "recent": 10,
    "error": null
   },
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -60,31 +60,31 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 38,
+   "recent": 35,
    "error": null
   },
   {
    "source": "Ars Technica IT",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 12,
+   "recent": 7,
    "error": null
   },
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 5,
+   "recent": 8,
    "error": null
   },
   {
@@ -120,7 +120,7 @@
   {
    "source": "CISA KEV",
    "fetched": 1760,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -132,7 +132,7 @@
   {
    "source": "SANS NewsBites",
    "fetched": 12,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -156,19 +156,19 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 36,
+   "recent": 26,
    "error": null
   },
   {
    "source": "ServeTheHome",
    "fetched": 6,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "The Next Platform",
    "fetched": 88,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "Blocks & Files",
    "fetched": 50,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -192,11 +192,305 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 23,
+   "recent": 19,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "64fc33310f2f",
+   "title": "CVE-2026-110879: jackson-databind validates the outer class of a class-name type ID but accepts attacker-selected classes…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110879",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-28T01:16:55.180000+00:00",
+   "summary": "jackson-databind validates the outer class of a class-name type ID but accepts attacker-selected classes inside its generic arguments, even when those classes violate the declared type or would be rejected as direct type IDs.",
+   "kind": "cve",
+   "cve": "CVE-2026-110879",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-110879",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "302fe2e6c8b8",
+   "title": "Wine Merges Support For MESA_map_buffer_client_pointer To Improve WoW64 32-bit OpenGL",
+   "url": "https://www.phoronix.com/news/Wine-Mesa-Map-Buffer-Client-Ptr",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-28T00:33:36+00:00",
+   "summary": "An initiative led by CodeWeavers this year has come to fruition for improving OpenGL support with WoW64 for bettering Windows 32-bit application/game support while using 64-bit system libraries...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "4972d322c4e8",
+   "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+   "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T23:35:51+00:00",
+   "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "68b792187a21",
+   "title": "CVE-2026-58256: GRR is a resource management and reservation application.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58256",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T23:17:06.140000+00:00",
+   "summary": "GRR is a resource management and reservation application. Prior to the advisory-reported fixed version 4.5.0, an administrator can inject malicious PHP through LDAP connector configuration parameters such as `ldap_filter`, poisoning `/personnalisation/config_ldap.inc.php` and permitting remote code execution.",
+   "kind": "cve",
+   "cve": "CVE-2026-58256",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-58256",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "dbcd82e0cd1c",
+   "title": "Ford's Most Affordable EV Will Offer Built-In Bidirectional Home Charging",
+   "url": "https://hardware.slashdot.org/story/26/10/27/2151204/fords-most-affordable-ev-will-offer-built-in-bidirectional-home-charging?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-27T23:00:00+00:00",
+   "summary": "Ford's upcoming $28,350 Fathom electric truck will include a built-in inverter capable of supplying up to 10 kW of AC power to a home, bringing bidirectional charging to a significantly cheaper EV.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "794ac73c9a88",
+   "title": "IBM connects quantum chips with ‘quantum channels’ at 99% accuracy",
+   "url": "https://www.networkworld.com/article/4241386/ibm-connects-quantum-chips-with-quantum-channels-at-99-accuracy.html",
+   "source": "Network World",
+   "source_category": "IT industry",
+   "published": "2026-10-27T22:55:00+00:00",
+   "summary": "IBM has reached a critical milestone for scaling quantum computers, the company announced . According to a research paper published last week, superconducting processors have been connected for the first time using multiple quantum channels with an average transfer fidelity of 99%.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "48026cc92494",
+   "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T22:43:27+00:00",
+   "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e5255ef8ffec",
+   "title": "UNM Health ransomware attack disrupts patient care, surgeries",
+   "url": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T22:07:34+00:00",
+   "summary": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "6ca7306e5abf",
+   "title": "Growing List of Firms Object to OKX-ICE Tokenized Stock Plans",
+   "url": "https://news.slashdot.org/story/26/10/27/2130245/growing-list-of-firms-object-to-okx-ice-tokenized-stock-plans?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-27T22:00:00+00:00",
+   "summary": "Intel, Oracle, IBM and IonQ have joined a growing list of companies objecting to having tokenized versions of their shares traded through OKX and Intercontinental Exchange's blockchain venture, bringing the total number of objections to 26.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d9ec38621872",
+   "title": "2026 network outage report and internet health check",
+   "url": "https://www.networkworld.com/article/4113326/2026-network-outage-report-and-internet-health-check.html",
+   "source": "Network World",
+   "source_category": "IT industry",
+   "published": "2026-10-27T21:39:07+00:00",
+   "summary": "ThousandEyes, a Cisco company, monitors how ISPs, cloud providers and conferencing services are handling any performance challenges and provides Network World with a weekly roundup of events that impact service delivery.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Networking"
+   ]
+  },
+  {
+   "id": "b5e591477531",
+   "title": "IBM aims to bring AI agent sprawl under enterprise control",
+   "url": "https://www.networkworld.com/article/4241300/ibm-aims-to-bring-ai-agent-sprawl-under-enterprise-control.html",
+   "source": "Network World",
+   "source_category": "IT industry",
+   "published": "2026-10-27T21:31:59+00:00",
+   "summary": "IBM is pulling together a package of tools to help enterprises discover, identify, manage, and control the growing number of AI agents in use. The package makes use of IBM’s newly available Agent Identity software and its HashiCorp Vault and watsonx Orchestrate packages, which together can identify and manage AI…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "6a579249c1fc",
+   "title": "Code-Execution Flaw In UEFI Firmware Threatens Most Servers On Planet Earth",
+   "url": "https://it.slashdot.org/story/26/10/27/2121232/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-27T21:30:00+00:00",
+   "summary": "Ars Technica's Dan Goodin reports: Defenders across the world face the burden of responding to yet another botched code-execution vulnerability, this time in boot-time firmware used by most of the world's server vendors and data centers.",
+   "also_covered_by": [
+    {
+     "id": "9d02bbba005f",
+     "source": "Ars Technica IT",
+     "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+     "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
+    }
+   ],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "60470b273d55",
+   "title": "Microsoft Maia 300 Shown at OCP 2026",
+   "url": "https://www.servethehome.com/microsoft-maia-300-shown-at-ocp-2026/",
+   "source": "ServeTheHome",
+   "source_category": "Hardware",
+   "published": "2026-10-27T21:28:01+00:00",
+   "summary": "At OCP Summit 2026, we saw the new Microsoft Maia 300 platform with four 288GB HBM4 950W accelerators per tray",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "231b11a4220b",
+   "title": "CVE-2026-116692: MLflow is an open source AI engineering platform for agents, large language models, and machine learning…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116692",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-27T21:18:05.013000+00:00",
+   "summary": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 3.12.0rc0 until 3.17.0, third-party scorer deserialization in mlflow/genai/scorers/base.py accepts request-selected descendants of THIRD_PARTY_SCORER_ALLOWED_MODULES rather than requiring an exact…",
+   "kind": "cve",
+   "cve": "CVE-2026-116692",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116692",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "2db299f6a190",
+   "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
+   "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-10-27T21:15:03+00:00",
+   "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "622b1cb563eb",
+   "title": "Linux 7.4 Introduces DMA-BUF Support To I/O Path With IO_uring",
+   "url": "https://www.phoronix.com/news/DMA-BUF-IO-uring-Linux-7.4",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-27T21:09:43+00:00",
+   "summary": "Merged today for the ongoing Linux 7.4 merge window is the infrastructure for enabling DMA-BUF support in the kernel's I/O path with the wonderful IO_uring framework...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "62875c7831ab",
+   "title": "SANS NewsBites XXVIII-80: Patch Now: Brotli Emergency Fixes; HPE AOS 8 & 10 Max-Severity Flaws; Apple OS Updates Plus Backported Fix",
+   "url": "https://www.sans.org/newsletters/newsbites/xxviii-80",
+   "source": "SANS NewsBites",
+   "source_category": "Security",
+   "published": "2026-10-27T20:58:04.099000+00:00",
+   "summary": "Semiweekly SANS summary of the most important security news, with expert commentary.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "851b1601424b",
+   "title": "Hackers hijack Convertr analytics script to steal payment card data",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-27T20:57:25+00:00",
+   "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "e77674105596",
+   "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
+   "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-10-27T20:42:40+00:00",
+   "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Microsoft & Windows"
+   ]
+  },
   {
    "id": "ac00fe229ec8",
    "title": "Nvidia Vera Rubin and Vera CPUs now generally available on Oracle",
@@ -222,6 +516,20 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "2a82e21cea3f",
+   "title": "Big Red gets cozy with Google to offer TPUs to AI customers",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/27/big-red-gets-cozy-with-google-to-offer-tpus-to-ai-customers/5305846",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T20:20:27+00:00",
+   "summary": "Oracle plans to add those chips alongside new Nvidia hardware and OpenAI services as businesses await AI payoffs",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -274,6 +582,20 @@
    ]
   },
   {
+   "id": "67aef7e7b7c4",
+   "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
+   "url": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-10-27T19:58:06+00:00",
+   "summary": "A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "8e3dc21b2c60",
    "title": "Raspberry Pi Zero 3 W & Raspberry Pi 4 Model A Surface In Linux Kernel Patches",
    "url": "https://www.phoronix.com/news/Raspberry-Pi-Zero-3-W-Pi-4-A",
@@ -301,6 +623,19 @@
    ]
   },
   {
+   "id": "67ebe0aacd77",
+   "title": "Anthropic now lets Claude users jump out of plane without parachute",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/27/anthropic-now-lets-claude-users-jump-out-of-plane-without-parachute/5305807",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T19:29:00+00:00",
+   "summary": "Meet CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "c7c5b54e81d4",
    "title": "Oracle is Expanding the Accelerator Options in OCI for Enterprises",
    "url": "https://www.nextplatform.com/ai/2026/10/27/oracle-is-expanding-the-accelerator-options-in-oci-for-enterprises/5305815",
@@ -311,6 +646,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "004c185054dc",
+   "title": "AI 'hacker' finds 4 severe bugs in popular industrial control software in under 4 hours",
+   "url": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-27T19:11:02+00:00",
+   "summary": "One critical, three high-severity EPICS bugs could disrupt research experiments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1771,6 +2119,12 @@
      "source": "Slashdot",
      "title": "Apple Updates MacBook Pro With M6 Chips",
      "url": "https://apple.slashdot.org/story/26/10/27/1541235/apple-updates-macbook-pro-with-m6-chips?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "1145817a9862",
+     "source": "The Register",
+     "title": "Apple takes powerful M6 chip to the MacBook Pro, iMac",
+     "url": "https://www.theregister.com/personal-tech/2026/10/27/apple-takes-powerful-m6-chip-to-the-macbook-pro-imac/5305797"
     }
    ],
    "topics": [
