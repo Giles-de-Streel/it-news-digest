@@ -91,6 +91,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .chip { border-radius: 999px; padding: 3px 10px; font-size: 13px; }
 .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 @media (prefers-color-scheme: dark) { .chip.on { color: #0d1117; } }
+.chip-label { font-weight: 600; color: var(--text); }
+.chip-n { margin-left: 5px; font-weight: 400; color: var(--muted); }
+.chip.on .chip-label, .chip.on .chip-n { color: inherit; }
+.chip.on .chip-n { opacity: .8; }
 
 .news-section { margin-top: 20px; }
 .section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 10px; }

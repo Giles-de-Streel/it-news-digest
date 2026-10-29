@@ -121,14 +121,17 @@
     else renderSources();
   }
 
+  // Topic name in front, story count quieter beside it
+  const chipLabel = (label, n) => [el("span", { class: "chip-label", text: label }), el("span", { class: "chip-n", text: String(n) })];
+
   function renderNews() {
     const items = newsItems();
     const topicCounts = {};
     for (const it of items) for (const t of it.topics) topicCounts[t] = (topicCounts[t] || 0) + 1;
     $("#topic-filter").replaceChildren(
-      el("button", { class: `chip${state.topic ? "" : " on"}`, text: `All topics ${items.length}`, onclick: () => { state.topic = ""; render(); } }),
+      el("button", { class: `chip${state.topic ? "" : " on"}`, onclick: () => { state.topic = ""; render(); } }, ...chipLabel("All topics", items.length)),
       ...Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
-        el("button", { class: `chip${state.topic === t ? " on" : ""}`, text: `${t} ${n}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } })),
+        el("button", { class: `chip${state.topic === t ? " on" : ""}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } }, ...chipLabel(t, n))),
     );
 
     const list = visibleItems();
