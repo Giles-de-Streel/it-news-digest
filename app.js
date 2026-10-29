@@ -166,6 +166,7 @@
       Object.assign(state, { topic: "", source: "", query: "" });
       $("#search").value = "";
       $("#source-filter").value = "";
+      syncUrl(true);
       render();
     };
     head.replaceChildren(
@@ -178,18 +179,57 @@
     head.hidden = false;
   }
 
+  // Sidebar groups for the topic list. A topic missing here (e.g. one newly added to
+  // fetch_news.py) still shows, under "Other", so nothing silently disappears.
+  const TOPIC_GROUPS = [
+    ["Security", ["Vulnerabilities & patches", "Threats & malware", "Ransomware & breaches", "Identity & access", "Supply chain security", "Reverse engineering", "Forensics & IR", "Pen testing & red team"]],
+    ["Platforms & ops", ["Microsoft & Windows", "Linux & open source", "System administration", "Endpoint management", "Cloud & infrastructure", "Networking", "Databases", "Backup & recovery"]],
+    ["Technology", ["AI", "Hardware", "Development", "Embedded & IoT", "ICS / OT"]],
+    ["Sector & policy", ["Higher education", "Policy & regulation", "Accessibility", "General IT"]],
+  ];
+
   // Topic name in front, story count quieter beside it
-  const chipLabel = (label, n) => [el("span", { class: "chip-label", text: label }), el("span", { class: "chip-n", text: String(n) })];
+  const navLabel = (label, n) => [el("span", { class: "nav-label", text: label }), el("span", { class: "nav-n", text: String(n) })];
+
+  function setTopic(topic) {
+    state.topic = topic;
+    syncUrl(true);
+    toggleTopicPanel(false);
+    render();
+    // Start the new list from its top when the user had scrolled down into the old one
+    const top = $(".news-main").getBoundingClientRect().top;
+    if (top < 0) window.scrollTo({ top: window.scrollY + top - topbarHeight() });
+  }
+
+  function renderTopicNav(items) {
+    const counts = {};
+    for (const it of items) for (const t of it.topics) counts[t] = (counts[t] || 0) + 1;
+    const known = new Set(TOPIC_GROUPS.flatMap(([, ts]) => ts));
+    const other = Object.keys(counts).filter((t) => !known.has(t));
+    const groups = [...TOPIC_GROUPS, ...(other.length ? [["Other", other]] : [])];
+    const byName = (a, b) => a.localeCompare(b, undefined, { sensitivity: "base" });
+    const item = (label, topic, n) => el("li", {},
+      el("button", {
+        type: "button",
+        class: `nav-item${n ? "" : " empty"}`,
+        "aria-current": state.topic === topic ? "true" : "false",
+        title: topic ? (TOPIC_INFO[topic] || [topic, ""])[1] || topic : "Show every topic",
+        onclick: () => setTopic(topic),
+      }, ...navLabel(label, n)));
+    $("#topic-nav").replaceChildren(
+      el("div", { class: "nav-sheet-head" },
+        el("span", { text: "Topics" }),
+        el("button", { type: "button", class: "nav-close", text: "Close", onclick: () => toggleTopicPanel(false) })),
+      el("ul", { class: "nav-list nav-all" }, item("All topics", "", items.length)),
+      ...groups.map(([group, topics]) => el("div", { class: "nav-group" },
+        el("h3", { class: "nav-group-title", text: group }),
+        el("ul", { class: "nav-list" }, ...[...topics].sort(byName).map((t) => item(t, t, counts[t] || 0))))));
+    $("#topics-toggle").textContent = state.topic ? `Topic: ${state.topic}` : "Topics";
+  }
 
   function renderNews() {
     const items = newsItems();
-    const topicCounts = {};
-    for (const it of items) for (const t of it.topics) topicCounts[t] = (topicCounts[t] || 0) + 1;
-    $("#topic-filter").replaceChildren(
-      el("button", { class: `chip${state.topic ? "" : " on"}`, onclick: () => { state.topic = ""; render(); } }, ...chipLabel("All topics", items.length)),
-      ...Object.entries(topicCounts).sort((a, b) => a[0].localeCompare(b[0], undefined, { sensitivity: "base" })).map(([t, n]) =>
-        el("button", { class: `chip${state.topic === t ? " on" : ""}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } }, ...chipLabel(t, n))),
-    );
+    renderTopicNav(items);
 
     const list = visibleItems();
     renderFilterHead(list.length);
@@ -423,9 +463,54 @@
   function setView(view) {
     state.view = view;
     store.set(LS_VIEW, view);
-    history.replaceState(null, "", view === "news" ? location.pathname + location.search : `#${view}`);
+    history.replaceState(null, "", `${location.pathname}${location.search}${view === "news" ? "" : `#${view}`}`);
     render();
     window.scrollTo(0, 0);
+  }
+
+  // ---------- URL state ----------
+  // The topic, source and search live in the address (?topic=AI&source=...&q=...), so a view
+  // can be bookmarked or shared and the Back button steps through topic changes.
+  function syncUrl(push) {
+    const params = new URLSearchParams();
+    if (state.topic) params.set("topic", state.topic);
+    if (state.source) params.set("source", state.source);
+    if (state.query) params.set("q", state.query);
+    const qs = params.toString();
+    const url = `${location.pathname}${qs ? `?${qs}` : ""}${location.hash}`;
+    if (url === `${location.pathname}${location.search}${location.hash}`) return;
+    if (push) history.pushState(null, "", url);
+    else history.replaceState(null, "", url);
+  }
+
+  function readUrl() {
+    const params = new URLSearchParams(location.search);
+    state.topic = params.get("topic") || "";
+    state.source = params.get("source") || "";
+    state.query = params.get("q") || "";
+    $("#search").value = state.query;
+  }
+
+  // ---------- small-screen topic panel and sticky offsets ----------
+  // Height the sticky topbar covers; 0 on phones, where the topbar scrolls away (see style.css)
+  const topbarHeight = () => {
+    const bar = $(".topbar");
+    return bar && getComputedStyle(bar).position === "sticky" ? bar.getBoundingClientRect().height : 0;
+  };
+
+  function toggleTopicPanel(open) {
+    const nav = $("#topic-nav");
+    const show = open ?? !nav.classList.contains("open");
+    nav.classList.toggle("open", show);
+    $("#topics-toggle").setAttribute("aria-expanded", String(show));
+  }
+
+  // The topbar wraps to two or three rows on narrow screens; sticky elements sit just below it
+  function trackTopbar() {
+    const set = () => document.documentElement.style.setProperty("--topbar-h", `${Math.ceil($(".topbar")?.getBoundingClientRect().height || 0)}px`);
+    set();
+    if ("ResizeObserver" in window) new ResizeObserver(set).observe($(".topbar"));
+    else window.addEventListener("resize", set);
   }
 
   // The header goes back to the start: today's news as a list, all topics and sources, no search
@@ -434,6 +519,7 @@
     Object.assign(state, { topic: "", source: "", query: "", layout: "list" });
     store.set(LS_LAYOUT, "list");
     $("#search").value = "";
+    syncUrl(true);
     const latest = state.days[0]?.date;
     if (latest && state.day !== latest) await loadDay(latest);
     populateFilters();
@@ -446,8 +532,25 @@
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
-    $("#search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
-    $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; render(); });
+    $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncUrl(false); render(); });
+    $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); });
+    $("#topics-toggle").addEventListener("click", () => toggleTopicPanel());
+    // A tap outside the open topic sheet closes it
+    document.addEventListener("click", (e) => {
+      if ($("#topic-nav").classList.contains("open") && !e.target.closest("#topic-nav, #topics-toggle")) toggleTopicPanel(false);
+    });
+    window.addEventListener("popstate", () => { readUrl(); populateFilters(); render(); });
+    // "/" jumps to the search box (unless already typing somewhere); Escape closes the topic panel
+    document.addEventListener("keydown", (e) => {
+      const typing = /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement?.tagName || "");
+      if (e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        if (state.view !== "news") setView("news");
+        $("#search").focus();
+      } else if (e.key === "Escape") {
+        toggleTopicPanel(false);
+      }
+    });
     document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
       state.layout = b.dataset.layout;
       store.set(LS_LAYOUT, state.layout);
@@ -458,6 +561,8 @@
 
   async function init() {
     wire();
+    trackTopbar();
+    readUrl();
     // A link like ...#cves opens that tab; otherwise reopen the last tab used
     const fromHash = location.hash.slice(1);
     const saved = store.get(LS_VIEW, "news");

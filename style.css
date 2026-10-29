@@ -208,3 +208,69 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .more { margin-top: 10px; }
 .more summary { cursor: pointer; color: var(--accent); font-size: 14px; padding: 4px 0; }
 .more .cards { margin-top: 8px; }
+
+/* ---------- News layout: topic sidebar + stories ---------- */
+.view[hidden] { display: none !important; }
+.news-layout { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 24px; align-items: start; }
+.news-main { min-width: 0; }
+/* The filter bar stays in view under the topbar while scrolling */
+.news-main .filters select { flex: 0 1 220px; min-width: 0; }
+.news-main .filters { position: sticky; top: var(--topbar-h, 60px); z-index: 4; margin: 8px 0 4px; padding: 8px 0; background: var(--bg); }
+.topic-nav {
+  position: sticky; top: calc(var(--topbar-h, 60px) + 12px);
+  max-height: calc(100vh - var(--topbar-h, 60px) - 24px);
+  max-height: calc(100dvh - var(--topbar-h, 60px) - 24px);
+  overflow-y: auto; overscroll-behavior: contain;
+  margin-top: 16px; padding: 8px 6px 10px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.nav-list { list-style: none; margin: 0; padding: 0; }
+.nav-group-title { margin: 12px 10px 3px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.nav-item {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 8px; width: 100%;
+  border: 0; border-radius: 6px; background: transparent; padding: 3px 10px;
+  font-size: 13.5px; line-height: 1.35; text-align: left;
+}
+.nav-item:hover { background: var(--accent-soft); }
+.nav-label { font-weight: 600; color: var(--text); overflow-wrap: anywhere; }
+.nav-n { flex: none; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.nav-item.empty .nav-label { font-weight: 500; color: var(--muted); }
+.nav-all .nav-item { font-size: 14.5px; padding-top: 5px; padding-bottom: 5px; }
+.nav-item[aria-current="true"] { background: var(--accent); }
+.nav-item[aria-current="true"] .nav-label, .nav-item[aria-current="true"] .nav-n { color: #fff; }
+@media (prefers-color-scheme: dark) { .nav-item[aria-current="true"] .nav-label, .nav-item[aria-current="true"] .nav-n { color: #0d1117; } }
+.topics-toggle { display: none; }
+
+/* Narrow screens: the sidebar becomes a drop-down sheet opened from the "Topics" button */
+@media (max-width: 900px) {
+  .news-layout { display: block; }
+  .topics-toggle { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; max-width: 100%; }
+  .topics-toggle::after { content: "\25BE"; color: var(--muted); }
+  .topic-nav {
+    display: none; position: fixed; z-index: 6; top: var(--topbar-h, 60px); left: 0; right: 0;
+    margin: 0; max-height: calc(100vh - var(--topbar-h, 60px));
+    max-height: calc(100dvh - var(--topbar-h, 60px));
+    border-radius: 0 0 var(--radius) var(--radius); border-width: 0 0 1px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, .18);
+  }
+  .topic-nav.open { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 0 12px; padding: 8px 16px 16px; }
+  .topic-nav .nav-all { grid-column: 1 / -1; }
+  .nav-item { padding: 6px 10px; font-size: 14.5px; } /* bigger touch targets */
+}
+@media (max-width: 600px) {
+  .news-main .filters select { flex: 1 1 160px; min-width: 0; }
+}
+.nav-sheet-head { display: none; }
+@media (max-width: 900px) {
+  .nav-sheet-head { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; padding: 4px 0 8px; font-weight: 700; }
+  .nav-close { padding: 4px 12px; font-size: 14px; }
+}
+/* Phones: the topbar scrolls away so only the compact filter bar stays pinned */
+@media (max-width: 600px) {
+  .topbar { position: static; }
+  .news-main .filters { top: 0; margin-top: 4px; }
+  .news-main .filters .topics-toggle { flex: none; }
+  .news-main .filters input[type="search"] { flex: 1 1 150px; }
+  .news-main .filters .seg { flex: none; }
+  .topic-nav { top: 0; max-height: 100vh; max-height: 100dvh; }
+}
