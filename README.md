@@ -51,4 +51,6 @@ MITRE sources are the ATT&CK blog and the CVE Program blog (Medium feeds). mitre
 
 Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center Dynamics, Blocks & Files, StorageReview, Phoronix) feed a **Hardware** topic.
 
-Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused), TechPowerUp and HotHardware (mostly consumer/gaming hardware), Notebookcheck (feed full of deals). SANS is also covered by the Internet Storm Center diaries feed.
+Development sources (GitHub Blog, Stack Overflow Blog, Hacker News front page at 150+ points via hnrss.org, Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
+
+Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused), TechPowerUp and HotHardware (mostly consumer/gaming hardware), Notebookcheck (feed full of deals). SANS is also covered by the Internet Storm Center diaries feed. Real Python (mostly quizzes and courses) and the Ansible blog (feed doesn't parse; Red Hat Blog covers it) were checked for Development and left out.
