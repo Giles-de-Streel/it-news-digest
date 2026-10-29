@@ -130,7 +130,17 @@ def _text(el, *tags):
 
 
 def parse_feed(data):
-    root = ET.fromstring(data)
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError:
+        # Some CDNs append a <script> after the closing </rss> or </feed> tag.
+        # Cut anything after the last closing root tag and try once more.
+        end = max(data.rfind(b"</rss>") + 6 if b"</rss>" in data else -1,
+                  data.rfind(b"</feed>") + 7 if b"</feed>" in data else -1,
+                  data.rfind(b"</rdf:RDF>") + 10 if b"</rdf:RDF>" in data else -1)
+        if end <= 0 or not data[end:].strip():
+            raise
+        root = ET.fromstring(data[:end])
     items = []
     for it in root.iter("item"):
         items.append({
