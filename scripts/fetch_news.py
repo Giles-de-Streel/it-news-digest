@@ -163,10 +163,14 @@ def build_items(items, source):
     """Turn raw {title, url, summary, published} entries into stored story items."""
     out = []
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0)
+    # Optional per-source title filter, e.g. only Important/Critical Red Hat advisories
+    include = re.compile(source["title_include"]) if source.get("title_include") else None
     for raw in items:
         title = clean_text(raw["title"])
         url = (raw["url"] or "").strip()
         if not title or not url.startswith("http"):
+            continue
+        if include and not include.search(title):
             continue
         published = parse_date(raw["published"])
         if published and published > fetched_at:

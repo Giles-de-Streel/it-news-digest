@@ -61,6 +61,12 @@ Security research sources feed three extra topics, **Reverse engineering**, **Fo
 - Forensics & IR: The DFIR Report, This Week in 4n6, Forensic Focus, Magnet Forensics.
 - Pen testing: PortSwigger Research, SpecterOps, Horizon3.ai, Bishop Fox, TrustedSec, Black Hills InfoSec, watchTowr Labs, Exploit-DB.
 
+Vendor advisories: Cisco PSIRT, Fortinet PSIRT, Palo Alto Networks, Ivanti, CERT-EU, NCSC UK, Red Hat security advisories and Adobe ColdFusion bulletins. More security news: Infosecurity Magazine, Cybersecurity Dive, Risky Business News, Troy Hunt, Wiz Research.
+
+- **Red Hat** uses the RHSA feed with `"title_include": ": (Important|Critical):"`. Any source can set `title_include`, a regex an item's title must match to be kept.
+- **Adobe ColdFusion bulletins** are read by the `adobe_product_bulletins` page parser from helpx.adobe.com/security/products/coldfusion.html, dated by "Originally posted". Adobe's all-products bulletin list loads with JavaScript, so it isn't used. The same parser should work for other helpx product pages.
+- Checked and left out in Oct 2026: Microsoft Security Update Guide RSS (about 300 CVE entries a day), Broadcom/VMware, Citrix and SC Media feeds (malformed XML).
+
 Checked and left out: Google Threat Intelligence and Rapid7 (feeds don't parse), NCC Group (no feed found), Reddit r/ReverseEngineering and r/netsec (Reddit rate-limits feed readers), Red Canary and Binarly (no posts in 30 days).
 
 The **Sources** tab lists every source in `sources.json`, one row each in name order, with its category and that day's fetch status. Each source name links to the outlet's website (the `site` field), not its feed. Each source has an on/off switch that hides or shows its stories on the News and CVEs tabs. Switches are saved in the browser (localStorage `ind.sourcesOff`) and don't change what the workflow fetches. A story stays visible while any source that covered it is on.

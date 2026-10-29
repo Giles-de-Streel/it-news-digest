@@ -117,6 +117,36 @@ def parse_cisa_kev(page, base_url):
     return items
 
 
+def parse_adobe_product_bulletins(page, base_url):
+    """One product's security bulletin table on helpx.adobe.com (e.g. /security/products/coldfusion.html).
+
+    Each row is "APSByy-nn : title" with Originally posted and Last updated dates (MM/DD/YYYY).
+    The original posting date is used, at noon UTC like the KEV dates; an update to an old
+    bulletin is not treated as new. Adobe's all-products bulletin list loads with JavaScript.
+    """
+    row = re.compile(
+        r'<a[^>]+href="([^"]*/(apsb\d{2}-\d+)\.html)"[^>]*>(.*?)</a>.*?<p>\s*(\d{2})/(\d{2})/(\d{4})\s*</p>'
+        r'(?:.*?<p>\s*(\d{2}/\d{2}/\d{4})\s*</p>)?', re.S | re.I)
+    items, seen = [], set()
+    for href, bid, label, mm, dd, yyyy, updated in row.findall(page):
+        bid = bid.upper()
+        if bid in seen:
+            continue
+        seen.add(bid)
+        title = _strip(label)
+        if not title.upper().startswith(bid):
+            title = f"{bid}: {title}"
+        title = re.sub(r"^(APSB\d{2}-\d+)\s*:\s*", r"\1: ", title, flags=re.I)
+        items.append({
+            "title": title,
+            "url": urljoin(base_url, href),
+            "summary": f"Adobe security bulletin {bid}, originally posted {mm}/{dd}/{yyyy}"
+                       + (f", last updated {updated}." if updated else "."),
+            "published": f"{yyyy}-{mm}-{dd}T12:00:00+00:00",
+        })
+    return items
+
+
 NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 NVD_PAGE_SIZE = 2000
 NVD_MAX_PAGES = 5
@@ -182,6 +212,7 @@ API_FETCHERS = {
 
 
 PARSERS = {
+    "adobe_product_bulletins": parse_adobe_product_bulletins,
     "cisa_kev": parse_cisa_kev,
     "msrc_blog": parse_msrc_blog,
     "sans_newsbites": parse_sans_newsbites,
