@@ -46,9 +46,9 @@ body {
 }
 a { color: var(--accent); }
 h1, h2, h3 { line-height: 1.25; }
-/* Capped so wide monitors get at most 3 card columns instead of a wall of them */
-.wrap { max-width: 1560px; margin: 0 auto; padding: 0 24px; }
-@media (max-width: 600px) { .wrap { padding: 0 16px; } }
+/* Fills standard monitors (up to 2560px) edge to edge; only ultrawide screens get side margins */
+.wrap { max-width: 2560px; margin: 0 auto; padding: 0 14px; }
+@media (max-width: 600px) { .wrap { padding: 0 12px; } }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .muted { color: var(--muted); }
 
@@ -211,7 +211,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 
 /* ---------- News layout: topic sidebar + stories ---------- */
 .view[hidden] { display: none !important; }
-.news-layout { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 24px; align-items: start; }
+.news-layout { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 16px; align-items: start; }
 .news-main { min-width: 0; }
 /* The filter bar stays in view under the topbar while scrolling */
 .news-main .filters select { flex: 0 1 220px; min-width: 0; }
