@@ -18,7 +18,7 @@ A daily list of IT and security news from 32 sources, with the same story from d
      Signals are attached when a day's file is written, so older days keep the scores they had then.
    - **Other stories** shows at most 8 single-source stories per source; the rest fold under "N more from …". Choosing that source or searching shows all of them.
    - **Last 7 days** in the day picker combines the last seven day files. Stories are ranked across the whole week and each card shows its date. The Sources tab then shows the latest day's fetch.
-   - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
+   - Filter by topic, source or search text. Picking a topic pill shows a banner above the stories with the topic's full name (e.g. AI is "Artificial intelligence"), a one-line description, the story count, any source/search filter, and a button to clear it. The names live in `TOPIC_INFO` in app.js; keep them in step with `TOPICS` in fetch_news.py. The **Sources** tab shows what each source returned and any errors.
    - The browser tab and shortcut icon is the header's newspaper outline: `favicon.svg` (switches to a light stroke in dark mode) plus `icon-192.png` for shortcuts and home-screen icons.
 
 Summaries come from each source's own text, shortened. No AI service is involved.

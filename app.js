@@ -121,6 +121,62 @@
     else renderSources();
   }
 
+  // Full name and a one-line description for each topic pill, shown above the stories when it's picked.
+  // Must match the TOPICS keys in scripts/fetch_news.py; an unknown topic falls back to its pill text.
+  const TOPIC_INFO = {
+    "Accessibility": ["Accessibility", "Web and digital accessibility: WCAG, Section 508, screen readers."],
+    "AI": ["Artificial intelligence", "AI, machine learning, large language models and AI assistants."],
+    "Backup & recovery": ["Backup and recovery", "Backups, disaster recovery, restores and business continuity."],
+    "Cloud & infrastructure": ["Cloud and infrastructure", "Public cloud, virtualization, Kubernetes and data centers."],
+    "Databases": ["Databases", "SQL Server, Oracle, PostgreSQL, MySQL and other database platforms."],
+    "Development": ["Software development", "Programming languages, developer tools, source control and CI/CD."],
+    "Embedded & IoT": ["Embedded systems and IoT", "Microcontrollers, firmware, RTOS, single-board computers and connected devices."],
+    "Endpoint management": ["Endpoint management", "Intune, Configuration Manager, Autopilot, Jamf, device management and patching."],
+    "Forensics & IR": ["Digital forensics and incident response", "Investigations, evidence collection, memory and disk analysis, IR write-ups."],
+    "General IT": ["General IT", "Stories that don't match any of the other topics."],
+    "Hardware": ["Hardware", "CPUs, GPUs, storage, servers, firmware and data center hardware."],
+    "Higher education": ["Higher education", "Universities, campus IT, education technology and student data."],
+    "ICS / OT": ["Industrial control systems and operational technology", "SCADA, PLCs, industrial networks, critical infrastructure and OT security."],
+    "Identity & access": ["Identity and access", "Authentication, MFA, passkeys, SSO, SAML/OAuth and credentials."],
+    "Linux & open source": ["Linux and open source", "Linux distributions, the kernel, open-source projects and tools."],
+    "Microsoft & Windows": ["Microsoft and Windows", "Windows, Microsoft 365, Azure, Entra, Exchange, SQL Server and Defender."],
+    "Networking": ["Networking", "Routers, firewalls, VPN, Wi-Fi, DNS and network vendors."],
+    "Pen testing & red team": ["Penetration testing and red teaming", "Offensive security, exploits, C2 frameworks and bug bounties."],
+    "Policy & regulation": ["Policy and regulation", "Laws, regulators, government action, lawsuits and fines."],
+    "Ransomware & breaches": ["Ransomware and data breaches", "Ransomware attacks, breaches, leaks and extortion."],
+    "Reverse engineering": ["Reverse engineering", "Decompiling, disassembly, fuzzing and malware analysis."],
+    "Supply chain security": ["Software supply chain security", "Malicious packages, dependencies, SBOMs and open-source ecosystem security."],
+    "Threats & malware": ["Threats and malware", "Malware, phishing, botnets, threat actors and campaigns."],
+    "Vulnerabilities & patches": ["Vulnerabilities and patches", "CVEs, zero-days, exploits, security updates and advisories."],
+  };
+
+  // Says what the story list is showing: the picked topic in full, plus any source or search filter
+  function renderFilterHead(count) {
+    const head = $("#filter-head");
+    const filtered = state.topic || state.source || state.query;
+    if (!filtered) { head.hidden = true; return; }
+    const [name, desc] = state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
+    const extra = [
+      state.source ? `from ${state.source}` : "",
+      state.query ? `matching "${state.query}"` : "",
+    ].filter(Boolean).join(", ");
+    const note = `${count} ${count === 1 ? "story" : "stories"}${extra ? ` ${extra}` : ""}`;
+    const clear = () => {
+      Object.assign(state, { topic: "", source: "", query: "" });
+      $("#search").value = "";
+      $("#source-filter").value = "";
+      render();
+    };
+    head.replaceChildren(
+      el("div", { class: "filter-head-text" },
+        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : "Filtered" }),
+        el("h2", { text: name }),
+        ...(desc ? [el("p", { class: "muted filter-desc", text: desc })] : []),
+        el("p", { class: "muted filter-note", text: note })),
+      el("button", { class: "filter-clear", type: "button", onclick: clear, text: state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
+    head.hidden = false;
+  }
+
   // Topic name in front, story count quieter beside it
   const chipLabel = (label, n) => [el("span", { class: "chip-label", text: label }), el("span", { class: "chip-n", text: String(n) })];
 
@@ -135,6 +191,7 @@
     );
 
     const list = visibleItems();
+    renderFilterHead(list.length);
     const box = $("#news");
     if (!list.length) {
       box.replaceChildren(el("p", { class: "empty", text: items.length ? "Nothing matches these filters." : "No stories for this day yet." }));
