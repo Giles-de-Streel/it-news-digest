@@ -14,6 +14,7 @@ import json
 import math
 import re
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
@@ -21,6 +22,7 @@ from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -223,11 +225,40 @@ def fetch_source(source, hours):
             if not raw:
                 return source, [], "Page fetched but no items found; the site's layout may have changed"
             return source, build_items(raw, source), None
-        req = Request(source["url"], headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"})
-        with urlopen(req, timeout=30) as resp:
-            return source, build_items(parse_feed(resp.read()), source), None
+        return source, build_items(fetch_feed(source["url"]), source), None
     except Exception as exc:  # one bad source must not sink the run
         return source, [], f"{type(exc).__name__}: {str(exc)[:200]}"
+
+
+class NotAFeed(Exception):
+    """The server answered 200 with a web page (error page, bot check) instead of a feed."""
+
+
+RETRY_PAUSE_SECONDS = 15
+
+
+def fetch_feed(url, attempts=2):
+    """Download and parse one RSS/Atom feed, retrying once after a short pause on failures
+    that are usually temporary: timeouts, 429/5xx, or an HTML page where the feed should be."""
+    for attempt in range(1, attempts + 1):
+        try:
+            req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"})
+            with urlopen(req, timeout=30) as resp:
+                data = resp.read()
+            try:
+                return parse_feed(data)
+            except ET.ParseError as exc:
+                head = data[:600].lstrip().lower()
+                if head.startswith((b"<!doctype html", b"<html")) or b"<html" in head:
+                    title = re.search(rb"<title[^>]*>(.*?)</title>", data[:5000], re.I | re.S)
+                    hint = f' (page title "{clean_text(title.group(1).decode("utf-8", "replace"))[:80]}")' if title else ""
+                    raise NotAFeed(f"Got a web page instead of the feed{hint}; likely a temporary error or bot-check page") from exc
+                raise
+        except (NotAFeed, TimeoutError, URLError) as exc:
+            transient = not isinstance(exc, HTTPError) or exc.code == 429 or exc.code >= 500
+            if attempt == attempts or not transient:
+                raise
+            time.sleep(RETRY_PAUSE_SECONDS)
 
 
 def tag_topics(item):
