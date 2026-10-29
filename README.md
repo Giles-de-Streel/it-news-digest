@@ -50,7 +50,7 @@ Page sources check the site's robots.txt (fetched with the fetcher's own User-Ag
 
 MITRE sources are the ATT&CK blog and the CVE Program blog (Medium feeds). mitre.org's own news pages return 403 to scripts, so they aren't used.
 
-Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center Dynamics, Blocks & Files, StorageReview, Phoronix) feed a **Hardware** topic.
+Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center Dynamics, StorageReview, Phoronix) feed a **Hardware** topic.
 
 Development sources (GitHub Blog, Stack Overflow Blog, Hacker News (its own front-page feed, news.ycombinator.com/rss), Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
 
@@ -69,7 +69,7 @@ Wider IT coverage (Oct 2026), with new topics **Higher education**, **Endpoint m
 - Networking: Packet Pushers, APNIC, Cloudflare. Privacy & compliance: HIPAA Journal, NIST News.
 - Supply chain: OpenSSF, Socket, Snyk. Also Deque (accessibility), ITSM.tools, Power BI Blog.
 
-Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, WebAIM, AADInternals (no posts in 30 days).
+Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, WebAIM, AADInternals (no posts in 30 days). Blocks & Files was dropped on 2026-10-29: it started serving GitHub's runners an "Are we human?" bot-check page instead of its feed.
 
 Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
 - Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.
