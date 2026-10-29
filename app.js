@@ -370,8 +370,21 @@
     window.scrollTo(0, 0);
   }
 
+  // The header goes back to the start: today's news as a list, all topics and sources, no search
+  async function goHome(e) {
+    e.preventDefault();
+    Object.assign(state, { topic: "", source: "", query: "", layout: "list" });
+    store.set(LS_LAYOUT, "list");
+    $("#search").value = "";
+    const latest = state.days[0]?.date;
+    if (latest && state.day !== latest) await loadDay(latest);
+    populateFilters();
+    setView("news");
+  }
+
   // ---------- events ----------
   function wire() {
+    $("#home").addEventListener("click", goHome);
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
