@@ -304,40 +304,31 @@
     $("#sources-meta").textContent = !d.generated ? ""
       : d.week ? `Showing the latest day's fetch (${d.date}, ${fmtTime(d.generated)}). Pick a single day to see its sources.`
       : `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.`;
-    // Every configured source, grouped by category; sources dropped from sources.json still show if this day fetched them
+    // Every configured source, one row each; sources dropped from sources.json still show if this day fetched them
     const status = new Map((d.sources || []).map((s) => [s.source, s]));
     const all = [...state.catalog];
     for (const name of status.keys()) if (!all.some((c) => c.name === name)) all.push({ name, category: "Removed" });
-    const byName = (a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
-    const groups = new Map();
-    for (const s of all) groups.set(s.category || "Other", [...(groups.get(s.category || "Other") || []), s]);
+    all.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
 
     const onCount = all.filter((s) => !state.off.has(s.name)).length;
     $("#sources-switches").replaceChildren(
       el("span", { text: `${onCount} of ${all.length} sources shown on the News and CVEs tabs. Switched-off sources are still fetched; this only hides their stories in this browser.` }),
-      onCount < all.length ? el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) }) : null,
+      ...(onCount < all.length ? [el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) })] : []),
     );
 
-    const rows = [];
-    for (const [cat, list] of [...groups].sort((a, b) => a[0].localeCompare(b[0]))) {
-      const names = list.map((s) => s.name);
-      const allOn = names.every((n) => !state.off.has(n));
-      rows.push(el("tr", { class: "cat" },
-        el("th", { colspan: "5" }, toggle(allOn, `Show all ${cat} sources`, (on) => setOff(names, !on)), el("span", { text: `${cat} (${list.length})` }))));
-      for (const s of list.sort(byName)) {
-        const st = status.get(s.name);
-        const on = !state.off.has(s.name);
-        rows.push(el("tr", { class: on ? "" : "off" },
-          el("td", { class: "sw" }, toggle(on, `Show ${s.name}`, (v) => setOff([s.name], !v))),
-          el("td", {}, s.url ? link(s.url, s.name) : s.name),
-          el("td", { text: st ? String(st.fetched) : "" }),
-          el("td", { text: st ? String(st.recent) : "" }),
-          st ? el("td", { class: st.error ? "bad" : "good", text: st.error || "OK" })
-            : el("td", { class: "muted", text: "Not in this fetch" }),
-        ));
-      }
-    }
-    $("#sources-body").replaceChildren(...rows);
+    $("#sources-body").replaceChildren(...all.map((s) => {
+      const st = status.get(s.name);
+      const on = !state.off.has(s.name);
+      return el("tr", { class: on ? "" : "off" },
+        el("td", { class: "sw" }, toggle(on, `Show ${s.name}`, (v) => setOff([s.name], !v))),
+        el("td", {}, s.site ? link(s.site, s.name) : s.name), // the outlet's own site, not its feed
+        el("td", { class: "muted", text: s.category || "" }),
+        el("td", { text: st ? String(st.fetched) : "" }),
+        el("td", { text: st ? String(st.recent) : "" }),
+        st ? el("td", { class: st.error ? "bad" : "good", text: st.error || "OK" })
+          : el("td", { class: "muted", text: "Not in this fetch" }),
+      );
+    }));
   }
 
   function toggle(checked, label, onchange) {

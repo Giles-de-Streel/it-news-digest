@@ -133,13 +133,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .src-table th, .src-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
 .src-table td.good { color: var(--good); }
 .src-table td.bad { color: var(--bad); overflow-wrap: anywhere; }
-@media (max-width: 560px) { .src-table th:nth-child(3), .src-table td:nth-child(3) { display: none; } }
+@media (max-width: 560px) { .src-table th:nth-child(3), .src-table td:nth-child(3), .src-table th:nth-child(4), .src-table td:nth-child(4) { display: none; } }
 .src-table td.muted { color: var(--muted); }
 .src-table td.sw { width: 52px; }
 .src-table tr.off td:not(.sw) { opacity: .5; }
-.src-table tr.cat th { background: var(--bg); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-.src-table tr.cat th > * { vertical-align: middle; }
-.src-table tr.cat .switch { margin-right: 12px; }
 .src-switches { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
 
 /* On/off switch built from a checkbox */

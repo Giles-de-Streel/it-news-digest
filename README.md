@@ -34,7 +34,7 @@ Running the fetch again on the same day adds new stories and keeps existing ones
 
 ## Sources
 
-`sources.json` lists each source (`name`, `url`, `category`). Most are RSS or Atom feeds; the fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.
+`sources.json` lists each source (`name`, `site` for the outlet's home page, `url` for the feed or data endpoint, `category`). Most are RSS or Atom feeds; the fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.
 
 Sources without a usable feed have `"type": "page"` and a `parser` from `scripts/page_sources.py`:
 
@@ -55,6 +55,6 @@ Development sources (GitHub Blog, Stack Overflow Blog, Hacker News front page at
 
 Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQL Blog, Brent Ozar, Erik Darling, SQLServerCentral, Oracle Security Alerts, Mike Dietrich, Oracle-Base, dbi services, Pythian, PostgreSQL News, Planet PostgreSQL, Percona Blog) feed a **Databases** topic. Oracle's own blogs (Database Insider, MySQL) return 403 to scripts, so they aren't used.
 
-The **Sources** tab lists every source in `sources.json`, grouped by category, with that day's fetch status. Each source and category has an on/off switch that hides or shows its stories on the News and CVEs tabs. Switches are saved in the browser (localStorage `ind.sourcesOff`) and don't change what the workflow fetches. A story stays visible while any source that covered it is on.
+The **Sources** tab lists every source in `sources.json`, one row each in name order, with its category and that day's fetch status. Each source name links to the outlet's website (the `site` field), not its feed. Each source has an on/off switch that hides or shows its stories on the News and CVEs tabs. Switches are saved in the browser (localStorage `ind.sourcesOff`) and don't change what the workflow fetches. A story stays visible while any source that covered it is on.
 
 Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused), TechPowerUp and HotHardware (mostly consumer/gaming hardware), Notebookcheck (feed full of deals). SANS is also covered by the Internet Storm Center diaries feed. Real Python (mostly quizzes and courses) and the Ansible blog (feed doesn't parse; Red Hat Blog covers it) were checked for Development and left out.
