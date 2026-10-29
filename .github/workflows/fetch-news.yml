@@ -6,11 +6,11 @@ on:
       hours:
         description: "Only keep stories published in the last N hours"
         default: "36"
-  # 8 runs a day, every 3 hours at 01:30, 04:30, 07:30, 10:30, 13:30, 16:30, 19:30, 22:30 UTC.
-  # 10:30 UTC is 06:30 Eastern in summer, 05:30 in winter.
-  # GitHub may start scheduled runs some minutes late at busy times.
+  # Every hour on the hour (UTC). GitHub may start scheduled runs late or skip them at busy
+  # times; a Windmill job on f1fap-n8n (f/admin_platforms/it_news_digest_backup) checks at :05
+  # and dispatches this workflow if no run has started since the top of the hour.
   schedule:
-    - cron: "30 1-22/3 * * *"
+    - cron: "0 * * * *"
 
 permissions:
   contents: write
