@@ -130,7 +130,7 @@
     for (const it of items) for (const t of it.topics) topicCounts[t] = (topicCounts[t] || 0) + 1;
     $("#topic-filter").replaceChildren(
       el("button", { class: `chip${state.topic ? "" : " on"}`, onclick: () => { state.topic = ""; render(); } }, ...chipLabel("All topics", items.length)),
-      ...Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
+      ...Object.entries(topicCounts).sort((a, b) => a[0].localeCompare(b[0], undefined, { sensitivity: "base" })).map(([t, n]) =>
         el("button", { class: `chip${state.topic === t ? " on" : ""}`, onclick: () => { state.topic = state.topic === t ? "" : t; render(); } }, ...chipLabel(t, n))),
     );
 
