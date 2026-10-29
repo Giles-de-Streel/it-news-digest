@@ -395,7 +395,11 @@ def main():
     items, status = [], []
     seen_ids = set()
     for source, found, error in results:
-        recent = [it for it in found if not it["published"] or datetime.fromisoformat(it["published"]) >= cutoff]
+        # Undated items count as new only from sources that never give dates (e.g. the MSRC page parser);
+        # a feed that dates its new posts but not its old ones (Objective-See) would otherwise flood the day
+        dated = any(it["published"] for it in found)
+        recent = [it for it in found
+                  if (datetime.fromisoformat(it["published"]) >= cutoff if it["published"] else not dated)]
         status.append({"source": source["name"], "fetched": len(found), "recent": len(recent), "error": error})
         for it in recent:
             if it["id"] not in seen_ids:
