@@ -68,6 +68,11 @@ Wider IT coverage (Oct 2026), with new topics **Higher education**, **Endpoint m
 - Java & web servers: Inside Java, NGINX, IIS Support Blog (Oracle security alerts were already listed).
 - Networking: Packet Pushers, APNIC, Cloudflare. Privacy & compliance: HIPAA Journal, NIST News.
 - Supply chain: OpenSSF, Socket, Snyk. Also Deque (accessibility), ITSM.tools, Power BI Blog.
+- System administration (new **System administration** topic):
+  - Windows & M365 admin: 4sysops, Petri, Office 365 for IT Pros, Microsoft 365 Roadmap, Exchange Team Blog, Core Infrastructure and Security Blog, Windows Blog, Windows Insider Blog, Sysinternals, Windows Admin Center, AskWoody.
+  - Linux admin: Red Hat Enable Sysadmin, RHEL Blog, 9to5Linux, Linuxiac, It's FOSS, Ubuntu Blog, Linux kernel releases, Rocky Linux news, Jeff Geerling.
+  - Ubuntu security notices and Debian security advisories (Vendor advisories).
+  - Left out: PowerShell.org, SUSE, Admin Magazine (no working feed); Windows Server Blog (empty feed); Practical 365, nixCraft, Ask the Directory Services Team, Thomas Maurer (little or nothing in 30 days).
 
 Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, WebAIM, AADInternals (no posts in 30 days). Blocks & Files was dropped on 2026-10-29: it started serving GitHub's runners an "Are we human?" bot-check page instead of its feed.
 

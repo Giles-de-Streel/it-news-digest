@@ -62,6 +62,7 @@ TOPICS = {
     "Backup & recovery": r"backup|disaster recovery|\bdr\b plan|restore|recovery point|immutable (storage|backup)|veeam|commvault|rubrik|cohesity|business continuity",
     "Supply chain security": r"supply[- ]chain|\bsbom\b|\bnpm\b|\bpypi\b|malicious package|typosquat|dependency|openssf|sigstore|\bslsa\b",
     "Accessibility": r"accessib|\bwcag\b|\ba11y\b|screen reader|\bada\b (title|compliance)|section 508",
+    "System administration": r"sysadmin|system administrat|\badmins?\b|administrators?\b|group policy|\bgpos?\b|active directory|\bad ds\b|domain controller|\bkerberos\b|\bntlm\b|exchange (online|server)|powershell|\bwsus\b|windows server|server 20\d\d|patch tuesday|cumulative update|\brhel\b|\bsystemd\b|\bselinux\b|\bdnf\b|apt-get|\bapt (install|update|upgrade)\b|package manager|kernel \d|\bcron\b|\bbash\b|\bssh\b|sysinternals|admin center|microsoft 365 roadmap|message center|deprecat|end of (life|support)|\beol\b",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",
