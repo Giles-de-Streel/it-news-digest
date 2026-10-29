@@ -58,6 +58,19 @@ Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQ
 
 ICS / OT sources (Industrial Cyber, Siemens ProductCERT advisories, Waterfall Security) feed an **ICS / OT** topic; ICS stories from SecurityWeek already come through its main feed. Embedded sources (Embedded.com, Embedded Computing Design, Electronic Design, EE Times, CNX Software, Hackaday, Zephyr Project) feed an **Embedded & IoT** topic. Checked and left out: CISA ICS advisories, Armis and Eclypsium (403 to scripts; ICS KEV entries still arrive through the CISA KEV source), Dragos, Claroty, Nozomi, Control Global, Automation World and SANS ICS (no working feed found), Memfault Interrupt (no posts in 30 days).
 
+Wider IT coverage (Oct 2026), with new topics **Higher education**, **Endpoint management**, **Backup & recovery**, **Supply chain security** and **Accessibility**:
+- Higher ed: Campus Technology, Inside Higher Ed.
+- Endpoint management: Microsoft Intune Blog, Intune Customer Success, Jamf Blog, Patch My PC.
+- Virtualization: Virtualization Review, William Lam, Yellow Bricks, Nutanix.dev.
+- Cloud: AWS What's New, AWS News Blog, Azure Updates, Azure Blog, Google Cloud Blog.
+- Identity: Okta Security. Backup & recovery: Veeam, Commvault.
+- DevOps & automation: Red Hat Ansible blog, HashiCorp, Kubernetes, Windmill.
+- Java & web servers: Inside Java, NGINX, IIS Support Blog (Oracle security alerts were already listed).
+- Networking: Packet Pushers, APNIC, Cloudflare. Privacy & compliance: HIPAA Journal, NIST News.
+- Supply chain: OpenSSF, Socket, Snyk. Also Deque (accessibility), ITSM.tools, Power BI Blog.
+
+Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, WebAIM, AADInternals (no posts in 30 days).
+
 Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
 - Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.
 - Reverse engineering: Google Project Zero, Hex-Rays (IDA), Binary Ninja, Objective-See, Elastic Security Labs, Trail of Bits, Zero Day Initiative.
