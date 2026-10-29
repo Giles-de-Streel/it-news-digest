@@ -53,4 +53,8 @@ Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center D
 
 Development sources (GitHub Blog, Stack Overflow Blog, Hacker News front page at 150+ points via hnrss.org, Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
 
+Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQL Blog, Brent Ozar, Erik Darling, SQLServerCentral, Oracle Security Alerts, Mike Dietrich, Oracle-Base, dbi services, Pythian, PostgreSQL News, Planet PostgreSQL, Percona Blog) feed a **Databases** topic. Oracle's own blogs (Database Insider, MySQL) return 403 to scripts, so they aren't used.
+
+The **Sources** tab lists every source in `sources.json`, grouped by category, with that day's fetch status. Each source and category has an on/off switch that hides or shows its stories on the News and CVEs tabs. Switches are saved in the browser (localStorage `ind.sourcesOff`) and don't change what the workflow fetches. A story stays visible while any source that covered it is on.
+
 Checked and left out in Oct 2026: Windows release health RSS (404), Neowin and ZDNET (too consumer-focused), TechPowerUp and HotHardware (mostly consumer/gaming hardware), Notebookcheck (feed full of deals). SANS is also covered by the Internet Storm Center diaries feed. Real Python (mostly quizzes and courses) and the Ansible blog (feed doesn't parse; Red Hat Blog covers it) were checked for Development and left out.

@@ -49,6 +49,7 @@ TOPICS = {
     "AI": r"\bai\b|artificial intelligence|llm|chatgpt|openai|copilot|gemini|claude|machine learning|genai",
     "Hardware": r"\bcpus?\b|\bgpus?\b|processor|semiconductor|\bchips?\b|chipmaker|nvidia|\bamd\b|\bintel\b|ryzen|epyc|xeon|\barm\b|qualcomm|tsmc|\bssds?\b|nvme|\bhdds?\b|hard drive|\bdram\b|\bddr\d|\bhbm\d?\b|flash storage|storage array|firmware|\bbios\b|uefi|motherboard|laptop|workstation|\brack\b|data cent(er|re)|datacenter|liquid cooling|power supply",
     "Development": r"programming|developer|\bcoding\b|source code|\bgit(hub|lab)?\b|python|powershell|javascript|typescript|\brust\b|golang|\bjava\b|\.net\b|c\+\+|compiler|\bsdks?\b|\bides?\b|vs code|visual studio|\bnpm\b|pypi|crates\.io|ci/cd|devops|refactor|open-source (library|project)",
+    "Databases": r"database|\bsql\b|sql server|\bmssql\b|t-sql|postgres|mysql|mariadb|oracle (database|db|rac)|\brac\b|\brman\b|data ?guard|mongodb|redis|sqlite|\bdbas?\b|always ?on availability",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",

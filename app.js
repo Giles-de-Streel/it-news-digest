@@ -5,6 +5,7 @@
 
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
+  const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
   const SOURCE_CAP = 8; // single-source stories shown per source before the rest fold away
@@ -21,6 +22,8 @@
     query: "",
     cveQuery: "",
     layout: "cards",
+    catalog: [], // every configured source, from sources.json
+    off: new Set(),
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -52,6 +55,10 @@
     const res = await fetch(`data/index.json?t=${Date.now()}`, { cache: "no-store" });
     state.days = res.ok ? (await res.json()).days || [] : [];
   }
+  async function loadCatalog() {
+    const res = await fetch(`sources.json?t=${Date.now()}`, { cache: "no-store" });
+    state.catalog = res.ok ? await res.json() : [];
+  }
   async function fetchDay(day) {
     const res = await fetch(`data/days/${day}.json`, { cache: "no-store" });
     return res.ok ? await res.json() : { date: day, items: [], sources: [] };
@@ -77,8 +84,10 @@
   const rank = (a, b) => coverage(b) - coverage(a) || (b.published || "").localeCompare(a.published || "");
 
   const isCve = (it) => it.kind === "cve";
-  const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it));
-  const cveItems = () => (state.dayData?.items || []).filter(isCve);
+  // A story stays visible while at least one source that covered it is switched on
+  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s));
+  const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
+  const cveItems = () => (state.dayData?.items || []).filter((it) => isCve(it) && isOn(it));
 
   function visibleItems() {
     const q = state.query.toLowerCase();
@@ -295,13 +304,54 @@
     $("#sources-meta").textContent = !d.generated ? ""
       : d.week ? `Showing the latest day's fetch (${d.date}, ${fmtTime(d.generated)}). Pick a single day to see its sources.`
       : `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.`;
-    const sorted = [...(d.sources || [])].sort((a, b) => a.source.localeCompare(b.source, undefined, { sensitivity: "base" }));
-    $("#sources-body").replaceChildren(...sorted.map((s) => el("tr", {},
-      el("td", { text: s.source }),
-      el("td", { text: String(s.fetched) }),
-      el("td", { text: String(s.recent) }),
-      el("td", { class: s.error ? "bad" : "good", text: s.error || "OK" }),
-    )));
+    // Every configured source, grouped by category; sources dropped from sources.json still show if this day fetched them
+    const status = new Map((d.sources || []).map((s) => [s.source, s]));
+    const all = [...state.catalog];
+    for (const name of status.keys()) if (!all.some((c) => c.name === name)) all.push({ name, category: "Removed" });
+    const byName = (a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+    const groups = new Map();
+    for (const s of all) groups.set(s.category || "Other", [...(groups.get(s.category || "Other") || []), s]);
+
+    const onCount = all.filter((s) => !state.off.has(s.name)).length;
+    $("#sources-switches").replaceChildren(
+      el("span", { text: `${onCount} of ${all.length} sources shown on the News and CVEs tabs. Switched-off sources are still fetched; this only hides their stories in this browser.` }),
+      onCount < all.length ? el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) }) : null,
+    );
+
+    const rows = [];
+    for (const [cat, list] of [...groups].sort((a, b) => a[0].localeCompare(b[0]))) {
+      const names = list.map((s) => s.name);
+      const allOn = names.every((n) => !state.off.has(n));
+      rows.push(el("tr", { class: "cat" },
+        el("th", { colspan: "5" }, toggle(allOn, `Show all ${cat} sources`, (on) => setOff(names, !on)), el("span", { text: `${cat} (${list.length})` }))));
+      for (const s of list.sort(byName)) {
+        const st = status.get(s.name);
+        const on = !state.off.has(s.name);
+        rows.push(el("tr", { class: on ? "" : "off" },
+          el("td", { class: "sw" }, toggle(on, `Show ${s.name}`, (v) => setOff([s.name], !v))),
+          el("td", {}, s.url ? link(s.url, s.name) : s.name),
+          el("td", { text: st ? String(st.fetched) : "" }),
+          el("td", { text: st ? String(st.recent) : "" }),
+          st ? el("td", { class: st.error ? "bad" : "good", text: st.error || "OK" })
+            : el("td", { class: "muted", text: "Not in this fetch" }),
+        ));
+      }
+    }
+    $("#sources-body").replaceChildren(...rows);
+  }
+
+  function toggle(checked, label, onchange) {
+    const input = el("input", { type: "checkbox", role: "switch", class: "switch", "aria-label": label, title: label });
+    input.checked = checked;
+    input.addEventListener("change", () => onchange(input.checked));
+    return input;
+  }
+
+  function setOff(names, off) {
+    for (const n of names) off ? state.off.add(n) : state.off.delete(n);
+    store.set(LS_OFF, [...state.off]);
+    populateFilters();
+    render();
   }
 
   function populateFilters() {
@@ -311,7 +361,7 @@
       ...(state.days.length > 1 ? [el("option", { value: WEEK, text: `Last ${Math.min(WEEK_DAYS, state.days.length)} days (${weekCount})` })] : []),
       ...state.days.map((d) => el("option", { value: d.date, text: `${d.date} (${d.count})` })));
     daySel.value = state.day || "";
-    const sources = [...new Set(newsItems().flatMap(sourcesOf))].sort();
+    const sources = [...new Set(newsItems().flatMap(sourcesOf))].filter((s) => !state.off.has(s)).sort();
     const srcSel = $("#source-filter");
     srcSel.replaceChildren(el("option", { value: "", text: "All sources" }), ...sources.map((s) => el("option", { value: s, text: s })));
     srcSel.value = sources.includes(state.source) ? state.source : "";
@@ -348,7 +398,9 @@
     const saved = store.get(LS_VIEW, "news");
     state.view = VIEWS.includes(fromHash) ? fromHash : VIEWS.includes(saved) ? saved : "news";
     state.layout = store.get(LS_LAYOUT, "cards") === "list" ? "list" : "cards";
-    await loadIndex();
+    const off = store.get(LS_OFF, []);
+    state.off = new Set(Array.isArray(off) ? off : []);
+    await Promise.all([loadIndex(), loadCatalog()]);
     if (state.days.length) await loadDay(state.days[0].date);
     populateFilters();
     render();
