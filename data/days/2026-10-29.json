@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-10-29T16:32:14+00:00",
+ "generated": "2026-10-29T16:35:13+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 106,
-   "recent": 32,
+   "fetched": 107,
+   "recent": 33,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -707,8 +707,8 @@
   },
   {
    "source": "Siemens ProductCERT advisories",
-   "fetched": 2476,
-   "recent": 0,
+   "fetched": 2477,
+   "recent": 1,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1120,12 +1120,6 @@
    "error": null
   },
   {
-   "source": "DevOps.com",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  },
-  {
    "source": "CNCF Blog",
    "fetched": 10,
    "recent": 1,
@@ -1142,12 +1136,6 @@
    "fetched": 20,
    "recent": 2,
    "error": null
-  },
-  {
-   "source": "Grafana Labs Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "OpenTelemetry Blog",
@@ -1254,6 +1242,47 @@
  ],
  "items": [
   {
+   "id": "14430a1c15c9",
+   "title": "Celus Adds Agentic AI Workflow to Its Electronics Design Assistant",
+   "url": "https://www.embedded.com/celus-adds-agentic-ai-workflow-to-its-electronics-design-assistant/",
+   "source": "Embedded.com",
+   "source_category": "Embedded",
+   "published": "2026-10-29T16:32:21+00:00",
+   "summary": "Celus upgrades its Design Assistant with an #agenticAI workflow that helps hardware #engineers plan the system architecture and component selection before schematic capture. #EmbeddedSystemDesign @Celusio",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "e72de5499951",
+   "title": "My favourite PowerMac is a Nintendo Wii",
+   "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-29T16:32:18+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e5e98c639164",
+   "title": "Quantum DC cancels Australian data center community meeting over \"credible bomb threat\"",
+   "url": "https://www.datacenterdynamics.com/en/news/quantum-dc-cancels-australian-data-center-community-meeting-over-credible-bomb-threat/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T16:30:19+00:00",
+   "summary": "The proposed gigawatt-scale has seen local pushback",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "d4989f6dd868",
    "title": "Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations; its Q3 filing shows $98.5B in contingent commitments, up ~$23B from Q2 (Davey Alba/Bloomberg)",
    "url": "https://www.techmeme.com/261029/p39#a261029p39",
@@ -1264,6 +1293,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d5ff9d42b974",
+   "title": "RHSA-2026:92474: Important: python3.12-urllib3 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:92474",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-10-29T16:28:02+00:00",
+   "summary": "An update for python3.12-urllib3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -3318,7 +3362,14 @@
    "source_category": "DevOps & automation",
    "published": "2026-10-29T14:28:00+00:00",
    "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the em-dashes, it's the load-bearing tapestries).",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "739e0b5535e3",
+     "source": "Hacker News",
+     "title": "LLM Voice",
+     "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+    }
+   ],
    "topics": [
     "AI",
     "Policy & regulation"
@@ -8181,6 +8232,57 @@
    ]
   },
   {
+   "id": "6499d01626a0",
+   "title": "SSA-166980 V1.2 (Last Update: 2026-10-29): PHP2Shell Vulnerabilities in Siemens Products",
+   "url": "https://cert-portal.siemens.com/productcert/html/ssa-166980.html",
+   "source": "Siemens ProductCERT advisories",
+   "source_category": "ICS / OT",
+   "published": "2026-10-29T00:00:00+00:00",
+   "summary": "On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as “php2shell” (tracked as CVE-2026-109618 and CVE-2026-109619).",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "ICS / OT",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-109618",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "php"
+    },
+    {
+     "id": "CVE-2026-109619",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "php"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-109618",
+      "added": "2026-10-26",
+      "ransomware": false
+     },
+     {
+      "id": "CVE-2026-109619",
+      "added": "2026-10-26",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-109618",
+     "score": 0.99999,
+     "percentile": 0.99998,
+     "date": "2026-10-28"
+    }
+   }
+  },
+  {
    "id": "6527866099b3",
    "title": "EMACS turns 50",
    "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
@@ -8201,7 +8303,14 @@
    "source_category": "Development",
    "published": "2026-10-28T23:45:46+00:00",
    "summary": "Article URL: https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html Comments URL: https://news.ycombinator.com/item?id=50282544 Points: 196 # Comments: 89",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c6d25904346f",
+     "source": "Lobsters",
+     "title": "GitLab security incident: attempted exploitation of CVE-2026-97229",
+     "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
@@ -9035,6 +9144,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "09b162e9df07",
+   "title": "noalloc: Tooling and libraries to enforce zero heap allocations in Golang",
+   "url": "https://github.com/theconsensuslabs/noalloc",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-28T18:29:25+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
