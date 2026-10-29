@@ -129,6 +129,7 @@
     "Backup & recovery": ["Backup and recovery", "Backups, disaster recovery, restores and business continuity."],
     "Cloud & infrastructure": ["Cloud and infrastructure", "Public cloud, virtualization, Kubernetes and data centers."],
     "Databases": ["Databases", "SQL Server, Oracle, PostgreSQL, MySQL and other database platforms."],
+    "DevOps & SRE": ["DevOps and site reliability", "CI/CD, infrastructure as code, containers and Kubernetes, observability, platform engineering and incident practice."],
     "Development": ["Software development", "Programming languages, developer tools, source control and CI/CD."],
     "Embedded & IoT": ["Embedded systems and IoT", "Microcontrollers, firmware, RTOS, single-board computers and connected devices."],
     "Endpoint management": ["Endpoint management", "Intune, Configuration Manager, Autopilot, Jamf, device management and patching."],
@@ -183,7 +184,7 @@
   // fetch_news.py) still shows, under "Other", so nothing silently disappears.
   const TOPIC_GROUPS = [
     ["Security", ["Vulnerabilities & patches", "Threats & malware", "Ransomware & breaches", "Identity & access", "Supply chain security", "Reverse engineering", "Forensics & IR", "Pen testing & red team"]],
-    ["Platforms & ops", ["Microsoft & Windows", "Linux & open source", "System administration", "Endpoint management", "Cloud & infrastructure", "Networking", "Databases", "Backup & recovery"]],
+    ["Platforms & ops", ["Microsoft & Windows", "Linux & open source", "System administration", "DevOps & SRE", "Endpoint management", "Cloud & infrastructure", "Networking", "Databases", "Backup & recovery"]],
     ["Technology", ["AI", "Hardware", "Development", "Embedded & IoT", "ICS / OT"]],
     ["Sector & policy", ["Higher education", "Policy & regulation", "Accessibility", "General IT"]],
   ];
