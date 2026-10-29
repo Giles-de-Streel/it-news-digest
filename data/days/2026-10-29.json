@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-10-29T15:46:27+00:00",
+ "generated": "2026-10-29T15:57:37+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
@@ -216,13 +216,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Azure SQL Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -335,9 +335,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 119"
   },
   {
    "source": "Oracle-Base",
@@ -372,7 +372,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -599,8 +599,8 @@
   },
   {
    "source": "TechRepublic",
-   "fetched": 19,
-   "recent": 19,
+   "fetched": 20,
+   "recent": 20,
    "error": null
   },
   {
@@ -665,7 +665,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 109,
+   "fetched": 106,
    "recent": 32,
    "error": null
   },
@@ -684,7 +684,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -701,12 +701,97 @@
   },
   {
    "source": "Wiz Research",
-   "fetched": 713,
+   "fetched": 712,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "Industrial Cyber",
+   "fetched": 9,
+   "recent": 3,
+   "error": null
+  },
+  {
+   "source": "Siemens ProductCERT advisories",
+   "fetched": 2476,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Waterfall Security blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Embedded.com",
+   "fetched": 10,
    "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Embedded Computing Design",
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: junk after document element: line 940, column 0"
+  },
+  {
+   "source": "Electronic Design",
+   "fetched": 25,
+   "recent": 5,
+   "error": null
+  },
+  {
+   "source": "EE Times",
+   "fetched": 10,
+   "recent": 8,
+   "error": null
+  },
+  {
+   "source": "CNX Software",
+   "fetched": 32,
+   "recent": 3,
+   "error": null
+  },
+  {
+   "source": "Hackaday",
+   "fetched": 7,
+   "recent": 7,
+   "error": null
+  },
+  {
+   "source": "Zephyr Project blog",
+   "fetched": 10,
+   "recent": 3,
+   "error": null
+  },
+  {
+   "source": "Redis blog",
+   "fetched": 50,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "MongoDB blog",
+   "fetched": 50,
+   "recent": 0,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "99f80de98065",
+   "title": "Why MCP servers should tell agents what to do next",
+   "url": "https://thenewstack.io/aws-mcp-agent-observability/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-10-29T15:55:39+00:00",
+   "summary": "Many MCP servers do one thing. An agent asks for data, and the server hands it back. AWS’s James Ward",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
   {
    "id": "c8098b0c9758",
    "title": "Samsung Warns AI Memory Shortage Could Worsen in 2027",
@@ -718,6 +803,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "ace9b2eccc33",
+   "title": "The Web Can't Afford a JavaScript Runtime Monoculture",
+   "url": "https://redmonk.com/kholterhoff/2026/10/27/js-runtime-monoculture/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-29T15:44:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -772,6 +870,32 @@
    "source_category": "Hardware",
    "published": "2026-10-29T15:31:19+00:00",
    "summary": "The outage last week impacted millions of Orange customers",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b17a91087dbf",
+   "title": "Robot Picks up Othello",
+   "url": "https://hackaday.com/2026/10/29/robot-picks-up-othello/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T15:30:47+00:00",
+   "summary": "Experience is a great teacher. Ask [Jeneus], who, in high school, tried to make a program that played Othello. It didn’t go well. But years later, the idea produced an impressive …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "796b6bd3e218",
+   "title": "Mexico is a showroom for electric vehicles you can't buy in the U.S.",
+   "url": "https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-29T15:30:22+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -1072,6 +1196,19 @@
    ]
   },
   {
+   "id": "c5e71122c5ab",
+   "title": "PLGM Has Grown Up: A New UI and Many More Features",
+   "url": "https://www.percona.com/blog/plgm-has-grown-up-a-new-ui-and-many-more-features/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-10-29T14:57:09+00:00",
+   "summary": "Back in December I introduced Percona Load Generator for MongoDB Clusters (PLGM), a benchmark tool built around one idea: test your database with your own schema and your own queries, not some random data. At the time, PLGM was a command-line tool.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "c1695d206a3e",
    "title": "Prime Video Sports partnerships exec joins OpenAI's compute strategy team",
    "url": "https://www.datacenterdynamics.com/en/news/prime-video-sports-partnerships-exec-joins-openais-compute-strategy-team/",
@@ -1291,6 +1428,21 @@
    ]
   },
   {
+   "id": "af09d2379634",
+   "title": "Percona Operator for MySQL 1.3.0: autopilot tuning, zero-data-loss async failover, encrypted PITR",
+   "url": "https://www.percona.com/blog/percona-operator-for-mysql-1-3-0/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-10-29T14:24:47+00:00",
+   "summary": "Percona Operator for MySQL 1.3.0 is out. This release moves three things forward for teams running MySQL on Kubernetes: the operator now tunes MySQL for you based on the pod resources, async clusters can fail over without losing data in flight, and point-in-time recovery works on clusters where binary logs are…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Databases"
+   ]
+  },
+  {
    "id": "1aedaf6a22cd",
    "title": "Global Internet Infrastructure at NANOG 98: Growth, Ownership, and Sovereignty",
    "url": "https://circleid.com/posts/global-internet-infrastructure-at-nanog-98-growth-ownership-and-sovereignty",
@@ -1492,6 +1644,19 @@
    ]
   },
   {
+   "id": "d0a33ae69dd7",
+   "title": "Exploring What’s Left of Google’s VR Dreams",
+   "url": "https://hackaday.com/2026/10/29/exploring-whats-left-of-googles-vr-dreams/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T14:00:45+00:00",
+   "summary": "You’re likely familiar with Google’s Cardboard, and the legions of cheap virtual reality headsets it spawned. By sticking a smartphone to the wearer’s head, all these headsets needed were some …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "9eacaef84ee4",
    "title": "3 Ways AI Agents Already Operate in Your Browser",
    "url": "https://www.bleepingcomputer.com/news/security/3-ways-ai-agents-already-operate-in-your-browser/",
@@ -1587,6 +1752,19 @@
     "Linux & open source",
     "Pen testing & red team",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "e73b1e188559",
+   "title": "Why are good developers so wary of agentic development?",
+   "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-29T13:58:41+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -1728,6 +1906,19 @@
    ],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "3dde1831ea74",
+   "title": "Get 50+ AI Models for Life in One Plan for $30",
+   "url": "https://www.techrepublic.com/article/askanymodel-ai-lifetime-subscription/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-10-29T13:30:46+00:00",
+   "summary": "Cancel your individual AI subscriptions and get lifetime access to 50+ models for only $29.97 (reg. $499) with code SAVE10.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2072,6 +2263,34 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "383b1f5ddf18",
+   "title": "Discussing the Wide-Bandgap Marketplace",
+   "url": "https://www.electronicdesign.com/blog/inside-electronics/podcast/55415047/electronic-design-discussing-the-wide-bandgap-marketplace",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-29T13:00:00+00:00",
+   "summary": "Wide-bandgap semiconductors have finally entered the engineering mainstream and are finally fulfilling the promises made about the technology.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c015808c54ec",
+   "title": "Smarter Power Sequencing with GreenPAK™",
+   "url": "https://www.eetimes.com/smarter-power-sequencing-with-greenpak/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-29T13:00:00+00:00",
+   "summary": "Programmable mixed-signal devices can replace sprawling RC networks and firmware-dependent control with compact, deterministic, and adaptable multi-rail sequencing.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT",
+    "Networking"
    ]
   },
   {
@@ -2700,6 +2919,47 @@
    ]
   },
   {
+   "id": "dd9f1c2f916f",
+   "title": "STMicroelectronics Weighs Developing More Powerful MCUs, MPUs for Humanoid Robots",
+   "url": "https://www.eetimes.com/stmicroelectronics-weighs-developing-more-powerful-mcus-mpus-for-humanoid-robots/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-29T11:48:02+00:00",
+   "summary": "With humanoid robot designs still evolving and volumes low, STMicroelectronics is watching how the market develops before deciding what to build.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "6745373d4653",
+   "title": "CISA 2030 targets OT modernization, asset visibility, supply chain security through risk-based critical infrastructure defense",
+   "url": "https://industrialcyber.co/cisa/cisa-2030-targets-ot-modernization-asset-visibility-supply-chain-security-through-risk-based-critical-infrastructure-defense/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-10-29T11:45:21+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency released a new strategy that shifts the nation’s cyber defense from...",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "974dd4ca2b2b",
+   "title": "McCormick introduces Common-Sense Cloud Security Act to strengthen cloud defenses, protect critical infrastructure",
+   "url": "https://industrialcyber.co/critical-infrastructure/mccormick-introduces-common-sense-cloud-security-act-to-strengthen-cloud-defenses-protect-critical-infrastructure/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-10-29T11:45:04+00:00",
+   "summary": "A U.S. Republican Representative from Georgia introduced the Common-Sense Cloud Security Act to strengthen cloud cybersecurity by directing...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "ICS / OT"
+   ]
+  },
+  {
    "id": "4589775ef6a9",
    "title": "Syrinx: A censorship-resistant communications platform",
    "url": "https://var0xyz.github.io/syrinx/",
@@ -2737,6 +2997,19 @@
    "topics": [
     "Microsoft & Windows",
     "AI"
+   ]
+  },
+  {
+   "id": "4c4cd6142493",
+   "title": "OmniTrust launches GridAuth to strengthen device identity and trust management across connected energy grids",
+   "url": "https://industrialcyber.co/news/omnitrust-launches-gridauth-to-strengthen-device-identity-and-trust-management-across-connected-energy-grids/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-10-29T11:40:35+00:00",
+   "summary": "OmniTrust announced the launch of GridAuth, a device identity and trust management platform for energy utilities and equipment...",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
    ]
   },
   {
@@ -3052,6 +3325,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "738f8ba1101e",
+   "title": "An AI Chatbot for the Apocalypse",
+   "url": "https://hackaday.com/2026/10/29/an-ai-chatbot-for-the-apocalypse/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T11:00:01+00:00",
+   "summary": "You don’t have to be a full-on “prepper” to at least occasionally wonder what would happen if civilization collapsed. One thing you probably couldn’t do is go on the Internet …read more",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -4036,6 +4322,21 @@
    ]
   },
   {
+   "id": "ec16902d8f38",
+   "title": "$2600 LattePanda Sigma 2 single board server features 180 TOPS Intel Core Ultra X7 358H SoC for local AI applications",
+   "url": "https://www.cnx-software.com/2026/10/29/2600-lattepanda-sigma-2-single-board-server-features-180-tops-intel-core-ultra-x7-358h-soc-for-local-ai-applications/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-10-29T09:00:09+00:00",
+   "summary": "The LattePanda Sigma 2 is a compact single board server/computer powered by an Intel Core Ultra X7 358H Panther Lake-H processor with Intel Arc B390 graphics and a 50 TOPS NPU delivering up to 180 TOPS of combined performance for local AI workloads.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "3974020733a4",
    "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
    "url": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139",
@@ -4215,6 +4516,21 @@
    ]
   },
   {
+   "id": "960512bd4333",
+   "title": "How AI Redefines Semiconductor Manufacturing, From Materials Up",
+   "url": "https://www.eetimes.com/how-ai-redefines-semiconductor-manufacturing-from-materials-up/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-29T08:30:08+00:00",
+   "summary": "AI chip advances depend on more than design, requiring new materials, manufacturing equipment, and packaging technologies to meet rising performance demands.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "7237a32da4ed",
    "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
    "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
@@ -4291,6 +4607,19 @@
      "date": "2026-10-28"
     }
    }
+  },
+  {
+   "id": "3b473b3d8bf8",
+   "title": "Magnetic Lock Opens By Magic",
+   "url": "https://hackaday.com/2026/10/29/magnetic-lock-opens-by-magic/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T08:00:39+00:00",
+   "summary": "Over on IEEE Spectrum, [Stephen Cass] has a project that would probably have seemed like a magic a few centuries ago. Imagine a box that uses a magnetic device to …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
   },
   {
    "id": "e9b8120f4fdc",
@@ -4703,6 +5032,34 @@
    ]
   },
   {
+   "id": "a641cecc889d",
+   "title": "2026 Retrocomputing Challenge: Custom RISC-V Processor For Retro System",
+   "url": "https://hackaday.com/2026/10/28/2026-retrocomputing-challenge-custom-risc-v-processor-for-retro-system/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T05:00:43+00:00",
+   "summary": "Although once little more than an academic endeavor, the RISC-V architecture is slowly supplanting applications that would have normally gone to ARM. Even a few microcontrollers have chips running this …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "7b6dc3fd5ee1",
+   "title": "Development of USB support in Zephyr RTOS with the implementation of HID Boot device support",
+   "url": "https://www.zephyrproject.org/development-of-usb-support-in-zephyr-rtos-with-the-implementation-of-hid-boot-device-support/",
+   "source": "Zephyr Project blog",
+   "source_category": "Embedded",
+   "published": "2026-10-29T05:00:41+00:00",
+   "summary": "The open source Zephyr RTOS continues to gain popularity, and many contributors are committed to further extending Zephyr’s reach by helping improve it and add additional features. An example of a feature that is being actively worked on by the community is adding USB Host support .",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "ec20aa8f71a7",
    "title": "Stolen staff logins are spreading attacks between K-12 school districts",
    "url": "https://www.helpnetsecurity.com/2026/10/29/cis-k-12-cybersecurity/",
@@ -4886,6 +5243,19 @@
    ]
   },
   {
+   "id": "94503f207be3",
+   "title": "Battery Prototype Uses Superextensive Quantum Effects to Charge Faster",
+   "url": "https://hackaday.com/2026/10/28/battery-prototype-uses-superextensive-quantum-effects-to-charge-faster/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-29T02:00:26+00:00",
+   "summary": "Although the term ‘quantum battery’ is a bit of a vague term, the cell that [Kieran Hymas] et al. demonstrate in a recent paper does seem to suggest that it …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "931da6312b97",
    "title": "Microsoft’s stock rises on solid earnings and revenue beat, with Azure growing 48%",
    "url": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/",
@@ -4984,6 +5354,21 @@
    "topics": [
     "Linux & open source",
     "Development"
+   ]
+  },
+  {
+   "id": "74b3e7479ffd",
+   "title": "BeagleConnect QuadESC 4-channel BLDC motor controller uses TI’s AM13E23019-based Torque module",
+   "url": "https://www.cnx-software.com/2026/10/29/beagleconnect-quadesc-4-channel-bldc-motor-controller-ti-am13e23019-based-torque-module/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-10-29T00:00:24+00:00",
+   "summary": "BeagleBoard.org has introduced the BeagleConnect QuadESC, an open-source 4-channel BLDC motor controller/carrier board built around the BeagleConnect Torque SoM. The SoM features TI’s 200 MHz AM13E23019 Arm Cortex-M33 microcontroller with a trigonometric math unit (TMU) and a TinyEngine neural-network accelerator for…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT",
+    "Networking"
    ]
   },
   {
@@ -5113,6 +5498,19 @@
    ]
   },
   {
+   "id": "3109d250123e",
+   "title": "Hacking the Modern Tamagotchi With UART",
+   "url": "https://hackaday.com/2026/10/28/hacking-the-modern-tamagotchi-with-uart/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-28T23:00:25+00:00",
+   "summary": "Although not technically the first virtual pet, the Tamagotchi handhelds certainly popularized the idea and made it a worldwide phenomenon. In the late 90s it was hard to go out …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "3a6d40b33687",
    "title": "Introducing Ctrl + Manage: Your shortcut to practical Windows management",
    "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-ctrl-manage-your-shortcut-to-practical-windows/ba-p/4560916",
@@ -5123,6 +5521,20 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "332b37d315b9",
+   "title": "Zephyr RTOS 4.5 Now Available: Two New Architectures, Multimedia Pipelines, SBOMs for the CRA, and More",
+   "url": "https://www.zephyrproject.org/zephyr-rtos-4-5-now-available-two-new-architectures-multimedia-pipelines-sboms-and-more/",
+   "source": "Zephyr Project blog",
+   "source_category": "Embedded",
+   "published": "2026-10-28T22:46:51+00:00",
+   "summary": "Zephyr 4.5 brings two new architectures (TriCore and Hexagon), a faster and broader network stack, multimedia pipelines with mpipe, and a long list of debugging and testing improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT",
+    "Networking"
    ]
   },
   {
@@ -5329,6 +5741,33 @@
    ]
   },
   {
+   "id": "0cc747d957b7",
+   "title": "Canadian Startup Aims to Be Quantum’s ‘Picks’ and ‘Shovels’",
+   "url": "https://www.eetimes.com/canadian-startup-aims-to-be-quantums-picks-and-shovels/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-28T20:50:32+00:00",
+   "summary": "Toronto-based Meissner Technologies uses AI and laboratory testing to discover superconducting materials that could cut cooling costs and help quantum computers scale.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9357471da2fe",
+   "title": "Qt Group Introduces Clate for AI-Powered Embedded UX Design",
+   "url": "https://www.embedded.com/qt-group-introduces-clate-for-ai-powered-embedded-ux-design/",
+   "source": "Embedded.com",
+   "source_category": "Embedded",
+   "published": "2026-10-28T20:46:15+00:00",
+   "summary": "Qt Group has announced Clate, a design tool developed specifically for user interface and user experience (UI/UX) design on embedded devices. Introduced at Qt World Summit 2026, the platform combines a no-code workspace with AI-native features to help designers create functional interfaces for real-world hardware,…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "20d4dd1dbb4e",
    "title": "Humanoid Robots in 2027: Tesla, Figure AI, and Agility Race to Deploy",
    "url": "https://www.techrepublic.com/article/news-humanoid-robots-2027-real-world-deployment/",
@@ -5490,6 +5929,19 @@
    "topics": [
     "Microsoft & Windows",
     "AI"
+   ]
+  },
+  {
+   "id": "a97c0ba89d0b",
+   "title": "Establishing an Edge-Computing Ecosystem",
+   "url": "https://www.electronicdesign.com/technologies/embedded/video/55415019/electronic-design-establishing-an-edge-computing-ecosystem",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-28T19:00:00+00:00",
+   "summary": "A series of demonstrations show how to establish an Edge ecosystem, with systems that acquire data for training, enable proper sensor integration, and help deploy real solutions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5884,6 +6336,20 @@
    ]
   },
   {
+   "id": "7bd502a6a1be",
+   "title": "SK Hynix Reports Record Q3 Results Driven by AI Memory Surge",
+   "url": "https://www.eetimes.com/sk-hynix-reports-record-q3-results-driven-by-ai-memory-surge/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-28T16:43:42+00:00",
+   "summary": "Long-term customer contracts and rising chip prices point to a change in how memory manufacturers manage multi-year production capacity and capex.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "a6d418b7bd60",
    "title": "GitHub debuts Copilot Fusion, a new model selection & orchestration system that beats Claude Code for half the API cost",
    "url": "https://thenewstack.io/github-copilot-fusion/",
@@ -6207,6 +6673,19 @@
    ]
   },
   {
+   "id": "bc940de110c7",
+   "title": "New Research Shows Scandium Doping Can Boost Sodium-Ion Battery Life",
+   "url": "https://www.electronicdesign.com/technologies/power/news/55414857/new-research-shows-scandium-doping-can-significantly-boost-sodium-ion-battery-life",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-28T15:00:00+00:00",
+   "summary": "Researchers in Japan showed that doping sodium-ion batteries with scandium can significantly enhance longevity and performance.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "04018ca224e3",
    "title": "Google Unveils Genie 4 With Native Audio and Real-Time World Editing",
    "url": "https://www.techrepublic.com/article/news-google-genie-4-native-audio-world-editing/",
@@ -6375,6 +6854,21 @@
    ]
   },
   {
+   "id": "8458ad25ba17",
+   "title": "Video: The Infrastructure Behind AI Data Centers",
+   "url": "https://www.electronicdesign.com/sponsored/video/55413539/video-the-infrastructure-behind-ai-data-centers",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-28T14:10:58+00:00",
+   "summary": "Alix Paultre talks with Texas Instruments’ Karthik Vasanth about power, cooling, sensing, and system design",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "0543bd30930c",
    "title": "AI Is Turning CISOs Into Business-Risk Translators, Says Nvidia’s Head of Cyber",
    "url": "https://www.infosecurity-magazine.com/news/ai-is-turning-cisos-into/",
@@ -6386,6 +6880,19 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "8255362f6e6a",
+   "title": "Why Traditional VVC Will Outlive the Neural-Codec Hype on Silicon",
+   "url": "https://www.electronicdesign.com/home/article/55414955/why-traditional-vvc-will-outlive-the-neural-codec-hype-on-silicon",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-28T14:09:01+00:00",
+   "summary": "Neural video coding is winning on the algorithms but losing on the silicon floor — here is why traditional VVC will hold the consumer decode path for the next decade.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -6459,6 +6966,36 @@
    "also_covered_by": [],
    "topics": [
     "Identity & access"
+   ]
+  },
+  {
+   "id": "4de15ecfd9b2",
+   "title": "Secure Safety and Security Communications",
+   "url": "https://www.eetimes.com/secure-safety-and-security-communications/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-28T14:00:00+00:00",
+   "summary": "This whitepaper explores how building safety and security systems can overcome the limitations of legacy RS-485 networks by adopting Single Pair Ethernet (SPE). It examines the growing demands of AI-enabled surveillance, access control, cybersecurity, and system convergence, while highlighting how SPE delivers secure,…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "701df78a8708",
+   "title": "Full-Stack Semiconductor Solutions for Embodied AI & Robotics",
+   "url": "https://www.eetimes.com/full-stack-semiconductor-solutions-for-embodied-ai-robotics/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-28T14:00:00+00:00",
+   "summary": "NSING Technologies, a Singapore-founded semiconductor company, presents this whitepaper on its full-stack semiconductor solutions for embodied AI and robotics, built around high-performance MCUs, security ICs, wireless connectivity and BMS ICs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "ICS / OT",
+    "Embedded & IoT"
    ]
   },
   {
@@ -6772,6 +7309,12 @@
      "source": "Help Net Security",
      "title": "Yoba malware hides in fake desktop versions of ChatGPT and Claude",
      "url": "https://www.helpnetsecurity.com/2026/10/29/fake-chatgpt-claude-apps-github-yoba-malware-cryptominer/"
+    },
+    {
+     "id": "8cc04215eff5",
+     "source": "The Hacker News",
+     "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+     "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html"
     }
    ],
    "topics": [
@@ -7032,6 +7575,19 @@
    ]
   },
   {
+   "id": "03db8cb0907d",
+   "title": "What to Expect at the Zephyr Project Meetup (October 29, 2026) – Dublin, Ireland",
+   "url": "https://www.zephyrproject.org/what-to-expect-at-the-zephyr-project-meetup-october-29-2026-dublin-ireland/",
+   "source": "Zephyr Project blog",
+   "source_category": "Embedded",
+   "published": "2026-10-28T10:55:41+00:00",
+   "summary": "The Zephyr Project community is heading to Dublin, Ireland! Join us on Thursday, October 29, 2026, from 5:00-9:00 PM for an in-person Zephyr Project Meetup hosted by Analog Devices .",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "816c0aa24b6f",
    "title": "Windows 11 26H2 vs 25H2: What IT Admins Need to Know",
    "url": "https://www.techrepublic.com/article/news-windows-11-26h2-vs-25h2-differences-upgrade/",
@@ -7202,7 +7758,14 @@
    "source_category": "IT industry",
    "published": "2026-10-28T10:00:00+00:00",
    "summary": "There’s no point building your own agentic AI stack for a non-core function when a vendor already has a product ready to go that meets your needs. For non-tech companies in particular, building from scratch can take time, money, and expertise they don’t have.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "bbbfdb709cb6",
+     "source": "Embedded.com",
+     "title": "When Engineering Apps Need Agentic AI",
+     "url": "https://www.embedded.com/when-engineering-apps-need-agentic-ai/"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -7299,6 +7862,21 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "727598dd4e36",
+   "title": "LILYGO T-Display K230 RISC-V AI dev kit features AMOLED, LoRa, and keyboard with optional LTE-M/NB-IoT cellular connectivity",
+   "url": "https://www.cnx-software.com/2026/10/28/lilygo-t-display-k230-risc-v-ai-dev-kit-features-amoled-lora-and-an-optional-keyboard/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-10-28T09:00:48+00:00",
+   "summary": "LILYGO T-Display K230 is a handheld dev kit based on Canaan’s Kendryte K230 dual-core 64-bit RISC-V processor. The kit features a 4.1-inch AMOLED touchscreen and supports an optional detachable keyboard with battery and optional nRF9151 cellular and GNSS connectivity.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Embedded & IoT"
    ]
   },
   {
@@ -7436,6 +8014,20 @@
     "Vulnerabilities & patches",
     "Threats & malware",
     "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "0acbe71e8d80",
+   "title": "Intel Wants a Quantum Business, Classiq Could Help Build One",
+   "url": "https://www.eetimes.com/intel-wants-a-quantum-business-classiq-could-help-build-one/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-28T08:05:29+00:00",
+   "summary": "After years of hardware research, Intel plans to acquire a software platform that connects quantum developers with enterprise users.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
     "Development"
    ]
   },
