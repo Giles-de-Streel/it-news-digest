@@ -89,20 +89,28 @@
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
   const cveItems = () => (state.dayData?.items || []).filter((it) => isCve(it) && isOn(it));
 
-  function visibleItems() {
+  // The News tab's topic, source and search filters, shared by stories and CVE records
+  function matchesFilters(it) {
     const q = state.query.toLowerCase();
-    return newsItems().filter((it) => {
-      if (state.topic && !it.topics.includes(state.topic)) return false;
-      if (state.source && !sourcesOf(it).includes(state.source)) return false;
-      if (q && !`${it.title} ${it.summary}`.toLowerCase().includes(q)) return false;
-      return true;
-    }).sort(rank);
+    if (state.topic && !(it.topics || []).includes(state.topic)) return false;
+    if (state.source && !sourcesOf(it).includes(state.source)) return false;
+    if (q && !`${it.title} ${it.summary} ${it.cve || ""}`.toLowerCase().includes(q)) return false;
+    return true;
+  }
+
+  function visibleItems() {
+    return newsItems().filter(matchesFilters).sort(rank);
+  }
+
+  // CVE records matching a News-tab search (only while searching), highest score first
+  const byScore = (a, b) => b.cvss.score - a.cvss.score || (b.published || "").localeCompare(a.published || "");
+  function searchedCves() {
+    return state.query ? cveItems().filter(matchesFilters).sort(byScore) : [];
   }
 
   function visibleCves() {
     const q = state.cveQuery.toLowerCase();
-    return cveItems().filter((it) => !q || `${it.title} ${it.summary}`.toLowerCase().includes(q))
-      .sort((a, b) => b.cvss.score - a.cvss.score || (b.published || "").localeCompare(a.published || ""));
+    return cveItems().filter((it) => !q || `${it.title} ${it.summary}`.toLowerCase().includes(q)).sort(byScore);
   }
 
   // ---------- rendering ----------
@@ -153,7 +161,7 @@
   };
 
   // Says what the story list is showing: the picked topic in full, plus any source or search filter
-  function renderFilterHead(count) {
+  function renderFilterHead(count, cveCount = 0) {
     const head = $("#filter-head");
     const filtered = state.topic || state.source || state.query;
     if (!filtered) { head.hidden = true; return; }
@@ -162,7 +170,8 @@
       state.source ? `from ${state.source}` : "",
       state.query ? `matching "${state.query}"` : "",
     ].filter(Boolean).join(", ");
-    const note = `${count} ${count === 1 ? "story" : "stories"}${extra ? ` ${extra}` : ""}`;
+    const cveNote = cveCount ? ` and ${cveCount} ${cveCount === 1 ? "CVE" : "CVEs"}` : "";
+    const note = `${count} ${count === 1 ? "story" : "stories"}${cveNote}${extra ? ` ${extra}` : ""}`;
     const clear = () => {
       Object.assign(state, { topic: "", source: "", query: "" });
       $("#search").value = "";
@@ -222,9 +231,10 @@
     renderTopicNav(items);
 
     const list = visibleItems();
-    renderFilterHead(list.length);
+    const cves = searchedCves();
+    renderFilterHead(list.length, cves.length);
     const box = $("#news");
-    if (!list.length) {
+    if (!list.length && !cves.length) {
       box.replaceChildren(el("p", { class: "empty", text: items.length ? "Nothing matches these filters." : "No stories for this day yet." }));
       return;
     }
@@ -242,12 +252,17 @@
     const more = [...folded].map(([src, items]) => el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
       el("summary", { text: `${items.length} more from ${src}` }),
       storyList(items)));
+    const cveBlock = cves.length ? cveSection(cves) : null;
+    // A search that looks like a CVE ID puts the CVE matches first; otherwise they follow the stories
+    const cveFirst = /cve-\d/i.test(state.query);
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
     box.replaceChildren(...[
+      cveFirst ? cveBlock : null,
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
       rest.length ? section(top.length ? "Other stories" : "Stories",
         `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
         shown, more) : null,
+      cveFirst ? null : cveBlock,
     ].filter(Boolean));
     addMoreToggles(box);
   }
@@ -300,6 +315,20 @@
         el("p", { class: "summary clamp", text: it.summary }),
       ),
     );
+  }
+
+  // Critical CVE records matching a News-tab search, in the same rows as the CVEs tab
+  const CVE_SEARCH_CAP = 10;
+  function cveSection(cves) {
+    const first = cves.slice(0, CVE_SEARCH_CAP), rest = cves.slice(CVE_SEARCH_CAP);
+    return el("section", { class: "news-section" },
+      el("div", { class: "section-head" },
+        el("h2", { text: "Matching CVEs" }),
+        el("span", { class: "muted", text: `${cves.length} critical ${cves.length === 1 ? "CVE" : "CVEs"} (CVSS 9.0+) from NIST's NVD, highest score first` })),
+      el("ul", { class: "cve-list" }, ...first.map(cveRow)),
+      ...(rest.length ? [el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
+        el("summary", { text: `${rest.length} more matching CVEs` }),
+        el("ul", { class: "cve-list" }, ...rest.map(cveRow)))] : []));
   }
 
   function section(title, note, items, extra = []) {
