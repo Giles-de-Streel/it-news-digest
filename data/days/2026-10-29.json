@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-10-29T12:11:55+00:00",
+ "generated": "2026-10-29T12:17:58+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -149,8 +149,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 44,
-   "recent": 44,
+   "fetched": 45,
+   "recent": 45,
    "error": null
   },
   {
@@ -276,13 +276,97 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
    "source": "Simon Willison",
    "fetched": 30,
    "recent": 4,
+   "error": null
+  },
+  {
+   "source": "Microsoft SQL Server Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "SQL Server Tech Community",
+   "fetched": 20,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Azure SQL Blog",
+   "fetched": 10,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "Brent Ozar",
+   "fetched": 4,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "Erik Darling",
+   "fetched": 10,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "SQLServerCentral",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Oracle Security Alerts",
+   "fetched": 132,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Mike Dietrich (Oracle upgrades)",
+   "fetched": 25,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Oracle-Base",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "dbi services",
+   "fetched": 10,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Pythian",
+   "fetched": 10,
+   "recent": 1,
+   "error": null
+  },
+  {
+   "source": "PostgreSQL News",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Planet PostgreSQL",
+   "fetched": 30,
+   "recent": 3,
+   "error": null
+  },
+  {
+   "source": "Percona Blog",
+   "fetched": 10,
+   "recent": 2,
    "error": null
   }
  ],
@@ -297,6 +381,43 @@
    "summary": "Learn what is new in Visual Studio Code 1.145 (Insiders). Read the full article",
    "also_covered_by": [],
    "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "13d1282a28d0",
+   "title": "CVE-2026-97854: Yamaha wireless LAN router NWR100 provided by Yamaha Corporation contains an OS command injection…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97854",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T12:17:14.443000+00:00",
+   "summary": "Yamaha wireless LAN router NWR100 provided by Yamaha Corporation contains an OS command injection vulnerability. Arbitrary OS commands may be executed by sending a specially crafted request to the affected product.",
+   "kind": "cve",
+   "cve": "CVE-2026-97854",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-97854",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "d72fa38edb7a",
+   "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
+   "url": "https://www.computerworld.com/article/4242101/anthropic-and-openai-diverge-on-who-should-pull-the-plug-on-risky-ai.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-29T12:12:24+00:00",
+   "summary": "OpenAI and Anthropic agree that frontier AI systems need stronger oversight, but they are proposing sharply different approaches to stopping models that pose serious risks: Anthropic wants courts empowered to suspend dangerous systems, while OpenAI argues developers should be required to maintain and use effective…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
     "Development"
    ]
   },
@@ -638,7 +759,20 @@
    "source_category": "Security",
    "published": "2026-10-29T10:44:46+00:00",
    "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d86e56c4fa91",
+     "source": "BleepingComputer",
+     "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/"
+    },
+    {
+     "id": "a6e37e3a72f1",
+     "source": "SecurityWeek",
+     "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+     "url": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Networking"
@@ -1814,6 +1948,19 @@
    ]
   },
   {
+   "id": "c5204bba31fa",
+   "title": "Why you should stop using ARBITERS in MongoDB",
+   "url": "https://www.percona.com/blog/why-you-should-stop-using-arbiters-in-mongodb/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-10-28T22:07:29+00:00",
+   "summary": "This blog post was born of a discussion with a colleague in Percona Support, who also co-authored it with me here on the use of the ARBITER feature in MongoDB installations nowadays. Turns out, after analyzing past real cases we’ve faced in support, maybe it’s time to say goodbye to ARBITERS.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "476c6499ada8",
    "title": "Formlabs Studio 1 $699 Resin Printer",
    "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
@@ -1837,6 +1984,32 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "1bcde013ba9d",
+   "title": "PostgreSQL to SQL Field Notes: Operational Statistics",
+   "url": "https://devblogs.microsoft.com/azure-sql/pg-to-sql-statistics/",
+   "source": "Azure SQL Blog",
+   "source_category": "Databases",
+   "published": "2026-10-28T18:47:53+00:00",
+   "summary": "Welcome to SQL First, welcome to SQL! You’re going to like this. I’ve said this before, but it’s still true: moving from PostgreSQL is real work, and depending on your old database, this process will vary widely in complexity. I am confident that you’re going to love the mindful and modern features of SQL. Take […]",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "df26f9a473bd",
+   "title": "AI World 2026: Patching Clinic starts in 10 mins in the Demo Hall",
+   "url": "https://mikedietrichde.com/2026/10/28/ai-world-2026-patching-clinic-starts-in-10-mins-in-the-demo-hall/",
+   "source": "Mike Dietrich (Oracle upgrades)",
+   "source_category": "Databases",
+   "published": "2026-10-28T18:21:56+00:00",
+   "summary": "I case you can’t find us, see the map below for AI World 2026: Patching Clinic starts in 10 mins in the Demo Hall. 40 seats (actually 32) – zero slides. Come by and join us and bring your patching questions. Find us here: See you soon!! –Mike…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2001,6 +2174,19 @@
    ]
   },
   {
+   "id": "d894f01399eb",
+   "title": "Name resolution of Oracle",
+   "url": "https://www.dbi-services.com/blog/name-resolution-of-oracle/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-10-28T15:14:22+00:00",
+   "summary": "This blog post is a follow-up of TNS_ADMIN – which *.ora files Oracle will use. There, the main focus was to find out if a running database instance will use a TNS_ADMIN environment or the binary defaults.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "30cc023e8fa8",
    "title": "Nvidia launches a promptable transcription model",
    "url": "https://thenewstack.io/nvidia-nemotron-promptable-transcription/",
@@ -2010,6 +2196,20 @@
    "summary": "Nvidia on Wednesday launched Nemotron 3.5 Transcribe, its latest multilingual transcription model. The new open-weight model, the company says, ranks",
    "also_covered_by": [],
    "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b01b7e23be54",
+   "title": "AI World 2026: Upgrade HOL starts in 60 minutes",
+   "url": "https://mikedietrichde.com/2026/10/28/ai-world-2026-upgrade-hol-starts-in-60-minutes/",
+   "source": "Mike Dietrich (Oracle upgrades)",
+   "source_category": "Databases",
+   "published": "2026-10-28T14:57:59+00:00",
+   "summary": "Bring your laptop , and be there early. Today at AI World 2026: Upgrade HOL starts in 60 minutes at 9:00 AM. This is a brand-new lab, and not the same we did last year. New exercises, interesting setups. You will learn a lot. And we will challenge you this morning.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
     "Hardware"
    ]
   },
@@ -2166,6 +2366,33 @@
    ]
   },
   {
+   "id": "d26333c449d9",
+   "title": "Why You Don’t Get Parallelism When You Ask for The Whole Table",
+   "url": "https://www.brentozar.com/archive/2026/10/why-you-dont-get-parallelism-when-you-ask-for-the-whole-table/",
+   "source": "Brent Ozar",
+   "source_category": "Databases",
+   "published": "2026-10-28T13:15:44+00:00",
+   "summary": "Let’s say you’re working with a big copy of the Stack Overflow database, and you wanna get all the users, like for a data export. SQL Server doesn’t parallelize this query, not even if you use the query hint that asks for a parallel plan: [crayon-6ae3385b8a7ce151911150/] I’m only asking for the Ids here because in […]",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
+  {
+   "id": "a420100d89f0",
+   "title": "How to Extract Data from InnoDB, MyISAM, and MyRocks Files Without a Running Server",
+   "url": "https://www.percona.com/blog/how-to-extract-data-from-innodb-myisam-and-myrocks-files-without-a-running-server/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-10-28T13:13:49+00:00",
+   "summary": "Probably everyone responsible for managing database servers at some point realizes that it would be helpful to have a tool capable of extracting data directly from raw database files.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "8c47a788accd",
    "title": "Security updates for Wednesday",
    "url": "https://lwn.net/Articles/1103357/",
@@ -2187,6 +2414,19 @@
    "source_category": "Development",
    "published": "2026-10-28T13:00:00+00:00",
    "summary": "An agent receives approval to process a partial refund. It sends the request to a payment API, and the process",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9824e9e67ada",
+   "title": "How I Use Claude Code to Build Stuff",
+   "url": "https://erikdarling.com/how-i-use-claude-code-to-build-stuff/",
+   "source": "Erik Darling",
+   "source_category": "Databases",
+   "published": "2026-10-28T13:00:00+00:00",
+   "summary": "How I Use Claude Code to Build Stuff Chapters 00:00:00 – Introduction and Setup 00:02:30 – Opus and Fable Usage 00:06:00 – Agent Management and Token Usage 00:08:30 – Example Workflow with Opus 00:11:00 – Setup and Tools Overview 00:12:30 – Monitoring and Complex Projects Full Transcript Erik Darling here with Darling…",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -2325,6 +2565,34 @@
    ]
   },
   {
+   "id": "4cf9b045c915",
+   "title": "Igor Suhorukov: Which language should an AI agent use to search its memory: SQL or SPARQL?",
+   "url": "https://postgr.es/p/9Al",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-10-28T09:24:17+00:00",
+   "summary": "Agent memory has been in fashion ever since agents appeared: it fights hallucinations and lets an LLM base its answers and decisions on your own information. Whether it is better to query that information from tables or from a graph is often decided on faith, after reading posts on the internet, without experiments…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Databases"
+   ]
+  },
+  {
+   "id": "9bbeeea5ed87",
+   "title": "The Complete Guide to Planning an Oracle Database Migration: Physical vs. Logical Strategies, Requirements, and Execution",
+   "url": "https://www.pythian.com/blog/the-complete-guide-to-planning-an-oracle-database-migration",
+   "source": "Pythian",
+   "source_category": "Databases",
+   "published": "2026-10-28T09:09:22+00:00",
+   "summary": "Migrating an Oracle Database is a critical operational endeavor requiring technical expertise, architectural creativity, and meticulous coordination. Whether driven by cloud adoption, hardware refresh cycles, operating system changes, chipset endianness shifts, database consolidation, or major version upgrades,…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Databases"
+   ]
+  },
+  {
    "id": "fb2d48e35f20",
    "title": "Article: Building an Offline-First AI Coding Tutor for Low-End Android Phones",
    "url": "https://www.infoq.com/articles/building-offline-first-android-app-low-end-devices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -2352,6 +2620,32 @@
    ]
   },
   {
+   "id": "2d2ceff9a365",
+   "title": "tnsping with Oracle instant-client?",
+   "url": "https://www.dbi-services.com/blog/tnsping-with-oracle-instant-client/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-10-28T04:59:48+00:00",
+   "summary": "The instant client For an application server that connects to Oracle, you probably would not like to install gigabytes of a full Oracle client software? For that, Oracle offers the so-called “Instant Client” you can download for free at oracle.com.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8e58f1f23438",
+   "title": "Nikolay Samokhvalov: Dump/restore done. Now what?",
+   "url": "https://postgr.es/p/9Af",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-10-28T04:30:25+00:00",
+   "summary": "After pg_dump and pg_restore, by default the planner statistics and the visibility map are missing. One query: 32.6 s before VACUUM ANALYZE, 23 ms after.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "8731a2087876",
    "title": "This is not sustainable",
    "url": "https://www.netmeister.org/blog/defense-ddos.html",
@@ -2362,6 +2656,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "4bcd21a6fc4b",
+   "title": "Christophe Pettus: All Your GUCs in a Row: restore_command",
+   "url": "https://postgr.es/p/9Ae",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-10-28T01:00:00+00:00",
+   "summary": "PostgreSQL's `restore_command` asks for WAL segments one at a time until the command fails—and that failure marks the archive's end, whether it's real or not. (I consult on PostgreSQL through PGX Inc..)",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   }
  ]
