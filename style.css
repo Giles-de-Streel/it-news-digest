@@ -236,6 +236,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .nav-n { flex: none; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .nav-item.empty .nav-label { font-weight: 500; color: var(--muted); }
 .nav-all .nav-item { font-size: 14.5px; padding-top: 5px; padding-bottom: 5px; }
+.nav-all { margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 .nav-item[aria-current="true"] { background: var(--accent); }
 .nav-item[aria-current="true"] .nav-label, .nav-item[aria-current="true"] .nav-n { color: #fff; }
 @media (prefers-color-scheme: dark) { .nav-item[aria-current="true"] .nav-label, .nav-item[aria-current="true"] .nav-n { color: #0d1117; } }
@@ -255,6 +256,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   }
   .topic-nav.open { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 0 12px; padding: 8px 16px 16px; }
   .topic-nav .nav-all { grid-column: 1 / -1; }
+  .topic-nav .nav-topics { grid-column: 1 / -1; columns: 220px; column-gap: 12px; }
+  .topic-nav .nav-topics li { break-inside: avoid; }
   .nav-item { padding: 6px 10px; font-size: 14.5px; } /* bigger touch targets */
 }
 @media (max-width: 600px) {

@@ -180,15 +180,6 @@
     head.hidden = false;
   }
 
-  // Sidebar groups for the topic list. A topic missing here (e.g. one newly added to
-  // fetch_news.py) still shows, under "Other", so nothing silently disappears.
-  const TOPIC_GROUPS = [
-    ["Security", ["Vulnerabilities & patches", "Threats & malware", "Ransomware & breaches", "Identity & access", "Supply chain security", "Reverse engineering", "Forensics & IR", "Pen testing & red team"]],
-    ["Platforms & ops", ["Microsoft & Windows", "Linux & open source", "System administration", "DevOps & SRE", "Endpoint management", "Cloud & infrastructure", "Networking", "Databases", "Backup & recovery"]],
-    ["Technology", ["AI", "Hardware", "Development", "Embedded & IoT", "ICS / OT"]],
-    ["Sector & policy", ["Higher education", "Policy & regulation", "Accessibility", "General IT"]],
-  ];
-
   // Topic name in front, story count quieter beside it
   const navLabel = (label, n) => [el("span", { class: "nav-label", text: label }), el("span", { class: "nav-n", text: String(n) })];
 
@@ -202,13 +193,13 @@
     if (top < 0) window.scrollTo({ top: window.scrollY + top - topbarHeight() });
   }
 
+  // One A-Z list of every known topic (TOPIC_INFO) plus any other topic found in the data,
+  // so a topic newly added to fetch_news.py shows up even before it gets a TOPIC_INFO entry
   function renderTopicNav(items) {
     const counts = {};
     for (const it of items) for (const t of it.topics) counts[t] = (counts[t] || 0) + 1;
-    const known = new Set(TOPIC_GROUPS.flatMap(([, ts]) => ts));
-    const other = Object.keys(counts).filter((t) => !known.has(t));
-    const groups = [...TOPIC_GROUPS, ...(other.length ? [["Other", other]] : [])];
-    const byName = (a, b) => a.localeCompare(b, undefined, { sensitivity: "base" });
+    const topics = [...new Set([...Object.keys(TOPIC_INFO), ...Object.keys(counts)])]
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
     const item = (label, topic, n) => el("li", {},
       el("button", {
         type: "button",
@@ -222,9 +213,7 @@
         el("span", { text: "Topics" }),
         el("button", { type: "button", class: "nav-close", text: "Close", onclick: () => toggleTopicPanel(false) })),
       el("ul", { class: "nav-list nav-all" }, item("All topics", "", items.length)),
-      ...groups.map(([group, topics]) => el("div", { class: "nav-group" },
-        el("h3", { class: "nav-group-title", text: group }),
-        el("ul", { class: "nav-list" }, ...[...topics].sort(byName).map((t) => item(t, t, counts[t] || 0))))));
+      el("ul", { class: "nav-list nav-topics" }, ...topics.map((t) => item(t, t, counts[t] || 0))));
     $("#topics-toggle").textContent = state.topic ? `Topic: ${state.topic}` : "Topics";
   }
 
