@@ -162,12 +162,15 @@ def parse_feed(data):
 def build_items(items, source):
     """Turn raw {title, url, summary, published} entries into stored story items."""
     out = []
+    fetched_at = datetime.now(timezone.utc).replace(microsecond=0)
     for raw in items:
         title = clean_text(raw["title"])
         url = (raw["url"] or "").strip()
         if not title or not url.startswith("http"):
             continue
         published = parse_date(raw["published"])
+        if published and published > fetched_at:
+            published = fetched_at  # some feeds post-date entries (VS Code release notes); use when we saw it
         out.append({
             "id": hashlib.sha1(normalize_url(url).encode()).hexdigest()[:12],
             "title": title,
