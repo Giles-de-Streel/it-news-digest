@@ -6,14 +6,16 @@ on:
       hours:
         description: "Only keep stories published in the last N hours"
         default: "36"
-  # Every hour on the hour (UTC). GitHub may start scheduled runs late or skip them at busy
-  # times; a Windmill job on f1fap-n8n (f/admin_platforms/it_news_digest_backup) checks at :05
-  # and dispatches this workflow if no run has started since the top of the hour.
+  # The primary trigger is a Windmill job on f1fap-n8n (f/admin_platforms/it_news_digest_backup)
+  # that dispatches this workflow at the top of every hour. This schedule is the backup at :05
+  # (UTC): it fetches only if no other run of this workflow has started since the top of the hour.
+  # GitHub may start scheduled runs late or skip them at busy times, which is why it isn't primary.
   schedule:
-    - cron: "0 * * * *"
+    - cron: "5 * * * *"
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: fetch-news
@@ -24,16 +26,34 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Skip if this hour's fetch already ran
+        id: gate
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u +%Y-%m-%dT%H:00:00Z)
+          others=$(gh api "repos/${{ github.repository }}/actions/workflows/fetch-news.yml/runs?created=%3E%3D${since}&per_page=20" \
+            --jq "[.workflow_runs[] | select(.id != ${{ github.run_id }})] | length")
+          echo "Other runs since ${since}: ${others}"
+          if [ "${others}" -gt 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.skip != 'true'
 
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.skip != 'true'
         with:
           python-version: "3.12"
 
       - name: Fetch feeds
+        if: steps.gate.outputs.skip != 'true'
         run: python -I scripts/fetch_news.py --hours "${{ github.event.inputs.hours || '36' }}"
 
       - name: Commit new stories
+        if: steps.gate.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
