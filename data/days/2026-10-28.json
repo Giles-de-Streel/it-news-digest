@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-28T23:23:38+00:00",
+ "generated": "2026-10-29T02:30:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 22,
+   "recent": 16,
    "error": null
   },
   {
@@ -54,13 +54,13 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 27,
    "error": null
   },
   {
@@ -72,19 +72,19 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -96,7 +96,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 9,
+   "recent": 6,
    "error": null
   },
   {
@@ -120,7 +120,7 @@
   {
    "source": "CISA KEV",
    "fetched": 1762,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 78,
-   "recent": 78,
+   "fetched": 73,
+   "recent": 73,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 20,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "Blocks & Files",
    "fetched": 50,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -192,11 +192,46 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 19,
+   "recent": 17,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "e6c7ecd0fbcf",
+   "title": "CVE-2026-66088: In openEQUELLA before 2026.1, the system.execute() function available to the scripting engine runs supplied…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66088",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T02:16:52.523000+00:00",
+   "summary": "In openEQUELLA before 2026.1, the system.execute() function available to the scripting engine runs supplied operating system commands without validation or an allow-list of permitted executables.",
+   "kind": "cve",
+   "cve": "CVE-2026-66088",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-66088",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8bd4d67edb70",
+   "title": "GXVK: 3Dfx Glide API Implemented Atop Vulkan For Modern Usage",
+   "url": "https://www.phoronix.com/news/GXVK-3Dfx-Glide-Vulkan",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-29T00:44:56+00:00",
+   "summary": "The open-source D7VK project that implements the Direct3D 7 / 6 / 5 / 3 APIs atop the Vulkan API for faster, modern performance is out with a new release. This new D7VK 2.4 release came as a bit of a surprise since it was just last month D7VK announced its maturity status and more or less in maintenance mode.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "4c9e18805acc",
    "title": "CVE-2026-118579: A weakness has been identified in D-Link DIR-505 1.10B02.",
