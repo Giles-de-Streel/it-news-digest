@@ -1,18 +1,18 @@
 {
  "date": "2026-10-29",
- "generated": "2026-10-29T08:30:53+00:00",
+ "generated": "2026-10-29T11:30:31+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 14,
+   "recent": 12,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 21,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 22,
+   "recent": 28,
    "error": null
   },
   {
@@ -78,13 +78,13 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 5,
+   "recent": 2,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -132,7 +132,7 @@
   {
    "source": "SANS NewsBites",
    "fetched": 12,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -149,26 +149,26 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 52,
-   "recent": 52,
+   "fetched": 44,
+   "recent": 44,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 17,
+   "recent": 21,
    "error": null
   },
   {
    "source": "ServeTheHome",
    "fetched": 6,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "The Next Platform",
-   "fetched": 88,
-   "recent": 2,
+   "fetched": 87,
+   "recent": 3,
    "error": null
   },
   {
@@ -192,11 +192,635 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 18,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "91e272a54bcf",
+   "title": "LibreOffice's 'no AI' stance meets LLM-assisted code",
+   "url": "https://www.theregister.com/ai-and-ml/2026/10/29/libreoffices-no-ai-stance-meets-llm-assisted-code/5306084",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T11:29:00+00:00",
+   "summary": "Core developers avoid AI coding assistants, while community contributors face disclosure and review rules",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a2e14ec16391",
+   "title": "Fake PS5 emulators are being used to steal gamers' passwords — two well-known GitHub repos, including popular AnyPS5, get hit, infecting gamers' computers with password-scraping malware",
+   "url": "https://www.tomshardware.com/tech-industry/cyber-security/fake-ps5-emulators-are-being-used-to-infect-gamers-computers-with-password-scraping-malware-two-well-known-github-repos-including-anyps5-hit",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-29T11:20:00+00:00",
+   "summary": "Malware disguised as two popular PS5 game emulators, distributed via GitHub, has been identified as stealing passwords from unsuspecting gamers.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "7269382d7e77",
+   "title": "CVE-2026-115964: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115964",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T11:17:31.220000+00:00",
+   "summary": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in StylemixThemes Motors motors-car-dealership-classified-listings allows Blind SQL Injection.This issue affects Motors: from n/a through 1.4.126.",
+   "kind": "cve",
+   "cve": "CVE-2026-115964",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115964",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d86e56c4fa91",
+   "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+   "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-29T11:10:13+00:00",
+   "summary": "Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [...]",
+   "also_covered_by": [
+    {
+     "id": "a6e37e3a72f1",
+     "source": "SecurityWeek",
+     "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+     "url": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/"
+    }
+   ],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "aa9faccdb1f7",
+   "title": "Hackers Steal 2.6 Million Records From Sony’s Japanese ISP So-net",
+   "url": "https://www.securityweek.com/hackers-steal-2-6-million-records-from-sonys-japanese-isp-so-net/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-29T11:00:00+00:00",
+   "summary": "The data of So-net and Plala customers in Japan was exposed, along with 54,401 email account passwords and 16 bank account records.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ab27d73196e2",
+   "title": "Traces of new Pi hardware spotted in GitHub",
+   "url": "https://www.theregister.com/personal-tech/2026/10/29/traces-of-new-pi-hardware-spotted-in-github/5306022",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T11:00:00+00:00",
+   "summary": "A new Pi Zero 3 W and Pi 4 Model A seen lurking in the repository",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c8bbeda5184f",
+   "title": "Man granted first-of-its-kind religious exemption against mandatory AI use at work — Humanist argues that offloading his thinking to LLMs violates his beliefs, Title VII accommodation protects employee",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/secular-humanist-gets-religious-exemption-from-using-ai-argues-that-offloading-his-thinking-to-llms-violates-his-beliefs-american-humanist-association-says-its-the-first-case-of-its-kind",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-29T11:00:00+00:00",
+   "summary": "A research administrator at the University of Kentucky was granted a Title VII exemption, allowing them to not use AI tools as it goes against their moral beliefs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "083a1ea7d205",
+   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+   "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-29T10:44:46+00:00",
+   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-76418",
+     "score": 8.6,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "cisco"
+    }
+   ]
+  },
+  {
+   "id": "1be4714c049c",
+   "title": "DCD Studio: Europe's gigawatt opportunity with Maria Poyer, CoreWeave",
+   "url": "https://www.datacenterdynamics.com/en/videos/dcd-studio-europes-gigawatt-opportunity-with-maria-poyer-coreweave/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:34:35+00:00",
+   "summary": "DCD's Seb Moss and Maria Poyer of CoreWeave discuss global expansion strategies, focusing on site selection, real estate, and market entry challenges in Europe and APAC",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "589c4d3ee1a8",
+   "title": "GitHub says massive influx of AI-generated code required extra 4 million CPU cores and 160 petabytes of storage to manage — a sixfold increase to 7.4 billion monthly commits in one year",
+   "url": "https://www.tomshardware.com/software/github-report-highlights-massive-influx-of-ai-generated-code-sixfold-increase-in-activity-over-one-year-required-extra-4-million-cpu-cores-and-160pb-of-storage",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:30:00+00:00",
+   "summary": "Agentic AI led to a sixfold year-on-year influx of new code at GitHub, leading the company to add 4 million CPU cores and 160PB of storage to its datacenters",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "4cd29b54c9b4",
+   "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
+   "url": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-29T10:29:25+00:00",
+   "summary": "Cisco Talos linked SD-WAN key-stealing malware to infrastructure overlapping Volt Typhoon’s Silent Train network, which Lumen detailed.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "cf3544e85171",
+   "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
+   "url": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-29T10:26:33+00:00",
+   "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time. \"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "dfea7739230e",
+   "title": "AMD's ROCm HRX Loom v0.1 Released For Targeting AMD CPUs, GPUs & NPUs",
+   "url": "https://www.phoronix.com/news/AMD-ROCm-HRX-Loom-0.1",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:22:15+00:00",
+   "summary": "At this year's AMD Advancing AI event Hyperloom was announced among the ROCm improvements to expect. Hyperloom aims for agentic workload optimizations and more with quote powerful abilities if everything works out right. As part of the latest round of ROCm advancements, the Loom SDK v0.1 release was released today...",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "6dec2b2eac42",
+   "title": "Naver closes $10bn investment from Brookfield and Nvidia",
+   "url": "https://www.datacenterdynamics.com/en/news/naver-closes-10bn-investment-from-brookfield-and-nvidia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:17:13+00:00",
+   "summary": "Money to fund the build-out of data centers and GPU purchases",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "38a2c4bc48d6",
+   "title": "Hacktivists leak 41,000 DHS staff records, revealing undercover ICE agents",
+   "url": "https://www.helpnetsecurity.com/2026/10/29/icepick-dhs-leak-ice-undercover-agents/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-10-29T10:16:18+00:00",
+   "summary": "Names, offices, contact details and assignments of more than 41,000 U.S. Department of Homeland Security (DHS) employees have been leaked by a hacktivist group calling itself the Department of Peace.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "ef4a4688c492",
+   "title": "UK's Volta acquires Reynolds House data center site in Manchester",
+   "url": "https://www.datacenterdynamics.com/en/news/uks-volta-acquires-reynolds-house-data-center-site-in-manchester/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:15:59+00:00",
+   "summary": "Company buys former Telecity/Equinix site from Lunar Digital",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ff9d2245d9a9",
+   "title": "Microsoft breaks New Outlook attachment opening with Edge Update",
+   "url": "https://www.theregister.com/personal-tech/2026/10/29/microsoft-breaks-new-outlook-attachment-opening-with-edge-update/5306224",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T10:14:00+00:00",
+   "summary": "Attachments in New Outlook come undone thanks to Windows' fundamental interconnectedness of things",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "3857bcf1f6ae",
+   "title": "EdgeCore secures $521 million in ABS financing",
+   "url": "https://www.datacenterdynamics.com/en/news/edgecore-secures-521-million-in-abs-financing/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:10:36+00:00",
+   "summary": "Latest financing backed against leased data center in Silicon Valley",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3dd912e75b83",
+   "title": "PingThings to expand use of AI platform across Dominion Energy Virginia's grid data",
+   "url": "https://www.datacenterdynamics.com/en/news/pingthings-to-expand-use-of-ai-platform-across-dominion-energy-virginias-grid-data/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:09:21+00:00",
+   "summary": "Builds on seven years of collaboration",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1832b5abb754",
+   "title": "FAT32 File-System Seeing As Much As 265x Improvement With Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Faster-FAT32",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:06:09+00:00",
+   "summary": "A change merged for Linux 7.4 is showing some mighty big speed-ups for the FAT32 file-system...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "54984f69c9e5",
+   "title": "Russia limits new cryptomining grid connections to interruptible power",
+   "url": "https://www.datacenterdynamics.com/en/news/russia-limits-new-cryptomining-grid-connections-to-interruptible-power/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:03:39+00:00",
+   "summary": "Nation struggling to find capacity for new data center developments",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "624f07a7f184",
+   "title": "Kyivstar acquires Ukrainian cloud provider GigaCloud",
+   "url": "https://www.datacenterdynamics.com/en/news/kyivstar-acquires-ukrainian-cloud-provider-gigacloud/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:00:28+00:00",
+   "summary": "In the works for months, deal comes weeks after Kyiv data center of GigaCloud’s parent company was bombed by Russia",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "196b1e60527b",
+   "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
+   "url": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-10-29T10:00:00+00:00",
+   "summary": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "df8787becec4",
+   "title": "Flock ignores Minnesota city’s orders not to reinstall AI surveillance cameras — citizens complain after spotting two cameras despite the city canceling its contract",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/flock-ignores-minnesota-citys-orders-not-to-reinstall-ai-surveillance-cameras-citizens-complain-after-spotting-two-cameras-despite-the-city-canceling-its-contract",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-29T10:00:00+00:00",
+   "summary": "Dayton, MN's city council removed Flock cameras and canceled its contract in August, but Flock reinstalled cameras anyway, almost a month after the program's suspension.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6fa2653a22e5",
+   "title": "American Tower CEO: We own abandoned Dish equipment on our towers",
+   "url": "https://www.datacenterdynamics.com/en/news/american-tower-ceo-we-own-abandoned-dish-equipment-on-our-towers/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:54:18+00:00",
+   "summary": "As data center revenue growth raises full year outlook",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "59e0d29dd872",
+   "title": "Graphics/NPU Driver Changes Already Begin Queuing Up For What Will Be Linux 7.5",
+   "url": "https://www.phoronix.com/news/Linux-7.5-drm-misc-next",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:48:22+00:00",
+   "summary": "Since last week drm-misc-next pull requests have already been sent out to DRM-Next to begin staging new feature code for what's intended for the Linux 7.5 kernel cycle kicking off at the end of the year...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "9221aa3522ae",
+   "title": "Enabling the next generation of data center mechanical cooling",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/enabling-the-next-generation-of-data-center-mechanical-cooling/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:47:19+00:00",
+   "summary": "High-performance, scalable, and sustainable cooling platforms for mission-critical data centers",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "682fe4edbcea",
+   "title": "Extreme Networks fined for channeling networking equipment to Russian missile contractor",
+   "url": "https://www.datacenterdynamics.com/en/news/extreme-networks-fined-for-channeling-networking-equipment-to-russian-missile-contractor/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:40:50+00:00",
+   "summary": "Extreme trouble for networking firm after inadvertent sanctions breach",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "cc8657d58a1c",
+   "title": "AIB plans 50MW AI data center at former Spartanburg cryptomine to serve Nebius",
+   "url": "https://www.datacenterdynamics.com/en/news/aib-plans-50mw-ai-data-center-at-former-spartanburg-cryptomine-to-serve-nebius/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:33:40+00:00",
+   "summary": "South Carolina mine closed over the summer, conversion project allowed despite local data center moratorium",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "df43d0bb439f",
+   "title": "KSMBD Adds New Options With Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-KSMBD",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:33:13+00:00",
+   "summary": "A number of improvements to KSMBD, the in-kernel SMB3 file server, were merged for the Linux 7.4 kernel...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "732cc5c02fbc",
+   "title": "Matrix takes sovereign messaging into the realm of the tech giants",
+   "url": "https://www.theregister.com/software/2026/10/29/matrix-takes-sovereign-messaging-into-the-realm-of-the-tech-giants/5305915",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T09:30:00+00:00",
+   "summary": "Once more, with feeling: 'First they ignore you, then they laugh at you, then they fight you'",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "99e5d61da2d4",
+   "title": "CVE-2026-114358: This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114358",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T09:17:07.910000+00:00",
+   "summary": "This vulnerability exists in the Radius Xenia M2M Platform due to insufficient validation of user supplied input in the password recovery functionality in the web management interface.",
+   "kind": "cve",
+   "cve": "CVE-2026-114358",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-114358",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c29373a954a7",
+   "title": "Malaysian gov’t approves renewable energy requirement for new data centers",
+   "url": "https://www.datacenterdynamics.com/en/news/malaysian-govt-approves-renewable-energy-requirement-for-new-data-centers/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:14:00+00:00",
+   "summary": "Data centers will have to source a minimum of 30 percent of their power from renewable energy",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e64d46e35a07",
+   "title": "18MW Bitcoin mine proposed in Jersey County, Illinois",
+   "url": "https://www.datacenterdynamics.com/en/news/18mw-bitcoin-mine-proposed-in-jersey-county-illinois/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:12:18+00:00",
+   "summary": "Eight containers planned on seven acre site",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9ac8296dadd7",
+   "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+   "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-29T09:05:39+00:00",
+   "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "3974020733a4",
+   "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
+   "url": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T09:00:00+00:00",
+   "summary": "Cursing in login credentials can help keep the bad guys out, but not when the rest of your security is BS",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "44e3fd2d40c5",
+   "title": "HPE puts storage to work on AI’s expensive memory problem",
+   "url": "https://www.theregister.com/storage/2026/10/29/partner-content-hpe-puts-storage-to-work-on-ais-expensive-memory-problem/5305793",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-29T09:00:00+00:00",
+   "summary": "PARTNER CONTENT: HPE Alletra MP X10000 cache offload delivers up to 20× faster time to first token in testing validated by Kamiwaza. Apparently, remembering things beats calculating them again.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a269affd9504",
+   "title": "Simplifying .NET toolchain installs with dotnetup",
+   "url": "https://www.infoworld.com/article/4241187/simplifying-net-toolchain-installs-with-dotnetup.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-10-29T09:00:00+00:00",
+   "summary": "If you’ve experimented with Rust , you already know how simple it is to get a basic toolchain in place, with the simple rustup command-line tool. The same tool works on Windows, macOS, and Linux, building a consistent environment that’s ready for you to pick up your favorite coding editor and start work.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "bddaa54d6688",
+   "title": "How to Evaluate CPU Performance for Agentic AI",
+   "url": "https://www.nextplatform.com/compute/2026/10/29/sponsored-how-to-evaluate-cpu-performance-for-agentic-ai/5305779",
+   "source": "The Next Platform",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b40f3ff3c414",
+   "title": "Sponsored: The network approach: Powering data center growth with lifecycle support",
+   "url": "https://www.datacenterdynamics.com/en/marketwatch/the-network-approach-powering-data-center-growth-with-lifecycle-support/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T09:00:00+00:00",
+   "summary": "Power resilience can’t be achieved via equipment selection alone. It’s defined by the cumulative result of decisions made throughout the project lifecycle – starting with the right partnerships",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "87c50dbd13a5",
+   "title": "DataBank's CEO on the Texas data center moratorium and the impact of the US midterm elections",
+   "url": "https://www.datacenterdynamics.com/en/analysis/databank-ceo-raul-martynek-data-center-moratorium-texas-dallas-greg-abbott/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T08:55:00+00:00",
+   "summary": "New regulatory requirements could filter out rogue projects, Raul Martynek says",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "7237a32da4ed",
+   "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
+   "url": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-10-29T08:27:16+00:00",
+   "summary": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "aabd8e14b270",
+   "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+   "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-29T08:24:22+00:00",
+   "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "Networking"
+   ]
+  },
   {
    "id": "e2fcab5c5f62",
    "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
@@ -245,6 +869,21 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e2620c89b792",
+   "title": "Sponsored: TrueLook brings new AI-powered search, alerts, and reporting to data center construction",
+   "url": "https://www.datacenterdynamics.com/en/product-news/truelook-brings-new-ai-powered-search-alerts-and-reporting-to-data-center-construction/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-29T08:00:00+00:00",
+   "summary": "Recently launched TrueAI capabilities help contractors managing large data center campuses monitor critical activity, track equipment, and turn jobsite imagery into actionable project intelligence",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -304,6 +943,99 @@
    "topics": [
     "Threats & malware",
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "101b73062919",
+   "title": "CVE-2026-115245: The Chat AI with Dispatcher WordPress plugin before 2.4 does not properly validate uploaded files, relying…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115245",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T06:17:19.407000+00:00",
+   "summary": "The Chat AI with Dispatcher WordPress plugin before 2.4 does not properly validate uploaded files, relying only on a spoofable client-supplied content type, allowing unauthenticated attackers to upload arbitrary files, including PHP, which can lead to remote code execution.",
+   "kind": "cve",
+   "cve": "CVE-2026-115245",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115245",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "0d3c216f4fce",
+   "title": "CVE-2026-113617: The Automated Import Products to Cart WordPress plugin before 1.0.4 does not sanitize a user-supplied file…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113617",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T06:17:18.857000+00:00",
+   "summary": "The Automated Import Products to Cart WordPress plugin before 1.0.4 does not sanitize a user-supplied file path before using it to read and delete files, allowing users with minimal permissions, such as subscribers, to read arbitrary files (including ones containing the database credentials) and delete arbitrary files…",
+   "kind": "cve",
+   "cve": "CVE-2026-113617",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-113617",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c2d64316965e",
+   "title": "CVE-2026-113616: The LogixFast Auth WordPress plugin before 1.0.4 does not deliver its password-reset one-time code to the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113616",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T06:17:18.740000+00:00",
+   "summary": "The LogixFast Auth WordPress plugin before 1.0.4 does not deliver its password-reset one-time code to the resolved account's own email address, mailing it to the address supplied in the request instead, allowing unauthenticated attackers to reset any user's password, including an administrator's, and take over the…",
+   "kind": "cve",
+   "cve": "CVE-2026-113616",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-113616",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3f04f35b940b",
+   "title": "CVE-2026-103693: The Frontend Dashboard WordPress plugin before 3.0.5, ProfileGrid WordPress plugin before 6.0.0.5 do not…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103693",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-29T06:17:17.197000+00:00",
+   "summary": "The Frontend Dashboard WordPress plugin before 3.0.5, ProfileGrid WordPress plugin before 6.0.0.5 do not prevent an unauthenticated user from storing a serialized PHP object in user metadata that is deserialized when a public profile is viewed, allowing PHP object injection that can lead to arbitrary file write and…",
+   "kind": "cve",
+   "cve": "CVE-2026-103693",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-103693",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
    ]
   },
   {
@@ -481,10 +1213,45 @@
    "source_category": "IT industry",
    "published": "2026-10-29T01:12:24+00:00",
    "summary": "That’s a problem, cos it just spent $51 billion on infrastructure and still needs to rent compute from others to run its cloud",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "7852c6e1ad7e",
+     "source": "Slashdot",
+     "title": "Google Struggling to Make AI Mode Searches Pay",
+     "url": "https://tech.slashdot.org/story/26/10/29/0444201/google-struggling-to-make-ai-mode-searches-pay?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "3a6d40b33687",
+   "title": "Introducing Ctrl + Manage: Your shortcut to practical Windows management",
+   "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-ctrl-manage-your-shortcut-to-practical-windows/ba-p/4560916",
+   "source": "Windows IT Pro Blog",
+   "source_category": "Vendor",
+   "published": "2026-10-28T22:58:48+00:00",
+   "summary": "Keeping up with Windows management shouldn't require piecing together announcements, documentation, and demos just to understand what matters for your environment. Release notes can tell you what changed, but they don't always tell you why it matters, where it fits, or what you should do next.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "5ba3ecbfb8e1",
+   "title": "DCD Studio: Can Europe keep up in the AI infrastructure race? With Jeremie Eliahou Ontiveros, SemiAnalysis",
+   "url": "https://www.datacenterdynamics.com/en/videos/dcd-studio-can-europe-keep-up-in-the-ai-infrastructure-race-with-jeremie-eliahou-ontiveros-semianalysis/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-28T18:03:00+00:00",
+   "summary": "Kat Sullivan speaks with Jeremie Eliahou Ontiveros of SemiAnalysis about European versus US AI data center expansion, tackling energy challenges, permitting obstacles, and necessary construction innovations.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   }
  ]
