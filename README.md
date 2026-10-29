@@ -51,9 +51,17 @@ MITRE sources are the ATT&CK blog and the CVE Program blog (Medium feeds). mitre
 
 Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center Dynamics, Blocks & Files, StorageReview, Phoronix) feed a **Hardware** topic.
 
-Development sources (GitHub Blog, Stack Overflow Blog, Hacker News front page at 150+ points via hnrss.org, Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
+Development sources (GitHub Blog, Stack Overflow Blog, Hacker News (its own front-page feed, news.ycombinator.com/rss), Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
 
 Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQL Blog, Brent Ozar, Erik Darling, SQLServerCentral, Oracle Security Alerts, Mike Dietrich, Oracle-Base, dbi services, Pythian, PostgreSQL News, Planet PostgreSQL, Percona Blog) feed a **Databases** topic. Oracle's own blogs (Database Insider, MySQL) return 403 to scripts, so they aren't used.
+
+Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
+- Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.
+- Reverse engineering: Google Project Zero, Hex-Rays (IDA), Binary Ninja, Objective-See, Elastic Security Labs, Trail of Bits, Zero Day Initiative.
+- Forensics & IR: The DFIR Report, This Week in 4n6, Forensic Focus, Magnet Forensics.
+- Pen testing: PortSwigger Research, SpecterOps, Horizon3.ai, Bishop Fox, TrustedSec, Black Hills InfoSec, watchTowr Labs, Exploit-DB.
+
+Checked and left out: Google Threat Intelligence and Rapid7 (feeds don't parse), NCC Group (no feed found), Reddit r/ReverseEngineering and r/netsec (Reddit rate-limits feed readers), Red Canary and Binarly (no posts in 30 days).
 
 The **Sources** tab lists every source in `sources.json`, one row each in name order, with its category and that day's fetch status. Each source name links to the outlet's website (the `site` field), not its feed. Each source has an on/off switch that hides or shows its stories on the News and CVEs tabs. Switches are saved in the browser (localStorage `ind.sourcesOff`) and don't change what the workflow fetches. A story stays visible while any source that covered it is on.
 
