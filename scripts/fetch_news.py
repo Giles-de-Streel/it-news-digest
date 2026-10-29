@@ -53,6 +53,8 @@ TOPICS = {
     "Reverse engineering": r"reverse[- ]engineer|reversing|decompil|disassembl|\bida pro\b|\bida \d|ghidra|binary ninja|radare|\bfuzz|malware analysis|unpack(ing|er)\b|deobfuscat|firmware analysis",
     "Forensics & IR": r"forensic|\bdfir\b|incident response|memory (dump|image|analysis)|disk image|timeline analysis|volatility\b|\bkape\b|velociraptor|data recovery|file recovery|deleted (files?|data)|chain of custody",
     "Pen testing & red team": r"pen(etration)?[- ]?test|red team|offensive security|\bc2\b|command[- ]and[- ]control|bug bounty|proof[- ]of[- ]concept|\bpoc\b|privilege escalation|lateral movement|kerberoast|ntlm relay|bloodhound|burp suite|exploit (chain|development)",
+    "ICS / OT": r"\bics\b|\bscada\b|\bplcs?\b|\bhmis?\b|industrial control|operational technology|\bot (security|network|environment|asset)|\bot/ics\b|\bics/ot\b|industrial (cyber|automation|iot)|\biiot\b|modbus|\bdnp3\b|profinet|\bopc[- ]ua\b|rockwell|schneider electric|siemens|honeywell|\babb\b|mitsubishi electric|yokogawa|emerson|critical infrastructure|water utilit|power grid|substation",
+    "Embedded & IoT": r"embedded|microcontroller|\bmcus?\b|\bfpgas?\b|\brtos\b|zephyr|freertos|\biot\b|internet of things|single[- ]board|raspberry pi|arduino|esp32|\briscv\b|risc-v|\bsoc\b|system[- ]on[- ](a[- ])?chip|firmware|\bbootloader|yocto|embedded linux",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",

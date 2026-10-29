@@ -19,6 +19,7 @@ A daily list of IT and security news from 32 sources, with the same story from d
    - **Other stories** shows at most 8 single-source stories per source; the rest fold under "N more from …". Choosing that source or searching shows all of them.
    - **Last 7 days** in the day picker combines the last seven day files. Stories are ranked across the whole week and each card shows its date. The Sources tab then shows the latest day's fetch.
    - Filter by topic, source or search text. The **Sources** tab shows what each source returned and any errors.
+   - The browser tab and shortcut icon is the header's newspaper outline: `favicon.svg` (switches to a light stroke in dark mode) plus `icon-192.png` for shortcuts and home-screen icons.
 
 Summaries come from each source's own text, shortened. No AI service is involved.
 
@@ -53,7 +54,9 @@ Hardware sources (Tom's Hardware, ServeTheHome, The Next Platform, Data Center D
 
 Development sources (GitHub Blog, Stack Overflow Blog, Hacker News (its own front-page feed, news.ycombinator.com/rss), Lobsters, InfoQ, The New Stack, LWN.net, PowerShell Team Blog, .NET Blog, VS Code Blog, Python Insider, Go Blog, Rust Blog, JetBrains Blog, Simon Willison) feed a **Development** topic. Python Insider moved from Blogger to blog.python.org in March 2026; the old feed is frozen.
 
-Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQL Blog, Brent Ozar, Erik Darling, SQLServerCentral, Oracle Security Alerts, Mike Dietrich, Oracle-Base, dbi services, Pythian, PostgreSQL News, Planet PostgreSQL, Percona Blog) feed a **Databases** topic. Oracle's own blogs (Database Insider, MySQL) return 403 to scripts, so they aren't used.
+Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQL Blog, Brent Ozar, Erik Darling, SQLServerCentral, Oracle Security Alerts, Mike Dietrich, Oracle-Base, dbi services, Pythian, PostgreSQL News, Planet PostgreSQL, Percona Blog, Redis blog, MongoDB blog) feed a **Databases** topic. Oracle's own blogs (Database Insider, MySQL) return 403 to scripts, so they aren't used. Sources aren't limited to products the team is known to run.
+
+ICS / OT sources (Industrial Cyber, Siemens ProductCERT advisories, Waterfall Security) feed an **ICS / OT** topic; ICS stories from SecurityWeek already come through its main feed. Embedded sources (Embedded.com, Embedded Computing Design, Electronic Design, EE Times, CNX Software, Hackaday, Zephyr Project) feed an **Embedded & IoT** topic. Checked and left out: CISA ICS advisories, Armis and Eclypsium (403 to scripts; ICS KEV entries still arrive through the CISA KEV source), Dragos, Claroty, Nozomi, Control Global, Automation World and SANS ICS (no working feed found), Memfault Interrupt (no posts in 30 days).
 
 Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
 - Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.
