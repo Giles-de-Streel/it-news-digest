@@ -143,8 +143,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   44.5% { transform: translateX(-2px) rotate(-3deg); }
   45% { transform: translateX(2px) rotate(3deg); }
 }
+.brand-icon { animation: logo-hit 16s linear infinite; }
+/* the Updated text sits beside the track only on wider screens; on phones it wraps to the next row */
 @media (min-width: 701px) {
-  .brand-icon { animation: logo-hit 16s linear infinite; }
   .updated { display: inline-block; animation: updated-shake 16s linear infinite; }
 }
 /* the pet trails the runner by 0.5s (delay -15.5s on the same 16s cycle), stops a few px short of it,
@@ -224,7 +225,11 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   94% { transform: translateY(0px); }
   100% { transform: translateY(0px); }
 }
-@media (max-width: 700px) { .runner-track { display: none; } }
+/* Phones: the controls wrap to their own row, and the runner uses the rest of the logo row */
+@media (max-width: 700px) {
+  .controls { flex-basis: 100%; }
+  .runner-track { min-height: 30px; margin-right: 0; }
+}
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
 .updated { font-size: 13px; color: var(--muted); white-space: nowrap; }
