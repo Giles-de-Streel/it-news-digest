@@ -1,14 +1,19 @@
 # IT News
 
-A daily list of IT and security news from 32 sources, with the same story from different outlets merged into one card. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 206 sources, refreshed every hour, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+
+Live page: https://giles-de-streel.github.io/it-news-digest/
 
 ## How it works
 
 1. `scripts/fetch_news.py` reads every source in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library. A feed that times out, returns 429/5xx, or returns a web page instead of XML is retried once after 15 seconds; the Sources tab then says "Got a web page instead of the feed" (with the page title) rather than a raw XML parse error.
 2. The **Fetch news** GitHub Actions workflow runs that script and commits the result. A Windmill job on the team automation host starts it at the top of every hour. GitHub's own schedule in the workflow is the backup at 5 minutes past: it fetches only if no other run has started since the top of the hour (GitHub sometimes starts scheduled runs late or skips them, so it isn't the primary). Each run adds new stories to the current day (US Eastern date) and keeps the ones already there. To fetch on demand, use Actions → Fetch news → Run workflow on GitHub.
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
-   - **Most reported:** stories covered by more than one source, ranked by how many, with links to every outlet's version.
-   - **Other stories:** single-source stories, newest first.
+   - **Most reported:** stories covered by more than one source, ranked by how many. The "N sources" button on each story opens a list of every outlet that covered it, each linked to that outlet's article (in card view the same links appear under "Also reported by").
+   - **Current vulnerabilities:** every story with a CVSS badge (a CVE scored High 7.0+ or Critical 9.0+), highest score first. Single-source stories move here from Other stories; multi-source ones also stay in Most reported.
+   - **Other stories:** single-source stories without a CVSS badge, newest first.
+   - Each of these three sections shows its first 7 stories (`SECTION_CAP` in app.js); the rest fold under "N more stories". The limit is off while searching or when one source is picked.
+   - **List view** (one line per story) is the default; the **Cards** button switches to cards with summaries. The choice is saved in the browser.
    - **CVEs tab** (direct link: `#cves`): CVEs published to NIST's NVD in the window with a CVSS base score of 9.0 or higher (set by `min_cvss` in `sources.json`), highest first, each linked to NVD and to its MITRE-run cve.org record. They have their own tab and search, and are never merged into news stories.
    - Stories that mention a CVE scored High (7.0+) or Critical (9.0+) get a **CVSS badge** linking to NVD. Scores come from the CVE Program's record API (cveawg.mitre.org), using the highest of the CNA's and enrichers' (e.g. CISA's) scores, and are cached in `data/cve_scores.json`.
    - **Exploitation signals** for every CVE a story or CVE record mentions, scored by CVSS or not:
@@ -19,6 +24,7 @@ A daily list of IT and security news from 32 sources, with the same story from d
    - **Other stories** shows at most 8 single-source stories per source; the rest fold under "N more from …". Choosing that source or searching shows all of them.
    - **Last 7 days** in the day picker combines the last seven day files. Stories are ranked across the whole week and each card shows its date. The Sources tab then shows the latest day's fetch.
    - Filter by topic, source or search text. Topics are listed A-Z in a sticky left sidebar: every topic in `TOPIC_INFO` (app.js) plus any other topic found in the data, with zero-count topics dimmed. Below 900px wide the sidebar becomes a drop-down sheet opened by the **Topics** button; on phones the header scrolls away and only the filter bar stays pinned. The topic, source and search are kept in the address (`?topic=AI&source=...&q=...`), so views can be bookmarked or shared and Back steps through topic changes. Press `/` to jump to the search box. The search also covers the critical CVE records: matches appear in a **Matching CVEs** section (first when the search looks like a CVE ID, otherwise after the stories; more than 10 fold under "more"). Picking a topic shows a banner above the stories with the topic's full name (e.g. AI is "Artificial intelligence"), a one-line description, the story count, any source/search filter, and a button to clear it. The names live in `TOPIC_INFO` in app.js; keep them in step with `TOPICS` in fetch_news.py. The **Sources** tab shows what each source returned and any errors.
+   - A small CSS-only stick figure runs back and forth in the header between the logo and the controls: it shakes the "Updated" text at the right end and jabs the logo at the left (hidden below 700px wide).
    - The browser tab and shortcut icon is the header's newspaper outline: `favicon.svg` (switches to a light stroke in dark mode) plus `icon-192.png` for shortcuts and home-screen icons. When changing an icon, give the new file a new name or `?v=` value; Firefox in particular keeps a page's old icons cached alongside new ones until they expire.
 
 Summaries come from each source's own text, shortened. No AI service is involved.
