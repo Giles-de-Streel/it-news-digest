@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated": "2026-10-30T16:01:07+00:00",
+ "generated": "2026-10-30T17:01:22+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 21,
+   "recent": 23,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 37,
+   "recent": 38,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 83,
-   "recent": 83,
+   "fetched": 84,
+   "recent": 84,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 5,
+   "recent": 9,
    "error": null
   },
   {
@@ -300,7 +300,7 @@
   {
    "source": "Azure SQL Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 143,
-   "recent": 74,
+   "fetched": 139,
+   "recent": 71,
    "error": null
   },
   {
@@ -732,13 +732,13 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -786,7 +786,7 @@
   {
    "source": "Microsoft Intune Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "Google Cloud Blog",
    "fetched": 19,
-   "recent": 5,
+   "recent": 8,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -894,7 +894,7 @@
   {
    "source": "Kubernetes Blog",
    "fetched": 50,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1242,6 +1242,413 @@
  ],
  "items": [
   {
+   "id": "878f4166da45",
+   "title": "Haas: Postgres 19 is late, and it's AI's fault",
+   "url": "https://lwn.net/Articles/1104210/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-10-30T16:52:59+00:00",
+   "summary": "PostgreSQL developer Robert Haas writes about the struggles the project has encountered in putting together its next release. In the end, I don't think that the delay in shipping PostgreSQL 19 is particularly concerning.",
+   "also_covered_by": [
+    {
+     "id": "bdacba14d653",
+     "source": "Planet PostgreSQL",
+     "title": "Robert Haas: Postgres 19 is late, and it's AI's fault",
+     "url": "https://postgr.es/p/9AC"
+    }
+   ],
+   "topics": [
+    "AI",
+    "Development",
+    "Databases"
+   ]
+  },
+  {
+   "id": "ae472197b130",
+   "title": "Is Azure SQL Database Hyperscale “distributed SQL”?",
+   "url": "https://devblogs.microsoft.com/azure-sql/is-azure-sql-database-hyperscale-distributed-sql/",
+   "source": "Azure SQL Blog",
+   "source_category": "Databases",
+   "published": "2026-10-30T16:52:56+00:00",
+   "summary": "In my last post, I broke down the Socrates paper, the research that became Azure SQL Database Hyperscale. Writing it made me want to tackle a question I think trips a lot of people up when they’re choosing a database: is Azure SQL Database Hyperscale “distributed SQL”? It’s a fair question.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
+  {
+   "id": "e27c3e7e930e",
+   "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+   "url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-30T16:50:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "afc30f237b87",
+   "title": "Beyond the grid",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/beyond-the-grid/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:45:35+00:00",
+   "summary": "Building the power system for AI in the Americas",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "58bdc6b4d610",
+   "title": "A Working Nintendo in ~1GB of Qwen Weights",
+   "url": "https://github.com/dbreunig/nesformer",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T16:40:22+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6d462b9483de",
+   "title": "Intel’s Q3 Results Show Supply Chain Disruptions and PC Plunge",
+   "url": "https://www.eetimes.com/intels-q3-results-show-supply-chain-disruptions-and-pc-plunge/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-10-30T16:37:20+00:00",
+   "summary": "Intel faces a tough challenge as manufacturing bottlenecks and rising memory costs impact PC sales despite strong data center growth.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "4c14512df3a9",
+   "title": "The Binance hack explained",
+   "url": "https://www.itpro.com/security/cyber-attacks/the-binance-hack-explained-how-much-cryptocurrency-was-stolen-whos-behind-the-attack-and-was-a-single-compromised-laptop-to-blame",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-10-30T16:31:08+00:00",
+   "summary": "Initial reports that a single compromised laptop was the cause of the Binance hack have been debunked by the crypto exchange firm",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "5b5084a294ac",
+   "title": "SpiNNcloud rebrands to Sparxity, announces cluster deployment at Jülich center in Germany",
+   "url": "https://www.datacenterdynamics.com/en/news/spinncloud-rebrands-to-sparxity-announces-cluster-deployment-at-j%C3%BClich-center-in-germany/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:30:48+00:00",
+   "summary": "Company said rebrand reflects its vision to “only compute what matters”",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "15e704003a01",
+   "title": "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:28:11+00:00",
+   "summary": "OpenAI CEO Sam Altman said in a podcast interview that \"it's quite terrible\" for people to have RAM in their own PCs when it could go into AI data centers.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ee8b81094466",
+   "title": "Smplify wants a human checkpoint between AI agents and your device fleet",
+   "url": "https://www.computerworld.com/article/4242772/smplify-wants-a-human-checkpoint-between-ai-agents-and-your-device-fleet.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-10-30T16:23:47+00:00",
+   "summary": "One of the great things about Apple device management solutions is that the market for them is growing . Another is that because no two enterprises are alike, there is scope to bring different offerings to the market.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Endpoint management"
+   ]
+  },
+  {
+   "id": "bf6449e84a1d",
+   "title": "Modular data center provider DXN loses neocloud customer contract",
+   "url": "https://www.datacenterdynamics.com/en/news/modular-data-center-provider-dxn-loses-neocloud-customer-contract/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:20:43+00:00",
+   "summary": "Customer cancels deal after shift in business, company still paid for work completed",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "9615f06584cf",
+   "title": "CVE-2026-119717: pybars4 through 0.9.13 contains a code injection vulnerability in pybars/_compiler.py that allows attackers…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119717",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-30T16:17:55.170000+00:00",
+   "summary": "pybars4 through 0.9.13 contains a code injection vulnerability in pybars/_compiler.py that allows attackers to execute Python code via unescaped bracketed path segments in Handlebars templates.",
+   "kind": "cve",
+   "cve": "CVE-2026-119717",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119717",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "60f56f1537b0",
+   "title": "CVE-2026-119716: pybars3 through 0.9.7 contains a code injection vulnerability in pybars/_compiler.py that allows template…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119716",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-30T16:17:55.013000+00:00",
+   "summary": "pybars3 through 0.9.7 contains a code injection vulnerability in pybars/_compiler.py that allows template authors to execute Python code via unescaped bracketed path segments.",
+   "kind": "cve",
+   "cve": "CVE-2026-119716",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119716",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "4180f2ad8b55",
+   "title": "CVE-2026-119706: InternLM LMDeploy 0.9.0 through 0.18.0 contains an unauthenticated remote code execution vulnerability that…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119706",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-30T16:17:51.673000+00:00",
+   "summary": "InternLM LMDeploy 0.9.0 through 0.18.0 contains an unauthenticated remote code execution vulnerability that allows remote attackers to run OS commands by sending pickled data to the /update_weights endpoint.",
+   "kind": "cve",
+   "cve": "CVE-2026-119706",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119706",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1634c7b4a767",
+   "title": "US tech stocks see sharp falls over AI cost fears",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T16:13:02+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "912c20f852e6",
+   "title": "IntelliJ IDEA 2026.2.4 Is Out!",
+   "url": "https://blog.jetbrains.com/idea/2026/10/intellij-idea-2026-2-4/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-10-30T16:11:52+00:00",
+   "summary": "IntelliJ IDEA 2026.2.4 is now available! You can update to this version from inside the IDE, using the Toolbox App, or using snaps if you are a Ubuntu user. You can also download it from our website. The latest update brings the following improvements: For a comprehensive overview of the fixes, see the release notes.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "b6df843cd707",
+   "title": "Openreach issues warning over January's PSTN switch-off",
+   "url": "https://www.datacenterdynamics.com/en/news/openreach-issues-warning-over-januarys-pstn-switch-off/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:10:28+00:00",
+   "summary": "Warns that businesses will count the cost if they don't migrate from legacy ISDN services",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d9ad4d124a17",
+   "title": "London's High Court dismisses Meta, TikTok, and X's challenge to Ofcom's Online Safety Act information requests, rejecting arguments they were disproportionate (Sam Tobin/Reuters)",
+   "url": "https://www.techmeme.com/261030/p15#a261030p15",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-10-30T16:10:19+00:00",
+   "summary": "Sam Tobin / Reuters : London's High Court dismisses Meta, TikTok, and X's challenge to Ofcom's Online Safety Act information requests, rejecting arguments they were disproportionate — Meta (META.O), TikTok and X lost a legal challenge against British regulator Ofcom on Friday over information requests made under …",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "703293e3c51b",
+   "title": "Infinite Mac: BeOS",
+   "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-30T16:06:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a04302804636",
+   "title": "DayOne signs MoU with Sembcorp to integrate power and energy solutions across APAC data centers",
+   "url": "https://www.datacenterdynamics.com/en/news/dayone-signs-mou-with-sembcorp-to-integrate-power-and-energy-solutions-across-apac-data-centers/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:00:42+00:00",
+   "summary": "Part of the company’s Bring Your Own Power initiative",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3a5e5bf4bf21",
+   "title": "Reddit Will Force Everyone to Log In",
+   "url": "https://tech.slashdot.org/story/26/10/30/0155237/reddit-will-force-everyone-to-log-in?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-30T16:00:00+00:00",
+   "summary": "Reddit plans to require users to log in to browse the platform, ending its longstanding practice of allowing anonymous visitors to access posts and discussions. According to CEO Steve Huffman, a key reason behind the decision is to curb unauthorized scraping and automated traffic.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "5e40bbd0d101",
+   "title": "Sponsored: The new age of contractual risk allocation in data center development",
+   "url": "https://www.datacenterdynamics.com/en/opinions/the-new-age-of-contractual-risk-allocation-in-data-center-development/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-10-30T16:00:00+00:00",
+   "summary": "How hyperscale and AI-driven demand is reshaping contractual liabilities across the development stack",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3015b1c20e03",
+   "title": "Isolated Gate Drivers Handle SiC MOSFETs at High Voltages",
+   "url": "https://www.electronicdesign.com/technologies/power/product/55415165/galvanically-isolated-gate-drivers-power-sic-mosfets",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-10-30T16:00:00+00:00",
+   "summary": "STMicroelectronics' 3-A gate drivers with internal active Miller clamp simplify high-voltage power converters.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7927d7eea976",
+   "title": "When the Kubernetes API went silent: A three-layer networking mystery",
+   "url": "https://cloud.google.com/blog/products/networking/the-three-layer-gke-network-mystery/",
+   "source": "Google Cloud Blog",
+   "source_category": "Cloud",
+   "published": "2026-10-30T16:00:00+00:00",
+   "summary": "Every support engineer has a case that stays with them. The one that comes up at team lunches. The one where, even after it's resolved, you find yourself staring at a packet capture at midnight just to make sure you really understand what happened. This is that case.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "Networking"
+   ]
+  },
+  {
+   "id": "69a04a767ee3",
+   "title": "Innovate on your own business terms: Google Cloud spend caps now generally available",
+   "url": "https://cloud.google.com/blog/topics/cost-management/google-cloud-spend-caps-now-generally-available/",
+   "source": "Google Cloud Blog",
+   "source_category": "Cloud",
+   "published": "2026-10-30T16:00:00+00:00",
+   "summary": "Today, we’re announcing that spend caps on Google Cloud Budgets are generally available. With this release, we’re delivering ways to protect your workloads from runaway costs without risking resource deletion.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "349493cce465",
+   "title": "Remote Development in 2026.3: What’s New?",
+   "url": "https://blog.jetbrains.com/platform/2026/10/remote-development-in-2026-3-what-s-new/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-10-30T15:55:39+00:00",
+   "summary": "Working on a remote machine should feel just like working on a local project: open it, start coding, and pick up where you left off. In 2026.3, JetBrains IDEs move closer to that goal. You can now start and manage remote sessions directly inside the IDE, connect over SSH using native OpenSSH, and begin working […]",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "4bf942696238",
+   "title": "Florida warns that 4.9 million people had Social Security numbers leaked in financial aid site breach",
+   "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-10-30T15:54:00+00:00",
+   "summary": "The state’s Department of Education (FLDOE) said on Thursday it became aware of a data breach involving the Florida Student Financial Aid website on October 19.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
    "id": "cc9e49877469",
    "title": "New Framework Puts Ransomware Resilience for AI Systems in Focus",
    "url": "https://www.infosecurity-magazine.com/news/framework-ransomware-resilience-ai/",
@@ -1253,6 +1660,32 @@
    "topics": [
     "Ransomware & breaches",
     "AI"
+   ]
+  },
+  {
+   "id": "9e37c40a85b3",
+   "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+   "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T15:52:18+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "0ff9069790ce",
+   "title": "Florilegium: Procedural Flowers in LaTeX",
+   "url": "https://github.com/kevinraymond/florilegium",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T15:48:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1294,6 +1727,19 @@
     "Vulnerabilities & patches",
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "92d1bce2e693",
+   "title": "The Federated Code Forge",
+   "url": "https://tangled.org/blog/forge/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T15:44:29+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1399,7 +1845,14 @@
    "source_category": "Hardware",
    "published": "2026-10-30T15:34:57+00:00",
    "summary": "A decision guide for matching enterprise AI workloads to deployment and infrastructure models",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "ba722fd91068",
+     "source": "Google Cloud Blog",
+     "title": "What’s new in AI infrastructure and orchestration in October",
+     "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month/"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -1429,6 +1882,19 @@
    "topics": [
     "Linux & open source",
     "Networking"
+   ]
+  },
+  {
+   "id": "cec90af9b091",
+   "title": "eMudhra Certificate Authority Incident: Status and Guidance for JetBrains Products",
+   "url": "https://blog.jetbrains.com/security/2026/10/emudhra-certificate-authority-incident-status-and-guidance-for-jetbrains-products/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-10-30T15:33:00+00:00",
+   "summary": "JetBrains is responding to the industry-wide eMudhra Certificate Authority (CA) security incident, which affects certificate trust in a number of software products and development environments, including several JetBrains products.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1480,6 +1946,19 @@
    "source_category": "IT industry",
    "published": "2026-10-30T15:30:00+00:00",
    "summary": "Whew! Only kidding, here I am",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "154de9a42a60",
+   "title": "Show HN: I built a multiplayer game where you're an aerial fighter cat",
+   "url": "https://catcopter.com",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T15:29:40+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -1566,6 +2045,21 @@
    ]
   },
   {
+   "id": "f461e66c2125",
+   "title": "Compromised eMudhra Certificates: Update Your JetBrains IDEs, ReSharper, .NET Tools, Toolbox App, and Gateway Now",
+   "url": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-10-30T15:24:48+00:00",
+   "summary": "Summary Available fixed versions The issue is fixed in the following versions: The 2025.2.6.* updates for all IDEs now contain only the JBR fix. They will get a separate hotfix for the JCEF problem. Until then, use a workaround to disable JCEF in your IDE (see instructions below).",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Development"
+   ]
+  },
+  {
    "id": "22c438dcbefe",
    "title": "AMD Ryzen Zen 6 Looks Like It Will Be In Good Shape With Linux 7.4, Laptop Improvements",
    "url": "https://www.phoronix.com/news/Linux-7.4-x86-Platform-Driver",
@@ -1577,6 +2071,19 @@
    "topics": [
     "Linux & open source",
     "Hardware"
+   ]
+  },
+  {
+   "id": "5fd19759265a",
+   "title": "Polymarket 1h halt after vendor compromise; affected users will be 'made whole'",
+   "url": "https://www.nbcnews.com/business/consumer/polymarket-trading-halt-hack-wallets-rcna606405",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T15:23:41+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
    ]
   },
   {
@@ -1600,6 +2107,19 @@
    "source_category": "Development",
    "published": "2026-10-30T15:19:16+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bfec2004bdb1",
+   "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+   "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-30T15:17:28+00:00",
+   "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -1889,6 +2409,19 @@
    ]
   },
   {
+   "id": "5de6186fd161",
+   "title": "Shrinking NixOS Ram footprint and resource requirements to the bare minimum",
+   "url": "https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-30T15:04:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a1f4a9909c40",
    "title": "No, npm, “estee” is not a typo of “testem”",
    "url": "https://smoores.dev/post/no_npm_estee_is_not_a_typo/",
@@ -2018,7 +2551,14 @@
    "source_category": "Linux admin",
    "published": "2026-10-30T14:42:27+00:00",
    "summary": "Shelly 3.1.10 improves AUR dependency handling, system upgrades, error reporting, and desktop usability for Arch Linux users.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "81a1d4afb3b2",
+     "source": "9to5Linux",
+     "title": "Shelly 3.1.10 Brings More Reliable AUR Builds and a New “Shell” Progress Bar",
+     "url": "https://9to5linux.com/shelly-3-1-10-brings-more-reliable-aur-builds-and-a-new-shell-progress-bar"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Supply chain security",
@@ -2254,6 +2794,20 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6473fc7702e5",
+   "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+   "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-30T14:08:14+00:00",
+   "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
    ]
   },
   {
@@ -4665,6 +5219,12 @@
      "source": "Lobsters",
      "title": "Backdoors in Claude Code for VS, Cursor official extensions",
      "url": "https://cyberplace.social/@GossiTheDog/117528831681803563"
+    },
+    {
+     "id": "a1f01e3becb7",
+     "source": "The Register",
+     "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+     "url": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682"
     }
    ],
    "topics": [
@@ -4842,6 +5402,12 @@
      "source": "Cybersecurity Dive",
      "title": "North Korea-linked group steals $6.3B from Binance in largest-ever cryptocurrency hack",
      "url": "https://www.cybersecuritydive.com/news/binance-hack-north-korea-cryptocurrency-theft/873304/"
+    },
+    {
+     "id": "5c79f256b890",
+     "source": "Hacker News",
+     "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+     "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance"
     }
    ],
    "topics": [
@@ -4944,6 +5510,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "c080a5e6ab1c",
+   "title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-10-30T08:00:00+00:00",
+   "summary": "AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region. Apache Iceberg is an open table format that delivers fast query performance over large tables in data lakes.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
