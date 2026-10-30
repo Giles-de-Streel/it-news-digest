@@ -368,9 +368,12 @@
     el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
       el("span", { class: "source", text: `${c.source}: ` }), c.title));
 
+  // Source-count pill colour: green for a few outlets up to red for many
+  const heat = (n) => (n >= 6 ? "heat-4" : n >= 4 ? "heat-3" : n === 3 ? "heat-2" : "heat-1");
+
   // The "N sources" pill in List layout: a button that shows or hides the sources panel
   function sourcesToggle(n, panel) {
-    const btn = el("button", { class: "count count-btn", type: "button", "aria-expanded": "false", title: "Show the sources reporting this", text: `${n} sources ▾` });
+    const btn = el("button", { class: `count count-btn ${heat(n)}`, type: "button", "aria-expanded": "false", title: "Show the sources reporting this", text: `${n} sources ▾` });
     btn.addEventListener("click", () => {
       const open = panel.hidden;
       panel.hidden = !open;
@@ -444,7 +447,7 @@
     const n = coverage(it);
     return el("article", { class: `card${n > 1 ? " multi" : ""}` },
       el("div", { class: "meta" },
-        n > 1 ? el("span", { class: "count", text: `${n} sources` }) : null,
+        n > 1 ? el("span", { class: `count ${heat(n)}`, text: `${n} sources` }) : null,
         kevBadge(it),
         cvssBadge(it),
         epssBadge(it),
