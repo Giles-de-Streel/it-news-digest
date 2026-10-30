@@ -353,7 +353,8 @@
   function sourcesPanel(it) {
     const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || [])];
     const ul = el("ul", { class: "also-list source-list" }, ...all.map((c) =>
-      el("li", {}, el("span", { class: "source", text: `${c.source}: ` }), link(c.url, c.title))));
+      el("li", {}, el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
+        el("span", { class: "source", text: `${c.source}: ` }), c.title))));
     ul.hidden = true;
     return ul;
   }
