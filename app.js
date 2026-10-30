@@ -9,6 +9,7 @@
   const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
   const SOURCE_CAP = 8; // single-source stories shown per source before the rest fold away
+  const SECTION_CAP = 7; // stories shown per News section before the rest fold into "N more stories"
   const WEEK = "week"; // day-picker value for the combined last-7-days view
   const WEEK_DAYS = 7;
 
@@ -262,12 +263,12 @@
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
     box.replaceChildren(...[
       cveFirst ? cveBlock : null,
-      top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
+      top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top, [], capped) : null,
       vulns.length ? section("Current vulnerabilities",
-        `${vulns.length} ${vulns.length === 1 ? "story mentions" : "stories mention"} a CVE scored High (7.0+) or Critical (9.0+), highest score first`, vulns) : null,
+        `${vulns.length} ${vulns.length === 1 ? "story mentions" : "stories mention"} a CVE scored High (7.0+) or Critical (9.0+), highest score first`, vulns, [], capped) : null,
       rest.length ? section(top.length || vulns.length ? "Other stories" : "Stories",
         `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
-        shown, more) : null,
+        shown, more, capped) : null,
       cveFirst ? null : cveBlock,
     ].filter(Boolean));
     addMoreToggles(box);
@@ -337,10 +338,15 @@
         el("ul", { class: "cve-list" }, ...rest.map(cveRow)))] : []));
   }
 
-  function section(title, note, items, extra = []) {
+  // With cap set, the first SECTION_CAP stories show and the rest fold into a "N more stories" drop-down
+  function section(title, note, items, extra = [], cap = false) {
+    const first = cap ? items.slice(0, SECTION_CAP) : items, over = cap ? items.slice(SECTION_CAP) : [];
     return el("section", { class: "news-section" },
       el("div", { class: "section-head" }, el("h2", { text: title }), el("span", { class: "muted", text: note })),
-      storyList(items),
+      storyList(first),
+      ...(over.length ? [el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
+        el("summary", { text: `${over.length} more ${over.length === 1 ? "story" : "stories"}` }),
+        storyList(over))] : []),
       ...extra,
     );
   }
