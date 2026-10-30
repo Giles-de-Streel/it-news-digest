@@ -147,6 +147,83 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   .brand-icon { animation: logo-hit 16s linear infinite; }
   .updated { display: inline-block; animation: updated-shake 16s linear infinite; }
 }
+/* the pet trails the runner by 0.5s (delay -15.5s on the same 16s cycle), stops a few px short of it,
+   sniffs the ground at the right end and at the end of the cycle, and jumps now and then */
+.pet { position: absolute; top: calc(50% - 1px); left: 24px; width: 18px; height: 12px; color: var(--muted); animation: pet-pace 16s linear -15.5s infinite; }
+.pet svg { display: block; width: 18px; height: 12px; overflow: visible; animation: pet-jump 16s linear -15.5s infinite; }
+.pet .p { transform-box: view-box; }
+.pet .pet-head { transform-origin: 12.5px 5.5px; animation: pet-sniff 16s linear -15.5s infinite; }
+.pet .pet-tail { transform-origin: 3.2px 5px; animation: pet-wag .3s ease-in-out infinite alternate; }
+.pet .pet-run { animation: pet-show-run 16s step-end -15.5s infinite; }
+.pet .pet-stand { visibility: hidden; animation: pet-show-stand 16s step-end -15.5s infinite; }
+.pet .fl { transform-origin: 11.5px 8px; }
+.pet .bl { transform-origin: 4.5px 8px; }
+.pet .leg-1 { animation: pet-legs .2s ease-in-out infinite alternate; }
+.pet .leg-2 { animation: pet-legs .2s ease-in-out -.2s infinite alternate; }
+@keyframes pet-pace {
+  0% { left: 24px; transform: scaleX(1); }
+  38%, 45.99% { left: calc(100% - 42px); transform: scaleX(1); }
+  46% { left: calc(100% - 42px); transform: scaleX(-1); }
+  86%, 99.99% { left: 24px; transform: scaleX(-1); }
+  100% { left: 24px; transform: scaleX(1); }
+}
+@keyframes pet-show-run { 0% { visibility: visible; } 38% { visibility: hidden; } 46% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes pet-show-stand { 0% { visibility: hidden; } 38% { visibility: visible; } 46% { visibility: hidden; } 86% { visibility: visible; } }
+@keyframes pet-legs { from { transform: rotate(30deg); } to { transform: rotate(-30deg); } }
+@keyframes pet-wag { from { transform: rotate(-15deg); } to { transform: rotate(20deg); } }
+@keyframes pet-sniff {
+  0% { transform: rotate(0deg); }
+  39% { transform: rotate(0deg); }
+  39.5% { transform: rotate(62deg); }
+  39.9% { transform: rotate(72deg); }
+  40.3% { transform: rotate(62deg); }
+  40.7% { transform: rotate(72deg); }
+  41.1% { transform: rotate(62deg); }
+  41.5% { transform: rotate(72deg); }
+  41.9% { transform: rotate(62deg); }
+  42.3% { transform: rotate(72deg); }
+  42.7% { transform: rotate(62deg); }
+  43.1% { transform: rotate(72deg); }
+  43.5% { transform: rotate(62deg); }
+  43.9% { transform: rotate(72deg); }
+  44.3% { transform: rotate(62deg); }
+  44.7% { transform: rotate(72deg); }
+  45.5% { transform: rotate(0deg); }
+  96% { transform: rotate(0deg); }
+  96.5% { transform: rotate(62deg); }
+  96.9% { transform: rotate(72deg); }
+  97.3% { transform: rotate(62deg); }
+  97.7% { transform: rotate(72deg); }
+  98.1% { transform: rotate(62deg); }
+  98.5% { transform: rotate(72deg); }
+  98.9% { transform: rotate(62deg); }
+  99.7% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes pet-jump {
+  0% { transform: translateY(0px); }
+  18% { transform: translateY(0px); }
+  18.6% { transform: translateY(-5px); }
+  19.25% { transform: translateY(-7px); }
+  19.9% { transform: translateY(-5px); }
+  20.5% { transform: translateY(0px); }
+  64% { transform: translateY(0px); }
+  64.6% { transform: translateY(-5px); }
+  65.25% { transform: translateY(-7px); }
+  65.9% { transform: translateY(-5px); }
+  66.5% { transform: translateY(0px); }
+  88.5% { transform: translateY(0px); }
+  89.1% { transform: translateY(-5px); }
+  89.75% { transform: translateY(-7px); }
+  90.4% { transform: translateY(-5px); }
+  91% { transform: translateY(0px); }
+  91.5% { transform: translateY(0px); }
+  92.1% { transform: translateY(-5px); }
+  92.75% { transform: translateY(-7px); }
+  93.4% { transform: translateY(-5px); }
+  94% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
 @media (max-width: 700px) { .runner-track { display: none; } }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
