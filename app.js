@@ -21,7 +21,7 @@
     source: "",
     query: "",
     cveQuery: "",
-    layout: "cards",
+    layout: "list",
     catalog: [], // every configured source, from sources.json
     off: new Set(),
   };
@@ -620,7 +620,7 @@
     const fromHash = location.hash.slice(1);
     const saved = store.get(LS_VIEW, "news");
     state.view = VIEWS.includes(fromHash) ? fromHash : VIEWS.includes(saved) ? saved : "news";
-    state.layout = store.get(LS_LAYOUT, "cards") === "list" ? "list" : "cards";
+    state.layout = store.get(LS_LAYOUT, "list") === "cards" ? "cards" : "list";
     const off = store.get(LS_OFF, []);
     state.off = new Set(Array.isArray(off) ? off : []);
     await Promise.all([loadIndex(), loadCatalog()]);
