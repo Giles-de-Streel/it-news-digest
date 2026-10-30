@@ -102,6 +102,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .runner .run-pose { animation: runner-show-run 16s step-end infinite; }
 .runner .shake-pose { visibility: hidden; animation: runner-show-shake 16s step-end infinite; }
 .runner .shake-arms { transform-box: view-box; animation: runner-jiggle .08s linear infinite alternate; }
+.runner .wave-pose { visibility: hidden; }
+.runner .wave-arm { transform-origin: 10.8px 9px; animation: runner-wave .3s ease-in-out infinite alternate; }
+@keyframes runner-wave { from { transform: rotate(-25deg); } to { transform: rotate(20deg); } }
 .runner .punch-pose { visibility: hidden; animation: runner-show-punch 16s step-end infinite; }
 .runner .jab { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-jab 16s linear infinite; }
 @keyframes runner-pace {
@@ -229,6 +232,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @media (max-width: 700px) {
   .controls { flex-basis: 100%; }
   .runner-track { min-height: 30px; margin-right: 0; }
+  /* no Updated text beside the track here, so the figure waves at the right end instead of shaking it */
+  .runner .shake-pose { animation: none; visibility: hidden; }
+  .runner .wave-pose { animation: runner-show-shake 16s step-end infinite; }
 }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
