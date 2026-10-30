@@ -81,7 +81,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: .14em; line-height: 1; color: var(--text); }
 
 /* Stick figure pacing the empty header space between the logo and the controls */
-.runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 12px; overflow: hidden; }
+.runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 12px 0 -15px; overflow: hidden; }
 .runner { position: absolute; top: calc(50% - 13px); left: 0; width: 20px; height: 26px; color: var(--muted); animation: runner-pace 16s linear infinite; }
 .runner svg { display: block; width: 20px; height: 26px; overflow: visible; animation: runner-bob .25s ease-in-out infinite alternate; }
 .runner .limb { transform-box: view-box; }
@@ -89,14 +89,31 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .runner .leg { transform-origin: 10px 15px; }
 .runner .leg-a, .runner .arm-b { animation: runner-swing .25s ease-in-out infinite alternate; }
 .runner .leg-b, .runner .arm-a { animation: runner-swing .25s ease-in-out -.25s infinite alternate; }
+/* run right, turn, run back, then stop at the logo and throw two jabs (one 16s cycle) */
+.runner .run-pose { animation: runner-show-run 16s step-end infinite; }
+.runner .punch-pose { visibility: hidden; animation: runner-show-punch 16s step-end infinite; }
+.runner .jab { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-jab 16s linear infinite; }
 @keyframes runner-pace {
   0% { left: 0; transform: scaleX(1); }
-  49.99% { left: calc(100% - 20px); transform: scaleX(1); }
-  50% { left: calc(100% - 20px); transform: scaleX(-1); }
-  100% { left: 0; transform: scaleX(-1); }
+  44% { left: calc(100% - 20px); transform: scaleX(1); }
+  44.01% { left: calc(100% - 20px); transform: scaleX(-1); }
+  86%, 99.99% { left: 0; transform: scaleX(-1); }
+  100% { left: 0; transform: scaleX(1); }
+}
+@keyframes runner-show-run { 0% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes runner-show-punch { 0% { visibility: hidden; } 86% { visibility: visible; } }
+@keyframes runner-jab {
+  0%, 88%, 91%, 93.5%, 96.5%, 100% { transform: scaleX(.35); }
+  89.5%, 95% { transform: scaleX(1); }
 }
 @keyframes runner-swing { from { transform: rotate(38deg); } to { transform: rotate(-38deg); } }
 @keyframes runner-bob { from { transform: translateY(0); } to { transform: translateY(-1.5px); } }
+@keyframes logo-hit {
+  0%, 89.3%, 92%, 94.8%, 97.5%, 100% { transform: none; }
+  89.7%, 95.2% { transform: translateX(-3px) rotate(-14deg); }
+  90.5%, 96% { transform: translateX(1px) rotate(4deg); }
+}
+@media (min-width: 701px) { .brand-icon { animation: logo-hit 16s linear infinite; } }
 @media (max-width: 700px) { .runner-track { display: none; } }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }

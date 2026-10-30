@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg?v=2026102906" type="image/svg+xml">
   <link rel="icon" href="icon-192.png?v=2026102906" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="icon-192.png?v=2026102906">
-  <link rel="stylesheet" href="style.css?v=2026103006">
+  <link rel="stylesheet" href="style.css?v=2026103007">
 </head>
 <body>
   <header class="topbar">
@@ -30,10 +30,17 @@
           <svg viewBox="0 0 20 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
             <circle cx="11.5" cy="4" r="2.8"/>
             <path d="M11 7.5 10 15"/>
-            <path class="limb arm arm-a" d="M10.8 9v5"/>
-            <path class="limb arm arm-b" d="M10.8 9v5"/>
-            <path class="limb leg leg-a" d="M10 15v9"/>
-            <path class="limb leg leg-b" d="M10 15v9"/>
+            <g class="run-pose">
+              <path class="limb arm arm-a" d="M10.8 9v5"/>
+              <path class="limb arm arm-b" d="M10.8 9v5"/>
+              <path class="limb leg leg-a" d="M10 15v9"/>
+              <path class="limb leg leg-b" d="M10 15v9"/>
+            </g>
+            <g class="punch-pose">
+              <path d="M10.8 9 13.5 12 15 9.5"/>
+              <path class="jab" d="M10.8 9h8.6"/>
+              <path d="M10 15 7 24M10 15l3.5 9"/>
+            </g>
           </svg>
         </div>
       </div>
@@ -90,6 +97,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026103006"></script>
+  <script src="app.js?v=2026103007"></script>
 </body>
 </html>
