@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_sources  # noqa: E402
 import cve_scores  # noqa: E402
 import exploit_signals  # noqa: E402
+import source_discovery  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 USER_AGENT = "it-news-digest/1.0 (+https://github.com/Giles-de-Streel/it-news-digest)"
@@ -206,6 +207,10 @@ def build_items(items, source):
             "summary": shorten(clean_text(raw["summary"])),
             **raw.get("extra", {}),  # e.g. kind/cve/cvss for vulnerability records
         })
+        if source.get("discover") == "summary_link":
+            # Aggregators like Techmeme link their own permalink; the article is the first outside link.
+            # source_discovery reads this and removes it before anything is written.
+            out[-1]["_outlink"] = source_discovery.first_outside_link(raw["summary"], url)
     return out
 
 
@@ -449,6 +454,15 @@ def main():
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(lambda s: fetch_source(s, args.hours), sources))
 
+    try:
+        discovery_note = source_discovery.update(ROOT / "data" / "source_candidates.json", sources, results,
+                                                 USER_AGENT, page_sources.robots_allows, parse_feed)
+    except Exception as exc:  # suggestions are a side feature; never fail the fetch over them
+        discovery_note = f"source suggestions failed: {type(exc).__name__}: {exc}"
+        for _source, found, _error in results:
+            for it in found:
+                it.pop("_outlink", None)
+
     items, status = [], []
     seen_ids = set()
     for source, found, error in results:
@@ -502,7 +516,7 @@ def main():
     (ROOT / "data" / "index.json").write_text(json.dumps({"days": index}, indent=1) + "\n", encoding="utf-8")
 
     failed = [s for s in status if s["error"]]
-    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}; {exploit_note}")
+    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}; {exploit_note}; {discovery_note}")
     for s in failed:
         print(f"  FAILED {s['source']}: {s['error']}", file=sys.stderr)
     # Fail the run only if every source failed

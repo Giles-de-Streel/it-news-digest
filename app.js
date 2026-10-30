@@ -24,6 +24,7 @@
     cveQuery: "",
     layout: "list",
     catalog: [], // every configured source, from sources.json
+    suggest: null, // data/source_candidates.json, loaded the first time the Sources tab opens
     off: new Set(),
   };
 
@@ -59,6 +60,13 @@
   async function loadCatalog() {
     const res = await fetch(`sources.json?t=${Date.now()}`, { cache: "no-store" });
     state.catalog = res.ok ? await res.json() : [];
+  }
+  async function loadSuggestions() {
+    try {
+      const res = await fetch(`data/source_candidates.json?t=${Date.now()}`, { cache: "no-store" });
+      state.suggest = res.ok ? await res.json() : { candidates: [] };
+    } catch { state.suggest = { candidates: [] }; }
+    renderSuggestions();
   }
   async function fetchDay(day) {
     const res = await fetch(`data/days/${day}.json`, { cache: "no-store" });
@@ -490,6 +498,32 @@
         el("td", { text: st ? String(st.recent) : "" }),
         st ? el("td", { class: st.error ? "bad" : "good", text: st.error || "OK" })
           : el("td", { class: "muted", text: "Not in this fetch" }),
+      );
+    }));
+    if (state.suggest) renderSuggestions(); else loadSuggestions();
+  }
+
+  // Sites the aggregators (sources with "discover" in sources.json) link to often but no source covers yet
+  const SUGGEST_MAX = 30;
+  function renderSuggestions() {
+    const s = state.suggest || {}, min = s.min_mentions || 3;
+    const names = state.catalog.filter((c) => c.discover).map((c) => c.name);
+    const via = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names.at(-1)}` : names[0] || "the aggregator sources";
+    const list = (s.candidates || []).filter((c) => c.mentions.length >= min).slice(0, SUGGEST_MAX);
+    $("#suggested").hidden = !s.generated;
+    $("#suggested-meta").textContent = list.length
+      ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days and that no source covers yet, most-linked first. Nothing is added automatically; to add one, put it in sources.json.`
+      : `No site has been linked ${min} or more times yet. The list fills in as the hourly fetch records links from ${via}.`;
+    $("#suggested-body").replaceChildren(...list.map((c) => {
+      const ex = c.examples[0];
+      const feed = c.feed || {};
+      return el("tr", {},
+        el("td", {}, link(c.home, c.key)),
+        el("td", { text: String(c.mentions.length) }),
+        el("td", { class: "muted", text: [...new Set(c.mentions.map((m) => m[2]))].join(", ") }),
+        el("td", {}, ex ? link(ex.url, ex.title) : ""),
+        feed.url ? el("td", {}, link(feed.url, `Feed (${feed.items} items)`))
+          : el("td", { class: "muted", text: feed.error || "Not checked yet" }),
       );
     }));
   }

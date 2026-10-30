@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg?v=2026102906" type="image/svg+xml">
   <link rel="icon" href="icon-192.png?v=2026102906" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="icon-192.png?v=2026102906">
-  <link rel="stylesheet" href="style.css?v=2026103012">
+  <link rel="stylesheet" href="style.css?v=2026103013">
 </head>
 <body>
   <header class="topbar">
@@ -119,9 +119,18 @@
         <thead><tr><th><span class="sr">Show</span></th><th>Source</th><th>Category</th><th>Fetched</th><th>In window</th><th>Status</th></tr></thead>
         <tbody id="sources-body"></tbody>
       </table>
+
+      <div id="suggested" class="suggested" hidden>
+        <h2>Suggested sources</h2>
+        <p id="suggested-meta" class="muted"></p>
+        <table class="src-table">
+          <thead><tr><th>Site</th><th>Links</th><th>Linked from</th><th>Latest linked story</th><th>Feed</th></tr></thead>
+          <tbody id="suggested-body"></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
-  <script src="app.js?v=2026103009"></script>
+  <script src="app.js?v=2026103013"></script>
 </body>
 </html>

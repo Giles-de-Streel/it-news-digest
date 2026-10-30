@@ -326,6 +326,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .src-table td.muted { color: var(--muted); }
 .src-table td.sw { width: 52px; }
 .src-table tr.off td:not(.sw) { opacity: .5; }
+.suggested { margin-top: 28px; }
+.suggested td { overflow-wrap: anywhere; }
+.suggested td:first-child { white-space: nowrap; }
 .src-switches { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
 
 /* On/off switch built from a checkbox */
