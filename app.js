@@ -349,11 +349,33 @@
     ? el("ul", { class: "rows" }, ...items.map(row))
     : el("div", { class: "cards" }, ...items.map(card)));
 
+  // Every outlet covering a story, each linked to its own article (lead source first); starts hidden
+  function sourcesPanel(it) {
+    const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || [])];
+    const ul = el("ul", { class: "also-list source-list" }, ...all.map((c) =>
+      el("li", {}, el("span", { class: "source", text: `${c.source}: ` }), link(c.url, c.title))));
+    ul.hidden = true;
+    return ul;
+  }
+
+  // The "N sources" pill in List layout: a button that shows or hides the sources panel
+  function sourcesToggle(n, panel) {
+    const btn = el("button", { class: "count count-btn", type: "button", "aria-expanded": "false", title: "Show the sources reporting this", text: `${n} sources ▾` });
+    btn.addEventListener("click", () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      btn.setAttribute("aria-expanded", String(open));
+      btn.textContent = `${n} sources ${open ? "▴" : "▾"}`;
+    });
+    return btn;
+  }
+
   // Compact layout: one line per story; the summary is in the headline's tooltip
   function row(it) {
     const also = it.also_covered_by || [];
     const n = coverage(it);
-    const badges = [n > 1 ? el("span", { class: "count", text: `${n} sources` }) : null, kevBadge(it), cvssBadge(it), epssBadge(it)].filter(Boolean);
+    const panel = n > 1 ? sourcesPanel(it) : null;
+    const badges = [n > 1 ? sourcesToggle(n, panel) : null, kevBadge(it), cvssBadge(it), epssBadge(it)].filter(Boolean);
     return el("li", { class: `row${n > 1 ? " multi" : ""}` },
       el("div", { class: "row-main" },
         badges.length ? el("span", { class: "meta row-badges" }, ...badges) : null,
@@ -364,6 +386,7 @@
         title: also.length ? `Also covered by: ${also.map((c) => c.source).join(", ")}` : "",
         text: `${it.source}${also.length ? ` +${also.length}` : ""} · ${fmtTime(it.published)}`,
       }),
+      panel,
     );
   }
 
@@ -420,6 +443,7 @@
       ),
       el("h3", {}, link(it.url, it.title)),
       it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
+      also.length ? el("div", { class: "also-head", text: "Also reported by" }) : null,
       also.length ? el("ul", { class: "also-list" }, ...also.map((c) =>
         el("li", {}, el("span", { class: "source", text: `${c.source}: ` }), link(c.url, c.title)))) : null,
       el("div", { class: "tags" }, ...it.topics.map((t) => el("span", { class: "tag", text: t }))),

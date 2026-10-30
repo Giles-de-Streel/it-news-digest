@@ -144,6 +144,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .also-list a { color: var(--muted); text-decoration: none; }
 .also-list a:hover { color: var(--accent); text-decoration: underline; }
 .also-list .source { color: var(--muted); font-weight: 600; }
+.also-head { margin: 0 0 2px; font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.meta .count-btn { border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.meta .count-btn:hover, .meta .count-btn[aria-expanded="true"] { background: var(--accent); color: var(--surface); }
+.row .source-list { flex: 1 1 100%; margin: 4px 0 2px; }
 .tags { display: flex; flex-wrap: wrap; gap: 2px 12px; }
 .tag { font-size: 12px; color: var(--muted); }
 .empty { color: var(--muted); text-align: center; padding: 40px 0; }
