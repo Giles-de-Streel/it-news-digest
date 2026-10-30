@@ -81,7 +81,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: .14em; line-height: 1; color: var(--text); }
 
 /* Stick figure pacing the empty header space between the logo and the controls */
-.runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 12px 0 -15px; overflow: hidden; }
+.runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 -19px 0 -15px; overflow: hidden; }
 .runner { position: absolute; top: calc(50% - 13px); left: 0; width: 20px; height: 26px; color: var(--muted); animation: runner-pace 16s linear infinite; }
 .runner svg { display: block; width: 20px; height: 26px; overflow: visible; animation: runner-bob .25s ease-in-out infinite alternate; }
 .runner .limb { transform-box: view-box; }
@@ -89,18 +89,22 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .runner .leg { transform-origin: 10px 15px; }
 .runner .leg-a, .runner .arm-b { animation: runner-swing .25s ease-in-out infinite alternate; }
 .runner .leg-b, .runner .arm-a { animation: runner-swing .25s ease-in-out -.25s infinite alternate; }
-/* run right, turn, run back, then stop at the logo and throw two jabs (one 16s cycle) */
+/* one 16s cycle: run right, grab and shake the Updated text, turn, run back, jab the logo twice */
 .runner .run-pose { animation: runner-show-run 16s step-end infinite; }
+.runner .shake-pose { visibility: hidden; animation: runner-show-shake 16s step-end infinite; }
+.runner .shake-arms { transform-box: view-box; animation: runner-jiggle .08s linear infinite alternate; }
 .runner .punch-pose { visibility: hidden; animation: runner-show-punch 16s step-end infinite; }
 .runner .jab { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-jab 16s linear infinite; }
 @keyframes runner-pace {
   0% { left: 0; transform: scaleX(1); }
-  44% { left: calc(100% - 20px); transform: scaleX(1); }
-  44.01% { left: calc(100% - 20px); transform: scaleX(-1); }
+  38%, 45.99% { left: calc(100% - 20px); transform: scaleX(1); }
+  46% { left: calc(100% - 20px); transform: scaleX(-1); }
   86%, 99.99% { left: 0; transform: scaleX(-1); }
   100% { left: 0; transform: scaleX(1); }
 }
-@keyframes runner-show-run { 0% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes runner-show-run { 0% { visibility: visible; } 38% { visibility: hidden; } 46% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes runner-show-shake { 0% { visibility: hidden; } 38% { visibility: visible; } 46% { visibility: hidden; } }
+@keyframes runner-jiggle { from { transform: translateX(-.8px); } to { transform: translateX(.8px); } }
 @keyframes runner-show-punch { 0% { visibility: hidden; } 86% { visibility: visible; } }
 @keyframes runner-jab {
   0%, 88%, 91%, 93.5%, 96.5%, 100% { transform: scaleX(.35); }
@@ -113,7 +117,27 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   89.7%, 95.2% { transform: translateX(-3px) rotate(-14deg); }
   90.5%, 96% { transform: translateX(1px) rotate(4deg); }
 }
-@media (min-width: 701px) { .brand-icon { animation: logo-hit 16s linear infinite; } }
+@keyframes updated-shake {
+  0%, 38.4%, 45.6%, 100% { transform: none; }
+  38.5% { transform: translateX(-2px) rotate(-3deg); }
+  39% { transform: translateX(2px) rotate(3deg); }
+  39.5% { transform: translateX(-2px) rotate(-3deg); }
+  40% { transform: translateX(2px) rotate(3deg); }
+  40.5% { transform: translateX(-2px) rotate(-3deg); }
+  41% { transform: translateX(2px) rotate(3deg); }
+  41.5% { transform: translateX(-2px) rotate(-3deg); }
+  42% { transform: translateX(2px) rotate(3deg); }
+  42.5% { transform: translateX(-2px) rotate(-3deg); }
+  43% { transform: translateX(2px) rotate(3deg); }
+  43.5% { transform: translateX(-2px) rotate(-3deg); }
+  44% { transform: translateX(2px) rotate(3deg); }
+  44.5% { transform: translateX(-2px) rotate(-3deg); }
+  45% { transform: translateX(2px) rotate(3deg); }
+}
+@media (min-width: 701px) {
+  .brand-icon { animation: logo-hit 16s linear infinite; }
+  .updated { display: inline-block; animation: updated-shake 16s linear infinite; }
+}
 @media (max-width: 700px) { .runner-track { display: none; } }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
