@@ -509,11 +509,12 @@
     const s = state.suggest || {}, min = s.min_mentions || 3;
     const names = state.catalog.filter((c) => c.discover).map((c) => c.name);
     const via = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names.at(-1)}` : names[0] || "the aggregator sources";
-    const list = (s.candidates || []).filter((c) => c.mentions.length >= min).slice(0, SUGGEST_MAX);
+    // Only sites whose latest linked article was checked and found free to read
+    const list = (s.candidates || []).filter((c) => c.mentions.length >= min && c.access === "free").slice(0, SUGGEST_MAX);
     $("#suggested").hidden = !s.generated;
     $("#suggested-meta").textContent = list.length
-      ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days and that no source covers yet, most-linked first. Nothing is added automatically; to add one, put it in sources.json.`
-      : `No site has been linked ${min} or more times yet. The list fills in as the hourly fetch records links from ${via}.`;
+      ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days, that no source covers yet and that are free to read (paywalled sites are left out), most-linked first. Nothing is added automatically; to add one, put it in sources.json.`
+      : `No free-to-read site has been linked ${min} or more times yet. The list fills in as the hourly fetch records links from ${via}.`;
     $("#suggested-body").replaceChildren(...list.map((c) => {
       const ex = c.examples[0];
       const feed = c.feed || {};

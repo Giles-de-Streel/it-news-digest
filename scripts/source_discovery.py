@@ -4,8 +4,12 @@ point to often but sources.json doesn't cover yet.
 Sources opt in with "discover" in sources.json: "item" counts the item's own link (Hacker News,
 Lobsters), "summary_link" counts the first outside link in the item's description (Techmeme, whose
 item link is its own permalink). Each run records those links per site, keeps the last WINDOW_DAYS
-days, and looks for an RSS/Atom feed on a few of the most-linked sites. Nothing is added to
-sources.json automatically; the Sources tab lists the candidates for a person to review.
+days, and checks a few of the most-linked sites each run. Only sites that are free to read are
+suggested: known paywalled outlets are skipped outright, and for the rest the latest linked
+article is fetched and must not carry the schema.org paywall marker ("isAccessibleForFree": false)
+that publishers add for search engines. A site whose article can't be read stays unlisted. Free
+sites then get an RSS/Atom feed lookup. Nothing is added to sources.json automatically; the
+Sources tab lists the candidates for a person to review.
 
 Output: data/source_candidates.json
 """
@@ -35,6 +39,16 @@ IGNORE = {
     "arxiv.org", "doi.org", "pdfs.semanticscholar.org", "mastodon.social", "t.co", "bit.ly",
     "feedburner.com", "imgur.com", "dropbox.com", "notion.site",
 }
+# Outlets with a paywall or registration wall on most articles; never suggested or checked
+PAYWALLED = {
+    "ft.com", "wsj.com", "bloomberg.com", "nytimes.com", "washingtonpost.com", "economist.com",
+    "theinformation.com", "barrons.com", "businessinsider.com", "theathletic.com", "newyorker.com",
+    "theatlantic.com", "wired.com", "reuters.com", "theverge.com", "fortune.com", "hbr.org",
+    "technologyreview.com", "stratechery.com", "latimes.com", "bostonglobe.com", "telegraph.co.uk",
+    "thetimes.co.uk", "thetimes.com", "nikkei.com", "scmp.com", "puck.news", "foreignpolicy.com",
+    "newscientist.com", "nature.com", "science.org", "japantimes.co.jp", "afr.com", "theaustralian.com.au",
+}
+PAYWALL_MARKER = re.compile(r'"isAccessibleForFree"\s*:\s*"?false', re.I)
 # Shared hosts where each subdomain is its own site
 MULTI_TENANT = (
     "substack.com", "medium.com", "github.io", "gitlab.io", "blogspot.com", "wordpress.com",
@@ -116,6 +130,25 @@ def find_feed(home, user_agent, robots_allows, parse_feed):
     return {"error": "No working RSS/Atom feed found"}
 
 
+def check_access(url, user_agent, robots_allows):
+    """"free", "paywalled", or "unknown: <why>" for one article page."""
+    try:
+        if not robots_allows(url, user_agent):
+            return "unknown: robots.txt disallows the article"
+        _, page = _get(url, user_agent, "text/html", limit=1_500_000)
+    except Exception as exc:
+        return f"unknown: article {type(exc).__name__}: {str(exc)[:100]}"
+    return "paywalled" if PAYWALL_MARKER.search(page.decode("utf-8", "replace")) else "free"
+
+
+def check_site(c, user_agent, robots_allows, parse_feed):
+    """Paywall check on the latest linked article; a feed lookup only for free sites."""
+    out = {"access": check_access(c["examples"][0]["url"], user_agent, robots_allows) if c["examples"] else "unknown: no example"}
+    if out["access"] == "free" and not (c.get("feed") or {}).get("url"):
+        out["feed"] = find_feed(c["home"], user_agent, robots_allows, parse_feed)
+    return out
+
+
 def update(path, sources, results, user_agent, robots_allows, parse_feed):
     """Record this run's aggregator links, prune old ones, look up feeds, write the candidates file.
     Returns a one-line note for the run log."""
@@ -133,7 +166,7 @@ def update(path, sources, results, user_agent, robots_allows, parse_feed):
         for it in found:
             link = it.pop("_outlink", None) if source["discover"] == "summary_link" else it["url"]
             key = site_key(link or "")
-            if not key or key in IGNORE or key in known:
+            if not key or key in IGNORE or key in PAYWALLED or key in known:
                 continue
             c = cands.setdefault(key, {"key": key, "mentions": [], "examples": []})
             mid = hashlib.sha1(link.encode()).hexdigest()[:12]
@@ -152,21 +185,31 @@ def update(path, sources, results, user_agent, robots_allows, parse_feed):
         c = cands[key]
         c["mentions"] = [m for m in c["mentions"] if m[1] >= oldest]
         c["examples"] = [e for e in c["examples"] if e["date"] >= oldest]
-        if not c["mentions"] or key in known:  # aged out, or since added to sources.json
+        if not c["mentions"] or key in known or key in PAYWALLED:  # aged out, added, or now listed as paywalled
             del cands[key]
 
     recheck = (date.today() - timedelta(days=RECHECK_DAYS)).isoformat()
-    due = sorted((c for c in cands.values() if len(c["mentions"]) >= MIN_MENTIONS
-                  and not (c.get("feed") or {}).get("url") and (c.get("feed_checked") or "") < recheck),
-                 key=lambda c: -len(c["mentions"]))[:FEED_CHECKS_PER_RUN]
+
+    def needs_check(c):
+        access = c.get("access") or ""
+        if len(c["mentions"]) < MIN_MENTIONS or access == "paywalled":
+            return False
+        if not access:
+            return True  # never checked
+        last = c.get("checked") or ""
+        if access.startswith("unknown"):
+            return last < recheck
+        return not (c.get("feed") or {}).get("url") and last < recheck  # free, no feed found yet
+    due = sorted(filter(needs_check, cands.values()), key=lambda c: -len(c["mentions"]))[:FEED_CHECKS_PER_RUN]
     with ThreadPoolExecutor(max_workers=FEED_CHECKS_PER_RUN) as pool:
-        for c, feed in zip(due, pool.map(lambda c: find_feed(c["home"], user_agent, robots_allows, parse_feed), due)):
-            c["feed"], c["feed_checked"] = feed, today
+        for c, found in zip(due, pool.map(lambda c: check_site(c, user_agent, robots_allows, parse_feed), due)):
+            c.update(found)
+            c["checked"] = today
 
     ordered = sorted(cands.values(), key=lambda c: (-len(c["mentions"]), c["key"]))
     path.write_text(json.dumps({
         "generated": today, "window_days": WINDOW_DAYS, "min_mentions": MIN_MENTIONS,
         "candidates": ordered,
     }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    listed = sum(len(c["mentions"]) >= MIN_MENTIONS for c in ordered)
-    return f"source suggestions: {listed} {'site' if listed == 1 else 'sites'} at {MIN_MENTIONS}+ links ({len(due)} feed lookups)"
+    listed = sum(len(c["mentions"]) >= MIN_MENTIONS and c.get("access") == "free" for c in ordered)
+    return f"source suggestions: {listed} free {'site' if listed == 1 else 'sites'} at {MIN_MENTIONS}+ links ({len(due)} sites checked)"
