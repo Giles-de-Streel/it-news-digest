@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg?v=2026102906" type="image/svg+xml">
   <link rel="icon" href="icon-192.png?v=2026102906" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="icon-192.png?v=2026102906">
-  <link rel="stylesheet" href="style.css?v=2026103005">
+  <link rel="stylesheet" href="style.css?v=2026103006">
 </head>
 <body>
   <header class="topbar">
@@ -25,6 +25,18 @@
         </svg>
         </a>
       </h1>
+      <div class="runner-track" aria-hidden="true">
+        <div class="runner">
+          <svg viewBox="0 0 20 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="11.5" cy="4" r="2.8"/>
+            <path d="M11 7.5 10 15"/>
+            <path class="limb arm arm-a" d="M10.8 9v5"/>
+            <path class="limb arm arm-b" d="M10.8 9v5"/>
+            <path class="limb leg leg-a" d="M10 15v9"/>
+            <path class="limb leg leg-b" d="M10 15v9"/>
+          </svg>
+        </div>
+      </div>
       <div class="controls">
         <span id="updated" class="updated"></span>
         <label class="sr" for="day">Day</label>
@@ -78,6 +90,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026103005"></script>
+  <script src="app.js?v=2026103006"></script>
 </body>
 </html>

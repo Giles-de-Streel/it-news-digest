@@ -79,6 +79,25 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .brand-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .brand-icon { display: block; width: 18px; height: 18px; flex: 0 0 18px; margin-left: 14px; color: var(--text); }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: .14em; line-height: 1; color: var(--text); }
+
+/* Stick figure pacing the empty header space between the logo and the controls */
+.runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 12px; overflow: hidden; }
+.runner { position: absolute; top: calc(50% - 13px); left: 0; width: 20px; height: 26px; color: var(--muted); animation: runner-pace 16s linear infinite; }
+.runner svg { display: block; width: 20px; height: 26px; overflow: visible; animation: runner-bob .25s ease-in-out infinite alternate; }
+.runner .limb { transform-box: view-box; }
+.runner .arm { transform-origin: 10.8px 9px; }
+.runner .leg { transform-origin: 10px 15px; }
+.runner .leg-a, .runner .arm-b { animation: runner-swing .25s ease-in-out infinite alternate; }
+.runner .leg-b, .runner .arm-a { animation: runner-swing .25s ease-in-out -.25s infinite alternate; }
+@keyframes runner-pace {
+  0% { left: 0; transform: scaleX(1); }
+  49.99% { left: calc(100% - 20px); transform: scaleX(1); }
+  50% { left: calc(100% - 20px); transform: scaleX(-1); }
+  100% { left: 0; transform: scaleX(-1); }
+}
+@keyframes runner-swing { from { transform: rotate(38deg); } to { transform: rotate(-38deg); } }
+@keyframes runner-bob { from { transform: translateY(0); } to { transform: translateY(-1.5px); } }
+@media (max-width: 700px) { .runner-track { display: none; } }
 .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .controls select { border-radius: 10px; padding: 6px 10px; }
 .updated { font-size: 13px; color: var(--muted); white-space: nowrap; }
