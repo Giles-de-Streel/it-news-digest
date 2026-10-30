@@ -151,7 +151,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @media (min-width: 701px) {
   .updated { display: inline-block; animation: updated-shake 16s linear infinite; }
 }
-/* the pet trails the runner by 0.5s (delay -15.5s on the same 16s cycle), stops a few px short of it,
+/* the pet trails the runner by 0.5s (delay -15.5s on the same 16s cycle), stops at the tree to sniff and
+   pee (17-24% of its cycle) then catches up, stops a few px short of the runner,
    sniffs the ground at the right end and at the end of the cycle, and jumps now and then */
 .pet { position: absolute; top: calc(50% - 1px); left: 24px; width: 18px; height: 12px; color: var(--muted); animation: pet-pace 16s linear -15.5s infinite; }
 .pet svg { display: block; width: 18px; height: 12px; overflow: visible; animation: pet-jump 16s linear -15.5s infinite; }
@@ -164,19 +165,36 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .pet .bl { transform-origin: 4.5px 8px; }
 .pet .leg-1 { animation: pet-legs .2s ease-in-out infinite alternate; }
 .pet .leg-2 { animation: pet-legs .2s ease-in-out -.2s infinite alternate; }
+/* the tree in the middle of the track, behind the runner and the pet */
+.tree { position: absolute; left: calc(50% - 8px); top: calc(50% - 10px); width: 16px; height: 22px; }
+.tree svg { display: block; width: 16px; height: 22px; }
+.tree .leaves { fill: var(--heat-1); }
+.tree .trunk { fill: #8a5a2b; }
+.pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }
+.pet .stream { stroke: #e3b505; stroke-width: 1.2; stroke-dasharray: 1.6 1.2; animation: pet-stream .25s linear infinite; }
+@keyframes pet-show-pee { 0% { visibility: hidden; } 19.5% { visibility: visible; } 24% { visibility: hidden; } }
+@keyframes pet-stream { to { stroke-dashoffset: -2.8; } }
 @keyframes pet-pace {
   0% { left: 24px; transform: scaleX(1); }
+  17%, 24% { left: calc(50% + 1px); transform: scaleX(1); }
   38%, 45.99% { left: calc(100% - 42px); transform: scaleX(1); }
   46% { left: calc(100% - 42px); transform: scaleX(-1); }
   86%, 99.99% { left: 24px; transform: scaleX(-1); }
   100% { left: 24px; transform: scaleX(1); }
 }
-@keyframes pet-show-run { 0% { visibility: visible; } 38% { visibility: hidden; } 46% { visibility: visible; } 86% { visibility: hidden; } }
-@keyframes pet-show-stand { 0% { visibility: hidden; } 38% { visibility: visible; } 46% { visibility: hidden; } 86% { visibility: visible; } }
+@keyframes pet-show-run { 0% { visibility: visible; } 17% { visibility: hidden; } 24% { visibility: visible; } 38% { visibility: hidden; } 46% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes pet-show-stand { 0% { visibility: hidden; } 17% { visibility: visible; } 19.5% { visibility: hidden; } 38% { visibility: visible; } 46% { visibility: hidden; } 86% { visibility: visible; } }
 @keyframes pet-legs { from { transform: rotate(30deg); } to { transform: rotate(-30deg); } }
 @keyframes pet-wag { from { transform: rotate(-15deg); } to { transform: rotate(20deg); } }
 @keyframes pet-sniff {
   0% { transform: rotate(0deg); }
+  17.2% { transform: rotate(0deg); }
+  17.5% { transform: rotate(62deg); }
+  17.9% { transform: rotate(72deg); }
+  18.3% { transform: rotate(62deg); }
+  18.7% { transform: rotate(72deg); }
+  19.1% { transform: rotate(62deg); }
+  19.4% { transform: rotate(0deg); }
   39% { transform: rotate(0deg); }
   39.5% { transform: rotate(62deg); }
   39.9% { transform: rotate(72deg); }
@@ -206,11 +224,11 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 }
 @keyframes pet-jump {
   0% { transform: translateY(0px); }
-  18% { transform: translateY(0px); }
-  18.6% { transform: translateY(-5px); }
-  19.25% { transform: translateY(-7px); }
-  19.9% { transform: translateY(-5px); }
-  20.5% { transform: translateY(0px); }
+  30% { transform: translateY(0px); }
+  30.6% { transform: translateY(-5px); }
+  31.25% { transform: translateY(-7px); }
+  31.9% { transform: translateY(-5px); }
+  32.5% { transform: translateY(0px); }
   64% { transform: translateY(0px); }
   64.6% { transform: translateY(-5px); }
   65.25% { transform: translateY(-7px); }
