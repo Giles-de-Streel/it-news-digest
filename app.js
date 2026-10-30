@@ -239,7 +239,11 @@
       return;
     }
     const top = list.filter((it) => coverage(it) > 1);
-    const rest = list.filter((it) => coverage(it) === 1);
+    // Every story with a CVSS badge, highest score first. Single-source ones move here from
+    // "Other stories"; multi-source ones also stay in "Most reported".
+    const vulns = list.filter(hasCvssBadge)
+      .sort((a, b) => b.cves[0].score - a.cves[0].score || (b.published || "").localeCompare(a.published || ""));
+    const rest = list.filter((it) => coverage(it) === 1 && !hasCvssBadge(it));
     // Keep busy sources from crowding the list: show each source's newest few, fold the rest.
     // Picking that source or searching shows everything.
     const capped = !state.source && !state.query;
@@ -259,7 +263,9 @@
     box.replaceChildren(...[
       cveFirst ? cveBlock : null,
       top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top) : null,
-      rest.length ? section(top.length ? "Other stories" : "Stories",
+      vulns.length ? section("Current vulnerabilities",
+        `${vulns.length} ${vulns.length === 1 ? "story mentions" : "stories mention"} a CVE scored High (7.0+) or Critical (9.0+), highest score first`, vulns) : null,
+      rest.length ? section(top.length || vulns.length ? "Other stories" : "Stories",
         `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
         shown, more) : null,
       cveFirst ? null : cveBlock,
@@ -387,9 +393,10 @@
     });
   }
 
+  const hasCvssBadge = (it) => ((it.cves || [])[0]?.score || 0) >= HIGH_CVSS;
   function cvssBadge(it) {
-    const top = (it.cves || [])[0];
-    if (!top || top.score < HIGH_CVSS) return null;
+    if (!hasCvssBadge(it)) return null;
+    const top = it.cves[0];
     const detail = it.cves.map((c) => `${c.id}: CVSS ${c.version} ${c.score.toFixed(1)} ${c.severity}, scored by ${c.scored_by}`).join("\n");
     return el("a", {
       class: `cvss sev-${top.score >= 9 ? "critical" : "high"}`,
