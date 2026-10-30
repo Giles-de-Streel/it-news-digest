@@ -352,12 +352,15 @@
   // Every outlet covering a story, each linked to its own article (lead source first); starts hidden
   function sourcesPanel(it) {
     const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || [])];
-    const ul = el("ul", { class: "also-list source-list" }, ...all.map((c) =>
-      el("li", {}, el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
-        el("span", { class: "source", text: `${c.source}: ` }), c.title))));
+    const ul = el("ul", { class: "also-list source-list" }, ...all.map(sourceLine));
     ul.hidden = true;
     return ul;
   }
+
+  // One outlet's coverage: the whole "Source: headline" line links to that outlet's article
+  const sourceLine = (c) => el("li", {},
+    el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
+      el("span", { class: "source", text: `${c.source}: ` }), c.title));
 
   // The "N sources" pill in List layout: a button that shows or hides the sources panel
   function sourcesToggle(n, panel) {
@@ -445,8 +448,7 @@
       el("h3", {}, link(it.url, it.title)),
       it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
       also.length ? el("div", { class: "also-head", text: "Also reported by" }) : null,
-      also.length ? el("ul", { class: "also-list" }, ...also.map((c) =>
-        el("li", {}, el("span", { class: "source", text: `${c.source}: ` }), link(c.url, c.title)))) : null,
+      also.length ? el("ul", { class: "also-list" }, ...also.map(sourceLine)) : null,
       el("div", { class: "tags" }, ...it.topics.map((t) => el("span", { class: "tag", text: t }))),
     );
   }
