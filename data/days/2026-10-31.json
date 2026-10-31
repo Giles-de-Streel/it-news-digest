@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "generated": "2026-10-31T08:00:48+00:00",
+ "generated": "2026-10-31T09:01:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 51,
-   "recent": 51,
+   "fetched": 53,
+   "recent": 53,
    "error": null
   },
   {
@@ -210,25 +210,25 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 22,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 130,
-   "recent": 42,
+   "fetched": 125,
+   "recent": 36,
    "error": null
   },
   {
@@ -732,13 +732,13 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -1007,7 +1007,7 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2231,
+   "fetched": 2229,
    "recent": 14,
    "error": null
   },
@@ -1242,6 +1242,111 @@
  ],
  "items": [
   {
+   "id": "d1a37671983d",
+   "title": "Kubernetes Confidential Containers Get Fortanix Attestation and Key Management",
+   "url": "https://www.infoq.com/news/2026/10/k8s-confidential-containers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-10-31T08:18:00+00:00",
+   "summary": "Fortanix's CoCo integration connects workload attestation to decryption-key release for Kubernetes AI workloads. GPU-verification settings affect protection, while upstream Trustee and Azure Secure Key Release offer alternative routes to attestation-based key release. By Mark Silvester",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "b27931181f45",
+   "title": "CVE-2026-119096: The Uncanny Toolkit for LearnDash plugin for WordPress is vulnerable to Authentication Bypass in versions up…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119096",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T08:16:49.043000+00:00",
+   "summary": "The Uncanny Toolkit for LearnDash plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 3.8.2 via the `email` parameter of the `uo_login_action()` function.",
+   "kind": "cve",
+   "cve": "CVE-2026-119096",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119096",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "fa0334ab7405",
+   "title": "CVE-2026-116512: The Project Manager – AI Powered Project Management, Task Management, Kanban Board & Time Tracker plugin for…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116512",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T08:16:48.603000+00:00",
+   "summary": "The Project Manager – AI Powered Project Management, Task Management, Kanban Board & Time Tracker plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.1.1 via the 'id' parameter parameter.",
+   "kind": "cve",
+   "cve": "CVE-2026-116512",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116512",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "0bcbd00768f4",
+   "title": "Backbone of a beast – charting Nvidia's rise to networking titan",
+   "url": "https://www.theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-10-31T08:03:00+00:00",
+   "summary": "How a $6.9B bet on Mellanox made Nvidia bigger than Cisco, and the world's most valuable company to boot",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "2b95dedd6518",
+   "title": "3D Printed Einstein-Szilard Refrigerator Cools with Fire",
+   "url": "https://hackaday.com/2026/10/31/3d-printed-einstein-szilard-refrigerator-cools-with-fire/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-10-31T08:00:42+00:00",
+   "summary": "They may not deliver the highest efficiency, but absorption refrigerators have earned a persistent place in camper vans and industrial plants thanks to a few distinct advantages: they can operate …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8000c7535179",
+   "title": "LocalStack for Azure Enters Public Preview with Security Settings Stored but Not Enforced",
+   "url": "https://www.infoq.com/news/2026/10/localstack-azure-preview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-10-31T07:57:00+00:00",
+   "summary": "LocalStack has opened its Azure emulator to a free public preview, running Azure services locally and accepting existing ARM, Bicep, and Terraform without rewrites.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "989b64c7f89e",
    "title": "CVE-2026-89270: The Popup Builder – Create highly converting, mobile friendly marketing popups.",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89270",
@@ -1361,6 +1466,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "AI"
+   ]
+  },
+  {
+   "id": "73acf00ea168",
+   "title": "Digital Minimalism",
+   "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T06:16:36+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
