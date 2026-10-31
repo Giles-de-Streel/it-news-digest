@@ -1,18 +1,18 @@
 {
  "date": "2026-10-31",
- "generated": "2026-10-31T12:00:48+00:00",
+ "generated": "2026-10-31T13:00:50+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 4,
+   "error": null
   },
   {
    "source": "The Record",
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 52,
+   "recent": 52,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 26,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "SQLServerCentral",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 9,
+   "recent": 7,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 122,
-   "recent": 13,
+   "recent": 11,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1242,6 +1242,88 @@
  ],
  "items": [
   {
+   "id": "cec7313261a0",
+   "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+   "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-31T12:50:09+00:00",
+   "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "1b711ca76283",
+   "title": "Developer builds a complete Intel 486 PC emulator in a browser — 100% pure-JavaScript Retro486 includes modular tabs for screen, motherboard, storage, expansion cards, and more",
+   "url": "https://www.tomshardware.com/video-games/retro-gaming/developer-builds-a-complete-intel-486-pc-emulator-in-a-browser-100-percent-pure-javascript-retro486-includes-modular-tabs-for-screen-motherboard-storage-expansion-cards-and-more",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-31T12:40:00+00:00",
+   "summary": "A developer has created a full Intel 486 PC system, using 100% pure-JavaScript, in a browser.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "94697ec49ac5",
+   "title": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-31T12:20:00+00:00",
+   "summary": "Anthropic's Opus 5.5 model blocking attempts at videogame recreation — users also claim their non-malicious generic reverse-engineering tasks are block",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Reverse engineering"
+   ]
+  },
+  {
+   "id": "4ff5b437fc51",
+   "title": "New Linux 7.4 Feature For Reducing AI Noise Already Reverted Due To A \"Crazy Beast\"",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Drops-Taint-Bind",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-10-31T12:15:22+00:00",
+   "summary": "A new feature merged last week for Linux 7.4 to help reduce AI/LLM generated noise from invalid/irrelevant testing configurations is now reverted due to a \"crazy beast\" in the VFIO subsystem...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "931358c4dc9a",
+   "title": "Denmark’s Collabora Pilot Was Never The Microsoft Replacement it Was Made Out to Be",
+   "url": "https://feed.itsfoss.com/link/24361/17512053/denmark-collabora-pilot-update",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-10-31T12:03:47+00:00",
+   "summary": "Collabora says a ministry merger paused the test, while the ministry says it was interrupted when the election was called.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "1f2870fb86df",
+   "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+   "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-10-31T12:01:56+00:00",
+   "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "6639c1e912ec",
    "title": "Goth aesthetic gone wild: a user's self-inflicted black screen of non-death in Windows 3.1’s",
    "url": "https://www.theregister.com/offbeat/2026/10/31/goth-aesthetic-gone-wild-a-users-self-inflicted-black-screen-of-non-death-in-windows-31s/5306592",
@@ -1267,6 +1349,19 @@
     "Threats & malware",
     "AI",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "203f7c970bba",
+   "title": "AI agent used to perform controversial brain surgery on a mouse, Anthropic Sonnet controlled motorized surgery rig",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/startup-uses-ai-agent-to-perform-controversial-brain-surgery-on-a-mouse-anthropic-sonnet-controlled-motorized-surgery-rig-ai-given-free-reign-to-treat-epilepsy-with-a-range-of-gene-therapy-vectors-after-opus-5-5-refused-to-conduct-biological-experiment",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-10-31T12:00:00+00:00",
+   "summary": "The team had to use Sonnet after Opus 5.5 outright refused to run the experiment, while Opus 5 warned that it could stop working in the midst of the operation.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2163,6 +2258,19 @@
     "Threats & malware",
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "e044352625b2",
+   "title": "Keeping the Bonfires Lit",
+   "url": "https://www.historytoday.com/archive/out-margins/keeping-bonfires-lit",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-30T05:24:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   }
  ]
