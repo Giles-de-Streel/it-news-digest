@@ -1,18 +1,18 @@
 {
  "date": "2026-10-31",
- "generated": "2026-10-31T07:00:55+00:00",
+ "generated": "2026-10-31T08:00:48+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 24,
+   "recent": 21,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 49,
-   "recent": 49,
+   "fetched": 51,
+   "recent": 51,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 25,
+   "recent": 23,
    "error": null
   },
   {
@@ -594,13 +594,13 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 133,
-   "recent": 49,
+   "fetched": 130,
+   "recent": 42,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1241,6 +1241,88 @@
   }
  ],
  "items": [
+  {
+   "id": "989b64c7f89e",
+   "title": "CVE-2026-89270: The Popup Builder – Create highly converting, mobile friendly marketing popups.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89270",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T07:16:37.707000+00:00",
+   "summary": "The Popup Builder – Create highly converting, mobile friendly marketing popups. plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.4.5 This is due to the plugin not properly verifying that a user is authorized to perform an action.",
+   "kind": "cve",
+   "cve": "CVE-2026-89270",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-89270",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "91d903481f40",
+   "title": "CVE-2026-116557: The WP Booking System - Booking Calendar plugin for WordPress is vulnerable to unauthorized modification of…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116557",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T07:16:35.857000+00:00",
+   "summary": "The WP Booking System - Booking Calendar plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the wpbs_action_ajax_calendar_remove_note() function in versions up to, and including, 2.1.0.5 This makes it possible for authenticated attackers, with Subscriber-level…",
+   "kind": "cve",
+   "cve": "CVE-2026-116557",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116557",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "33e7aa346dc3",
+   "title": "CVE-2026-109220: The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109220",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T07:16:34.367000+00:00",
+   "summary": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter.",
+   "kind": "cve",
+   "cve": "CVE-2026-109220",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109220",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b6a979e61a52",
+   "title": "Google's First Data Center Satellite Is Online and Writing Poetry",
+   "url": "https://science.slashdot.org/story/26/10/30/2344228/googles-first-data-center-satellite-is-online-and-writing-poetry?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-31T07:00:00+00:00",
+   "summary": "Google's first experimental space-based data center is operational after launching earlier this month, successfully running its Gemma 4 AI model aboard a satellite and generating a haiku about being in orbit.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
   {
    "id": "d91e1497bc54",
    "title": "As AI models commoditize, lasting wealth will accrue to those controlling chokepoints like distribution, payment rails, and a stablecoin dollar, not to the labs (The Commanding Heights)",
