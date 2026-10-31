@@ -1,12 +1,12 @@
 {
  "date": "2026-10-31",
- "generated": "2026-10-31T18:00:48+00:00",
+ "generated": "2026-10-31T19:00:48+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 49,
-   "recent": 49,
+   "fetched": 51,
+   "recent": 51,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 109,
-   "recent": 11,
+   "fetched": 105,
+   "recent": 10,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -1002,7 +1002,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1242,6 +1242,147 @@
  ],
  "items": [
   {
+   "id": "377716575111",
+   "title": "NASA Seeks Proposals for Reboosting the Hubble Space Telescope",
+   "url": "https://science.slashdot.org/story/26/10/31/1817218/nasa-seeks-proposals-for-reboosting-the-hubble-space-telescope?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-10-31T18:50:00+00:00",
+   "summary": "The Hubble Space Telescope \"will plunge back into the atmosphere in the early-to-mid-2030s,\" reports Ars Technica. So now NASA has released a Request For Information (RFI) \"asking commercial companies for ideas on how to reboost, service, or a controlled disposal of Hubble.\" Specifically, NASA is looking for…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e496eff7e0a0",
+   "title": "CVE-2026-120209: AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120209",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T18:17:09.263000+00:00",
+   "summary": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the testTransform endpoint, which passes scripts to GroovyClassLoader for unauthenticated remote code execution.",
+   "kind": "cve",
+   "cve": "CVE-2026-120209",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120209",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "0e9766bbd01d",
+   "title": "CVE-2026-120201: Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120201",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-10-31T18:17:07.890000+00:00",
+   "summary": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TOKEN header.",
+   "kind": "cve",
+   "cve": "CVE-2026-120201",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120201",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c206e0d92bbb",
+   "title": "Haruna 1.9 Media Player Improves YouTube Handling and Playlist Management",
+   "url": "https://linuxiac.com/haruna-1-9-media-player-improves-youtube-handling/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-10-31T18:11:22+00:00",
+   "summary": "KDE's Haruna 1.9 optimizes YouTube URL processing, changes how playlists load at startup, and adds new customization options.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9fd0bcadad75",
+   "title": "I post trained a model on Demoscenes",
+   "url": "https://datavorous.com/writing/demoscener/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T18:08:24+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d6a3cd5b839e",
+   "title": "Avoid Public Functions Calling Other Public Functions",
+   "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-10-31T18:05:03+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "aa4997f9eba1",
+   "title": "The Impact of Generative AI on Critical Thinking",
+   "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T18:02:29+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "d5a1ee8adaa4",
+   "title": "Northflank security breach leads to abuse of customers' AI API keys",
+   "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-10-31T18:01:12+00:00",
+   "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "444f2a06681d",
+   "title": "William Nordhaus, Nobel-winning climate economist, dies at 85",
+   "url": "https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T17:59:41+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "6130723459f1",
    "title": "Dozens of Unexplained Drones Have Buzzed America's Nuclear Plants Since 2024",
    "url": "https://news.slashdot.org/story/26/10/31/1742209/dozens-of-unexplained-drones-have-buzzed-americas-nuclear-plants-since-2024?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -1253,6 +1394,32 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "a5865119d807",
+   "title": "UK Green party drops longstanding opposition to nuclear power",
+   "url": "https://www.theguardian.com/politics/2026/oct/05/green-party-nuclear-power-policy",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T17:37:22+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f44d16d6f7ba",
+   "title": "Copyright Office is restoring copyright to something you have to work to get",
+   "url": "https://pluralistic.net/2026/10/31/burn-berne/#unvictored",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T17:16:04+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1638,7 +1805,14 @@
    "source_category": "Hardware",
    "published": "2026-10-31T14:46:26+00:00",
    "summary": "Enlightenment 0.27 released at the beginning of 2025 and since then there's been no major feature update, falling off their roughly 12 month release cadence. But out this Halloween is Enlightenment 0.28 now with the better part of two years worth of changes...",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "ba7f8170af72",
+     "source": "Lobsters",
+     "title": "Enlightenment 0.28.0 Release",
+     "url": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0"
+    }
+   ],
    "topics": [
     "General IT"
    ]
