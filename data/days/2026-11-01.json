@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-01T18:00:54+00:00",
+ "generated": "2026-11-01T19:02:07+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 27,
-   "recent": 27,
+   "fetched": 29,
+   "recent": 29,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 30,
+   "recent": 32,
    "error": null
   },
   {
@@ -210,19 +210,19 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 58,
+   "fetched": 50,
    "recent": 1,
    "error": null
   },
@@ -1115,9 +1115,9 @@
   },
   {
    "source": "Debian security advisories",
-   "fetched": 30,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "source": "CNCF Blog",
@@ -1241,6 +1241,156 @@
   }
  ],
  "items": [
+  {
+   "id": "5eceb785a776",
+   "title": "London Meetup - Nov 2026",
+   "url": "https://lobste.rs/s/cqzwwg/london_meetup_nov_2026",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T18:47:10+00:00",
+   "summary": "Pub Address: The Fellow, 24 York Way, London, N1 9AA. Date: Sunday, 15/11/2026 The idea is to just meet and have a chat really. I have submitted a request to book a table. Hopefully they approve but if not we can just find an un-booked table.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d992f5406d1c",
+   "title": "Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races on Tuesday, including in Texas, Ohio, Michigan, and New York (Shane Burke/The Information)",
+   "url": "https://www.techmeme.com/261101/p13#a261101p13",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-01T18:45:02+00:00",
+   "summary": "Shane Burke / The Information : Analysis: candidates backing a data center moratorium could win up to 15 of 36 US governors' races on Tuesday, including in Texas, Ohio, Michigan, and New York — As data centers have gone from obscurity to the top of voters' minds, midterm candidates are taking a stance on the issue.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d2a522f84f01",
+   "title": "GOG explores reviving physical PC game releases — digital storefront needs publisher approvals, has to figure out the logistics and legal challenges",
+   "url": "https://www.tomshardware.com/video-games/gog-explores-reviving-physical-pc-game-releases-digital-storefront-needs-publisher-approvals-has-to-figure-out-the-logistics-and-legal-challenges",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-01T18:45:00+00:00",
+   "summary": "GOG wants to sell physical games, in contrast to consoles going digital-only, giving gamers more freedom over their games. However, it still has to figure out logistics and publisher permissions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "280630936cfd",
+   "title": "Mathematics has changed. Let's act like it",
+   "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T18:28:42+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "580dacd624eb",
+   "title": "Spooky C++",
+   "url": "https://www.nablag.com/spooky_cpp",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T18:17:14+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "851e21d2b334",
+   "title": "CVE-2026-120239: A vulnerability was found in WAVLINK WN553X1-B V260403_2.0.0.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120239",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-01T18:17:13.920000+00:00",
+   "summary": "A vulnerability was found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_419DA8 of the file /bin/ioos of the component WireGuard CLI Handler. Performing a manipulation of the argument file_id results in os command injection. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120239",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120239",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9c36c8fddc00",
+   "title": "CVE-2026-120238: A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120238",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-01T18:17:13.720000+00:00",
+   "summary": "A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0. This affects the function sub_4162A8 of the file /bin/ioos of the component ovpn_file Handler. Such manipulation of the argument file_id leads to os command injection. The attack can be executed remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120238",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120238",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "32916abf3ed2",
+   "title": "A look at VC-backed glossy magazine Colossus, whose glowing profiles of Zuckerberg and other tech titans win industry praise, while Kara Swisher says it is PR (Andrew Fedorov/The San Francisco Standard)",
+   "url": "https://www.techmeme.com/261101/p12#a261101p12",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-01T18:15:01+00:00",
+   "summary": "Andrew Fedorov / The San Francisco Standard : A look at VC-backed glossy magazine Colossus, whose glowing profiles of Zuckerberg and other tech titans win industry praise, while Kara Swisher says it is PR — Inside tech's corner offices, there's no love left for the news media. “I think you're the problem, the media,” …",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "a96109bc898a",
+   "title": "Snag a Nintendo Switch 2 for only $469 while stock lasts — $30 off a system that's not often on sale",
+   "url": "https://www.tomshardware.com/pc-components/snag-a-nintendo-switch-2-for-only-usd469-while-stock-lasts-usd30-off-a-system-thats-not-often-on-sale",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-01T18:09:28+00:00",
+   "summary": "Snag a Nintendo Switch 2 for only $469 while stocks last — $30 off a system that's not often on sale",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d903a8f3c166",
+   "title": "Let's Encrypt Goes to 64-Day Certificates: When Does Your ACME Client Actually Renew?",
+   "url": "https://devops-daily.com/posts/lets-encrypt-64-day-certificates-renewal-check",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T18:08:50+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "70550f6232c9",
    "title": "VMware Aria Automation alternatives, by what each one replaces",
@@ -1496,6 +1646,19 @@
    "id": "b9eb58840efe",
    "title": "Seoul Biosys Begins Production of Rare Earth-Free White Micro LEDs",
    "url": "https://www.ajupress.com/view/20261028171670308",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T16:23:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "df26b03e602d",
+   "title": "Seoul Viosys begins production of rare-earth-free white light emitter",
+   "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-11-01T16:23:26+00:00",
