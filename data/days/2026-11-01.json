@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-01T22:01:25+00:00",
+ "generated": "2026-11-01T23:01:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
-   "recent": 4,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 12,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "CIO.com",
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 29,
-   "recent": 2,
+   "fetched": 21,
+   "recent": 5,
    "error": null
   },
   {
@@ -1092,7 +1092,7 @@
   {
    "source": "Linux kernel releases",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1242,6 +1242,75 @@
  ],
  "items": [
   {
+   "id": "2c7d241db5de",
+   "title": "SystemD's Creator Opens Signups for Private Preview of Amutable's Cryptographically Verified Linux Systems",
+   "url": "https://tech.slashdot.org/story/26/11/01/229250/systemds-creator-opens-signups-for-private-preview-of-amutables-cryptographically-verified-linux-systems?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-01T22:33:00+00:00",
+   "summary": "SystemD creator Lennart Poettering left Red Hat for Microsoft in 2022, but 10 months ago left to co-found Amutable a company that aims to build cryptographically verified Linux systems that stay trusted over time.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "5256761d5103",
+   "title": "Understanding Org's LaTeX previews",
+   "url": "https://karthinks.com/software/understanding-org-latex-preview/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T22:19:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8256b7737e88",
+   "title": "RHSA-2026:93413: Important: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:93413",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-01T22:16:35+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "4fa2eccbab03",
+   "title": "Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51% (Dean Takahashi/GamesBeat)",
+   "url": "https://www.techmeme.com/261101/p17#a261101p17",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-01T22:15:02+00:00",
+   "summary": "Dean Takahashi / GamesBeat : Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51% — Join the Leaders Making Gaming's Next Big Deals.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "431bd5cd9368",
+   "title": "RHSA-2026:93412: Important: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:93412",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-01T22:09:07+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "0186e35020cc",
    "title": "Linux 7.4-rc1 Released With Nice Performance Improvements, AMD Ryzen Zen 6 Preparations & AMDGPU HDMI 2.1 Default",
    "url": "https://www.phoronix.com/news/Linux-7.4-rc1",
@@ -1381,6 +1450,20 @@
     "Microsoft & Windows",
     "AI",
     "Networking"
+   ]
+  },
+  {
+   "id": "e217cd49e659",
+   "title": "RHSA-2026:93415: Critical: kernel-rt security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:93415",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-01T20:52:03+00:00",
+   "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -3094,6 +3177,19 @@
    ]
   },
   {
+   "id": "dd97233edd3e",
+   "title": "Domain hacks with unusual Unicode characters (2018)",
+   "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T10:44:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "4754420172cd",
    "title": "Linux's Perf Python Scripts More Robust & Faster With Linux 7.4",
    "url": "https://www.phoronix.com/news/Linux-7.4-Perf-Tools",
@@ -3802,6 +3898,19 @@
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-10-31T20:21:55+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1bc86ae2b13d",
+   "title": "The She-Wolves of Jülich",
+   "url": "https://www.historytoday.com/archive/history-matters/she-wolves-julich",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T17:29:39+00:00",
    "summary": "Comments",
    "also_covered_by": [],
    "topics": [
