@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-01T10:00:48+00:00",
+ "generated": "2026-11-01T11:00:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 4,
+   "error": null
   },
   {
    "source": "The Record",
@@ -96,7 +96,7 @@
   {
    "source": "Slashdot",
    "fetched": 15,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "ServeTheHome",
    "fetched": 6,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 12,
+   "recent": 15,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 84,
+   "fetched": 80,
    "recent": 1,
    "error": null
   },
@@ -696,7 +696,7 @@
   {
    "source": "Wiz Research",
    "fetched": 714,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1008,7 +1008,7 @@
   {
    "source": "Microsoft 365 Roadmap",
    "fetched": 2229,
-   "recent": 5,
+   "recent": 0,
    "error": null
   },
   {
@@ -1242,6 +1242,75 @@
  ],
  "items": [
   {
+   "id": "eef4ca66d427",
+   "title": "AI Use In The Linux Kernel, Microsoft Defender On Linux & Other October Highlights",
+   "url": "https://www.phoronix.com/news/October-2026-Highlights",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-01T10:54:04+00:00",
+   "summary": "October brought the releases of Linux 7.3, Ubuntu 26.10, the KDE Plasma 6.8 desktop, and a wealth of other open-source software releases. The expanding use of AI/LLMs within Linux kernel development also made for interesting discussions in October.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "8bdbd06d6a95",
+   "title": "XKCD and Fourier",
+   "url": "https://leancrew.com/all-this/2026/10/xkcd-and-fourier/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T10:50:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4754420172cd",
+   "title": "Linux's Perf Python Scripts More Robust & Faster With Linux 7.4",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Perf-Tools",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-01T10:38:55+00:00",
+   "summary": "Merged this weekend to Linux 7.4 Git were all of the perf subsystem tooling updates. Most notable to these tooling updates for dealing with performance counters and more on Linux is an overhaul to the Python code...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "3363ff72d783",
+   "title": "Linux 7.4 Merge Window Saw Nearly 20k Commits, Source Tree Approaching 42 Million Lines",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Merge-Window",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-01T10:28:22+00:00",
+   "summary": "Linux 7.3 started out just under 41 million lines in total in the kernel source tree. In the end the Linux v7.3 tag came in at 41,019,555 lines as measured by cloc while now with Linux 7.4 we are inching ever closer to 42 million lines. On a Git commit basis, the Linux 7.4 merge window has been the busiest on record...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "1593473fbf07",
+   "title": "A tiny Pacific country rolls out universal basic income",
+   "url": "https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-universal-basic-income",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T10:05:09+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "54644a00b89f",
    "title": "Arch Linux November 2026 ISO Released with Kernel 7.2.11, systemd 262.1",
    "url": "https://linuxiac.com/arch-linux-november-2026-iso-released-with-kernel-7-2-11/",
@@ -1253,6 +1322,32 @@
    "topics": [
     "Linux & open source",
     "System administration"
+   ]
+  },
+  {
+   "id": "680f50e02f7b",
+   "title": "OpenIDEA: The IDE you know, rebuilt in Rust",
+   "url": "https://github.com/l0ng-ai/openidea",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T09:15:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "ec58a4fc51d4",
+   "title": "OneNote File Extraction, (Sun, Nov 1st)",
+   "url": "https://isc.sans.edu/diary/rss/33478",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-11-01T09:12:23+00:00",
+   "summary": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
    ]
   },
   {
