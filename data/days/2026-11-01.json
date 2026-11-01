@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-01T12:00:48+00:00",
+ "generated": "2026-11-01T13:01:01+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 18,
-   "recent": 18,
+   "fetched": 17,
+   "recent": 17,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 17,
+   "recent": 20,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 79,
+   "fetched": 75,
    "recent": 1,
    "error": null
   },
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1115,9 +1115,9 @@
   },
   {
    "source": "Debian security advisories",
-   "fetched": 30,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "source": "CNCF Blog",
@@ -1242,6 +1242,126 @@
  ],
  "items": [
   {
+   "id": "73985a54bdb8",
+   "title": "PorteuX 2.9 Released with Linux 7.3, KDE Plasma 6.8, GNOME 51, and COSMIC 1.11",
+   "url": "https://9to5linux.com/porteux-2-9-released-with-linux-7-3-kde-plasma-6-8-gnome-51-and-cosmic-1-11",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-01T12:55:41+00:00",
+   "summary": "PorteuX 2.9 Linux distribution based on Slackware is now available for download with Linux kernel 7.3, KDE Plasma 6.8, GNOME 51, COSMIC 1.11, and various improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "8f7e0709d34e",
+   "title": "AI agent swarms unleashed in Minecraft to ‘build a thriving civilization’ — 50-agent teams fail after falling into paralyzing bureaucracy",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-01T12:33:52+00:00",
+   "summary": "Researchers recently tested AI agent swarm performance in various Minecraft gaming modes.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "8b5a8c6171df",
+   "title": "California county deploys autonomous firefighting drones with 500-gallon foam payload to attack wildfires",
+   "url": "https://www.tomshardware.com/tech-industry/drones/california-county-secures-autonomous-firefighting-drones-with-500-gallon-foam-payload-to-deal-with-wildfires-five-drone-strike-team-can-be-controlled-by-a-single-operator-conduct-nighttime-ops-and-access-difficult-terrain",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-01T12:30:00+00:00",
+   "summary": "These Seneca drones should help the San Bernardino County Fire Protection District achieve its goal of stopping 90% of fires before they grow larger than 10 square feet.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "78e1e13b9e10",
+   "title": "BIOSTAR EdgeComp MS-U320 fanless Wildcat Lake industrial mini PC offers four COM ports, dual 2.5GbE, 4G/5G expansion",
+   "url": "https://www.cnx-software.com/2026/11/01/biostar-edgecomp-ms-u320-fanless-wildcat-lake-industrial-mini-pc-offers-four-com-ports-dual-2-5gbe-4g-5g-expansion/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-01T12:26:46+00:00",
+   "summary": "BIOSTAR EdgeComp MS-U320 is a fanless industrial mini PC powered by an Intel Core 3 304 or Core 5 320 Wildcat Lake SoC with four COM ports, dual 2.5GbE, and 4G/5G cellular connectivity expansion.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "70cc8ccb9548",
+   "title": "Beating the compiler at signed 32-bit division",
+   "url": "https://lemire.me/blog/2026/10/31/beating-the-compiler-at-signed-32-bit-division/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T12:26:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "0d862a57275c",
+   "title": "Release 0.6.0 · buzz-language/buzz",
+   "url": "https://buzz-lang.dev/0.6.0",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-01T12:14:21+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2f94d45b2c20",
+   "title": "Turning Syngas into Hydrocarbons with the Right Alpha",
+   "url": "https://hackaday.com/2026/11/01/turning-syngas-into-hydrocarbons-with-the-right-alpha/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-01T12:00:34+00:00",
+   "summary": "Although the Fischer-Tropsch synthesis (F-T synthesis) process is well-known and on face value quite straightforward, using it for DIY production of a somewhat defined length hydrocarbons is fairly tricky. This …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "fe1520732b90",
+   "title": "The Linux 7.4 Merge Window Is Easily The Largest In Kernel History",
+   "url": "https://www.phoronix.com/news/Linux-7.4-Massive-Window",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-01T12:00:11+00:00",
+   "summary": "After writing this morning with some stats about the size of the Linux 7.4 merge window and the kernel's source tree approaching 42 million lines, I was curious to run some numbers for putting the size of the merge window into perspective against the major kernel releases of the past 15 years.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e4de82468881",
+   "title": "Voyager 1 probe to hit historic one light-day distance from Earth in 17 days — 49-year-old spacecraft travels 16 billion miles",
+   "url": "https://www.tomshardware.com/tech-industry/space/voyager-1-probe-to-hit-historic-one-light-day-distance-from-earth-in-17-days-49-year-old-spacecraft-travels-16-billion-miles-and-survives-nearly-ten-times-the-length-of-its-original-five-year-mission",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-01T12:00:00+00:00",
+   "summary": "It took the space probe nearly 50 years to get to one light-day, with NASA scientists and engineers going through lengths to ensure that it could keep operating for as long as possible.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "cdbd3a2e3361",
    "title": "'Mother of all editors' Emacs is 50",
    "url": "https://www.theregister.com/applications/2026/11/01/mother-of-all-editors-emacs-is-50/5306727",
@@ -1350,6 +1470,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "c699e2cecab9",
+   "title": "noyb win: French electronics retailer Fnac Darty fined €7M",
+   "url": "https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T11:17:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
