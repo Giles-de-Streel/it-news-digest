@@ -20,6 +20,7 @@
   --pup: #8b5a2b;
   --runner: #0d0f12; --runner-shirt: #1e5fa8; --walker-shirt: #b5532a;
   --dust-1: #c9ced6; --dust-2: #8a929e; --dust-3: #f1f3f6;
+  --sun: #f4b400; --moon: #b9c0cc; --cloud: #dfe4ea; --cloud-edge: #c4cbd4;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -47,6 +48,7 @@
     --pup: #c08a5a;
     --runner: #f2f4f7; --runner-shirt: #6aa6e8; --walker-shirt: #e08a5e;
     --dust-1: #6b7380; --dust-2: #a3abb7; --dust-3: #3a404a;
+    --sun: #f2c14e; --moon: #e9e4c9; --cloud: #3a414c; --cloud-edge: #4b5361;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -257,6 +259,20 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .tree.green3 .leaves { fill: var(--tree-green-3); }
 .tree .trunk { fill: #8a5a2b; }
 @media (max-width: 700px) { .tree.far { display: none; } }
+/* sky and grass, all generated per page load by app.js (--x = centre position) */
+.sky-sun, .sky-moon { position: absolute; top: 2px; left: calc(var(--x) - var(--s) / 2); width: var(--s); height: var(--s); }
+.sky-sun { fill: var(--sun); stroke: var(--sun); stroke-width: 1.4; stroke-linecap: round; }
+.sky-sun circle { stroke: none; }
+.sky-moon { fill: var(--moon); }
+.sky-cloud { position: absolute; top: var(--y); left: calc(var(--x)); width: var(--w); height: calc(var(--w) * 10 / 24);
+             fill: var(--cloud); stroke: var(--cloud-edge); stroke-width: .8; animation: cloud-drift var(--dur) ease-in-out infinite alternate; }
+@keyframes cloud-drift { from { transform: translateX(0); } to { transform: translateX(var(--drift)); } }
+.grass { position: absolute; left: calc(var(--x) - var(--w) / 2); top: calc(50% + 12.5px - var(--h)); width: var(--w); height: var(--h);
+         overflow: visible; fill: none; stroke-width: 1; stroke-linecap: round; }
+.grass.g1 { stroke: var(--heat-1); }
+.grass.g2 { stroke: var(--tree-green-2); }
+.grass.g3 { stroke: var(--tree-green-3); }
+@media (max-width: 700px) { .grass.far { display: none; } }
 .pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }
 .pet .stream { stroke: #e3b505; stroke-width: 1.2; stroke-dasharray: 1.6 1.2; animation: pet-stream .25s linear infinite; }
 /* the second, smaller brown dog: same 16s cycle as the runner, no delay. Its keyframes (pup-*) are

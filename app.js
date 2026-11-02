@@ -710,6 +710,55 @@
     track.insertBefore(t, home);
   }
 
+  // Sky: either a sun or a moon somewhere along the top, plus 1-3 slowly drifting clouds (behind the trees)
+  const NS = "http://www.w3.org/2000/svg";
+  const sky = (cls, viewBox, inner, styles) => {
+    const s = document.createElementNS(NS, "svg");
+    s.setAttribute("class", cls);
+    s.setAttribute("viewBox", viewBox);
+    s.setAttribute("aria-hidden", "true");
+    s.innerHTML = inner; // constant markup, no feed data
+    Object.entries(styles).forEach(([k, v]) => s.style.setProperty(k, v));
+    track.prepend(s);
+    return s;
+  };
+  if (Math.random() < 0.5) {
+    const rays = Array.from({ length: 8 }, (_, i) => { const a = (i * Math.PI) / 4; return `M${(6 * Math.cos(a)).toFixed(1)} ${(6 * Math.sin(a)).toFixed(1)}L${(8.6 * Math.cos(a)).toFixed(1)} ${(8.6 * Math.sin(a)).toFixed(1)}`; }).join("");
+    sky("sky-sun", "-9 -9 18 18", `<path class="ray" d="${rays}"/><circle r="4.2"/>`, { "--x": `${rand(6, 94).toFixed(1)}%`, "--s": `${Math.round(rand(11, 15))}px` });
+  } else {
+    sky("sky-moon", "-6 -6 12 12", '<path d="M2.2-5.2A5.6 5.6 0 1 0 5.4 2.6 4.4 4.4 0 0 1 2.2-5.2z"/>', { "--x": `${rand(6, 94).toFixed(1)}%`, "--s": `${Math.round(rand(9, 12))}px` });
+  }
+  const clouds = 1 + Math.floor(Math.random() * 3);
+  for (let i = 0; i < clouds; i++) {
+    sky("sky-cloud", "0 0 24 10", '<path d="M5 9.5h14.5a3.6 3.6 0 0 0 .4-7.2 4.6 4.6 0 0 0-8.6-.9A3.4 3.4 0 0 0 6.6 4 2.8 2.8 0 0 0 5 9.5z"/>',
+      { "--x": `${rand(0, 92).toFixed(1)}%`, "--w": `${Math.round(rand(16, 28))}px`, "--y": `${rand(0, 5).toFixed(1)}px`,
+        "--drift": `${Math.round(rand(10, 30)) * (Math.random() < 0.5 ? -1 : 1)}px`, "--dur": `${Math.round(rand(18, 40))}s` });
+  }
+
+  // Grass: random tufts and patches along the ground line, in front of the trees but behind the dogs and runners
+  const before = track.querySelector(".pet") || null;
+  const patches = 5 + Math.floor(Math.random() * 6); // 5-10
+  for (let i = 0; i < patches; i++) {
+    const w = Math.round(rand(6, 36));
+    const h = rand(3.5, 6.5);
+    let d = "";
+    for (let x = 0.8; x < w; x += rand(1.3, 2.6)) {
+      const bh = h * rand(0.55, 1), lean = rand(-1.4, 1.4);
+      d += `M${x.toFixed(1)} ${h.toFixed(1)}q${(lean * 0.3).toFixed(1)} ${(-bh * 0.6).toFixed(1)} ${lean.toFixed(1)} ${(-bh).toFixed(1)}`;
+    }
+    const g = document.createElementNS(NS, "svg");
+    g.setAttribute("class", `grass g${1 + Math.floor(Math.random() * 3)}${Math.random() < 0.35 ? " far" : ""}`);
+    g.setAttribute("viewBox", `0 0 ${w} ${h.toFixed(1)}`);
+    g.setAttribute("aria-hidden", "true");
+    g.style.setProperty("--x", `${rand(0, 100).toFixed(1)}%`);
+    g.style.setProperty("--w", `${w}px`);
+    g.style.setProperty("--h", `${h.toFixed(1)}px`);
+    const p = document.createElementNS(NS, "path");
+    p.setAttribute("d", d);
+    g.appendChild(p);
+    track.insertBefore(g, before);
+  }
+
   // The pup picks one of these trees to pee on while running back left (the first dog uses the middle
   // tree on the way right). Prefer trees that stay visible on phones and aren't too near either end.
   const pup = track.querySelector(".pet.pup");
