@@ -18,7 +18,7 @@
   --tree-conifer: #145a3a; --tree-yellow: #d9a514; --tree-brown: #9a5b2c;
   --tree-green-2: #4c9a2a; --tree-green-3: #5f7f3a;
   --pup: #8b5a2b;
-  --runner: #0d0f12;
+  --runner: #0d0f12; --runner-shirt: #1e5fa8; --walker-shirt: #b5532a;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -44,7 +44,7 @@
     --tree-conifer: #3e9e72; --tree-yellow: #e8c04a; --tree-brown: #c58250;
     --tree-green-2: #7fcf5a; --tree-green-3: #a3bd6e;
     --pup: #c08a5a;
-    --runner: #f2f4f7;
+    --runner: #f2f4f7; --runner-shirt: #6aa6e8; --walker-shirt: #e08a5e;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -118,8 +118,12 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 /* the second stick figure walks: same 16s cycle, but only covers the left ~60% of the track, much slower
    than the runner. It waits at its far point until the runner passes on the way back (about 62% of the
    cycle), so it trails the group in both directions */
-.runner.walker { left: 46px; animation: walker-pace 16s linear infinite; }
-.runner.walker svg { animation-duration: .45s; }
+/* a touch of colour: each figure's torso is a thicker "shirt" stroke */
+.runner .shirt { stroke: var(--runner-shirt); stroke-width: 2.8; }
+.runner.walker .shirt { stroke: var(--walker-shirt); }
+/* the walker is ~85% of the runner's size, standing on the same ground line */
+.runner.walker { left: 46px; top: calc(50% - 9px); width: 17px; height: 22px; animation: walker-pace 16s linear infinite; }
+.runner.walker svg { width: 17px; height: 22px; animation-duration: .45s; }
 .runner.walker .run-pose { visibility: visible; animation: walker-show-walk 16s step-end infinite; }
 .runner.walker .walker-stand { visibility: hidden; animation: walker-show-stand 16s step-end infinite; }
 .runner.walker .leg-a, .runner.walker .arm-b { animation: walker-swing .45s ease-in-out infinite alternate; }
@@ -127,8 +131,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes walker-swing { from { transform: rotate(22deg); } to { transform: rotate(-22deg); } }
 @keyframes walker-pace {
   0% { left: 46px; transform: scaleX(1); }
-  56%, 61.99% { left: max(46px, calc(62% - 20px)); transform: scaleX(1); }
-  62% { left: max(46px, calc(62% - 20px)); transform: scaleX(-1); }
+  56%, 61.99% { left: max(46px, calc(62% - 17px)); transform: scaleX(1); }
+  62% { left: max(46px, calc(62% - 17px)); transform: scaleX(-1); }
   99.99% { left: 46px; transform: scaleX(-1); }
   100% { left: 46px; transform: scaleX(1); }
 }
