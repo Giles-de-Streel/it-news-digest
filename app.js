@@ -783,6 +783,50 @@
     track.insertBefore(g, before);
   }
 
+  // Rocks: small irregular stones of assorted sizes and colours, in front of the grass
+  const rocks = 3 + Math.floor(Math.random() * 6); // 3-8
+  for (let i = 0; i < rocks; i++) {
+    const w = rand(3, 9);
+    const h = w * rand(0.45, 0.75);
+    // a lumpy dome: flat bottom, 5-7 random points over the top
+    const n = 5 + Math.floor(Math.random() * 3);
+    let d = `M0 ${h.toFixed(1)}`;
+    for (let k = 0; k <= n; k++) {
+      const a = Math.PI * (1 - k / n);
+      d += `L${((w / 2) * (1 + Math.cos(a)) * rand(0.92, 1.0)).toFixed(1)} ${(h - h * Math.sin(a) * rand(0.75, 1.05)).toFixed(1)}`;
+    }
+    d += "Z";
+    const r = document.createElementNS(NS, "svg");
+    r.setAttribute("class", `rock r${1 + Math.floor(Math.random() * 5)}${Math.random() < 0.35 ? " far" : ""}`);
+    r.setAttribute("viewBox", `0 0 ${w.toFixed(1)} ${h.toFixed(1)}`);
+    r.setAttribute("aria-hidden", "true");
+    r.style.setProperty("--x", `${rand(1, 99).toFixed(1)}%`);
+    r.style.setProperty("--w", `${w.toFixed(1)}px`);
+    r.style.setProperty("--h", `${h.toFixed(1)}px`);
+    const rp = document.createElementNS(NS, "path");
+    rp.setAttribute("d", d);
+    r.appendChild(rp);
+    track.insertBefore(r, pet1);
+  }
+
+  // Birds: 1-4 little flapping birds crossing the sky at their own speed, height and direction
+  const firstTree = track.querySelector(".tree");
+  const birds = 1 + Math.floor(Math.random() * 4);
+  for (let i = 0; i < birds; i++) {
+    const b = document.createElement("div");
+    b.className = "bird";
+    b.setAttribute("aria-hidden", "true");
+    b.innerHTML = '<svg viewBox="0 0 10 4"><path d="M.5 3Q2.6.4 5 2.8 7.4.4 9.5 3"/></svg>'; // constant markup
+    const dur = Math.round(rand(14, 32));
+    b.style.setProperty("--y", `${rand(1, 11).toFixed(1)}px`);
+    b.style.setProperty("--bw", `${Math.round(rand(5, 9))}px`);
+    b.style.setProperty("--dur", `${dur}s`);
+    b.style.setProperty("--delay", `${(-rand(0, dur)).toFixed(1)}s`); // already mid-flight on load
+    b.style.setProperty("--dir", Math.random() < 0.5 ? "normal" : "reverse");
+    b.style.setProperty("--flap", `${rand(0.22, 0.4).toFixed(2)}s`);
+    track.insertBefore(b, firstTree);
+  }
+
   // The pup picks one of these trees to pee on while running back left (the first dog uses the middle
   // tree on the way right). Prefer trees that stay visible on phones and aren't too near either end.
   const pup = track.querySelector(".pet.pup");

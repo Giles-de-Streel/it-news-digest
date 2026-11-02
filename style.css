@@ -21,6 +21,7 @@
   --runner: #0d0f12; --runner-shirt: #1e5fa8; --walker-shirt: #b5532a;
   --dust-1: #c9ced6; --dust-2: #8a929e; --dust-3: #f1f3f6;
   --sun: #f4b400; --moon: #b9c0cc; --cloud: #dfe4ea; --cloud-edge: #c4cbd4;
+  --rock-1: #8d939b; --rock-2: #6f757d; --rock-3: #9c8468; --rock-4: #b7ab94; --rock-5: #5d6670; --bird: #3b4048;
   --shrub-1: #2f7d3b; --shrub-2: #6a9a2e; --shrub-3: #8c3b3b; --shrub-4: #6d5a8c; --shrub-5: #a8892a; --shrub-6: #3f6b5c;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
@@ -50,6 +51,7 @@
     --runner: #f2f4f7; --runner-shirt: #6aa6e8; --walker-shirt: #e08a5e;
     --dust-1: #6b7380; --dust-2: #a3abb7; --dust-3: #3a404a;
     --sun: #f2c14e; --moon: #e9e4c9; --cloud: #3a414c; --cloud-edge: #4b5361;
+    --rock-1: #9aa1aa; --rock-2: #7c838d; --rock-3: #a88f72; --rock-4: #c4b9a2; --rock-5: #6c7682; --bird: #c9ced6;
     --shrub-1: #4fae5f; --shrub-2: #93c95a; --shrub-3: #c46a6a; --shrub-4: #a08cc4; --shrub-5: #d4b24e; --shrub-6: #6fa596;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
@@ -280,6 +282,23 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .shrub.s1 { fill: var(--shrub-1); } .shrub.s2 { fill: var(--shrub-2); } .shrub.s3 { fill: var(--shrub-3); }
 .shrub.s4 { fill: var(--shrub-4); } .shrub.s5 { fill: var(--shrub-5); } .shrub.s6 { fill: var(--shrub-6); }
 @media (max-width: 700px) { .shrub.far { display: none; } }
+.rock { position: absolute; left: calc(var(--x) - var(--w) / 2); top: calc(50% + 12.8px - var(--h)); width: var(--w); height: var(--h); }
+.rock.r1 { fill: var(--rock-1); } .rock.r2 { fill: var(--rock-2); } .rock.r3 { fill: var(--rock-3); }
+.rock.r4 { fill: var(--rock-4); } .rock.r5 { fill: var(--rock-5); }
+@media (max-width: 700px) { .rock.far { display: none; } }
+/* birds fly the full width of the track (reverse = right to left), bobbing a little and flapping */
+.bird { position: absolute; top: var(--y); left: -12px; width: var(--bw); height: calc(var(--bw) * .4);
+        animation: bird-fly var(--dur) linear var(--delay) infinite var(--dir); }
+.bird svg { display: block; width: 100%; height: 100%; overflow: visible; fill: none; stroke: var(--bird); stroke-width: 1.1;
+            stroke-linecap: round; stroke-linejoin: round; animation: bird-flap var(--flap) ease-in-out infinite alternate; }
+@keyframes bird-fly {
+  0% { left: -12px; transform: translateY(0); }
+  25% { transform: translateY(-1.5px); }
+  50% { transform: translateY(1px); }
+  75% { transform: translateY(-1px); }
+  100% { left: calc(100% + 12px); transform: translateY(0); }
+}
+@keyframes bird-flap { from { transform: scaleY(1); } to { transform: scaleY(-.6); } }
 .pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }
 .pet .stream { stroke: #e3b505; stroke-width: 1.2; stroke-dasharray: 1.6 1.2; animation: pet-stream .25s linear infinite; }
 /* the second, smaller brown dog: same 16s cycle as the runner, no delay. Its keyframes (pup-*) are
