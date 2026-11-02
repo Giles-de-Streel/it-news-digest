@@ -20,6 +20,7 @@
   --pup: #8b5a2b;
   --runner: #0d0f12; --runner-shirt: #1e5fa8; --walker-shirt: #b5532a;
   --dust-1: #c9ced6; --dust-2: #8a929e; --dust-3: #f1f3f6;
+  --match-stick: #c8a165; --match-head: #c0392b; --match-burnt: #3d3d3d; --flame-out: #ff9f1c; --flame-in: #ffe066;
   --sun: #f4b400; --moon: #b9c0cc; --cloud: #dfe4ea; --cloud-edge: #c4cbd4;
   --rock-1: #8d939b; --rock-2: #6f757d; --rock-3: #9c8468; --rock-4: #b7ab94; --rock-5: #5d6670; --bird: #3b4048;
   --shrub-1: #2f7d3b; --shrub-2: #6a9a2e; --shrub-3: #8c3b3b; --shrub-4: #6d5a8c; --shrub-5: #a8892a; --shrub-6: #3f6b5c;
@@ -50,6 +51,7 @@
     --pup: #c08a5a;
     --runner: #f2f4f7; --runner-shirt: #6aa6e8; --walker-shirt: #e08a5e;
     --dust-1: #6b7380; --dust-2: #a3abb7; --dust-3: #3a404a;
+    --match-stick: #d9b27a; --match-head: #e0533f; --match-burnt: #8a8f98; --flame-out: #ffad33; --flame-in: #fff0a0;
     --sun: #f2c14e; --moon: #e9e4c9; --cloud: #3a414c; --cloud-edge: #4b5361;
     --rock-1: #9aa1aa; --rock-2: #7c838d; --rock-3: #a88f72; --rock-4: #c4b9a2; --rock-5: #6c7682; --bird: #c9ced6;
     --shrub-1: #4fae5f; --shrub-2: #93c95a; --shrub-3: #c46a6a; --shrub-4: #a08cc4; --shrub-5: #d4b24e; --shrub-6: #6fa596;
@@ -194,6 +196,25 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .pow .pow-core { fill: #fff6d5; }
 /* smaller bursts while the runner shakes the Updated text (desktop) or waves at the track's end (phones) */
 .updated-wrap { position: relative; display: inline-flex; }
+.shake-group { display: inline-flex; align-items: center; gap: 5px; }
+/* match toggle: lit = header animation on, unlit = off (html.scene-off, saved as ind.scene) */
+.scene-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0; border: 0; background: none;
+                cursor: pointer; border-radius: 4px; line-height: 0; }
+.scene-toggle svg { width: 13px; height: 17px; overflow: visible; }
+.scene-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
+.scene-toggle .match-stick { stroke: var(--match-stick); stroke-width: 1.9; stroke-linecap: round; }
+.scene-toggle .match-head { fill: var(--match-head); }
+.scene-toggle .flame-out { fill: var(--flame-out); }
+.scene-toggle .flame-in { fill: var(--flame-in); }
+.scene-toggle .match-flame { transform-origin: 10px 6px; animation: match-flicker .9s ease-in-out infinite alternate; }
+@keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
+.scene-off .scene-toggle .match-flame { display: none; }
+.scene-off .scene-toggle .match-head { fill: var(--match-burnt); }
+/* animation off: the scenery is hidden (the track keeps its space) and the hit/shake effects stop */
+.scene-off .runner-track > * { display: none !important; }
+.scene-off .pow { display: none !important; }
+.scene-off .brand-icon, .scene-off .shake-group { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .scene-toggle .match-flame { animation: none; } }
 .pow.pow-shake { left: 0; width: 22px; height: 22px; display: none; animation-name: pow-shake; }
 .pow.pow-wave { left: calc(100% - 8px); top: calc(50% - 9.5px); width: 16px; height: 16px; display: none; animation-name: pow-wave; }
 @media (min-width: 701px) { .pow.pow-shake { display: block; } }
@@ -233,7 +254,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 }
 /* the Updated text sits beside the track only on wider screens; on phones it wraps to the next row */
 @media (min-width: 701px) {
-  .updated { display: inline-block; animation: updated-shake 16s linear infinite; }
+  /* the match toggle and the Updated text shake together; the group shows from page load, so it stays
+     in step with the runner (the text alone only appeared once the data loaded) */
+  .shake-group { animation: updated-shake 16s linear infinite; }
 }
 /* the pet trails the runner by 0.5s (delay -15.5s on the same 16s cycle), stops at the tree to sniff and
    pee (17-24% of its cycle) then catches up, stops a few px short of the runner,

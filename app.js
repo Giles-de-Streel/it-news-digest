@@ -5,6 +5,7 @@
 
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
+  const LS_SCENE = "ind.scene"; // false = header animation turned off with the match toggle
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
@@ -514,7 +515,7 @@
     $("#suggested").hidden = !s.generated;
     $("#suggested-meta").textContent = list.length
       ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days, that no source covers yet and that are free to read (paywalled sites are left out), most-linked first. Nothing is added automatically; to add one, put it in sources.json.`
-      : `No free-to-read site has been linked ${min} or more times yet. The list fills in as the hourly fetch records links from ${via}.`;
+      : `No free-to-read site has been linked ${min} or more times yet. The list fills in as each fetch records links from ${via}.`;
     $("#suggested-body").replaceChildren(...list.map((c) => {
       const ex = c.examples[0];
       const feed = c.feed || {};
@@ -621,9 +622,23 @@
     location.assign(location.pathname); // drops ?filters and #tab
   }
 
+  // Header animation on/off (match icon). The class is set before first paint by a script in <head>.
+  function syncSceneToggle() {
+    const on = !document.documentElement.classList.contains("scene-off");
+    const b = $("#scene-toggle");
+    b.setAttribute("aria-pressed", String(on));
+    b.title = on ? "Turn the header animation off" : "Turn the header animation on";
+  }
+
   // ---------- events ----------
   function wire() {
     $("#home").addEventListener("click", goHome);
+    syncSceneToggle();
+    $("#scene-toggle").addEventListener("click", () => {
+      const off = document.documentElement.classList.toggle("scene-off");
+      store.set(LS_SCENE, !off);
+      syncSceneToggle();
+    });
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
