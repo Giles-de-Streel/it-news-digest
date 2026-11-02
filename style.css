@@ -15,6 +15,7 @@
   --kev: #7f1d1d;
   /* source-count pills: 2, 3, 4-5, 6+ sources */
   --heat-1: #1d7a3e; --heat-1-soft: #e2f2e7;
+  --tree-conifer: #145a3a;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -37,6 +38,7 @@
     --warn: #f0a960;
     --kev: #991b1b;
     --heat-1: #5cc283; --heat-1-soft: #17301f;
+    --tree-conifer: #3e9e72;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -166,10 +168,15 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .pet .leg-1 { animation: pet-legs .2s ease-in-out infinite alternate; }
 .pet .leg-2 { animation: pet-legs .2s ease-in-out -.2s infinite alternate; }
 /* the tree in the middle of the track, behind the runner and the pet */
-.tree { position: absolute; left: calc(50% - 8px); top: calc(50% - 10px); width: 16px; height: 22px; }
-.tree svg { display: block; width: 16px; height: 22px; }
+/* more trees along the track (behind everything): --x = centre position, --h = height; all share one ground line */
+.tree { --x: 50%; --h: 22px; position: absolute; height: var(--h); width: calc(var(--h) * 16 / 22);
+        left: calc(var(--x) - var(--h) * 8 / 22); top: calc(50% + 12px - var(--h)); }
+.tree.conifer { width: calc(var(--h) / 2); left: calc(var(--x) - var(--h) / 4); }
+.tree svg { display: block; width: 100%; height: 100%; }
 .tree .leaves { fill: var(--heat-1); }
+.tree.conifer .leaves { fill: var(--tree-conifer); }
 .tree .trunk { fill: #8a5a2b; }
+@media (max-width: 700px) { .tree.far { display: none; } }
 .pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }
 .pet .stream { stroke: #e3b505; stroke-width: 1.2; stroke-dasharray: 1.6 1.2; animation: pet-stream .25s linear infinite; }
 @keyframes pet-show-pee { 0% { visibility: hidden; } 19.5% { visibility: visible; } 24% { visibility: hidden; } }
