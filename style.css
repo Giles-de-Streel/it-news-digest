@@ -184,6 +184,31 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .pow .pow-out { fill: #ffd23f; stroke: #e8590c; stroke-width: 1.2; stroke-linejoin: round; }
 .pow .pow-in { fill: #ff7b1c; }
 .pow .pow-core { fill: #fff6d5; }
+/* smaller bursts while the runner shakes the Updated text (desktop) or waves at the track's end (phones) */
+.updated-wrap { position: relative; display: inline-flex; }
+.pow.pow-shake { left: 0; width: 22px; height: 22px; display: none; animation-name: pow-shake; }
+.pow.pow-wave { left: calc(100% - 8px); top: calc(50% - 9.5px); width: 16px; height: 16px; display: none; animation-name: pow-wave; }
+@media (min-width: 701px) { .pow.pow-shake { display: block; } }
+@media (max-width: 700px) { .pow.pow-wave { display: block; } }
+@keyframes pow-shake {
+  0%, 38.5% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  38.8% { opacity: 1; transform: translate(-50%, -50%) scale(1.1) rotate(-10deg); }
+  39.8% { opacity: 0; transform: translate(-50%, -50%) scale(1.3) rotate(6deg); }
+  41.1% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  41.4% { opacity: 1; transform: translate(-30%, -70%) scale(1) rotate(8deg); }
+  42.4% { opacity: 0; transform: translate(-30%, -70%) scale(1.25) rotate(-6deg); }
+  43.7% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  44% { opacity: 1; transform: translate(-60%, -35%) scale(1.15) rotate(-6deg); }
+  45.2%, 100% { opacity: 0; transform: translate(-60%, -35%) scale(1.4) rotate(10deg); }
+}
+@keyframes pow-wave {
+  0%, 38.9% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  39.2% { opacity: 1; transform: translate(-50%, -50%) scale(1.1) rotate(-8deg); }
+  40.4% { opacity: 0; transform: translate(-50%, -50%) scale(1.35) rotate(8deg); }
+  42.4% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  42.7% { opacity: 1; transform: translate(-50%, -50%) scale(1.2) rotate(10deg); }
+  44.2%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.4) rotate(-6deg); }
+}
 @keyframes pow-burst {
   0%, 89.4% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
   89.7% { opacity: 1; transform: translate(-50%, -50%) scale(1.15) rotate(-8deg); }
