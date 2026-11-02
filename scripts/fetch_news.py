@@ -10,6 +10,7 @@ Standard library only, so it runs the same locally and in GitHub Actions.
 import argparse
 import hashlib
 import html
+import html.entities
 import json
 import math
 import re
@@ -139,18 +140,52 @@ def _text(el, *tags):
     return ""
 
 
+_XML_ENTITIES = {b"amp", b"lt", b"gt", b"quot", b"apos"}
+_ENTITY_RE = re.compile(rb"&([A-Za-z][A-Za-z0-9]{0,31});")
+_BARE_AMP_RE = re.compile(rb"&(?!#[0-9]{1,7};|#[xX][0-9A-Fa-f]{1,6};|[A-Za-z][A-Za-z0-9]{0,31};)")
+
+
+def _fix_entities(data):
+    """Make HTML-isms in a feed legal XML: named HTML entities (&nbsp;, &rsquo;, ...) become numeric
+    references, unknown names and bare '&' (e.g. 'AT&T') become '&amp;'. Only used after a strict
+    parse has failed, so well-formed feeds are never touched."""
+    def named(m):
+        name = m.group(1)
+        if name in _XML_ENTITIES:
+            return m.group(0)
+        cp = html.entities.name2codepoint.get(name.decode("ascii"))
+        return b"&#%d;" % cp if cp else b"&amp;" + name + b";"
+    return _ENTITY_RE.sub(named, _BARE_AMP_RE.sub(b"&amp;", data))
+
+
+def _trim_trailing(data):
+    """Some CDNs append a <script> after the closing </rss> or </feed> tag: cut anything after the
+    last closing root tag. None when there is nothing to cut."""
+    end = max(data.rfind(b"</rss>") + 6 if b"</rss>" in data else -1,
+              data.rfind(b"</feed>") + 7 if b"</feed>" in data else -1,
+              data.rfind(b"</rdf:RDF>") + 10 if b"</rdf:RDF>" in data else -1)
+    if end <= 0 or not data[end:].strip():
+        return None
+    return data[:end]
+
+
 def parse_feed(data):
     try:
         root = ET.fromstring(data)
     except ET.ParseError:
-        # Some CDNs append a <script> after the closing </rss> or </feed> tag.
-        # Cut anything after the last closing root tag and try once more.
-        end = max(data.rfind(b"</rss>") + 6 if b"</rss>" in data else -1,
-                  data.rfind(b"</feed>") + 7 if b"</feed>" in data else -1,
-                  data.rfind(b"</rdf:RDF>") + 10 if b"</rdf:RDF>" in data else -1)
-        if end <= 0 or not data[end:].strip():
+        # Repair the usual breakages one at a time, then together; if none parses, raise the original error.
+        trimmed = _trim_trailing(data)
+        root = None
+        for attempt in (trimmed, _fix_entities(data), _fix_entities(trimmed) if trimmed else None):
+            if attempt is None or attempt == data:
+                continue
+            try:
+                root = ET.fromstring(attempt)
+                break
+            except ET.ParseError:
+                pass
+        if root is None:
             raise
-        root = ET.fromstring(data[:end])
     items = []
     for it in root.iter("item"):
         items.append({
