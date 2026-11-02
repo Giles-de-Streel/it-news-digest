@@ -1,12 +1,12 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T21:31:25+00:00",
+ "generated": "2026-11-02T22:01:22+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 22,
+   "recent": 24,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -305,9 +305,9 @@
   },
   {
    "source": "Brent Ozar",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "fetched": 4,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Erik Darling",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -1242,7 +1242,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1271,9 +1271,9 @@
   },
   {
    "source": "SentinelLabs",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "source": "Proofpoint Threat Insight",
@@ -1325,8 +1325,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 37,
-   "recent": 3,
+   "fetched": 38,
+   "recent": 5,
    "error": null
   },
   {
@@ -1403,7 +1403,7 @@
   },
   {
    "source": "Guardian Technology",
-   "fetched": 36,
+   "fetched": 32,
    "recent": 11,
    "error": null
   },
@@ -1458,7 +1458,7 @@
   {
    "source": "TechTarget News",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "Auth0 Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1548,11 +1548,157 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "34771ad5d752",
+   "title": "Google shuts down global botnet running on certified Android devices",
+   "url": "https://cyberscoop.com/google-disrupts-xcpe-botnet-videostrong-android-devices/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-02T21:58:24+00:00",
+   "summary": "Videostrong sold TV set-top boxes and other devices with pre-installed malware. The yearslong operation evaded Google’s security tests and established a botnet for cybercriminals.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "2f11e763a10c",
+   "title": "Apple Q4: iPhone up 17% YoY to $57.58B, vs. $56.54B est., Mac up 24% to $10.8B, iPad down 10% to $6.2B, and Wearables, Home, and Accessories down 8% to $8.3B (Marcus Mendes/9to5Mac)",
+   "url": "https://www.techmeme.com/261102/p40#a261102p40",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T21:50:09+00:00",
+   "summary": "Marcus Mendes / 9to5Mac : Apple Q4: iPhone up 17% YoY to $57.58B, vs. $56.54B est., Mac up 24% to $10.8B, iPad down 10% to $6.2B, and Wearables, Home, and Accessories down 8% to $8.3B — Apple sees Q4 revenue climb 12% year over year — Last year, for its fourth fiscal quarter, Apple reported $102.47 billion in revenue …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a5f723f2870e",
+   "title": "These smart glasses promise to turn your silent mouth movements into text",
+   "url": "https://www.theregister.com/offbeat/2026/11/02/these-smart-glasses-promise-to-turn-your-silent-mouth-movements-into-text/5307070",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-02T21:50:00+00:00",
+   "summary": "Crazy person, or efficient employee? As always, it depends on what they're wearing",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ab3cf261c325",
+   "title": "CVE-2026-116635 - Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T21:43:24+00:00",
+   "summary": "Bulletin ID: 2026-164-AWS Publication Date: 11/02/2026 13:30 PM PST Description: We identified CVE-2026-116635. Under certain conditions, improper limitation of a pathname to a restricted directory in the deployment status component of the MCP server might allow an actor who can influence the MCP agent to read the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-116635",
+     "score": 6.9,
+     "severity": "Medium",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "d32892baf1f5",
+   "title": "Largest crypto exchange in Brazil confirms cyberattack as millions flow out of platform",
+   "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-02T21:42:00+00:00",
+   "summary": "Blockchain security companies said more than $46 million left the Mercado Bitcoin platform.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "f3be4cf48c9d",
+   "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T21:40:44+00:00",
+   "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-105811",
+     "score": 7.1,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-105811",
+     "score": 0.00333,
+     "percentile": 0.26525,
+     "date": "2026-11-02"
+    }
+   }
+  },
+  {
+   "id": "29960679f7d5",
+   "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+   "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-02T21:40:14+00:00",
+   "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "02f89e1aaff7",
+   "title": "BYD sold more EVs last month than the US did all quarter, topping 300,000",
+   "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T21:38:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d226befff7f1",
+   "title": "Happy 65 Years: NASA’s Johnson Space Center Then and Now",
+   "url": "https://www.nasa.gov/centers-and-facilities/johnson/happy-65-years-nasas-johnson-space-center-then-and-now/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-02T21:35:59+00:00",
+   "summary": "Sixty-five years ago, a bold vision took root in Houston: a NASA center dedicated to human spaceflight. Since its founding, NASA’s Johnson Space Center has helped lead the nation’s human spaceflight program, supporting missions from Project Mercury through Artemis.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "0e65174907b2",
    "title": "Palantir reports booming U.S. commercial revenue growth, topping government for first time",
@@ -1564,6 +1710,33 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "4b823b5fd1ad",
+   "title": "Palantir reports Q3 revenue up 96% YoY to $2.31B, above $2.18B est., US commercial revenue up 148% to $984M, and raises FY 2026 revenue guidance to ~$8.53B (Samantha Subin/CNBC)",
+   "url": "https://www.techmeme.com/261102/p38#a261102p38",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T21:30:00+00:00",
+   "summary": "Samantha Subin / CNBC : Palantir reports Q3 revenue up 96% YoY to $2.31B, above $2.18B est., US commercial revenue up 148% to $984M, and raises FY 2026 revenue guidance to ~$8.53B — Palantir beat Wall Street's third-quarter estimates after the bell on Monday, with U.S. commercial revenue topping government …",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "ce28d688d71d",
+   "title": "Supply chain risk: Strategies to manage third-party exposure",
+   "url": "https://www.techtarget.com/news/supply-chain-risk-strategies-to-manage-third-party-exposure/873515/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T21:26:59+00:00",
+   "summary": "Enterprises face numerous security risks from their suppliers, cloud providers and other vendors. Learn how to limit third-party risk exposure in your operations.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Supply chain security"
    ]
   },
   {
@@ -1632,6 +1805,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "8e8525fa9d55",
+   "title": "AI could break legal systems by finding previously hidden loopholes",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/02/ai-could-break-legal-systems-by-finding-previously-hidden-loopholes/5307066",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-02T21:12:21+00:00",
+   "summary": "Turns out legislation may have bugs, too",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
    ]
   },
   {
@@ -1752,6 +1939,19 @@
    "source_category": "IT industry",
    "published": "2026-11-02T20:44:00+00:00",
    "summary": "Employees describing jobs as 'remote' are now often in-office, as companies fail to create the collaboration they claim is critical, NY Fed research shows.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a437393c43ce",
+   "title": "Valve \"played capitalism so well they broke it\" and now Steam can't be replaced",
+   "url": "https://www.gamesradar.com/games/valve-played-capitalism-so-well-they-broke-it-and-now-steam-can-never-be-replaced-former-epic-dev-says-i-dont-think-this-is-fixable/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T20:42:36+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2009,6 +2209,19 @@
    "source_category": "Development",
    "published": "2026-11-02T19:27:37+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1f8bca2477f1",
+   "title": "Build an AI Wellbeing App with Fireworks and Fitbit via Auth0 Token Vault.",
+   "url": "https://auth0.com/blog/build-an-ai-wellbeing-app-with-fireworks-fitbit-via-auth0-token-vault/",
+   "source": "Auth0 Blog",
+   "source_category": "Identity",
+   "published": "2026-11-02T19:25:00+00:00",
+   "summary": "Build Daily Wellbeing, a Next.js app that connects Fitbit through Auth0 Token Vault, compares your daily activity and sleep with your averages, and uses Fireworks to suggest what to try today.",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -2880,7 +3093,14 @@
    "source_category": "IT industry",
    "published": "2026-11-02T18:00:10+00:00",
    "summary": "Follow Apple Q4 2026 earnings live for revenue, EPS, iPhone sales, China performance, AI updates, holiday guidance and AAPL stock reaction.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e71478969cc6",
+     "source": "Techmeme",
+     "title": "Apple reports Q4 revenue up 12% YoY to $114.48B, vs. $113.39B est., China revenue up 21% to $17.5B, vs. $18.9B est., in John Ternus' first earnings report (Apple)",
+     "url": "https://www.techmeme.com/261102/p39#a261102p39"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -7244,7 +7464,14 @@
    "source_category": "Privacy & compliance",
    "published": "2026-11-02T12:00:00+00:00",
    "summary": "The guide is designed to help solopreneurs prioritize and implement a selection of actions from the NIST Cybersecurity Framework that would best help their businesses.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "50f64d3e7875",
+     "source": "Hacker News",
+     "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+     "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you"
+    }
+   ],
    "topics": [
     "General IT"
    ]
