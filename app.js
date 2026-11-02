@@ -504,6 +504,24 @@
     if (state.suggest) renderSuggestions(); else loadSuggestions();
   }
 
+  // Add button: opens a pre-filled "Add source" issue; the add-source workflow test-fetches the feed and,
+  // if it works, adds it to sources.json (only for issues the repository owner opens).
+  const REPO = "Giles-de-Streel/it-news-digest";
+  function addSourceUrl(c) {
+    const feed = (c.feed && c.feed.url) || "";
+    const src = { name: c.key, site: c.home || `https://${c.key}/`, url: feed, category: "IT industry" };
+    const body = [
+      `Suggested source: ${c.key}, linked ${c.mentions.length} times.`,
+      "",
+      "Check the JSON below before submitting: give it a proper `name`, pick a `category`"
+        + (feed ? ", and confirm the feed `url`." : ", and put the site's RSS/Atom feed in `url` (no working feed was found automatically)."),
+      "The Add source workflow test-fetches the feed and adds it to sources.json if it returns stories. Edit the issue to retry.",
+      "",
+      "```json", JSON.stringify(src, null, 2), "```",
+    ].join("\n");
+    return `https://github.com/${REPO}/issues/new?` + new URLSearchParams({ title: `Add source: ${c.key}`, body });
+  }
+
   // Sites the aggregators (sources with "discover" in sources.json) link to often but no source covers yet
   const SUGGEST_MAX = 30;
   function renderSuggestions() {
@@ -514,7 +532,7 @@
     const list = (s.candidates || []).filter((c) => c.mentions.length >= min && c.access === "free").slice(0, SUGGEST_MAX);
     $("#suggested").hidden = !s.generated;
     $("#suggested-meta").textContent = list.length
-      ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days, that no source covers yet and that are free to read (paywalled sites are left out), most-linked first. Nothing is added automatically; to add one, put it in sources.json.`
+      ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days, that no source covers yet and that are free to read (paywalled sites are left out), most-linked first. Nothing is added automatically: Add opens a pre-filled GitHub issue, and the Add source workflow test-fetches the feed and adds it to sources.json if it works.`
       : `No free-to-read site has been linked ${min} or more times yet. The list fills in as each fetch records links from ${via}.`;
     $("#suggested-body").replaceChildren(...list.map((c) => {
       const ex = c.examples[0];
@@ -526,6 +544,8 @@
         el("td", {}, ex ? link(ex.url, ex.title) : ""),
         feed.url ? el("td", {}, link(feed.url, `Feed (${feed.items} items)`))
           : el("td", { class: "muted", text: feed.error || "Not checked yet" }),
+        el("td", { class: "add" }, el("a", { class: "add-btn", href: addSourceUrl(c), target: "_blank", rel: "noopener noreferrer",
+          text: "Add", title: feed.url ? `Open a GitHub issue to add ${c.key} with its feed` : `Open a GitHub issue to add ${c.key} (you'll need to supply its feed URL)` })),
       );
     }));
   }

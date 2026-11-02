@@ -509,6 +509,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .src-table tr.off td:not(.sw) { opacity: .5; }
 .suggested { margin-top: 28px; }
 .suggested td { overflow-wrap: anywhere; }
+.suggested td.add { white-space: nowrap; overflow-wrap: normal; }
+.add-btn { display: inline-block; padding: 3px 10px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent);
+           font-size: 13px; font-weight: 600; text-decoration: none; }
+.add-btn:hover, .add-btn:focus-visible { background: var(--accent-soft); }
 .suggested td:first-child { white-space: nowrap; }
 .src-switches { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
 

@@ -1,0 +1,76 @@
+name: Add source
+
+# The Add button under "Suggested sources" on the Sources tab opens a pre-filled issue titled
+# "Add source: <site>" with the source as a JSON block. This workflow test-fetches the feed and,
+# if it works, adds it to sources.json, comments and closes the issue. Only issues opened by the
+# repository owner are processed. Editing an open issue runs it again (e.g. to fix the feed URL).
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+# Its own group: GitHub cancels an older *pending* run when a newer one joins the same group, so
+# sharing fetch-news could drop a queued news fetch. The push step rebases and retries instead.
+concurrency:
+  group: add-source
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: >-
+      github.event.issue.author_association == 'OWNER' &&
+      github.event.issue.state == 'open' &&
+      startsWith(github.event.issue.title, 'Add source')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test the feed and add it
+        id: add
+        run: |
+          set +e
+          python -I scripts/add_source.py "$GITHUB_EVENT_PATH" "$RUNNER_TEMP/msg.md"
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit sources.json
+        if: steps.add.outputs.code == '0'
+        env:
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources.json
+          git commit -m "Add source from issue #${NUM}"
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push && exit 0
+            sleep 5
+          done
+          exit 1
+
+      - name: Report on the issue
+        if: always() && (steps.add.outputs.code == '0' || steps.add.outputs.code == '2')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUM: ${{ github.event.issue.number }}
+          CODE: ${{ steps.add.outputs.code }}
+          PUSHED: ${{ job.status }}
+        run: |
+          if [ "$CODE" = "0" ] && [ "$PUSHED" != "success" ]; then
+            echo "The feed works, but committing sources.json failed, so nothing was added. See the workflow run log, then edit this issue to try again." > "$RUNNER_TEMP/msg.md"
+          fi
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/msg.md"
+          if [ "$CODE" = "0" ] && [ "$PUSHED" = "success" ]; then
+            gh issue close "$NUM" --repo "$GITHUB_REPOSITORY" --reason completed
+          fi
+
+      - name: Fail the run when the script errored
+        if: steps.add.outputs.code != '0' && steps.add.outputs.code != '2'
+        run: exit 1
