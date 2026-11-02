@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T20:01:27+00:00",
+ "generated": "2026-11-02T20:31:12+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "The Record",
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 41,
-   "recent": 41,
+   "fetched": 44,
+   "recent": 44,
    "error": null
   },
   {
@@ -216,13 +216,13 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -414,7 +414,7 @@
   {
    "source": "Huntress",
    "fetched": 746,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -498,7 +498,7 @@
   {
    "source": "Magnet Forensics",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1446,7 +1446,7 @@
   {
    "source": "Palo Alto Identity Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1554,6 +1554,130 @@
  ],
  "items": [
   {
+   "id": "c027d75ab851",
+   "title": "Intel foundry push faces critical test after stock's 45% plunge in October",
+   "url": "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-02T20:20:34+00:00",
+   "summary": "Intel’s turnaround now hinges on proving its foundry strategy can deliver, as customers look for signs the company will add fab capacity and catch TSMC",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8e8cabfd395d",
+   "title": "CVE-2026-97718: CVE-2026-97718 Is a cross-site request forgery vulnerability in version 14.60 of the Secure Access server.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97718",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T20:18:05.253000+00:00",
+   "summary": "CVE-2026-97718 Is a cross-site request forgery vulnerability in version 14.60 of the Secure Access server. Because of a bypassed security control, an attacker can cause an admin to create an account under their control.",
+   "kind": "cve",
+   "cve": "CVE-2026-97718",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-97718",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration"
+   ]
+  },
+  {
+   "id": "0f50983e3aa7",
+   "title": "CVE-2026-116769: CVE-2026-116769 is an authentication bypass vulnerability in Secure Access servers starting with version 13.0…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116769",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T20:17:33.527000+00:00",
+   "summary": "CVE-2026-116769 is an authentication bypass vulnerability in Secure Access servers starting with version 13.0 and prior to 14.61. Attackers can modify security settings of a client via the server.",
+   "kind": "cve",
+   "cve": "CVE-2026-116769",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116769",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a8b9af888887",
+   "title": "CVE-2026-102435: The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102435",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T20:17:26.287000+00:00",
+   "summary": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the _getObjAttr function in all versions up to, and including, 3.5.54.",
+   "kind": "cve",
+   "cve": "CVE-2026-102435",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102435",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d67c9ad1584c",
+   "title": "Your ML Platform Isn’t Kubernetes-Native Just Because It Runs on Kubernetes",
+   "url": "https://cloudnativenow.com/contributed-content/your-ml-platform-isnt-kubernetes-native-just-because-it-runs-on-kubernetes/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T20:12:42+00:00",
+   "summary": "The real transformation begins when the ML lifecycle becomes declarative, observable, and recoverable. As Vara Bonthu described in a recent CNCF article, the great migration of AI workloads to Kubernetes is well underway.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "739347d1ff0a",
+   "title": "Scale your forensic workflows with Magnet Automate 5.2",
+   "url": "https://www.magnetforensics.com/blog/scale-your-forensic-workflows-with-magnet-automate-5-2/",
+   "source": "Magnet Forensics",
+   "source_category": "Forensics & IR",
+   "published": "2026-11-02T20:05:38+00:00",
+   "summary": "Magnet Automate 5.2 helps teams connect tools, reduce manual intervention, and keep evidence moving with GID integration, Remote Acquire, and Local DateTime updates.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Forensics & IR"
+   ]
+  },
+  {
+   "id": "cf2f418147d3",
+   "title": "Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math (Rikiya Takehi)",
+   "url": "https://www.techmeme.com/261102/p36#a261102p36",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T20:00:53+00:00",
+   "summary": "Rikiya Takehi : Researchers say LLMs can be good at natively reading and writing neural network weights; GPT-6 Astra edited Qwen3.5-0.8B's weights to make it better at math — TL;DR … If you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
    "id": "8d0b611890d6",
    "title": "Apple reportedly delays plans to launch its home robot",
    "url": "https://www.neowin.net/news/apple-reportedly-delays-plans-to-launch-its-home-robot/?utm_source=rss",
@@ -1567,6 +1691,20 @@
    ]
   },
   {
+   "id": "18836a2757c3",
+   "title": "Michigan State cyber incident claimed by ransomware gang behind recent hospital attack",
+   "url": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-02T19:54:00+00:00",
+   "summary": "A recent post by the BYOD gang appears to line up with a security incident that prompted campus-wide action at Michigan State University. BYOD drew attention in October for an attack on the University of New Mexico.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Higher education"
+   ]
+  },
+  {
    "id": "1dbadebc2c0e",
    "title": "SystemChat: Let’s Chat about Robotics",
    "url": "https://embeddedcomputing.com/application/industrial/automation-robotics/systemchat-lets-chat-about-robotics",
@@ -1577,6 +1715,33 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "900c8e2ffc04",
+   "title": "This background sound leaks your exact location",
+   "url": "https://youtu.be/UytYrhYLOKI",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T19:42:32+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "5d0267a03a19",
+   "title": "[In preview] Public Preview: On-prem NAS share discovery and assessment are now available using Azure Migrate",
+   "url": "https://azure.microsoft.com/updates?id=577975",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-02T19:37:11+00:00",
+   "summary": "Azure Migrate now supports discovery and assessment for network-attached storage, allowing customers and partners to plan migrations of Dell PowerScale (OneFS) and NetApp ONTAP storage to Azure. The Azure Migrate appliance connects directly to your NAS cl",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Networking"
    ]
   },
   {
@@ -1629,6 +1794,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "f0b4eb6bbee5",
+   "title": "Stop Hardcoding Your Timeouts",
+   "url": "https://alfy.blog/2026/04/23/stop-hardcoding-your-timeouts.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T19:22:32+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1789,6 +1967,12 @@
      "source": "4sysops",
      "title": "OpenAI’s post-midterm push may rename data centers “AI compute campuses”",
      "url": "https://4sysops.com/archives/openais-post-midterm-push-may-rename-data-centers-ai-compute-campuses/"
+    },
+    {
+     "id": "47dec384f27b",
+     "source": "Slashdot",
+     "title": "OpenAI Might Rebrand Its Data Centers As 'AI Compute Campuses'",
+     "url": "https://slashdot.org/story/26/11/02/1940254/openai-might-rebrand-its-data-centers-as-ai-compute-campuses?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
    ],
    "topics": [
@@ -3110,6 +3294,46 @@
    ],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "597a39f19e6e",
+   "title": "Threat Hunting: What It Is, How It Works, & Why It Matters",
+   "url": "https://www.huntress.com/blog/what-is-threat-hunting",
+   "source": "Huntress",
+   "source_category": "Threat research",
+   "published": "2026-11-02T17:00:00+00:00",
+   "summary": "Huntress breaks down threat hunting, how the process works, which methodologies matter, and why human-led detection catches what automation misses.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "21f721658564",
+   "title": "Amazon Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-314-available/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T17:00:00+00:00",
+   "summary": "Starting today, Amazon Aurora MySQL-Compatible Edition 3 (compatible with MySQL 8.0) supports MySQL 8.0.46, which includes community MySQL fixes and Aurora-specific improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "643b6f9b5557",
+   "title": "Amazon Aurora MySQL 8.4.10 is now generally available",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410-available/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T17:00:00+00:00",
+   "summary": "Starting today, Amazon Aurora MySQL-Compatible Edition 8.4 supports MySQL 8.4.10. We recommend upgrading to the newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
    ]
   },
   {
@@ -7568,6 +7792,12 @@
      "source": "Tom's Hardware",
      "title": "16GB Raspberry Pi 5 hiked to $385, more than triple its launch price — makers are already shifting to Pico/ESP32 for small projects, mini PCs for more ambitious tasks",
      "url": "https://www.tomshardware.com/raspberry-pi/16gb-raspberry-pi-5-hiked-to-usd385-more-than-triple-its-launch-price-makers-are-already-shifting-to-pico-esp32-for-small-projects-mini-pcs-for-more-ambitious-tasks"
+    },
+    {
+     "id": "07790abd8548",
+     "source": "Linuxiac",
+     "title": "Raspberry Pi 5 16GB Price Jumps to $385 Amid Memory Shortages",
+     "url": "https://linuxiac.com/raspberry-pi-5-16gb-price-jumps-to-385-amid-memory-shortages/"
     }
    ],
    "topics": [
@@ -8132,6 +8362,12 @@
      "source": "Neowin",
      "title": "OpenAI is merging Chat and Work into a single ChatGPT experience",
      "url": "https://www.neowin.net/news/openai-is-merging-chat-and-work-into-a-single-chatgpt-experience/?utm_source=rss"
+    },
+    {
+     "id": "7f1190f16a02",
+     "source": "ZDNet",
+     "title": "OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect",
+     "url": "https://www.zdnet.com/innovation/openai-merge-chatgpt-chat-work-tabs/"
     }
    ],
    "topics": [
