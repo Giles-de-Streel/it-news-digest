@@ -1,12 +1,12 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T15:01:05+00:00",
+ "generated": "2026-11-02T16:00:54+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 32,
-   "recent": 32,
+   "fetched": 39,
+   "recent": 39,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 22,
    "error": null
   },
   {
@@ -317,9 +317,9 @@
   },
   {
    "source": "SQLServerCentral",
-   "fetched": 10,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Oracle Security Alerts",
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -630,7 +630,7 @@
   {
    "source": "Fortinet PSIRT",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "Google Cloud Blog",
    "fetched": 19,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "OpenTelemetry Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1242,6 +1242,484 @@
  ],
  "items": [
   {
+   "id": "7fb094ac475c",
+   "title": "CloudCasa DR Adds Dell PowerStore Failover for Kubernetes and a Read-Only MCP Server",
+   "url": "https://www.storagereview.com/news/cloudcasa-dr-dell-powerstore-kubernetes-failover-mcp-server",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:55:57+00:00",
+   "summary": "CloudCasa by Catalogic has added Dell PowerStore to the storage arrays CloudCasa Disaster Recovery can drive for Kubernetes failover, alongside HPE Alletra and SUSE Storage.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "a414ddfc38ac",
+   "title": "Technofeudalism",
+   "url": "https://en.wikipedia.org/wiki/Technofeudalism",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T15:53:30+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "937c88d71775",
+   "title": "A profile of OpenAI VP of Global Creative Partnerships Charles Porch, hired from Meta, who is using his Instagram playbook to rehabilitate AI's cultural image (Charlotte Klein/New York Magazine)",
+   "url": "https://www.techmeme.com/261102/p27#a261102p27",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:50:01+00:00",
+   "summary": "Charlotte Klein / New York Magazine : A profile of OpenAI VP of Global Creative Partnerships Charles Porch, hired from Meta, who is using his Instagram playbook to rehabilitate AI's cultural image — Charles Porch is rich, super-connected, and tasked with getting celebrities (and everyone else) to not hate AI so much.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "da8022809d62",
+   "title": "eli venn",
+   "url": "https://elivenn.com",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T15:48:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "dd3056a1e7aa",
+   "title": "Security risk assessments include repository protection status",
+   "url": "https://github.blog/changelog/2026-11-02-security-risk-assessments-include-repository-protection-status",
+   "source": "GitHub Changelog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T15:47:21+00:00",
+   "summary": "The GitHub code security risk assessment and secret risk assessment now show whether findings are in protected or unprotected repositories, helping you identify where to extend your security coverage. Organization…",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "3ebfd6481247",
+   "title": "Keycloak's observability journey: a guide for project maintainers",
+   "url": "https://opentelemetry.io/blog/2026/devex-keycloak/",
+   "source": "OpenTelemetry Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T15:39:10+00:00",
+   "summary": "As part of an ongoing series, the Developer Experience SIG interviews organizations about their real-world OpenTelemetry deployments to share practical lessons with the broader community.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "7a98d17891c2",
+   "title": "From capacity, to the cost of intelligence",
+   "url": "https://www.datacenterdynamics.com/en/opinions/from-capacity-to-the-cost-of-intelligence/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:30:40+00:00",
+   "summary": "The next shift in AI infrastructure",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "81e55b19c95b",
+   "title": "Magnus Hagander: Nordic PGDay 2027 - Sponsorships for Nordic PGDay 2027 Are Now Open",
+   "url": "https://postgr.es/p/9AQ",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-02T15:28:00+00:00",
+   "summary": "We’re excited to announce that sponsorship opportunities for 2027 Nordic PGDay are now available. Our event returns to Stockholm, bringing together attendees from all over the Nordic region.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e06637a3e858",
+   "title": "Polyend releases the Tracker firmware source code",
+   "url": "https://backstage.polyend.com/t/tracker-the-biggest-update-yet/25120",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T15:22:16+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c6328484036a",
+   "title": "Sources detail Anthropic's compute deal spree: 3.5GW+ in expected capacity in 2026, expanding direct hardware procurement to include Nvidia and AMD, and more (New York Times)",
+   "url": "https://www.techmeme.com/261102/p26#a261102p26",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:20:25+00:00",
+   "summary": "New York Times : Sources detail Anthropic's compute deal spree: 3.5GW+ in expected capacity in 2026, expanding direct hardware procurement to include Nvidia and AMD, and more — Illustration by Mark Harris; Photographs by Thea Traff for The New York Times, AJ Mast for The New York Times, Manuel Orbegozo for The New…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3734b190e555",
+   "title": "Google eyes 1,000 acres for 1.2GW data center in Goochland County, Virginia",
+   "url": "https://www.datacenterdynamics.com/en/news/google-eyes-1000-acres-for-12gw-data-center-in-goochland-county-virginia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:20:00+00:00",
+   "summary": "Would be developed in the West Creek Business Park",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "764294caad6b",
+   "title": "'America hates data centers' — New data highlights public sentiment",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/america-hates-data-centers-new-database-reveals-more-than-90-percent-of-10-000-public-comments-are-negative-only-21-percent-mention-ai-73-percent-of-meetings-had-no-data-center-supporters-water-is-the-number-one-concern",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:19:12+00:00",
+   "summary": "A new website seeks to distill over 10,000 public comments about data centers in the community across more than 410 local governments, and the consensus is that people don't like them one bit.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a1f0ab68bbbf",
+   "title": "CVE-2026-73697: Control Web Panel (CWP) before webpanel_version 1.16 contains an arbitrary file write and OS command…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73697",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:37.660000+00:00",
+   "summary": "Control Web Panel (CWP) before webpanel_version 1.16 contains an arbitrary file write and OS command injection vulnerability in the phpini_editor user panel module.",
+   "kind": "cve",
+   "cve": "CVE-2026-73697",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-73697",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "47d7dcf73dea",
+   "title": "CVE-2026-73696: Control Web Panel (CWP) before webpanel_version 1.12 contains an execution after redirect vulnerability in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73696",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:37.480000+00:00",
+   "summary": "Control Web Panel (CWP) before webpanel_version 1.12 contains an execution after redirect vulnerability in the user panel authentication flow, where CWPUserIndex's unauthenticatedFlow() calls toLoginWithIntendedUri() which emits a redirect header without exit(), allowing PHP execution to continue and the module…",
+   "kind": "cve",
+   "cve": "CVE-2026-73696",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-73696",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "87067d121d57",
+   "title": "CVE-2026-73695: Control Web Panel (CWP) before webpanel_version 1.16 contains a path traversal vulnerability in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73695",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:37.287000+00:00",
+   "summary": "Control Web Panel (CWP) before webpanel_version 1.16 contains a path traversal vulnerability in services/users/index.php, where an attacker-supplied module name is concatenated directly into an include path with no allowlist, basename(), or traversal sanitization.",
+   "kind": "cve",
+   "cve": "CVE-2026-73695",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-73695",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "58111760ab6f",
+   "title": "CVE-2026-120459: python-jose through 3.5.0 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120459",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:29.867000+00:00",
+   "summary": "python-jose through 3.5.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge JWTs because HMACKey and CryptographyHMACKey accept zero-length HMAC secrets.",
+   "kind": "cve",
+   "cve": "CVE-2026-120459",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120459",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "42a0149c22ca",
+   "title": "CVE-2026-120447: HotGo through 2.15.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120447",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:27.523000+00:00",
+   "summary": "HotGo through 2.15.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to choose the SMS login verification code by supplying the Code field to /admin/sms/send.",
+   "kind": "cve",
+   "cve": "CVE-2026-120447",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120447",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "219befe6c126",
+   "title": "CVE-2026-120446: madong-admin-saas through 5.1.4 contains a missing authentication vulnerability in the platform tenant…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120446",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:27.323000+00:00",
+   "summary": "madong-admin-saas through 5.1.4 contains a missing authentication vulnerability in the platform tenant management API because the 'platformapi' middleware key never matches the 'platform' application.",
+   "kind": "cve",
+   "cve": "CVE-2026-120446",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120446",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "327cca05425f",
+   "title": "CVE-2026-120442: ape-volo-admin before 3.6.1 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120442",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T15:17:26.490000+00:00",
+   "summary": "ape-volo-admin before 3.6.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key in appsettings.json.",
+   "kind": "cve",
+   "cve": "CVE-2026-120442",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120442",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "0c57bf4ca9ce",
+   "title": "OpenAI CEO Sam Altman meets with Samsung execs as memory chip shortage deepens",
+   "url": "https://www.datacenterdynamics.com/en/news/openai-ceo-sam-altman-meets-with-samsung-execs-as-memory-chip-shortage-deepens/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:16:24+00:00",
+   "summary": "Follows comments made by Altman on a podcast about underutilization of DRAM in desktop computers",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c39facd61273",
+   "title": "Filings: Oracle is selling $10B in common stock and $10B in bonds, as it rushes to line up financing to pay for its data center buildout; ORCL falls 5%+ (Kelly Cloonan/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261102/p25#a261102p25",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:15:02+00:00",
+   "summary": "Kelly Cloonan / Wall Street Journal : Filings: Oracle is selling $10B in common stock and $10B in bonds, as it rushes to line up financing to pay for its data center buildout; ORCL falls 5%+ — The software company is selling $10 billion in common stock and $10 billion in bonds — Oracle plans to raise $20 billion in…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "28408a3cac4a",
+   "title": "Prometheus Hyperscale pulls out of gigawatt-scale data center project in Casper, Wyoming",
+   "url": "https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-pulls-out-of-gigawatt-scale-data-center-project-in-casper-wyoming/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:11:35+00:00",
+   "summary": "News takes local officials by surprise, landowner aims to continue project without Prometheus",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "33f208a6008d",
+   "title": "Securing Internet-Critical Software: How We Could Have Backdoored Bash",
+   "url": "https://www.hacktron.ai/blog/hacking-gnu-savannah",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T15:06:38+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "System administration"
+   ]
+  },
+  {
+   "id": "00a811dcbf2e",
+   "title": "BTCPay Server warns of hot wallet thefts targeting outdated instances",
+   "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-02T15:03:07+00:00",
+   "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "f791bd25f7bf",
+   "title": "Aligned Data Centers launches new version of Delta Cube air cooling system",
+   "url": "https://www.datacenterdynamics.com/en/news/aligned-data-centers-launches-new-version-of-delta-cube-air-cooling-system/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:02:08+00:00",
+   "summary": "Delivers ten percent efficiency savings, company says",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b01cd6aa81cd",
+   "title": "Why are Soviet math textbooks so hardcore in comparison to US textbooks? (2017)",
+   "url": "https://www.quora.com/Why-are-Soviet-mathematics-physics-textbooks-so-insanely-hardcore-in-comparison-to-US-textbooks/answer/Scott-Miller-307?share=1",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T15:01:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "355e0f25d151",
+   "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+   "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "d4e56b60d3af",
+   "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+   "url": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-02T15:01:11+00:00",
+   "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2ed9ffbaefce",
+   "title": "Nvidia in talks to backstop Nscale's Monarch Compute Campus project for Anthropic - report",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-in-talks-to-backstop-nscales-monarch-compute-campus-project-for-anthropic-report/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-02T15:01:00+00:00",
+   "summary": "Nvidia could provide billions in credit guarantees",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "36ccfc2fd6e8",
+   "title": "Looking For A Cellular Modem?",
+   "url": "https://hackaday.com/2026/11/02/looking-for-a-cellular-modem/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-02T15:00:43+00:00",
+   "summary": "Cellular modems come and go, and they can be tricky beasts to tame – yet, in every portable computer project I’ve worked with, “LTE modem” has been a top-three request …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "d509154a3f62",
    "title": "Google finds ‘LLMjacking’ attackers running up $100K a day in fraudulent cloud charges",
    "url": "https://siliconangle.com/2026/11/02/google-finds-llmjacking-attackers-running-up-100k-a-day-in-fraudulent-cloud-charges/",
@@ -1253,6 +1731,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "16a04cf8b747",
+   "title": "LongCat-2.5: Native Multimodality for Agentic Tasks",
+   "url": "https://longcat.ai/blog/longcat-2.5/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T15:00:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1268,6 +1759,32 @@
     "Microsoft & Windows",
     "AI",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "7d039794ec99",
+   "title": "The 2026 Edge Computing 100",
+   "url": "https://www.crn.com/news/software/2026/the-2026-edge-computing-100",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "In CRN’s seventh annual Edge Computing 100 list, CRN shines a spotlight on 100 key players driving innovation and growth across the edge computing market in 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "41dfeff97bff",
+   "title": "The 50 Hottest Edge Hardware, Software And Services Companies: 2026 Edge Computing 100",
+   "url": "https://www.crn.com/news/software/2026/the-50-hottest-edge-hardware-software-and-services-companies-2026-edge-computing-100",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:00:00+00:00",
+   "summary": "As part of CRN’s 2026 Edge Computing 100, here are 50 vendors that are making big moves in the hardware, software and services categories.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1295,6 +1812,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "e5dad1a6bf34",
+   "title": "Napping Characteristics and Incident Dementia",
+   "url": "https://academic.oup.com/biomedgerontology/article/81/10/glag208/8769491?login=false",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T14:53:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1327,6 +1857,19 @@
      "date": "2026-11-02"
     }
    }
+  },
+  {
+   "id": "0e6629be9749",
+   "title": "WTF Ubuntu?",
+   "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T14:52:00+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
   },
   {
    "id": "433b9b4bb9d7",
@@ -1427,6 +1970,19 @@
    ]
   },
   {
+   "id": "c10601d3f101",
+   "title": "Recognizing Keystrokes Using WiFi Devices",
+   "url": "https://ieeexplore.ieee.org/document/7875144",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T14:43:13+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "9b847cec7f35",
    "title": "Apple warns users in 99 countries of mercenary spyware",
    "url": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
@@ -1437,6 +1993,33 @@
    "also_covered_by": [],
    "topics": [
     "Threats & malware"
+   ]
+  },
+  {
+   "id": "6d29f3b89c67",
+   "title": "Jobless Tech Workers Are Being Left Out of San Francisco's AI Boom",
+   "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T14:40:05+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "d822a9117e89",
+   "title": "Anthropic releases amended IPO prospectus with third-quarter financials",
+   "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T14:38:45+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1526,11 +2109,35 @@
    "source_category": "Development",
    "published": "2026-11-02T14:28:39+00:00",
    "summary": "We recently looked at how the kernel community is dealing with the firehose of vulnerability reports, but said little about how users of the kernel are responding.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "38258316d905",
+     "source": "Fortinet PSIRT",
+     "title": "Linux kernel RCE CVE-2026-98432",
+     "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
-   ]
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-98432",
+     "score": 0.00457,
+     "percentile": 0.39649,
+     "date": "2026-11-02"
+    }
+   }
   },
   {
    "id": "7909b6caa325",
@@ -1828,6 +2435,12 @@
      "source": "LWN.net",
      "title": "Shutting the Door on the XCPE Botnet (Threat Intelligence)",
      "url": "https://lwn.net/Articles/1104847/"
+    },
+    {
+     "id": "ac8232b05771",
+     "source": "Help Net Security",
+     "title": "Google disrupts XCPE botnet, bans the company behind it",
+     "url": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/"
     }
    ],
    "topics": [
@@ -1958,6 +2571,22 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "63028db311b2",
+   "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+   "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+   "source": "Google Cloud Blog",
+   "source_category": "Cloud",
+   "published": "2026-11-02T14:00:00+00:00",
+   "summary": "Written by: Christopher Romano, Codi Starks, Garrett Mahoney, John Wolfram, Josh Murchie, K Singh, Mathew Potaczek, Mike Lombardi, Rik Dolfing Introduction Mandiant responded to multiple incidents in 2026 in which threat actors hijacked enterprise access to Large Language Models (LLMs), a tactic known as \"LLMJacking.\"…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Cloud & infrastructure",
+    "AI"
    ]
   },
   {
@@ -2167,6 +2796,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "cec5ad59914d",
+   "title": "If you love a website, back it up",
+   "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T13:25:35+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
