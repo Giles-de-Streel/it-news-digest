@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-01T23:01:50+00:00",
+ "generated": "2026-11-02T00:00:49+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "The Record",
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 31,
+   "recent": 28,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Cisco Talos",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 21,
+   "fetched": 19,
    "recent": 5,
    "error": null
   },
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1242,6 +1242,101 @@
  ],
  "items": [
   {
+   "id": "8ebc1522c0ba",
+   "title": "Brainchip AKD1500 Raspberry Pi 5 Dev Kit enables users to quickly experiment with event-based neuromorphic AI",
+   "url": "https://www.cnx-software.com/2026/11/02/brainchip-akd1500-raspberry-pi-5-dev-kit-enables-users-to-quickly-experiment-with-event-based-neuromorphic-ai/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "A few weeks ago, we noted that the Brainchip AKD1500 M.2 module could work with the Raspberry Pi 5 using a compatible M.2 HAT+ expansion card to evaluate the solution or develop applications using the company’s low-power, low-latency neuromorphic AI technology.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "ccf5e5fcbaaa",
+   "title": "Cheap FPGA Board Becomes Retro-Style Computer",
+   "url": "https://hackaday.com/2026/11/01/cheap-fpga-board-becomes-retro-style-computer/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "The Tang Nano 9K is a cheap FPGA development board that can usually be acquired for around $15 or so. [ThePartsBin] has been experimenting with this hardware and figured out …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c42034798041",
+   "title": "Toyota's EV Sales More Than Doubled In a Year, While Its Gas Car Sales Dropped 20% In China",
+   "url": "https://tech.slashdot.org/story/26/11/01/2333233/toyotas-ev-sales-more-than-doubled-in-a-year-while-its-gas-car-sales-dropped-20-in-china?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-01T23:36:00+00:00",
+   "summary": "Toyota's EV sales have jumped 127% through September, reports Electrek: Including Lexus, Toyota sold 309,766 battery electric vehicles (BEVs) globally through the first nine months of 2026, up 127.4% from the same period last year.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7d7291538279",
+   "title": "If in doubt, delete the uv.lock file",
+   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-01T23:24:22+00:00",
+   "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for…",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "7407a696f56a",
+   "title": "U.S. workers took home their smallest share of capital since at least 1947",
+   "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T23:20:31+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "26cae879ac15",
+   "title": "How IShowSpeed became YouTube's top livestreamer with 62M+ subscribers, as his 24/7 \"IRL streams\" that last days mingle childlike wonder with teenage mischief (Jon Caramanica/New York Times)",
+   "url": "https://www.techmeme.com/261101/p18#a261101p18",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-01T23:15:00+00:00",
+   "summary": "Jon Caramanica / New York Times : How IShowSpeed became YouTube's top livestreamer with 62M+ subscribers, as his 24/7 “IRL streams” that last days mingle childlike wonder with teenage mischief — IShowSpeed in Las Vegas during the Speed Does America bus tour. — With seven minutes left in the second quarter …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "48e0aa81fb1b",
+   "title": "Linus Torvalds says Linux kernel is out of ‘stabilization phase’ and using ‘much healthier model’ for AI contributions",
+   "url": "https://www.theregister.com/os-platforms/2026/11/01/linus-torvalds-says-linux-kernel-is-out-of-stabilization-phase-and-using-much-healthier-model-for-ai-contributions/5306852",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-01T23:11:41+00:00",
+   "summary": "Yet machine-made patches ‘often get rewritten’",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
    "id": "2c7d241db5de",
    "title": "SystemD's Creator Opens Signups for Private Preview of Amutable's Cryptographically Verified Linux Systems",
    "url": "https://tech.slashdot.org/story/26/11/01/229250/systemds-creator-opens-signups-for-private-preview-of-amutables-cryptographically-verified-linux-systems?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -1291,6 +1386,19 @@
    "source_category": "IT industry",
    "published": "2026-11-01T22:15:02+00:00",
    "summary": "Dean Takahashi / GamesBeat : Saudi Aramco acquires a 49% stake in AI startup Humain, contributing ~$2.6B in cash in 2026 plus AI, compute, and digital assets; Saudi Arabia's PIF retains 51% — Join the Leaders Making Gaming's Next Big Deals.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "b23877b88e69",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T22:10:45+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -2951,7 +3059,14 @@
    "source_category": "Forensics & IR",
    "published": "2026-11-01T11:47:28+00:00",
    "summary": "If your organisation is interested in sponsoring an upcoming post then reach out via the contact form! No sponsor this week",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "2b112ac1c414",
+     "source": "Linuxiac",
+     "title": "Linuxiac Weekly Wrap-Up: Week 44, 2026 (October 26 – November 1)",
+     "url": "https://linuxiac.com/linuxiac-weekly-wrap-up-week-43-2026-october-26-november-1/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -3604,7 +3719,15 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
-   ]
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-120198",
+     "score": 0.0207,
+     "percentile": 0.8143,
+     "date": "2026-11-01"
+    }
+   }
   },
   {
    "id": "75c9d86e1c17",
@@ -3719,7 +3842,15 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
-   ]
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-120197",
+     "score": 0.01687,
+     "percentile": 0.7703,
+     "date": "2026-11-01"
+    }
+   }
   },
   {
    "id": "1de2c3507b50",
@@ -3741,7 +3872,15 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
-   ]
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-120196",
+     "score": 0.01687,
+     "percentile": 0.77029,
+     "date": "2026-11-01"
+    }
+   }
   },
   {
    "id": "dc8352a2bfa7",
@@ -3763,7 +3902,15 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
-   ]
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-120195",
+     "score": 0.0207,
+     "percentile": 0.8143,
+     "date": "2026-11-01"
+    }
+   }
   },
   {
    "id": "9836ab55bfe9",
