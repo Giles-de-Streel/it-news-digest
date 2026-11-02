@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T17:31:13+00:00",
+ "generated": "2026-11-02T18:02:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -95,9 +95,9 @@
   },
   {
    "source": "Slashdot",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: no element found: line 1, column 0"
+   "fetched": 15,
+   "recent": 15,
+   "error": null
   },
   {
    "source": "CircleID",
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 37,
-   "recent": 37,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "TechCrunch Enterprise",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1230,7 +1230,7 @@
   {
    "source": "Ansible community news",
    "fetched": 25,
-   "recent": 5,
+   "recent": 7,
    "error": null
   },
   {
@@ -1325,8 +1325,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 35,
-   "recent": 1,
+   "fetched": 36,
+   "recent": 2,
    "error": null
   },
   {
@@ -1386,13 +1386,13 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 1,
+   "recent": 3,
    "error": null
   },
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -1536,6 +1536,157 @@
  ],
  "items": [
   {
+   "id": "0d9e114469e7",
+   "title": "New Release: ansible-core v2.21.6",
+   "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-21-6/46586",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T18:00:43+00:00",
+   "summary": "ansible-core v2.21.6 View this release on: GitHub PyPI Changelog See the full changelog for the changes included in this release. Release Artifacts Built Distribution: ansible_core-2.21.6-py3-none-any.whl - ‌2457874 bytes c1fc3cbe821176ba4227b1cae8c748e1d28d42dde605e807d23c58f71b6d1a74 (SHA256) Source Distribution:…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "48d997914930",
+   "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+   "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+   "source": "TechCrunch Enterprise",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:54:11+00:00",
+   "summary": "Marvell's planned purchase of Lumentum is one of the biggest acquisitions in tech history. And they both have the same strategic investor: Nvidia.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c723e57bb94b",
+   "title": "[$] The second part of the 7.4 merge window",
+   "url": "https://lwn.net/Articles/1102739/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-02T17:51:48+00:00",
+   "summary": "The 7.4 merge window, which closed on November 1, included a record-breaking 18,591 non-merge changesets. That is almost as many as the entire 7.3 development cycle, which had 18,765, itself a record breaker. Of those, 11,838 landed after the article covering the first part of the merge window .",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8f21b8455339",
+   "title": "Tutor, which is training a frontier robot foundation model and builds AI warehouse robots, raised a $75M Series B led by a16z, taking total funding to $117M (John Werner/Forbes)",
+   "url": "https://www.techmeme.com/261102/p33#a261102p33",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:50:01+00:00",
+   "summary": "John Werner / Forbes : Tutor, which is training a frontier robot foundation model and builds AI warehouse robots, raised a $75M Series B led by a16z, taking total funding to $117M — This voice experience is generated by AI. Learn more. … When you look at some of what robotics companies are doing today …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a06b7a9868c5",
+   "title": "CVE-2026-119085 - Template injection in the publishing component of Virtual Engineering Workbench",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T17:41:34+00:00",
+   "summary": "Bulletin ID: 2026-162-AWS Publication Date: 11/02/2026 09:30 AM PST Description: Virtual Engineering Workbench (VEW) is an open-source platform where platform engineers define and publish development environments, and developers provision them on demand through a web portal.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Development",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-119085",
+     "score": 9.4,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "c613f83c843e",
+   "title": "DeepSeek releases a \"creator mode\" that allows users of DeepSeek Harness to create custom plugins, like a 3D model renderer and a video editing workbench (Debby Wu/Bloomberg)",
+   "url": "https://www.techmeme.com/261102/p32#a261102p32",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:40:03+00:00",
+   "summary": "Debby Wu / Bloomberg : DeepSeek releases a “creator mode” that allows users of DeepSeek Harness to create custom plugins, like a 3D model renderer and a video editing workbench — DeepSeek has unveiled a new option to quickly create custom plugins that help users to tackle a range of complex tasks …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "932fa2c89107",
+   "title": "ShareX keeps making Windows 11's Snipping Tool harder to justify",
+   "url": "https://www.neowin.net/news/sharex-keeps-making-windows-11s-snipping-tool-harder-to-justify/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-02T17:40:01+00:00",
+   "summary": "ShareX is already way more advanced than Microsoft's own Snipping Tool. Still, the latest update closes yet another feature gap between the two.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "e9414a782a5d",
+   "title": "An alternative to sharding a MongoDB replica set that outgrew its memory: a proof of concept",
+   "url": "https://www.percona.com/blog/an-alternative-to-sharding-a-mongodb-replica-set-that-outgrew-its-memory-a-proof-of-concept/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-02T17:34:07+00:00",
+   "summary": "An alternative to sharding a MongoDB replica set that outgrew its memory: a proof of concept A replica set that no longer fits in memory Most MongoDB replica sets start small. The working set fits in the WiredTiger cache, reads come from memory, and nobody thinks about disks. Then the data keeps growing.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "4e4384e5d234",
+   "title": "Startup uses motion sensors and AI to tell families when an aging parent’s routine changes",
+   "url": "https://www.geekwire.com/2026/startup-uses-motion-sensors-and-ai-to-tell-families-when-an-aging-parents-routine-changes/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:31:20+00:00",
+   "summary": "After his mother-in-law was hurt in a fall and told no one, ex-Microsoft exec Michael Nassirian built a camera-free way for families to know when something’s off. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "5ffb7424cb23",
+   "title": "New Release: ansible-core v2.20.11",
+   "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-20-11/46585",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T17:31:06+00:00",
+   "summary": "ansible-core v2.20.11 View this release on: GitHub PyPI Changelog See the full changelog for the changes included in this release. Release Artifacts Built Distribution: ansible_core-2.20.11-py3-none-any.whl - ‌2431382 bytes a136e1b04c705e44d14507058008206eac3bae9179fa8499c36b0048ef1a2b33 (SHA256) Source Distribution:…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "3e26823dc411",
    "title": "New Release: ansible-core v2.19.15",
    "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-19-15/46584",
@@ -1549,6 +1700,19 @@
     "Development",
     "Supply chain security",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "eaf7369e3301",
+   "title": "Don’t want a touchscreen? All premium MacBook Pros could have one soon, reports say",
+   "url": "https://www.zdnet.com/tech/all-premium-macbook-pros-touchscreens-2027/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:23:24+00:00",
+   "summary": "New reports indicate the touchscreens are to become the standard on premium MacBook Pros.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1653,6 +1817,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "cec830b10851",
+   "title": "Firefox’s new Mini Window is every multitasker’s dream – Chrome can’t do this",
+   "url": "https://www.zdnet.com/home-and-office/firefox-mini-window-browser-feature/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:15:17+00:00",
+   "summary": "The open-source browser’s newest feature lets you pop out a page – or part of a page – into its own mini window. See why this is incredibly cool.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1815,6 +1992,19 @@
     "Microsoft & Windows",
     "Cloud & infrastructure",
     "Databases"
+   ]
+  },
+  {
+   "id": "6202d4a3d896",
+   "title": "Marvell to Buy Lumentum In $115 Billion Bet On AI Connectivity",
+   "url": "https://slashdot.org/story/26/11/02/1527241/marvell-to-buy-lumentum-in-115-billion-bet-on-ai-connectivity?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-02T17:00:00+00:00",
+   "summary": "Marvell has agreed to acquire optical components maker Lumentum in an all-stock deal with an implied enterprise value of $115 billion. \"AI infrastructure is undergoing a fundamental architectural shift toward optical connectivity, creating an opportunity that comes along once in a generation,\" said Marvell Chairman…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2131,7 +2321,20 @@
    "source_category": "DevOps & automation",
    "published": "2026-11-02T16:30:34+00:00",
    "summary": "ansible-core v2.16.20 View this release on: GitHub PyPI Changelog See the full changelog for the changes included in this release. Release Artifacts Built Distribution: ansible_core-2.16.20-py3-none-any.whl - ‌2266083 bytes 7a6fcaba5fbc002013ddbd2053f35c5b1b03aa7fb9e9cec55b620dc61e560158 (SHA256) Source Distribution:…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "7909b6caa325",
+     "source": "LWN.net",
+     "title": "Tor Browser 16.0 released",
+     "url": "https://lwn.net/Articles/1104846/"
+    },
+    {
+     "id": "db504d212527",
+     "source": "Lobsters",
+     "title": "New Release: Tor Browser 16.0 | Tor Project",
+     "url": "https://blog.torproject.org/new-release-tor-browser-160/"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Development",
@@ -2218,6 +2421,19 @@
    "topics": [
     "AI",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "60f5e8028601",
+   "title": "The Gift of It's Your Problem Now (2021)",
+   "url": "https://apenwarr.ca/log/20211229-the-gift-of-its-your-problem-now",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T16:19:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2859,6 +3075,20 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "0e5ffbeff8b8",
+   "title": "pull_request_target blocked by default December 2",
+   "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
+   "source": "GitHub Changelog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T15:14:46+00:00",
+   "summary": "Starting December 2, 2026, GitHub Actions will block pull_request_target events by default in all public repositories, unless an applicable Actions event policy explicitly allows them. Enforcement was previously scheduled for…",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "DevOps & SRE"
    ]
   },
   {
@@ -5626,6 +5856,12 @@
      "source": "Neowin",
      "title": "Europe supermarket freezers cyberattack hits Belgium, Netherlands, Sweden, Luxembourg",
      "url": "https://www.neowin.net/news/europe-supermarket-freezers-cyberattack-hits-belgium-netherlands-sweden-luxembourg/?utm_source=rss"
+    },
+    {
+     "id": "6682f00986fc",
+     "source": "Industrial Cyber",
+     "title": "Hackers manipulate supermarket freezer temperatures across Europe, exposing weaknesses in connected OT systems",
+     "url": "https://industrialcyber.co/critical-infrastructure/hackers-manipulate-supermarket-freezer-temperatures-across-europe-exposing-weaknesses-in-connected-ot-systems/"
     }
    ],
    "topics": [
@@ -5904,7 +6140,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-02T10:15:49+00:00",
    "summary": "Microsoft now offers Windows 11 26H2 through Windows Update on eligible Windows 10 PCs. This expands availability beyond Windows 11 24H2 and 25H2 devices, after admins had manual ways to install 26H2 . The offer applies only to PCs that meet Windows 11’s requirements. Source",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fc85bba0391e",
+     "source": "Neowin",
+     "title": "Microsoft confirms supported Windows 10 PCs can now directly update to Windows 11 26H2",
+     "url": "https://www.neowin.net/news/microsoft-confirms-supported-windows-10-pcs-can-now-directly-update-to-windows-11-26h2/?utm_source=rss"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Endpoint management",
