@@ -18,6 +18,7 @@
   --tree-conifer: #145a3a; --tree-yellow: #d9a514; --tree-brown: #9a5b2c;
   --tree-green-2: #4c9a2a; --tree-green-3: #5f7f3a;
   --pup: #8b5a2b;
+  --runner: #0d0f12;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -43,6 +44,7 @@
     --tree-conifer: #3e9e72; --tree-yellow: #e8c04a; --tree-brown: #c58250;
     --tree-green-2: #7fcf5a; --tree-green-3: #a3bd6e;
     --pup: #c08a5a;
+    --runner: #f2f4f7;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -97,7 +99,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 
 /* Stick figure pacing the empty header space between the logo and the controls */
 .runner-track { flex: 1 1 0; align-self: stretch; position: relative; min-width: 80px; margin: 0 -19px 0 -15px; overflow: hidden; }
-.runner { position: absolute; top: calc(50% - 13px); left: 0; width: 20px; height: 26px; color: var(--muted); animation: runner-pace 16s linear infinite; }
+.runner { position: absolute; top: calc(50% - 13px); left: 0; width: 20px; height: 26px; color: var(--runner); animation: runner-pace 16s linear infinite; }
 .runner svg { display: block; width: 20px; height: 26px; overflow: visible; animation: runner-bob .25s ease-in-out infinite alternate; }
 .runner .limb { transform-box: view-box; }
 .runner .arm { transform-origin: 10.8px 9px; }
@@ -113,6 +115,25 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes runner-wave { from { transform: rotate(-25deg); } to { transform: rotate(20deg); } }
 .runner .punch-pose { visibility: hidden; animation: runner-show-punch 16s step-end infinite; }
 .runner .jab { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-jab 16s linear infinite; }
+/* the second stick figure walks: same 16s cycle, but only covers the left ~60% of the track, much slower
+   than the runner. It waits at its far point until the runner passes on the way back (about 62% of the
+   cycle), so it trails the group in both directions */
+.runner.walker { left: 46px; animation: walker-pace 16s linear infinite; }
+.runner.walker svg { animation-duration: .45s; }
+.runner.walker .run-pose { visibility: visible; animation: walker-show-walk 16s step-end infinite; }
+.runner.walker .walker-stand { visibility: hidden; animation: walker-show-stand 16s step-end infinite; }
+.runner.walker .leg-a, .runner.walker .arm-b { animation: walker-swing .45s ease-in-out infinite alternate; }
+.runner.walker .leg-b, .runner.walker .arm-a { animation: walker-swing .45s ease-in-out -.45s infinite alternate; }
+@keyframes walker-swing { from { transform: rotate(22deg); } to { transform: rotate(-22deg); } }
+@keyframes walker-pace {
+  0% { left: 46px; transform: scaleX(1); }
+  56%, 61.99% { left: max(46px, calc(62% - 20px)); transform: scaleX(1); }
+  62% { left: max(46px, calc(62% - 20px)); transform: scaleX(-1); }
+  99.99% { left: 46px; transform: scaleX(-1); }
+  100% { left: 46px; transform: scaleX(1); }
+}
+@keyframes walker-show-walk { 0% { visibility: visible; } 56% { visibility: hidden; } 62% { visibility: visible; } }
+@keyframes walker-show-stand { 0% { visibility: hidden; } 56% { visibility: visible; } 62% { visibility: hidden; } }
 @keyframes runner-pace {
   0% { left: 0; transform: scaleX(1); }
   38%, 45.99% { left: calc(100% - 20px); transform: scaleX(1); }
