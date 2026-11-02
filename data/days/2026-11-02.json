@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T07:01:04+00:00",
+ "generated": "2026-11-02T08:00:52+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 5,
+   "recent": 7,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -210,19 +210,19 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 48,
+   "fetched": 47,
    "recent": 38,
    "error": null
   },
@@ -1242,6 +1242,128 @@
  ],
  "items": [
   {
+   "id": "00e6684ac8b2",
+   "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+   "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-02T07:57:49+00:00",
+   "summary": "CISA has added CVE-2026-111357 and CVE-2026-118527 to its KEV catalog after the Ivanti VPN flaws were chained in zero-day attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-111357",
+     "score": 7.0,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "mitre"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-111357",
+      "added": "2026-10-30",
+      "ransomware": false
+     },
+     {
+      "id": "CVE-2026-118527",
+      "added": "2026-10-30",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-111357",
+     "score": 0.00533,
+     "percentile": 0.45024,
+     "date": "2026-11-01"
+    }
+   }
+  },
+  {
+   "id": "051087fd9b84",
+   "title": "JPEG XS - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/JPEG_XS",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T07:53:19+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9c253caebb9b",
+   "title": "YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, forming roles, hierarchies, and complex coordination patterns (YC Labs)",
+   "url": "https://www.techmeme.com/261102/p4#a261102p4",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T07:45:00+00:00",
+   "summary": "YC Labs : YC details multi-agent tests in games like Minecraft, where agents exhibit emergent capabilities, forming roles, hierarchies, and complex coordination patterns",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "94526d208c3a",
+   "title": "GoldenGate captures TRUNCATE on a global temporary table and the replicat abends",
+   "url": "https://www.dbi-services.com/blog/goldengate-captures-truncate-on-a-global-temporary-table-and-the-replicat-abends/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-02T07:38:00+00:00",
+   "summary": "In an extract report, I noticed that the CREATE and DROP of a global temporary table were excluded (OGG-10473), while the TRUNCATE of the same table was included (OGG-00487).",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "edd3bd31251b",
+   "title": "Manager threatened to fire a colleague, then gave them a critical task – which they flubbed",
+   "url": "https://www.theregister.com/storage/2026/11/02/manager-threatened-to-fire-a-colleague-then-gave-them-a-critical-task-which-they-flubbed/5306555",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-02T07:30:00+00:00",
+   "summary": "Nobody noticed for years, at which point the boss realized they had to cover up their poor decision",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ca130899e453",
+   "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T07:27:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "0896a42423b1",
+   "title": "DeepSeek open-sources Super-Agent, a coding agent that watches team chats for work",
+   "url": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-02T07:09:55+00:00",
+   "summary": "Deepseek released a research prototype of dsh-superagent, a coding agent that does work on a GitHub repository for you. Who can ask for work The agent gets to work in two situations: an allowed user asks for something, or a rule your team wrote covers it.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
    "id": "a257d8e09c83",
    "title": "Microsoft 365 for IT Pros November 2026 Update",
    "url": "https://office365itpros.com/2026/11/02/microsoft-365-for-it-pros-137/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-365-for-it-pros-137",
@@ -1353,6 +1475,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "ec8b85dc46b2",
+   "title": "Chap who coded Google’s Pac-Man clone reveals how the game freaked out Firefox",
+   "url": "https://www.theregister.com/personal-tech/2026/11/02/chap-who-coded-googles-pac-man-clone-reveals-how-the-game-freaked-out-firefox/5306879",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-02T06:05:39+00:00",
+   "summary": "Waka-waka-waka-waka why why why why?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
