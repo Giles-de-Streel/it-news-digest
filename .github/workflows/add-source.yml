@@ -12,11 +12,9 @@ permissions:
   contents: write
   issues: write
 
-# Its own group: GitHub cancels an older *pending* run when a newer one joins the same group, so
-# sharing fetch-news could drop a queued news fetch. The push step rebases and retries instead.
-concurrency:
-  group: add-source
-  cancel-in-progress: false
+# No concurrency group on purpose: GitHub keeps only one pending run per group and cancels the
+# older one, so clicking Add on several suggestions would drop some. Runs go in parallel instead,
+# and the commit step re-applies the add on top of the latest main until its push lands.
 
 jobs:
   add:
@@ -47,11 +45,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sources.json
-          git commit -m "Add source from issue #${NUM}"
-          for i in 1 2 3; do
-            git pull --rebase --quiet && git push && exit 0
-            sleep 5
+          for i in 1 2 3 4 5; do
+            # Start from the latest main each time and re-apply the add, so parallel adds (or a
+            # news fetch) that pushed first never cause a merge conflict in sources.json.
+            git fetch --quiet origin main && git reset --quiet --hard origin/main
+            python -I scripts/add_source.py "$GITHUB_EVENT_PATH" "$RUNNER_TEMP/msg.md" || exit 1
+            git add sources.json
+            git commit --quiet -m "Add source from issue #${NUM}"
+            git push --quiet origin HEAD:main && exit 0
+            sleep $((RANDOM % 6 + 3))
           done
           exit 1
 
