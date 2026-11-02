@@ -722,17 +722,41 @@
     track.prepend(s);
     return s;
   };
-  if (Math.random() < 0.5) {
+  // Sun by day, moon by night (viewer's local time). It crosses the sky as the day or night goes on:
+  // rising at the left, setting at the right (day 06:00-19:00, night 19:00-06:00).
+  const now = new Date();
+  const hrs = now.getHours() + now.getMinutes() / 60;
+  const isDay = hrs >= 6 && hrs < 19;
+  const progress = isDay ? (hrs - 6) / 13 : ((hrs + 24 - 19) % 24) / 11;
+  const skyX = `${(6 + progress * 88).toFixed(1)}%`;
+  if (isDay) {
     const rays = Array.from({ length: 8 }, (_, i) => { const a = (i * Math.PI) / 4; return `M${(6 * Math.cos(a)).toFixed(1)} ${(6 * Math.sin(a)).toFixed(1)}L${(8.6 * Math.cos(a)).toFixed(1)} ${(8.6 * Math.sin(a)).toFixed(1)}`; }).join("");
-    sky("sky-sun", "-9 -9 18 18", `<path class="ray" d="${rays}"/><circle r="4.2"/>`, { "--x": `${rand(6, 94).toFixed(1)}%`, "--s": `${Math.round(rand(11, 15))}px` });
+    sky("sky-sun", "-9 -9 18 18", `<path class="ray" d="${rays}"/><circle r="4.2"/>`, { "--x": skyX, "--s": `${Math.round(rand(11, 15))}px` });
   } else {
-    sky("sky-moon", "-6 -6 12 12", '<path d="M2.2-5.2A5.6 5.6 0 1 0 5.4 2.6 4.4 4.4 0 0 1 2.2-5.2z"/>', { "--x": `${rand(6, 94).toFixed(1)}%`, "--s": `${Math.round(rand(9, 12))}px` });
+    sky("sky-moon", "-6 -6 12 12", '<path d="M2.2-5.2A5.6 5.6 0 1 0 5.4 2.6 4.4 4.4 0 0 1 2.2-5.2z"/>', { "--x": skyX, "--s": `${Math.round(rand(9, 12))}px` });
   }
   const clouds = 1 + Math.floor(Math.random() * 3);
   for (let i = 0; i < clouds; i++) {
     sky("sky-cloud", "0 0 24 10", '<path d="M5 9.5h14.5a3.6 3.6 0 0 0 .4-7.2 4.6 4.6 0 0 0-8.6-.9A3.4 3.4 0 0 0 6.6 4 2.8 2.8 0 0 0 5 9.5z"/>',
       { "--x": `${rand(0, 92).toFixed(1)}%`, "--w": `${Math.round(rand(16, 28))}px`, "--y": `${rand(0, 5).toFixed(1)}px`,
         "--drift": `${Math.round(rand(10, 30)) * (Math.random() < 0.5 ? -1 : 1)}px`, "--dur": `${Math.round(rand(18, 40))}s` });
+  }
+
+  // Shrubs: a few low bushes in assorted colours, in front of the trees and behind the grass
+  const pet1 = track.querySelector(".pet");
+  const SHRUB = '<path d="M.6 9a3.4 3.4 0 0 1 2.9-5.3A4.4 4.4 0 0 1 11.4 2.4a3.5 3.5 0 0 1 4 6.6z"/>';
+  const shrubs = 3 + Math.floor(Math.random() * 5); // 3-7
+  for (let i = 0; i < shrubs; i++) {
+    const s = document.createElementNS(NS, "svg");
+    const w = Math.round(rand(8, 17));
+    s.setAttribute("class", `shrub s${1 + Math.floor(Math.random() * 6)}${Math.random() < 0.35 ? " far" : ""}`);
+    s.setAttribute("viewBox", "0 0 16 9");
+    s.setAttribute("aria-hidden", "true");
+    s.innerHTML = SHRUB; // constant markup
+    s.style.setProperty("--x", `${rand(1, 99).toFixed(1)}%`);
+    s.style.setProperty("--w", `${w}px`);
+    s.style.setProperty("--flip", Math.random() < 0.5 ? "-1" : "1");
+    track.insertBefore(s, pet1);
   }
 
   // Grass: random tufts and patches along the ground line, in front of the trees but behind the dogs and runners
