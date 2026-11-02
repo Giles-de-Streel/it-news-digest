@@ -1,12 +1,12 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-02T01:00:54+00:00",
+ "generated": "2026-11-02T02:01:18+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 25,
-   "recent": 25,
+   "fetched": 30,
+   "recent": 30,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 21,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -216,19 +216,19 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 16,
-   "recent": 5,
+   "fetched": 17,
+   "recent": 6,
    "error": null
   },
   {
@@ -1242,6 +1242,186 @@
  ],
  "items": [
   {
+   "id": "d0dae30d7bd0",
+   "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
+   "url": "https://isc.sans.edu/diary/rss/33480",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-11-02T02:00:03+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e2db452dacf1",
+   "title": "RHSA-2026:93437: Important: kernel-rt security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:93437",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T01:51:41+00:00",
+   "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "4d01944e6394",
+   "title": "Steam On Linux Just Under 4% For October 2026",
+   "url": "https://www.phoronix.com/news/Steam-Survey-October-2026",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-02T01:47:46+00:00",
+   "summary": "Valve just published their Steam Survey results for October and point to a small uptick in Linux gaming use on a relative basis...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "1245cbbee8a6",
+   "title": "Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing framework, citing national security and commercial exemptions (Leo Schwartz/The Information)",
+   "url": "https://www.techmeme.com/261101/p21#a261101p21",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T01:45:02+00:00",
+   "summary": "Leo Schwartz / The Information : Letter: the White House argues it doesn't have to share the full draft of its voluntary AI testing framework, citing national security and commercial exemptions — The Trump administration declined to produce key documents related to its voluntary AI testing framework …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e667c7ed9c45",
+   "title": "CVE-2026-120283: A vulnerability was identified in Linksys E8450 1.2.00.360516.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120283",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T01:17:27.500000+00:00",
+   "summary": "A vulnerability was identified in Linksys E8450 1.2.00.360516. Affected is the function strcpy of the file /www/cgi-bin/portal.cgi. Such manipulation of the argument hidden_timezone leads to stack-based buffer overflow. The attack can be executed remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120283",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120283",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f3fd9f6132c8",
+   "title": "CVE-2026-120282: A vulnerability was determined in WAVLINK WN536AX6-A V260507.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120282",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T01:17:27.293000+00:00",
+   "summary": "A vulnerability was determined in WAVLINK WN536AX6-A V260507. This impacts the function host_black of the file /protocol.csp. This manipulation of the argument mac causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.",
+   "kind": "cve",
+   "cve": "CVE-2026-120282",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120282",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8ac82ea415bc",
+   "title": "CVE-2026-120281: A vulnerability was found in WAVLINK WN536AX6-A V260507.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120281",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T01:17:27.070000+00:00",
+   "summary": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120281",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120281",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "234facf362f2",
+   "title": "CVE-2026-120280: A vulnerability has been found in WAVLINK WN536AX6-A V260507.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120280",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T01:17:26.873000+00:00",
+   "summary": "A vulnerability has been found in WAVLINK WN536AX6-A V260507. The impacted element is the function wireguard_cli_group handler of the file /protocol.csp of the component WireGuard. The manipulation of the argument group_id/group_name leads to os command injection. The attack may be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120280",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120280",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8249cc20f315",
+   "title": "CVE-2026-120279: A flaw has been found in WAVLINK WN536AX6-A V260507.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120279",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T01:17:26.677000+00:00",
+   "summary": "A flaw has been found in WAVLINK WN536AX6-A V260507. The affected element is an unknown function of the file /protocol.csp of the component openvpn_cli Handler. Executing a manipulation of the argument file_id can lead to os command injection. The attack can be launched remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120279",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120279",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "fa7a787ad015",
+   "title": "Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led by Lip-Bu Tan's Walden Catalyst; it has raised $50M to date (Geoff Weiss/Business Insider)",
+   "url": "https://www.techmeme.com/261101/p20#a261101p20",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T01:15:00+00:00",
+   "summary": "Geoff Weiss / Business Insider : Hyperbolic, which lets companies rent AI compute across ~30 neoclouds, raised a $30M Series A-1 led by Lip-Bu Tan's Walden Catalyst; it has raised $50M to date — Intel CEO Lip-Bu Tan is backing an infrastructure startup that has raised $30 million to help companies rent compute across…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "c71689403ee9",
    "title": "Stack Overflow: 'Reports of Our Death are Greatly Exaggerated'",
    "url": "https://developers.slashdot.org/story/26/11/02/0026255/stack-overflow-reports-of-our-death-are-greatly-exaggerated?utm_source=rss1.0mainlinkanon&utm_medium=feed",
@@ -1297,6 +1477,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "dbf08f6dacbe",
+   "title": "OccupySaaS",
+   "url": "https://occupysaas.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T00:17:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1380,6 +1573,19 @@
    "also_covered_by": [],
    "topics": [
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "dd1cc2b9b42a",
+   "title": "Chris van Eijk: server closed the connection unexpectedly in PostgreSQL",
+   "url": "https://postgr.es/p/9AM",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "PostgreSQL's server closed the connection unexpectedly, measured in six clients: what the server log says per cause, where the reason goes, and lost COMMITs.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -4150,6 +4356,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "8cdb8bc2bd63",
+   "title": "A Chemical Hunger (2021)",
+   "url": "https://slimemoldtimemold.com/2021/07/07/a-chemical-hunger-part-i-mysteries/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-10-31T20:32:24+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
