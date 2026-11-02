@@ -16,6 +16,7 @@
   /* source-count pills: 2, 3, 4-5, 6+ sources */
   --heat-1: #1d7a3e; --heat-1-soft: #e2f2e7;
   --tree-conifer: #145a3a; --tree-yellow: #d9a514; --tree-brown: #9a5b2c;
+  --tree-green-2: #4c9a2a; --tree-green-3: #5f7f3a;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -39,6 +40,7 @@
     --kev: #991b1b;
     --heat-1: #5cc283; --heat-1-soft: #17301f;
     --tree-conifer: #3e9e72; --tree-yellow: #e8c04a; --tree-brown: #c58250;
+    --tree-green-2: #7fcf5a; --tree-green-3: #a3bd6e;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -177,6 +179,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .tree.conifer .leaves { fill: var(--tree-conifer); }
 .tree.yellow .leaves { fill: var(--tree-yellow); }
 .tree.brown .leaves { fill: var(--tree-brown); }
+.tree.green2 .leaves { fill: var(--tree-green-2); }
+.tree.green3 .leaves { fill: var(--tree-green-3); }
 .tree .trunk { fill: #8a5a2b; }
 @media (max-width: 700px) { .tree.far { display: none; } }
 .pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }

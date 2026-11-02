@@ -700,7 +700,10 @@
   for (const x of xs) {
     const conifer = Math.random() < 0.5;
     const tint = Math.random();
-    const cls = ["tree", conifer ? "conifer" : !conifer && tint < 0.18 ? "yellow" : !conifer && tint < 0.36 ? "brown" : "", Math.random() < 0.4 ? "far" : ""];
+    // colour: round trees can turn autumn yellow/brown; any tree can take one of the two extra greens
+    const colour = !conifer && tint < 0.15 ? "yellow" : !conifer && tint < 0.3 ? "brown"
+      : tint < 0.5 ? "green2" : tint < 0.7 ? "green3" : "";
+    const cls = ["tree", conifer ? "conifer" : "", colour, Math.random() < 0.4 ? "far" : ""];
     const t = document.createElement("div");
     t.className = cls.filter(Boolean).join(" ");
     t.style.setProperty("--x", `${x.toFixed(1)}%`);
