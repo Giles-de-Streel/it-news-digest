@@ -169,15 +169,37 @@ def _trim_trailing(data):
     return data[:end]
 
 
+_XML_ILLEGAL_RE = re.compile(rb"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+
+
+def _strip_controls(data):
+    """Drop control characters XML 1.0 forbids (e.g. vertical tabs pasted into a post body)."""
+    return _XML_ILLEGAL_RE.sub(b"", data)
+
+
+def _lstrip_prolog(data):
+    """Whitespace or a BOM before <?xml ...?> is a fatal error ("XML declaration not at start")."""
+    return data.lstrip(b"\xef\xbb\xbf \t\r\n")
+
+
+_REPAIRS = (_lstrip_prolog, _trim_trailing, _fix_entities, _strip_controls)
+
+
 def parse_feed(data):
     try:
         root = ET.fromstring(data)
     except ET.ParseError:
-        # Repair the usual breakages one at a time, then together; if none parses, raise the original error.
-        trimmed = _trim_trailing(data)
+        # Repair the usual breakages one at a time, then all together; if none parses, raise the
+        # original error. Repairs run only after a strict parse has failed.
+        def apply(fix, d):
+            out = fix(d)
+            return d if out is None else out
+        combined = data
+        for fix in _REPAIRS:
+            combined = apply(fix, combined)
         root = None
-        for attempt in (trimmed, _fix_entities(data), _fix_entities(trimmed) if trimmed else None):
-            if attempt is None or attempt == data:
+        for attempt in [apply(fix, data) for fix in _REPAIRS] + [combined]:
+            if attempt == data:
                 continue
             try:
                 root = ET.fromstring(attempt)
@@ -207,6 +229,12 @@ def parse_feed(data):
             if ln.get("rel", "alternate") == "alternate" and ln.get("href"):
                 link = ln.get("href")
                 break
+        if not link:
+            # No alternate link (e.g. php.net lists only download enclosures): an http(s) <id>
+            # is the entry's permalink.
+            entry_id = (_text(it, f"{ATOM}id") or "").strip()
+            if entry_id.startswith(("http://", "https://")):
+                link = entry_id
         items.append({
             "title": _text(it, f"{ATOM}title"),
             "url": link,

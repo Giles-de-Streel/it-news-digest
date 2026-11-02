@@ -1,6 +1,6 @@
 # IT News
 
-A daily list of IT and security news from 206 sources, refreshed every hour, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 255 sources, refreshed every hour, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
 
 Live page: https://giles-de-streel.github.io/it-news-digest/
 
@@ -41,7 +41,7 @@ Running the fetch again on the same day adds new stories and keeps existing ones
 
 ## Sources
 
-`sources.json` lists each source (`name`, `site` for the outlet's home page, `url` for the feed or data endpoint, `category`). Most are RSS or Atom feeds; the fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom.
+`sources.json` lists each source (`name`, `site` for the outlet's home page, `url` for the feed or data endpoint, `category`). Most are RSS or Atom feeds; the fetcher reads RSS 2.0, RSS 1.0 (RDF, used by Slashdot) and Atom. When a feed fails a strict XML parse, the fetcher tries common repairs one at a time and then together: whitespace or a BOM before the XML declaration, a script appended after the closing root tag, HTML entities such as `&nbsp;` or a bare `&`, and control characters XML forbids. A feed that still doesn't parse is reported as an error; a well-formed feed is never altered. Atom entries with no `alternate` link use their `<id>` as the link when it is an http(s) URL (php.net lists only download enclosures).
 
 Sources without a usable feed have `"type": "page"` and a `parser` from `scripts/page_sources.py`:
 
@@ -50,6 +50,8 @@ Sources without a usable feed have `"type": "page"` and a `parser` from `scripts
 | CISA KEV | CISA's Known Exploited Vulnerabilities JSON feed | One story per newly added CVE, linked to NVD. CISA's advisory pages and RSS return 403 to scripts, so they aren't used. |
 | MSRC Blog | microsoft.com/en-us/msrc/blog | The full post list loads with JavaScript; the page's HTML only carries the newest featured post. |
 | SANS NewsBites | sans.org/newsletters/newsbites | One story per issue (semiweekly), titled with the issue's headlines. |
+| Mozilla Security Advisories | mozilla.org/en-US/security/advisories | One story per MFSA advisory with its impact level, dated by the page's day headings. The RSS feed linked from older pages returns 404. |
+| Apple security releases | support.apple.com/en-us/100100 | One story per release with a published CVE list, dated by the table's release date. Releases with no published CVE entries are skipped. |
 | NVD new CVEs | NVD CVE API 2.0 (`"type": "api"`) | CVEs published in the fetch window. Score = highest CVSS v4.0/v3.1/v3.0 base score, from NVD or the reporting CNA. About 900 CVEs a day are published, around 50 of them critical. No API key; public rate limit respected. |
 
 Page sources check the site's robots.txt (fetched with the fetcher's own User-Agent) and send that honest User-Agent; nothing imitates a browser. Page parsers depend on each site's current layout. If a site changes, its row on the Sources tab shows "no items found", which means the parser needs updating.
@@ -81,7 +83,19 @@ Wider IT coverage (Oct 2026), with new topics **Higher education**, **Endpoint m
   - Left out: PowerShell.org, SUSE, Admin Magazine (no working feed); Windows Server Blog (empty feed); Practical 365, nixCraft, Ask the Directory Services Team, Thomas Maurer (little or nothing in 30 days).
 - DevOps & SRE (new **DevOps & SRE** topic): CNCF, Docker, GitLab, OpenTelemetry, Container Journal, SRE Weekly, Octopus Deploy, Honeycomb, Charity Majors, PlatformEngineering.org, Pulumi, Datadog, Last Week in Kubernetes Development, Istio, Martin Fowler, Azure DevOps Blog, GitHub Changelog, Terraform releases, Ansible community news; Chainguard under Supply chain security. Left out: Argo, OpenTofu, Podman, Helm, Prometheus, Last Week in AWS, Kubernetes Podcast (nothing in 30 days), Cloud Native Now (republishes Container Journal), Jenkins and Google Cloud DevOps/SRE (no working feed). DevOps.com and Grafana Labs were dropped on 2026-10-29: they return 403 to GitHub's runners.
 
-Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, WebAIM, AADInternals (no posts in 30 days). Blocks & Files was dropped on 2026-10-29: it started serving GitHub's runners an "Are we human?" bot-check page instead of its feed.
+Checked and left out: EDUCAUSE, ServiceNow, ThousandEyes (403 to scripts); IAPP, Microsoft Entra blog, Semperis, Tomcat (no working feed); Configuration Manager blog, ADSecurity, AADInternals (no posts in 30 days). Blocks & Files was dropped on 2026-10-29: it started serving GitHub's runners an "Are we human?" bot-check page instead of its feed.
+
+More sources (Nov 2026), each checked from both a workstation and the automation host before adding:
+- Security news: CyberScoop, Security Affairs, Graham Cluley, Have I Been Pwned (new breaches).
+- Threat research: CrowdStrike, SentinelLabs, Proofpoint Threat Insight, Qualys, GreyNoise, Arctic Wolf, Rapid7 (its feed parses once stray control characters are removed).
+- Vendor advisories: Chrome Releases, Mozilla and Apple (page parsers), Jenkins, GitLab security releases, AWS security bulletins, Node.js vulnerability posts, PHP releases, OpenSSL news, Canadian Centre for Cyber Security. Vulnerabilities: CERT/CC vulnerability notes.
+- Higher ed: Higher Ed Dive, EdTech Magazine (Higher Ed). Identity: Duo, Auth0, Palo Alto Networks identity security (formerly CyberArk).
+- Internet infrastructure: Internet Society, RIPE Labs, Fastly. Networking: ipSpace.net.
+- Linux admin: Fedora Magazine, OMG! Ubuntu, AlmaLinux. Virtualization: Proxmox announcements. Backup & recovery: Backblaze.
+- Endpoint management: HTMD (Anoop C Nair), Prajwal Desai. Windows & M365 admin: Microsoft 365 Blog, Neowin.
+- Privacy & compliance: EFF Deeplinks, NIST Cybersecurity Insights. Accessibility: WebAIM, Adrian Roselli.
+- IT industry: ZDNet, TechTarget News, GeekWire, BBC Technology, Guardian Technology.
+- Left out: Wired and The Verge (paywalled), 404 Media (many articles need a sign-up), Windows Central (mostly gaming and consumer), Grafana Labs and Blocks & Files (block GitHub's runners); CISA advisories, EDUCAUSE, Akamai and Rubrik (403 to scripts); Packet Storm (TLS failure); JPCERT/CC English feed (monthly Microsoft/Adobe roundups already covered first-hand); Ars Technica security tag, Red Canary, TPGi and Claroty disclosures (no recent posts); Dragos, SUSE, Citrix, Synacktiv and SonicWall (no feed that parses).
 
 Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
 - Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.
@@ -95,7 +109,7 @@ Vendor advisories: Cisco PSIRT, Fortinet PSIRT, Palo Alto Networks, Ivanti, CERT
 - **Adobe ColdFusion bulletins** are read by the `adobe_product_bulletins` page parser from helpx.adobe.com/security/products/coldfusion.html, dated by "Originally posted". Adobe's all-products bulletin list loads with JavaScript, so it isn't used. The same parser should work for other helpx product pages.
 - Checked and left out in Oct 2026: Microsoft Security Update Guide RSS (about 300 CVE entries a day), Broadcom/VMware, Citrix and SC Media feeds (malformed XML).
 
-Checked and left out: Google Threat Intelligence and Rapid7 (feeds don't parse), NCC Group (no feed found), Reddit r/ReverseEngineering and r/netsec (Reddit rate-limits feed readers), Red Canary and Binarly (no posts in 30 days).
+Checked and left out: Google Threat Intelligence (its feed URL returns a web page), NCC Group (no feed found), Reddit r/ReverseEngineering and r/netsec (Reddit rate-limits feed readers), Red Canary and Binarly (no posts in 30 days).
 
 **Suggested sources:** each run also records which outside sites the aggregator sources link to. In `sources.json`, `"discover": "item"` counts an item's own link (Hacker News, Lobsters), and `"discover": "summary_link"` counts the first outside link in its description (Techmeme, whose item link is its own permalink). `scripts/source_discovery.py` keeps 30 days of those links per site in `data/source_candidates.json`. It skips sites already in `sources.json` and platforms like GitHub, YouTube and Wikipedia, and treats each subdomain of shared hosts (Substack, Medium, github.io and so on) as its own site. Only free-to-read sites are suggested. Known paywalled outlets (`PAYWALLED` in the script: FT, WSJ, Bloomberg, NYT, Wired, Reuters and others) are never recorded. For up to 5 other sites per run that have 3+ links, it fetches the latest linked article and drops the site if the page carries the schema.org paywall marker (`"isAccessibleForFree": false`) that publishers add for search engines. Metered sites often don't set it (Wired and The New Yorker pass this check), which is why the fixed list is needed too. A site whose article can't be fetched isn't listed, and is checked again after 14 days. Free sites then get a feed lookup: the home page's `<link rel="alternate">`, then `/feed`, `/rss.xml`, `/feed.xml`, `/atom.xml` and `/index.xml`, checking robots.txt first. Sites with no feed found are tried again after 14 days. The Sources tab lists the top 30 under **Suggested sources** with link counts, the latest linked story and the feed if one was found. Nothing is added automatically: to add a site, put it in `sources.json`. A failure here never fails the fetch.
 

@@ -147,6 +147,68 @@ def parse_adobe_product_bulletins(page, base_url):
     return items
 
 
+_MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+
+def _noon_utc(day, month_name, year):
+    """'26', 'Oct' or 'October', '2026' -> ISO noon UTC (same convention as the KEV dates); '' if unknown."""
+    month = _MONTHS.get(month_name[:3].lower())
+    if not month:
+        return ""
+    return f"{int(year):04d}-{month:02d}-{int(day):02d}T12:00:00+00:00"
+
+
+def parse_mozilla_advisories(page, base_url):
+    """Mozilla Foundation Security Advisories: <h2>Month D, YYYY</h2> followed by a list of
+    MFSA links, each carrying its impact level (critical/high/moderate/low)."""
+    items, seen = [], set()
+    for block in re.split(r"<h2>", page)[1:]:
+        date = re.match(r"\s*([A-Z][a-z]+)\s+(\d{1,2}),\s*(\d{4})\s*</h2>", block)
+        if not date:
+            continue
+        published = _noon_utc(date.group(2), date.group(1), date.group(3))
+        for href, level, mfsa, title in re.findall(
+                r'<a href="([^"]*/advisories/mfsa[^"]+)"><span class="level (\w+)">([^<]+)</span>\s*(.*?)</a>', block, re.S):
+            if href in seen:
+                continue
+            seen.add(href)
+            items.append({
+                "title": f"{_strip(mfsa)}: {_strip(title)}",
+                "url": urljoin(base_url, href),
+                "summary": f"Mozilla security advisory, impact {level}.",
+                "published": published,
+            })
+    return items
+
+
+def parse_apple_security_releases(page, base_url):
+    """Apple security releases table (support.apple.com/en-us/100100): name and link, the
+    platforms it is available for, and the release date ("26 Oct 2026"). Rows without a link
+    are releases with no published CVE entries and are skipped."""
+    items, seen = [], set()
+    for row in re.findall(r"<tr>(.*?)</tr>", page, re.S):
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+        if len(cells) < 3:
+            continue
+        link = re.search(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', cells[0], re.S)
+        date = re.search(r"(\d{1,2})\s+([A-Z][a-z]{2,8})\s+(\d{4})", _strip(cells[2]))
+        if not link or not date:
+            continue
+        url = urljoin(base_url, link.group(1))
+        if url in seen:
+            continue
+        seen.add(url)
+        available = _strip(cells[1])
+        items.append({
+            "title": f"Apple security release: {_strip(link.group(2))}",
+            "url": url,
+            "summary": f"Available for {available}." if available else "",
+            "published": _noon_utc(date.group(1), date.group(2), date.group(3)),
+        })
+    return items
+
+
 NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 NVD_PAGE_SIZE = 2000
 NVD_MAX_PAGES = 5
@@ -213,7 +275,9 @@ API_FETCHERS = {
 
 PARSERS = {
     "adobe_product_bulletins": parse_adobe_product_bulletins,
+    "apple_security_releases": parse_apple_security_releases,
     "cisa_kev": parse_cisa_kev,
+    "mozilla_advisories": parse_mozilla_advisories,
     "msrc_blog": parse_msrc_blog,
     "sans_newsbites": parse_sans_newsbites,
 }
