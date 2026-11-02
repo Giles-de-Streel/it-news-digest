@@ -117,29 +117,29 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes runner-wave { from { transform: rotate(-25deg); } to { transform: rotate(20deg); } }
 .runner .punch-pose { visibility: hidden; animation: runner-show-punch 16s step-end infinite; }
 .runner .jab { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-jab 16s linear infinite; }
-/* the second stick figure walks: same 16s cycle, but only covers the left ~60% of the track, much slower
-   than the runner. It waits at its far point until the runner passes on the way back (about 62% of the
+/* the second stick figure walks: same 16s cycle, but only covers the left ~70% of the track, slower
+   than the runner. It waits at its far point until the runner passes on the way back (about 59.5% of the
    cycle), so it trails the group in both directions */
 /* a touch of colour: each figure's torso is a thicker "shirt" stroke */
 .runner .shirt { stroke: var(--runner-shirt); stroke-width: 2.8; }
 .runner.walker .shirt { stroke: var(--walker-shirt); }
 /* the walker is ~85% of the runner's size, standing on the same ground line */
 .runner.walker { left: 46px; top: calc(50% - 9px); width: 17px; height: 22px; animation: walker-pace 16s linear infinite; }
-.runner.walker svg { width: 17px; height: 22px; animation-duration: .45s; }
+.runner.walker svg { width: 17px; height: 22px; animation-duration: .38s; }
 .runner.walker .run-pose { visibility: visible; animation: walker-show-walk 16s step-end infinite; }
 .runner.walker .walker-stand { visibility: hidden; animation: walker-show-stand 16s step-end infinite; }
-.runner.walker .leg-a, .runner.walker .arm-b { animation: walker-swing .45s ease-in-out infinite alternate; }
-.runner.walker .leg-b, .runner.walker .arm-a { animation: walker-swing .45s ease-in-out -.45s infinite alternate; }
+.runner.walker .leg-a, .runner.walker .arm-b { animation: walker-swing .38s ease-in-out infinite alternate; }
+.runner.walker .leg-b, .runner.walker .arm-a { animation: walker-swing .38s ease-in-out -.38s infinite alternate; }
 @keyframes walker-swing { from { transform: rotate(22deg); } to { transform: rotate(-22deg); } }
 @keyframes walker-pace {
   0% { left: 46px; transform: scaleX(1); }
-  56%, 61.99% { left: max(46px, calc(62% - 17px)); transform: scaleX(1); }
-  62% { left: max(46px, calc(62% - 17px)); transform: scaleX(-1); }
-  99.99% { left: 46px; transform: scaleX(-1); }
+  50%, 59.49% { left: max(46px, calc(70% - 17px)); transform: scaleX(1); }
+  59.5% { left: max(46px, calc(70% - 17px)); transform: scaleX(-1); }
+  97%, 99.99% { left: 46px; transform: scaleX(-1); }
   100% { left: 46px; transform: scaleX(1); }
 }
-@keyframes walker-show-walk { 0% { visibility: visible; } 56% { visibility: hidden; } 62% { visibility: visible; } }
-@keyframes walker-show-stand { 0% { visibility: hidden; } 56% { visibility: visible; } 62% { visibility: hidden; } }
+@keyframes walker-show-walk { 0% { visibility: visible; } 50% { visibility: hidden; } 59.5% { visibility: visible; } 97% { visibility: hidden; } }
+@keyframes walker-show-stand { 0% { visibility: hidden; } 50% { visibility: visible; } 59.5% { visibility: hidden; } 97% { visibility: visible; } }
 @keyframes runner-pace {
   0% { left: 0; transform: scaleX(1); }
   38%, 45.99% { left: calc(100% - 20px); transform: scaleX(1); }
