@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T22:01:22+00:00",
+ "generated": "2026-11-02T22:31:20+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 44,
-   "recent": 44,
+   "fetched": 45,
+   "recent": 45,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 11,
+   "recent": 0,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 70,
-   "recent": 69,
+   "fetched": 72,
+   "recent": 71,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1026,7 +1026,7 @@
   {
    "source": "Windows Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1403,7 +1403,7 @@
   },
   {
    "source": "Guardian Technology",
-   "fetched": 32,
+   "fetched": 36,
    "recent": 11,
    "error": null
   },
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -1554,6 +1554,151 @@
  ],
  "items": [
   {
+   "id": "31ad2acec345",
+   "title": "GIMP 3.2.8 Speeds Up Preferences, Improves Text Tool",
+   "url": "https://linuxiac.com/gimp-3-2-8-speeds-up-preferences-improves-text-tool/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-02T22:23:09+00:00",
+   "summary": "GIMP 3.2.8 delivers a faster Preferences dialog, improved RTL text editing, restored Offset filtering, and multiple bug fixes.",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "1e296b6248e1",
+   "title": "RHSA-2026:94100: Important: Red Hat Ansible Automation Platform 2.5 Product Security and Bug Fix Update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94100",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T22:20:11+00:00",
+   "summary": "An update is now available for Red Hat Ansible Automation Platform 2.5 Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "b214afc815b7",
+   "title": "RHSA-2026:94101: Important: Red Hat Ansible Automation Platform 2.6 Product Security and Bug Fix Update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94101",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T22:18:50+00:00",
+   "summary": "An update is now available for Red Hat Ansible Automation Platform 2.6 Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "11b81f30e7bc",
+   "title": "CVE-2026-86596: The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86596",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T22:17:23.490000+00:00",
+   "summary": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, < = 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal '",
+   "kind": "cve",
+   "cve": "CVE-2026-86596",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86596",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5670a54e40b0",
+   "title": "When AI Agents Go Rogue, Cohesity’s CEO Wants Recovery To Take Center Stage",
+   "url": "https://www.crn.com/news/ai/2026/when-ai-agents-go-rogue-cohesity-s-poonen-wants-recovery-to-take-center-stage",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-02T22:15:00+00:00",
+   "summary": "Cohesity CEO Sanjay Poonen outlines AI data security, cybersecurity resilience and Maestro plans for faster recovery and channel partner opportunities.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "39f8d0ae438d",
+   "title": "Data center operators might pay $55 billion under Senate bill",
+   "url": "https://www.techtarget.com/news/data-center-operators-might-pay-55-billion-under-senate-bill/873521/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T22:15:00+00:00",
+   "summary": "Senate bill could generate $55 billion in data center transmission charges over 10 years, changing how large computing loads pay for grid expansion.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "f5f8f8d470b7",
+   "title": "Sources: institutional investors told Anthropic that its IPO valuation should be around $1.5T to $1.6T, down from estimates of $2T, citing a tech stock selloff (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261102/p42#a261102p42",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T22:10:01+00:00",
+   "summary": "Wall Street Journal : Sources: institutional investors told Anthropic that its IPO valuation should be around $1.5T to $1.6T, down from estimates of $2T, citing a tech stock selloff — Institutional investors who plan to buy shares in IPO show concern following a selloff in tech stocks",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4643a8c2e388",
+   "title": "Former Xbox COO denies being fired for policy violations",
+   "url": "https://www.neowin.net/news/former-xbox-coo-denies-being-fired-for-policy-violations/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-02T22:10:01+00:00",
+   "summary": "Helen Chiang has broken her silence following her sudden Xbox exit, pushing back against allegations and hinting that there's more to the story.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f335f234fe70",
+   "title": "Client-side threat detection: how Scareware blocker uncovered malicious notification abuse",
+   "url": "https://blogs.windows.com/msedgedev/2026/11/02/client-side-threat-detection-how-scareware-blocker-uncovered-malicious-notification-abuse/",
+   "source": "Windows Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-02T22:05:53+00:00",
+   "summary": "Website notifications were designed to help us stay informed. They can alert you to a new message, remind you of an upcoming event, or share an important update from a service you trust. But scammers are turning this useful browser feature into a pe",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1414651aa2e0",
+   "title": "Apple reports Q4 revenue from Services, which includes the App Store, Apple TV, Apple Music, iCloud, and more, grew 10% YoY to $31.57B, vs. $31.58B est. (Loree Seitz/The Wrap)",
+   "url": "https://www.techmeme.com/261102/p41#a261102p41",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T22:00:01+00:00",
+   "summary": "Loree Seitz / The Wrap : Apple reports Q4 revenue from Services, which includes the App Store, Apple TV, Apple Music, iCloud, and more, grew 10% YoY to $31.57B, vs. $31.58B est. — The tech conglomerate beat Wall Street expectations with revenue hitting $114.48 billion — Getting your Trinity Audio player ready...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "34771ad5d752",
    "title": "Google shuts down global botnet running on certified Android devices",
    "url": "https://cyberscoop.com/google-disrupts-xcpe-botnet-videostrong-android-devices/",
@@ -1613,6 +1758,19 @@
      "version": "4.0",
      "scored_by": "AMZN"
     }
+   ]
+  },
+  {
+   "id": "3054ec89b268",
+   "title": "Can't fish Ethernet? Use \"invisible\" fiber instead",
+   "url": "https://momandpop.network/2026/11/02/cant-fish-ethernet-use-invisible-fiber-instead/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T21:42:18+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1707,7 +1865,14 @@
    "source_category": "IT industry",
    "published": "2026-11-02T21:30:36+00:00",
    "summary": "Palantir's commercial revenue jumped 148% to $984 million, surpassing government revenue of $953 million.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c292043bc86e",
+     "source": "SiliconANGLE",
+     "title": "Palantir beats Q3 forecasts as US commercial revenue overtakes government for first time",
+     "url": "https://siliconangle.com/2026/11/02/palantir-beats-q3-forecasts-as-us-commercial-revenue-overtakes-government-for-first-time/"
+    }
+   ],
    "topics": [
     "Policy & regulation"
    ]
@@ -2103,7 +2268,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-02T20:00:01+00:00",
    "summary": "Apple is reportedly working on a robot that can move around your home and help with tasks, but its launch has been delayed due to internal issues.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "74ba6465fa67",
+     "source": "Slashdot",
+     "title": "Apple HomeView Ultra, Drone and Laundry-Folding Robot Reportedly In Development",
+     "url": "https://hardware.slashdot.org/story/26/11/02/2033238/apple-homeview-ultra-drone-and-laundry-folding-robot-reportedly-in-development?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -2540,6 +2712,19 @@
    "source_category": "Science & space",
    "published": "2026-11-02T18:50:42+00:00",
    "summary": "The four-member Crew Health and Performance Exploration Analog (CHAPEA) crew poses outside for the first time in more than a year following the end of their simulated Mars journey on Oct. 31, 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f218513416a6",
+   "title": "Ballot Rejections Have Soared in Rural Counties as USPS Reduces Mail Service",
+   "url": "https://www.propublica.org/article/mail-ballot-delays-postal-service-midterms",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T18:48:00+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -4549,6 +4734,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "b59506362ebe",
+   "title": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-wait-block-cases-tool-events/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T16:00:00+00:00",
+   "summary": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block, giving you more control over how your customer experience flows react to real-time data changes.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -10777,7 +10975,14 @@
    "source_category": "IT industry",
    "published": "2026-11-02T02:58:53+00:00",
    "summary": "OpenAI CEO Sam Altman made an unannounced visit to South Korea over the weekend, meeting with Samsung executives and reportedly SK Group executives.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0c57bf4ca9ce",
+     "source": "Data Center Dynamics",
+     "title": "OpenAI CEO Sam Altman meets with Samsung execs as memory chip shortage deepens",
+     "url": "https://www.datacenterdynamics.com/en/news/openai-ceo-sam-altman-meets-with-samsung-execs-as-memory-chip-shortage-deepens/"
+    }
+   ],
    "topics": [
     "AI",
     "Hardware"
@@ -11200,6 +11405,19 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "39a4bd855516",
+   "title": "When Modernization Breaks Working Code: A Study of LLMs on Legacy PHP",
+   "url": "https://arxiv.org/abs/2610.40269",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-01T21:22:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
