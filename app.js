@@ -675,3 +675,37 @@
 
   init().catch((e) => { $("#news").replaceChildren(el("p", { class: "empty", text: `Couldn't load data: ${e.message}` })); });
 })();
+
+// Header scenery: replace the fixed extra trees with a fresh random set on every page load.
+// The middle tree (no inline style) stays put: the dog stops there.
+(() => {
+  "use strict";
+  const track = document.querySelector(".runner-track");
+  const home = track && track.querySelector(".tree:not([style])");
+  if (!track || !home) return;
+  const SVG = {
+    conifer: '<svg viewBox="0 0 12 24"><rect class="trunk" x="5.2" y="19" width="1.6" height="5" rx=".4"/><path class="leaves" d="M6 0 9.5 6.5H7.8l3 5H8.9L12 19.5H0l3.1-8H1.2l3-5H2.5z"/></svg>',
+    round: '<svg viewBox="0 0 16 22"><rect class="trunk" x="7" y="13" width="2" height="9" rx=".6"/><path class="leaves" d="M8 1.5a4.2 4.2 0 0 1 4 3 3.6 3.6 0 0 1 2.2 6 3.4 3.4 0 0 1-3.4 4H5.2a3.4 3.4 0 0 1-3.4-4 3.6 3.6 0 0 1 2.2-6 4.2 4.2 0 0 1 4-3z"/></svg>',
+  };
+  const rand = (lo, hi) => lo + Math.random() * (hi - lo);
+  const count = 9 + Math.floor(Math.random() * 6); // 9-14 trees
+  const xs = [];
+  for (let tries = 0; xs.length < count && tries < 500; tries++) {
+    const x = rand(2, 98);
+    // keep clear of the middle tree, and don't stack two trees on the same spot
+    if (Math.abs(x - 50) < 3.5 || xs.some((o) => Math.abs(o - x) < 2.2)) continue;
+    xs.push(x);
+  }
+  track.querySelectorAll(".tree[style]").forEach((t) => t.remove());
+  for (const x of xs) {
+    const conifer = Math.random() < 0.5;
+    const tint = Math.random();
+    const cls = ["tree", conifer ? "conifer" : !conifer && tint < 0.18 ? "yellow" : !conifer && tint < 0.36 ? "brown" : "", Math.random() < 0.4 ? "far" : ""];
+    const t = document.createElement("div");
+    t.className = cls.filter(Boolean).join(" ");
+    t.style.setProperty("--x", `${x.toFixed(1)}%`);
+    t.style.setProperty("--h", `${Math.round(rand(12, 26))}px`);
+    t.innerHTML = conifer ? SVG.conifer : SVG.round; // constant markup, no feed data
+    track.insertBefore(t, home);
+  }
+})();
