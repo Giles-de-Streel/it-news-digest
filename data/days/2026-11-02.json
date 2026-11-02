@@ -1,18 +1,18 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T19:01:09+00:00",
+ "generated": "2026-11-02T19:31:33+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 12,
+   "recent": 9,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 38,
-   "recent": 38,
+   "fetched": 41,
+   "recent": 41,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 37,
+   "recent": 38,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 71,
+   "fetched": 70,
    "recent": 69,
    "error": null
   },
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -923,8 +923,8 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1844,
-   "recent": 1,
+   "fetched": 1845,
+   "recent": 3,
    "error": null
   },
   {
@@ -1188,7 +1188,7 @@
   {
    "source": "Datadog Blog",
    "fetched": 97,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1235,8 +1235,8 @@
   },
   {
    "source": "Chainguard Unchained",
-   "fetched": 618,
-   "recent": 0,
+   "fetched": 619,
+   "recent": 1,
    "error": null
   },
   {
@@ -1325,8 +1325,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 36,
-   "recent": 2,
+   "fetched": 37,
+   "recent": 3,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1343,
-   "recent": 2,
+   "fetched": 1344,
+   "recent": 3,
    "error": null
   },
   {
@@ -1554,6 +1554,215 @@
  ],
  "items": [
   {
+   "id": "83e07d76321e",
+   "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T19:19:50+00:00",
+   "summary": "Bulletin ID: 2026-163-AWS Publication Date: 11/02/2026 11:00 AM PST Description: aidlc-traceability is an open source command-line tool, formerly published in the awslabs/aidlc-workflows repository, that generates traceability-matrix reports from a project's AI-DLC artifact files.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-120497",
+     "score": 5.0,
+     "severity": "Medium",
+     "version": "3.1",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "baf9377b8f2b",
+   "title": "CVE-2026-105606: Joomla Extension - joomlaboat.com - Unauthenticated arbitrary file upload in Custom Tables < 3.7.8 - An…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105606",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T19:17:50.330000+00:00",
+   "summary": "Joomla Extension - joomlaboat.com - Unauthenticated arbitrary file upload in Custom Tables < 3.7.8 - An unauthenticated attacker can upload a polyglot file with an attacker-controlled extension to the web-accessible tmp directory of any Joomla site that exposes a public Custom Tables submission form, and the stored…",
+   "kind": "cve",
+   "cve": "CVE-2026-105606",
+   "cvss": {
+    "score": 9.5,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-105606",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Accessibility",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "122c1ad17029",
+   "title": "CVE-2026-105604: Joomla Extension - dj-extensions.com - Unauthenticated SQL injection in DJ-Classifieds < 3.11.3 - The Joomla…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105604",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T19:17:49.997000+00:00",
+   "summary": "Joomla Extension - dj-extensions.com - Unauthenticated SQL injection in DJ-Classifieds < 3.11.3 - The Joomla extension DJ-Classifieds is vulnerable to an unauthenticated SQL injection vector in the frontend search.",
+   "kind": "cve",
+   "cve": "CVE-2026-105604",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-105604",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c0d58878cc35",
+   "title": "CVE-2026-105603: Joomla Extension - dj-extensions.com - Authenticated arbitrary file upload in DJ-Classifieds < 3.11.3 - The…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105603",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T19:17:49.823000+00:00",
+   "summary": "Joomla Extension - dj-extensions.com - Authenticated arbitrary file upload in DJ-Classifieds < 3.11.3 - The Joomla extension DJ-Classifieds is vulnerable to an unprivileged file upload, leading to full RCE.",
+   "kind": "cve",
+   "cve": "CVE-2026-105603",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-105603",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4889af2eff79",
+   "title": "NB598: Fortinet, Cato Roll Out Security Controls for AI; Intel Buys Quantum Software Startup",
+   "url": "https://packetpushers.net/podcasts/network-break/nb598-fortinet-cato-roll-out-security-controls-for-ai-intel-buys-quantum-software-startup/",
+   "source": "Packet Pushers",
+   "source_category": "Networking",
+   "published": "2026-11-02T19:15:56+00:00",
+   "summary": "Take a Network Break! Our Red Alert sounds for active exploits against an Arista VeloCloud Orchestrator vulnerability. In the news, Fortinet launches new cloud-based capabilities to spot and stop unwanted AI agent actions, Cato Networks announces new software to provide visibility and control over AI on endpoints, and…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "3f0b90e480cc",
+   "title": "OpenAI considers rebranding data centers to 'AI compute campuses\" as data center backlash intensifies — company reportedly sees 2028 presidential election becoming an 'AI issue'",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-considers-rebranding-data-centers-to-ai-compute-campuses-as-data-center-backlash-intensifies-company-reportedly-sees-2028-presidential-election-becoming-an-ai-issue",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-02T19:15:31+00:00",
+   "summary": "OpenAI expects AI to become a major issue in the 2028 presidential election and is preparing a policy and public relations push after the U.S. midterm elections. The company is also promoting the term “AI compute campuses” for its data centers as it seeks to address concerns over electricity demand, water consumption,…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "380cd198e224",
+   "title": "Memo: Linux distribution vendor SUSE is laying off ~10% of its staff, saying \"automation and AI are fundamentally shifting how software companies operate\" (Liam Proven/The Register)",
+   "url": "https://www.techmeme.com/261102/p35#a261102p35",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T19:15:01+00:00",
+   "summary": "Liam Proven / The Register : Memo: Linux distribution vendor SUSE is laying off ~10% of its staff, saying “automation and AI are fundamentally shifting how software companies operate” — ‘Modern tooling is already changing our daily workflows’ says CEO at open source biz — One in ten employees at SUSE …",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "b7bbacab1e3b",
+   "title": "N4N068: Meter’s Networking Grants Program (Sponsored)",
+   "url": "https://packetpushers.net/podcasts/n-is-for-networking/n4n068-meters-networking-grants-program-sponsored/",
+   "source": "Packet Pushers",
+   "source_category": "Networking",
+   "published": "2026-11-02T19:04:21+00:00",
+   "summary": "Networking vendor Meter has recently launched their brand new Networking Grants program, putting money on the table to help you in your learning journey. In this sponsored episode, Matt Heim, Head of Partner Enablement at Meter, joins Ethan and Holly to explain why Meter created the program, how it works, who is…",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "514823f12064",
+   "title": "Your AI coding agent now runs on a budget — and it can cut you off mid-task",
+   "url": "https://thenewstack.io/22842541cognition-devin-hierarchical-budgets/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-02T19:03:38+00:00",
+   "summary": "The days of pointing an AI agent at a backlog and letting it burn through compute without much oversight may",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "c67a1f34b83e",
+   "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+   "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-02T19:00:45+00:00",
+   "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "6199bcba82a7",
+   "title": "The New York Times Sues Brave Web Browser For AI Scraping, Bypassing Paywalls",
+   "url": "https://yro.slashdot.org/story/26/11/02/1829212/the-new-york-times-sues-brave-web-browser-for-ai-scraping-bypassing-paywalls?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-02T19:00:00+00:00",
+   "summary": "The New York Times and several other publishers have sued (PDF) Brave Software, accusing the browser maker of scraping their websites without permission and helping users bypass paywalls.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "88696fa8b800",
+   "title": "Safran Turbogenerator to Power EL9 Hybrid-Electric STOL Aircraft",
+   "url": "https://www.electronicdesign.com/markets/automotive/news/55415948/electronic-design-safran-turbogenerator-to-power-el9-hybrid-electric-stol-aircraft",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-02T19:00:00+00:00",
+   "summary": "Electra's Ultra Short electric aircraft will employ a range-extending powerplant to support hybrid-powered flight of 500+ miles.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "0f8358d256af",
    "title": "Canada’s Quantum Sector Sets Sights on Commercialization",
    "url": "https://www.eetimes.com/canadas-quantum-sector-sets-sights-on-commercialization/",
@@ -1564,6 +1773,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c931d5a15c07",
+   "title": "Egoless Mathematics in the AI Era",
+   "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T18:54:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1580,6 +1802,45 @@
    ]
   },
   {
+   "id": "a8fbf14c9df9",
+   "title": "How a Starbucks drive-thru ‘fast pass’ could actually work",
+   "url": "https://www.geekwire.com/2026/how-a-starbucks-drive-thru-fast-pass-could-actually-work/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-02T18:46:45+00:00",
+   "summary": "Starbucks CEO Brian Niccol says the company’s drive-thru “fast pass” would use the Starbucks app to recognize customers as they pull up, bring up their usual order and handle payment. Available technology could make the implementation less sci-fi than some reports suggested. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8f2869a54f9f",
+   "title": "Amazon RDS now supports per snapshot billing",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T18:43:00+00:00",
+   "summary": "Starting today, Amazon RDS supports per snapshot billing for Amazon RDS snapshots. Per snapshot billing allows you to get the cost of each individual snapshot. Previously, RDS snapshot charges were aggregated at the database instance level on the Cost and Usage report as well as the Cost Explorer.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "6aba332505ce",
+   "title": "SOML – A Config Format for Humans",
+   "url": "https://github.com/soml-lang/soml",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T18:42:04+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "d4c979e7a08c",
    "title": "aerynOS 2026.11 Is Out with GNOME 51, KDE Plasma 6.8, COSMIC 1.11, and Budgie 10.10",
    "url": "https://9to5linux.com/aerynos-2026-11-is-out-with-gnome-51-kde-plasma-6-8-cosmic-1-11-and-budgie-10-10",
@@ -1590,6 +1851,20 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "63f6859190e5",
+   "title": "Amazon Quick on desktop now uses your organization's existing Amazon Quick sign-in",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-desktop-organization-sign-in/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T18:36:00+00:00",
+   "summary": "For organizations that use Amazon Quick, the desktop application now signs users in with the same sign-in method the organization already uses for Quick on the web. Administrators no longer need to register an OIDC application in their identity provider or set up separate desktop sign-in before users can get started.",
+   "also_covered_by": [],
+   "topics": [
+    "System administration",
+    "Identity & access"
    ]
   },
   {
@@ -1860,6 +2135,19 @@
    ]
   },
   {
+   "id": "b2806e00753f",
+   "title": "Skill to Create Product Videos",
+   "url": "https://github.com/aaitor/skill-video-studio",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T18:10:39+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "fcc5a7b5533c",
    "title": "[In preview] Public Preview: MCP gateway for Application Gateway for Containers",
    "url": "https://azure.microsoft.com/updates?id=576388",
@@ -2118,6 +2406,19 @@
     "Linux & open source",
     "Backup & recovery",
     "Accessibility"
+   ]
+  },
+  {
+   "id": "980cbe08fd21",
+   "title": "Making Peace with the Projective Plane",
+   "url": "https://www.johndcook.com/blog/2026/11/02/projective-plane/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T17:47:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4884,6 +5185,12 @@
      "source": "BleepingComputer",
      "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
      "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
+    },
+    {
+     "id": "a8390c4ba861",
+     "source": "Check Point Research",
+     "title": "2nd November – Threat Intelligence Report",
+     "url": "https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/"
     }
    ],
    "topics": [
@@ -9777,6 +10084,47 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "27137a8c5004",
+   "title": "Manage and deploy LLM prompts with Datadog",
+   "url": "https://www.datadoghq.com/blog/agent-observability-prompt-management/",
+   "source": "Datadog Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "Manage, version, deploy, and monitor LLM prompts independently of application releases with Prompt Management in Datadog Agent Observability.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "0826b2553564",
+   "title": "Building Guarded Entrypoint for Chainguard Containers",
+   "url": "https://www.chainguard.dev/unchained/building-guarded-entrypoint-for-chainguard-containers",
+   "source": "Chainguard Unchained",
+   "source_category": "Supply chain security",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "Configure container startup logic without rebuilding images. See how Chainguard Guarded Entrypoint keeps your containers secure and verifiable.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "598c6194c0d3",
+   "title": "Qodo builds context into AI code review with Codex",
+   "url": "https://openai.com/index/qodo-codex-plugin",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T00:00:00+00:00",
+   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
    ]
   },
   {
