@@ -19,6 +19,7 @@
   --tree-green-2: #4c9a2a; --tree-green-3: #5f7f3a;
   --pup: #8b5a2b;
   --runner: #0d0f12; --runner-shirt: #1e5fa8; --walker-shirt: #b5532a;
+  --dust-1: #c9ced6; --dust-2: #8a929e; --dust-3: #f1f3f6;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -45,6 +46,7 @@
     --tree-green-2: #7fcf5a; --tree-green-3: #a3bd6e;
     --pup: #c08a5a;
     --runner: #f2f4f7; --runner-shirt: #6aa6e8; --walker-shirt: #e08a5e;
+    --dust-1: #6b7380; --dust-2: #a3abb7; --dust-3: #3a404a;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -189,6 +191,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .pow.pow-shake { left: 0; width: 22px; height: 22px; display: none; animation-name: pow-shake; }
 .pow.pow-wave { left: calc(100% - 8px); top: calc(50% - 9.5px); width: 16px; height: 16px; display: none; animation-name: pow-wave; }
 @media (min-width: 701px) { .pow.pow-shake { display: block; } }
+/* the shake bursts are grey "dust" rather than the punch's fiery colours */
+.pow.pow-shake .pow-out { fill: var(--dust-1); stroke: var(--dust-2); }
+.pow.pow-shake .pow-in { fill: var(--dust-2); }
+.pow.pow-shake .pow-core { fill: var(--dust-3); }
 @media (max-width: 700px) { .pow.pow-wave { display: block; } }
 @keyframes pow-shake {
   0%, 38.5% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
