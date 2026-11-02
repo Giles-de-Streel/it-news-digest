@@ -611,16 +611,14 @@
   }
 
   // The header goes back to the start: today's news as a list, all topics and sources, no search
-  async function goHome(e) {
+  // The IT NEWS logo is "home": a full page reload (fresh data, and a new random set of header trees)
+  // on today's News tab with filters cleared. Ctrl/Cmd/Shift/middle-click keep the browser's default.
+  function goHome(e) {
+    if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
-    Object.assign(state, { topic: "", source: "", query: "", layout: "list" });
+    store.set(LS_VIEW, "news");
     store.set(LS_LAYOUT, "list");
-    $("#search").value = "";
-    syncUrl(true);
-    const latest = state.days[0]?.date;
-    if (latest && state.day !== latest) await loadDay(latest);
-    populateFilters();
-    setView("news");
+    location.assign(location.pathname); // drops ?filters and #tab
   }
 
   // ---------- events ----------
