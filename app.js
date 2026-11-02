@@ -711,4 +711,39 @@
     t.innerHTML = conifer ? SVG.conifer : SVG.round; // constant markup, no feed data
     track.insertBefore(t, home);
   }
+
+  // The pup picks one of these trees to pee on while running back left (the first dog uses the middle
+  // tree on the way right). Prefer trees that stay visible on phones and aren't too near either end.
+  const pup = track.querySelector(".pet.pup");
+  const trees = [...track.querySelectorAll(".tree[style]")].map((t) => ({ t, x: parseFloat(t.style.getPropertyValue("--x")) }));
+  if (!pup || !trees.length) return;
+  const pick = (list) => list[Math.floor(Math.random() * list.length)];
+  const mid = trees.filter((o) => o.x >= 12 && o.x <= 88);
+  const pool = mid.filter((o) => !o.t.classList.contains("far"));
+  const tree = pick(pool.length ? pool : mid.length ? mid : trees);
+  tree.t.classList.remove("far"); // its tree must be there on phones too
+  const x = Math.min(88, Math.max(12, tree.x));
+  // runner turns at 46% and is back at the left by 86%: the pup runs left 46-84% with a 6% pee stop,
+  // split so it keeps the same speed before and after the stop
+  const a = +(46 + 32 * (100 - x) / 100).toFixed(2);
+  const b = +(a + 6).toFixed(2);
+  const spot = `calc(${x}% - 12px)`; // rear end (facing left) over the trunk
+  const nods = (from, to) => { let s = ""; for (let p = from, up = true; p < to; p += 0.4, up = !up) s += `${p.toFixed(1)}% { transform: rotate(${up ? 62 : 72}deg); } `; return s; };
+  const css = `
+@keyframes pup-pace {
+  0% { left: 4px; transform: scaleX(1); }
+  36%, 45.99% { left: calc(100% - 60px); transform: scaleX(1); }
+  46% { left: calc(100% - 60px); transform: scaleX(-1); }
+  ${a}%, ${b}% { left: ${spot}; transform: scaleX(-1); }
+  84%, 99.99% { left: 4px; transform: scaleX(-1); }
+  100% { left: 4px; transform: scaleX(1); }
+}
+@keyframes pup-show-run { 0% { visibility: visible; } 36% { visibility: hidden; } 46% { visibility: visible; } ${a}% { visibility: hidden; } ${b}% { visibility: visible; } 84% { visibility: hidden; } }
+@keyframes pup-show-stand { 0% { visibility: hidden; } 36% { visibility: visible; } 46% { visibility: hidden; } ${a}% { visibility: visible; } ${a + 1}% { visibility: hidden; } ${b - 0.5}% { visibility: visible; } ${b}% { visibility: hidden; } 84% { visibility: visible; } }
+@keyframes pup-show-pee { 0% { visibility: hidden; } ${a + 1}% { visibility: visible; } ${b - 0.5}% { visibility: hidden; } }
+@keyframes pup-sniff { 0%, 36.8% { transform: rotate(0deg); } ${nods(37, 44.6)} 45%, 85.8% { transform: rotate(0deg); } ${nods(86, 98)} 98.6%, 100% { transform: rotate(0deg); } }`;
+  const style = document.createElement("style");
+  style.textContent = css;
+  document.head.appendChild(style);
+  pup.classList.add("ready");
 })();

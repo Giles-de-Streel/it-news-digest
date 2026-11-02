@@ -17,6 +17,7 @@
   --heat-1: #1d7a3e; --heat-1-soft: #e2f2e7;
   --tree-conifer: #145a3a; --tree-yellow: #d9a514; --tree-brown: #9a5b2c;
   --tree-green-2: #4c9a2a; --tree-green-3: #5f7f3a;
+  --pup: #8b5a2b;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -41,6 +42,7 @@
     --heat-1: #5cc283; --heat-1-soft: #17301f;
     --tree-conifer: #3e9e72; --tree-yellow: #e8c04a; --tree-brown: #c58250;
     --tree-green-2: #7fcf5a; --tree-green-3: #a3bd6e;
+    --pup: #c08a5a;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -185,6 +187,17 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @media (max-width: 700px) { .tree.far { display: none; } }
 .pet .pet-pee { visibility: hidden; animation: pet-show-pee 16s step-end -15.5s infinite; }
 .pet .stream { stroke: #e3b505; stroke-width: 1.2; stroke-dasharray: 1.6 1.2; animation: pet-stream .25s linear infinite; }
+/* the second, smaller brown dog: same 16s cycle as the runner, no delay. Its keyframes (pup-*) are
+   written by app.js on each load, because it stops to pee on one of that load's random trees on the
+   way back left. Hidden until the script has set it up. */
+.pet.pup { display: none; top: calc(50% + 2.3px); left: 4px; width: 13px; height: 8.7px; color: var(--pup);
+           animation: pup-pace 16s linear infinite; }
+.pet.pup.ready { display: block; }
+.pet.pup svg { width: 13px; height: 8.7px; animation: none; }
+.pet.pup .pet-head { animation: pup-sniff 16s linear infinite; }
+.pet.pup .pet-run { animation: pup-show-run 16s step-end infinite; }
+.pet.pup .pet-stand { animation: pup-show-stand 16s step-end infinite; }
+.pet.pup .pet-pee { animation: pup-show-pee 16s step-end infinite; }
 @keyframes pet-show-pee { 0% { visibility: hidden; } 19.5% { visibility: visible; } 24% { visibility: hidden; } }
 @keyframes pet-stream { to { stroke-dashoffset: -2.8; } }
 @keyframes pet-pace {
