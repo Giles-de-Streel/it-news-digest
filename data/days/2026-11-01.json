@@ -1,18 +1,18 @@
 {
  "date": "2026-11-01",
- "generated": "2026-11-02T00:00:49+00:00",
+ "generated": "2026-11-02T01:00:54+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 23,
-   "recent": 23,
+   "fetched": 25,
+   "recent": 25,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 28,
+   "recent": 25,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "SQLServerCentral",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -600,7 +600,7 @@
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 19,
+   "fetched": 16,
    "recent": 5,
    "error": null
   },
@@ -1080,7 +1080,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1241,6 +1241,120 @@
   }
  ],
  "items": [
+  {
+   "id": "c71689403ee9",
+   "title": "Stack Overflow: 'Reports of Our Death are Greatly Exaggerated'",
+   "url": "https://developers.slashdot.org/story/26/11/02/0026255/stack-overflow-reports-of-our-death-are-greatly-exaggerated?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-02T00:34:00+00:00",
+   "summary": "Stack Overflow's senior VP of community says predictions of their demise \"make for compelling headlines, but they confuse a change in how people access knowledge with the disappearance of the knowledge — and the company — behind it. AI has changed developer behavior.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "3b78205f5baa",
+   "title": "CVE-2026-120277: A security vulnerability has been detected in WAVLINK WN536AX6-A V260507_2.0.0.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120277",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T00:18:10.810000+00:00",
+   "summary": "A security vulnerability has been detected in WAVLINK WN536AX6-A V260507_2.0.0. This issue affects the function sub_41a1d8 of the file /bin/ioos of the component WireGuard CLI Group Handler. Such manipulation of the argument group_name leads to os command injection. It is possible to launch the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120277",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120277",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0b80e7a60404",
+   "title": "CVE-2026-120276: A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120276",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-02T00:18:09.897000+00:00",
+   "summary": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os command injection. It is possible to initiate the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-120276",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120276",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "1c0ff372f368",
+   "title": "Kernel prepatch 7.4-rc1",
+   "url": "https://lwn.net/Articles/1104654/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-02T00:17:08+00:00",
+   "summary": "The 7.4-rc1 kernel prepatch is out, and the merge window is closed for this development cycle. This is a *BIG* merge window. I think the reason is the by now obvious one, but I'm actually taking it as a good sign: I'm *much* happier with the flood of AI triggered work going into the merge window than it showing up…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "4c732df23c06",
+   "title": "A look at Binance's efforts to contain the hack, including creating a global war room of ~100 people, coordinating with other crypto firms and the FBI, and more (Bloomberg)",
+   "url": "https://www.techmeme.com/261101/p19#a261101p19",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-02T00:15:01+00:00",
+   "summary": "Bloomberg : A look at Binance's efforts to contain the hack, including creating a global war room of ~100 people, coordinating with other crypto firms and the FBI, and more — The biggest crypto hack in history began with a rehearsal. — As trading hummed along on Binance at midweek …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bdfd26cd2d8d",
+   "title": "What I learned after a weekend of AI troubleshooting gone wrong (8 key lessons)",
+   "url": "https://www.sqlservercentral.com/articles/what-i-learned-after-a-weekend-of-ai-troubleshooting-gone-wrong-8-key-lessons",
+   "source": "SQLServerCentral",
+   "source_category": "Databases",
+   "published": "2026-11-02T00:00:34+00:00",
+   "summary": "Grant Fritchey walks through a real troubleshooting saga – using Wine, a shim DLL, a misconfigured registry entry, and a lot of trial and error – to get a BridgeCom Maverick radio’s Windows CPS running on Linux Mint.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "f7d5dcc6774e",
+   "title": "Troubleshooting Slow Queries That Already Have an Index",
+   "url": "https://www.sqlservercentral.com/articles/troubleshooting-slow-queries-that-already-have-an-index",
+   "source": "SQLServerCentral",
+   "source_category": "Databases",
+   "published": "2026-11-02T00:00:05+00:00",
+   "summary": "This article looks at some common query patterns that cause performance issues and provides some guidance on how to fix them.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "8ebc1522c0ba",
    "title": "Brainchip AKD1500 Raspberry Pi 5 Dev Kit enables users to quickly experiment with event-based neuromorphic AI",
