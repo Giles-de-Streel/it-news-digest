@@ -1,6 +1,6 @@
 # IT News
 
-A daily list of IT and security news from 206 sources, refreshed every hour, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 205 sources, refreshed every hour, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
 
 Live page: https://giles-de-streel.github.io/it-news-digest/
 
@@ -65,7 +65,7 @@ Database sources (SQL Server Tech Community, Microsoft SQL Server Blog, Azure SQ
 ICS / OT sources (Industrial Cyber, Siemens ProductCERT advisories, Waterfall Security) feed an **ICS / OT** topic; ICS stories from SecurityWeek already come through its main feed. Embedded sources (Embedded.com, Embedded Computing Design, Electronic Design, EE Times, CNX Software, Hackaday, Zephyr Project) feed an **Embedded & IoT** topic. Checked and left out: CISA ICS advisories, Armis and Eclypsium (403 to scripts; ICS KEV entries still arrive through the CISA KEV source), Dragos, Claroty, Nozomi, Control Global, Automation World and SANS ICS (no working feed found), Memfault Interrupt (no posts in 30 days).
 
 Wider IT coverage (Oct 2026), with new topics **Higher education**, **Endpoint management**, **Backup & recovery**, **Supply chain security** and **Accessibility**:
-- Higher ed: Campus Technology, Inside Higher Ed.
+- Higher ed: Campus Technology.
 - Endpoint management: Microsoft Intune Blog, Intune Customer Success, Jamf Blog, Patch My PC.
 - Virtualization: Virtualization Review, William Lam, Yellow Bricks, Nutanix.dev.
 - Cloud: AWS What's New, AWS News Blog, Azure Updates, Azure Blog, Google Cloud Blog.
