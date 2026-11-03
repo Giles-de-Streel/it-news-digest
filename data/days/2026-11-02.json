@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-02T23:32:19+00:00",
+ "generated": "2026-11-03T00:01:20+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 43,
-   "recent": 43,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 9,
+   "recent": 7,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -486,7 +486,7 @@
   {
    "source": "This Week in 4n6",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -654,13 +654,13 @@
   {
    "source": "NCSC UK",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 72,
-   "recent": 71,
+   "fetched": 77,
+   "recent": 76,
    "error": null
   },
   {
@@ -1368,7 +1368,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1536,13 +1536,13 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
    "source": "OpenAI News",
-   "fetched": 1344,
-   "recent": 3,
+   "fetched": 1345,
+   "recent": 4,
    "error": null
   },
   {
@@ -1553,6 +1553,48 @@
   }
  ],
  "items": [
+  {
+   "id": "0a9820553e19",
+   "title": "Jim Cramer says lower oil prices are giving stocks a boost. Can it last?",
+   "url": "https://www.cnbc.com/2026/11/02/jim-cramer-oil-yields-non-tech-stocks.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-02T23:36:53+00:00",
+   "summary": "CNBC’s Jim Cramer said falling oil prices and interest rates are fueling a rally.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f9d0f33f6c2c",
+   "title": "Rack-scale AI: How Dell and AMD are building infrastructure",
+   "url": "https://siliconangle.com/2026/11/02/rack-scale-ai-platforms-amd-dell-dellaidataplatform/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-02T23:33:24+00:00",
+   "summary": "Dell Technologies Inc. and its partner Advanced Micro Devices Inc. face similar competitive pressures. Both tech powerhouses operate in a business climate where success is now measured across central processing units, graphics processing units, rack-scale systems, memory capacity, network bandwidth and tokens per…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a8d867f74d3d",
+   "title": "RHSA-2026:94109: Critical: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94109",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T23:24:00+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
   {
    "id": "c926841ed7e8",
    "title": "Anthropic’s quarterly revenue jumps to $17B, losses grow ahead of IPO",
@@ -1657,6 +1699,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "e7e01771f8c3",
+   "title": "RHSA-2026:93980: Important: Red Hat Build of Apache Camel 4.18 for Quarkus 3.33 update is now available",
+   "url": "https://access.redhat.com/errata/RHSA-2026:93980",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T22:41:47+00:00",
+   "summary": "An update for Red Hat Build of Apache Camel 4.18 for Quarkus 3.33 update is now available (Red Hat build of Quarkus 3.33.4.SP2). The purpose of this text-only errata is to inform you about the enhancements that improve your developer experience and ensure the security and stability of your products.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -1942,6 +1998,19 @@
      "version": "4.0",
      "scored_by": "AMZN"
     }
+   ]
+  },
+  {
+   "id": "04e463b9a2ea",
+   "title": "SLAC researchers find proof of altermagnetism, a new magnetic phase",
+   "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-02T21:42:25+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2320,6 +2389,19 @@
    ]
   },
   {
+   "id": "a325c9781242",
+   "title": "An Introduction to Bε-trees and Write-Optimization",
+   "url": "https://www.usenix.org/publications/login/oct15/bender",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T20:26:38+00:00",
+   "summary": "This is the underlying tech of the recently posted GEFS: https://lobste.rs/s/zjjvbo/work_on_gefs_good_enough_file_system_for Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "dbf648d559a6",
    "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
@@ -2427,6 +2509,19 @@
     "Cloud & infrastructure",
     "AI",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "c391ecff72eb",
+   "title": "RHSA-2026:94063: Important: Satellite 6 Client Update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94063",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T20:07:21+00:00",
+   "summary": "Updated Satellite Client packages that fix several bugs are now available for Red Hat Satellite. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -2873,6 +2968,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c9aafe3ae01d",
+   "title": "RHSA-2026:94011: Important: bind9.16 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94011",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-02T18:59:36+00:00",
+   "summary": "An update for bind9.16 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -3481,6 +3590,12 @@
      "source": "Techmeme",
      "title": "Apple reports Q4 revenue up 12% YoY to $114.48B, vs. $113.39B est., China revenue up 21% to $17.5B, vs. $18.9B est., in John Ternus' first earnings report (Apple)",
      "url": "https://www.techmeme.com/261102/p39#a261102p39"
+    },
+    {
+     "id": "1920207b9086",
+     "source": "SiliconANGLE",
+     "title": "Apple’s stock drops as new CEO John Ternus delivers his first earnings call",
+     "url": "https://siliconangle.com/2026/11/02/apples-stock-drops-as-new-ceo-john-ternus-delivers-his-first-earnings-call/"
     }
    ],
    "topics": [
@@ -4708,7 +4823,14 @@
    "source_category": "Internet infrastructure",
    "published": "2026-11-02T16:22:00+00:00",
    "summary": "A US proposal would replace \"artificial intelligence\" with \"super intelligence\" in ITU Resolution 214, remove references to shared concerns and prohibit ITU work supporting AI governance, regulation and ethics.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c8ac0b309f86",
+     "source": "NCSC UK",
+     "title": "Artificial intelligence and cyber intrusion",
+     "url": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion"
+    }
+   ],
    "topics": [
     "AI",
     "Policy & regulation"
@@ -5213,6 +5335,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "de4cf53f9db9",
+   "title": "Scaling Git at OpenAI",
+   "url": "https://openai.com/index/scaling-git-at-openai",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T15:30:00+00:00",
+   "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
    ]
   },
   {
@@ -6022,7 +6158,14 @@
    "source_category": "Vendor advisories",
    "published": "2026-11-02T14:36:56+00:00",
    "summary": "Serial number: AV26-1111 Date: November 2, 2026 As of October 30, 2026, Red Hat is affected by vulnerabilities in the following products: Red Hat Build of Keycloak All version Red Hat Enterprise Linux 10 All version Red Hat Enterprise Linux 6 All version Red Hat Enterprise Linux 7 All version Red Hat Enterprise Linux…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "de7f632add05",
+     "source": "Red Hat security advisories (Important/Critical)",
+     "title": "RHSA-2026:94039: Important: Red Hat OpenStack Platform 13.0 security advisory",
+     "url": "https://access.redhat.com/errata/RHSA-2026:94039"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
@@ -6903,7 +7046,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-02T13:34:48+00:00",
    "summary": "Linux Mint is bringing back a feature most Linux distributions quietly gave up on years ago: hibernation.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "dd08d7510870",
+     "source": "OMG! Ubuntu",
+     "title": "Linux Mint is bringing back hibernation",
+     "url": "https://www.omgubuntu.co.uk/2026/11/linux-mint-hibernation-sleep-mode"
+    }
+   ],
    "topics": [
     "Linux & open source"
    ]
@@ -10243,8 +10393,8 @@
     "epss": {
      "id": "CVE-2026-111357",
      "score": 0.00533,
-     "percentile": 0.45024,
-     "date": "2026-11-01"
+     "percentile": 0.45014,
+     "date": "2026-11-02"
     }
    }
   },
