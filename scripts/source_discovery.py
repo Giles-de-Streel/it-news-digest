@@ -44,7 +44,7 @@ PAYWALLED = {
     "ft.com", "wsj.com", "bloomberg.com", "nytimes.com", "washingtonpost.com", "economist.com",
     "theinformation.com", "barrons.com", "businessinsider.com", "theathletic.com", "newyorker.com",
     "theatlantic.com", "wired.com", "reuters.com", "theverge.com", "fortune.com", "hbr.org",
-    "technologyreview.com", "stratechery.com", "latimes.com", "bostonglobe.com", "telegraph.co.uk",
+    "technologyreview.com", "stratechery.com", "nymag.com", "latimes.com", "bostonglobe.com", "telegraph.co.uk",
     "thetimes.co.uk", "thetimes.com", "nikkei.com", "scmp.com", "puck.news", "foreignpolicy.com",
     "newscientist.com", "nature.com", "science.org", "japantimes.co.jp", "afr.com", "theaustralian.com.au",
 }
