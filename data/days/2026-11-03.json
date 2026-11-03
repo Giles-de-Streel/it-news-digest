@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T10:01:51+00:00",
+ "generated": "2026-11-03T10:30:48+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 31,
+   "recent": 32,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 35,
-   "recent": 35,
+   "fetched": 36,
+   "recent": 36,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -396,13 +396,13 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Securelist (Kaspersky)",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 82,
-   "recent": 79,
+   "recent": 77,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1348,
-   "recent": 7,
+   "fetched": 1349,
+   "recent": 8,
    "error": null
   },
   {
@@ -1553,6 +1553,112 @@
   }
  ],
  "items": [
+  {
+   "id": "29dbc72a0e3f",
+   "title": "Hyprland 0.57.1 Released with NVIDIA and Keybinding Fixes",
+   "url": "https://linuxiac.com/hyprland-0-57-1-released-with-nvidia-and-keybinding-fixes/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-03T10:23:40+00:00",
+   "summary": "Hyprland 0.57.1 improves stability with fixes for NVIDIA black screens, keybindings, display handling, and fullscreen behavior.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "fba620af1f3d",
+   "title": "GCC 17 Compiler Merges Support For AVX10V1AUX",
+   "url": "https://www.phoronix.com/news/GCC-17-Merges-AVX10V1AUX",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-03T10:22:12+00:00",
+   "summary": "Landing today into the GCC 17 compiler codebase is initial support for AVX10V1AUX as the auxillary updates to AVX10.1 that are out of the cross-vendor AI Compute Extensions \"ACE\" initiative between AMD and Intel...",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "4511a031018e",
+   "title": "CVE-2026-89292: In Eclipse Mnestix Browser versions 1.6.0 up until but excluding 2.3.0 it was possible for an unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89292",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T10:17:20.077000+00:00",
+   "summary": "In Eclipse Mnestix Browser versions 1.6.0 up until but excluding 2.3.0 it was possible for an unauthenticated attacker to exfiltrate the MNESTIX_BACKEND_API_KEY for all configured Infrastructures.",
+   "kind": "cve",
+   "cve": "CVE-2026-89292",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-89292",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4fed9a059599",
+   "title": "UK.gov lacks understanding of climate impact, says watchdog",
+   "url": "https://www.theregister.com/public-sector/2026/11/03/ukgov-lacks-understanding-of-climate-impact-says-watchdog/5306918",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-03T10:15:00+00:00",
+   "summary": "Risks of changing climate and cost of transition to low-carbon energy poorly measured by government departments",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "389fe9e6c987",
+   "title": "7 sure-fire ways to blow your AI budget",
+   "url": "https://www.cio.com/article/4240639/7-sure-fire-ways-to-blow-your-ai-budget.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-03T10:01:00+00:00",
+   "summary": "CIOs have always felt pressure to deploy emerging technologies rapidly. Implementation brings challenges, including calculating and measuring upfront investment costs. Deploy too quickly, and when the hype fades, many IT departments are left with a costly architecture to support, security gaps, and operational issues.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e3599e60a1ca",
+   "title": "Gorbag APT group hits Ukrainian courts and city councils with self-deleting malware",
+   "url": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-03T10:00:14+00:00",
+   "summary": "ESET has been tracking a Russia-aligned group it calls Gorbag, which has been breaking into Ukrainian organizations since at least February 2025 using spearphishing attachments and a stealer that erases itself once the data is gone.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "75d943370694",
+   "title": "MLEP in KICS for Networks 5.0: how machine learning helps track network behavior of OT devices",
+   "url": "https://securelist.com/tr/machine-learning-event-processor-in-kics-for-networks/121794/",
+   "source": "Securelist (Kaspersky)",
+   "source_category": "Threat research",
+   "published": "2026-11-03T10:00:07+00:00",
+   "summary": "We explain how Kaspersky Industrial CyberSecurity for Networks uses Machine Learning Event Processor (MLEP) technology to help take inventory of assets and detect anomalies in industrial networks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "ICS / OT",
+    "Networking"
+   ]
+  },
   {
    "id": "949a4e21d830",
    "title": "Cloud Revenue Hits $168B as AI Capacity Expands",
@@ -1620,6 +1726,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "5dc6ba520824",
+   "title": "Revolut moves to self-hosted GLM",
+   "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T09:53:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1714,6 +1833,33 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "f6c41d20c7e0",
+   "title": "No Vehicles in the Park",
+   "url": "https://novehiclesinthepark.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T09:21:14+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "43042e9341e1",
+   "title": "DataGrip and Database Tools User Experience Survey #3 Results",
+   "url": "https://blog.jetbrains.com/datagrip/2026/11/03/datagrip-and-database-tools-user-experience-survey-3-results/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-03T09:19:36+00:00",
+   "summary": "Introduction Hello, DataGrip community! We’re back with the results of our third DataGrip and Database Tools User Experience Survey. A big thank you to everyone who took the time to participate! This year, 1,420 people shared their experiences with DataGrip and the built-in database tools in other JetBrains IDEs.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Databases"
    ]
   },
   {
@@ -2012,7 +2158,20 @@
    "source_category": "IT industry",
    "published": "2026-11-03T08:28:31+00:00",
    "summary": "Europe is scrambling to develop infrastructure to support the rollout of AI amid high energy and land costs.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "11c7d01581e4",
+     "source": "Techmeme",
+     "title": "UK energy company Drax partners with Brookfield and neocloud Radiant to develop an AI data center in North Yorkshire, targeting 100MW of capacity by Q1 2028 (Kai Nicol-Schwarz/CNBC)",
+     "url": "https://www.techmeme.com/261103/p4#a261103p4"
+    },
+    {
+     "id": "070f985076b1",
+     "source": "Data Center Dynamics",
+     "title": "Drax partners with Brookfield and Radiant for up to 1GW data center at North Yorkshire power station",
+     "url": "https://www.datacenterdynamics.com/en/news/drax-partners-with-brookfield-and-radiant-for-up-to-1gw-data-center-at-north-yorkshire-power-station/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
@@ -2351,6 +2510,19 @@
    "source_category": "Threat research",
    "published": "2026-11-03T08:00:00+00:00",
    "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "08b710f1e780",
+   "title": "Heimstaden is changing residential real estate management with AI",
+   "url": "https://openai.com/index/heimstaden",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-03T08:00:00+00:00",
+   "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
    "also_covered_by": [],
    "topics": [
     "AI"
