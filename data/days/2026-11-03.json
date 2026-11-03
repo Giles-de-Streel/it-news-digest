@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T21:01:16+00:00",
+ "generated": "2026-11-03T21:32:32+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 40,
+   "recent": 39,
    "error": null
   },
   {
@@ -150,13 +150,13 @@
   {
    "source": "CVE Program Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 37,
-   "recent": 37,
+   "fetched": 41,
+   "recent": 41,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 27,
    "error": null
   },
   {
@@ -300,7 +300,7 @@
   {
    "source": "Azure SQL Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -552,19 +552,19 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
    "source": "TechCrunch Enterprise",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 11,
+   "recent": 13,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 6,
+   "recent": 1,
    "error": null
   },
   {
@@ -1277,9 +1277,9 @@
   },
   {
    "source": "Proofpoint Threat Insight",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Qualys Blog",
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 1,
+   "recent": 3,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
@@ -1560,6 +1560,275 @@
  ],
  "items": [
   {
+   "id": "7dc5968864ca",
+   "title": "My Favorite Undocumented Feature in SQL MCP Server",
+   "url": "https://devblogs.microsoft.com/azure-sql/sql-mcp-server-hidden-feature-default-configuration/",
+   "source": "Azure SQL Blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T21:29:25+00:00",
+   "summary": "Deploy Microsoft's SQL MCP Server in minutes without a configuration file. Learn how DAB_CONNSTRING enables fast deployment using Docker, Azure Container Apps, ACI, or AKS.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "53feb8d41aa0",
+   "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+   "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-03T21:28:44+00:00",
+   "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "575664cfd60f",
+   "title": "Salesforce to buy customer service automation startup Cresta for reported $2.7B",
+   "url": "https://siliconangle.com/2026/11/03/salesforce-to-buy-customer-service-automation-startup-cresta-for-reported-2-7b/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:20:22+00:00",
+   "summary": "Salesforce Inc. has agreed to buy Cresta Intelligence Inc., a venture-backed provider of customer service software. The cloud giant didn’t disclose the financial terms in its late Monday announcement of the deal. The Information reported that Salesforce is paying $2.7 billion.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "e685f10c5f8a",
+   "title": "AMD stock jumps 7% on earnings as data center revenue nearly doubles",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:20:14+00:00",
+   "summary": "AMD reported better-than-expected third-quarter results, driven by booming sales of AI chips",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c7ce86d03f30",
+   "title": "Sources: Ubisoft and at least two other gaming companies made offers to Microsoft to acquire the French game developer Arkane Studios (Jason Schreier/Bloomberg)",
+   "url": "https://www.techmeme.com/261103/p33#a261103p33",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:20:10+00:00",
+   "summary": "Jason Schreier / Bloomberg : Sources: Ubisoft and at least two other gaming companies made offers to Microsoft to acquire the French game developer Arkane Studios — Microsoft's gaming unit is looking to divest the French company behind ‘Dishonored’ and 'Marvel's Blade' — Multiple companies have made offers …",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
+   "id": "a81bcbc653b2",
+   "title": "CVE-2026-95860: node-opcua is an OPC UA implementation for TypeScript and Node.js.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95860",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:45.907000+00:00",
+   "summary": "node-opcua is an OPC UA implementation for TypeScript and Node.js. From 2.42.0 until 2.180.0, namespace-level access control configured through setDefaultRolePermissions is not honored by the runtime enforcement path for nodes without explicit per-node RolePermissions.",
+   "kind": "cve",
+   "cve": "CVE-2026-95860",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-95860",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "b1df0b1bfa0a",
+   "title": "CVE-2026-82158: Dell Wyse Management Suite, versions prior to 2609.0.0.155, contain an Improper Neutralization of Input…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82158",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:43.823000+00:00",
+   "summary": "Dell Wyse Management Suite, versions prior to 2609.0.0.155, contain an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Script injection.",
+   "kind": "cve",
+   "cve": "CVE-2026-82158",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82158",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d6117e269e3d",
+   "title": "CVE-2026-115732: Incorrect authorization in the certificate-name matching of trapperkeeper-authorization, as used by Puppet…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115732",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:02.033000+00:00",
+   "summary": "Incorrect authorization in the certificate-name matching of trapperkeeper-authorization, as used by Puppet Server, in the affected products, allows a client that holds a CA-signed certificate whose name extends or shortens an authorized hostname to be authorized as that host.",
+   "kind": "cve",
+   "cve": "CVE-2026-115732",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115732",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7ca8ed11e02a",
+   "title": "CVE-2026-115731: Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:01.867000+00:00",
+   "summary": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT…",
+   "kind": "cve",
+   "cve": "CVE-2026-115731",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115731",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "78da873c3350",
+   "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+   "url": "https://github.com/finic-ai/kairos",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T21:16:48+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "72736c26d255",
+   "title": "Vulnerability Data Enrichment for CVE Records: 303 CNAs on the Enrichment Recognition List for…",
+   "url": "https://medium.com/@cve_program/vulnerability-data-enrichment-for-cve-records-303-cnas-on-the-enrichment-recognition-list-for-f8087114c590?source=rss-4c76804a1240------2",
+   "source": "CVE Program Blog",
+   "source_category": "Security",
+   "published": "2026-11-03T21:13:58+00:00",
+   "summary": "Vulnerability Data Enrichment for CVE Records: 303 CNAs on the Enrichment Recognition List for November 2, 2026 The “ CNA Enrichment Recognition List ” for November 2, 2026, is now available with 303 CNAs listed.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b04b3172e84c",
+   "title": "Operational risk is business risk: How CIOs safeguard continuity and build resilience",
+   "url": "https://www.cio.com/article/4244166/operational-risk-is-business-risk-how-cios-safeguard-continuity-and-build-resilience.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:13:47+00:00",
+   "summary": "Downtime and tampering with operational environments have material, even devastating, impacts on business continuity, the recent cyberattack against refrigeration systems at several large supermarket chains in France being a glaring example of that.",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "f1b0d9063822",
+   "title": "Anthropic releases FlashProve, open-source code that cryptographically verifies an AI response came from a given model, not a cheaper one swapped in by a router (Anthropic)",
+   "url": "https://www.techmeme.com/261103/p32#a261103p32",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:10:03+00:00",
+   "summary": "Anthropic : Anthropic releases FlashProve, open-source code that cryptographically verifies an AI response came from a given model, not a cheaper one swapped in by a router — Roy Rinberg (Anthropic), Alex Allain (Anthropic); Alessandro Chiesa (EPFL, StarkWare), Miranda Christ (MIT, RESI), Rahul Dalal …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Networking"
+   ]
+  },
+  {
+   "id": "032b81f3baec",
+   "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
+   "url": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+   "source": "TechCrunch Enterprise",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:05:55+00:00",
+   "summary": "Palantir delivered such a huge third-quarter earnings report on Monday that its press release even bragged that the numbers were “crushing consensus expectations.” Yet, retail investors were lukewarm on the company on Tuesday, with the stock trading slightly down.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1159d617a643",
+   "title": "Firefox's New Mini Window Is Every Multitasker's Dream",
+   "url": "https://news.slashdot.org/story/26/11/03/214205/firefoxs-new-mini-window-is-every-multitaskers-dream?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-03T21:05:00+00:00",
+   "summary": "Mozilla is testing a new Firefox Nightly feature called Mini Window that lets users pop an entire webpage into a small, always-on-top window stripped of most browser controls.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "797fca1b137f",
+   "title": "mine",
+   "url": "https://coalton-lang.github.io/mine/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-03T21:01:04+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2806b20b8ce2",
+   "title": "Toddler Phone Calls Family and No One Else",
+   "url": "https://hackaday.com/2026/11/03/toddler-phone-calls-family-and-no-one-else/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-03T21:00:25+00:00",
+   "summary": "The great thing about the modern world is how connected we are. It’s also the worst thing about the modern world, to be honest. [Allan Binder] wanted to give his …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a474257f8365",
    "title": "Itch.io purges terabytes of AI slop, rolls out a No AI filter on the store",
    "url": "https://www.neowin.net/news/itchio-purges-terabytes-of-ai-slop-rolls-out-a-no-ai-filter-on-the-store/?utm_source=rss",
@@ -1570,6 +1839,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "be988109c3a1",
+   "title": "Binance details recruiter impersonation behind $6.3B wallet breach",
+   "url": "https://www.techtarget.com/news/binance-details-recruiter-impersonation-behind-63b-wallet-breach/873650/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:51:14+00:00",
+   "summary": "Binance reveals attackers used fake job interviews and malware-laced coding tests to breach an engineer's device, enabling a $6.3 billion wallet theft.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Development"
    ]
   },
   {
@@ -1596,6 +1880,33 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "272635df8280",
+   "title": "How carrier-neutral facilities power interconnection, hybrid IT",
+   "url": "https://www.techtarget.com/news/how-carrier-neutral-facilities-power-interconnection-hybrid-it/873641/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:42:55+00:00",
+   "summary": "Learn about the financial impact and resilience implications of carrier-neutral facilities.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "05685b26d264",
+   "title": "Stable Channel Update for Desktop",
+   "url": "http://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-03T20:38:18.791000+00:00",
+   "summary": "The Chrome team is delighted to announce the promotion of Chrome 157 to the stable channel for Windows, Mac and Linux. This will roll out over the coming days/weeks. Chrome 157.0.8103.38 (Linux) 157.0.8103.38/.39 Windows/Mac contains a number of fixes and improvements -- a list of changes is available in the log .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
    ]
   },
   {
@@ -1644,6 +1955,19 @@
    "id": "c5db1393990c",
    "title": "Tech Life",
    "url": "https://www.bbc.co.uk/sounds/play/w3ct8jyt?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:30:00+00:00",
+   "summary": "When copyright strikes silence reporters, rail safety & the Lord of the Rings live show.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9f48ad608ffd",
+   "title": "Tech Life",
+   "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_west_africa?at_medium=RSS&at_campaign=rss",
    "source": "BBC Technology",
    "source_category": "IT industry",
    "published": "2026-11-03T20:30:00+00:00",
@@ -1707,6 +2031,19 @@
    "topics": [
     "AI",
     "System administration"
+   ]
+  },
+  {
+   "id": "26172c4a5999",
+   "title": "[In preview] Public Preview: Advanced capacity insights are now available in Azure Storage Discovery",
+   "url": "https://azure.microsoft.com/updates?id=578655",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-03T20:20:29+00:00",
+   "summary": "Advanced capacity insights are now available for preview in Azure Storage Discovery. Storage Discovery now provides greater visibility into storage usage through insights such as access patterns, data age, storage tiers, object size distribution, retentio",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -1905,6 +2242,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "5a27c9fc0ca8",
+   "title": "Amazon Connect Customer lets agents pause and resume emails",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-pause-resume-email/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-03T20:15:00+00:00",
+   "summary": "Amazon Connect Customer lets agents pause emails while waiting for information or approvals, freeing them to handle higher-priority contacts and resume their work later. For example, an agent waiting for a supervisor to approve a refund can pause the email and take an incoming call.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2291,6 +2641,19 @@
    ]
   },
   {
+   "id": "1b35b6c8242f",
+   "title": "macOS 27 does not support CoreStorage volumes",
+   "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T19:27:53+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "7ef394c83403",
    "title": "Xbox Game Pass adds Warhammer Survivors and 13 more games",
    "url": "https://www.neowin.net/news/xbox-game-pass-adds-warhammer-survivors-and-13-more-games/?utm_source=rss",
@@ -2382,6 +2745,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "3ee0464d5149",
+   "title": "Chrome Stable for iOS Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-03T19:13:32.969000+00:00",
+   "summary": "Hi everyone! We've just released Chrome Stable 157 (157.0.8103.37) for iOS; it'll become available on App Store in the next few hours. This release includes stability and performance improvements. You can see a full list of the changes in the Git log . If you find a new issue, please let us know by filing a bug .",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -4380,6 +4756,19 @@
    "topics": [
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "b39c15720d40",
+   "title": "AWS Config now supports 10 new resource types",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-03T16:00:00+00:00",
+   "summary": "AWS Config now supports 10 additional AWS resource types across key services including Amazon ElastiCache and Amazon QuickSight. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -10161,6 +10550,19 @@
    ]
   },
   {
+   "id": "c6e55817b302",
+   "title": "Personnel Cuts Impact Both Public and Private Campuses",
+   "url": "https://www.insidehighered.com/news/business/cost-cutting/2026/11/03/latest-job-cuts-impact-both-public-and-private-campuses",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-03T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
    "id": "0b48a22c90c1",
    "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
    "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
@@ -11296,7 +11698,14 @@
    "source_category": "IT industry",
    "published": "2026-11-03T00:00:00+00:00",
    "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "bbd2c462ebf8",
+     "source": "Techmeme",
+     "title": "OpenAI hires Jill Hazelbaker, Uber's president and chief corporate affairs officer, as its new chief corporate affairs officer, reporting to Greg Brockman (Mike Allen/Axios)",
+     "url": "https://www.techmeme.com/261103/p31#a261103p31"
+    }
+   ],
    "topics": [
     "AI"
    ]
