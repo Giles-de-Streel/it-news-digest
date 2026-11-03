@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T08:00:46+00:00",
+ "generated": "2026-11-03T08:30:45+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 32,
-   "recent": 32,
+   "fetched": 34,
+   "recent": 34,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1007,7 +1007,7 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2239,
+   "fetched": 2238,
    "recent": 10,
    "error": null
   },
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -1553,6 +1553,146 @@
   }
  ],
  "items": [
+  {
+   "id": "951d36a0e9fe",
+   "title": "Anthropic signs lease with Australian Data Centres in Western Downs, Queensland",
+   "url": "https://www.datacenterdynamics.com/en/news/anthropic-signs-lease-with-australian-data-centres-in-western-downs-queensland/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-03T08:27:38+00:00",
+   "summary": "ADC is 85 percent owned by Dexus",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a92cbacb1e12",
+   "title": "67% of security leaders say their teams struggle to meet business needs",
+   "url": "https://www.csoonline.com/article/4243598/67-of-security-leaders-say-their-teams-struggle-to-meet-business-needs.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-03T08:25:00+00:00",
+   "summary": "AI, identity-based attacks, and expanding digital operations are putting pressure on already overstretched cybersecurity teams. Security vendor Barracuda’s Cybersecurity Skills Gap report also found that security teams are struggling to keep pace with expanding responsibilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "b2d1de5309f8",
+   "title": "Korea Telecom to halt sale of new 3G plans",
+   "url": "https://www.datacenterdynamics.com/en/news/korea-telecom-to-halt-sale-of-new-3g-plans/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-03T08:24:31+00:00",
+   "summary": "As the carrier prepares migration away from legacy network",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "0f9343e57313",
+   "title": "Designing a planned switchover for minimum disruption",
+   "url": "https://planetscale.com/blog/designing-a-planned-switchover-for-minimum-disruption",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-03T08:20:13+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3f1d7dfe18b7",
+   "title": "CVE-2026-4052: This issue only impacts deployments where WSO2 Identity Server is configured as a Resident Key Manager with…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4052",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T08:17:15.530000+00:00",
+   "summary": "This issue only impacts deployments where WSO2 Identity Server is configured as a Resident Key Manager with database sharing. In such environments, a self-registered user may gain access to the System REST APIs of WSO2 API Manager by obtaining a token from the WSO2 Identity Server token endpoint.",
+   "kind": "cve",
+   "cve": "CVE-2026-4052",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-4052",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5f073ef92695",
+   "title": "CVE-2026-13594: Zoho Corporation's ManageEngine Log360 and EventLog Analyzer versions 13062 and below are vulnerable to an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13594",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T08:17:15.203000+00:00",
+   "summary": "Zoho Corporation's ManageEngine Log360 and EventLog Analyzer versions 13062 and below are vulnerable to an issue that could allow an adversary to gain unauthorized access to the product.",
+   "kind": "cve",
+   "cve": "CVE-2026-13594",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-13594",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "04d39cc1945d",
+   "title": "Forget retraining - AI can now tweak another AI's weights",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/forget-retraining-ai-can-now-tweak-another-ais-weights/5307105",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-03T08:15:00+00:00",
+   "summary": "'Weight-Space Programming' fiddles with nerd knobs to boost benchmark scores",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "94b89cf85c78",
+   "title": "Firefox Security & Privacy Newsletter 2026 Q3",
+   "url": "https://attackanddefense.dev/2026/11/02/firefox-security-and-privacy-newsletter-q3.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-03T08:03:58+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8b1eb73b5ad6",
+   "title": "What is memory poisoning and who is at risk?",
+   "url": "https://www.itpro.com/security/what-is-memory-poisoning-and-who-is-at-risk",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-03T08:00:00+00:00",
+   "summary": "Researchers are warning that AI is at risk from memory poisoning. How do attacks work, and how should firms respond to the threat?",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "c696742ebaaf",
    "title": "Over 100 European Stores Hit as Supermarket Fridge Attacks Return",
@@ -1830,7 +1970,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-03T06:00:55+00:00",
    "summary": "Apple reported its quarterly financial report, which is mostly positive. There are some indicators of problems. Like many tech companies, Apple is suffering from issues with supply chains due to AI and data centers. Also of interest is the indicator that sales to China and the iPad line isn’t as robust as expected.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5fde059d3dcb",
+     "source": "Guardian Technology",
+     "title": "Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus",
+     "url": "https://www.theguardian.com/technology/2026/nov/02/apple-third-quarter-revenue-earnings"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
