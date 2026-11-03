@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T22:01:17+00:00",
+ "generated": "2026-11-03T22:31:21+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -150,13 +150,13 @@
   {
    "source": "CVE Program Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 41,
-   "recent": 41,
+   "fetched": 73,
+   "recent": 73,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 107,
-   "recent": 60,
+   "recent": 59,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 6,
+   "recent": 9,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 6,
+   "recent": 1,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1188,7 +1188,7 @@
   {
    "source": "Datadog Blog",
    "fetched": 97,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 36,
+   "recent": 37,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1446,7 +1446,7 @@
   {
    "source": "Palo Alto Identity Security",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1560,6 +1560,156 @@
  ],
  "items": [
   {
+   "id": "a27bdcf5feed",
+   "title": "GIMP 3.2.8 Released With Many Refinements, Numerous Security Fixes Due To AI Reports",
+   "url": "https://www.phoronix.com/news/GIMP-3.2.8-Released",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-03T22:21:50+00:00",
+   "summary": "GIMP 3.2.8 is out today as the newest stable release of this open-source image editing application that's most popular on the Linux desktop...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "527f464ab01c",
+   "title": "CVE-2026-22058: StorageGRID (formerly StorageGRID Webscale) versions 11.3 and higher allow an attacker with product-specific…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22058",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T22:19:47.030000+00:00",
+   "summary": "StorageGRID (formerly StorageGRID Webscale) versions 11.3 and higher allow an attacker with product-specific knowledge and the ability to communicate with the Grid Network on certain ports to make unauthorized requests.",
+   "kind": "cve",
+   "cve": "CVE-2026-22058",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-22058",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a184449b8379",
+   "title": "CVE-2026-120931: Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120931",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T22:19:31.900000+00:00",
+   "summary": "Out of bounds write in WebGL in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-120931",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120931",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bd928818ea46",
+   "title": "CVE-2026-119084: Unsafe reflection in the connection parameter and credentials profile handling of Amazon Redshift JDBC Driver…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119084",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T22:19:29.220000+00:00",
+   "summary": "Unsafe reflection in the connection parameter and credentials profile handling of Amazon Redshift JDBC Driver before 2.3.0 might allow an actor who can influence the JDBC connection URL or the AWS credentials profile to execute arbitrary code in the application context, provided a suitable class is available on the…",
+   "kind": "cve",
+   "cve": "CVE-2026-119084",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119084",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a5a6a655d043",
+   "title": "NTT Data opens JKT2A data center in Indonesia",
+   "url": "https://www.datacenterdynamics.com/en/news/ntt-data-opens-jkt2a-data-center-in-indonesia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-03T22:17:57+00:00",
+   "summary": "Facility is designed for AI workloads",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "286cbb56ae59",
+   "title": "CVE-2026-112354: Etrel INCH AC charging station management web interface prior to firmware versions 7.1.2 and 8.0.1 contains a…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112354",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T22:17:44.660000+00:00",
+   "summary": "Etrel INCH AC charging station management web interface prior to firmware versions 7.1.2 and 8.0.1 contains a hard-coded default credentials vulnerability that allows remote attackers to gain full Administrator access by authenticating with the factory-default account.",
+   "kind": "cve",
+   "cve": "CVE-2026-112354",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-112354",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware",
+    "Embedded & IoT",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c26d6c4cce40",
+   "title": "Ubisoft reportedly bids to buy Dishonored maker Arkane from Microsoft",
+   "url": "https://www.neowin.net/news/ubisoft-reportedly-bids-to-buy-dishonored-maker-arkane-from-microsoft/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-03T22:06:01+00:00",
+   "summary": "Ubisoft and at least two other companies have reportedly submitted bids to buy Dishonored and Marvel's Blade maker Arkane Studios from Microsoft.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "0cf3e6676dba",
+   "title": "CVE Program Reference Archive Pilot — Preserving the Reference History of CVE Records for the…",
+   "url": "https://medium.com/@cve_program/cve-program-reference-archive-pilot-preserving-the-reference-history-of-cve-records-for-the-86a4a5bcba04?source=rss-4c76804a1240------2",
+   "source": "CVE Program Blog",
+   "source_category": "Security",
+   "published": "2026-11-03T22:05:42+00:00",
+   "summary": "CVE Program Reference Archive Pilot — Preserving the Reference History of CVE Records for the Global Security Community The CVE™ Program is built on shared, public transparency.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "59bdbba10b6a",
    "title": "GIMP 3.2.8 brings bug fixes, fixes & fixes",
    "url": "https://www.omgubuntu.co.uk/2026/11/gimp-3-2-8-brings-bug-fixes-fixes-fixes",
@@ -1570,6 +1720,32 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "699d6dc9b64e",
+   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+   "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-11-03T21:57:12+00:00",
+   "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "67bf24197a0c",
+   "title": "The Internals of PostgreSQL",
+   "url": "https://www.interdb.jp/pg/index.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T21:51:06+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -1610,6 +1786,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "d0172664fd24",
+   "title": "Postal Service Surveilled Protest Activities Online With Little Rules, Oversight",
+   "url": "https://www.eff.org/deeplinks/2026/11/postal-service-surveilled-protest-activities-online-little-rules-oversight",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-03T21:45:46+00:00",
+   "summary": "The U.S. Postal Service used social media surveillance to monitor and report on protests across the political spectrum, government records show. The records , disclosed to EFF and other requesters suing the postal service under the Freedom of Information Act, show that the agency’s internet Covert Operations Program,…",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
@@ -1785,6 +1974,32 @@
    ]
   },
   {
+   "id": "6c708b72de63",
+   "title": "Automotive Resistive Dividers Go to the “Extreme”",
+   "url": "https://www.electronicdesign.com/technologies/power/product/55416414/electronic-design-automotive-resistance-dividers-get-high-resistance-high-voltage-high-precision",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-03T21:27:36+00:00",
+   "summary": "Megohm and kilovolt resistors in cars — it’s not what you expect. TI’s new resistive dividers bring high resistance, voltage, and precision.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f3900be82c6f",
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T21:26:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "86d5692015d2",
    "title": "The AI Boom May Be Sowing Seeds of Another Financial Crisis",
    "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
@@ -1880,6 +2095,604 @@
     "scored_by": "CNA"
    },
    "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82158",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "eebc3ee082c8",
+   "title": "CVE-2026-121249: Buffer overflow in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121249",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:35.493000+00:00",
+   "summary": "Buffer overflow in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121249",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121249",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b050ad2762da",
+   "title": "CVE-2026-121247: Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121247",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:35.220000+00:00",
+   "summary": "Buffer overflow in Dawn in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121247",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121247",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0a257342b330",
+   "title": "CVE-2026-121246: Use after free in WebGL in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121246",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:35.093000+00:00",
+   "summary": "Use after free in WebGL in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121246",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121246",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "54de4d1fefe4",
+   "title": "CVE-2026-121241: Use after free in Navigation in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121241",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:34.420000+00:00",
+   "summary": "Use after free in Navigation in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121241",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121241",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0fcd999633e3",
+   "title": "CVE-2026-121234: Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121234",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:33.503000+00:00",
+   "summary": "Privilege elevation in Contacts in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-121234",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121234",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "c2cdc308214e",
+   "title": "CVE-2026-121229: Memory corruption in ANGLE in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121229",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:32.837000+00:00",
+   "summary": "Memory corruption in ANGLE in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121229",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121229",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0dbe7c72baa6",
+   "title": "CVE-2026-121214: Use after free in Passwords in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121214",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:30.847000+00:00",
+   "summary": "Use after free in Passwords in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121214",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121214",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d8fefb3943d8",
+   "title": "CVE-2026-121202: Use after free in Autofill in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121202",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:29.203000+00:00",
+   "summary": "Use after free in Autofill in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-121202",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121202",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "1bab31a2d859",
+   "title": "CVE-2026-121200: Incorrect reference resolution in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121200",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:28.887000+00:00",
+   "summary": "Incorrect reference resolution in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-121200",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121200",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "14e5fdc41101",
+   "title": "CVE-2026-121189: Use after free in Browser in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121189",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:27.693000+00:00",
+   "summary": "Use after free in Browser in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+   "kind": "cve",
+   "cve": "CVE-2026-121189",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121189",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "51c048219f3d",
+   "title": "CVE-2026-121185: Use after free in PictureInPicture in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121185",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:27.177000+00:00",
+   "summary": "Use after free in PictureInPicture in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121185",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121185",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "087b8d87f5d1",
+   "title": "CVE-2026-121156: Buffer overflow in Dawn in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121156",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:23.283000+00:00",
+   "summary": "Buffer overflow in Dawn in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121156",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121156",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8b137ce19f10",
+   "title": "CVE-2026-121148: Use after free in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121148",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:23.150000+00:00",
+   "summary": "Use after free in ANGLE in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121148",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121148",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "040c56edcfb5",
+   "title": "CVE-2026-121126: Use after free in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121126",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:20.860000+00:00",
+   "summary": "Use after free in Core in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121126",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121126",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "c0307a9e952b",
+   "title": "CVE-2026-121114: Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121114",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:19.087000+00:00",
+   "summary": "Use after free in TabStrip in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121114",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121114",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "db77186493d5",
+   "title": "CVE-2026-121104: Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121104",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:16.653000+00:00",
+   "summary": "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121104",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121104",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "88ae1b936b91",
+   "title": "CVE-2026-121089: Use after free in WebGPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121089",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:14.543000+00:00",
+   "summary": "Use after free in WebGPU in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121089",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121089",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8c832800ad7b",
+   "title": "CVE-2026-121086: Buffer overflow in Skia in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121086",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:14.123000+00:00",
+   "summary": "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121086",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121086",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e0164b888b39",
+   "title": "CVE-2026-121077: Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121077",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:12.893000+00:00",
+   "summary": "Use after free in Mobile in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-121077",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121077",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "fb45d9750110",
+   "title": "CVE-2026-121076: Use after free in WebXR in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121076",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:12.757000+00:00",
+   "summary": "Use after free in WebXR in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121076",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121076",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f7d6ced2560a",
+   "title": "CVE-2026-121074: Memory corruption in GPU in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121074",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:12.463000+00:00",
+   "summary": "Memory corruption in GPU in Google Chrome on on Android prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121074",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121074",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "37596a503b24",
+   "title": "CVE-2026-121071: Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121071",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:12.057000+00:00",
+   "summary": "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121071",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121071",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b07c70370c96",
+   "title": "CVE-2026-121060: Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121060",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:10.570000+00:00",
+   "summary": "Incorrect authorization in FileSystem in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121060",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121060",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "45beeffe353f",
+   "title": "CVE-2026-121037: Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121037",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:07+00:00",
+   "summary": "Out of bounds write in ANGLE in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121037",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121037",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "fff7ce1bce98",
+   "title": "CVE-2026-121035: Use after free in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121035",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:06.730000+00:00",
+   "summary": "Use after free in Prerender in Google Chrome prior to 157.0.8103.38 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-121035",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121035",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5f5f4222d0a0",
+   "title": "CVE-2026-121034: Use after free in Views in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121034",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:06.593000+00:00",
+   "summary": "Use after free in Views in Google Chrome on on Windows prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-121034",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121034",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "3843e10dade0",
+   "title": "CVE-2026-121030: Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121030",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T21:17:06.013000+00:00",
+   "summary": "Incorrect authorization in DevTools in Google Chrome prior to 157.0.8103.38 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-121030",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121030",
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
@@ -2659,6 +3472,19 @@
    "topics": [
     "AI",
     "Databases"
+   ]
+  },
+  {
+   "id": "81e32c3858a5",
+   "title": "Highly Integrated PFC Controller Factors into Kilowatt Power Supplies",
+   "url": "https://www.electronicdesign.com/technologies/power/product/55415926/highly-integrated-pfc-controller-can-handle-kilowatt-class-power-supplies",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-03T20:00:00+00:00",
+   "summary": "STMicroelectronics’ latest PFC controller offers extensive protection for switched-mode power supplies with outputs of up to several kW.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4067,6 +4893,28 @@
    ]
   },
   {
+   "id": "8416fdf0f0b3",
+   "title": "CVE-2026-38600: A Zip Slip vulnerability in the /upload endpoint of codeskyblue gohttpserver through v1.3.0 allows attackers…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-38600",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T17:18:13.070000+00:00",
+   "summary": "A Zip Slip vulnerability in the /upload endpoint of codeskyblue gohttpserver through v1.3.0 allows attackers to write arbitrary files via uploading a crafted Zip archive.",
+   "kind": "cve",
+   "cve": "CVE-2026-38600",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-38600",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "16dde6e4481b",
    "title": "CVE-2026-28336: SolarWinds Dameware was found to be affected by a command injection vulnerability that could lead to the…",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28336",
@@ -4383,6 +5231,19 @@
    "topics": [
     "Microsoft & Windows",
     "AI"
+   ]
+  },
+  {
+   "id": "6163fbf60fab",
+   "title": "Amazon Connect Customer prefills the email address for new threads started from cases",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-email-addresses/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-03T17:00:00+00:00",
+   "summary": "Amazon Connect Customer automatically fills in the customer’s email address from the linked customer profile when agents start a new email thread from a case. This saves agents time and reduces manual entry errors by eliminating the need to look up or type the address.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5011,6 +5872,19 @@
    ]
   },
   {
+   "id": "4c2692242e11",
+   "title": "SoC-Based BLDC Motor Controller Moves up to 40 Motors",
+   "url": "https://www.electronicdesign.com/technologies/power/product/55415770/microchip-technology-soc-based-bldc-motor-controller-moves-up-to-40-motors",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-03T16:00:00+00:00",
+   "summary": "The Microchip-made board can be used for evaluating and developing sensor and sensorless FOC for BLDC motor-control applications.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "34019ed2bb8a",
    "title": "European authorities probe ongoing attacks targeting grocery refrigerators",
    "url": "https://www.cybersecuritydive.com/news/european-authorities-probe-attacks-grocery-refrigerators/873598/",
@@ -5444,7 +6318,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-03T15:32:02+00:00",
    "summary": "Bethesda has officially unveiled The Elder Scrolls VI: Sentinel with a brand-new teaser trailer, confirming the long-rumored Hammerfell setting.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3642876416ea",
+     "source": "Slashdot",
+     "title": "Bethesda Confirms The Elder Scrolls 6 Is Called 'Sentinel'",
+     "url": "https://games.slashdot.org/story/26/11/03/2113209/bethesda-confirms-the-elder-scrolls-6-is-called-sentinel?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6179,6 +7060,12 @@
      "source": "Slashdot",
      "title": "Binance Says Hackers Used Fake Job Interviews, AI Tool to Steal $6.3 Billion In Crypto",
      "url": "https://it.slashdot.org/story/26/11/03/1939254/binance-says-hackers-used-fake-job-interviews-ai-tool-to-steal-63-billion-in-crypto?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "7f80142f2f1d",
+     "source": "The Register",
+     "title": "North Korean fake job interview led to $6.3B Binance heist",
+     "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
     }
    ],
    "topics": [
@@ -7056,6 +7943,12 @@
      "source": "Linuxiac",
      "title": "KDE Plasma 6.7.6 Released with KWin Crash Fixes, Desktop Improvements",
      "url": "https://linuxiac.com/kde-plasma-6-7-6-released-with-kwin-crash-fixes-desktop-improvements/"
+    },
+    {
+     "id": "13edff3869fa",
+     "source": "Phoronix",
+     "title": "NetBSD 11.1 Released With Security Fixes & Other Improvements",
+     "url": "https://www.phoronix.com/news/NetBSD-11.1-Released"
     }
    ],
    "topics": [
@@ -9092,6 +9985,12 @@
      "source": "Infosecurity Magazine",
      "title": "Russia-Aligned Gorbag Targets Ukraine for Intelligence",
      "url": "https://www.infosecurity-magazine.com/news/russia-gorbag-targets-ukraine/"
+    },
+    {
+     "id": "97c8e41a11cb",
+     "source": "BleepingComputer",
+     "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/"
     }
    ],
    "topics": [
@@ -10239,6 +11138,12 @@
      "source": "It's FOSS",
      "title": "Fedora 45 Release Date and New Features",
      "url": "https://feed.itsfoss.com/link/24361/17514519/fedora-45-features"
+    },
+    {
+     "id": "879cc99a61a0",
+     "source": "Lobsters",
+     "title": "Announcing NetBSD 11.1",
+     "url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html"
     }
    ],
    "topics": [
@@ -11974,6 +12879,20 @@
    "topics": [
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "5a2bfded4111",
+   "title": "Evaluate your AI agents with Fireworks AI models in Datadog Agent Observability",
+   "url": "https://www.datadoghq.com/blog/fireworks-ai-integration/",
+   "source": "Datadog Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-03T00:00:00+00:00",
+   "summary": "Learn how you can evaluate your AI agents and compare models in the Playground by using Fireworks AI models in Datadog Agent Observability.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "DevOps & SRE"
    ]
   },
   {
