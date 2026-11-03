@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T06:00:46+00:00",
+ "generated": "2026-11-03T06:31:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 27,
+   "recent": 28,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 35,
-   "recent": 35,
+   "fetched": 33,
+   "recent": 33,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 27,
+   "recent": 28,
    "error": null
   },
   {
@@ -317,9 +317,9 @@
   },
   {
    "source": "SQLServerCentral",
-   "fetched": 10,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Oracle Security Alerts",
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -1050,7 +1050,7 @@
   {
    "source": "AskWoody",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1277,9 +1277,9 @@
   },
   {
    "source": "Proofpoint Threat Insight",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Qualys Blog",
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1554,6 +1554,76 @@
  ],
  "items": [
   {
+   "id": "fec686f6f082",
+   "title": "Open models can do 90 percent of agentic work at a twentieth of the cost of a frontier LLM: Gartner",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/03/open-models-can-do-90-percent-of-agentic-work-at-a-twentieth-of-the-cost-of-a-frontier-llm-gartner/5307132",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-03T06:19:50+00:00",
+   "summary": "Models are commodities, harnesses are the valuable part",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1cb8e2ad166e",
+   "title": "Apple reports strong earnings",
+   "url": "https://www.askwoody.com/2026/apple-reports-strong-earnings/",
+   "source": "AskWoody",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-03T06:00:55+00:00",
+   "summary": "Apple reported its quarterly financial report, which is mostly positive. There are some indicators of problems. Like many tech companies, Apple is suffering from issues with supply chains due to AI and data centers. Also of interest is the indicator that sales to China and the iPad line isn’t as robust as expected.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "ede075e677fd",
+   "title": "Sources: Nvidia verbally told cloud compute clients to sell 51%+ of their services to non-Chinese companies, imposing new limits on China's access to AI chips (Financial Times)",
+   "url": "https://www.techmeme.com/261103/p1#a261103p1",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T06:00:40+00:00",
+   "summary": "Financial Times : Sources: Nvidia verbally told cloud compute clients to sell 51%+ of their services to non-Chinese companies, imposing new limits on China's access to AI chips — Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains China's ability …",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d4ac68d0af4d",
+   "title": "‘A serious failure’: CPS prosecutor cites imaginary case to high court after AI search",
+   "url": "https://www.theguardian.com/technology/2026/nov/03/a-serious-failure-cps-prosecutor-cites-imaginary-case-to-high-court-after-ai-search",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T06:00:40+00:00",
+   "summary": "Exclusive: Nonexistent precedent cited in alleged child rape case adds to dozens of AI-related errors plaguing court proceedings A senior crown prosecutor acting in a high court case cited an imaginary legal precedent in an error that has sparked fresh concerns about AI hallucinations infecting the justice system.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "63261e067d9a",
+   "title": "NEMESIS Gives You Control Over Your Hyundai Head Unit",
+   "url": "https://hackaday.com/2026/11/02/nemesis-gives-you-control-over-your-hyundai-head-unit/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-03T06:00:35+00:00",
+   "summary": "Whether it’s to make more money or because of licensing disagreements, car companies often restrict the abilities of the infotainment units in their vehicles. They can do so much more, …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "393e45878a25",
    "title": "Oh, your agents need OAuth2, too",
    "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/",
@@ -1567,6 +1637,46 @@
     "Development",
     "Identity & access"
    ]
+  },
+  {
+   "id": "8b9d7ca5f2a1",
+   "title": "Product showcase: Sweet Virtual Patching stops HTTP2Shell while fixes catch up",
+   "url": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-03T06:00:18+00:00",
+   "summary": "HTTP2Shell (CVE-2026-111497), the critical Brotli bug first known as Node2Shell, is a remote code execution flaw in the compression library inside Node.js, Bun, Envoy, Python and more. AI found it: OpenAI’s agents turned it up in late September during a high-compute red-teaming campaign.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "AI",
+    "Development"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-111497",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "Google"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-111497",
+      "added": "2026-10-27",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-111497",
+     "score": 0.82641,
+     "percentile": 0.99667,
+     "date": "2026-11-02"
+    }
+   }
   },
   {
    "id": "2399e58fc2ef",
@@ -1831,6 +1941,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Networking"
+   ]
+  },
+  {
+   "id": "11e3f43ff96f",
+   "title": "Cloudflare experiencing multiple active incidents",
+   "url": "https://www.cloudflarestatus.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T04:57:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
