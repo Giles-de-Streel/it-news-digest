@@ -1,12 +1,12 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T12:01:33+00:00",
+ "generated": "2026-11-03T12:31:29+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 36,
-   "recent": 36,
+   "fetched": 34,
+   "recent": 34,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 26,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "SQLServerCentral",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Schneier on Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -468,14 +468,14 @@
   {
    "source": "Trail of Bits",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "Zero Day Initiative",
-   "fetched": 0,
+   "fetched": 20,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "The DFIR Report",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1068,13 +1068,13 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 19,
+   "recent": 21,
    "error": null
   },
   {
@@ -1553,6 +1553,226 @@
   }
  ],
  "items": [
+  {
+   "id": "702b9753663d",
+   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
+   "url": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-03T12:21:49+00:00",
+   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7f70fa1591d8",
+   "title": "IPFire 2.29 Core Update 205 Fixes Serious Linux TCP Vulnerability",
+   "url": "https://linuxiac.com/ipfire-2-29-core-update-205-fixes-serious-linux-tcp-vulnerability/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-03T12:21:22+00:00",
+   "summary": "IPFire releases Core Update 205 to address CVE-2026-98432, a serious use-after-free flaw in the Linux kernel's TCP stack.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-98432",
+     "score": 0.00457,
+     "percentile": 0.39649,
+     "date": "2026-11-02"
+    }
+   }
+  },
+  {
+   "id": "27d2afd4581b",
+   "title": "Time is running out to switch to digital phone lines, UK businesses warned",
+   "url": "https://www.itpro.com/infrastructure/networking/time-is-running-out-to-switch-to-digital-phone-lines-uk-businesses-warned",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-03T12:20:33+00:00",
+   "summary": "Openreach says hundreds of thousands of firms still haven't made the change and could face major costs and disruption if they don't",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ebdb4fcf5374",
+   "title": "Snag this 360Hz QD-OLED gaming monitor for only $349 — sumptuous 27-inch display also features an integrated Wi-Fi antenna",
+   "url": "https://www.tomshardware.com/monitors/gaming-monitors/snag-this-360hz-qd-oled-gaming-monitor-for-only-usd349-sumptuous-27-inch-display-also-features-an-integrated-wi-fi-antenna",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-03T12:17:30+00:00",
+   "summary": "An affordable OLED monitor upgrade for just $349. Featuring a blistering 360Hz refresh rate and an integrated WiFi antenna.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "f75f1212caa3",
+   "title": "openSUSE Leap 16.1 Officially Released with Immutable Mode, Based on SLES 16.1",
+   "url": "https://9to5linux.com/opensuse-leap-16-1-officially-released-with-immutable-mode-based-on-sles-16-1",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-03T12:16:01+00:00",
+   "summary": "openSUSE Leap 16.1 operating system is now available for download as the first maintenance update to the openSUSE Leap 16 series, based on SUSE Linux Enterprise Server 16.1.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ddd18ea0f653",
+   "title": "Affinity will soon be getting an official Linux build",
+   "url": "https://www.neowin.net/news/affinity-will-soon-be-getting-an-official-linux-build/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-03T12:16:01+00:00",
+   "summary": "Affinity is one of the most popular alternatives to Adobe's Creative Suite. Now, it's coming to Linux.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "6949d9af6fe0",
+   "title": "Supermarket fridges are under attack in Europe — here's what's happening",
+   "url": "https://www.cnbc.com/2026/11/03/supermarket-fridges-hack-cyberattack-europe.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T12:11:01+00:00",
+   "summary": "European supermarkets have become the center of another cyberattack, with hackers remotely heating fridges and spoiling food.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2308ca9e5d62",
+   "title": "Apple's John Ternus faces early test as global memory crisis hurts profits",
+   "url": "https://www.cnbc.com/2026/11/03/apple-earnings-john-ternus-faces-first-test-amid-high-memory-costs.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T12:10:31+00:00",
+   "summary": "In John Ternus' first earnings report as CEO, Apple issued a gross margin forecast that disappointed Wall Street.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a3a60a89fcc5",
+   "title": "Critical Node-RED Flaw Exploited in Attacks",
+   "url": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-03T12:10:19+00:00",
+   "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "fa7f475b73e4",
+   "title": "US data center operators and power developers are repurposing jet engines to secure power in as little as two years, bypassing multi-year grid-connection delays (New York Times)",
+   "url": "https://www.techmeme.com/261103/p12#a261103p12",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T12:10:00+00:00",
+   "summary": "New York Times : US data center operators and power developers are repurposing jet engines to secure power in as little as two years, bypassing multi-year grid-connection delays — Across wide stretches of the sun-bleached Sonoran desert in Arizona, thousands of retired aircraft sit nose-to-tail in graveyards of metal…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "375c9083b60d",
+   "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
+   "url": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-03T12:05:52+00:00",
+   "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "996a097d0c7e",
+   "title": "AI chip smugglers exploit trade control loophole to bring banned HBM from South Korea into China — expensive memory chips packaged with cheap, unsanctioned processors to become legal exports",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-03T12:04:32+00:00",
+   "summary": "Customs authorities only check the performance specifications of a server's processors, allowing smugglers to attach high-end memory chips to low-end processors and ship them into China.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "05f8a42fcfed",
+   "title": "Hackers put porn on public billboards and claim it was “far too easy”",
+   "url": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-03T12:01:55+00:00",
+   "summary": "A hacking group called Leakers$ gained access to remote management software for billboards and used it to show porn.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "94ff860a947e",
+   "title": "Sava Trust (YC F25) Is Hiring a Founding Engineer in NYC",
+   "url": "https://www.ycombinator.com/companies/sava-trust-company/jobs",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T12:01:01+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "dcae8bed3d42",
+   "title": "AIs Hacking the Law",
+   "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+   "source": "Schneier on Security",
+   "source_category": "Threat research",
+   "published": "2026-11-03T12:01:00+00:00",
+   "summary": "In both a 2021 essay and my 2022 book, A Hacker’s Mind , I talk about AIs finding vulnerabilities and exploits—hacking—the legal system. Here’s some demonstrations of this from Germany: Legal systems encode the foundations of social order in natural language.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "36e53cd7e602",
    "title": "REDMAGIC 12 Pro review: Beefed up with top end Snapdragon 8 Elite Gen 6 Extreme",
@@ -1577,6 +1797,59 @@
    "also_covered_by": [],
    "topics": [
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "7f565e8e4cba",
+   "title": "Steam Survey shockwaves felt as proportion of 32GB RAM systems drops by more than 5% — the percentage of PC gamers with 1TB+ total storage also shrunk by nearly 5%",
+   "url": "https://www.tomshardware.com/pc-components/ram/steam-survey-shockwaves-felt-as-proportion-of-32gb-ram-systems-drops-by-more-than-5-percent-the-percentage-of-pc-gamers-with-1tb-total-storage-also-shrunk-by-nearly-5-percent",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "The latest Steam Survey appears to show that gamers blessed with systems packing 32GB or more RAM and 1TB or more storage are a dying breed.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f5c9901aec75",
+   "title": "The cryptography behind electronic voting (and why paper ballots are still essential)",
+   "url": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/",
+   "source": "Trail of Bits",
+   "source_category": "Reverse engineering",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and, in some cases, statistical audits.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "84c97d10461e",
+   "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation",
+   "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "About OpenKruise Agents OpenKruise Agents is a sub-project of OpenKruise, the CNCF open-source application automation and workload orchestration project. It provides full lifecycle management for Agent Sandboxes running at scale on Kubernetes, together with a complete...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "03a908ff2b52",
+   "title": "I tested the RedMagic 12 Pro – and it’s the fastest Android I’ve ever seen",
+   "url": "https://www.zdnet.com/tech/the-redmagic-12-pro-is-an-elite-phone-with-one-glaring-issue/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-03T12:00:00+00:00",
+   "summary": "If it’s possible to release a flagship phone while at the same time making it appear more like a midrange phone, Red Magic has found a way.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1797,6 +2070,19 @@
    "source_category": "IT industry",
    "published": "2026-11-03T11:17:00+00:00",
    "summary": "Google’s new Android app store program brings one-tap installs and automatic updates, but US users are excluded, and marketplaces face a $10,000 annual fee.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "89bcf5fbf46f",
+   "title": "Anthropic IPO filing: $1.7B quarterly payroll, about $107K per employee monthly",
+   "url": "https://www.techspot.com/news/114428-anthropic-ipo-filing-reveals-17-billion-quarterly-personnel.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T11:16:07+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3395,6 +3681,21 @@
    ]
   },
   {
+   "id": "d29389a04866",
+   "title": "GitHub Desktop adds short-lived authentication tokens",
+   "url": "https://github.blog/changelog/2026-11-02-github-desktop-adds-short-lived-authentication-tokens",
+   "source": "GitHub Changelog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-03T07:55:58+00:00",
+   "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "c696742ebaaf",
    "title": "Over 100 European Stores Hit as Supermarket Fridge Attacks Return",
    "url": "https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/",
@@ -4227,6 +4528,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d5c546f41b4a",
+   "title": "Stefanie Janine: PostgreSQL Conference Europe Wrapup",
+   "url": "https://postgr.es/p/9AT",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-02T23:00:00+00:00",
+   "summary": "PostgreSQL Conference Europe 2026 This years conference took place in Valencia, Spain, from Tuesday October 20 until Friday, October 23. We had a whole conference center for the conference, the Palacio de Congresos Valencia . In previous years the first day was training, later community stuff.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
