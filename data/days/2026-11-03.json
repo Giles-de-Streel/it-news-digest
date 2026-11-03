@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T05:31:02+00:00",
+ "generated": "2026-11-03T06:00:46+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
@@ -204,19 +204,19 @@
   {
    "source": "Stack Overflow Blog",
    "fetched": 40,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 3,
+   "recent": 5,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 80,
-   "recent": 79,
+   "fetched": 81,
+   "recent": 80,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1548,11 +1548,146 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 8,
+   "recent": 10,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "393e45878a25",
+   "title": "Oh, your agents need OAuth2, too",
+   "url": "https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/",
+   "source": "Stack Overflow Blog",
+   "source_category": "Development",
+   "published": "2026-11-03T06:00:28+00:00",
+   "summary": "Recorded at LDX3 by LeadDev, Ryan chats with Dan Moore, Senior Director of CIAM Strategy and Identity Standards at FusionAuth, about adapting established OAuth2 protocols for the agentic era, the security necessity of giving autonomous AI agents their own distinct identities, and how AI coding tools are shifting…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2399e58fc2ef",
+   "title": "RHSA-2026:94303: Critical: kernel security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94303",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-03T05:53:15+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e6e05b80741d",
+   "title": "AI coding agents are installing MCP servers that will never be patched",
+   "url": "https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-03T05:45:53+00:00",
+   "summary": "When a developer tells an AI coding agent to “set up a GitHub MCP,” the agent has to pick a package. New research from Glow Labs documents sessions where it picked one out of an archived repository that will never be patched again.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "3e6bc640da57",
+   "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+   "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-03T05:34:41+00:00",
+   "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "ICS / OT",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-58115",
+     "score": 10.0,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "siemens"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-58115",
+     "score": 0.00953,
+     "percentile": 0.61342,
+     "date": "2026-11-02"
+    }
+   }
+  },
+  {
+   "id": "d4042f8de11d",
+   "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+   "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-03T05:34:37+00:00",
+   "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-81648",
+     "score": 10.0,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "WPScan"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-81648",
+     "score": 0.00498,
+     "percentile": 0.42705,
+     "date": "2026-11-02"
+    }
+   }
+  },
+  {
+   "id": "9b3ba0441179",
+   "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+   "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-03T05:32:25+00:00",
+   "summary": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube Genius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4ebb57605cc8",
+   "title": "Fireperf: Open-source network testing tool for firewalls and routers",
+   "url": "https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-03T05:30:59+00:00",
+   "summary": "The IPFire project has released fireperf, an open-source measurement tool that opens connections at a fixed rate and reports what the device in the middle did with each one.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
   {
    "id": "12bb2d50f3df",
    "title": "Macronix Builds Hardware Security into NOR Flash Ahead of EU Cyber Resilience Act",
@@ -1564,6 +1699,20 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "2147ac7bda8e",
+   "title": "October sponsors-only newsletter",
+   "url": "https://simonwillison.net/2026/Nov/3/october-newsletter/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-03T05:28:59+00:00",
+   "summary": "I sent out the October edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: The October inflection point for vibe game development The vulnerability apocalypse gets hot LLM releases API credits for $100+/month subscriptions What I'm…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
    ]
   },
   {
@@ -1642,6 +1791,32 @@
    "topics": [
     "Threats & malware",
     "AI"
+   ]
+  },
+  {
+   "id": "04d1707cefc8",
+   "title": "APOD: 2026 November 3 – Comet PanSTARRs and Rainbow Meteor",
+   "url": "https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-03T05:05:00+00:00",
+   "summary": "APOD Science APOD APOD: 2026 November 3 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos!",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "466e8a46d081",
+   "title": "The Pacific’s Busy Storm Season",
+   "url": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-03T05:01:00+00:00",
+   "summary": "Super Typhoon In-fa developed an unusually large eye, and the remnants of Typhoon Champi transitioned into an extratropical storm that targeted Alaska.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1760,6 +1935,19 @@
    "source_category": "Development",
    "published": "2026-11-03T03:10:04+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e2b9be922dc0",
+   "title": "When confusion reigns, trusted vendors must guide their SMB customers",
+   "url": "https://www.welivesecurity.com/en/business-security/when-confusion-reigns-trusted-vendors-guide-smb-customers/",
+   "source": "ESET WeLiveSecurity",
+   "source_category": "Threat research",
+   "published": "2026-11-02T09:55:00+00:00",
+   "summary": "SMBs need guided onboarding and supervised protection to optimize their investments",
    "also_covered_by": [],
    "topics": [
     "General IT"
