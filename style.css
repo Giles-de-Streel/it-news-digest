@@ -428,6 +428,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
 .filters input[type="search"] { flex: 1 1 220px; min-width: 0; }
+/* the News search, source drop-down and Cards/List toggle are two sizes smaller than body text */
+#search, #source-filter { font-size: 14px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
 .chip { border-radius: 999px; padding: 3px 10px; font-size: 13px; }
 .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
@@ -546,7 +548,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .meta .kev:hover, .meta .epss:hover { text-decoration: underline; }
 /* Cards / List switch */
 .seg { display: flex; gap: 2px; padding: 3px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
-.seg button { border: 0; background: transparent; border-radius: 7px; padding: 3px 12px; color: var(--muted); font-weight: 600; font-size: 14px; }
+.seg button { border: 0; background: transparent; border-radius: 7px; padding: 3px 12px; color: var(--muted); font-weight: 600; font-size: 12px; }
 .seg button:hover { color: var(--text); }
 .seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(15, 23, 42, .15); }
 
