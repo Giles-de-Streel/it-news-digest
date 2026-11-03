@@ -1,12 +1,12 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-03T03:01:27+00:00",
+ "generated": "2026-11-03T03:32:49+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 37,
-   "recent": 37,
+   "fetched": 35,
+   "recent": 35,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -821,9 +821,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -923,9 +923,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1845,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -977,9 +977,9 @@
   },
   {
    "source": "ITSM.tools",
-   "fetched": 15,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Power BI Blog",
@@ -1080,7 +1080,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1346,
-   "recent": 5,
+   "fetched": 1348,
+   "recent": 7,
    "error": null
   },
   {
@@ -1553,6 +1553,33 @@
   }
  ],
  "items": [
+  {
+   "id": "120eccc6e04f",
+   "title": "Sources: Huawei recently told some clients that a large share of its upcoming flagship, Ascend 960DT, will run largely on HBM made by Samsung and SK Hynix (The Information)",
+   "url": "https://www.techmeme.com/261102/p50#a261102p50",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T03:25:00+00:00",
+   "summary": "The Information : Sources: Huawei recently told some clients that a large share of its upcoming flagship, Ascend 960DT, will run largely on HBM made by Samsung and SK Hynix — For an illustration of how porous U.S. restrictions on the shipment of AI chips to China can be, consider a technique that has begun …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "70bf011d8276",
+   "title": "Larridin, which helps companies track how AI affects employee output and identifies areas for better AI adoption, raised a $30M Series A led by Pelion Ventures (Aditi Bharade/Business Insider)",
+   "url": "https://www.techmeme.com/261102/p49#a261102p49",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T03:10:00+00:00",
+   "summary": "Aditi Bharade / Business Insider : Larridin, which helps companies track how AI affects employee output and identifies areas for better AI adoption, raised a $30M Series A led by Pelion Ventures — Companies went all in on AI this year, and are now reckoning with heavy bills.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "5d212eb7ef0e",
    "title": "Enterprise architecture: Dell and Microsoft integrate hybrid AI",
@@ -2536,6 +2563,19 @@
      "version": "4.0",
      "scored_by": "AMZN"
     }
+   ]
+  },
+  {
+   "id": "f030dcc0f7c8",
+   "title": "The road to opaque software is paved with good (engineering) intentions",
+   "url": "https://tomasp.net/longreads/closing/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-02T21:42:37+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4143,6 +4183,35 @@
      "url": "https://siliconangle.com/2026/11/02/apples-stock-drops-as-new-ceo-john-ternus-delivers-his-first-earnings-call/"
     }
    ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6fd6ad7938fa",
+   "title": "Rewarding defenders with bigger bug bounties",
+   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T18:00:00+00:00",
+   "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows",
+    "AI",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "262cfa35f430",
+   "title": "Preparing our next security sprint to harden OpenAI",
+   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-02T18:00:00+00:00",
+   "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+   "also_covered_by": [],
    "topics": [
     "AI"
    ]
