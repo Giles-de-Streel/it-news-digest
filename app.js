@@ -248,6 +248,18 @@
       box.replaceChildren(el("p", { class: "empty", text: items.length ? "Nothing matches these filters." : "No stories for this day yet." }));
       return;
     }
+    // A source picked in the drop-down: one flat list of that outlet's own articles, newest first
+    if (state.source) {
+      const own = list.map(asSourceArticle).sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+      const cveFirst = /cve-\d/i.test(state.query);
+      box.replaceChildren(...[
+        cves.length && cveFirst ? cveSection(cves) : null,
+        own.length ? section(`From ${state.source}`, `${own.length} ${own.length === 1 ? "article" : "articles"}, newest first`, own) : null,
+        cves.length && !cveFirst ? cveSection(cves) : null,
+      ].filter(Boolean));
+      addMoreToggles(box);
+      return;
+    }
     const top = list.filter((it) => coverage(it) > 1);
     // Every story with a CVSS badge, highest score first. Single-source ones move here from
     // "Other stories"; multi-source ones also stay in "Most reported".
@@ -281,6 +293,19 @@
       cveFirst ? null : cveBlock,
     ].filter(Boolean));
     addMoreToggles(box);
+  }
+
+  // The picked source's own version of a story: as-is when it is the lead outlet, otherwise its own
+  // headline and link, with the lead outlet moved into "also covered by" (no summary of its own)
+  function asSourceArticle(it) {
+    if (it.source === state.source) return it;
+    const also = it.also_covered_by || [];
+    const mine = also.find((c) => c.source === state.source);
+    if (!mine) return it;
+    return {
+      ...it, id: mine.id || it.id, title: mine.title, url: mine.url, source: mine.source, summary: "",
+      also_covered_by: [{ id: it.id, source: it.source, title: it.title, url: it.url }, ...also.filter((c) => c !== mine)],
+    };
   }
 
   // Summaries are clamped to 3 lines by CSS; add a More/Less toggle only where text is cut off.
@@ -663,7 +688,7 @@
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
     $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncUrl(false); render(); });
-    $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); });
+    $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); window.scrollTo({ top: 0 }); });
     $("#topics-toggle").addEventListener("click", () => toggleTopicPanel());
     // A tap outside the open topic sheet closes it
     document.addEventListener("click", (e) => {
