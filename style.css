@@ -635,3 +635,54 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   .news-main .filters .seg { flex: none; }
   .topic-nav { top: 0; max-height: 100vh; max-height: 100dvh; }
 }
+@keyframes updated-shake-alt {
+  0%, 19.2%, 22.8%, 100% { transform: none; }
+  19.25% { transform: translateX(-2px) rotate(-3deg); }
+  19.5% { transform: translateX(2px) rotate(3deg); }
+  19.75% { transform: translateX(-2px) rotate(-3deg); }
+  20% { transform: translateX(2px) rotate(3deg); }
+  20.25% { transform: translateX(-2px) rotate(-3deg); }
+  20.5% { transform: translateX(2px) rotate(3deg); }
+  20.75% { transform: translateX(-2px) rotate(-3deg); }
+  21% { transform: translateX(2px) rotate(3deg); }
+  21.25% { transform: translateX(-2px) rotate(-3deg); }
+  21.5% { transform: translateX(2px) rotate(3deg); }
+  21.75% { transform: translateX(-2px) rotate(-3deg); }
+  22% { transform: translateX(2px) rotate(3deg); }
+  22.25% { transform: translateX(-2px) rotate(-3deg); }
+  22.5% { transform: translateX(2px) rotate(3deg); }
+}
+@keyframes pow-shake-alt {
+  0%, 19.25% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  19.4% { opacity: 1; transform: translate(-50%, -50%) scale(1.1) rotate(-10deg); }
+  19.9% { opacity: 0; transform: translate(-50%, -50%) scale(1.3) rotate(6deg); }
+  20.55% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  20.7% { opacity: 1; transform: translate(-30%, -70%) scale(1) rotate(8deg); }
+  21.2% { opacity: 0; transform: translate(-30%, -70%) scale(1.25) rotate(-6deg); }
+  21.85% { opacity: 0; transform: translate(-50%, -50%) scale(.2) rotate(0deg); }
+  22% { opacity: 1; transform: translate(-60%, -35%) scale(1.15) rotate(-6deg); }
+  22.6%, 100% { opacity: 0; transform: translate(-60%, -35%) scale(1.4) rotate(10deg); }
+}
+/* Desktop: the runner alternates on a 32s loop (two 16s laps). Lap 1 shakes the Updated text as before;
+   lap 2 it takes the match from the toggle and waves it overhead instead (the toggle's own match is hidden
+   meanwhile, the button stays clickable). 19-23% / 69-73% of 32s = 38-46% of each 16s lap. */
+@media (min-width: 701px) {
+  .shake-group { animation: updated-shake-alt 32s linear infinite; }
+  .pow.pow-shake { animation-name: pow-shake-alt; animation-duration: 32s; }
+  .runner .shake-pose { animation: runner-show-shake-alt 32s step-end infinite; }
+  .runner .match-pose { animation: runner-show-match 32s step-end infinite; }
+  .scene-toggle svg { animation: toggle-match-taken 32s step-end infinite; }
+}
+.runner .match-pose { visibility: hidden; }
+.runner .match-arm { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-match-wave .45s ease-in-out infinite alternate; }
+.runner .match-arm .match-stick { stroke: var(--match-stick); stroke-width: 1.3; }
+.runner .match-arm .match-head { fill: var(--match-head); stroke: none; }
+.runner .match-arm .flame-out { fill: var(--flame-out); stroke: none; }
+.runner .match-arm .flame-in { fill: var(--flame-in); stroke: none; }
+.runner .match-arm .match-flame { transform-box: view-box; transform-origin: 17.6px 1.6px; animation: match-flicker .3s ease-in-out infinite alternate; }
+@keyframes runner-match-wave { from { transform: rotate(-35deg); } to { transform: rotate(30deg); } }
+@keyframes runner-show-shake-alt { 0% { visibility: hidden; } 19% { visibility: visible; } 23% { visibility: hidden; } }
+@keyframes runner-show-match { 0% { visibility: hidden; } 69% { visibility: visible; } 73% { visibility: hidden; } }
+@keyframes toggle-match-taken { 0% { opacity: 1; } 69% { opacity: 0; } 73% { opacity: 1; } }
+.scene-off .runner .match-pose { display: none; }
+.scene-off .scene-toggle svg { animation: none; opacity: 1; }
