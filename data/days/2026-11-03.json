@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T05:02:16+00:00",
+ "generated": "2026-11-03T05:31:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "The Record",
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 25,
+   "recent": 27,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 33,
-   "recent": 33,
+   "fetched": 35,
+   "recent": 35,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -701,9 +701,9 @@
   },
   {
    "source": "Industrial Cyber",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 9,
+   "recent": 9,
+   "error": null
   },
   {
    "source": "Siemens ProductCERT advisories",
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -977,9 +977,9 @@
   },
   {
    "source": "ITSM.tools",
-   "fetched": 0,
+   "fetched": 15,
    "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "error": null
   },
   {
    "source": "Power BI Blog",
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1247,9 +1247,9 @@
   },
   {
    "source": "Security Affairs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 10,
+   "recent": 6,
+   "error": null
   },
   {
    "source": "Graham Cluley",
@@ -1554,6 +1554,111 @@
  ],
  "items": [
   {
+   "id": "12bb2d50f3df",
+   "title": "Macronix Builds Hardware Security into NOR Flash Ahead of EU Cyber Resilience Act",
+   "url": "https://www.eetimes.com/macronix-builds-hardware-security-into-nor-flash-ahead-of-eu-cyber-resilience-act/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-03T05:30:00+00:00",
+   "summary": "The European Union's Cyber Resilience Act (CRA), which becomes mandatory in December 2027, is raising the bar for cybersecurity in connected devices. Rather than relying on software patches to address vulnerabilities after they emerge, manufacturers are under growing pressure to build security into products from the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8d37dd8fd1cd",
+   "title": "CVE-2026-120534: The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120534",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T05:18:31.987000+00:00",
+   "summary": "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 0.9.2.6 via the render_field function.",
+   "kind": "cve",
+   "cve": "CVE-2026-120534",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120534",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9339197f9c4f",
+   "title": "CVE-2026-120518: The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120518",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T05:18:31.380000+00:00",
+   "summary": "The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.1.0. This is due to bpxp_image_field_update_on_user_activation() calling unlink() on a path built from visitor-supplied signup metadata with no realpath() resolution, no containment…",
+   "kind": "cve",
+   "cve": "CVE-2026-120518",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120518",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "ff4806772d73",
+   "title": "Does AI actually save employees time? Data is contradictory",
+   "url": "https://www.cio.com/article/4243615/does-ai-actually-save-employees-time-data-is-contradictory.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-03T05:09:10+00:00",
+   "summary": "It’s early days for AI-assisted work , and sentiments are mixed about its benefits: Does AI actually bring value and save employees time, or does it bog them down and add unnecessary activities?",
+   "also_covered_by": [
+    {
+     "id": "78873cf687fd",
+     "source": "Computerworld",
+     "title": "Does AI actually save employees time? Data is contradictory",
+     "url": "https://www.computerworld.com/article/4243686/does-ai-actually-save-employees-time-data-is-contradictory-2.html"
+    }
+   ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "770e2fae0f2d",
+   "title": "Squarespace takes another step to adapt as AI changes website creation",
+   "url": "https://www.neowin.net/news/squarespace-takes-another-step-to-adapt-as-ai-changes-website-creation/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-03T05:06:01+00:00",
+   "summary": "Squarespace faces structural changes across its product and engineering division to align with a shifting landscape where AI tools continue to transform software development and site building.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI"
+   ]
+  },
+  {
+   "id": "41ed48d98b5e",
+   "title": "Cybersecurity jobs available right now: November 3, 2026",
+   "url": "https://www.helpnetsecurity.com/2026/11/03/cybersecurity-jobs-available-right-now-november-3-2026/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-03T05:00:25+00:00",
+   "summary": "Cyber Security Architect Planck Technologies | Portugal | Remote – View job details As a Cyber Security Architect, you will design security architectures for telecommunications networks, platforms, and cloud environments.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Networking"
+   ]
+  },
+  {
    "id": "b9171fc286c0",
    "title": "AI-Powered Penetration Testing: How Autonomous Offensive Security Works",
    "url": "https://horizon3.ai/downloads/whitepapers/ai-powered-penetration-testing-sans-spotlight/",
@@ -1565,6 +1670,32 @@
    "topics": [
     "AI",
     "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "1729376c5709",
+   "title": "NASA's Swift space telescope predicted to crash back to Earth tomorrow",
+   "url": "https://www.abc.net.au/news/science/2026-11-03/nasa-swift-telescope-crash-landing/100018476",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T04:47:16+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "747362de9d48",
+   "title": "Architect creates open-source replacement for VM migration tool VMware has hidden",
+   "url": "https://www.theregister.com/virtualization/2026/11/03/architect-creates-open-source-replacement-for-vm-migration-tool-vmware-has-hidden/5307124",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-03T04:45:59+00:00",
+   "summary": "OpenVDDK is reportedly already being used in production, at scale",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -1608,6 +1739,20 @@
    ]
   },
   {
+   "id": "c98a0f0bca49",
+   "title": "Toyota shows off SoC that stores model weights and its OS on integrated memory",
+   "url": "https://www.theregister.com/systems/2026/11/03/toyota-shows-off-soc-that-stores-model-weights-and-its-os-on-integrated-memory/5307117",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-03T03:25:32+00:00",
+   "summary": "Accessing external memory puts the brakes on physical AI, so carmaker has found an economical and speedy shortcut",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "973a99fe5b31",
    "title": "Show HN: I built a little browser game to practice Vim commands",
    "url": "https://hjkl.duy.run",
@@ -1631,6 +1776,21 @@
    "also_covered_by": [],
    "topics": [
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "efcfb5dd3b0a",
+   "title": "Announcing AWS for Fluent Bit 3.0.0 based on Fluent Bit 4.1.1",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2025/10/aws-fluent-bit-3-0-0-based-4-1-1",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-02T08:00:00+00:00",
+   "summary": "AWS for Fluent Bit announces version 3.0.0 , based on Fluent Bit version 4.1.1 and Amazon Linux 2023. Container logging using AWS for Fluent Bit is now more performant and more feature-rich for AWS customers, including those using Amazon Elastic Container Services (Amazon ECS) and Amazon Elastic Kubernetes Service…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "DevOps & SRE"
    ]
   }
  ]
