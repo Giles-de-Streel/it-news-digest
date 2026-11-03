@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-03T20:01:51+00:00",
+ "generated": "2026-11-03T20:31:23+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 31,
-   "recent": 31,
+   "fetched": 37,
+   "recent": 37,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 12,
+   "recent": 17,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
-   "recent": 1,
+   "fetched": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1344,7 +1344,7 @@
   {
    "source": "EdTech Magazine Higher Ed",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -1536,13 +1536,13 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 24,
+   "recent": 26,
    "error": null
   },
   {
    "source": "OpenAI News",
-   "fetched": 1350,
-   "recent": 7,
+   "fetched": 1352,
+   "recent": 9,
    "error": null
   },
   {
@@ -1559,6 +1559,361 @@
   }
  ],
  "items": [
+  {
+   "id": "2ecbca2963f4",
+   "title": "GKE Is Built on Google’s Kubernetes Expertise – So Why is it Still Underutilized?",
+   "url": "https://cloudnativenow.com/features/gke-is-built-on-googles-kubernetes-expertise-so-why-is-it-still-underutilized/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-03T20:25:39+00:00",
+   "summary": "Google didn’t just adopt Kubernetes. Google created it. More importantly, Google has been able to dogfood Kubernetes at enormous scale for years, giving GKE the benefit of real-world experience from one of the largest Kubernetes fleets in the world. That experience has shaped the platform and led to capabilities such",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "1c6b33492071",
+   "title": "EKS Powers the Cloud’s Largest Kubernetes Fleets – So Why Is It Still Running Mostly Idle?",
+   "url": "https://cloudnativenow.com/features/eks-powers-the-clouds-largest-kubernetes-fleets-so-why-is-it-still-running-mostly-idle/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-03T20:24:43+00:00",
+   "summary": "Amazon Elastic Kubernetes Service (EKS) remains the primary foundation for enterprise production Kubernetes, hosting massive mission-critical workloads across the globe.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "630f210084b2",
+   "title": "Nexus Mods makes AI disclosures mandatory, adds user filter controls",
+   "url": "https://www.neowin.net/news/nexus-mods-makes-ai-disclosures-mandatory-adds-user-filter-controls/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-03T20:20:01+00:00",
+   "summary": "Nexus Mods has made generative AI disclosures mandatory for all uploads on the modding platform, rolling out new user filters and creator permissions.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1417efbffcb1",
+   "title": "CVE-2026-95733: A vulnerability exists in a component of HPE Networking Fabric Composer.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95733",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:21.433000+00:00",
+   "summary": "A vulnerability exists in a component of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute arbitrary code on the affected system.",
+   "kind": "cve",
+   "cve": "CVE-2026-95733",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-95733",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a29d754bb6d6",
+   "title": "CVE-2026-95732: An authentication bypass vulnerability exists in the underlying operating system of HPE Networking Fabric…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95732",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:21.320000+00:00",
+   "summary": "An authentication bypass vulnerability exists in the underlying operating system of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute arbitrary code on the affected system.",
+   "kind": "cve",
+   "cve": "CVE-2026-95732",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-95732",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "bcdbafd79b2c",
+   "title": "CVE-2026-95731: Hardcoded password vulnerabilities in the command-line interface of HPE Networking Fabric Composer could…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95731",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:21.197000+00:00",
+   "summary": "Hardcoded password vulnerabilities in the command-line interface of HPE Networking Fabric Composer could allow an unauthenticated remote attacker to access the affected system using hardcoded credentials.",
+   "kind": "cve",
+   "cve": "CVE-2026-95731",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-95731",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "537ebffa13c4",
+   "title": "CVE-2026-63471: fastapi-code-generator creates FastAPI applications from OpenAPI files.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63471",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:15.753000+00:00",
+   "summary": "fastapi-code-generator creates FastAPI applications from OpenAPI files. Prior to 0.8.1, the generator inserts an OpenAPI path into a generated @app.get(...) route decorator as a single-quoted generated route string without escaping embedded quotes.",
+   "kind": "cve",
+   "cve": "CVE-2026-63471",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63471",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "07874abc9b59",
+   "title": "CVE-2026-63470: fastapi-code-generator creates FastAPI applications from OpenAPI files.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63470",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:15.590000+00:00",
+   "summary": "fastapi-code-generator creates FastAPI applications from OpenAPI files. Prior to 0.8.1, the generator inserts Operation.summary into a generated route-handler docstring as a triple-double-quoted string without escaping embedded triple quotes.",
+   "kind": "cve",
+   "cve": "CVE-2026-63470",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63470",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "cebc4e31973c",
+   "title": "CVE-2026-63469: fastapi-code-generator creates FastAPI applications from OpenAPI files.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63469",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-03T20:18:15.420000+00:00",
+   "summary": "fastapi-code-generator creates FastAPI applications from OpenAPI files. Prior to 0.8.1, the generator inserts an additional response status-code key into the generated responses={...} route-decorator dictionary as a single-quoted Python string without escaping embedded quotes.",
+   "kind": "cve",
+   "cve": "CVE-2026-63469",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63469",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c10c60758d53",
+   "title": "Chimera Linux Releases New ISOs with Kernel 7.3, GNOME 51, and Plasma 6.8",
+   "url": "https://linuxiac.com/chimera-linux-releases-new-isos-with-kernel-7-3-gnome-51-plasma-6-8/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-03T20:15:47+00:00",
+   "summary": "Chimera Linux refreshes its installation images with Linux kernel 7.3, GNOME 51, KDE Plasma 6.8, and NetworkManager replacing iwd.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "System administration",
+    "Networking"
+   ]
+  },
+  {
+   "id": "f8e3fe51b9ee",
+   "title": "Apple opens Siri AI to all developers with iOS 27.3 and other 27.3 OS betas, letting any app bring its content and actions into Siri AI by using App Intents (Apple Developer)",
+   "url": "https://www.techmeme.com/261103/p27#a261103p27",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:15:00+00:00",
+   "summary": "Apple Developer : Apple opens Siri AI to all developers with iOS 27.3 and other 27.3 OS betas, letting any app bring its content and actions into Siri AI by using App Intents — Starting today with the iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 betas, a new Developer Preview enables any developer …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "97d6bd96f6e9",
+   "title": "Binance breach puts custody at center of crypto infrastructure trade",
+   "url": "https://www.cnbc.com/2026/11/03/binance-breach-puts-custody-at-center-of-crypto-infrastructure-trade.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:13:37+00:00",
+   "summary": "Lessons from the $6.3 billion Binance hack could help shape the next phase of the crypto infrastructure trade.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "ea0326c500c0",
+   "title": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways",
+   "url": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-03T20:10:41+00:00",
+   "summary": "Apple’s annual filing warns that AI agents could exceed permissions, resist instructions or take actions that are difficult to reverse.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "bfa119b34e29",
+   "title": "Quick Start: C# and MongoDB - Starting and Setup",
+   "url": "https://www.mongodb.com/company/blog/technical/quick-start-c-sharp-and-mongodb-starting-and-setup",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T20:09:41+00:00",
+   "summary": "In the first of the C# Quick Start series, I'll show how to set up connections between C# and MongoDB. In future parts we'll move on and work through: Database Create, Read, Update, and Delete (CRUD) operations Map MongoDB to C# objects Look at MongoDB aggregation How to use LINQ with MongoDB As you already know, C#…",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "ebbb2db1389f",
+   "title": "Introducing Atlas App Connections: Secure, One-Click Access for AI Tools",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-atlas-app-connections-secure-one-click-access-for-ai-tools",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T20:08:21+00:00",
+   "summary": "For builders using AI coding tools, speed is everything. Integrations that require generating a credential, filing an access request, or waiting on a custom build can stop momentum (and productivity) in its tracks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "349f8dea26b5",
+   "title": "When Student Laptops Fall Behind, Campus IT Can Close the Gap",
+   "url": "https://edtechmagazine.com/higher/article/2026/11/when-student-laptops-fall-behind-campus-it-can-close-gap",
+   "source": "EdTech Magazine Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-03T20:04:51+00:00",
+   "summary": "At most colleges and universities, students own their devices and choose what they bring to campus, but what happens when those devices can’t meet the technical demands of their coursework? In a recent NVIDIA survey of 1,000 U.S.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "4fc0d0680534",
+   "title": "Would you believe it's jank?",
+   "url": "https://www.youtube.com/watch?v=tHgApFhevrQ",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-03T20:03:16+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "85410cc39711",
+   "title": "Building Next-gen AI agents: The MongoDB Atlas-Microsoft Foundry Integration",
+   "url": "https://www.mongodb.com/company/blog/innovation/building-next-gen-ai-agents-mongodb-atlas-integration-microsoft-foundry",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T20:02:58+00:00",
+   "summary": "Generative AI is rapidly evolving from experimenting with models to relying on intelligent, autonomous multi-agent workflows that can reason, act, and adapt in real time.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows",
+    "AI",
+    "Databases"
+   ]
+  },
+  {
+   "id": "4199ed0b3669",
+   "title": "Nordic Launches nRF71 SoCs for Low-Power Wi-Fi and Edge AI",
+   "url": "https://www.embedded.com/nordic-launches-nrf71-socs-for-low-power-wi-fi-and-edge-ai/",
+   "source": "Embedded.com",
+   "source_category": "Embedded",
+   "published": "2026-11-03T20:02:35+00:00",
+   "summary": "Nordic Semiconductor has introduced the nRF71 series, a family of ultra-low-power system-on-chips (SoCs) that combine Wi-Fi, Bluetooth Low Energy (LE), Thread, and edge AI capabilities in a single device.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Embedded & IoT",
+    "Networking"
+   ]
+  },
+  {
+   "id": "6e661cbcac00",
+   "title": "Automated, Secure, and Scalable: Reference Implementation for Atlas on Azure",
+   "url": "https://www.mongodb.com/company/blog/innovation/automated-secure-scalable-reference-implementation-mongodb-atlas-on-azure",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T20:02:16+00:00",
+   "summary": "Today’s cloud-driven world is characterized by the requirement to scale—and to do so massively and faster than ever. But standing up secure and compliant environments on the cloud is complex and requires huge efforts, as teams have to figure out networking, policies, identity, and governance requirements across…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d66e2e34c7f9",
+   "title": "Fighting Tool Sprawl: The Case for AI Tool Registries",
+   "url": "https://www.mongodb.com/company/blog/technical/fighting-tool-sprawl-case-for-ai-tool-registries",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-03T20:01:13+00:00",
+   "summary": "As enterprise AI agent adoption scales, the absence of centralized, organization-level tool infrastructure is producing compounding costs. When adoption is built around optimizing for deployment speed, enterprises expose themselves to a combination of risks: duplicated engineering effort, security exposure, and…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
   {
    "id": "cf7d5467e5de",
    "title": "Financial Crime Mitigation with MongoDB / Part IV: Agentic AI for Case Management",
@@ -4992,6 +5347,18 @@
      "source": "Security Affairs",
      "title": "Binance Hack: How Fake Job Interviews and AI Abuse Led to a $6.34 Billion Attack",
      "url": "https://securityaffairs.com/202369/cyber-crime/binance-hack-how-fake-job-interviews-and-ai-abuse-led-to-a-6-34-billion-attack.html"
+    },
+    {
+     "id": "64ab2d42231a",
+     "source": "BleepingComputer",
+     "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+     "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+    },
+    {
+     "id": "5f152132a968",
+     "source": "Slashdot",
+     "title": "Binance Says Hackers Used Fake Job Interviews, AI Tool to Steal $6.3 Billion In Crypto",
+     "url": "https://it.slashdot.org/story/26/11/03/1939254/binance-says-hackers-used-fake-job-interviews-ai-tool-to-steal-63-billion-in-crypto?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
    ],
    "topics": [
@@ -8625,6 +8992,12 @@
      "source": "Joho no Todai (English)",
      "title": "Google Disrupts Backdoors in Over 1.3 Million Android Devices, Deliberately Planted by Manufacturer Videostrong",
      "url": "https://joho-todai.com/en/android-videostrong-backdoor-130-million-devices/"
+    },
+    {
+     "id": "2698ecd844a4",
+     "source": "The Record",
+     "title": "Google dismantles massive botnet hidden in Android TV boxes",
+     "url": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes"
     }
    ],
    "topics": [
@@ -9520,6 +9893,20 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "a2357e701f02",
+   "title": "How Cisco defends at machine speed with OpenAI",
+   "url": "https://openai.com/index/cisco-cyber",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-03T08:00:00+00:00",
+   "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
    ]
   },
   {
@@ -10635,6 +11022,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "3d509e27bae2",
+   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+   "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-03T00:00:00+00:00",
+   "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
