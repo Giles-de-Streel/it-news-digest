@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-04T02:01:42+00:00",
+ "generated": "2026-11-04T02:31:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 81,
-   "recent": 81,
+   "fetched": 83,
+   "recent": 83,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 9,
+   "recent": 5,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 108,
-   "recent": 47,
+   "recent": 46,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -720,13 +720,13 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
    "source": "Embedded Computing Design",
    "fetched": 100,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
-   "recent": 1,
+   "fetched": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -996,7 +996,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1560,6 +1560,105 @@
  ],
  "items": [
   {
+   "id": "24b824f7cc56",
+   "title": "Supermicro and Arista Networks crush Wall Street’s expectations as AI infrastructure wins again",
+   "url": "https://siliconangle.com/2026/11/03/supermicro-and-arista-networks-crush-wall-streets-expectations-as-ai-infrastructure-wins-again/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-04T02:27:21+00:00",
+   "summary": "Growing nervousness about spending on the artificial intelligence boom has made technology stocks increasingly volatile this year, but all it takes is one good quarter to reignite investor confidence, as Super Micro Computer Inc. and Arista Networks Inc. both showed today.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "201ff7c9065f",
+   "title": "CVE-2026-121609: A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121609",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T02:17:20.243000+00:00",
+   "summary": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible.",
+   "kind": "cve",
+   "cve": "CVE-2026-121609",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121609",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "68cc5f290783",
+   "title": "CVE-2026-121607: A vulnerability was found in Qihoo 360 D603-2, D600-2, D606-6 and D706 up to 6.4.9.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121607",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T02:17:19.753000+00:00",
+   "summary": "A vulnerability was found in Qihoo 360 D603-2, D600-2, D606-6 and D706 up to 6.4.9. This affects the function testspeed_command of the file /fs2/bin/iscm. Performing a manipulation of the argument host results in os command injection. The attack may be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-121607",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121607",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "3f1a2edffb2d",
+   "title": "Filing: Amazon’s previously announced layoffs include 95 jobs in Washington state",
+   "url": "https://www.geekwire.com/2026/filing-amazons-previously-announced-layoffs-include-95-jobs-in-washington-state/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-04T02:11:34+00:00",
+   "summary": "A notice made public Tuesday evening, disclosing about 95 Amazon job cuts in Washington state, is part of the company's previously reported layoffs in its retail business, not a new round of reductions, a company spokesperson confirmed. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "27fc856f5198",
+   "title": "The valley of webhooks",
+   "url": "https://weli.dev/blog/the-valley-of-webhooks/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-04T02:10:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7aa5af4c407c",
+   "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
+   "url": "https://isc.sans.edu/diary/rss/33486",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-11-04T02:10:02+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "ed421e39d30b",
    "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
    "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
@@ -1592,6 +1691,19 @@
    ]
   },
   {
+   "id": "dd6ec5aeda80",
+   "title": "Giant Canyon on Mars Is Still Tectonically Active Today",
+   "url": "https://lamont.columbia.edu/news/giant-canyon-mars-still-tectonically-active-today",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T01:40:42+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "7ac80e3597e2",
    "title": "Domicile Desktop Brings Web Technologies To Building Wayland Desktops",
    "url": "https://www.phoronix.com/news/Domicile-Desktop-Wayland",
@@ -1613,6 +1725,19 @@
    "source_category": "IT industry",
    "published": "2026-11-04T01:28:52+00:00",
    "summary": "Google LLC just faced a barrage of criticism after the company warned that if schools restricted their students from using its artificial intelligence tools, the same students wouldn’t be able to use Search. The fallout came after the company announced a slew of new products for classrooms.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "183b4de0fef1",
+   "title": "Google offers tepid response to accusations it would hold Search hostage if schools restrict AI tools",
+   "url": "https://siliconangle.com/2026/11/03/google-offers-tepid-response-to-accusations-it-would-hold-search-hostage-if-schools-restrict-ai-tools/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-04T01:28:52+00:00",
+   "summary": "Google LLC today faced a barrage of criticism after the company warned that if schools restricted their students from using its artificial intelligence tools, the same students wouldn’t be able to use Search. The fallout came after the company announced a slew of new products for classrooms.",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -2917,6 +3042,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "b2a57fd271c1",
+   "title": "Windows news you can use: October 2026",
+   "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-news-you-can-use-october-2026/ba-p/4552396",
+   "source": "Windows IT Pro Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-03T22:00:00+00:00",
+   "summary": "October brought plenty to keep on your radar, from new Windows 11 features and accessibility improvements to security changes that might require some planning. We've pulled together the highlights, hardening changes, resources, and upcoming lifecycle milestones to help you stay ready for what's next.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Accessibility"
    ]
   },
   {
@@ -5115,6 +5254,19 @@
    ]
   },
   {
+   "id": "ded0bda987de",
+   "title": "Fujifilm To Boost Tape Production 5x As AI Fuels Archiving Demand",
+   "url": "https://hardware.slashdot.org/story/26/11/03/190206/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-03T19:01:00+00:00",
+   "summary": "An anonymous reader quotes a report from Ars Technica: In an announcement released Thursday, Fujifilm said it will invest roughly 10 billion yen (about $63 million) to increase its production capacity fivefold for an unlikely beneficiary of the AI era: magnetic tape.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "5d2cdd850831",
    "title": "Hackers behind $6.3bn Binance heist ‘used malware and bogus job interviews’",
    "url": "https://www.theguardian.com/business/2026/nov/03/hackers-63bn-binance-heist-malware-bogus-job-interviews-cryptocurrency",
@@ -5685,6 +5837,20 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "7733b79ebede",
+   "title": "mssql-python 1.17.0: more reliable bulk copy, faster pool recovery, and DB-API fixes",
+   "url": "https://techcommunity.microsoft.com/t5/sql-server-blog/mssql-python-1-17-0-more-reliable-bulk-copy-faster-pool-recovery/ba-p/4569925",
+   "source": "SQL Server Tech Community",
+   "source_category": "Databases",
+   "published": "2026-11-03T18:00:00+00:00",
+   "summary": "mssql-python 1.17.0 is now available. This release is mostly about reliability. Bulk copy works better after upgrades, connection pools recover from dead connections, multi-statement batches report the right row counts, and Timestamp() works the way PEP 249 describes.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Databases"
    ]
   },
   {
