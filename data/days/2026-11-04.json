@@ -1,18 +1,18 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-04T07:01:19+00:00",
+ "generated": "2026-11-04T07:31:50+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 76,
-   "recent": 76,
+   "fetched": 73,
+   "recent": 73,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 23,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 22,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 110,
-   "recent": 40,
+   "recent": 39,
    "error": null
   },
   {
@@ -727,7 +727,7 @@
    "source": "Embedded Computing Design",
    "fetched": 0,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Electronic Design",
@@ -846,13 +846,13 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 10,
+   "recent": 7,
    "error": null
   },
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
-   "recent": 1,
+   "fetched": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -924,7 +924,7 @@
   {
    "source": "Packet Pushers",
    "fetched": 1847,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1326,7 +1326,7 @@
   {
    "source": "AWS Security Bulletins",
    "fetched": 42,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "Auth0 Blog",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1560,6 +1560,56 @@
  ],
  "items": [
   {
+   "id": "5f1f07cd0ac6",
+   "title": "ITjuzi: Chinese embodied AI companies raised ~$13B across 322 deals in H1 2026, up 5x YoY, as robot makers shift focus from hardware to AI (Reuters)",
+   "url": "https://www.techmeme.com/261104/p7#a261104p7",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-04T07:20:02+00:00",
+   "summary": "Reuters : ITjuzi: Chinese embodied AI companies raised ~$13B across 322 deals in H1 2026, up 5x YoY, as robot makers shift focus from hardware to AI — After years of building humanoid robots capable of running, dancing and performing backflips, Chinese companies are pouring resources into a different challenge …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "8565ea704d39",
+   "title": "Rsync 3.5.2 Fixes Security Vulnerability, Improves Interrupted Transfers",
+   "url": "https://linuxiac.com/rsync-3-5-2-fixes-security-vulnerability-improves-interrupted-transfers/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-04T07:18:13+00:00",
+   "summary": "Rsync 3.5.2 addresses CVE-2026-119741, fixes interrupted file transfers, and introduces new options for process priorities and symlink handling.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-119741",
+     "score": 8.7,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "VulnCheck"
+    }
+   ]
+  },
+  {
+   "id": "3a6e912a1550",
+   "title": "What AI-generated malware looks like under the microscope",
+   "url": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-04T07:00:26+00:00",
+   "summary": "In this Help Net Security interview, Lindsay Kaye, VP of Threat Intelligence at HUMAN Security, talks about what AI-generated malware looks like on the bench. She points to tidy comments, uniform logging messages, and emojis as signs a script came from a model, and notes that decompiled code strips much of that away.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI",
+    "Reverse engineering"
+   ]
+  },
+  {
    "id": "c5b05c401058",
    "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed US AI data center additions to greater scrutiny and pushback (Bloomberg)",
    "url": "https://www.techmeme.com/261104/p6#a261104p6",
@@ -1574,6 +1624,19 @@
     "Hardware",
     "Development",
     "Higher education"
+   ]
+  },
+  {
+   "id": "3dbbef956504",
+   "title": "Starfish Space loses contact with its Otter spacecraft, ending satellite inspection mission",
+   "url": "https://www.geekwire.com/2026/starfish-space-loses-contact-otter-sspicy/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-04T06:50:51+00:00",
+   "summary": "NASA-funded mission comes to a premature end due to glitch in fault protection system. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1624,6 +1687,19 @@
    "source_category": "IT industry",
    "published": "2026-11-04T06:25:00+00:00",
    "summary": "Ivan Mehta / TechCrunch : India-based EloElo, whose Story TV microdrama app has 33M+ estimated active users, raised an $80M Series C from Hornbill Capital and NBCU at a $500M valuation — More than 118 million users watch microdramas every month as the serialized format has taken off in India.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2605fed34e52",
+   "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+   "url": "http://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-04T06:16:07.626000+00:00",
+   "summary": "The Beta channel is being updated to OS version 16868.9.0 (Browser version 158.0.8127.9 ) for most ChromeOS devices. If you find new issues, please let us know one of the following ways: File a bug Visit our ChromeOS communities General: Chromebook Help Community Beta Specific: ChromeOS Beta Help Community Report an…",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -1686,6 +1762,19 @@
    ]
   },
   {
+   "id": "f2bd956a145c",
+   "title": "China outlines plans for moonshot it hopes to land by 2030",
+   "url": "https://www.theregister.com/offbeat/2026/11/04/china-outlines-plans-for-moonshot-it-hopes-to-land-by-2030/5307457",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-04T05:58:41+00:00",
+   "summary": "We have go for launch, and the ethernet and Wi-Fi standards that will make it happen",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "610ff6945d2b",
    "title": "Sources: Alibaba, Tencent, ByteDance, and other Chinese AI companies ordered 6M Nvidia RTX Pro 5500 chips worth $70B, but expect only ~1% within four months (Bloomberg)",
    "url": "https://www.techmeme.com/261104/p1#a261104p1",
@@ -1718,6 +1807,20 @@
    ],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "349817163ae5",
+   "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+   "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-04T05:43:11+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
    ]
   },
   {
