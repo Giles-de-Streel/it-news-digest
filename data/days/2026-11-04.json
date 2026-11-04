@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-04T23:01:20+00:00",
+ "generated": "2026-11-04T23:31:20+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 20,
+   "recent": 17,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 96,
-   "recent": 96,
+   "fetched": 99,
+   "recent": 99,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 36,
+   "recent": 34,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -492,7 +492,7 @@
   {
    "source": "Forensic Focus",
    "fetched": 16,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -726,13 +726,13 @@
   {
    "source": "Embedded Computing Design",
    "fetched": 100,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -774,7 +774,7 @@
   {
    "source": "Campus Technology",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1242,7 +1242,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1451,9 +1451,9 @@
   },
   {
    "source": "RIPE Labs",
-   "fetched": 15,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "RemoteDisconnected: Remote end closed connection without response"
   },
   {
    "source": "TechTarget News",
@@ -1560,6 +1560,196 @@
  ],
  "items": [
   {
+   "id": "5d82b1f1fdf3",
+   "title": "Jim Cramer warns investors may be reading too much into Wall Street's post-election rally",
+   "url": "https://www.cnbc.com/2026/11/04/cramer-midterms-ai-stocks.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-04T23:18:56+00:00",
+   "summary": "Cramer warned that Wall Street may be getting ahead of itself following the midterm elections.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7a6361fe0a88",
+   "title": "Merging Matter connectivity with AI for next-generation home appliances",
+   "url": "https://embeddedcomputing.com/application/consumer/smart-home-tech/merging-matter-connectivity-with-ai-for-next-generation-home-appliances",
+   "source": "Embedded Computing Design",
+   "source_category": "Embedded",
+   "published": "2026-11-04T23:18:00+00:00",
+   "summary": "Matter and AI are redefining the future of home appliances, enabling smarter, connected, and more intuitive user experiences.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "b4ad4607233f",
+   "title": "CVE-2026-54384: VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerability that allows remote…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54384",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T23:17:48.523000+00:00",
+   "summary": "VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerability that allows remote attackers to obtain a full session for a victim's account by submitting a linked Google or Facebook account identifier to the POST /front/login/sns/ endpoint without providing proof of ownership from the identity…",
+   "kind": "cve",
+   "cve": "CVE-2026-54384",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-54384",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f6c27dc0b1fa",
+   "title": "CVE-2026-52848: GLPI is a free asset and IT management software package.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52848",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T23:17:46.560000+00:00",
+   "summary": "GLPI is a free asset and IT management software package. From 11.0.0 until 11.0.8, during the login phase, an unauthenticated user could use a crafted URL to skip one-time-password verification, defeating two-factor authentication. This issue is fixed in version 11.0.8.",
+   "kind": "cve",
+   "cve": "CVE-2026-52848",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-52848",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1c326e24c216",
+   "title": "CVE-2026-115770: Pocket ID is an OIDC provider that allows users to authenticate with their passkeys to services.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115770",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T23:17:18.767000+00:00",
+   "summary": "Pocket ID is an OIDC provider that allows users to authenticate with their passkeys to services. From 2.2.0 until 2.12.0, SendEmailVerification uses the token model in backend/internal/model/email_verification_token.go to bind an email-verification token only to the user's identifier, while UpdateUser can change the…",
+   "kind": "cve",
+   "cve": "CVE-2026-115770",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115770",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "e8e1df9e1fb6",
+   "title": "Survey: 84% of Organizations Reported at Least One AI-Related Incident in the Past Year",
+   "url": "https://campustechnology.com/articles/2026/11/04/survey-84-of-organizations-reported-at-least-one-ai-related-incident-in-the-past-year.aspx",
+   "source": "Campus Technology",
+   "source_category": "Higher ed",
+   "published": "2026-11-04T23:11:00+00:00",
+   "summary": "Organizations are running into problems as they give artificial intelligence more control over critical business applications, according to new research from identity security firm Delinea.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a4803edced53",
+   "title": "Cyber ups and downs: Datadog falls 14% on outlook tied to one customer as Rapid7 jumps and Fastly slides",
+   "url": "https://siliconangle.com/2026/11/04/datadog-falls-14-on-outlook-tied-to-one-customer-as-rapid7-jumps-and-fastly-slides/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-04T23:07:11+00:00",
+   "summary": "Datadog Inc., Rapid7 Inc. and Fastly Inc. all beat Wall Street’s third-quarter forecasts today, but Rapid7 was the only one of the three to see its shares rise. A cautious outlook tied to one large customer knocked about 14% off Datadog’s stock in regular trading.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d68347ba0c1b",
+   "title": "What Democratic control of Congress means for cybersecurity",
+   "url": "https://cyberscoop.com/democrats-congress-cybersecurity-cisa-ai-priorities/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-04T23:05:04+00:00",
+   "summary": "There’s a lame-duck session before Dems take over, but the leaders of the homeland security panels are already teeing up their agendas.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "2a28a5a28423",
+   "title": "Microsoft Delays Default Copilot Usage-Based Billing Again, Citing Partner Feedback",
+   "url": "https://www.crn.com/news/ai/2026/microsoft-delays-default-copilot-usage-based-billing-again-after-partner-feedback",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-04T23:04:00+00:00",
+   "summary": "Microsoft is delaying default usage-based billing for Microsoft 365 Copilot Business again, giving partners more time to prepare for the change.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "f9e8e29d2f54",
+   "title": "Successful People (2013)",
+   "url": "https://blog.samaltman.com/successful-people",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T23:01:19+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e6471f7de887",
+   "title": "Figma reports Q3 revenue up 43% YoY to $391.4M, above est., gross margin of 80%, below 81% est., and lifts its 2026 revenue outlook; FIG drops 6%+ after hours (Deborah Mary Sophia/Reuters)",
+   "url": "https://www.techmeme.com/261104/p54#a261104p54",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-04T23:00:54+00:00",
+   "summary": "Deborah Mary Sophia / Reuters : Figma reports Q3 revenue up 43% YoY to $391.4M, above est., gross margin of 80%, below 81% est., and lifts its 2026 revenue outlook; FIG drops 6%+ after hours — Figma (FIG.N) is leaning on cashing in on its AI features through credits and using its first-party model to power tasks …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9d87aa0d6574",
+   "title": "Scare campaigns: Victoria’s major parties trade blows over AI-generated videos of leaders in election ads",
+   "url": "https://www.theguardian.com/australia-news/2026/nov/05/victoria-election-2026-ai-generated-video-ads-ntwnfb",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-04T23:00:46+00:00",
+   "summary": "Transparency and advertising experts say trust in politics could be further eroded as a result of ‘lies, deepfakes and AI-generated politicians’ Get our daily political email , free app or daily news podcast It’s the night of Halloween and Jess Wilson has appeared on social media feeds with a warning about a scary…",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI"
+   ]
+  },
+  {
    "id": "f34920a2ee67",
    "title": "AAC&U president leaves Coalition for the Common Good board",
    "url": "https://www.highereddive.com/news/aacu-president-leaves-coalition-for-the-common-good-board/873813/",
@@ -1611,6 +1801,32 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "d36c9316f881",
+   "title": "Motion Sensors Make Smart Glasses Even Smarter",
+   "url": "https://www.electronicdesign.com/technologies/analog/sensors/video/55416753/electronic-design-tdk-motion-sensors-make-smart-glasses-even-smarter",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-04T22:30:00+00:00",
+   "summary": "IMUs and a TMR compass bring sub-millimeter linear and angular resolution to smart-glasses applications.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ecc8f412394b",
+   "title": "Less Popular Than Coal",
+   "url": "https://www.argmin.net/p/less-popular-than-coal",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T22:26:24+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2470,6 +2686,19 @@
     "Microsoft & Windows",
     "Cloud & infrastructure",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "f106f87baecc",
+   "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+   "url": "https://github.com/gauge-sh/gauge-cli",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T20:31:30+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -12383,6 +12612,19 @@
      "date": "2026-11-04"
     }
    }
+  },
+  {
+   "id": "ec83dead23fd",
+   "title": "Is Curiosity Good for Us?",
+   "url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T19:16:23+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
   },
   {
    "id": "9fe4b0174ee2",
