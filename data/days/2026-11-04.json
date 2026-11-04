@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-04T08:01:01+00:00",
+ "generated": "2026-11-04T08:31:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 73,
-   "recent": 73,
+   "fetched": 70,
+   "recent": 70,
    "error": null
   },
   {
@@ -251,8 +251,8 @@
   },
   {
    "source": "VS Code Blog",
-   "fetched": 47,
-   "recent": 1,
+   "fetched": 48,
+   "recent": 2,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -498,7 +498,7 @@
   {
    "source": "Magnet Forensics",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 7,
+   "recent": 11,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 112,
-   "recent": 41,
+   "fetched": 114,
+   "recent": 42,
    "error": null
   },
   {
@@ -725,9 +725,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "fetched": 100,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "Electronic Design",
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1560,6 +1560,143 @@
  ],
  "items": [
   {
+   "id": "e7907f72eed8",
+   "title": "Visual Studio Code 1.146 (Insiders)",
+   "url": "https://code.visualstudio.com/updates/v1_146",
+   "source": "VS Code Blog",
+   "source_category": "Development",
+   "published": "2026-11-04T08:30:29+00:00",
+   "summary": "Learn what's new in Visual Studio Code 1.146 (Insiders) Read the full article",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "d4496b7b45ab",
+   "title": "Being of use to someone",
+   "url": "https://jmreiche.github.io/being-of-use-to-someone",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-04T08:26:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "da2c18d154dd",
+   "title": "CrowdStrike’s AI SOC vision evolves as agentic uncertainty adds new twist",
+   "url": "https://www.csoonline.com/article/4244299/crowdstrikes-ai-soc-vision-evolves-as-agentic-uncertainty-adds-new-twist.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-04T08:25:00+00:00",
+   "summary": "“The software we use has become an actor,” declared CrowdStrike President Michael Sentonas in his address on the dangers and opportunity of agentic AI at the company’s Fal.Con conference in September.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "4ccb67a16747",
+   "title": "Why a quarter of security flaws are never fully fixed",
+   "url": "https://www.itpro.com/security/a-quarter-of-security-vulnerabilities-are-never-fully-fixed-and-ai-is-compounding-the-problem",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-04T08:24:06+00:00",
+   "summary": "A new study warns against delegating flaw fixes to AI when human staff are still struggling to understand what's wrong",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "23082182905c",
+   "title": "North American IT distribution revenues hit record high",
+   "url": "https://www.itpro.com/infrastructure/ai-infrastructure-is-no-longer-just-a-hyperscaler-story-north-american-it-distribution-revenues-hit-record-high-on-surging-ai-infrastructure-demand",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-04T08:20:00+00:00",
+   "summary": "New IDC research has revealed that IT distribution revenue across the continent increased by 29.2% in Q3",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "29b7cc44016f",
+   "title": "RHSA-2026:95048: Important: bind security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95048",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-04T08:13:24+00:00",
+   "summary": "An update for bind is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "0cf317a5b216",
+   "title": "RHSA-2026:95014: Important: opentelemetry-collector security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95014",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-04T08:09:57+00:00",
+   "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "54cd31ea757e",
+   "title": "Sponsored: All aboard the AI factory powertrain",
+   "url": "https://www.datacenterdynamics.com/en/marketwatch/all-aboard-the-ai-factory-powertrain/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-04T08:00:00+00:00",
+   "summary": "Schneider Electric’s Manav Patel unpacks how grid-to-chip powertrains can accelerate AI infrastructure deployment, while meeting rising power demands",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "834ce9722e4b",
+   "title": "What does disaster recovery look like in an AI-centric world?",
+   "url": "https://www.itpro.com/security/what-does-disaster-recovery-look-like-in-an-ai-centric-world",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-04T08:00:00+00:00",
+   "summary": "With AI deeply embedded in modern business operations, organizations face new resilience challenges far beyond traditional IT backups.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "242e61e51241",
+   "title": "Xerox C303a review",
+   "url": "https://www.itpro.com/hardware/printers/xerox-c303a-review-an-affordable-color-laser-mfp-that-could-tick-all-a-small-offices-boxes",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-04T08:00:00+00:00",
+   "summary": "If you're looking for a do-it-all color multifunction for a branch, home or small office, the Xerox C303a could be a good bet",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "cd35d8fe6c61",
    "title": "OpenVDDK – Independent Virtual Disk Library",
    "url": "https://openvddk.com/",
@@ -1792,6 +1929,19 @@
    "topics": [
     "AI",
     "ICS / OT"
+   ]
+  },
+  {
+   "id": "89200be417d2",
+   "title": "Democrats Rout GOP",
+   "url": "https://www.nytimes.com/live/2026/11/03/us/midterms-2026-election-day-trump",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T07:27:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
