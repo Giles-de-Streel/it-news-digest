@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-04T06:31:50+00:00",
+ "generated": "2026-11-04T07:01:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 109,
+   "fetched": 110,
    "recent": 40,
    "error": null
   },
@@ -727,18 +727,18 @@
    "source": "Embedded Computing Design",
    "fetched": 0,
    "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -846,13 +846,13 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -881,8 +881,8 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 6,
+   "recent": 1,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1559,6 +1559,63 @@
   }
  ],
  "items": [
+  {
+   "id": "c5b05c401058",
+   "title": "Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed US AI data center additions to greater scrutiny and pushback (Bloomberg)",
+   "url": "https://www.techmeme.com/261104/p6#a261104p6",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-04T06:55:07+00:00",
+   "summary": "Bloomberg : Democratic gubernatorial wins in Texas, Georgia, Ohio and Pennsylvania could expose 50% of proposed US AI data center additions to greater scrutiny and pushback — Data center developers seeking to build dozens of sprawling artificial intelligence campuses across Texas were already dealing …",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Development",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "4ed3445f4b6e",
+   "title": "RHSA-2026:95012: Critical: fence-agents security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95012",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-04T06:44:17+00:00",
+   "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "2de2c70c71b1",
+   "title": "AMD projects ~$17B in Q4 2026 revenue, compared to Intel's $15B to $16B, potentially overtaking Intel as the largest x86 processor vendor for the first time (Simon Sharwood/The Register)",
+   "url": "https://www.techmeme.com/261104/p5#a261104p5",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-04T06:35:00+00:00",
+   "summary": "Simon Sharwood / The Register : AMD projects ~$17B in Q4 2026 revenue, compared to Intel's $15B to $16B, potentially overtaking Intel as the largest x86 processor vendor for the first time — AMD has predicted it will win more revenue than Intel in its next quarter, potentially marking the first time it becomes …",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ea978b845c68",
+   "title": "Ghostunnel: Open-source TLS proxy with mutual authentication",
+   "url": "https://www.helpnetsecurity.com/2026/11/04/ghostunnel-open-source-tls-proxy/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-04T06:30:14+00:00",
+   "summary": "Ghostunnel is an open-source proxy that handles TLS for programs that cannot handle it themselves. It works in two directions. In server mode it sits in front of a backend, accepts TLS connections, checks the client’s certificate, then passes traffic to the service behind it over TCP or a UNIX socket.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
   {
    "id": "6abbcd1b485b",
    "title": "India-based EloElo, whose Story TV microdrama app has 33M+ estimated active users, raised an $80M Series C from Hornbill Capital and NBCU at a $500M valuation (Ivan Mehta/TechCrunch)",
@@ -1847,7 +1904,14 @@
    "source_category": "Higher ed",
    "published": "2026-11-03T22:26:04+00:00",
    "summary": "",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5df1a3c566ed",
+     "source": "Slashdot",
+     "title": "Democrats Take Control of US Congress As Voters Reject Trump's Republicans",
+     "url": "https://politics.slashdot.org/story/26/11/04/0629214/democrats-take-control-of-us-congress-as-voters-reject-trumps-republicans?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "Policy & regulation"
    ]
