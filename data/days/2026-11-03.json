@@ -1,12 +1,12 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-04T03:02:37+00:00",
+ "generated": "2026-11-04T03:31:39+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 15,
+   "recent": 13,
    "error": null
   },
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 83,
-   "recent": 83,
+   "fetched": 81,
+   "recent": 81,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -552,13 +552,13 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -911,9 +911,9 @@
   },
   {
    "source": "NGINX Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 10,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "IIS Support Blog",
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1542,7 +1542,7 @@
   {
    "source": "OpenAI News",
    "fetched": 1354,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1559,6 +1559,78 @@
   }
  ],
  "items": [
+  {
+   "id": "ce8e5848674a",
+   "title": "CVE-2026-121802: @better-auth/expo before 1.7.16 allows certain account-takeover outcomes (e.g., unauthenticated changes of…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121802",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T03:17:15.730000+00:00",
+   "summary": "@better-auth/expo before 1.7.16 allows certain account-takeover outcomes (e.g., unauthenticated changes of any account's email address), because it signs a caller-supplied state value without checking whether that value had been issued by the server.",
+   "kind": "cve",
+   "cve": "CVE-2026-121802",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121802",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2e96ee76a807",
+   "title": "CVE-2026-121615: A vulnerability was determined in Linksys E5600 1.1.0.26.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121615",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-04T03:17:14.810000+00:00",
+   "summary": "A vulnerability was determined in Linksys E5600 1.1.0.26. Affected is an unknown function of the file /cgi-bin/mesh_login.cgi of the component Login Handler. Executing a manipulation can lead to improper authentication. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+   "kind": "cve",
+   "cve": "CVE-2026-121615",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121615",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d45a5c0a1082",
+   "title": "Arrows to arrows, categories to queries (2025)",
+   "url": "https://reasonablypolymorphic.com/blog/arrows-to-arrows/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T03:11:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8e24ff8e1a84",
+   "title": "Cat Feeder Ensures Fed Cats",
+   "url": "https://hackaday.com/2026/11/03/cat-feeder-ensures-fed-cats/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-04T03:00:36+00:00",
+   "summary": "Automatic cat feeders are a dime a dozen, largely because this is an easy problem to solve. Dry cat food is easy for machines to manipulate, and the electronics needed …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "8eba8ab7bb4c",
    "title": "California accepts $1.42B in federal broadband funding, but challenges the Trump administration's demand that it stop enforcing state net neutrality rules (Jon Brodkin/Ars Technica)",
@@ -2073,6 +2145,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "ac851c0f80b6",
+   "title": "Canva layoffs: design giant to cut or relocate more than 1,200 jobs in major restructure",
+   "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-04T00:14:49+00:00",
+   "summary": "Chief executive Melanie Perkins describes job cuts as ‘without doubt the hardest moment in our thirteen-year history’ in email to staff Get our breaking news email , free app or daily news podcast Canva is cutting or relocating more than 1,200 jobs, representing 22% of its global workforce, as part of a major…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3476,6 +3561,19 @@
    ]
   },
   {
+   "id": "40ed0478e937",
+   "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+   "url": "https://uncracked.city",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T21:20:03+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "a81bcbc653b2",
    "title": "CVE-2026-95860: node-opcua is an OPC UA implementation for TypeScript and Node.js.",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95860",
@@ -4321,6 +4419,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "3a737052cd8f",
+   "title": "The Pnyx and the Agora (2016)",
+   "url": "https://www.readingdesign.org/the-pnyx-and-the-agora",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-03T20:49:11+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -10111,6 +10222,12 @@
      "source": "TechRepublic",
      "title": "Journify Raises $12M Series A Amid 5x Growth",
      "url": "https://www.techrepublic.com/article/journify-raises-12m-series-a-amid-5x-growth/"
+    },
+    {
+     "id": "650157122f6a",
+     "source": "CIO.com",
+     "title": "Journify Raises $12M Series A Amid 5x Growth",
+     "url": "https://www.cio.com/article/4244315/journify-raises-12m-series-a-amid-5x-growth.html"
     }
    ],
    "topics": [
@@ -13414,7 +13531,14 @@
    "source_category": "Development",
    "published": "2026-11-03T07:56:21+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0b48a22c90c1",
+     "source": "Lobsters",
+     "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+     "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html"
+    }
+   ],
    "topics": [
     "General IT"
    ]
