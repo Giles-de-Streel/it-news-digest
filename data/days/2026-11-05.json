@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T14:30:56+00:00",
+ "generated": "2026-11-05T15:01:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -102,7 +102,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -228,13 +228,13 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 6,
+   "recent": 8,
    "error": null
   },
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 7,
+   "recent": 12,
    "error": null
   },
   {
@@ -354,7 +354,7 @@
   {
    "source": "PostgreSQL News",
    "fetched": 10,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 1,
+   "recent": 4,
    "error": null
   },
   {
@@ -828,7 +828,7 @@
   {
    "source": "Nutanix.dev",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 31,
+   "recent": 32,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -1559,6 +1559,325 @@
   }
  ],
  "items": [
+  {
+   "id": "2e88124c1967",
+   "title": "Building an Agentic Warehouse Management System—Part 3: Tools, Decisions, and Actions",
+   "url": "https://www.mongodb.com/company/blog/technical/building-an-agentic-warehouse-management-system-part-3-tools-decisions-actions",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-05T15:00:01+00:00",
+   "summary": "If you haven’t read the first two parts yet, I recommend starting with Part 1: Where AI Agents Add Value and Part 2: Designing and Planning the Agent . There, we introduced the WMS scenario, discussed where an AI agent can add value, and built the first stages of the implementation with Java and Spring AI.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "917d77ee107f",
+   "title": "Introducing the MongoDB Vercel AI SDK Integration: Persistent Memory for AI Applications",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-mongodb-vercel-ai-sdk-integration-persistent-memory-applications",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-05T15:00:01+00:00",
+   "summary": "We are excited to announce the release of the MongoDB Vercel AI SDK integration, which provides AI applications and agents built with Vercel’s SDK with a persistent memory store in MongoDB Atlas. It's now open source and generally available on npm.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI",
+    "Development",
+    "Databases",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "dee307673f28",
+   "title": "Why Actionable Banking Is the Critical Stepping Stone to Full Autonomy",
+   "url": "https://www.mongodb.com/company/blog/innovation/why-actionable-banking-is-critical-stepping-stone-full-autonomy",
+   "source": "MongoDB blog",
+   "source_category": "Databases",
+   "published": "2026-11-05T15:00:00+00:00",
+   "summary": "Almost nothing is as important to someone today as their financial health. Most of us want to stay on top of what's happening with our bank accounts, like when a deposit clears so we can pay bills, if we're reaching our credit card limit, or if we have finally paid off that 30-year mortgage and can free up funds for…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "409656e0ec0a",
+   "title": "Configure Anthropic Claude Code to Use Nutanix Agent Gateway",
+   "url": "https://www.nutanix.dev/2026/11/05/configure-anthropic-claude-code-to-use-nutanix-agent-gateway/",
+   "source": "Nutanix.dev",
+   "source_category": "Virtualization",
+   "published": "2026-11-05T15:00:00+00:00",
+   "summary": "Private models can handle many routine agent tasks, depending on workload and configuration. When a task needs Claude, send it through the same gateway, on the same keys, under the same admin controls. Most of the agent work I see in customer labs doesn’t need a frontier model.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "System administration"
+   ]
+  },
+  {
+   "id": "0c28609650f9",
+   "title": "Building a RAG Pipeline for Semantic Code Search: A Developer Diary and Field Notes",
+   "url": "https://blog.jetbrains.com/ai/2026/11/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes-part-2/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T14:54:27+00:00",
+   "summary": "Part 2: Storage, Search, and Agent Tooling In this blog series, we aim to share some of the lessons we learned over the past six months as we built and rolled out Air Context, a production-grade RAG system for code search. In the first post of the series, we covered chunking, parsing, and vectorization. Turning […]",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "c9608749a93a",
+   "title": "From open beta to global GA: What Docusign learned by bringing contract AI workflows to agents",
+   "url": "https://thenewstack.io/docusign-mcp-server-agents/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-05T14:50:21+00:00",
+   "summary": "Connecting an AI agent to enterprise software is relatively easy. Making sure it can find the right information, carry out",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "95c06e8788f4",
+   "title": "Image of Our Satellite-Choked Night Skies",
+   "url": "https://kottke.org/26/11/stunning-image-of-our-satellite-choked-night-skies",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T14:49:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "44e51a8f2ea3",
+   "title": "Rubrik hosts NAS backups in isolated, immutable vaults",
+   "url": "https://www.helpnetsecurity.com/2026/11/05/rubrik-unstructured-data-protection/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-05T14:48:20+00:00",
+   "summary": "Rubrik has announced Rubrik-Hosted Protection for On-Premise Unstructured Data. The offering is built on Rubrik’s Network Attached Storage (NAS) Cloud Direct service. Customers now have clean recovery for enterprise-scale NAS data without having to buy, build or manage backup storage.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Backup & recovery",
+    "Networking"
+   ]
+  },
+  {
+   "id": "e97ff94d9d71",
+   "title": "61 Memory Management Fix Commits for Linux 7.4 Address Information Leaks, Data Loss, and Use-After-Free",
+   "url": "https://joho-todai.com/en/linux-7-4-memory-management-61-commits-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-05T14:46:05+00:00",
+   "summary": "A batch of 61 Linux kernel memory management fix commits was submitted for Linux 7.4-rc2. It addresses serious, longstanding bugs involving information leaks, data loss, and use-after-free.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e3dbdc4dd3bd",
+   "title": "Alpine Linux Security advisory: OpenSSH-server password authentication bypass",
+   "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T14:44:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c73d5d469180",
+   "title": "DataGrip 2026.3: Agentic Development With JetBrains Air, Cross-Database Queries, DuckDB Support, and Major UX Improvements",
+   "url": "https://blog.jetbrains.com/datagrip/2026/11/05/datagrip-2026-3-agentic-development-with-jetbrains-air-cross-database-queries-duckdb-support-and-major-ux-improvements/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T14:43:00+00:00",
+   "summary": "DataGrip 2026.3, the third major update of the year, is here! Let’s take a look at what’s inside. AI JetBrains Air is now available by default in DataGrip. You can run SQL, explore data, and reference database objects directly in chats with AI agents.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Databases"
+   ]
+  },
+  {
+   "id": "2653d6e4b863",
+   "title": "Finnish Court Jails Two Ship Crew Members for Baltic Sea Cable Damage",
+   "url": "https://circleid.com/posts/finnish-court-jails-two-ship-crew-members-for-baltic-sea-cable-damage",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-11-05T14:42:00+00:00",
+   "summary": "A Finnish court sentences two cargo ship crew members to prison for damaging Baltic Sea telecommunications cables, addressing criminal responsibility and jurisdiction over critical infrastructure beyond territorial waters.",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "7fa96eddeca5",
+   "title": "Vercel ties login sessions to devices, rolls out AI security reviews in public beta",
+   "url": "https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-05T14:37:00+00:00",
+   "summary": "Vercel, the popular cloud platform for building and hosting websites and web applications, has announced the rollout of Device Bound Session Credentials (DBSC) and the launch of Vercel Security Review in public beta.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "211934bd2a3f",
+   "title": "AI models learn to surgically edit neural network weights",
+   "url": "https://4sysops.com/archives/ai-models-learn-to-surgically-edit-neural-network-weights/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T14:36:59+00:00",
+   "summary": "Astra can probe small neural networks by reading their weights, then make targeted edits—including stopping a looping language model from repeating itself and boosting its scores on math benchmarks without teaching it new math. Source",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a75ccdfd613a",
+   "title": "SpaceX races to build the world’s biggest AI cloud",
+   "url": "https://4sysops.com/archives/spacex-races-to-build-the-worlds-biggest-ai-cloud/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T14:36:58+00:00",
+   "summary": "SpaceX has lifted its 2027 AI data-center target to roughly 13 gigawatts, with about 3.6 gigawatts already under construction across sites including Memphis and Starbase. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "22b119b4c54e",
+   "title": "OpenAI promises its AI data centers won't leave local residents paying the bill",
+   "url": "https://www.neowin.net/news/openai-promises-its-ai-data-centers-wont-leave-local-residents-paying-the-bill/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T14:36:01+00:00",
+   "summary": "Under its new Compute Campus Policy Blueprint, OpenAI promises to absorb all utility and grid infrastructure expenses to protect residents from power bill spikes.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "56129202e5bb",
+   "title": "The MacBook Pro's PROLED XDR display is the best display you can buy right now, but touch adds little to the experience and it lacks Apple Pencil support (Jaron Schneider/PetaPixel)",
+   "url": "https://www.techmeme.com/261105/p27#a261105p27",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T14:35:16+00:00",
+   "summary": "Jaron Schneider / PetaPixel : The MacBook Pro's PROLED XDR display is the best display you can buy right now, but touch adds little to the experience and it lacks Apple Pencil support — Apple's new, highest-end MacBook Pro diverged from the last few launches in that it didn't focus on performance at all …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ea0c3a2be45c",
+   "title": "[$] User namespaces + file capabilities = trouble",
+   "url": "https://lwn.net/Articles/1103429/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-05T14:33:59+00:00",
+   "summary": "User namespaces are a key part of the kernel's toolkit for assembling containers; processes within a user namespace can appear to have full root access to the system while gaining no extra privileges in the wider system. At least, that is the intent.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "bcc044fd6007",
+   "title": "Arkose Labs expands Agent Trust Manager to govern agent sessions",
+   "url": "https://www.helpnetsecurity.com/2026/11/05/arkose-agent-trust-manager/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-05T14:33:02+00:00",
+   "summary": "Arkose Labs has expanded Arkose Agent Trust Manager to help businesses control agentic traffic. Companies can classify agent sessions, apply allow, monitor or block policies at each step of the customer journey, and track the same agent across multiple networks.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "fc90f5a62c65",
+   "title": "NIKKE Adds Malware Detection and Removal to Its Launcher, Urges PC Players Since September 27 to Check",
+   "url": "https://joho-todai.com/en/nikke-launcher-malware-removal-tool/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-05T14:31:15+00:00",
+   "summary": "On November 5, NIKKE operator Level Infinite published a timeline of the PC launcher compromise and instructions for detecting and removing the malware. Players who launched the PC version on or after September 27 need to scan their devices and secure their credentials.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "cbca7bf343e8",
+   "title": "How the new streamhouse architecture solves agentic AI’s data problem",
+   "url": "https://thenewstack.io/streamhouse-architecture-ai-agents/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-05T14:30:00+00:00",
+   "summary": "AI agents are moving from answering questions to taking action, and to do that effectively, they need to know the",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "f040c6a8515b",
+   "title": "Micron's $4.5 billion Taoyuan plant construction halted amidst labor dispute",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/microns-usd4-5-billion-taoyuan-plant-construction-halted-amidst-labor-dispute-company-and-union-still-havent-reached-agreement-as-latter-asks-for-clearer-profit-sharing-terms",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-05T14:28:30+00:00",
+   "summary": "Micron and the Taoyuan labor union is set to meet again on November 6 as the two parties engage in a protracted labor dispute regarding profit-sharing.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "69879b291443",
+   "title": "Democratic sweep puts crypto on defensive in Washington",
+   "url": "https://www.cnbc.com/2026/11/05/crypto-midterms-democrats-clarity-act.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T14:27:01+00:00",
+   "summary": "Democrats in Congress could impose tougher rules on crypto and investigate President Donald Trump, ushering in a tougher era for the industry.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "66a4dd559fd3",
    "title": "RHSA-2026:95573: Important: rsyslog security update",
@@ -1676,6 +1995,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "abe4459bf83d",
+   "title": "What’s New in PhpStorm 2026.3",
+   "url": "https://blog.jetbrains.com/phpstorm/2026/11/whats-new-in-phpstorm-2026-3/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T14:15:38+00:00",
+   "summary": "PhpStorm 2026.3, the third major update of the year, is here! This release includes a new workspace for agentic development and multi-agent setups, support for PHP 8.6, improvements to remote development and WSL scenarios, and PHP code insight enhancements.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2014,6 +2346,19 @@
    ]
   },
   {
+   "id": "e82e2fce8f59",
+   "title": "Nutanix Partner Head On New ‘Money-Making’ Rebates, AI Tools And Incentives For Channel Partners",
+   "url": "https://www.crn.com/news/cloud/2026/nutanix-partner-head-on-new-money-making-rebates-ai-tools-and-incentives-for-channel-partners",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-05T14:00:00+00:00",
+   "summary": "Nutanix unveils new Elevate Partner Program rebates, AI tools and incentives designed to drive partner profits, cross-selling, services and renewals.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "c1f3a68552e5",
    "title": "VMware keeps vSphere 8 on sale in Europe through 2027",
    "url": "https://4sysops.com/archives/vmware-keeps-vsphere-8-on-sale-in-europe-through-2027/",
@@ -2171,6 +2516,19 @@
    ]
   },
   {
+   "id": "da2a962c46f1",
+   "title": "RubyMine 2026.3: JetBrains Air, Native Mode for WSL and Dev Containers, and More",
+   "url": "https://blog.jetbrains.com/ruby/2026/11/rubymine-2026-3-jetbrains-air-native-mode-for-wsl-and-dev-containers-and-more/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T13:47:45+00:00",
+   "summary": "RubyMine 2026.3 is out! This release brings JetBrains Air for working with your preferred coding agents, native access to WSL and Dev Container projects, and smarter Ruby and Rails support.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
    "id": "a164c863b688",
    "title": "SHRIDHAR KHANAL: PostgreSQL Minor Version Upgrade on RHEL 9: A Step-by-Step Guide with Rollback",
    "url": "https://postgr.es/p/9B3",
@@ -2208,6 +2566,19 @@
    "source_category": "IT industry",
    "published": "2026-11-05T13:41:10+00:00",
    "summary": "Futures are mixed and oil settles after a sharp sell-off",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4a709fe9d521",
+   "title": "I wish tech companies knew more about me",
+   "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T13:40:52+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2348,6 +2719,33 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "4ab695861299",
+   "title": "WebStorm 2026.3: New Design-Code-Production Workflow, JetBrains Air in WebStorm, and More",
+   "url": "https://blog.jetbrains.com/webstorm/2026/11/webstorm-2026-3/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T13:27:56+00:00",
+   "summary": "WebStorm 2026.3 is now available! Building a UI feature with an AI agent often involves more switching between tools than actual coding. You copy values out of Figma, hunt for the right story in Storybook, write the prompt, wait for the agent, and then check the result in the browser and find yourself starting the […]",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "611eaa424a2e",
+   "title": "GoLand 2026.3 Is Now Available!",
+   "url": "https://blog.jetbrains.com/go/2026/11/05/goland-2026-3-is-now-available/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T13:25:58+00:00",
+   "summary": "GoLand 2026.3 brings JetBrains Air into your Go workflow. You can run coding agents inside GoLand, review their changes alongside your code, and guide them with feedback tied to specific lines. A new GoLand skill helps agents use the profiler to investigate performance problems.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -2517,6 +2915,19 @@
    ]
   },
   {
+   "id": "2e08059cfa90",
+   "title": "Download your favourite YouTube videos",
+   "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T13:00:11+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "993b255e06a6",
    "title": "Voters rejected AI data centers over resource concerns. Here's why measuring water usage is hard",
    "url": "https://www.cnbc.com/2026/11/05/meta-spacex-ai-data-centers-use-millions-of-gallons-of-water-a-day.html",
@@ -2571,6 +2982,19 @@
     "AI",
     "Pen testing & red team",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "8350286a7c81",
+   "title": "Small Talk With Phan Manh Hung, CEO of Omi Health Tech",
+   "url": "https://blog.jetbrains.com/startups/2026/11/small-talk-omi-health-tech/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T13:00:00+00:00",
+   "summary": "What is Small Talk? Small Talk is our short Q&A with founders from the JetBrains Startup Program. They answer a handful of questions in their own words about what they’re building, why they started, and what they’ve figured out along the way. No pitch, no polish – just a two-minute read to meet the person […]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4858,6 +5282,12 @@
      "source": "Joho no Todai (English)",
      "title": "Android GhostMap Flaw Can Trap Devices in a Reboot Loop on Installation, With No Fix Scheduled",
      "url": "https://joho-todai.com/en/android-ghostmap-bug-reboot-loop/"
+    },
+    {
+     "id": "c3be2112dd11",
+     "source": "BleepingComputer",
+     "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+     "url": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/"
     }
    ],
    "topics": [
@@ -6396,6 +6826,46 @@
    ]
   },
   {
+   "id": "dbb48531a35d",
+   "title": "myDBR 7.7 brings web reporting to PostgreSQL",
+   "url": "https://www.postgresql.org/about/news/mydbr-77-brings-web-reporting-to-postgresql-3424/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQL, MariaDB and Microsoft SQL Server support that myDBR already has. What is myDBR?",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
+  {
+   "id": "ab69daf517d3",
+   "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
+   "url": "https://www.postgresql.org/about/news/reindb-read-only-performance-monitoring-for-postgresql-first-database-free-3432/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements, and flags what drifts from it, ranked by the extra database time each change costs.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "444563d21f1a",
+   "title": "Autobase 2.12 released",
+   "url": "https://www.postgresql.org/about/news/autobase-212-released-3430/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the best solutions for real-time infrastructure monitoring.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "cb74380025e3",
    "title": "UK government considers smart glasses ban over secret filming concerns",
    "url": "https://www.theguardian.com/uk-news/2026/nov/04/uk-government-considers-smart-glasses-ban-over-secret-filming-concerns",
@@ -6474,6 +6944,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "5fa3bb59007c",
+   "title": "From 25M instructions to one faulty skip: fault analysis of a secure boot",
+   "url": "https://www.eshard.com/blog/one-faulty-skip-secure-boot",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T14:20:31+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
