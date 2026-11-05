@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T23:02:32+00:00",
+ "generated": "2026-11-05T23:31:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 68,
-   "recent": 68,
+   "fetched": 69,
+   "recent": 69,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 32,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -1277,9 +1277,9 @@
   },
   {
    "source": "Proofpoint Threat Insight",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "error": null
   },
   {
    "source": "Qualys Blog",
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1536,13 +1536,13 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
    "source": "OpenAI News",
-   "fetched": 1361,
-   "recent": 3,
+   "fetched": 1362,
+   "recent": 4,
    "error": null
   },
   {
@@ -1559,6 +1559,123 @@
   }
  ],
  "items": [
+  {
+   "id": "f3205319a78a",
+   "title": "Join EFF to Celebrate the Life of Aaron Swartz",
+   "url": "https://www.eff.org/deeplinks/2026/11/join-eff-celebrate-life-aaron-swartz",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-05T23:21:45+00:00",
+   "summary": "Join us to celebrate the legacy of Aaron Swartz on Nov. 8, 2026. With the organizers of Aaron Swartz Day , we’re honoring his life with an in-person and remote hackathon.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a9def0afe985",
+   "title": "Cloudflare shares surge as revenue growth accelerates to 39% and outlook rises",
+   "url": "https://siliconangle.com/2026/11/05/cloudflare-shares-surge-as-revenue-growth-accelerates-to-39-and-outlook-rises/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-05T23:20:47+00:00",
+   "summary": "Shares in Cloudflare Inc. jumped more than 14% in late trading today after the connectivity cloud company smashed third-quarter expectations and lifted its full-year outlook well above what Wall Street had been modeling. The gain more than wiped out an 8% fall in the stock during the regular session.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "5f318cc375a8",
+   "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
+   "url": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T23:17:51+00:00",
+   "summary": "Cramer warned that the sell-off in AI stocks likely has further to run.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "61fff0bc5a4c",
+   "title": "CVE-2026-77596: Kubeflow Pipelines enables users to build and deploy portable, scalable machine learning workflows.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77596",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T23:17:00.767000+00:00",
+   "summary": "Kubeflow Pipelines enables users to build and deploy portable, scalable machine learning workflows. Prior to 2.18.0, the multi-user HTTP endpoints POST /apis/v2beta1/pipelines/upload and POST /apis/v2beta1/pipelines/upload_version call canUploadVersionedPipeline, which returns without SubjectAccessReview when the…",
+   "kind": "cve",
+   "cve": "CVE-2026-77596",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-77596",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "51c122e26451",
+   "title": "Cloudflare reports Q3 revenue up 39% YoY to $782.5M, above $737.2M est., a $34.1M net loss, and lifts its FY 2026 guidance; NET jumps 14%+ after hours (Elias Schisgall/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261105/p57#a261105p57",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T23:15:11+00:00",
+   "summary": "Elias Schisgall / Wall Street Journal : Cloudflare reports Q3 revenue up 39% YoY to $782.5M, above $737.2M est., a $34.1M net loss, and lifts its FY 2026 guidance; NET jumps 14%+ after hours — The connectivity cloud company upped its projections for revenue this year to around $2.96 billion — Cloudflare lifted its…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "e70a5bc77edf",
+   "title": "Microsoft is finally bringing two popular Sysinternals tools to Linux and macOS",
+   "url": "https://www.neowin.net/news/microsoft-is-finally-bringing-two-popular-sysinternals-tools-to-linux-and-macos/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T23:14:02+00:00",
+   "summary": "Microsoft is giving Linux and macOS users one Sysinternals classic each, alongside updates for several existing utilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "f16d8e680c53",
+   "title": "Airbnb reports Q3 revenue up 19% YoY to $4.9B, above est., Nights and Seats Booked up 16% to 155M, rises its FY 2026 revenue outlook; ABNB jumps 9%+ after hours (Bloomberg)",
+   "url": "https://www.techmeme.com/261105/p56#a261105p56",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T23:10:00+00:00",
+   "summary": "Bloomberg : Airbnb reports Q3 revenue up 19% YoY to $4.9B, above est., Nights and Seats Booked up 16% to 155M, rises its FY 2026 revenue outlook; ABNB jumps 9%+ after hours — Airbnb Inc. Chief Executive Officer Brian Chesky said his company is back in “growth mode” after it posted the fastest revenue gain …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2a003bc0112e",
+   "title": "OpenAI Responds to US Midterm Elections With New Commitment to Communities",
+   "url": "https://politics.slashdot.org/story/26/11/05/2150249/openai-responds-to-us-midterm-elections-with-new-commitment-to-communities?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-05T23:00:00+00:00",
+   "summary": "\"OpenAI has published a new National Community Compact and Compute Campus Policy Blueprint, apparently in response to the Blue Wave Midterm Elections,\" writes ancient Slashdot reader Gilmoure.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education"
+   ]
+  },
   {
    "id": "48e3cba0cf7e",
    "title": "Why working with AI agents is so tiring (and what to do about it) – Tech, work, and what comes next",
@@ -1827,6 +1944,19 @@
    ]
   },
   {
+   "id": "2e92d8d7a0a8",
+   "title": "The Kotlin Multiplatform Contest Is Open: Win a Trip to KotlinConf",
+   "url": "https://blog.jetbrains.com/kotlin/2026/11/kotlin-multiplatform-contest-2027/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T22:05:21+00:00",
+   "summary": "The Kotlin Multiplatform Contest is back! Students and recent graduates, turn your idea into a cross-platform project with Kotlin Multiplatform (KMP). The authors of the top three projects will each win a trip to KotlinConf 2027 in Kraków, Poland, with conference tickets, travel, and accommodation covered by the…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "23e5fec5f6ad",
    "title": "Seattle startup OneCourt brings tactile tablets for blind and low-vision fans to NHL games",
    "url": "https://www.geekwire.com/2026/seattle-startup-onecourt-brings-tactile-tablets-for-blind-and-low-vision-fans-to-nhl-games/",
@@ -1850,6 +1980,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "f8a1930cdd59",
+   "title": "Chrome for Android Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01050980700.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T22:00:00+00:00",
+   "summary": "Hi, everyone! We've just released Chrome 157 (157.0.8103.46) for Android. It'll become available on Google Play over the next few days. This release includes stability and performance improvements. You can see a full list of the changes in the Git log . If you find a new issue, please let us know by filing a bug .",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -3441,6 +3584,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "be1b302213d8",
+   "title": "Winner of the Prix Goncourt literary prize admits to using AI",
+   "url": "https://www.theguardian.com/books/2026/nov/05/winner-of-the-prix-goncourt-literary-prize-admits-to-using-ai-philippe-jaenada",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T18:08:58+00:00",
+   "summary": "Philippe Jaenada told French radio that he used ChatGPT to ‘play with the reader’, after the prize removed a different book from its longlist over allegations of AI use The winner of France’s most prestigious literary prize has admitted using artificial intelligence while writing his novel, barely a day after…",
+   "also_covered_by": [],
+   "topics": [
     "AI"
    ]
   },
@@ -10981,6 +11137,20 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "300d91101f21",
+   "title": "Merge builds product and business tools with OpenAI technology",
+   "url": "https://openai.com/index/merge-builds-with-openai",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
     "AI"
    ]
   },
