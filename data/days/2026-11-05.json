@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T19:01:23+00:00",
+ "generated": "2026-11-05T19:31:35+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 36,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -84,7 +84,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 56,
-   "recent": 56,
+   "fetched": 59,
+   "recent": 59,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": ".NET Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -545,14 +545,14 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 96,
-   "recent": 50,
+   "fetched": 107,
+   "recent": 68,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -954,7 +954,7 @@
   {
    "source": "OpenSSF",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1242,7 +1242,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1560,6 +1560,197 @@
  ],
  "items": [
   {
+   "id": "40172861ba08",
+   "title": "AI contract management: What CIOs should look for",
+   "url": "https://www.cio.com/article/4245300/ai-contract-management-what-cios-should-look-for.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-05T19:24:25+00:00",
+   "summary": "Imagine a salesperson getting ready for a customer renewal meeting. They need to find the original contract and review its terms. But the information is buried in CRM records and attachments, forcing them to search through multiple documents.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e5282585cb5a",
+   "title": "Air Force cyber official: need to invest in digital forensics",
+   "url": "https://cyberscoop.com/air-force-digital-forensics-cyber-investment/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-05T19:22:27+00:00",
+   "summary": "Wanda Jones-Heath said it’s key to keeping pace with incidents and threats, speaking at a Datadog event Thursday.",
+   "also_covered_by": [],
+   "topics": [
+    "Forensics & IR"
+   ]
+  },
+  {
+   "id": "f35e76d44f3f",
+   "title": "Sources: about 600,000 of Nvidia's H200 chips are stored in Hong Kong awaiting shipment to mainland China, as Beijing withholds approval for large-scale imports (Reuters)",
+   "url": "https://www.techmeme.com/261105/p47#a261105p47",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T19:20:02+00:00",
+   "summary": "Reuters : Sources: about 600,000 of Nvidia's H200 chips are stored in Hong Kong awaiting shipment to mainland China, as Beijing withholds approval for large-scale imports — About 600,000 of Nvidia's advanced artificial intelligence chips are stored in Hong Kong awaiting shipment to mainland China …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a11a11cdd560",
+   "title": "CVE-2026-71550: SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71550",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T19:17:26.357000+00:00",
+   "summary": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the workflow controller uses a path-traversal-capable aow_action value in require_once() without constraining the resolved file.",
+   "kind": "cve",
+   "cve": "CVE-2026-71550",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-71550",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "dbb712d0c275",
+   "title": "CVE-2026-123198: LMFDB before commit 01829bd contains a server-side template injection vulnerability in the render_knowl…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123198",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T19:17:18.393000+00:00",
+   "summary": "LMFDB before commit 01829bd contains a server-side template injection vulnerability in the render_knowl function that allows unauthenticated attackers to inject Jinja expressions via request parameters.",
+   "kind": "cve",
+   "cve": "CVE-2026-123198",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-123198",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "bc7463e37eae",
+   "title": "CVE-2026-100358: SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100358",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T19:16:55.400000+00:00",
+   "summary": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown Editor passes $dropdown_name through html_entity_decode() and writes the result verbatim into a PHP language file under custom/ that is included on later page loads.",
+   "kind": "cve",
+   "cve": "CVE-2026-100358",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-100358",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "33ab2e46b0ac",
+   "title": "Infineon’s Johannes Schoiswohl on the GaN Market at OktoberTech",
+   "url": "https://www.eetimes.com/infineons-johannes-schoiswohl-on-the-gan-market-at-oktobertech/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-05T19:15:17+00:00",
+   "summary": "Sponsored: PEN’s Aalyia Shaukat talks to Infineon’s Johannes Schoiswohl about the GaN market at OktoberTech Silicon Valley 2026, the event’s 10th anniversary.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "dd3956422471",
+   "title": "Harden cooling systems now, feds warn critical infrastructure operators amid attacks",
+   "url": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-05T19:15:00+00:00",
+   "summary": "The U.S. government on Thursday called on critical infrastructure operators to safeguard their cooling systems following hacks that have caused chaos in European supermarkets in recent weeks.",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "0e45499ad3b1",
+   "title": "RHSA-2026:95619: Important: qt5-qtbase security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95619",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T19:11:59+00:00",
+   "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "42d6d77f8dec",
+   "title": "Case Study: Kubescape Completes All Six Security Slam Badges with OpenSSF",
+   "url": "https://openssf.org/blog/2026/11/05/case-study-kubescape-completes-all-six-security-slam-badges-with-openssf/",
+   "source": "OpenSSF",
+   "source_category": "Supply chain security",
+   "published": "2026-11-05T19:02:30+00:00",
+   "summary": "Kubescape completed all six project-level badges in the Fall 2026 Security Slam, bringing maintainers and community contributors together to strengthen security across its open source Kubernetes platform.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "bb992dfb38ad",
+   "title": "METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration (Tiffany Li/The Information)",
+   "url": "https://www.techmeme.com/261105/p46#a261105p46",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T19:01:21+00:00",
+   "summary": "Tiffany Li / The Information : METR: Anthropic's models are improving about twice as fast as they did between March 2024 and October 2025, with internal AI use driving ~80% of acceleration — AI use within Anthropic may have doubled the company's pace of AI development, a new report from AI research nonprofit METR says.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "cae17871ec9b",
+   "title": "OpenBSD security advisory (AV26-1130)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/openbsd-security-advisory-av26-1130",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T19:00:54+00:00",
+   "summary": "Serial number: AV26-1130 Date: November 5, 2026 As of November 5, 2026, OpenBSD is affected by a vulnerability in the following product: OpenSSH Prior to 10.6p2 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration"
+   ]
+  },
+  {
    "id": "631ac8aa8d3e",
    "title": "Instagram's new desktop video editing app is here (and it's free)",
    "url": "https://www.neowin.net/news/instagrams-new-desktop-video-editing-app-is-here-and-its-free/?utm_source=rss",
@@ -1583,6 +1774,34 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "e3ddb1ab597b",
+   "title": "AWS launches Kiro bots to help devs coordinate AI coding agents",
+   "url": "https://www.infoworld.com/article/4245120/aws-launches-kiro-bots-to-help-devs-coordinate-ai-coding-agents.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-05T19:00:00+00:00",
+   "summary": "AWS on Thursday launched Kiro bots, generally available within Kiro Crew, its open-source multi-agent development environment, to help developers coordinate parallel coding tasks, maintain context across sessions, and automate recurring software development workflows.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "213265ac6c9d",
+   "title": "Help Shape the Future of .NET: Take the 2026 .NET Developer Survey",
+   "url": "https://devblogs.microsoft.com/dotnet/dotnet-developer-survey-2026/",
+   "source": ".NET Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T19:00:00+00:00",
+   "summary": "Take the 2026 .NET Developer Survey to share your experience, help identify common challenges, and guide future .NET investments. The survey takes about 15 minutes.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -1653,6 +1872,19 @@
    ]
   },
   {
+   "id": "811aae8a0c11",
+   "title": "How agentic analytics redraws the boundaries of BI and data science",
+   "url": "https://www.techtarget.com/news/how-agentic-analytics-redraws-the-boundaries-of-bi-and-data-science/873912/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T18:47:52+00:00",
+   "summary": "As AI agents handle more analytics work, enterprises must reconsider who owns, reviews and approves their output.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "abcdc59e2e54",
    "title": "Agentic AI boom expected to reshape CPU market",
    "url": "https://www.networkworld.com/article/4245292/agentic-ai-boom-expected-to-reshape-cpu-market.html",
@@ -1711,6 +1943,19 @@
    }
   },
   {
+   "id": "c412e10b4a64",
+   "title": "How to keep robots and the people they serve safe",
+   "url": "https://www.techtarget.com/news/how-to-keep-robots-and-the-people-they-serve-safe/873906/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T18:29:34+00:00",
+   "summary": "Explore how thoughtful safeguards and human oversight can keep robots safe while protecting the people who work and interact with them.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "2baa7401d6be",
    "title": "How to Lie With Statistics (1954) [pdf]",
    "url": "https://www.horace.org/blog/wp-content/uploads/2012/05/How-to-Lie-With-Statistics-1954-Huff.pdf",
@@ -1735,6 +1980,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "e5fdc92139ff",
+   "title": "NTS: Authenticated Time at Meta",
+   "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T18:24:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
     "Identity & access"
    ]
   },
@@ -1856,6 +2114,21 @@
    ]
   },
   {
+   "id": "a7ee0eb1c812",
+   "title": "RHSA-2026:95273: Critical: OpenJDK 11.0.33 ELS Security Update for Windows Builds",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95273",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T18:02:25+00:00",
+   "summary": "An update is now available for OpenJDK. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "25a7857b3937",
    "title": "After RAM, the iPhone Duo is probably now the second-scarcest product in the tech industry",
    "url": "https://www.neowin.net/opinions/after-ram-the-iphone-duo-is-probably-now-the-second-scarcest-product-in-the-tech-industry/?utm_source=rss",
@@ -1919,6 +2192,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "1765ccc10631",
+   "title": "Amazon Cognito announces 99.99% Service Level Agreement for the Plus feature plan",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-sla-update/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T18:00:00+00:00",
+   "summary": "Starting November 1, 2026, the Amazon Cognito Service Level Agreement (SLA) commits to a Monthly Uptime Percentage of 99.99% for user pools on the Plus feature plan, up from 99.9%. User pools already on Plus are automatically covered by the new Service Commitment.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2123,6 +2409,19 @@
    ]
   },
   {
+   "id": "129da928ca8b",
+   "title": "RHSA-2026:95602: Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95602",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T17:33:28+00:00",
+   "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "dcb771ac6630",
    "title": "Nasdaq heading for worst day in 18 months as Wall Street sustains widespread losses",
    "url": "https://www.theguardian.com/business/2026/nov/05/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses",
@@ -2250,6 +2549,20 @@
    ]
   },
   {
+   "id": "b5e6887b61d8",
+   "title": "RHSA-2026:95601: Important: kpatch-patch-4_18_0-477_107_1, kpatch-patch-4_18_0-477_120_1, kpatch-patch-4_18_0-477_130_1, kpatch-patch-4_18_0-477_143_1, and kpatch-patch-4_18_0-477_161_1 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95601",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T17:25:22+00:00",
+   "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "17fc3df554f5",
    "title": "Microsoft rolls out a Xbox PC app with an overhauled design to Xbox Insiders that it says launches up to 60% faster than before (Tom Warren/The Verge)",
    "url": "https://www.techmeme.com/261105/p43#a261105p43",
@@ -2310,6 +2623,19 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "f3d64d4a04d5",
+   "title": "RHSA-2026:95597: Important: thunderbird security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95597",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T17:18:54+00:00",
+   "summary": "An update for thunderbird is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -2748,7 +3074,14 @@
    "source_category": "Security",
    "published": "2026-11-05T17:00:00+00:00",
    "summary": "After a summer of sandbox escaping hacks, OpenAI said their new model was trained to be more cautious around user intent and less sensitive to “reward hacking” behaviors.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d3f1975aa4ea",
+     "source": "The New Stack",
+     "title": "OpenAI’s new GPT-6 Cyber is better at hacking and better at staying in its lane",
+     "url": "https://thenewstack.io/openai-gpt6-cyber-exploits/"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -2913,6 +3246,20 @@
    ]
   },
   {
+   "id": "c1f6dcda9e0e",
+   "title": "RHSA-2026:95587: Important: kpatch-patch-4_18_0-553_109_1, kpatch-patch-4_18_0-553_125_1, kpatch-patch-4_18_0-553_158_1, kpatch-patch-4_18_0-553_72_1, and kpatch-patch-4_18_0-553_85_1 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95587",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T16:41:43+00:00",
+   "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "56e9d2f7b1ad",
    "title": "Oracle wants to pull stalled AI agents out of demo mode and into production",
    "url": "https://siliconangle.com/2026/11/05/ai-architecture-gaps-keep-agents-demo-mode-oracleaiworld/",
@@ -2966,6 +3313,46 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "11f4fd1c6145",
+   "title": "RHSA-2026:95588: Important: qt5-qtbase security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95588",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T16:39:39+00:00",
+   "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "0630a226249e",
+   "title": "RHSA-2026:95589: Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95589",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T16:35:58+00:00",
+   "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "9bb356453ced",
+   "title": "Ahsan Hadi: Zero Downtime In-Place Major PostgreSQL Upgrades on a Distributed PostgreSQL Cluster",
+   "url": "https://postgr.es/p/9B4",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-05T16:35:55+00:00",
+   "summary": "In my last post I walked through a rolling major version upgrade: add a brand new node on the new version, let it join the Spock cluster, retire the old node. It works well, but it assumes you can stand up an extra server for every node you need to upgrade. A lot of customers I talk to cannot.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -3151,6 +3538,12 @@
      "source": "Hacker News",
      "title": "Discord is ditching Electron and its new app uses less RAM",
      "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app"
+    },
+    {
+     "id": "95e342f3f4cc",
+     "source": "Slashdot",
+     "title": "Discord Is Ditching Electron For Rust",
+     "url": "https://tech.slashdot.org/story/26/11/05/193239/discord-is-ditching-electron-for-rust?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
    ],
    "topics": [
@@ -3250,6 +3643,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "1cd72ed9ec18",
+   "title": "RHSA-2026:94520: Important: Java 11 OpenJDK ELS Security Update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:94520",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T16:12:49+00:00",
+   "summary": "An update for java-11-openjdk with Extended Lifecycle Support is now available for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -3941,6 +4349,21 @@
    ]
   },
   {
+   "id": "4a9c3cbc8f72",
+   "title": "RHSA-2026:95578: Important: python36:3.6 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95578",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T15:21:47+00:00",
+   "summary": "An update for the python36:3.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
    "id": "ab2c65c2a4d7",
    "title": "Servo Browser Engine Continues Broadening Web Compatibility, New Features",
    "url": "https://www.phoronix.com/news/Servo-0.7-Changes",
@@ -4033,6 +4456,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "7f624ac51953",
+   "title": "RHSA-2026:95575: Important: qt5-qtbase security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95575",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T15:15:10+00:00",
+   "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -4394,6 +4831,20 @@
    ]
   },
   {
+   "id": "30df4dfb6b7d",
+   "title": "RHSA-2026:95493: Important: flatpak security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95493",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T14:45:12+00:00",
+   "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "e3dbdc4dd3bd",
    "title": "Alpine Linux Security advisory: OpenSSH-server password authentication bypass",
    "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
@@ -4738,6 +5189,20 @@
    "topics": [
     "Cloud & infrastructure",
     "System administration"
+   ]
+  },
+  {
+   "id": "75627a6a4393",
+   "title": "RHSA-2026:95556: Important: kernel security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95556",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T14:17:35+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -5499,6 +5964,20 @@
    ]
   },
   {
+   "id": "ea88c63aa18f",
+   "title": "RHSA-2026:95518: Important: delve security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95518",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T13:37:40+00:00",
+   "summary": "An update for delve is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "b1bcd79ed318",
    "title": "21 injured in Mackenzie, B.C., bus crash involving Iren contractor",
    "url": "https://www.datacenterdynamics.com/en/news/21-injured-in-mackenzie-bc-bus-crash-involving-iren-contractor/",
@@ -5809,6 +6288,19 @@
    ]
   },
   {
+   "id": "c83ff1cdf27b",
+   "title": "RHSA-2026:95516: Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95516",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T13:03:32+00:00",
+   "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "f21f379512b4",
    "title": "IBM, AMD and Oak Ridge join forces to launch quantum computing error-correction platform",
    "url": "https://siliconangle.com/2026/11/05/ibm-amd-and-oak-ridge-join-forces-to-launch-quantum-computing-error-correction-platform/",
@@ -6003,6 +6495,19 @@
    "source_category": "Vendor advisories",
    "published": "2026-11-05T12:51:00+00:00",
    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "56cc73656c29",
+   "title": "RHSA-2026:95502: Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95502",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T12:48:23+00:00",
+   "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical.",
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
@@ -6548,6 +7053,34 @@
     "AI",
     "Hardware",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "b8519da9b090",
+   "title": "RHSA-2026:95504: Important: resteasy security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95504",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T12:08:09+00:00",
+   "summary": "An update for resteasy is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ffeebeefcf48",
+   "title": "RHSA-2026:95513: Important: ruby:2.5 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95513",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T12:06:17+00:00",
+   "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -8915,7 +9448,14 @@
    "source_category": "Development",
    "published": "2026-11-05T07:44:30+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f36911c184fa",
+     "source": "BleepingComputer",
+     "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
+     "url": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -9987,6 +10527,19 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "f451ced722aa",
+   "title": "Nyquist Limit:The frequency of changes in tech is invalidating our understanding",
+   "url": "https://www.ryanprior.com/posts/nyquist-limit-frequency-of-changes-in-tech-invalidates-understanding/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T20:07:01+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
