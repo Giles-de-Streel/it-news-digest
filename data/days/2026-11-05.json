@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T20:01:21+00:00",
+ "generated": "2026-11-05T20:31:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 59,
-   "recent": 59,
+   "fetched": 63,
+   "recent": 63,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "GitHub Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 13,
+   "recent": 11,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 108,
-   "recent": 66,
+   "fetched": 107,
+   "recent": 64,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -852,13 +852,13 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Google Cloud Blog",
    "fetched": 20,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
+   "fetched": 6,
    "recent": 0,
    "error": null
   },
@@ -1560,6 +1560,195 @@
  ],
  "items": [
   {
+   "id": "69af5f8a1220",
+   "title": "Inside GitHub’s new Git storage architecture",
+   "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+   "source": "GitHub Blog",
+   "source_category": "Development",
+   "published": "2026-11-05T20:23:21+00:00",
+   "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "b027399d171f",
+   "title": "CVE-2026-116790: FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116790",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T20:17:46.557000+00:00",
+   "summary": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware.",
+   "kind": "cve",
+   "cve": "CVE-2026-116790",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116790",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "b10858741440",
+   "title": "CVE-2026-116785: FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116785",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T20:17:45.730000+00:00",
+   "summary": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware.",
+   "kind": "cve",
+   "cve": "CVE-2026-116785",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116785",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "0955fa7f8eb5",
+   "title": "CVE-2026-116779: FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T20:17:44.790000+00:00",
+   "summary": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware.",
+   "kind": "cve",
+   "cve": "CVE-2026-116779",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116779",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "854d734d7a27",
+   "title": "CVE-2026-102940: OpenEMR is a free and open source electronic health records and medical practice management application.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102940",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T20:17:37.543000+00:00",
+   "summary": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.4.0, controllers/C_Document.class.php write actions, including move_action_process(), do not verify the caller's access to the source document, current patient and category, or destination patient and…",
+   "kind": "cve",
+   "cve": "CVE-2026-102940",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102940",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "9d52b0bab9b2",
+   "title": "Truffle Security launches program to revoke 1.4 million live secrets",
+   "url": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-05T20:15:08+00:00",
+   "summary": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2f72c194ad90",
+   "title": "Sources: Nvidia approached Apollo about retrofitting some of the 130+ buildings of the PE firm's struggling ISP Brightspeed into a network of small data centers (The Information)",
+   "url": "https://www.techmeme.com/261105/p50#a261105p50",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T20:15:00+00:00",
+   "summary": "The Information : Sources: Nvidia approached Apollo about retrofitting some of the 130+ buildings of the PE firm's struggling ISP Brightspeed into a network of small data centers — Nvidia is looking for a faster way to get its chips turned on: old telecom company buildings.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "8b7832becd89",
+   "title": "US issues more sanctions against Prince Group scam center affiliates",
+   "url": "https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-05T20:11:00+00:00",
+   "summary": "The sanctions target four people and 41 companies linked to the Prince Group — a Cambodian company accused of running a billion-dollar scam operation.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6614d3a1cb88",
+   "title": "Enterprises face tougher AI regulatory landscape after midterms",
+   "url": "https://www.techtarget.com/news/enterprises-face-tougher-ai-regulatory-landscape-after-midterms/873920/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T20:05:23+00:00",
+   "summary": "The midterm elections show enterprises should expect stronger restrictions on data center buildout and greater scrutiny of AI.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "24064251180f",
+   "title": "Goodbye from Salon",
+   "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T20:03:29+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d32e83efcd0c",
+   "title": "HumanLayer just got acquired by Factory. But it gave users a way out first.",
+   "url": "https://thenewstack.io/factory-acquires-humanlayer-agents/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-05T20:02:19+00:00",
+   "summary": "Factory has acquired HumanLayer, its third AI coding startup in less than a month, as it works to fold more",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
    "id": "22c50953d7d0",
    "title": "Magnet Witness 2.0: Expanded enhancement, large-case performance, and improved reporting",
    "url": "https://www.magnetforensics.com/blog/magnet-witness-2-0-expanded-enhancement-large-case-performance-and-improved-reporting/",
@@ -1570,6 +1759,19 @@
    "also_covered_by": [],
    "topics": [
     "Forensics & IR"
+   ]
+  },
+  {
+   "id": "ea2c99df7ddc",
+   "title": "Jimmy Angelakos: PGConf.EU 2026 MEGAPOST: a busy week in Valencia",
+   "url": "https://postgr.es/p/9B7",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-05T19:57:00+00:00",
+   "summary": "This year's PostgreSQL Conference Europe, PGConf.EU 2026 , took place from October 20th to 23rd in wonderful Valencia, at the Palacio de Congresos. There was far too much going on to cover it all, so I'm just going to go over what I was involved with: a panel on Tuesday, a book signing on Wednesday, a talk on…",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -1636,7 +1838,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-05T19:36:29+00:00",
    "summary": "OpenVPN 2.7.9 is now available for download as the ninth maintenance update to the OpenVPN 2.7 series with a couple of user-visible changes and bug fixes.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "95f06899867b",
+     "source": "Linuxiac",
+     "title": "OpenVPN 2.7.9 Fixes Two Security Vulnerabilities, Improves Linux Networking",
+     "url": "https://linuxiac.com/openvpn-2-7-9-fixes-two-security-vulnerabilities-improves-linux-networking/"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Networking"
@@ -1690,6 +1899,19 @@
    "source_category": "IT industry",
    "published": "2026-11-05T19:30:00+00:00",
    "summary": "Jay Peters / The Verge : Meta rolls out voice mode and expressive avatars in the Muse app, starting in the US, letting users have voice conversations with Muse in real time — Muse AI agent now has voices and ‘expressive’ avatars that animate while chatting with you. … The feature has been rolled out to me …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "849641c16534",
+   "title": "900-V Bidirectional GaN Powers Solid-State Transformers Key to AI",
+   "url": "https://www.electronicdesign.com/technologies/power/news/55416462/electronic-design-900-v-bidirectional-gan-powers-solid-state-transformers-key-to-ai",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-05T19:30:00+00:00",
+   "summary": "Infineon will supply the first 900-V bidirectional GaN switch for Enphase's SST technology.",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -1800,6 +2022,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "0d63b75b618b",
+   "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+   "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T19:16:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -8692,6 +8927,12 @@
      "source": "LWN.net",
      "title": "Critical security vulnerability affects OpenSSH on Alpine Linux systems",
      "url": "https://lwn.net/Articles/1105464/"
+    },
+    {
+     "id": "ca4dd773ab2a",
+     "source": "Linuxiac",
+     "title": "OpenSSH 10.6p2 Released to Fix Critical Password Authentication Bypass",
+     "url": "https://linuxiac.com/openssh-10-6p2-released-to-fix-critical-password-authentication-bypass/"
     }
    ],
    "topics": [
@@ -10319,7 +10560,14 @@
    "source_category": "Security",
    "published": "2026-11-05T04:36:17+00:00",
    "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f359ce489f8b",
+     "source": "Slashdot",
+     "title": "Want to Rent an Internet Address at the White House?",
+     "url": "https://it.slashdot.org/story/26/11/05/1924217/want-to-rent-an-internet-address-at-the-white-house?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -10715,6 +10963,19 @@
    "topics": [
     "Cloud & infrastructure",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "14aae2a2d3ce",
+   "title": "Amazon MWAA now supports cost allocation tags",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-cost-allocation-tags/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-04T23:00:00+00:00",
+   "summary": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports cost allocation tags . Tags you apply to an Amazon MWAA environment now propagate to the compute that runs it, including workers, schedulers, and web servers.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
