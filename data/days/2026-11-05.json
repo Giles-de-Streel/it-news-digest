@@ -1,18 +1,18 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T08:00:50+00:00",
+ "generated": "2026-11-05T08:31:50+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 29,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 100,
-   "recent": 100,
+   "fetched": 95,
+   "recent": 95,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 99,
-   "recent": 34,
+   "fetched": 100,
+   "recent": 35,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 6,
+   "recent": 1,
    "error": null
   },
   {
@@ -810,7 +810,7 @@
   {
    "source": "Virtualization Review",
    "fetched": 60,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1344,7 +1344,7 @@
   {
    "source": "EdTech Magazine Higher Ed",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1392,19 +1392,19 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 12,
+   "recent": 14,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 25,
+   "recent": 23,
    "error": null
   },
   {
@@ -1560,6 +1560,72 @@
  ],
  "items": [
   {
+   "id": "4b34fcafc493",
+   "title": "CVE-2026-100109: The Security For WooCommerce WordPress plugin from 1.0.10 to 1.0.16 does not perform capability checks when…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100109",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T08:17:01.870000+00:00",
+   "summary": "The Security For WooCommerce WordPress plugin from 1.0.10 to 1.0.16 does not perform capability checks when creating users through an action available to unauthenticated visitors, and lets the caller choose the new account's role, allowing unauthenticated attackers to create administrator accounts and take over the…",
+   "kind": "cve",
+   "cve": "CVE-2026-100109",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-100109",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5b6de2988444",
+   "title": "RHSA-2026:95466: Important: dogtag-pki security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95466",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-05T08:12:57+00:00",
+   "summary": "An update for dogtag-pki is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "66fec0a8ef17",
+   "title": "From tanks to drones: South Korea’s defense firms face a new battlefield test",
+   "url": "https://www.cnbc.com/2026/11/05/south-korea-defense-weapon-war-stocks-fall.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T08:07:43+00:00",
+   "summary": "South Korean defense stocks rode a wave of global rearmament for the past two years, but they have plunged in 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2dc31c0b5145",
+   "title": "ACEMAGIC Kron Mini K5 Review – Part 3: Ubuntu 26.04 on an entry-level Wildcat Lake mini PC",
+   "url": "https://www.cnx-software.com/2026/11/05/acemagic-kron-mini-k5-review-part-3-ubuntu-26-04-on-an-entry-level-wildcat-lake-mini-pc/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-05T08:03:09+00:00",
+   "summary": "After checking out the ACEMAGIC Kron Mini K5’s hardware with an unboxing and a teardown in the first part of the review, we tested the entry-level Intel Core 3 304 mini PC on Windows 11, and we’ve now taken the time to test Linux on the low-cost mini PC with Ubuntu 26.04.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
    "id": "7611012391af",
    "title": "Vivaldi 8.3 rolling out updates to give users finer control over web content",
    "url": "https://www.neowin.net/news/vivaldi-83-rolling-out-updates-to-give-users-finer-control-over-web-content/?utm_source=rss",
@@ -1570,6 +1636,33 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "3acccbc0877d",
+   "title": "Sponsored: From compute race to data showdown: The agent era will be won in the storage layer",
+   "url": "https://www.datacenterdynamics.com/en/marketwatch/from-compute-race-to-data-showdown-the-agent-era-will-be-won-in-the-storage-layer/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "At Huawei Connect 2026, the Data Storage Summit underscored how the next stage of enterprise AI will depend less on buying GPUs and more on rebuilding data infrastructure",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "52fefa4837b9",
+   "title": "Tokenmaxxing crackdowns and AI cybersecurity risks",
+   "url": "https://www.itpro.com/security/tokenmaxxing-crackdowns-and-ai-cybersecurity-risks",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "As companies cut down on ‘tokenmaxxing’, what are the risks posed by the practice and how will crackdowns impact cybersecurity?",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1584,6 +1677,19 @@
    "topics": [
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "40c473df628c",
+   "title": "EU Parliament Committee Backs Zero-Emission Status for Renewable-Fuel Vehicles: EV Incentives Favor EU Production",
+   "url": "https://joho-todai.com/en/eu-parliament-renewable-fuel-vehicles-zero-emission-ev-incentives/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-05T07:57:19+00:00",
+   "summary": "A European Parliament environment committee amendment includes the zero-emission classification Toyota sought for vehicles that run exclusively on renewable fuels. EV incentives and public support for corporate fleets would require EU production, leaving a gap with Toyota's proposal.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1681,6 +1787,20 @@
    ]
   },
   {
+   "id": "a665869d02d2",
+   "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+   "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-05T07:06:33+00:00",
+   "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
    "id": "933682922650",
    "title": "LXQt 2.5 Released with Qt 6.10 Support, Drops Last LXDE Dependency",
    "url": "https://linuxiac.com/lxqt-2-5-released-with-qt-6-10-support-drops-last-lxde-dependency/",
@@ -1691,6 +1811,19 @@
    "also_covered_by": [],
    "topics": [
     "Supply chain security"
+   ]
+  },
+  {
+   "id": "1868b70c66fe",
+   "title": "Apple iPad mini A20 Pro review: the best small tablet but with a big price",
+   "url": "https://www.theguardian.com/technology/2026/nov/05/apple-ipad-mini-a20-pro-review-best-small-tablet-but-big-price",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T07:00:56+00:00",
+   "summary": "All-round upgrades fit a bigger OLED screen in a smaller and lighter body with water resistance for first time The new iPad mini takes Apple’s fan-favourite tiny tablet and upgrades just about everything about it, including giving it a new OLED screen, serious performance, speakers embedded into the display and even…",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
    ]
   },
   {
@@ -2222,6 +2355,33 @@
    "also_covered_by": [],
    "topics": [
     "Threats & malware"
+   ]
+  },
+  {
+   "id": "f82ff91c0c10",
+   "title": "Datacenters were on the ballot. US voters rejected them",
+   "url": "https://www.theguardian.com/us-news/2026/nov/04/datacenters-midterm-elections",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T01:30:14+00:00",
+   "summary": "Voters approved nearly every datacenter moratorium that was on the ballot, dozens in total in Tuesday’s elections Track live results from all 50 states Send us your questions about the US midterms results and Democrats’ ‘blue wave’ There were three big losers in Tuesday’s midterm elections in the US: Donald Trump,…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "cb74380025e3",
+   "title": "UK government considers smart glasses ban over secret filming concerns",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/04/uk-government-considers-smart-glasses-ban-over-secret-filming-concerns",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-04T20:43:21+00:00",
+   "summary": "Minister hints at restriction on selling technology ‘to certain users’ amid worries over surreptitious filming of women The government is considering placing restrictions on smart glasses amid concerns the technology is being used to surreptitiously film women, a minister has said.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
