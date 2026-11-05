@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-05T03:01:13+00:00",
+ "generated": "2026-11-05T03:31:24+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "The Record",
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 30,
+   "recent": 32,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 100,
-   "recent": 100,
+   "fetched": 107,
+   "recent": 107,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 22,
+   "recent": 20,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 25,
+   "recent": 23,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 125,
+   "fetched": 120,
    "recent": 40,
    "error": null
   },
@@ -672,13 +672,13 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -996,7 +996,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 6,
+   "recent": 4,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1560,6 +1560,258 @@
  ],
  "items": [
   {
+   "id": "b4507101111c",
+   "title": "Berlin-based Pliant raised an $80M Series C led by Seaya Nova and Speedinvest, as it opens its B2B payments infrastructure to AI agents (Cristian Dina/The Next Web)",
+   "url": "https://www.techmeme.com/261104/p63#a261104p63",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T03:25:01+00:00",
+   "summary": "Cristian Dina / The Next Web : Berlin-based Pliant raised an $80M Series C led by Seaya Nova and Speedinvest, as it opens its B2B payments infrastructure to AI agents — Claude, ChatGPT and in-house AI agents can now run business payments through Pliant.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "eabe2c8aae77",
+   "title": "CVE-2026-122992: In G4KLX DStarGateway and F4FXL DStarGateway before 7b75de6, dstarCallsignToAPRS in APRSUtils.cpp has an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122992",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:25.513000+00:00",
+   "summary": "In G4KLX DStarGateway and F4FXL DStarGateway before 7b75de6, dstarCallsignToAPRS in APRSUtils.cpp has an integer underflow via an empty RS-MS1A sender field.",
+   "kind": "cve",
+   "cve": "CVE-2026-122992",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122992",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5f0466a129ed",
+   "title": "CVE-2026-122321: Kyverno 1.18.0 before 1.19.2 contains a signature verification bypass in verifyImages because cached…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122321",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:25.023000+00:00",
+   "summary": "Kyverno 1.18.0 before 1.19.2 contains a signature verification bypass in verifyImages because cached verification results are keyed by the image reference string (such as a tag) rather than bound to the verified digest, so cache hits skip signature and attestation checks.",
+   "kind": "cve",
+   "cve": "CVE-2026-122321",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122321",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "3ecee5a02cd6",
+   "title": "CVE-2026-122313: Kyverno from 1.17.0 before 1.19.2 contains a privilege escalation vulnerability that allows namespace-scoped…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122313",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:23.853000+00:00",
+   "summary": "Kyverno from 1.17.0 before 1.19.2 contains a privilege escalation vulnerability that allows namespace-scoped tenants to modify resources in other namespaces through NamespacedMutatingPolicy targetMatchConstraints.expression CEL output lacking namespace checks.",
+   "kind": "cve",
+   "cve": "CVE-2026-122313",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122313",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "ec1ccee0a0af",
+   "title": "CVE-2026-122311: Kyverno from 1.16.0 before 1.19.2 fails to validate path segments in the resource argument of resource.get()…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122311",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:23.497000+00:00",
+   "summary": "Kyverno from 1.16.0 before 1.19.2 fails to validate path segments in the resource argument of resource.get() and resource.post(), allowing namespaced CEL policies to escape their namespace. Tenants who can create a NamespacedValidatingPolicy can insert ..",
+   "kind": "cve",
+   "cve": "CVE-2026-122311",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122311",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b89caea59bd8",
+   "title": "CVE-2026-122310: Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:23.337000+00:00",
+   "summary": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind # or ?",
+   "kind": "cve",
+   "cve": "CVE-2026-122310",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122310",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "e633b16890e0",
+   "title": "CVE-2026-122304: Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace admins…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122304",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:22.353000+00:00",
+   "summary": "Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace admins to escape namespace confinement because the cleanup controller builds its context loader with a nil policy.",
+   "kind": "cve",
+   "cve": "CVE-2026-122304",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122304",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration"
+   ]
+  },
+  {
+   "id": "166ea89a66ac",
+   "title": "CVE-2026-122303: Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122303",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:22.197000+00:00",
+   "summary": "Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace tenants to overwrite resources in other namespaces via NamespacedMutatingPolicy mutate-existing targetMatchConstraints.expression.",
+   "kind": "cve",
+   "cve": "CVE-2026-122303",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122303",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4ef23fa1604d",
+   "title": "CVE-2026-122302: Kyverno before 1.19.2 contains a privilege escalation vulnerability that allows namespace admins to create…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122302",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T03:17:22.030000+00:00",
+   "summary": "Kyverno before 1.19.2 contains a privilege escalation vulnerability that allows namespace admins to create resources beyond their RBAC because generate-rule admission checks verify the controller's permissions, not the author's.",
+   "kind": "cve",
+   "cve": "CVE-2026-122302",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122302",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team",
+    "System administration"
+   ]
+  },
+  {
+   "id": "c7f84915415c",
+   "title": "CentOS co-founder builds Linux-compatible kernel in 11 days with AI",
+   "url": "https://4sysops.com/archives/centos-co-founder-builds-linux-compatible-kernel-in-11-days-with-ai/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T03:11:31+00:00",
+   "summary": "Ginux is an experimental Rust kernel built to run unmodified Linux programs; for now, it runs only in QEMU, software that emulates or virtualizes computer hardware so you can run an operating system inside a virtual machine.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "5f315bd65af2",
+   "title": "OpenAI Images 2.6 adds GIFs and faster image generation",
+   "url": "https://4sysops.com/archives/openai-images-2-6-adds-gifs-and-faster-image-generation/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T03:02:15+00:00",
+   "summary": "OpenAI Images 2.6 generates and edits images in ChatGPT, Codex, and the API. The update brings GIF creation, more precise edits, and image generation that OpenAI says is 50% faster. API users also get controls for generation speed and complexity. Source",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9dd6dd8598ea",
+   "title": "Apple trims internal AI budgets as token costs mount",
+   "url": "https://4sysops.com/archives/apple-trims-internal-ai-budgets-as-token-costs-mount/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T03:02:14+00:00",
+   "summary": "Apple has cut daily AI spending limits for some engineering teams from $300 to $200, and is considering further reductions to $100 for some engineers. Non-engineering teams could face caps as low as $25 per day. The move puts a tighter price on Apple’s push to use AI in its engineering work. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "bdf07965957d",
+   "title": "VMware brings back low-end virtualization with vSphere Express",
+   "url": "https://4sysops.com/archives/vmware-brings-back-low-end-virtualization-with-vsphere-express/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T03:02:13+00:00",
+   "summary": "VMware’s new vSphere Express server-virtualization product supports up to 128 processor cores and will cost significantly less than its enterprise offerings, the company says. It includes live VM migration, automatic restarts for failed VMs, and non-disruptive patching.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "b10d2332c6a1",
    "title": "The First Business Computer Hits 75!",
    "url": "https://hackaday.com/2026/11/04/the-first-business-computer-hits-75/",
@@ -1646,6 +1898,19 @@
    ]
   },
   {
+   "id": "71042f0ae158",
+   "title": "Linux Mint 27 arrives next month, and I like it already: New features and other upgrades to expect",
+   "url": "https://www.zdnet.com/tech/linux-mint-27-release-date/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-05T02:35:58+00:00",
+   "summary": "It starts with a surprise version number: Linux Mint 27 instead of 24. But the next release brings far more changes than that.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "b424eb2c3713",
    "title": "Intune October 2026: Administrator protection, STIG audit baseline, and Microsoft Tunnel upgrades",
    "url": "https://4sysops.com/archives/intune-october-2026-administrator-protection-stig-audit-baseline-and-microsoft-tunnel-upgrades/",
@@ -1681,7 +1946,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-05T01:46:23+00:00",
    "summary": "MPV 0.42 open-source media player is now available for download with Wayland session management, Wayland color management, improved HDR colorspace signalling on DRM, and more.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a06f6eced14a",
+     "source": "Phoronix",
+     "title": "MPV 0.42 Media Player Brings Wayland Improvements, Improved HDR",
+     "url": "https://www.phoronix.com/news/MPV-0.42-Released"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -1712,6 +1984,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "df38b91887af",
+   "title": "Uber says it alone can make robotaxis pay, hours after Waymo quit its app",
+   "url": "https://www.theregister.com/personal-tech/2026/11/05/uber-says-it-alone-can-make-robotaxis-pay-hours-after-waymo-quit-its-app/5307718",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-05T01:45:07+00:00",
+   "summary": "Oh, the irony, as platform players fight",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1970,6 +2255,20 @@
    ]
   },
   {
+   "id": "2a30ea6c6933",
+   "title": "5 Takeaways From Democrats’ Historic Night",
+   "url": "https://www.insidehighered.com/news/government/politics-elections/2026/11/04/5-takeaways-democrats-win-big-states-congress",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-05T00:07:58+00:00",
+   "summary": "5 Takeaways From Democrats’ Historic Night Katherine Knott Wed, 11/04/2026 - 07:07 PM The election results will likely reshape the balance of power in the U.S. for years to come. Higher ed advocates are hopeful that the new Congress will advance their priorities, from college affordability to academic freedom.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "45c552d60f93",
    "title": "You'll need nerves of steel to work with AI agents",
    "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
@@ -2140,6 +2439,20 @@
     "AI",
     "Hardware",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "23d1674c640f",
+   "title": "Democrats’ Texas Takeover Could Reshape Boards, Laws and More",
+   "url": "https://www.insidehighered.com/news/government/politics-elections/2026/11/04/democrats-texas-takeover-could-reshape-boards-and",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-04T23:48:37+00:00",
+   "summary": "Democrats’ Texas Takeover Could Reshape Boards, Laws and More Ryan Quinn Wed, 11/04/2026 - 06:48 PM The Lone Star State was at the vanguard of the nation’s conservative higher ed overhauls. But Republicans now must relinquish control of state offices and one legislative chamber. Byline(s) Ryan Quinn Emma Whitford",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education",
+    "Policy & regulation"
    ]
   },
   {
@@ -4927,7 +5240,14 @@
    "source_category": "Development",
    "published": "2026-11-04T18:22:40+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fc88ef2887b7",
+     "source": "The Register",
+     "title": "Meta brings Conductor on board its model train",
+     "url": "https://www.theregister.com/ai-and-ml/2026/11/05/meta-brings-conductor-on-board-its-model-train/5307711"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -10622,6 +10942,12 @@
      "source": "Network World",
      "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
      "url": "https://www.networkworld.com/article/4244919/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack.html"
+    },
+    {
+     "id": "ad411d7c7af4",
+     "source": "CSO Online",
+     "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
+     "url": "https://www.csoonline.com/article/4244961/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack-2.html"
     }
    ],
    "topics": [
@@ -11117,6 +11443,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "9b1495187bfa",
+   "title": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
+   "url": "https://wiredream.com/anagram-fun/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-04T09:57:43+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
