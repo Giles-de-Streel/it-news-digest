@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T22:01:08+00:00",
+ "generated": "2026-11-05T22:31:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 64,
-   "recent": 64,
+   "fetched": 68,
+   "recent": 68,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 107,
-   "recent": 63,
+   "fetched": 105,
+   "recent": 62,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 12,
+   "recent": 16,
    "error": null
   },
   {
@@ -1026,7 +1026,7 @@
   {
    "source": "Windows Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1038,7 +1038,7 @@
   {
    "source": "Sysinternals Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1535,9 +1535,9 @@
   },
   {
    "source": "CNBC Technology",
-   "fetched": 30,
-   "recent": 28,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: no element found: line 1, column 0"
   },
   {
    "source": "OpenAI News",
@@ -1559,6 +1559,180 @@
   }
  ],
  "items": [
+  {
+   "id": "fd882b8ed6ca",
+   "title": "Atlassian shares fall 17% as slower subscription growth forecast overshadows earnings beat",
+   "url": "https://siliconangle.com/2026/11/05/atlassian-shares-fall-17-as-slower-subscription-growth-forecast-overshadows-earnings-beat/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-05T22:26:55+00:00",
+   "summary": "Shares in Atlassian Corp. fell more than 17% in after-hours trading today on a forecast for slower subscription growth from the Australian collaboration software company. Its fiscal 2027 first-quarter results beat analyst estimates. The stock had nearly doubled between Atlassian’s August report and late October.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "503e997117b8",
+   "title": "CVE-2026-119757: BTCPay Server before 2.4.2, including 2.4.2 release candidates, contains an information disclosure…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119757",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T22:17:53.203000+00:00",
+   "summary": "BTCPay Server before 2.4.2, including 2.4.2 release candidates, contains an information disclosure vulnerability that allows unauthenticated remote attackers to retrieve .macaroon credential files for an LND (Lightning Network Daemon) node.",
+   "kind": "cve",
+   "cve": "CVE-2026-119757",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119757",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d35a0d97ea86",
+   "title": "CVE-2026-111494: Incorrect validation of TLS certificates in the MatchPoint Android app due to a TrustManager that accepts any…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111494",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T22:17:44.193000+00:00",
+   "summary": "Incorrect validation of TLS certificates in the MatchPoint Android app due to a TrustManager that accepts any certificate and a permissive hostname validator. Additionally, the app allows unencrypted HTTP traffic.",
+   "kind": "cve",
+   "cve": "CVE-2026-111494",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111494",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4b1e5d863d50",
+   "title": "CVE-2026-111490: Insecure direct object reference (IDOR) vulnerability in the MatchPoint API, which relies on the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111490",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T22:17:43.597000+00:00",
+   "summary": "Insecure direct object reference (IDOR) vulnerability in the MatchPoint API, which relies on the `actingasuser` HTTP header without verifying the requester's authorization for the specified user.",
+   "kind": "cve",
+   "cve": "CVE-2026-111490",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111490",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f43733ca1a93",
+   "title": "CVE-2026-111489: A static credential embedded in the mobile app has been reported to return the 'autorizado' token on the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111489",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T22:17:43.447000+00:00",
+   "summary": "A static credential embedded in the mobile app has been reported to return the 'autorizado' token on the MatchPoint platform. The report states that this token grants unauthenticated access to API services.",
+   "kind": "cve",
+   "cve": "CVE-2026-111489",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111489",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Embedded & IoT",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "fb6a8a9d2852",
+   "title": "The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12%, on concerns over the AI trade after Democrats won Congress (Natalia Kniazhevich/Bloomberg)",
+   "url": "https://www.techmeme.com/261105/p55#a261105p55",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T22:15:01+00:00",
+   "summary": "Natalia Kniazhevich / Bloomberg : The Nasdaq 100 drops 6%, losing a record $2.3T in value, and the Philadelphia chip index plunges 12%, on concerns over the AI trade after Democrats won Congress — Technology stocks plunged the most since 2020 on Thursday as investors exited the sector on concerns over the artificial…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "52399ef37f87",
+   "title": "A Quick Guide to Go's Assembler",
+   "url": "https://go.dev/doc/asm",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-05T22:07:32+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "239fb7885643",
+   "title": "AMDGPU Driver Seeing HDMI 2.2 FRL Fixes For Linux 7.4",
+   "url": "https://www.phoronix.com/news/AMDGPU-HDMI-2.2-FRL-Fixes",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-05T22:07:00+00:00",
+   "summary": "With Linux 7.4 the AMDGPU driver enables HDMI 2.1 FRL functionality by default for driving higher refresh rate and higher resolution displays. That default enabling comes as HDMI FreeSync/VRR and ALLM features are also in place for Linux 7.4.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "03a2f8053c0b",
+   "title": "ScanSource CEO: MicroAge Will Expand Partner Services, Minimize Channel Conflict",
+   "url": "https://www.crn.com/news/channel-news/2026/scansource-ceo-microage-will-expand-partner-services-minimize-channel-conflict",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-05T22:06:00+00:00",
+   "summary": "ScanSource plans to bring MicroAge AI and AWS services to partners while taking steps to avoid channel conflict.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "23e5fec5f6ad",
+   "title": "Seattle startup OneCourt brings tactile tablets for blind and low-vision fans to NHL games",
+   "url": "https://www.geekwire.com/2026/seattle-startup-onecourt-brings-tactile-tablets-for-blind-and-low-vision-fans-to-nhl-games/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-05T22:01:12+00:00",
+   "summary": "The haptic tablets, which turn live game data into vibrations, debuted at the Heritage Classic and are now available at every home game for the Capitals, Avalanche, Blackhawks and Red Wings. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "5673f63258aa",
    "title": "Power BI reports support OAP exceptions for semantic models in separate workspaces (Preview)",
@@ -1583,6 +1757,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "a25543550270",
+   "title": "New Battery Pack Concept Features “Superfluidized” Solid Electrolyte",
+   "url": "https://www.electronicdesign.com/markets/automotive/article/55417119/electronic-design-new-battery-pack-concept-features-superfluidized-solid-electrolyte",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-05T21:45:14+00:00",
+   "summary": "ProLogium and Rimac are teaming up on cell technology and systems engineering to develop next-generation EV batteries.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1641,6 +1828,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "568f35d40c14",
+   "title": "$2.5T has been wiped from US stocks",
+   "url": "https://www.reddit.com/r/StockMarket/comments/1xopjao/25_trillion_has_been_wiped_from_us_stocks/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-05T21:39:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1712,6 +1912,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "22651fee2657",
+   "title": "AWS Interconnect - last mile announces new metro in Northern Virginia, USA",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-northern-virginia/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T21:30:00+00:00",
+   "summary": "Today, AWS announced a new AWS Interconnect - last mile metro in Northern Virginia, USA. Northern Virginia joins New York as the second metro where you can connect your data center, branch office, or colocation facility to AWS.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
    ]
   },
   {
@@ -1879,6 +2093,19 @@
    ]
   },
   {
+   "id": "dfa5d588a192",
+   "title": "Autoruns for Linux, ProcExp for macOS, macOS tools, Linux tools, ProExp, ProcMon, PsTools, and more",
+   "url": "https://techcommunity.microsoft.com/t5/sysinternals-blog/autoruns-for-linux-procexp-for-macos-macos-tools-linux-tools/ba-p/4570783",
+   "source": "Sysinternals Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T21:12:58+00:00",
+   "summary": "Autoruns 1.0 for Linux Autoruns, a utility for viewing and managing boot and login auto start configuration, now has a Linux version. Process Explorer 1.0 for macOS Process Explorer, an advanced process diagnostic and management utility, now has a MacOS port.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "247aea39b3b4",
    "title": "AI for Supply Chain: Why the Most Powerful AI and IoT Strategies Start Boring",
    "url": "https://www.pythian.com/blog/ai-for-supply-chain-why-the-most-powerful-ai-and-iot-strategies-start-boring",
@@ -1957,6 +2184,19 @@
    "source_category": "Hardware",
    "published": "2026-11-05T21:00:00+00:00",
    "summary": "A selection of the best Switch 2 controllers for getting your best Zelda game on.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "11c19e26e3d8",
+   "title": "Announcing Web Answer on Amazon Bedrock AgentCore",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T20:56:00+00:00",
+   "summary": "Today, we are announcing the general availability of Web Answer on Amazon Bedrock AgentCore. Web Answer is a managed tool that returns a synthesized, grounded, cited answer to a natural-language question in a single call, so agent builders can attach it to an agent and get back a finished answer grounded in current…",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3279,7 +3519,14 @@
    "source_category": "Security",
    "published": "2026-11-05T17:45:29+00:00",
    "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d378b6efc2a6",
+     "source": "Slashdot",
+     "title": "OpenSSH Flaw Lets Attackers Log Into Password-Disabled Linux Accounts",
+     "url": "https://it.slashdot.org/story/26/11/05/2140208/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
@@ -3926,6 +4173,21 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "9c9e5f41bc57",
+   "title": "A new standard for vulnerability management in the AI era",
+   "url": "https://blogs.windows.com/windowsexperience/2026/11/05/a-new-standard-for-vulnerability-management-in-the-ai-era/",
+   "source": "Windows Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T17:00:49+00:00",
+   "summary": "Windows is evolving vulnerability management as advances in AI make it possible to discover and analyze security vulnerabilities faster and at greater scale. AI is accelerating vulnerability discovery on both sides. It can help defenders find and fi",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
     "AI"
    ]
   },
@@ -4854,7 +5116,14 @@
    "source_category": "Security",
    "published": "2026-11-05T16:00:00+00:00",
    "summary": "White House network addresses were used as exits by 28 residential proxy services",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "431a63bf2269",
+     "source": "The Register",
+     "title": "The White House is apparently a popular residential proxy exit spot",
+     "url": "https://www.theregister.com/security/2026/11/05/the-white-house-is-apparently-a-popular-residential-proxy-exit-spot/5307969"
+    }
+   ],
    "topics": [
     "Networking"
    ]
@@ -5016,7 +5285,14 @@
    "source_category": "Security",
    "published": "2026-11-05T15:52:25+00:00",
    "summary": "The attack follows a wave of hacks against refrigeration systems at supermarkets across Europe.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "85bf7d115eba",
+     "source": "CSO Online",
+     "title": "French banking group hit by supply chain cyberattack",
+     "url": "https://www.csoonline.com/article/4245357/french-banking-group-hit-by-supply-chain-cyberattack.html"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6088,7 +6364,14 @@
    "source_category": "IT industry",
    "published": "2026-11-05T14:31:15+00:00",
    "summary": "On November 5, NIKKE operator Level Infinite published a timeline of the PC launcher compromise and instructions for detecting and removing the malware. Players who launched the PC version on or after September 27 need to scan their devices and secure their credentials.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "2bb9d54dbd08",
+     "source": "Malwarebytes Labs",
+     "title": "NIKKE PC launcher compromise put players’ passwords and personal files at risk",
+     "url": "https://www.malwarebytes.com/blog/news/2026/11/nikke-pc-launcher-compromise-put-players-passwords-and-personal-files-at-risk"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware",
@@ -8092,7 +8375,14 @@
    "source_category": "IT industry",
    "published": "2026-11-05T12:10:15+00:00",
    "summary": "No gang has claimed the attack on incredible neighborhood resource yet",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3189ce2b4e22",
+     "source": "The Record",
+     "title": "Queens Public Library says ransomware attack disrupted Wi-Fi, on-site computers",
+     "url": "https://therecord.media/queens-library-ransomware-causes-disruptions"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Networking"
@@ -9208,6 +9498,22 @@
    ]
   },
   {
+   "id": "dd89e71a4129",
+   "title": "Amazon RDS for Oracle now supports Kerberos authentication with self-managed Active Directory",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-kerberos-self-managed-ad/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T10:30:00+00:00",
+   "summary": "Amazon Relational Database Service (Amazon RDS) for Oracle ( Amazon Relational Database Service (Amazon RDS) for Oracle ) now allows customers to join their RDS for Oracle DB instances directly to their self-managed Microsoft Active Directory (AD) domain.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "4d9ce96119c0",
    "title": "P4 Launcher offers a PC-like and retro-gaming experience on ESP32-P4 boards",
    "url": "https://www.cnx-software.com/2026/11/05/p4-launcher-offers-a-pc-like-and-retro-gaming-experience-on-esp32-p4-boards/",
@@ -9996,7 +10302,14 @@
    "source_category": "IT industry",
    "published": "2026-11-05T09:00:00+00:00",
    "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "90f8b7ecf31f",
+     "source": "Neowin",
+     "title": "OpenAI announces GPT-6 Cyber, its most capable cybersecurity model yet",
+     "url": "https://www.neowin.net/news/openai-announces-gpt-6-cyber-its-most-capable-cybersecurity-model-yet/?utm_source=rss"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "AI"
@@ -10522,6 +10835,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "16d810a0c3e4",
+   "title": "AWS WAF AI traffic monetization now supports fiat payouts through Stripe",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-stripe-fiat-payouts/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "AWS WAF AI traffic monetization now integrates with Stripe. Publishers, content owners, and API providers can collect stablecoin payments from AI bots and agents that settle in local currency directly to their Stripe balance.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
    ]
   },
   {
@@ -11158,6 +11485,12 @@
      "source": "Core Infrastructure and Security Blog",
      "title": "Check This Out! (CTO!) Guide (November 2026)",
      "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-november-2026/ba-p/4570392"
+    },
+    {
+     "id": "617082341a28",
+     "source": "EE Times",
+     "title": "EE Times Magazine – November 2026",
+     "url": "https://www.eetimes.com/ee-times-magazine-november-2026/"
     }
    ],
    "topics": [
