@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T08:31:50+00:00",
+ "generated": "2026-11-05T09:01:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 50,
+   "recent": 28,
+   "error": null
   },
   {
    "source": "Ars Technica IT",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 1,
+   "recent": 20,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 100,
-   "recent": 35,
+   "fetched": 99,
+   "recent": 34,
    "error": null
   },
   {
@@ -725,9 +725,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 14,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Electronic Design",
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1050,7 +1050,7 @@
   {
    "source": "AskWoody",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1230,7 +1230,7 @@
   {
    "source": "Ansible community news",
    "fetched": 25,
-   "recent": 3,
+   "recent": 8,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1559,6 +1559,188 @@
   }
  ],
  "items": [
+  {
+   "id": "a2d49f4de83b",
+   "title": "Porting a “Crappy” Flash Game to the IBM 5150 and Beyond",
+   "url": "https://hackaday.com/2026/11/05/porting-a-crappy-flash-game-to-the-ibm-5150-and-beyond/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-05T09:00:11+00:00",
+   "summary": "Flash is obsolete and the IBM 5150 is obsolete. Therefore, by the transitive property of algebra, you should be able to run flash games on IBM’s original PC, right? Okay, …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "71bfc47ed69b",
+   "title": "A banking malware sample led researchers to an Android bug that can loop-crash phones",
+   "url": "https://www.helpnetsecurity.com/2026/11/05/ghostmap-android-bug-research/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-05T09:00:02+00:00",
+   "summary": "Bitdefender Labs researchers built an Android app that contains no executable code and requests no permissions, and installing it leaves a Pixel 10 in a crash loop that can take a factory reset to clear. The flaw, which Bitdefender calls GhostMap, comes from how Android reads the ZIP structure inside an APK.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "492000aac454",
+   "title": "Rebuilding the global town square from scratch",
+   "url": "https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-05T08:56:19+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "445684c43704",
+   "title": "Release Announcement: tox-ansible v26.11.0",
+   "url": "https://forum.ansible.com/t/release-announcement-tox-ansible-v26-11-0/46604",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-05T08:56:17+00:00",
+   "summary": "Hello everyone, We are happy to announce the release of tox-ansible v26.11.0. How to get it You can install the latest version of all the ansible developer tools by running the following command: python3 -m pip install -U ansible-dev-tools This will install the following developer tools: ansible-builder : a utility…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "d6a91ee097af",
+   "title": "Shelly 3.2 Arch Linux Package Manager Adds Multi-Package Downgrades",
+   "url": "https://linuxiac.com/shelly-3-2-arch-linux-package-manager-adds-multi-package-downgrades/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-05T08:53:46+00:00",
+   "summary": "Shelly 3.2 introduces multi-package downgrades, fixes AUR build issues, and improves Flatpak integration and AppImage updates.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "07db6592cd56",
+   "title": "Release Announcement: pytest-ansible v26.11.0",
+   "url": "https://forum.ansible.com/t/release-announcement-pytest-ansible-v26-11-0/46603",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-05T08:52:50+00:00",
+   "summary": "Hello everyone, We are happy to announce the release of pytest-ansible v26.11.0. How to get it You can install the latest version of all the ansible developer tools by running the following command: python3 -m pip install -U ansible-dev-tools This will install the following developer tools: ansible-builder : a utility…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "862f9b029175",
+   "title": "Release Announcement: molecule v26.11.0",
+   "url": "https://forum.ansible.com/t/release-announcement-molecule-v26-11-0/46602",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-05T08:51:59+00:00",
+   "summary": "Hello everyone, We are happy to announce the release of molecule v26.11.0. How to get it You can install the latest version of all the ansible developer tools by running the following command: python3 -m pip install -U ansible-dev-tools This will install the following developer tools: ansible-builder : a utility for…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "08740cf3d930",
+   "title": "Release Announcement: ansible-dev-environment v26.11.0",
+   "url": "https://forum.ansible.com/t/release-announcement-ansible-dev-environment-v26-11-0/46601",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-05T08:46:25+00:00",
+   "summary": "Hello everyone, We are happy to announce the release of ansible-dev-environment v26.11.0. How to get it You can install the latest version of all the ansible developer tools by running the following command: python3 -m pip install -U ansible-dev-tools This will install the following developer tools: ansible-builder :…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "779813d9a819",
+   "title": "MS-DEFCON 2: Preparing for 26H2",
+   "url": "https://www.askwoody.com/2026/ms-defcon-2-preparing-for-26h2/",
+   "source": "AskWoody",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T08:45:40+00:00",
+   "summary": "ISSUE 23.44.1 • 2026-11-05 By Susan Bradley There’s a lot happening this month. October represented the end of the support window for Consumer and Pro versions of Windows 11 24H2. If you are still on either of those editions, you’ll need to make sure that you use the 25H2 enablement links to upgrade. But do […]",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "68b6b3cf5a62",
+   "title": "Release Announcement: ansible-creator v26.11.0",
+   "url": "https://forum.ansible.com/t/release-announcement-ansible-creator-v26-11-0/46600",
+   "source": "Ansible community news",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-05T08:44:32+00:00",
+   "summary": "Hello everyone, We are happy to announce the release of ansible-creator v26.11.0. How to get it You can install the latest version of all the ansible developer tools by running the following command: python3 -m pip install -U ansible-dev-tools This will install the following developer tools: ansible-builder : a…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "14dbb0e8de5e",
+   "title": "Microsoft releases major Intelligent Terminal update to improve multitasking",
+   "url": "https://www.neowin.net/news/microsoft-releases-major-intelligent-terminal-update-to-improve-multitasking/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-05T08:40:01+00:00",
+   "summary": "Microsoft has released its biggest update yet for Intelligent Terminal, adding powerful new tools to help developers organize their active workspaces and track running tasks more easily.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
+   "id": "ca8ed8e5aab8",
+   "title": "Apple is bringing harmful content checks to iCloud link sharing with potential account penalties",
+   "url": "https://www.helpnetsecurity.com/2026/11/05/apple-icloud-link-sharing-checks/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-05T08:32:52+00:00",
+   "summary": "Apple will begin checking iCloud content shared using the “Anyone with the link” option for harmful material in iOS, iPadOS, macOS, and visionOS 27.3 or later. When sharing content stored in iCloud, users can choose “Share a Link” or “Send a Copy.” Those who choose “Share a Link” can restrict access to people they…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "6327a8d56f6e",
+   "title": "mpv 0.42 Media Player Released with DVD and Blu-ray Menus, Better HDR Support",
+   "url": "https://linuxiac.com/mpv-0-42-released-with-dvd-and-blu-ray-menus-better-hdr-support/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-05T08:31:41+00:00",
+   "summary": "mpv 0.42 adds DVD and Blu-ray menu navigation, Dolby Vision improvements, Wayland color management, and a new context menu.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "4b34fcafc493",
    "title": "CVE-2026-100109: The Security For WooCommerce WordPress plugin from 1.0.10 to 1.0.16 does not perform capability checks when…",
@@ -2137,7 +2319,14 @@
    "source_category": "Security",
    "published": "2026-11-05T05:17:04+00:00",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "46e2f50ea545",
+     "source": "Security Affairs",
+     "title": "U.S. CISA adds Apple flaw to its Known Exploited Vulnerabilities catalog",
+     "url": "https://securityaffairs.com/202464/hacking/u-s-cisa-adds-apple-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Threats & malware",
@@ -2382,6 +2571,19 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "29d24987b8ca",
+   "title": "Ruffle: Stable Releases, API, Text... and Everything Else",
+   "url": "https://ruffle.rs/blog/2026/11/04/stable-releases-and-everything-else",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-04T19:37:40+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
