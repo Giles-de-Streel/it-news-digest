@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-05T07:00:51+00:00",
+ "generated": "2026-11-05T07:30:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 8,
+   "fetched": 6,
    "recent": 0,
    "error": null
   },
@@ -954,7 +954,7 @@
   {
    "source": "OpenSSF",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -1452,7 +1452,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1500,7 +1500,7 @@
   {
    "source": "Prajwal Desai",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -1560,6 +1560,96 @@
  ],
  "items": [
   {
+   "id": "fa95d4ba074e",
+   "title": "Adzuna: UK entry-level job postings mentioning AI are up ~3x since early 2025; Indeed says one in six vacancies in AI-exposed fields now mentions AI, up 2x YoY (Irina Anghel/Bloomberg)",
+   "url": "https://www.techmeme.com/261105/p7#a261105p7",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T07:25:00+00:00",
+   "summary": "Irina Anghel / Bloomberg : Adzuna: UK entry-level job postings mentioning AI are up ~3x since early 2025; Indeed says one in six vacancies in AI-exposed fields now mentions AI, up 2x YoY — Artificial intelligence skills are no longer optional for the hundreds of thousands of young Britons seeking their first job …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "56519a559844",
+   "title": "applyOps and manual oplog replay for MongoDB PITR",
+   "url": "https://www.dbi-services.com/blog/applyops-and-manual-oplog-replay-for-mongodb-pitr/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-05T07:21:00+00:00",
+   "summary": "mongorestore --oplogReplay gives you point-in-time recovery for a whole instance, replayed from the captured oplog of a single backup. It has no equivalent for a single database or a single collection. Say you need “restore just this one collection to 4:35pm” instead of the whole instance.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "5c54e40c41a3",
+   "title": "CVE-2026-123025: An OS Command Injection vulnerability was discovered in the Google Cloud DNS validation module of the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123025",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T07:17:25.897000+00:00",
+   "summary": "An OS Command Injection vulnerability was discovered in the Google Cloud DNS validation module of the OPNsense os-acme-client plugin through 4.17. The DnsGcloud::prepare() method decodes the dns_gcloud_key model field and directly interpolates the string fields gcloud_account and gcloud_project into a shell command…",
+   "kind": "cve",
+   "cve": "CVE-2026-123025",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-123025",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Networking"
+   ]
+  },
+  {
+   "id": "7d8e5af66c54",
+   "title": "Do Registrars Use DNSSEC on Their Own Domains?",
+   "url": "https://labs.ripe.net/author/tobiassattler/do-registrars-use-dnssec-on-their-own-domains/",
+   "source": "RIPE Labs",
+   "source_category": "Internet infrastructure",
+   "published": "2026-11-05T07:09:04+00:00",
+   "summary": "Registrars must support DNSSEC for customers, but how many use it themselves? A study of 698 registrar domains finds fewer than one in ten has a DS record, with European registrars ahead of the rest. Tobias Sattler explores the gap and its possible explanations.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "933682922650",
+   "title": "LXQt 2.5 Released with Qt 6.10 Support, Drops Last LXDE Dependency",
+   "url": "https://linuxiac.com/lxqt-2-5-released-with-qt-6-10-support-drops-last-lxde-dependency/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-05T07:03:41+00:00",
+   "summary": "LXQt 2.5 desktop environment arrives with Qt 6.10, removes its final LXDE dependency, and introduces QTerminal and PCManFM-Qt improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "72b38a869093",
+   "title": "What Makes a Quantum Company Valuable?",
+   "url": "https://www.eetimes.com/what-makes-a-quantum-company-valuable/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-05T07:00:28+00:00",
+   "summary": "Quantum investors weigh technical progress against customer demand, commercial timing, and the ability to build lasting value.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "40aa68f45af4",
    "title": "SharePoint Online Extends Auto-Labeling of Sensitivity Labels to Cover Older Files",
    "url": "https://office365itpros.com/2026/11/05/auto-label-policy-default-label/?utm_source=rss&utm_medium=rss&utm_campaign=auto-label-policy-default-label",
@@ -1570,6 +1660,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "4613cd35b357",
+   "title": "3M To Pay Over $7 Billion To Settle 'Forever Chemical' Groundwater Claims",
+   "url": "https://yro.slashdot.org/story/26/11/05/052220/3m-to-pay-over-7-billion-to-settle-forever-chemical-groundwater-claims?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-05T07:00:00+00:00",
+   "summary": "3M has agreed to pay up to $7.35 billion over nine years to settle claims from as many as 120,000 people who say they were sickened by PFAS-contaminated groundwater near military bases, airports and other locations where firefighting foam was used.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1868,6 +1971,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "9e0176657cd2",
+   "title": "UK found to be ‘dangerously’ reliant on China for critical minerals needed for defence and AI",
+   "url": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-05T05:00:55+00:00",
+   "summary": "Delivering net zero also at risk, say MPs as they call for centralised policy and funding for mines and diversification The UK is “dangerously” dependent on China for critical raw materials needed for the military, renewable energy infrastructure and AI, a parliamentary investigation has found.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
    ]
   },
   {
