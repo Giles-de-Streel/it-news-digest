@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "generated": "2026-11-05T00:01:23+00:00",
+ "generated": "2026-11-05T00:31:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 100,
+   "recent": 100,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 33,
+   "recent": 30,
    "error": null
   },
   {
@@ -174,7 +174,7 @@
   {
    "source": "The Next Platform",
    "fetched": 87,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 29,
+   "recent": 27,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Schneier on Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 132,
-   "recent": 49,
+   "recent": 48,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1358,
-   "recent": 4,
+   "fetched": 1359,
+   "recent": 5,
    "error": null
   },
   {
@@ -1559,6 +1559,94 @@
   }
  ],
  "items": [
+  {
+   "id": "7dd5462deae4",
+   "title": "CVE-2026-122051: A flaw has been found in Edimax BR-6208AC 1.32.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122051",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-05T00:17:24.013000+00:00",
+   "summary": "A flaw has been found in Edimax BR-6208AC 1.32. Affected by this vulnerability is an unknown functionality of the file /goform/mp. Executing a manipulation can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-122051",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122051",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "59e86496ccb7",
+   "title": "Sources: Google DeepMind spinout Isomorphic Labs is in talks to raise ~$5B at a ~$50B valuation; the AI drug discovery startup last raised $2.1B in May (Bloomberg)",
+   "url": "https://www.techmeme.com/261104/p56#a261104p56",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-05T00:15:03+00:00",
+   "summary": "Bloomberg : Sources: Google DeepMind spinout Isomorphic Labs is in talks to raise ~$5B at a ~$50B valuation; the AI drug discovery startup last raised $2.1B in May — Alphabet Inc.'s Isomorphic Labs is in talks to raise roughly $5 billion in new funds to support its efforts to use artificial intelligence …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "3d62392f333e",
+   "title": "Building AI factories at enterprise scale",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/05/sponsored-building-ai-factories-at-enterprise-scale/5306629",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-05T00:01:00+00:00",
+   "summary": "SPONSORED FEATURE: ASUS wants to scale AI everywhere in the enterprise",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "86aa34f7015c",
+   "title": "Beautiful Laser Harp Hides Some Neat Tricks",
+   "url": "https://hackaday.com/2026/11/04/beautiful-laser-harp-hides-some-neat-tricks/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-05T00:00:47+00:00",
+   "summary": "Laser harps aren’t quite a right of passage, in that not everyone builds them, but it’s likely everyone at least contemplates building one at one time or another. We’re lucky …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1ae6659f46db",
+   "title": "Axon Sued Over AI-Powered License Plate Reader Network",
+   "url": "https://yro.slashdot.org/story/26/11/04/2319208/axon-sued-over-ai-powered-license-plate-reader-network?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Axon has been sued in a proposed class action accusing the Taser and police body-camera maker of illegally collecting and storing license plate data on millions of California drivers through its AI-powered surveillance network.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "956fc4ac5d6d",
+   "title": "Realidade: 65% dos funcionários ignoram as regras de acesso apenas para fazer seu trabalho",
+   "url": "https://intelligence.theregister.com/paper/view/21197",
+   "source": "The Next Platform",
+   "source_category": "Hardware",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "O cenário de identidade empresarial foi fragmentado.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
   {
    "id": "4331161f5666",
    "title": "Empowering AI power supply innovation with PSOC™ Control C3 Performance Line microcontrollers",
@@ -5005,7 +5093,14 @@
    "source_category": "Security",
    "published": "2026-11-04T16:58:46+00:00",
    "summary": "The developers of Goddess of Victory: NIKKE have confirmed that hackers tampered with the game's PC launcher scripts in a supply-chain attack, distributing malware capable of stealing credentials and cryptocurrency wallet data. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c60815cc1d87",
+     "source": "Joho no Todai (English)",
+     "title": "Malware Lurked in NIKKE's PC Launcher for Five Weeks, With Remote Control and Password Theft Capabilities Confirmed",
+     "url": "https://joho-todai.com/en/nikke-pc-launcher-malware-remote-access-password-theft/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware",
@@ -7233,6 +7328,12 @@
      "source": "Linuxiac",
      "title": "NVIDIA 620.70.06 Kicks Off New R620 Linux Driver Series",
      "url": "https://linuxiac.com/nvidia-620-70-06-kicks-off-new-r620-linux-driver-series/"
+    },
+    {
+     "id": "52008ca590fc",
+     "source": "Joho no Todai (English)",
+     "title": "NVIDIA 620.70.06 Launches R620 Linux Driver Branch With Wayland Synchronization Improvements and Game Fixes",
+     "url": "https://joho-todai.com/en/nvidia-620-70-06-linux-driver-wayland-gaming-fixes/"
     }
    ],
    "topics": [
@@ -11511,6 +11612,12 @@
      "source": "eWeek",
      "title": "Google Makes Schools Choose Between AI Restrictions and Search Access",
      "url": "https://www.eweek.com/news/google-search-schools-reject-ai/"
+    },
+    {
+     "id": "2b4046bb2a12",
+     "source": "TechRepublic",
+     "title": "Google Changes AI Access Rules for Schools Ahead of 2027",
+     "url": "https://www.techrepublic.com/article/news-google-schools-ai-opt-out-search-access/"
     }
    ],
    "topics": [
