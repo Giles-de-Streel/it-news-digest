@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-06T16:01:10+00:00",
+ "generated": "2026-11-06T16:30:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -96,13 +96,13 @@
   {
    "source": "Slashdot",
    "fetched": 15,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -186,13 +186,13 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Risky Business News",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -930,7 +930,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 7,
+   "recent": 9,
    "error": null
   },
   {
@@ -1559,6 +1559,145 @@
   }
  ],
  "items": [
+  {
+   "id": "a31ceeee4259",
+   "title": "Dell and CrowdStrike Bundle Falcon Guardian, Cloud Security, and Next-Gen SIEM Into the Dell AI Factory With NVIDIA",
+   "url": "https://www.storagereview.com/news/dell-crowdstrike-falcon-guardian-openshell-dell-ai-factory-nvidia-security",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-06T16:23:55+00:00",
+   "summary": "Dell Technologies and CrowdStrike have announced an integrated security offering for the Dell AI Factory with NVIDIA that puts three CrowdStrike Falcon products on the same order as the servers.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "63a3d32fd5a1",
+   "title": "Linux 7.4-rc2 Change Yields As Much As 162x Improvement For FAT32",
+   "url": "https://www.phoronix.com/news/Linux-7.4-rc2-FAT32",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-06T16:21:38+00:00",
+   "summary": "In addition to a FAT32 optimization yielding as much as a 265x improvement that was merged for the Linux 7.4 cycle and separately another big FAT32 improvement expected for Linux 7.5, merged this week as part of the non-MM fixes for Linux 7.4-rc2 was another big FAT32 performance optimization...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ca1ba547d7c1",
+   "title": "This Week in Security: More Linux Bugs, Biggest Crypto Theft Ever, Prusa Printers, Residential Proxies",
+   "url": "https://hackaday.com/2026/11/06/this-week-in-security-more-linux-bugs-biggest-crypto-theft-ever-prusa-printers-residential-proxies/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-06T16:21:04+00:00",
+   "summary": "Linux kernel bugs which can be triggered remotely, without any login, are rare. Most kernel vulnerabilities need an attacker to already be running code on the machine. CVE-2026-98432 is one of those: …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-98432",
+     "score": 0.0076,
+     "percentile": 0.55457,
+     "date": "2026-11-06"
+    }
+   }
+  },
+  {
+   "id": "82d3fbaac9b6",
+   "title": "AI Agents and the End of Endpoint Privacy",
+   "url": "https://circleid.com/posts/ai-agents-and-the-end-of-endpoint-privacy",
+   "source": "CircleID",
+   "source_category": "Internet infrastructure",
+   "published": "2026-11-06T16:14:00+00:00",
+   "summary": "AI agents with access to decrypted messages pose new challenges for end-to-end encryption, raising questions about endpoint privacy, operating-system permissions and whether users can protect conversations when their correspondents enable AI assistants.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1e978a00413c",
+   "title": "Chris Travers: PostgreSQL, NUMA, and the Cloud",
+   "url": "https://postgr.es/p/9Bb",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-06T16:11:22+00:00",
+   "summary": "PostgreSQL and NUMA, Part 4 of 4 This series covers the specifics of running PostgreSQL on large systems with many processors. My experience is that people spend months often learning the basics when confronted with the problem.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Databases"
+   ]
+  },
+  {
+   "id": "7f44b3aaf0a4",
+   "title": "Amazon’s AI shopping agent moves into text messages, taking orders and tracking prices",
+   "url": "https://www.geekwire.com/2026/amazons-ai-shopping-agent-moves-into-text-messages-taking-orders-and-tracking-prices/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-06T16:07:31+00:00",
+   "summary": "Amazon is letting customers text its Alexa for Shopping AI agent to search for products, compare options and place orders, starting with a small group of invited U.S. customers. Digiday reports that sponsored products can appear among the options the agent texts back, free to advertisers for now. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "7f4b45a191e8",
+   "title": "Seeing the light: Tech upgrade helps James Turrell’s Skyspace shine again at UW art museum",
+   "url": "https://www.geekwire.com/2026/seeing-the-light-tech-upgrade-helps-james-turrells-skyspace-shine-again-at-uw-art-museum/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-06T16:01:20+00:00",
+   "summary": "After going dark for most of a decade, the Henry Art Gallery’s “Light Reign” returns Nov. 14 with a new lighting system synced to sunrise and sunset, just as the museum heads into its 100th year. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b7cdf412a4de",
+   "title": "Sony Revives the Original Walkman Headphones, Adds USB-C",
+   "url": "https://entertainment.slashdot.org/story/26/11/06/0711224/sony-revives-the-original-walkman-headphones-adds-usb-c?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-06T16:00:00+00:00",
+   "summary": "An anonymous reader quotes a report from Ars Technica: Sony has brought back the MDR-3-series headphones that debuted in 1979 alongside the Walkman TPS-L2 cassette player. [...] The new MDR-3R (originally called the \"MDR-3L2\") headphones look just like the originals and come with orange and blue ear cushions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "695905872e10",
+   "title": "Sponsored: Why SLA risk = Credit risk",
+   "url": "https://www.datacenterdynamics.com/en/opinions/why-sla-risk-credit-risk/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-06T16:00:00+00:00",
+   "summary": "What happens when a neocloud loses several hours of compute capacity, but its next debt payment is still due in full?",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
   {
    "id": "3fcee56b3af5",
    "title": "EFF Submission to OHCHR Consultation on Child Rights and Safety in the Digital Environment",
@@ -1905,6 +2044,20 @@
     "Cloud & infrastructure",
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "586df0c94182",
+   "title": "Show HN: Agentic Identity Broker, OAuth Delegation for AI Agents",
+   "url": "https://github.com/zalando-incubator/agentic-identity-broker",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T15:07:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Identity & access"
    ]
   },
   {
@@ -4708,6 +4861,19 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "28093d11846a",
+   "title": "Everything you need to know about the new MacBook Pro’s OLED display",
+   "url": "https://www.computerworld.com/article/4245774/everything-you-need-to-know-about-the-new-macbook-pros-oled-display.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-11-06T10:10:00+00:00",
+   "summary": "Apple’s recently introduced MacBook Pro with PROLED XDR introduces a tandem OLED display and, for the first time, a touch interface. I discussed the approach Apple took to designing its new pro laptop with Apple’s Vice President of Mac and iPad Product Marketing, Tom Boger, which you can read here .",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
