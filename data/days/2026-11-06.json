@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-06T21:02:05+00:00",
+ "generated": "2026-11-06T21:31:11+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -60,13 +60,13 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
    "source": "Ars Technica IT",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 54,
-   "recent": 54,
+   "fetched": 61,
+   "recent": 61,
    "error": null
   },
   {
@@ -378,7 +378,7 @@
   {
    "source": "Unit 42",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -552,13 +552,13 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 92,
-   "recent": 56,
+   "recent": 55,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -725,9 +725,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 100,
+   "recent": 8,
+   "error": null
   },
   {
    "source": "Electronic Design",
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 14,
+   "recent": 16,
    "error": null
   },
   {
@@ -960,7 +960,7 @@
   {
    "source": "Socket",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "HTMD Blog (Anoop C Nair)",
    "fetched": 5,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -1560,6 +1560,273 @@
  ],
  "items": [
   {
+   "id": "c1fd43204025",
+   "title": "Thinking Machines debuts Inkling 2 Small amid reported $5B fundraising push",
+   "url": "https://siliconangle.com/2026/11/06/thinking-machines-debuts-inkling-2-small-amid-reported-5b-fundraising-push/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:27:42+00:00",
+   "summary": "Thinking Machines Labs Inc. has released a new large language model that can automate artificial intelligence training tasks. The algorithm, Inkling 2 Small, made its debut late Thursday.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "067441783549",
+   "title": "CVE-2026-86044: JupyterLab Desktop is the cross-platform desktop application for JupyterLab.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86044",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:12.297000+00:00",
+   "summary": "JupyterLab Desktop is the cross-platform desktop application for JupyterLab. Prior to 4.6.2-1, JupyterLab Desktop exposed getServerInfo to the renderer without confirming that the current page still had the local Jupyter server origin.",
+   "kind": "cve",
+   "cve": "CVE-2026-86044",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86044",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "28d6751cd4b6",
+   "title": "CVE-2026-86005: Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86005",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:12.117000+00:00",
+   "summary": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. Prior to 5.2.3, the administrative BullMQ dashboard was mounted without an authentication check. The vulnerable surface is the Bull Board/BullMQ administration dashboard at /apps/queues.",
+   "kind": "cve",
+   "cve": "CVE-2026-86005",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-86005",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "631c1f0c8bcd",
+   "title": "CVE-2026-85295: Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85295",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:10.890000+00:00",
+   "summary": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. Prior to 5.2.3, four authentication helpers accepted session tokens signed with CB_SECRET, including known, weak, or shipped-default values.",
+   "kind": "cve",
+   "cve": "CVE-2026-85295",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-85295",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "fce6e8348e32",
+   "title": "CVE-2026-63439: 2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63439",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:09.970000+00:00",
+   "summary": "2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Prior to 8.0.0, when AUTHENTICATION_GUARD=reverse-proxy-guard is enabled, ReverseProxyGuard::user() reads the default REMOTE_USER identity header, or a custom identity header selected by the…",
+   "kind": "cve",
+   "cve": "CVE-2026-63439",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63439",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5d63c2c4803d",
+   "title": "CVE-2026-63438: 2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63438",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:09.770000+00:00",
+   "summary": "2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Prior to 8.0.0, when AUTHENTICATION_GUARD=reverse-proxy-guard accepts authentication headers from a client that did not pass through a trusted proxy, RemoteUserProvider::retrieveById() creates an account for an…",
+   "kind": "cve",
+   "cve": "CVE-2026-63438",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63438",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "efb049f8e583",
+   "title": "CVE-2026-54349: Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54349",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:08.947000+00:00",
+   "summary": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. Prior to 5.2.1, SQL dashboard-variable substitution used attacker-controlled JavaScript replacement strings unsafely across SQL connectors and separately failed to escape backslashes for MySQL…",
+   "kind": "cve",
+   "cve": "CVE-2026-54349",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-54349",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "Databases"
+   ]
+  },
+  {
+   "id": "ef32e5c2a214",
+   "title": "CVE-2026-102530: JupyterLab Desktop is the cross-platform desktop application for JupyterLab.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102530",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T21:17:05.510000+00:00",
+   "summary": "JupyterLab Desktop is the cross-platform desktop application for JupyterLab. Prior to 4.6.2-1, remote-server URLs were inserted into the server-selection dialog and Welcome view without safe encoding.",
+   "kind": "cve",
+   "cve": "CVE-2026-102530",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-102530",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "226243970f2e",
+   "title": "Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could increase to as much as $20B in total (Bloomberg)",
+   "url": "https://www.techmeme.com/261106/p22#a261106p22",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:15:00+00:00",
+   "summary": "Bloomberg : Sources: OpenAI has closed on new funding of roughly $11B at a $1.25T valuation; the round could increase to as much as $20B in total — OpenAI has closed on new funding of roughly $11 billion, the initial part of a round that values the company at $1.25 trillion, according to people familiar with the…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "fc0b940e8d8f",
+   "title": "Several Democrats renew calls for datacenter pauses after blue wave",
+   "url": "https://www.theguardian.com/us-news/2026/nov/06/democrats-renew-calls-for-datacenter-pauses",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:14:46+00:00",
+   "summary": "Tech industry fears delays to its multi-trillion dollar infrastructure buildout meant to power artificial intelligence Several newly elected Democrats and Senator Bernie Sanders have renewed calls for datacenter moratoriums in the days after the US midterm elections.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "342f4f7af93c",
+   "title": "Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, expecting to raise $80B-$100B at a valuation of $1.25T to $1.75T (Financial Times)",
+   "url": "https://www.techmeme.com/261106/p21#a261106p21",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:12:51+00:00",
+   "summary": "Financial Times : Sources: Anthropic is continuing with plans to list before the Thanksgiving holiday this month, expecting to raise $80B-$100B at a valuation of $1.25T to $1.75T — Claude-maker intends to list before Thanksgiving despite brutal tech rout — Anthropic is pressing on with its high-stakes IPO …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "cc229a746590",
+   "title": "Kubernetes Is Resilient. Your Recovery Path May Not Be.",
+   "url": "https://cloudnativenow.com/contributed-content/kubernetes-is-resilient-your-recovery-path-may-not-be/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-06T21:11:08+00:00",
+   "summary": "Cloud-native infrastructure has changed the way organizations think about resilience. Kubernetes can restart failed containers, replace pods, schedule workloads on healthy nodes and help applications recover from failures that once required manual intervention. That is real progress.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "9819550d7b18",
+   "title": "Investors brace for lower Anthropic valuation, calling $1.5 trillion a 'stretch'",
+   "url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:07:07+00:00",
+   "summary": "Anthropic could list below a $1.5 trillion valuation, trailing previous expectations, as the AI trade sours on Wall Street.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "c299c2b3e234",
+   "title": "SonicWall security advisory (AV26-1133)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-1133",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-06T21:00:51+00:00",
+   "summary": "Serial number: AV26-1133 Date: November 6, 2026 As of November 6, 2026, SonicWall is affected by a vulnerability in the following product: SonicOS prior to 7.3.4-7013 prior to 8.2.2-8015 SonicWall indicates that CVE-2026-19868 is being exploited.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-19868",
+      "added": "2026-11-06",
+      "ransomware": false
+     }
+    ]
+   }
+  },
+  {
    "id": "8d1ca0c2056a",
    "title": "MousePods Reverse Engineers Head Tracking Data From Stubborn AirPods",
    "url": "https://hackaday.com/2026/11/06/mousepods-reverse-engineers-head-tracking-data-from-stubborn-airpods/",
@@ -1575,6 +1842,32 @@
    ]
   },
   {
+   "id": "598ae2b1cf14",
+   "title": "Developer Pulls Roku's Popular Fish Tank Screensaver Following Fox Sale",
+   "url": "https://tech.slashdot.org/story/26/11/06/2051253/developer-pulls-rokus-popular-fish-tank-screensaver-following-fox-sale?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-06T21:00:00+00:00",
+   "summary": "Roku is removing its popular Aquatic Life fish tank screensaver on December 1 and automatically switching affected users to Roku City. According to Cord Cutters News, the creator pulled the license after Roku's sale to FOX was announced.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "fcdbe41fd88b",
+   "title": "The Countdown to Q-Day Has Begun",
+   "url": "https://www.eetimes.com/the-countdown-to-q-day-has-begun/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-06T21:00:00+00:00",
+   "summary": "Will a quantum computer break blockchain cryptography in just two years' time?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f947af41420a",
    "title": "Hacking the meta ray-ban smartglasses",
    "url": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
@@ -1585,6 +1878,60 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "f480b0e37e18",
+   "title": "How to be unemployed: Glenn Kelman on life after Redfin",
+   "url": "https://www.geekwire.com/2026/how-to-be-unemployed-glenn-kelman-on-life-after-redfin/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:47:53+00:00",
+   "summary": "Glenn Kelman, who led Redfin as CEO for 20 years, writes about the 10 months of unemployment that came before co-founding a new AI-native company. He considered becoming a high school teacher, a bagel shopkeeper and a state legislative candidate, and used AI to test ideas with potential co-founders. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "de93b271fe33",
+   "title": "OpenVDDK offers open source off-ramp for entry-level vSphere workloads",
+   "url": "https://www.techtarget.com/news/openvddk-offers-open-source-off-ramp-for-entry-level-vsphere-workloads/874051/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:47:06+00:00",
+   "summary": "Newcomers to vSphere have a fresh set of paths forward to consider with the introduction of vSphere Express and OpenVDDK this week.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "a545f7d27cd9",
+   "title": "The Valley Bubble Breaks",
+   "url": "https://quirksmode.org/quirksblog/2026/1106-valley-bubble.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T20:42:08+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ff35283d5c30",
+   "title": "Free Certified Patch for Critical Rails Active Storage Vulnerability",
+   "url": "https://socket.dev/blog/rails-active-storage-patch?utm_medium=feed",
+   "source": "Socket",
+   "source_category": "Supply chain security",
+   "published": "2026-11-06T20:40:46.426000+00:00",
+   "summary": "Socket has released a free Certified Patch for a critical Rails Active Storage vulnerability, giving developers time to upgrade to a secure Rails version.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
    ]
   },
   {
@@ -1835,6 +2182,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "e14a5e738593",
+   "title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-06T19:48:00+00:00",
+   "summary": "AWS Agent Registry, available through Amazon Bedrock AgentCore, is now available in the AWS GovCloud (US-West) Region. AWS Agent Registry is a fully managed discovery service that gives your organization a central catalog for organizing, curating, and discovering resources.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -3524,6 +3885,19 @@
    ]
   },
   {
+   "id": "d52d67ed0704",
+   "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-06T16:00:00+00:00",
+   "summary": "You can now use Amazon MSK Replicator in the AWS GovCloud (US-East, US-West) Regions to replicate streaming data across Amazon MSK clusters and from external Apache Kafka clusters including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Provisioned clusters.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "012a1caa0c35",
    "title": "Hackers enlist Artex to scan GitHub repositories for exposed secrets",
    "url": "https://www.cybersecuritydive.com/news/hackers-artex-github-repositories-exposed-secrets/874007/",
@@ -3587,7 +3961,14 @@
    "source_category": "IT industry",
    "published": "2026-11-06T15:51:56+00:00",
    "summary": "The deepfake voice and video scheme saw fraudsters steal nearly $130 million",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "52e860822377",
+     "source": "Guardian Technology",
+     "title": "Three men charged in US with using AI to impersonate CEOs and steal millions",
+     "url": "https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -7325,6 +7706,12 @@
      "source": "HIPAA Journal",
      "title": "Critical Infrastructure Orgs Warned of Cyberattacks on Refrigeration and Cold Chain Monitoring Systems",
      "url": "https://www.hipaajournal.com/critical-infrastructure-orgs-warned-of-cyberattacks-on-refrigeration-and-cold-chain-monitoring-systems/"
+    },
+    {
+     "id": "360f618c2f94",
+     "source": "Unit 42",
+     "title": "Turning Up the Heat: Inside the Attacks on Europe’s Refrigeration System",
+     "url": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/"
     }
    ],
    "topics": [
@@ -7694,6 +8081,12 @@
      "source": "Joho no Todai (English)",
      "title": "Chainalysis Confirms Credential Theft Affecting All Users: Transaction Monitoring Returns in Stages, With API Key Rotation Required",
      "url": "https://joho-todai.com/en/chainalysis-credentials-breach-api-key-reset/"
+    },
+    {
+     "id": "7ff4ba923ec0",
+     "source": "Ars Technica IT",
+     "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+     "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
     }
    ],
    "topics": [
