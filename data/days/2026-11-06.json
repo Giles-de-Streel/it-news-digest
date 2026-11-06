@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-06T20:01:07+00:00",
+ "generated": "2026-11-06T20:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 35,
    "error": null
   },
   {
@@ -125,8 +125,8 @@
   },
   {
    "source": "CISA KEV",
-   "fetched": 1768,
-   "recent": 0,
+   "fetched": 1769,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 53,
-   "recent": 53,
+   "fetched": 54,
+   "recent": 54,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 93,
-   "recent": 58,
+   "recent": 57,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1176,7 +1176,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -1560,6 +1560,165 @@
  ],
  "items": [
   {
+   "id": "37992e84b850",
+   "title": "ESD eBook Nov/Dec 2026, How to Make Embedded Computer Vision Work in the Real World, Connected Products: Embedded Week Insights",
+   "url": "https://www.embedded.com/esd-ebook-nov-dec-2026-how-to-make-embedded-computer-vision-work-in-the-real-world-connected-products-embedded-week-insights/",
+   "source": "Embedded.com",
+   "source_category": "Embedded",
+   "published": "2026-11-06T20:30:00+00:00",
+   "summary": "Here's a roundup of this week's must-read articles: ESD eBook Nov/Dec 2026, Designing Medical Devices for the Field, How to Make Embedded Computer Vision Work in the Real World, and The Hidden Engineering Tax on Connected Products: Security, Updates, and Compliance Explained, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "9cf61a74c8cd",
+   "title": "Videos from XDC 2026 are available",
+   "url": "https://lwn.net/Articles/1105913/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-06T20:25:22+00:00",
+   "summary": "Videos from the 2026 X.Org Developers Conference (XDC) are now available on YouTube . XDC was held in Toronto, Ontario, Canada September 28-30.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "4221c9ae9b1e",
+   "title": "CVE-2026-58490: Tracecat is an open-source security automation platform for teams and AI agents.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58490",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T20:17:23.253000+00:00",
+   "summary": "Tracecat is an open-source security automation platform for teams and AI agents. From version 0.37.0 until 1.0.0-beta.49, Docker Compose deployments with SAML enabled can render SAML_SIGNED_ASSERTIONS and SAML_SIGNED_RESPONSES as empty values, overriding secure application defaults and disabling both signature…",
+   "kind": "cve",
+   "cve": "CVE-2026-58490",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-58490",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "AI",
+    "DevOps & SRE",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "463bf5f1c055",
+   "title": "CVE-2026-124040: CivetWeb through 1.16, when built with USE_HTTP2 and enable_http2 on, contains a use-after-free vulnerability…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124040",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T20:17:22.203000+00:00",
+   "summary": "CivetWeb through 1.16, when built with USE_HTTP2 and enable_http2 on, contains a use-after-free vulnerability in handle_http2() that retains freed :method and :path pointers.",
+   "kind": "cve",
+   "cve": "CVE-2026-124040",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124040",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5cf0ad4613a8",
+   "title": "The nine best personalized gift ideas: customized for the person you love",
+   "url": "https://www.theguardian.com/thefilter-us/2026/nov/06/best-personalized-custom-gift-ideas",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:15:51+00:00",
+   "summary": "Monogramming or customizing takes gifts to the next level – and shows recipients that you know what they like and who they are The best beauty Advent calendars of 2026 in the US Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things A personalized gift is a special thing that says that…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "86311777d8da",
+   "title": "Beyond SHA pinning: Why immutability isn't provenance in GitHub Actions",
+   "url": "https://platformengineering.org/blog/beyond-sha-pinning-why-immutability-isnt-provenance-in-github-actions",
+   "source": "PlatformEngineering.org",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-06T20:11:44+00:00",
+   "summary": "Learn why SHA pinning in GitHub Actions doesn't guarantee provenance, how imposter commits exploit CI/CD workflows, and key steps platform teams can take to secure their supply chain.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Development",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "f335db155ec4",
+   "title": "Confluent Current 2026: 5 Big Streamhouse, IBM And AI Takeaways",
+   "url": "https://www.crn.com/news/ai/2026/confluent-current-2026-5-big-streamhouse-ibm-and-ai-takeaways",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:10:00+00:00",
+   "summary": "Confluent Current 2026 showcased Streamhouse, expanded AI capabilities and new partner opportunities under IBM. Here are five key takeaways.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "22e03eaabbd3",
+   "title": "Grupo Bimbo targets supply chain with Oracle Cloud ERP migration",
+   "url": "https://www.techtarget.com/news/grupo-bimbo-targets-supply-chain-with-oracle-cloud-erp-migration/874041/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:10:00+00:00",
+   "summary": "Learn how cloud ERP migration helps global baker Grupo Bimbo centralize on Oracle Fusion Cloud for supply chain visibility and efficiency.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "6ec395af3160",
+   "title": "5 things CIOs must understand to govern Claude Code",
+   "url": "https://www.cio.com/article/4245334/5-things-cios-must-understand-to-govern-claude-code.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:05:10+00:00",
+   "summary": "Claude Code has quickly become one of the most widely adopted AI agents in the enterprise. Developers use it to write and refactor code, troubleshoot builds, run tests, and manage infrastructure, often by describing an objective and letting the agent determine the steps required to accomplish it.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "275419c8bd4e",
+   "title": "Confluent Current 2026: GM Clowes Says Streamhouse Opens Partner AI Opportunities",
+   "url": "https://www.crn.com/news/ai/2026/confluent-current-2026-gm-clowes-says-streamhouse-opens-partner-ai-opportunities",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-06T20:00:00+00:00",
+   "summary": "Confluent executives see greenfield opportunities for solution providers as Streamhouse, Lightning Tables and IBM expand the market for real-time AI data.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "21cf97eeaf11",
    "title": "OpenAI bugging suspect Alfozan pleads not guilty",
    "url": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
@@ -1570,6 +1729,45 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "c2a9c09e6c18",
+   "title": "HN: CloneGuard – scan a repo for credential-stealing tricks before you run it",
+   "url": "https://github.com/tharun208/cloneguard",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T19:49:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ef2a83f7f3a4",
+   "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+   "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T19:48:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4b294434ab58",
+   "title": "Current-Sense Resistors Take on High-Current Automotive, Industrial Designs",
+   "url": "https://www.electronicdesign.com/technologies/power/product/55417334/electronic-design-current-sense-resistors-take-on-high-current-automotive-industrial-designs",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-06T19:45:00+00:00",
+   "summary": "Bourns expanded its range of current-sensor resistance values and tolerance options, adding flexibility for precision current measurement in space-constrained power systems.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1792,6 +1990,19 @@
    ]
   },
   {
+   "id": "55ee84c6404a",
+   "title": "Replit rebuilt its sandbox engine with microVMs",
+   "url": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T19:06:10+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "ea6b9d64cfe5",
    "title": "Medical services company settles with 4 states over 2023 hack of sensitive patient records",
    "url": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
@@ -1974,6 +2185,20 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "5555c456191c",
+   "title": "PyTorch 2.15 tackles the 'one bad GPU' problem",
+   "url": "https://www.theregister.com/devops/2026/11/06/pytorch-215-tackles-the-one-bad-gpu-problem/5308227",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-06T18:36:42+00:00",
+   "summary": "Technical debt shoveled aside to make large-scale AI training more resilient",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
     "Hardware"
    ]
   },
@@ -5484,6 +5709,32 @@
    ]
   },
   {
+   "id": "7340dbad9c1e",
+   "title": "CISA KEV adds CVE-2026-19868: SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-11-06T12:00:00+00:00",
+   "summary": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access",
+    "Policy & regulation"
+   ],
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-19868",
+      "added": "2026-11-06",
+      "ransomware": false
+     }
+    ]
+   }
+  },
+  {
    "id": "7e28d60d81d6",
    "title": "Google announces $17bn data center campus in Cheyenne, Wyoming",
    "url": "https://www.datacenterdynamics.com/en/news/google-announces-17bn-data-center-campus-in-cheyenne-wyoming/",
@@ -6076,7 +6327,14 @@
    "source_category": "IT industry",
    "published": "2026-11-06T11:00:00+00:00",
    "summary": "Blue Origin has unveiled a third stage called GS3 for its New Glenn rocket, designed to deliver satellite constellations directly to geostationary orbit and support heavy-lift missions to the Moon and deep space.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e78c2dfe2d37",
+     "source": "The Register",
+     "title": "Blue Origin unveils more thrust, less haste as New Glenn slips to 2027",
+     "url": "https://www.theregister.com/offbeat/2026/11/06/blue-origin-unveils-more-thrust-less-haste-as-new-glenn-slips-to-2027/5308138"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6520,6 +6778,18 @@
      "source": "The Hacker News",
      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
      "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
+    },
+    {
+     "id": "ab16af18fbcc",
+     "source": "Slashdot",
+     "title": "OpenAI's New Cyber Model Found Ways to Attack Nearly 1,000 Linux Flaws",
+     "url": "https://it.slashdot.org/story/26/11/06/1755247/openais-new-cyber-model-found-ways-to-attack-nearly-1000-linux-flaws?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "2ecaec703ee9",
+     "source": "BleepingComputer",
+     "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+     "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
     }
    ],
    "topics": [
@@ -7797,6 +8067,12 @@
      "source": "Hacker News",
      "title": "FAA Begins Retiring Decades Old Floppy Disks from Air Traffic Control",
      "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air"
+    },
+    {
+     "id": "47c86d3d25d3",
+     "source": "The Register",
+     "title": "US air traffic control enters the 21st century, starts to abandon floppy disks",
+     "url": "https://www.theregister.com/public-sector/2026/11/06/us-air-traffic-control-enters-the-21st-century-starts-to-abandon-floppy-disks/5308210"
     }
    ],
    "topics": [
@@ -8802,7 +9078,14 @@
    "source_category": "Cloud",
    "published": "2026-11-05T17:00:00+00:00",
    "summary": "November 2 - November 6 BigQuery observability for data agents is now generally available : Data teams can now monitor the performance, adoption, latency, and cost of BigQuery data agents and their multi-turn conversations using Google Cloud Observability.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6d68aa452a88",
+     "source": "CRN",
+     "title": "5 Big OpenAI Partner Executive Hires From AWS And Google Cloud",
+     "url": "https://www.crn.com/news/ai/2026/5-big-openai-partner-executive-hires-from-aws-and-google-cloud"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Cloud & infrastructure",
