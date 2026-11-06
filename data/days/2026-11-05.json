@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "generated": "2026-11-06T01:01:11+00:00",
+ "generated": "2026-11-06T01:31:32+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 69,
-   "recent": 69,
+   "fetched": 68,
+   "recent": 68,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -582,7 +582,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 117,
-   "recent": 70,
+   "recent": 66,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 16,
+   "recent": 21,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -881,7 +881,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -1020,7 +1020,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1368,7 +1368,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1363,
-   "recent": 5,
+   "fetched": 1365,
+   "recent": 7,
    "error": null
   },
   {
@@ -1559,6 +1559,106 @@
   }
  ],
  "items": [
+  {
+   "id": "5aa3d2c92d58",
+   "title": "Google Cloud Issues SDK Notices for Eight Languages After CA Key Compromise: Why OS Updates Alone Can Leave Certificates Trusted",
+   "url": "https://joho-todai.com/en/google-cloud-sdk-certificate-authority-key-breach-notification/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-06T01:18:21+00:00",
+   "summary": "Google Cloud issued separate security notices for SDK libraries in eight languages in response to an eMudhra private key issue. The certificate store in use depends on the language and transport, so updating OS root certificates alone leaves some configurations exposed.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "Development"
+   ]
+  },
+  {
+   "id": "d99aa6d00d1d",
+   "title": "CVE-2026-63774: Insufficient input validation in the PowerSYSTEM Center report designer allows an authenticated user to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63774",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T01:17:50.470000+00:00",
+   "summary": "Insufficient input validation in the PowerSYSTEM Center report designer allows an authenticated user to execute unauthorized SQL commands.",
+   "kind": "cve",
+   "cve": "CVE-2026-63774",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63774",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c3fb681dc706",
+   "title": "CVE-2026-63017: Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63017",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T01:17:50.297000+00:00",
+   "summary": "Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.",
+   "kind": "cve",
+   "cve": "CVE-2026-63017",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-63017",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "8b736a134f3e",
+   "title": "Sources: Thinking Machines Lab is raising $5B led by Accel at a $40B pre-money valuation, more than tripling its valuation from its last public round last year (Business Insider)",
+   "url": "https://www.techmeme.com/261105/p66#a261105p66",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-06T01:15:02+00:00",
+   "summary": "Business Insider : Sources: Thinking Machines Lab is raising $5B led by Accel at a $40B pre-money valuation, more than tripling its valuation from its last public round last year — AI startup Thinking Machines Lab is set to close a fresh round of funding as soon as this week.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "68308ba5c43d",
+   "title": "Keycloak 26.8.2 Fixes SAML Signature Bypass Rated CVSS 9.1, With Red Hat Errata Still Pending",
+   "url": "https://joho-todai.com/en/keycloak-26-8-2-saml-signature-bypass-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-06T01:07:31+00:00",
+   "summary": "Keycloak 26.8.2 includes 33 security fixes. The most severe issue, CVE-2026-117691 (CVSS 9.1), allows attackers to bypass SAML signature verification and impersonate federated users. Red Hat has yet to issue errata for its commercial build.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-117691",
+     "score": 9.1,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "redhat"
+    }
+   ]
+  },
   {
    "id": "4fbe7747124b",
    "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank tumble",
@@ -1612,6 +1712,19 @@
    ]
   },
   {
+   "id": "c50783942a27",
+   "title": "US Delays Reinstatement of the 50% Export Control Rule Until January 2027: Final Rule Filed Days Before It Takes Effect",
+   "url": "https://joho-todai.com/en/us-export-restrictions-50-percent-rule-delayed-2027/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-06T00:53:51+00:00",
+   "summary": "The US Commerce Department's Bureau of Industry and Security finalized a rule extending the suspension of the Affiliates Rule, which automatically extends restrictions to subsidiaries of listed entities, through January 10, 2027. The extension lasts just two months, and the underlying rule remains in place.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "7eb036802b14",
    "title": "Lyft reports Q3 revenue up 8% YoY to $1.82B, vs. $1.92B est., and a net loss of $0.03 a share, vs. an est. profit of $0.20 a share; LYFT drops 8%+ after hours (Kelly Cloonan/Wall Street Journal)",
    "url": "https://www.techmeme.com/261105/p64#a261105p64",
@@ -1648,6 +1761,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "cb67656657c5",
+   "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-06T00:30:00+00:00",
+   "summary": "Today, AWS announces that AWS Security Hub now provides a Software Bill of Materials (SBOM) inventory, giving central security teams a continuously updated, organization-wide view of the software packages and applications installed on their compute resources.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Supply chain security"
    ]
   },
   {
@@ -1890,6 +2018,19 @@
    "source_category": "IT industry",
    "published": "2026-11-06T00:00:00+00:00",
    "summary": "Workplace monitoring tools have long divided opinion, but can be implemented responsibly",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ca5240a386b5",
+   "title": "Chrome for Android Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0698823948.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-06T00:00:00+00:00",
+   "summary": "Hello Everyone! We've just released Chrome 158 (158.0.8127.22) for Android to a small percentage of users. It'll become available on Google Play over the next few days. You can find more details about early Stable releases here . This release includes stability and performance improvements.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2147,6 +2288,25 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "01cc4fb33d63",
+   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+   "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+   "source": "Microsoft Security Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-05T23:46:50+00:00",
+   "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Microsoft & Windows",
+    "AI",
+    "Development",
+    "Pen testing & red team",
+    "Identity & access"
    ]
   },
   {
@@ -3634,6 +3794,34 @@
    ]
   },
   {
+   "id": "2d78072ab4f8",
+   "title": "AWS Network Load Balancer is now available in the AWS Phoenix Local Zone",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-nlb-available-phx-local-zone/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T20:00:00+00:00",
+   "summary": "AWS Network Load Balancer is now available in the Phoenix Local Zone (us-west-2-phx-2a). AWS Local Zones is a type of AWS infrastructure deployment that places AWS compute, storage, database, and other select services closer to large population, industry, and IT centers where no AWS Region exists today.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Databases",
+    "Networking"
+   ]
+  },
+  {
+   "id": "c88b52d0b210",
+   "title": "Cult.fit builds operational muscle with Codex",
+   "url": "https://openai.com/index/cultfit-builds-with-codex",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T20:00:00+00:00",
+   "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "22c50953d7d0",
    "title": "Magnet Witness 2.0: Expanded enhancement, large-case performance, and improved reporting",
    "url": "https://www.magnetforensics.com/blog/magnet-witness-2-0-expanded-enhancement-large-case-performance-and-improved-reporting/",
@@ -4646,7 +4834,14 @@
    "source_category": "IT industry",
    "published": "2026-11-05T17:47:34+00:00",
    "summary": "Shield AI agreed to acquire Echodyne, a maker of compact radar that detects and tracks drones, in a deal valued at up to $5.3 billion. Shield is raising $2.5 billion to pay for it, including $1 billion in new funding at a $28.8 billion valuation, more than double its value in March. Read More",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1cdb6006c725",
+     "source": "SiliconANGLE",
+     "title": "Autonomous combat drone maker Shield AI buys radar startup Echodyne for $5.3B",
+     "url": "https://siliconangle.com/2026/11/05/autonomous-combat-drone-maker-shield-ai-buys-radar-startup-echodyne-for-5-3b/"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -4691,6 +4886,12 @@
      "source": "Slashdot",
      "title": "OpenSSH Flaw Lets Attackers Log Into Password-Disabled Linux Accounts",
      "url": "https://it.slashdot.org/story/26/11/05/2140208/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "bd0c351e7ddb",
+     "source": "CSO Online",
+     "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
+     "url": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html"
     }
    ],
    "topics": [
@@ -5542,6 +5743,19 @@
      "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
     }
    ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "fa69cf987a95",
+   "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
+   "url": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
+   "source": "Azure Blog",
+   "source_category": "Cloud",
+   "published": "2026-11-05T17:00:00+00:00",
+   "summary": "AI must be selected, architected, and managed as a continuous business discipline, not a series of isolated projects.",
+   "also_covered_by": [],
    "topics": [
     "AI"
    ]
@@ -6405,6 +6619,20 @@
    ]
   },
   {
+   "id": "8d0224de36d0",
+   "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
+   "url": "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/",
+   "source": "Azure Blog",
+   "source_category": "Cloud",
+   "published": "2026-11-05T16:00:00+00:00",
+   "summary": "Discover how Microsoft is accelerating electronic design automation (EDA) workloads with Azure Cobalt 200 VMs. Explore early performance results demonstrating faster simulation, verification, and static timing analysis, along with the benefits of scalable cloud infrastructure for silicon design and development.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "cf1882f3d76c",
    "title": "Leapwork Play Reaches GA with Governance for Playwright Tests",
    "url": "https://www.infoq.com/news/2026/11/leapwork-play-playwright/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -6630,6 +6858,19 @@
     "Development",
     "DevOps & SRE",
     "Networking"
+   ]
+  },
+  {
+   "id": "d2f595aba2ff",
+   "title": "Amazon FSx for Lustre delivers 16x higher metadata IOPS on Intelligent-Tiering file systems",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-lustre-intelligent-tiering-16x-higher-metadata-iops",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T15:39:00+00:00",
+   "summary": "Amazon FSx for Lustre now supports up to 192,000 metadata I/O operations per second (IOPS) on file systems that use the Intelligent-Tiering storage class, 16x higher than the previous maximum of 12,000 IOPS.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -6886,7 +7127,14 @@
    "source_category": "IT industry",
    "published": "2026-11-05T15:19:05+00:00",
    "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "7318c63998c3",
+     "source": "SiliconANGLE",
+     "title": "Dropbox acquires Tigris Data for $350M, releases new AI productivity features",
+     "url": "https://siliconangle.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-releases-new-ai-productivity-features/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
@@ -9143,6 +9391,20 @@
     "Cloud & infrastructure",
     "Hardware",
     "Higher education"
+   ]
+  },
+  {
+   "id": "51ee28c90707",
+   "title": "Ubuntu refreshes time zone data for Canadian clock changes",
+   "url": "https://www.omgubuntu.co.uk/2026/11/ubuntu-canada-timezone-changes-2026",
+   "source": "OMG! Ubuntu",
+   "source_category": "Linux admin",
+   "published": "2026-11-05T12:45:00+00:00",
+   "summary": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to ensure the system reflects the local time in…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Databases"
    ]
   },
   {
@@ -11811,6 +12073,12 @@
      "source": "The Hacker News",
      "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
      "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html"
+    },
+    {
+     "id": "5b402c1dca50",
+     "source": "Neowin",
+     "title": "Apple will start checking your iCloud links for \"harmful content\"",
+     "url": "https://www.neowin.net/news/apple-will-start-checking-your-icloud-links-for-harmful-content/?utm_source=rss"
     }
    ],
    "topics": [
@@ -12142,6 +12410,33 @@
    "topics": [
     "Microsoft & Windows",
     "AI"
+   ]
+  },
+  {
+   "id": "396c9c9cc09b",
+   "title": "AWS Lambda durable functions increases default execution and API quotas",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-functions-default-quotas/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "AWS Lambda durable functions has increased default quotas for running executions and API request rates. The new quotas below apply in all AWS Regions except US East (N. Virginia), US West (Oregon), and Europe (Ireland), which have twice these quotas.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "f084aaa63e94",
+   "title": "Amazon Q Developer in console is now the AWS assistant",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/q-developer-renamed-aws-assistant/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-05T08:00:00+00:00",
+   "summary": "Amazon Q Developer in the AWS Management Console and Console Mobile Apps is now called the AWS assistant. Previously, customers interacted with Amazon Q Developer across these surfaces.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development"
    ]
   },
   {
@@ -13319,6 +13614,19 @@
    "topics": [
     "Cloud & infrastructure",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "c0d7b0808284",
+   "title": "Franklin Templeton uses OpenAI to support investment research",
+   "url": "https://openai.com/index/franklin-templeton",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-05T00:00:00+00:00",
+   "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
