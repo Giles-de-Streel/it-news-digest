@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-06T19:01:06+00:00",
+ "generated": "2026-11-06T19:30:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 52,
-   "recent": 52,
+   "fetched": 53,
+   "recent": 53,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 94,
-   "recent": 59,
+   "fetched": 93,
+   "recent": 58,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -924,7 +924,7 @@
   {
    "source": "Packet Pushers",
    "fetched": 1850,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1325,14 +1325,14 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 40,
-   "recent": 3,
+   "fetched": 38,
+   "recent": 4,
    "error": null
   },
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1452,7 +1452,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1536,13 +1536,13 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
    "source": "OpenAI News",
-   "fetched": 1367,
-   "recent": 5,
+   "fetched": 1368,
+   "recent": 6,
    "error": null
   },
   {
@@ -1560,6 +1560,119 @@
  ],
  "items": [
   {
+   "id": "0a0838023db1",
+   "title": "JetBrains security advisory (AV26-1132)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1132-0",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-06T19:23:12+00:00",
+   "summary": "Serial Number: AV26-1132 Date: November 6, 2026 As of November 6, 2026, JetBrains is affected by vulnerabilities in the following products: CLion Prior to 2026.3 Prior to 2026.2.4.1 Datalore Prior to 2026.4 Prior to 2026.2.4 Hub Prior to 2026.2.52519 Prior to 2026.2.52556 IntelliJ IDEA Multiple versions Ktor Prior to…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "3e66219c059e",
+   "title": "CVE-2026-71495: Wanderer is a self-hosted trail database for saving and sharing adventures.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71495",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T19:17:56.657000+00:00",
+   "summary": "Wanderer is a self-hosted trail database for saving and sharing adventures. Prior to 0.20.0, when PUBLIC_PRIVATE_INSTANCE is not set to true, the unauthenticated POST /api/v1/trail/download handler passes the attacker-controlled JSON url field directly to event.fetch() and returns the fetched response.",
+   "kind": "cve",
+   "cve": "CVE-2026-71495",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-71495",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f12f4a6993b6",
+   "title": "CVE-2026-119923: A heap-based buffer overflow in the TDS prelogin parser in the Babelfish for PostgreSQL extension versions…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119923",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T19:17:39.360000+00:00",
+   "summary": "A heap-based buffer overflow in the TDS prelogin parser in the Babelfish for PostgreSQL extension versions 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 and in Amazon Aurora PostgreSQL with Babelfish might allow remote attackers to execute arbitrary OS commands as the database process user via a specially crafted…",
+   "kind": "cve",
+   "cve": "CVE-2026-119923",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119923",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
+  },
+  {
+   "id": "10c17f98d982",
+   "title": "Nondeterminism in Futhark",
+   "url": "https://futhark-lang.org/blog/2026-11-04-nondeterminism.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-06T19:16:01+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fd313b2abd4d",
+   "title": "Google Forcing AI on Students Is BS",
+   "url": "https://www.eff.org/deeplinks/2026/11/google-forcing-ai-students-bs",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-06T19:14:22+00:00",
+   "summary": "Google is rightfully facing blowback for forcing K-12 schools to enable AI if they wanted to keep using Google search. The company quickly backtracked and decoupled and turned off the services by default, but made it clear search will continue to be just another AI chatbot.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ea6b9d64cfe5",
+   "title": "Medical services company settles with 4 states over 2023 hack of sensitive patient records",
+   "url": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-06T19:06:00+00:00",
+   "summary": "The case, brought by AGs in Connecticut, New Jersey, New York and Michigan, targeted the medical transcription, coding and imaging subsidiaries of the Nevada-based Perry Johnson Companies.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "1e203fd2f9b3",
+   "title": "Nvidia CEO Jensen Huang Summoned By Congress Over Chinese Espionage Concerns",
+   "url": "https://yro.slashdot.org/story/26/11/06/1742227/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-06T19:00:00+00:00",
+   "summary": "An anonymous reader quotes a report from Ars Technica: Top Republican lawmakers have asked Jensen Huang to appear before Congress to answer questions after it was reported that US intelligence officials believe Nvidia's chief executive has been targeted by a Chinese spying operation.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "fd1d696edf69",
    "title": "AWS’ Colleen Aubrey: Stop inventing new AI metrics — it’s your business metrics that matter",
    "url": "https://siliconangle.com/2026/11/06/aws-colleen-aubrey-stop-inventing-new-ai-metrics-its-your-business-metrics-that-matter/",
@@ -1571,6 +1684,22 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "35c8c0a37c8b",
+   "title": "HN850: AWS Takes a Unique Approach to AI Fabrics (Sponsored)",
+   "url": "https://packetpushers.net/podcasts/heavy-networking/hn850-aws-takes-a-unique-approach-to-ai-fabrics-sponsored/",
+   "source": "Packet Pushers",
+   "source_category": "Networking",
+   "published": "2026-11-06T18:56:00+00:00",
+   "summary": "Amazon AWS is not new to the high-bandwidth, elephant flow-oriented data center traffic pattern requirements of AI. In this sponsored episode from AWS, Distinguished Engineer and Network Core VP JR Rivers and Senior Principal Networking Engineer Stephen Callaghan join Ethan and Drew to discuss running AI workloads on…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Networking"
    ]
   },
   {
@@ -1638,6 +1767,38 @@
    "topics": [
     "Threats & malware",
     "Development"
+   ]
+  },
+  {
+   "id": "f2f43fc57933",
+   "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-06T18:46:27+00:00",
+   "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Databases",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-119923",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "AMZN"
+    },
+    {
+     "id": "CVE-2026-119924",
+     "score": 8.1,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "AMZN"
+    }
    ]
   },
   {
@@ -1747,6 +1908,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "b05c7bffb56b",
+   "title": "40C3 halfnarp – Submit talk preferences to aid scheduling",
+   "url": "https://halfnarp.events.ccc.de",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T18:16:43+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2417,6 +2591,19 @@
     "Cloud & infrastructure",
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "28c2d038c17b",
+   "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T16:54:36+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4488,6 +4675,12 @@
      "source": "SecurityWeek",
      "title": "DigiCert Data Breach Impacts Business Customer Information",
      "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/"
+    },
+    {
+     "id": "c5532d0fb1f0",
+     "source": "The Record",
+     "title": "Certificate authority DigiCert reports data breach involving business customer info",
+     "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach"
     }
    ],
    "topics": [
@@ -8110,6 +8303,19 @@
     "Cloud & infrastructure",
     "AI",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "cfd4354afa14",
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-06T00:00:00+00:00",
+   "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
