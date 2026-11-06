@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-06T12:00:55+00:00",
+ "generated": "2026-11-06T12:31:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 48,
-   "recent": 48,
+   "fetched": 50,
+   "recent": 50,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 22,
+   "recent": 25,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "CIO.com",
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 113,
-   "recent": 60,
+   "recent": 59,
    "error": null
   },
   {
@@ -852,7 +852,7 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1020,7 +1020,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1254,7 +1254,7 @@
   {
    "source": "Graham Cluley",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -1560,6 +1560,161 @@
  ],
  "items": [
   {
+   "id": "ac85436d9a74",
+   "title": "CVE-2026-114630: The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to arbitrary file…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114630",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T12:17:16.503000+00:00",
+   "summary": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the factory_reset function in all versions up to, and including, 3.3.8 This makes it possible for unauthenticated attackers to delete arbitrary files on the…",
+   "kind": "cve",
+   "cve": "CVE-2026-114630",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-114630",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ae6715ebf1f6",
+   "title": "CVE-2026-107622: The BuddyForms plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107622",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T12:17:16.020000+00:00",
+   "summary": "The BuddyForms plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.10.5 via a form-type confusion attack through the `bf_post_type` parameter.",
+   "kind": "cve",
+   "cve": "CVE-2026-107622",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107622",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "39831e07b01f",
+   "title": "IntelliJ Scala Plugin 2026.3 Is Out!",
+   "url": "https://blog.jetbrains.com/scala/2026/11/06/intellij-scala-plugin-2026-3-is-out/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-06T12:15:21+00:00",
+   "summary": "Hello everyone! Scala plugin 2026.3 is here! This release brings more accurate Scala 3 code analysis, substantially reworked Twirl support for Play Framework developers, and more efficient compiler-based highlighting that reduces redundant background work.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "ec3388a4bdf7",
+   "title": "Rogue AI tasked with renumbering pages accidentally deletes law professor's entire syllabus, one year of lecture notes",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-06T12:12:12+00:00",
+   "summary": "A University of Chicago lecturer has revealed a rogue Claude AI agent deleted his entire syllabus and year's worth of lecture notes by mistake.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "e7267a328ffa",
+   "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
+   "url": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-06T12:07:42+00:00",
+   "summary": "On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "d2ab03bf4967",
+   "title": "Microsoft extends undisclosed usage restrictions on Copilot Chat for enterprise users",
+   "url": "https://www.computerworld.com/article/4245658/microsoft-extends-undisclosed-usage-restrictions-on-copilot-chat-for-enterprise-users.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-11-06T12:04:05+00:00",
+   "summary": "Microsoft is extending undisclosed usage caps to additional Copilot Chat features for enterprise users who already pay for Microsoft 365 subscriptions but do not hold separate Microsoft 365 Copilot licenses, restricting access to certain AI capabilities and nudging users to upgrade to a paid Copilot-specific license.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "aa713ccc933e",
+   "title": "Attacks on supermarket and blood storage systems prompt US warning",
+   "url": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-06T12:02:17+00:00",
+   "summary": "US agencies have issued a warning about remote access to industrial refrigeration and cold-chain monitoring systems.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a820987200b3",
+   "title": "Mbodi AI (YC P25) Is Hiring Research and Robotic Engineers",
+   "url": "https://www.ycombinator.com/companies/mbodi-ai/jobs",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T12:00:42+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "7fda1dbd7e23",
+   "title": "Measles, mumps and misinformation: how Crunchy Moms became ‘the most dangerous’ group on Facebook",
+   "url": "https://www.theguardian.com/technology/2026/nov/06/crunchy-moms-facebook-vaccines",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-06T12:00:41+00:00",
+   "summary": "Meta says it removes content that could cause imminent physical harm – but nearly half a million members have joined a group that regularly promotes misinformation As a measles outbreak spread through Lancaster county, Pennsylvania, in August, a parent turned to a massive public Facebook group, Crunchy Moms, for…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "293a65b50956",
+   "title": "The Goat Emoji Is 100% Valid Machine Code, and It Doesn’t Stop There",
+   "url": "https://hackaday.com/2026/11/06/the-goat-emoji-is-100-valid-machine-code-and-it-doesnt-stop-there/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-06T12:00:33+00:00",
+   "summary": "Did you know emojis can be executables? Well, they are if you treat them like Intel 8088 or 8086 machine code, anyway. [GloriousCow] shared this clever revelation, demonstrating that executable …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "16b55bfe573e",
    "title": "Most Organizations Cannot Quickly Exit Their Cloud Provider",
    "url": "https://petri.com/organizations-cannot-quickly-exit-cloud-provider/",
@@ -1570,6 +1725,93 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "07df71967e3d",
+   "title": "Tesla unveils AI accelerator roadmap, adopts new 'SI' branding in 'Super Intelligence' push",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-06T12:00:00+00:00",
+   "summary": "Tesla is ramping up its custom silicon ambitions with training-oriented Dojo D3 that can eventually go to orbital data centers and massive SI6 inference accelerator.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "44f526082f74",
+   "title": "Intel’s next-gen Nova Lake needs new motherboards — what we expect from Nova Point and Z990, Z970, and B960 chipsets",
+   "url": "https://www.tomshardware.com/pc-components/chipsets/intels-next-gen-nova-lake-needs-new-motherboards-what-we-expect-from-nova-point-and-z990-z970-and-b960-chipsets",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-06T12:00:00+00:00",
+   "summary": "New Intel CPUs mean a new LGA 1954 socket and new motherboards. Here’s what we know about Nova Point’s Z990, Z970, and B960 chipsets, including more PCIe 5.0, Thunderbolt 5, faster base RAM speeds, and active cooling",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2196d0c41c84",
+   "title": "GitLab 19.5 Makes Agentic Development a Governed Part of the DevOps Platform",
+   "url": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-06T12:00:00+00:00",
+   "summary": "GitLab 19.5, released on October 15, puts agentic software development and governance at the centre of the platform, making its GitLab MCP server generally available while expanding how external AI agents can interact with GitLab. By Craig Risi",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "f4ab35f756ee",
+   "title": "Faster LLM inference startup: What you need to know",
+   "url": "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-06T12:00:00+00:00",
+   "summary": "Adding an inference replica creates capacity only after the new instance can serve requests. Between starting a process and generating a response, an LLM server may need to load weights, initialize GPU resources, compile kernels, capture...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7e28d60d81d6",
+   "title": "Google announces $17bn data center campus in Cheyenne, Wyoming",
+   "url": "https://www.datacenterdynamics.com/en/news/google-announces-17bn-data-center-campus-in-cheyenne-wyoming/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-06T11:56:37+00:00",
+   "summary": "Set to be powered via fuel cells and gas generation, coupled with CCS",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "bb0f5adf0cb0",
+   "title": "Google’s New AI Video Model Creates 15-Second Clips at 30% Lower Prices",
+   "url": "https://www.techrepublic.com/article/news-google-omni-1-2-flash-video/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-06T11:55:02+00:00",
+   "summary": "Google's Omni 1.2 Flash creates AI videos up to 15 seconds at 30% lower generation prices. See what changes for businesses and developers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
    ]
   },
   {
@@ -1684,6 +1926,19 @@
    ]
   },
   {
+   "id": "4037c0f61ee9",
+   "title": "We've built an open-source feature flag server for 11 years",
+   "url": "https://github.com/Unleash/unleash",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-06T11:40:06+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "7b257df4aaff",
    "title": "Railway’s AI agents go off the track on a rival’s network",
    "url": "https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html",
@@ -1755,6 +2010,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "b69919059f9a",
+   "title": "Ray-Ban Meta and Oakley Meta Are Finally Coming to the Philippines — With Tagalog AI and Four Models to Choose From",
+   "url": "https://www.techrepublic.com/article/news-ray-ban-meta-oakley-launch-apac-philippines/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-06T11:26:17+00:00",
+   "summary": "Ray-Ban Meta and Oakley Meta arrive in Philippine stores Nov. 10, with Tagalog AI support and four models spanning everyday, prescription, and sports use.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2298,7 +2566,14 @@
    "source_category": "Security",
    "published": "2026-11-06T10:29:58+00:00",
    "summary": "The White House network has been working as an exit point for residential proxy services, a setup that may open a path into one of the most closely guarded networks in the world, Layer3 Intel found.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f98f424c210d",
+     "source": "SecurityWeek",
+     "title": "Researchers Find Residential Proxies on White House Network",
+     "url": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/"
+    }
+   ],
    "topics": [
     "Hardware",
     "Networking"
@@ -3635,6 +3910,29 @@
    ]
   },
   {
+   "id": "deedcb7ebce6",
+   "title": "CVE-2026-116533: The Static Snapshot WordPress plugin through 0.2.1 does not sanitise shell metacharacters in a user-supplied…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116533",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-06T06:16:40.480000+00:00",
+   "summary": "The Static Snapshot WordPress plugin through 0.2.1 does not sanitise shell metacharacters in a user-supplied value before concatenating it into operating-system commands run by the server, allowing unauthenticated attackers to execute arbitrary commands on the host.",
+   "kind": "cve",
+   "cve": "CVE-2026-116533",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-116533",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "4cc69119a9b4",
    "title": "Hugging Face's CEO Says His P(Doom) Is 'Close to Zero'",
    "url": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/",
@@ -4022,7 +4320,14 @@
    "source_category": "Security",
    "published": "2026-11-06T00:00:00+00:00",
    "summary": "The European Commission accused TikTok on Friday of failing to prevent its recommendation algorithm from drawing users into “rabbit holes” of content about sadness, self-harm and body image.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "227a344ef2c7",
+     "source": "Techmeme",
+     "title": "In preliminary findings, the EU says TikTok breached the DSA by failing to prevent its recommendation algorithm from trapping users in harmful \"rabbit holes\" (Alexander Martin/The Record)",
+     "url": "https://www.techmeme.com/261106/p10#a261106p10"
+    }
+   ],
    "topics": [
     "General IT"
    ]
