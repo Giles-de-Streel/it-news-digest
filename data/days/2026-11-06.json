@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated": "2026-11-07T04:01:19+00:00",
+ "generated": "2026-11-07T04:33:23+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 28,
+   "recent": 26,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 56,
+   "recent": 56,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -204,7 +204,7 @@
   {
    "source": "Stack Overflow Blog",
    "fetched": 40,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -545,20 +545,20 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 21,
+   "recent": 18,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 9,
+   "recent": 7,
    "error": null
   },
   {
@@ -600,7 +600,7 @@
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 93,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -810,7 +810,7 @@
   {
    "source": "Virtualization Review",
    "fetched": 60,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1085,9 +1085,9 @@
   },
   {
    "source": "Ubuntu Blog",
-   "fetched": 12,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
   },
   {
    "source": "Linux kernel releases",
@@ -1109,9 +1109,9 @@
   },
   {
    "source": "Ubuntu security notices",
-   "fetched": 10,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Debian security advisories",
@@ -1368,7 +1368,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1559,6 +1559,85 @@
   }
  ],
  "items": [
+  {
+   "id": "2b881bd954d0",
+   "title": "Exploring Janet and the httpf web framework",
+   "url": "https://nick.gs/blog/2026-11/exploring-janet-and-the-httpf-web-framework/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-07T04:28:11+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b5d4828707d8",
+   "title": "CVE-2026-19803: The Printcart Store – Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19803",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T04:17:29.233000+00:00",
+   "summary": "The Printcart Store – Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.13.2.",
+   "kind": "cve",
+   "cve": "CVE-2026-19803",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-19803",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "8e31bdfacf63",
+   "title": "CVE-2026-17362: IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to create, modify, or delete tenants…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17362",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T04:17:29.070000+00:00",
+   "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to create, modify, or delete tenants due to missing authorization.",
+   "kind": "cve",
+   "cve": "CVE-2026-17362",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-17362",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "2464fd9dd158",
+   "title": "CVE-2026-123218: IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T04:17:28.900000+00:00",
+   "summary": "IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges.",
+   "kind": "cve",
+   "cve": "CVE-2026-123218",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-123218",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "55ca6c5c9e66",
    "title": "A Maintainer's Advice on Contributing to Open Source in 2026",
