@@ -1,12 +1,12 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T14:00:45+00:00",
+ "generated": "2026-11-07T14:30:46+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 92,
-   "recent": 92,
+   "fetched": 94,
+   "recent": 94,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -1559,6 +1559,76 @@
   }
  ],
  "items": [
+  {
+   "id": "a47014ebf2a3",
+   "title": "CVE-2026-123966: A vulnerability was determined in Tenda AC19 16.03.10.07.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123966",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T14:17:01.800000+00:00",
+   "summary": "A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation of the argument deviceId causes heap-based buffer overflow. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-123966",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-123966",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e4fd753f03b9",
+   "title": "CVE-2026-120984: A flaw was found in the Keycloak server's client management component.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120984",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T14:17:01.580000+00:00",
+   "summary": "A flaw was found in the Keycloak server's client management component. When a client is created or imported with authorization services enabled, the system fails to properly clear an internal session attribute used during the setup process.",
+   "kind": "cve",
+   "cve": "CVE-2026-120984",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120984",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bfe7b7e87364",
+   "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+   "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-07T14:10:19+00:00",
+   "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "deec94caf8f9",
+   "title": "TeamGroup GA Pro 2TB SSD Review: A faltering attempt at a mid-range PCIe 5.0 SSD",
+   "url": "https://www.tomshardware.com/pc-components/ssds/teamgroup-ga-pro-2tb-ssd-review",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-07T14:00:00+00:00",
+   "summary": "The TeamGroup GA Pro mostly misses. Decent QD8 and steady-state writes can’t make up for weak overall performance, poor efficiency, and high temps.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "c40f82a2f5cb",
    "title": "Asahi Linux Begins Moving From MIT to GPLv2 or Later: M3 Sleep and Windows Gaming Experiments Advance",
