@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T18:00:50+00:00",
+ "generated": "2026-11-07T18:30:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 94,
-   "recent": 94,
+   "fetched": 90,
+   "recent": 90,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 17,
+   "recent": 20,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 68,
+   "fetched": 67,
    "recent": 8,
    "error": null
   },
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1560,6 +1560,134 @@
  ],
  "items": [
   {
+   "id": "e1a41ec1f0c0",
+   "title": "CVE-2026-124057: A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124057",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T18:17:21.607000+00:00",
+   "summary": "A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1 results in buffer overflow. The attack can be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-124057",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124057",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "cf4db5761b03",
+   "title": "GhostMap: The Android flaw that crashes your phone before you open the app",
+   "url": "https://www.bitdefender.com/en-us/blog/labs/ghostmap-android",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-07T18:12:57+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e4da1fc3654c",
+   "title": "What I run on my $10 USD OpenStick, Linux, Homelab",
+   "url": "https://blog.bosscher.ch/posts/openstick/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T18:12:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "c2f87da81744",
+   "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+   "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-07T18:11:57+00:00",
+   "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1eeaf5457cb1",
+   "title": "The End of AI Frontiers",
+   "url": "https://hunch.net/?p=13764006",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T18:04:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "58d1e7f2f30e",
+   "title": "Microsoft Researcher John Langford Exits. AI Frontiers Group Declared Finished",
+   "url": "https://businessexaminer.ca/victoria-articles/item/microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T18:02:17+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "1df8fcde3588",
+   "title": "Binance says CFO Kaiser Ng is leaving to \"pursue a new venture\" days after a $6.3B hack, citing a six-month transition plan, and names Justin Yek as CFO (Bloomberg)",
+   "url": "https://www.techmeme.com/261107/p13#a261107p13",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-07T18:01:40+00:00",
+   "summary": "Bloomberg : Binance says CFO Kaiser Ng is leaving to “pursue a new venture” days after a $6.3B hack, citing a six-month transition plan, and names Justin Yek as CFO — Kaiser Ng, the chief financial officer at Binance Holdings Ltd., the world's largest crypto exchange …",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "acd2f7824e53",
+   "title": "Supercon 2026: Streaming Live",
+   "url": "https://hackaday.com/2026/11/07/supercon-2026-streaming-live/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-07T18:00:38+00:00",
+   "summary": "While we’d love to have you all join us in Pasadena for Supercon 2026, the next best thing is to connect up to the festivities remotely through the magic of …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c3fafed9a819",
+   "title": "A Third Major US Offshore Wind Farm Is Now Fully Operational",
+   "url": "https://news.slashdot.org/story/26/11/07/0657220/a-third-major-us-offshore-wind-farm-is-now-fully-operational?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-07T18:00:00+00:00",
+   "summary": "Despite the Trump administration's efforts to halt development on a $6.2 billion wind farm, it's now \"completely up and running,\" reports the nonprofit energy news site Canary Media, delivering enough electricity to power the equivalent over 350,000 homes: On Thursday, the Danish energy giant Ørsted said its…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f09c46fc9079",
    "title": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
    "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
@@ -1570,6 +1698,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "e2ddf63848ab",
+   "title": "Five Memorable Books About Programming",
+   "url": "https://prog21.dadgum.com/19.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T17:30:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -1592,6 +1733,19 @@
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-11-07T17:27:30+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f7fffb994d85",
+   "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+   "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T17:19:00+00:00",
    "summary": "Comments",
    "also_covered_by": [],
    "topics": [
@@ -1785,6 +1939,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d7778c9e4e9e",
+   "title": "Every processor die anyone has photographed and given away",
+   "url": "https://sheets.works/data-viz/cpu-dies",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T16:21:36+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
