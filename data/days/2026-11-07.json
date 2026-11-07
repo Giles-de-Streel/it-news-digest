@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T19:01:49+00:00",
+ "generated": "2026-11-07T19:30:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 90,
-   "recent": 90,
+   "fetched": 93,
+   "recent": 93,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -731,9 +731,9 @@
   },
   {
    "source": "Electronic Design",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 25,
+   "recent": 6,
+   "error": null
   },
   {
    "source": "EE Times",
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1350,7 +1350,7 @@
   {
    "source": "ipSpace.net",
    "fetched": 1024,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1452,7 +1452,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1559,6 +1559,79 @@
   }
  ],
  "items": [
+  {
+   "id": "6a33df2f5d4b",
+   "title": "CVE-2026-124059: A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124059",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T19:17:28.480000+00:00",
+   "summary": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ApCliKeyStr leads to buffer overflow. The attack may be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-124059",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124059",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "132fed50b591",
+   "title": "CVE-2026-124058: A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124058",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T19:17:28.263000+00:00",
+   "summary": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can lead to buffer overflow. The attack can be launched remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-124058",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124058",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a880af1f16f8",
+   "title": "Scientists Find Rare Meteorite From Mars With Signs of Ancient Water",
+   "url": "https://science.slashdot.org/story/26/11/07/0628228/scientists-find-rare-meteorite-from-mars-with-signs-of-ancient-water?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-07T19:00:00+00:00",
+   "summary": "\"I didn't think a rock like this existed on Earth,\" a geologist at the Lunar and Planetary Institute in Texas told the Washington Post. It looks like a polished rock, dark brown with a clay-colored stripe — but it's actually one of the oldest Mars meteorites ever found, blasted by an impact from the surface of Mars…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "193a8985c0da",
+   "title": "One Product Isn’t the Problem: Monetizing an AI Portfolio Without Confusing Your Customers",
+   "url": "https://securityaffairs.com/202603/ai/one-product-isnt-the-problem-monetizing-an-ai-portfolio-without-confusing-your-customers.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-07T18:48:55+00:00",
+   "summary": "Software vendors can boost revenue by tracking customer usage across products, while AI accelerates pricing and consumption decisions. It is hard to find any software vendor that sells just one product. Portfolios have expanded from modules to editions, cloud services, add-ons, and now AI capabilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
   {
    "id": "fe1926906288",
    "title": "OpenBSD top(1) adds flag to show chroot, pledge and unveil status",
@@ -2002,6 +2075,19 @@
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-11-07T16:06:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8c245c685254",
+   "title": "Terry Pratchett's Study",
+   "url": "https://www.sussi.dk/terry-pratchetts-study",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T16:05:45+00:00",
    "summary": "Comments",
    "also_covered_by": [],
    "topics": [
@@ -3579,6 +3665,69 @@
    "topics": [
     "General IT"
    ]
+  },
+  {
+   "id": "f973ac7abde1",
+   "title": "CVE-2026-121491: The Fiber Admin WordPress plugin before 4.0.1 does not validate or escape a request header before writing it…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121491",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T06:16:58.280000+00:00",
+   "summary": "The Fiber Admin WordPress plugin before 4.0.1 does not validate or escape a request header before writing it into a PHP file it regenerates on an unprotected admin hook, allowing unauthenticated attackers to execute arbitrary code when its custom database error page is enabled and they win a race against an…",
+   "kind": "cve",
+   "cve": "CVE-2026-121491",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121491",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "System administration",
+    "Identity & access"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-121491",
+     "score": 0.00224,
+     "percentile": 0.13142,
+     "date": "2026-11-07"
+    }
+   }
+  },
+  {
+   "id": "177d54ecd24f",
+   "title": "CVE-2026-121379: The Tournamatch WordPress plugin before 4.7.1 does not validate or restrict the path of a previously stored…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121379",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T06:16:58.040000+00:00",
+   "summary": "The Tournamatch WordPress plugin before 4.7.1 does not validate or restrict the path of a previously stored profile or team image before deleting it when a new image is uploaded, allowing users with a role as low as Subscriber to delete arbitrary files on the server, such as wp-config.php, which can lead to a full…",
+   "kind": "cve",
+   "cve": "CVE-2026-121379",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-121379",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-121379",
+     "score": 0.0015,
+     "percentile": 0.04198,
+     "date": "2026-11-07"
+    }
+   }
   },
   {
    "id": "1f91f60c7880",
