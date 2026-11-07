@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T13:00:47+00:00",
+ "generated": "2026-11-07T13:30:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 93,
-   "recent": 93,
+   "fetched": 92,
+   "recent": 92,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1559,6 +1559,100 @@
   }
  ],
  "items": [
+  {
+   "id": "bc10eb2ab754",
+   "title": "Kdenlive 26.08.3 Video Editor Released with Project Recovery, Crash Fixes",
+   "url": "https://linuxiac.com/kdenlive-26-08-3-video-editor-released-with-project-recovery-crash-fixes/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-07T13:29:20+00:00",
+   "summary": "Kdenlive 26.08.3 improves project recovery, fixes crashes, and addresses issues with rendering, keyframes, and audio scopes.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "861a4f311d96",
+   "title": "CVE-2026-122041: The Checkout Field Editor for WooCommerce (Pro) plugin for WordPress is vulnerable to unauthorized deletion…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122041",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T13:16:36.067000+00:00",
+   "summary": "The Checkout Field Editor for WooCommerce (Pro) plugin for WordPress is vulnerable to unauthorized deletion of arbitrary attachments due to a missing capability/ownership check in the ajax_remove_uploaded() function in versions up to, and including, 3.8.0.",
+   "kind": "cve",
+   "cve": "CVE-2026-122041",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122041",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "008916493b86",
+   "title": "Linux CVE-2026-99999: Researchers Demonstrate Host Root Code Execution From a Firecracker VM",
+   "url": "https://joho-todai.com/en/linux-cve-2026-99999-firecracker-root-code-execution/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-07T13:04:16+00:00",
+   "summary": "Researchers used a flaw in Linux kernel IPv4 processing to control a host management process from a Firecracker VM. The demonstration ran code as root in a lab where Firecracker was launched as root without its jailer isolation mechanism.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-99999",
+     "score": 9.3,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-99999",
+     "score": 0.00788,
+     "percentile": 0.56366,
+     "date": "2026-11-06"
+    }
+   }
+  },
+  {
+   "id": "ae356485e419",
+   "title": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+   "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-07T13:00:01+00:00",
+   "summary": "Anthropic is poised to become the first pure-play AI company to hit the public market at a time when the public is increasingly leary of the industry.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "79241398b499",
+   "title": "TSMC denies exploring 3D DRAM at Nvidia's request",
+   "url": "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-07T13:00:00+00:00",
+   "summary": "Nvidia reportedly asks TSMC to produce '3D DRAM' to address memory shortages.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "e89dd3115c71",
    "title": "Japan Allocates ¥10 Billion for Emergency Cybersecurity Measures, Including AI Testing and Public-Private Response Teams",
