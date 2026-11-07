@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T11:00:43+00:00",
+ "generated": "2026-11-07T11:30:45+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -66,7 +66,7 @@
   {
    "source": "Ars Technica IT",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 84,
-   "recent": 9,
+   "fetched": 83,
+   "recent": 8,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 17,
+   "recent": 14,
    "error": null
   },
   {
@@ -1559,6 +1559,56 @@
   }
  ],
  "items": [
+  {
+   "id": "e1b3480d80d0",
+   "title": "CVE-2026-123961: A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123961",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T11:17:01.290000+00:00",
+   "summary": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiBasicConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument KeyStr leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-123961",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-123961",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "3701d236e745",
+   "title": "Cryosphere Faces Permanent Damage When World Overshoots 1.5C, Scientists Warn",
+   "url": "https://news.slashdot.org/story/26/11/07/0249215/cryosphere-faces-permanent-damage-when-world-overshoots-15c-scientists-warn?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-07T11:00:00+00:00",
+   "summary": "A UN-backed report warns that even temporarily overshooting the Paris agreement's 1.5C warming target could cause permanent and widespread losses of glaciers, snow and polar ice sheets.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0fcc336d87b5",
+   "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
+   "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-07T11:00:00+00:00",
+   "summary": "The growing adoption of AI coding assistants has accelerated development and increased the volume of code changes per release, bringing more opportunities for defects and crashes, says Grab.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
   {
    "id": "8602112351e0",
    "title": "Vulkan 1.4.368 Released With New Extensions From Valve & NVIDIA",
@@ -1837,7 +1887,14 @@
    "source_category": "Development",
    "published": "2026-11-07T09:32:56+00:00",
    "summary": "Lennart Poettering, Michael Vogt, and Joaquim Rocha have put together a detailed overview of what the Amutable Operating System (AOS) and associated infrastructure will look like.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "ab1da50c1d33",
+     "source": "Lobsters",
+     "title": "Amutable Foundations: A Technical Overview",
+     "url": "https://amutable.com/blog/amutable-foundations-technical-overview"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -2198,7 +2255,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-07T06:03:53+00:00",
    "summary": "System76 teases COSMIC Theme Constellations for their Rust-based COSMIC desktop environment bundled with wallpaper, colors, icons, and fonts.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "269da1b3b6c2",
+     "source": "Linuxiac",
+     "title": "COSMIC Desktop’s Next Visual Upgrade Introduces Theme Constellations",
+     "url": "https://linuxiac.com/cosmic-desktop-next-visual-upgrade-introduces-theme-constellations/"
+    }
+   ],
    "topics": [
     "Development"
    ]
@@ -3436,7 +3500,14 @@
    "source_category": "Development",
    "published": "2026-11-06T04:00:28+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d150fcee4b06",
+     "source": "Tom's Hardware",
+     "title": "US FAA to eliminate floppy disks from air traffic control by 2028",
+     "url": "https://www.tomshardware.com/tech-industry/us-faa-to-eliminate-floppy-disks-from-air-traffic-control-by-2028-new-system-will-centralize-flight-alerts-restricted-airspace-schedules-and-pilot-reports"
+    }
+   ],
    "topics": [
     "General IT"
    ]
