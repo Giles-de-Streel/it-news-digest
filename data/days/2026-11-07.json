@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "generated": "2026-11-07T12:00:53+00:00",
+ "generated": "2026-11-07T12:30:46+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 90,
-   "recent": 90,
+   "fetched": 93,
+   "recent": 93,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "SQLServerCentral",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -354,7 +354,7 @@
   {
    "source": "PostgreSQL News",
    "fetched": 10,
-   "recent": 0,
+   "recent": 4,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 83,
-   "recent": 8,
+   "fetched": 79,
+   "recent": 7,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -930,7 +930,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 6,
+   "recent": 4,
    "error": null
   },
   {
@@ -1398,13 +1398,13 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 17,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1559,6 +1559,161 @@
   }
  ],
  "items": [
+  {
+   "id": "fdca3ddc1a55",
+   "title": "We organized Sustainability Month. Here’s what we learned. 🌱",
+   "url": "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-07T12:30:00+00:00",
+   "summary": "What do Kubernetes resource allocation, eBPF, carbon observability, and GPUs have in common? Quite a lot, actually. Especially when you start looking at them through the lens of environmental sustainability. This October, we brought these conversations...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "2a603da5a473",
+   "title": "CVE-2026-119075: The Registration Form for WooCommerce plugin for WordPress is vulnerable to privilege escalation due to a…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119075",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T12:17:44.033000+00:00",
+   "summary": "The Registration Form for WooCommerce plugin for WordPress is vulnerable to privilege escalation due to a missing allow-list check in the FormHandler::validate_checkout_fields() function in versions up to, and including, 1.1.4 The My Account registration path (validate_fields()) validates a submitted…",
+   "kind": "cve",
+   "cve": "CVE-2026-119075",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-119075",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "7c96844eab5d",
+   "title": "CVE-2026-118066: The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118066",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T12:17:43.717000+00:00",
+   "summary": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to Authentication Bypass via Account Takeover in all versions up to, and including, 5.7.6.",
+   "kind": "cve",
+   "cve": "CVE-2026-118066",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118066",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "6c19087c875d",
+   "title": "CVE-2026-104014: The Naimur Email OTP Verification for WooCommerce plugin for WordPress is vulnerable to authentication bypass…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104014",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-07T12:17:41.313000+00:00",
+   "summary": "The Naimur Email OTP Verification for WooCommerce plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.1.0. This is due to the plugin's password-reset finalization endpoint (the wp_ajax_nopriv_ceovw_update_new_password action handled by CEOVW_AJAX::update_new_password())…",
+   "kind": "cve",
+   "cve": "CVE-2026-104014",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-104014",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "86443fd096ce",
+   "title": "Storm-3358 Uses AI Tool ARTEX to Exploit Flaws at Southeast Asian Financial Institutions",
+   "url": "https://joho-todai.com/en/storm-3358-exploits-southeast-asia-banks-artex-ai/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-07T12:10:26+00:00",
+   "summary": "Storm-3358, a financially motivated group based in Cambodia, used the AI penetration testing tool ARTEX to attack public-facing systems at financial institutions. The group exploited unauthenticated file uploads and SSRF flaws and installed remote-control tools on compromised systems.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "AI",
+    "Pen testing & red team",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "e5aef9f3699a",
+   "title": "Kmorph Aims To Provide Rebootless Linux Kernel Crash Recovery",
+   "url": "https://www.phoronix.com/news/Kmorph-Linux-Crash-Recovery",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-07T12:05:00+00:00",
+   "summary": "Kmorph aims to provide reboot-less kernel crash recovery for Linux systems and can yield as little as ~2 second downtime for recovering the Nginx web server or other important services in the case of a kernel crash...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ee275fb5b913",
+   "title": "The Hidden Microcontroller Inside a LoRa chip",
+   "url": "https://hackaday.com/2026/11/07/the-hidden-microcontroller-inside-a-lora-chip/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-07T12:00:34+00:00",
+   "summary": "If you’ve ever done anything with LoRa, the chances are you’ve used a LoRa chip or module as a peripheral for a microcontroller, and left it at that. But that’s …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c1395cf60132",
+   "title": "Gotta buy ’em all: how Pokémon card collecting became race against scalpers",
+   "url": "https://www.theguardian.com/games/2026/nov/07/gotta-buy-em-all-how-pokemon-card-collecting-became-race-against-scalpers",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-07T12:00:11+00:00",
+   "summary": "Fans trying to access latest releases are being priced out in a cut-throat market driven by crypto-like hype The runaway demand for Pokemon cards is because they are being hyped “like crypto”, according to one young fan who had spent the night queueing outside a London store to make sure he did not miss out on the…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d909ae271e19",
+   "title": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
+   "url": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-07T12:00:01+00:00",
+   "summary": "Lawsuits against Snap, Meta and Google are creating headwinds for tech companies just as artificial intelligence tools expand into classrooms.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "c23eab7af574",
    "title": "Nasscom President Rajesh Nambiar warns AI could make it harder for fresh Indian engineering graduates to find jobs, urging an immediate CS curriculum overhaul (Sayan Chakraborty/Nikkei Asia)",
@@ -1620,6 +1775,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Networking"
+   ]
+  },
+  {
+   "id": "f9f42d3a6e9f",
+   "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+   "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T11:11:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -1904,6 +2072,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "81e98a9f5568",
+   "title": "Running a law firm on Free software",
+   "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T09:39:06+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
@@ -3490,6 +3671,60 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "486510a7b133",
+   "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
+   "url": "https://www.postgresql.org/about/news/agensgraph-218-released-graph-database-on-postgresql-18-with-expanded-iso-gql-support-3437/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-07T00:00:00+00:00",
+   "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and graph queries over the same data, in the same transaction and even in the same statement.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "72c49227cf4c",
+   "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
+   "url": "https://www.postgresql.org/about/news/brume-fk-safe-pseudonymization-for-postgresql-test-and-debug-copies-3434/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-07T00:00:00+00:00",
+   "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume?",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Databases"
+   ]
+  },
+  {
+   "id": "8b6106d999bf",
+   "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
+   "url": "https://www.postgresql.org/about/news/heapdeck-an-on-call-monitor-for-postgresql-on-iphone-and-ipad-3436/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-07T00:00:00+00:00",
+   "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() with the root blocker on top and counts the sessions that stopping it would free.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "7e4628829ab8",
+   "title": "PG Observability Map 1.0.0 Released",
+   "url": "https://www.postgresql.org/about/news/pg-observability-map-100-released-3427/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-07T00:00:00+00:00",
+   "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Features & Highlights: Interactive visual mapping of PostgreSQL system views, functions, and statistics.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "DevOps & SRE"
    ]
   },
   {
