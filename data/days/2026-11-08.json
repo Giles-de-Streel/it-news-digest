@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T22:00:48+00:00",
+ "generated": "2026-11-08T22:30:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 36,
-   "recent": 36,
+   "fetched": 34,
+   "recent": 34,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 13,
+   "fetched": 11,
    "recent": 2,
    "error": null
   },
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1529,9 +1529,9 @@
   },
   {
    "source": "Apple security releases",
-   "fetched": 268,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011)>"
   },
   {
    "source": "CNBC Technology",
@@ -1559,6 +1559,19 @@
   }
  ],
  "items": [
+  {
+   "id": "6964c43b4ad4",
+   "title": "When a language’s creator and its owners strongly disagree: C++26 post-DIS, historical experience, and paths forward",
+   "url": "https://isocpp.org/files/papers/P4454R0.pdf",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-08T21:59:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
   {
    "id": "682d2c3eebe8",
    "title": "CachyOS Now Supports Windows Subsystem for Linux, Microsoft Confirms",
@@ -1594,7 +1607,14 @@
    "source_category": "IT industry",
    "published": "2026-11-08T21:50:38+00:00",
    "summary": "Here is the text of a staff email from Huang obtained by CNBC and a statement released Sunday about the investigation from Nvidia's board of directors.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a24fdfddefa6",
+     "source": "Hacker News",
+     "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+     "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
