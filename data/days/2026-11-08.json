@@ -1,12 +1,12 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T12:00:57+00:00",
+ "generated": "2026-11-08T12:30:50+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 35,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1560,6 +1560,89 @@
  ],
  "items": [
   {
+   "id": "a0fe3db19f83",
+   "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI",
+   "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-08T12:30:00+00:00",
+   "summary": "Back in July with v2.2, we added support for Windows guests. On November 6, we shipped v2.3 of Lima and now it runs without extra dependencies on Windows: VMs start through the same Host Compute System...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "53ce0490ddeb",
+   "title": "Linux 7.5 To Provide More AMD Ryzen AI NPU AIE4 Enablement",
+   "url": "https://www.phoronix.com/news/Linux-7.5-RK3568-AMD-AIE4",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-08T12:22:24+00:00",
+   "summary": "Even before the Linux v7.4 merge window was over, there were already two pull requests of drm-misc-next material targeting for what will be Linux 7.5. This week already saw the third drm-misc-next pull request of more feature patches targeting this next kernel version...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e8e4da185237",
+   "title": "Homelabber uses second-gen Optane memory sticks to run a 2.8-trillion-parameter AI model on CPU alone",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabber-uses-second-gen-optane-memory-sticks-to-run-a-2-8-trillion-parameter-ai-model-on-cpu-alone-warns-that-optanes-extreme-heat-can-burn-out-nearby-memory-dram-used-blower-fans-to-prevent-melting-ram",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-08T12:20:00+00:00",
+   "summary": "A Reddit homelab user ran Moonshot AI’s 2.8-trillion-parameter Kimi K3 CPU-only on Optane PMem 200 at 0.85 tokens/s with a 1-bit quant.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "9cd2380ca8d4",
+   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+   "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-08T12:14:00+00:00",
+   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a8eb506b1150",
+   "title": "NetBSD 11 desktop on a Raspberry Pi 4",
+   "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-08T12:07:39+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "d9a5872b21f0",
+   "title": "Pocket-sized Ukrainian receiver intercepts Russian strike drone video feeds up to six miles away",
+   "url": "https://www.tomshardware.com/tech-industry/drones/pocket-sized-ukrainian-receiver-intercepts-russian-strike-drone-video-feeds-up-to-six-miles-away-device-only-slightly-heavier-than-a-smartphone-intercepts-analog-video-signals-sent-to-russian-operators",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-08T12:00:00+00:00",
+   "summary": "The D·Vision SDR can intercept signals from 500 MHz to 8.7 GHz, covering the 4.1-4.5 GHz spectrum that Russian Molniya strike drones use to communicate with their operators.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "105ba3422987",
    "title": "AMD PerfOpt Performance Boosting Code Tweaked For Linux 7.4-rc2",
    "url": "https://www.phoronix.com/news/AMD-PerfOpt-Tweaks-Linux-7.4",
@@ -1598,6 +1681,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "eaeb54c30637",
+   "title": "Vadim Yatsenko: The Server-First Reader Pool: Exact Connection Reuse and Hot-Path Performance",
+   "url": "https://postgr.es/p/9Bi",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-08T11:30:00+00:00",
+   "summary": "Once a proxy decides which replica should serve a read, it still has to find or create a connection to that replica. This article is about how Polar Proxy organizes its reader connection pool and trims the hot path so that connection handling stops competing with the actual work of answering queries.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
