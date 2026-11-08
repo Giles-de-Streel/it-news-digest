@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T18:30:54+00:00",
+ "generated": "2026-11-08T19:00:52+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -1361,14 +1361,14 @@
   },
   {
    "source": "Fedora Magazine",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 35,
-   "recent": 12,
+   "recent": 10,
    "error": null
   },
   {
@@ -1560,6 +1560,48 @@
  ],
  "items": [
   {
+   "id": "71601bc25d39",
+   "title": "Dropbox Buys Tigris Data for About $350M and Launches DBX Agent Cloud, S3-Compatible Object Storage for AI Agents",
+   "url": "https://www.storagereview.com/news/dropbox-tigris-data-acquisition-350m-dbx-agent-cloud",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-08T18:58:34+00:00",
+   "summary": "Dropbox is buying Tigris Data, a globally distributed S3-compatible object storage provider founded by former Uber engineers, for about $350 million in cash, and is using the deal to launch DBX Agent Cloud, a storage and data infrastructure service for AI applications and agents.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "81de084110f1",
+   "title": "Extension Manager 0.7 released with new (and fixed) features",
+   "url": "https://www.omgubuntu.co.uk/2026/11/gnome-extension-manager-0-7-released",
+   "source": "OMG! Ubuntu",
+   "source_category": "Linux admin",
+   "published": "2026-11-08T18:45:20+00:00",
+   "summary": "A new version of Extension Manager, the desktop app that makes it easier to browse, install and manage GNOME Shell extension without a web browser, has been released.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c9d4a49c994b",
+   "title": "Claude Code's 'Don't Ask Again' File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+   "url": "https://it.slashdot.org/story/26/11/08/1758242/claude-codes-dont-ask-again-file-exposes-passwords-and-keys-in-1122-public-copies-on-github?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-08T18:34:00+00:00",
+   "summary": "Be careful with the file .claude/settings.local.json, warns The Hacker News: Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "2135a139a797",
    "title": "How to prove equations using diagrams, part 3",
    "url": "https://www.epatters.org/post/e-graphs-3/",
@@ -1629,6 +1671,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "a78801b83036",
+   "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T18:16:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1755,6 +1810,19 @@
     "Vulnerabilities & patches",
     "Cloud & infrastructure",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "94ffbccc03ec",
+   "title": "A Little Snitch for Windows",
+   "url": "https://packethound.app/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T17:16:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -2051,6 +2119,19 @@
    "also_covered_by": [],
    "topics": [
     "ICS / OT"
+   ]
+  },
+  {
+   "id": "572c9f379433",
+   "title": "UK House of Lords to propose mandatory CSAM detection software on smartphones",
+   "url": "https://observer.co.uk/news/national/article/fight-to-block-child-sexual-abuse-images-unites-peers-and-mps-in-cross-party-campaign",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T15:57:37+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
