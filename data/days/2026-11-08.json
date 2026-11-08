@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T19:00:52+00:00",
+ "generated": "2026-11-08T19:30:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 35,
-   "recent": 35,
+   "fetched": 38,
+   "recent": 38,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -1560,6 +1560,59 @@
  ],
  "items": [
   {
+   "id": "b18b43a7c102",
+   "title": "CVE-2026-6715: IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6715",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T19:17:39.980000+00:00",
+   "summary": "IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization.",
+   "kind": "cve",
+   "cve": "CVE-2026-6715",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-6715",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e1af87c3c931",
+   "title": "Smartbird Adds Supermicro DCBBS Racks to Its Managed Single-Tenant AI Clusters, Two Weeks After WEKA",
+   "url": "https://www.storagereview.com/news/smartbird-supermicro-dcbbs-managed-single-tenant-ai-clusters",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-08T19:07:39+00:00",
+   "summary": "Smartbird, the managed AI infrastructure company that launched in June and trades on Nasdaq as BIRD, has added Supermicro to its partner network. The two will deliver dedicated, single-tenant AI clusters built from Supermicro’s Data Center Building Block Solutions and rack-scale systems, with Smartbird handling…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a0367e42557b",
+   "title": "THORChain, which handled ~$1B of stolen Bybit funds in 2025 for $12M+ in fees, began moving the Binance loot despite FBI pleas, saying it can't stop transfers (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261108/p11#a261108p11",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-08T19:00:33+00:00",
+   "summary": "Wall Street Journal : THORChain, which handled ~$1B of stolen Bybit funds in 2025 for $12M+ in fees, began moving the Binance loot despite FBI pleas, saying it can't stop transfers — Some crypto developers say they can't stop North Korean hackers from laundering stolen funds through their platforms, frustrating law…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Development",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "71601bc25d39",
    "title": "Dropbox Buys Tigris Data for About $350M and Launches DBX Agent Cloud, S3-Compatible Object Storage for AI Agents",
    "url": "https://www.storagereview.com/news/dropbox-tigris-data-acquisition-350m-dbx-agent-cloud",
@@ -1584,6 +1637,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d8ba3532e1ff",
+   "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+   "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T18:43:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3728,6 +3794,69 @@
    "topics": [
     "General IT"
    ]
+  },
+  {
+   "id": "2f20fb0a9e91",
+   "title": "CVE-2026-114432: The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114432",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T06:17:04.807000+00:00",
+   "summary": "The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files uploaded through a form file field, and a flaw in its temporary-file cleanup leaves the uploaded file on disk, allowing unauthenticated users to upload arbitrary files to the site.",
+   "kind": "cve",
+   "cve": "CVE-2026-114432",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-114432",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114432",
+     "score": 0.00215,
+     "percentile": 0.12004,
+     "date": "2026-11-08"
+    }
+   }
+  },
+  {
+   "id": "e93fc130b74a",
+   "title": "CVE-2026-110963: The Userplace WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110963",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T06:17:04.673000+00:00",
+   "summary": "The Userplace WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX action available to unauthenticated users and publicly exposes the nonce that protects it, allowing unauthenticated attackers to create an administrator account or write arbitrary site options, leading to full site takeover.",
+   "kind": "cve",
+   "cve": "CVE-2026-110963",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-110963",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-110963",
+     "score": 0.00137,
+     "percentile": 0.03116,
+     "date": "2026-11-08"
+    }
+   }
   },
   {
    "id": "6c09c36dfb92",
