@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T14:00:48+00:00",
+ "generated": "2026-11-08T14:30:42+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 71,
-   "recent": 71,
+   "fetched": 81,
+   "recent": 81,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 42,
+   "fetched": 41,
    "recent": 2,
    "error": null
   },
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 35,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1560,6 +1560,257 @@
  ],
  "items": [
   {
+   "id": "866acc6653c3",
+   "title": "Nvidia released its 8800 GTX GPU 20 years ago today, celebrates with Steam game homage",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-released-its-8800-gtx-gpu-20-years-ago-today-celebrates-with-steam-game-homage-interactive-demos-eye-watering-minimum-requirements-include-rtx-4070-32gb-ram-and-30gb-storage",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-08T14:20:00+00:00",
+   "summary": "On this day in 2006, Nvidia released the legendary GeForce 8800 GTX graphics card and it is celebrating the event with a very demanding (but free) interactive Steam demo.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "6a851f6f66b4",
+   "title": "CVE-2026-124494: SunEditor before 3.4.0 contains a stored cross-site scripting vulnerability because the html.clean()…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124494",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:19.277000+00:00",
+   "summary": "SunEditor before 3.4.0 contains a stored cross-site scripting vulnerability because the html.clean() sanitizer's _normalizeURL() function decodes named entities like : to an empty string.",
+   "kind": "cve",
+   "cve": "CVE-2026-124494",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124494",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "1476cbeb4404",
+   "title": "CVE-2026-124493: SunEditor before 3.4.0 contains a stored cross-site scripting vulnerability in the DocumentType constructor…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124493",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:19.130000+00:00",
+   "summary": "SunEditor before 3.4.0 contains a stored cross-site scripting vulnerability in the DocumentType constructor that injects header textContent into innerHTML without HTML escaping.",
+   "kind": "cve",
+   "cve": "CVE-2026-124493",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124493",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f7e93af36c95",
+   "title": "CVE-2026-124490: OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument()…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124490",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:18.667000+00:00",
+   "summary": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument() method of oe-module-faxsms that allows authenticated attackers to read and write arbitrary files via the file_path parameter.",
+   "kind": "cve",
+   "cve": "CVE-2026-124490",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124490",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "635d66ca1377",
+   "title": "CVE-2026-124469: OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124469",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:15.130000+00:00",
+   "summary": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService::sellDrug) that interpolates the prod[N][warehouse] POST field into an ORDER BY clause.",
+   "kind": "cve",
+   "cve": "CVE-2026-124469",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124469",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
+  },
+  {
+   "id": "be84af91552b",
+   "title": "CVE-2026-124463: OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability that allows authenticated users…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124463",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:14.167000+00:00",
+   "summary": "OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability that allows authenticated users with CAMOS access to inject HTML by saving malicious CAMOS content through ajax_save.php.",
+   "kind": "cve",
+   "cve": "CVE-2026-124463",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124463",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f2fec7f8ce27",
+   "title": "CVE-2026-124450: OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:12.260000+00:00",
+   "summary": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter.",
+   "kind": "cve",
+   "cve": "CVE-2026-124450",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124450",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "952526f9f569",
+   "title": "CVE-2026-124445: OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124445",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:11.487000+00:00",
+   "summary": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.",
+   "kind": "cve",
+   "cve": "CVE-2026-124445",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124445",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e70dc7ff5c93",
+   "title": "CVE-2026-124440: Kyverno from 1.19.1 before 1.19.2 contains an authorization bypass vulnerability in the apiCall namespace…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124440",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:10.633000+00:00",
+   "summary": "Kyverno from 1.19.1 before 1.19.2 contains an authorization bypass vulnerability in the apiCall namespace clamp that allows namespace tenants to issue cross-namespace and cluster-scoped API requests by appending malformed percent-escapes to urlPath.",
+   "kind": "cve",
+   "cve": "CVE-2026-124440",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124440",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d9d06dff1781",
+   "title": "CVE-2026-124438: Scriban before 7.5.2 contains an information disclosure and object manipulation vulnerability that allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124438",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:10.320000+00:00",
+   "summary": "Scriban before 7.5.2 contains an information disclosure and object manipulation vulnerability that allows template authors to access .NET internals of function values through reflection member accessors.",
+   "kind": "cve",
+   "cve": "CVE-2026-124438",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124438",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "db4f18ca2077",
+   "title": "CVE-2026-124427: Craft CMS from 5.0.0 before 5.11.2 contains an authorization bypass vulnerability that allows anonymous…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124427",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-08T14:18:08.517000+00:00",
+   "summary": "Craft CMS from 5.0.0 before 5.11.2 contains an authorization bypass vulnerability that allows anonymous GraphQL clients to read out-of-scope section entries via prev/next fields.",
+   "kind": "cve",
+   "cve": "CVE-2026-124427",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124427",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "eb3a506a0e30",
+   "title": "Recent AI agent experiments reveal a risky future of machine 'teamwork' inside corporations",
+   "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-08T14:14:11+00:00",
+   "summary": "AI agents are now working together on a regular basis. Research shows they are not always seeking the same goal, or operating with ethics.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "2f8c2fb8ec8e",
    "title": "Linux 7.4 Automates PerfOpt for AMD Integrated GPUs: The Bypass Is Disabled Before Switching to VFIO",
    "url": "https://joho-todai.com/en/linux-74-amd-gpu-perfopt-auto-control-vfio/",
@@ -1574,6 +1825,19 @@
     "Cloud & infrastructure",
     "Hardware",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "9acd1ab7dbab",
+   "title": "Security Affairs newsletter Round 603 by Pierluigi Paganini – INTERNATIONAL EDITION",
+   "url": "https://securityaffairs.com/202649/security/security-affairs-newsletter-round-603-by-pierluigi-paganini-international-edition.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-08T13:48:43+00:00",
+   "summary": "A new round of the weekly Security Affairs newsletter has arrived! Every week, the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including international press.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2178,6 +2442,19 @@
    "also_covered_by": [],
    "topics": [
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "89f365ccf93a",
+   "title": "Writing as a Thinking Tool",
+   "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T10:41:52+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
