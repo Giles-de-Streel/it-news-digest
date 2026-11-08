@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-08T13:30:50+00:00",
+ "generated": "2026-11-08T14:00:48+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 44,
+   "fetched": 42,
    "recent": 2,
    "error": null
   },
@@ -906,7 +906,7 @@
   {
    "source": "Inside Java",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1560,6 +1560,64 @@
  ],
  "items": [
   {
+   "id": "2f8c2fb8ec8e",
+   "title": "Linux 7.4 Automates PerfOpt for AMD Integrated GPUs: The Bypass Is Disabled Before Switching to VFIO",
+   "url": "https://joho-todai.com/en/linux-74-amd-gpu-perfopt-auto-control-vfio/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-08T13:50:20+00:00",
+   "summary": "A Linux 7.4 patch moves control of PerfOpt, which speeds up memory access on AMD integrated GPUs, to the IOMMU driver. The driver enables it when a supported GPU joins the default identity domain and disables it before switching to another domain, such as one used for virtualization.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Hardware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ee3f25fff803",
+   "title": "Open-source GPU task manager reveals exactly what's eating your VRAM",
+   "url": "https://www.tomshardware.com/pc-components/gpus/open-source-gpu-task-manager-reveals-exactly-whats-eating-your-vram-microsoft-vps-new-gpu-taskman-tool-reveals-every-process-using-your-gpu-how-much-memory-each-uses-and-breaks-down-ai-and-llm-workloads",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-08T13:40:00+00:00",
+   "summary": "A new open-source GitHub project called gputaskman has been released by Microsoft VP Scott Hanselman.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "e1a270b3673d",
+   "title": "7 Days: Xbox inside alligator, freezers aren't safe, and Edits on desktop",
+   "url": "https://www.neowin.net/news/7-days-xbox-inside-alligator-freezers-arent-safe-and-edits-on-desktop/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-08T13:38:01+00:00",
+   "summary": "Our '7 Days' weekly tech roundup brings the juiciest announcements. Read about the Xbox insider an alligator, freezers getting hacked, and new editing app.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "d0e5f1c574b5",
+   "title": "ROG Ally Driver V32.0.31007.6002 Reportedly Disappears From Download Listings: Japan Also Lists March Version",
+   "url": "https://joho-todai.com/en/rog-ally-firmware-v32-removed-reports/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-08T13:32:59+00:00",
+   "summary": "GPU driver V32.0.31007.6002, which ASUS recommended to an ROG Ally user experiencing issues, reportedly disappeared from the U.S. download listings. On November 8, ASUS's official Japanese and U.S. pages for the ROG Ally and ROG Ally X listed the March version.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "5b7d4e822daa",
    "title": "Following breadcrumbs in code - What accidentally committed Ad-Hoc logs reveal about developer comprehension",
    "url": "https://link.springer.com/article/10.1007/s10664-026-10988-z",
@@ -1693,6 +1751,19 @@
    "topics": [
     "Networking",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "5eda8bfdebdf",
+   "title": "RAM-Altman: a bash script that emails Sam Altman about your unused RAM",
+   "url": "https://ram-altman.lol/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-08T12:42:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "System administration"
    ]
   },
   {
@@ -2683,6 +2754,20 @@
    "topics": [
     "Hardware",
     "Databases"
+   ]
+  },
+  {
+   "id": "08c98f9340b9",
+   "title": "Java and the Next Generation of Programming Models",
+   "url": "https://inside.java/2026/11/08/devoxxbelgium-java-next-programming-models/",
+   "source": "Inside Java",
+   "source_category": "Java & web servers",
+   "published": "2026-11-08T00:00:00+00:00",
+   "summary": "Modern software increasingly interacts with AI models, query languages, and other specialized programming models, forcing you to switch contexts, embed foreign code, or write verbose wrappers to bridge the gap. What if you could express logic from outside the JVM directly in Java?",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
    ]
   },
   {
