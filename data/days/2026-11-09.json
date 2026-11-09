@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T08:00:48+00:00",
+ "generated": "2026-11-09T08:30:49+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 28,
-   "recent": 28,
+   "fetched": 30,
+   "recent": 30,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 31,
-   "recent": 23,
+   "fetched": 32,
+   "recent": 24,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 1,
+   "recent": 3,
    "error": null
   },
   {
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1559,6 +1559,176 @@
   }
  ],
  "items": [
+  {
+   "id": "9b84aec2931c",
+   "title": "7 tips for achieving defensive agility",
+   "url": "https://www.csoonline.com/article/4240628/7-tips-for-achieving-defensive-agility.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-09T08:25:00+00:00",
+   "summary": "Defensive security agility reflects an organization’s potential to rapidly detect, adapt, and respond to evolving cyber threats and vulnerabilities without disrupting core operations.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "5cc0936c5dc3",
+   "title": "CISA proposes continuing CASM database for nationwide emergency communications planning, coordination",
+   "url": "https://industrialcyber.co/cisa/cisa-proposes-continuing-casm-database-for-nationwide-emergency-communications-planning-coordination/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-09T08:18:44+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) submitted an extension of its Communications Assets Survey and Mapping...",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "4bf2063b1245",
+   "title": "ISA and PHM Society partner on industrial automation and prognostics standards development",
+   "url": "https://industrialcyber.co/news/isa-and-phm-society-partner-on-industrial-automation-and-prognostics-standards-development/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-09T08:17:53+00:00",
+   "summary": "The International Society of Automation (ISA), a professional society for automation and the Prognostics and Health Management (PHM)...",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "96769ee0778f",
+   "title": "CVE-2026-124580: A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124580",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T08:17:02.923000+00:00",
+   "summary": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the component Weixin Auth Endpoint. The manipulation of the argument extend results in os command injection.",
+   "kind": "cve",
+   "cve": "CVE-2026-124580",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124580",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "65cfc12fbe56",
+   "title": "CVE-2026-124577: A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124577",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T08:17:02.350000+00:00",
+   "summary": "A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72. The affected element is an unknown function of the file /EXCU_SHELL of the component Web Management Interface. Executing a manipulation can lead to improper authentication. The attack can be launched remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-124577",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124577",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "eb3c71176de5",
+   "title": "Fake GitHub Security Tools Infect Over 2,000 PCs With Malware",
+   "url": "https://securityaffairs.com/202717/malware/fake-github-security-tools-infect-over-2000-pcs-with-malware.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-09T08:07:39+00:00",
+   "summary": "Fake GitHub security tools are spreading malware that disables defenses, steals sensitive data and infects over 2,000 PCs. Cybersecurity firm Doctor Web has found malware hidden in GitHub projects that look like security tools.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Development"
+   ]
+  },
+  {
+   "id": "1c1be1d813fb",
+   "title": "Beyond the Version Bump: Running PostgreSQL Major Upgrades in Percona Operator for PostgreSQL",
+   "url": "https://www.percona.com/blog/beyond-the-version-bump-running-postgresql-major-upgrades-in-percona-operator-for-postgresql/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-09T08:06:54+00:00",
+   "summary": "It was quite challenging to perform postgres major upgrade, e.g., v17 to v18, in a Percona operator/K8s environment. There was no convenient approach to accomplish this task. The only viable solutions left were a Manual Dump/Restore to a new environment or using Logical replication.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "Backup & recovery",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "542ac94a8129",
+   "title": "VZMore iX9 Max review",
+   "url": "https://www.itpro.com/hardware/desktops/vzmore-ix9-max-review-a-powerful-and-impressive-debut-mini-pc",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-09T08:05:50+00:00",
+   "summary": "The name may be new, but the iX9 is a quality item with strong performance, impressive refinement, and a good selection of ports",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4973389fd656",
+   "title": "RHSA-2026:96206: Important: gd security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96206",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T08:02:43+00:00",
+   "summary": "An update for gd is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "4da17d4d6362",
+   "title": "A week in security (November 2 – November 8)",
+   "url": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-09T08:01:00+00:00",
+   "summary": "A list of topics we covered in the week of November 2 to November 8 of 2026",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8585b0543ed2",
+   "title": "SparkFun IoT RedBoard ESP32-P4 – Arduino UNO-like ESP32-P4 v3.x development boards with WiFi 6 or PoE options",
+   "url": "https://www.cnx-software.com/2026/11/09/sparkfun-iot-redboard-esp32-p4-arduino-uno-like-esp32-p4-v3-x-development-boards-with-wifi-6-or-poe-options/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-09T08:00:07+00:00",
+   "summary": "SparkFun introduced two new development boards called IoT RedBoard, both based on the ESP32-P4 v3.x (ESP32-P4X) and compatible with the Arduino UNO R3 form factor.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT",
+    "Networking"
+   ]
+  },
   {
    "id": "fef139232750",
    "title": "Dev error bricked 600 PCs, caused $1M CD-ROM write-off",
