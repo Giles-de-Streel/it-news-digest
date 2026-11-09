@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T22:31:26+00:00",
+ "generated": "2026-11-09T23:01:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 20,
+   "recent": 0,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 46,
-   "recent": 44,
+   "fetched": 48,
+   "recent": 46,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1325,8 +1325,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 39,
-   "recent": 1,
+   "fetched": 40,
+   "recent": 2,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -1560,6 +1560,102 @@
  ],
  "items": [
   {
+   "id": "a59093a6cc81",
+   "title": "Contact Form 7 Flaw CVE-2026-114432 Scores 9.8 and Allows Unauthenticated File Uploads: Fix Affects Office Attachments",
+   "url": "https://joho-todai.com/en/contact-form-7-critical-vulnerability-arbitrary-file-upload/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-09T22:42:37+00:00",
+   "summary": "Versions 6.2 through 6.2.3 of the Contact Form 7 WordPress plugin allow unauthenticated users to save arbitrary files. Version 6.2.4 fixes the flaw with an extension safelist that also changes the filenames of Office attachments.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-114432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "CISA-ADP"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114432",
+     "score": 0.00215,
+     "percentile": 0.12004,
+     "date": "2026-11-08"
+    }
+   }
+  },
+  {
+   "id": "60d914c7c757",
+   "title": "CVE-2026-124034, CVE-2026-124035: Issues with Amazon Braket SDK",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T22:42:12+00:00",
+   "summary": "Bulletin ID: 2026-175-AWS Publication Date: 11/09/2026 14:15 PM PST Description: Amazon Braket SDK is an open source Python library that customers use to run quantum tasks and hybrid jobs on Amazon Braket. We identified CVE-2026-124034, an issue in the local hybrid job input data download in the Amazon Braket SDK.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Development"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-124035",
+     "score": 7.5,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    },
+    {
+     "id": "CVE-2026-124034",
+     "score": 6.4,
+     "severity": "Medium",
+     "version": "3.1",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "286e08f0d081",
+   "title": "Trump says the FBI is \"looking into\" Jensen Huang's affair, and the Nvidia CEO told him he \"had absolutely no idea that the person in question was a spy\" (Associated Press)",
+   "url": "https://www.techmeme.com/261109/p44#a261109p44",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T22:40:01+00:00",
+   "summary": "Associated Press : Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy” — President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+   "also_covered_by": [
+    {
+     "id": "2eeebfe27c6a",
+     "source": "BBC Technology",
+     "title": "Trump says Nvidia boss told him he had no idea woman he had affair with was Chinese spy",
+     "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
+    }
+   ],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bdf036870cf0",
+   "title": "Docker has always used microVMs (well, since 2016)",
+   "url": "https://dave.recoil.org/docker-has-always-used-microvms/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-09T22:29:01+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "e2cf7b8246e4",
    "title": "Microsoft wants to work directly with customers to make Windows Server better with TAP",
    "url": "https://www.neowin.net/news/microsoft-wants-to-work-directly-with-customers-to-make-windows-server-better-with-tap/?utm_source=rss",
@@ -1571,6 +1667,19 @@
    "topics": [
     "Microsoft & Windows",
     "System administration"
+   ]
+  },
+  {
+   "id": "7d448a8186e9",
+   "title": "A year after the 100% AI mandate nobody understands our code",
+   "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-09T22:19:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2824,6 +2933,18 @@
      "source": "Hacker News",
      "title": "Claude Fable 5.2 and Mythos 5.2",
      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+     "id": "d682f4261a8a",
+     "source": "AskWoody",
+     "title": "Copilot — at GitHub",
+     "url": "https://www.askwoody.com/2026/copilot-at-github/"
+    },
+    {
+     "id": "773234e7b2ac",
+     "source": "GitHub Changelog",
+     "title": "Claude Fable 5.2 in GitHub Copilot",
+     "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot"
     }
    ],
    "topics": [
@@ -3714,6 +3835,22 @@
    ]
   },
   {
+   "id": "a4815d86cefa",
+   "title": "RHSA-2026:96229: Important: Red Hat JBoss Web Server 6.2.6 release and security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96229",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T17:31:57+00:00",
+   "summary": "Red Hat JBoss Web Server 6.2.6 zip release is now available for Red Hat Enterprise Linux 8, Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10, and Windows Server. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
    "id": "8acbceff94a3",
    "title": "[In preview] Public Preview: Modernize Arc-enabled Windows Servers with Azure File Sync",
    "url": "https://azure.microsoft.com/updates?id=579854",
@@ -3808,6 +3945,21 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "6164ad40d395",
+   "title": "RHSA-2026:95507: Important: OpenShift Container Platform 4.14.78 packages and security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:95507",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T17:16:25+00:00",
+   "summary": "Red Hat OpenShift Container Platform release 4.14.78 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 4.14.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
    ]
   },
   {
@@ -5439,6 +5591,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "f28a9eecdae9",
+   "title": "Claude Fable 5.2 is now available on AWS",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-09T15:00:00+00:00",
+   "summary": "Claude Fable 5.2 is now available on AWS and brings Anthropic's most capable generally available model for technical work to all customers. Fable 5.2 sets a new standard on the hardest projects in coding, math, and science, and Anthropic recommends it for fields like software engineering, scientific research, and…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Development"
    ]
   },
   {
