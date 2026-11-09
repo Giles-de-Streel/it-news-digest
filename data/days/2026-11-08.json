@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-09T03:31:03+00:00",
+ "generated": "2026-11-09T04:00:58+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
   },
   {
    "source": "SANS ISC",
@@ -180,7 +180,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -684,7 +684,7 @@
   {
    "source": "Risky Business News",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -990,7 +990,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1560,6 +1560,34 @@
  ],
  "items": [
   {
+   "id": "7f9b67c77aca",
+   "title": "Refrigeration cyberattacks spoil food across Europe as US agencies warn of risks",
+   "url": "https://4sysops.com/archives/refrigeration-cyberattacks-spoil-food-across-europe-as-us-agencies-warn-of-risks/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-09T03:35:35+00:00",
+   "summary": "A new wave of refrigeration cyberattacks has disrupted European supermarkets, with attackers changing temperature settings and forcing some stores to discard food. The incidents follow similar attacks in France, while US agencies have warned that systems protecting food and medicine are also at risk. Source",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "54dceb789a5d",
+   "title": "Risky Bulletin: Pro-Kremlin hacktivists dox EU politicians, law enforcement",
+   "url": "https://news.risky.biz/risky-bulletin-pro-kremlin-hacktivists-dox-eu-politicians-law-enforcement/",
+   "source": "Risky Business News",
+   "source_category": "Security",
+   "published": "2026-11-09T03:33:48+00:00",
+   "summary": "In other news: US arrests an AI deepfake gang; SonicWall patches a zero-day; SSHhole is now being exploited in the wild.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "09cec902885f",
    "title": "Metrics That Matter: Are We Becoming Harder to Attack?",
    "url": "https://horizon3.ai/intelligence/infographics/ctem-metrics-that-matter/",
@@ -1592,6 +1620,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "ffa752f0df2f",
+   "title": "The Qlobe: Rotating Quine (2010)",
+   "url": "http://mamememo.blogspot.com/2010/09/qlobe.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-09T03:15:17+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2139,6 +2180,19 @@
    ]
   },
   {
+   "id": "71c1c0564dec",
+   "title": "Maki Majima: Two migrations collide: one loud failure, one silent one",
+   "url": "https://postgr.es/p/9Bm",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-09T00:00:00+00:00",
+   "summary": "In the previous post I argued that migrations don’t earn Git’s protections by being made of files: two incompatible schema changes live in two separate migration files, so there is nothing to textually conflict, and both branches merge clean. The repository accepts the pair without comment.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
    "id": "a3d37dc69334",
    "title": "Slax Linux Is Back with a Revamped Desktop, New Tools, and More",
    "url": "https://9to5linux.com/slax-linux-is-back-with-a-revamped-desktop-new-tools-and-more",
@@ -2494,6 +2548,30 @@
      "source": "Tom's Hardware",
      "title": "Nvidia CEO Jensen Huang admits to having an affair with suspected Chinese spy",
      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-ceo-jensen-huang-admits-to-having-an-affair-with-suspected-chinese-spy-jensen-apologizes-in-letter-to-staff-company-board-forms-independent-committee-to-investigate"
+    },
+    {
+     "id": "95cc1c081807",
+     "source": "SiliconANGLE",
+     "title": "Nvidia CEO Jensen Huang admits to having extramarital affair with suspected Chinese spy",
+     "url": "https://siliconangle.com/2026/11/08/nvidia-ceo-jensen-huang-admits-to-having-extramarital-affair-with-suspected-chinese-spy/"
+    },
+    {
+     "id": "5fbec8f0d9e1",
+     "source": "Joho no Todai (English)",
+     "title": "NVIDIA CEO Huang Admits Affair as Board Opens Independent Investigation: Rubio Oversaw the Memo",
+     "url": "https://joho-todai.com/en/nvidia-ceo-affair-board-investigation/"
+    },
+    {
+     "id": "1bfb49a33e59",
+     "source": "The Register",
+     "title": "Nvidia CEO Jensen Huang starring in possible remake of The Spy Who Shagged Me",
+     "url": "https://www.theregister.com/legal/2026/11/09/nvidia-ceo-jensen-huang-starring-in-possible-remake-of-the-spy-who-shagged-me/5308327"
+    },
+    {
+     "id": "d48b7b6a33e6",
+     "source": "Data Center Dynamics",
+     "title": "Nvidia CEO Jensen Huang admits affair with alleged Chinese spy, board to investigate",
+     "url": "https://www.datacenterdynamics.com/en/news/nvidia-ceo-jensen-huang-admits-affair-with-alleged-chinese-spy-board-to-investigate/"
     }
    ],
    "topics": [
@@ -3235,7 +3313,14 @@
    "source_category": "IT industry",
    "published": "2026-11-08T16:08:16+00:00",
    "summary": "A bug in AMD's GPU driver causes atieclxx.exe to write continuously to SSDs at 0.7–5 MB/s. The issue appears to have resurfaced in the GPU driver a year after a fix in the chipset driver, and the official fix is expected in Adrenalin 26.11.1, due in November.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "bd360441b729",
+     "source": "4sysops",
+     "title": "AMD tests Radeon driver fix for constant SSD writes on Windows",
+     "url": "https://4sysops.com/archives/amd-tests-radeon-driver-fix-for-constant-ssd-writes-on-windows/"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -4164,7 +4249,14 @@
    "source_category": "Development",
    "published": "2026-11-08T12:53:34+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "928dacff669b",
+     "source": "Hacker News",
+     "title": "A Bit about Email",
+     "url": "https://maurycyz.com/misc/email/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
