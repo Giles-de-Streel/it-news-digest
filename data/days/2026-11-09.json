@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T06:30:50+00:00",
+ "generated": "2026-11-09T07:00:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -216,13 +216,13 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1002,7 +1002,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1248,7 +1248,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1560,6 +1560,75 @@
  ],
  "items": [
   {
+   "id": "4f24b9c339df",
+   "title": "Entra ID Previews Hard Deletion Protection",
+   "url": "https://office365itpros.com/2026/11/09/hard-deletion-protection/?utm_source=rss&utm_medium=rss&utm_campaign=hard-deletion-protection",
+   "source": "Office 365 for IT Pros",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-09T07:00:00+00:00",
+   "summary": "Entra ID Hard Deletion Protection is a new feature to prevent the hard deletion of directory objects like user accounts for 7 days after their soft deletion. The feature works by updating the isHardDeleteProtectionEnabled property for objects.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "53d4a4a12968",
+   "title": "DeepX Tapes Out Second-Gen Chip, Projects 6.7× Performance Gain With LPDDR5x-PIM",
+   "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-09T06:47:26+00:00",
+   "summary": "DeepX is targeting edge markets including robotics with its second-generation AI accelerator, which can run large LLMs on device in under 5 W.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3667437557d6",
+   "title": "How Much Energy Does Building Distro Packages Use",
+   "url": "https://www.wezm.net/v2/posts/2026/distro-energy-use/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-09T06:44:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a7b3a7b96945",
+   "title": "Tokio Releases Topcoat: A Batteries-Included Full-Stack Rust Framework",
+   "url": "https://www.infoq.com/news/2026/11/topcoat-rust-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-09T06:42:00+00:00",
+   "summary": "Topcoat is an open-source, server-rendered full-stack web framework for Rust from the Tokio team, now public at version 0.9. It uses Rust expressions translated to JavaScript for reactivity instead of WebAssembly. It targets typical database-driven apps.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Databases"
+   ]
+  },
+  {
+   "id": "1491f71e6031",
+   "title": "Google rolls out a Googlebook update that frees up 3GB-6GB of RAM via on-device AI optimizations, reduces Chrome crashes, patches ~60 Android flaws, and more (Jay Bonggolto/Android Central)",
+   "url": "https://www.techmeme.com/261109/p4#a261109p4",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T06:35:00+00:00",
+   "summary": "Jay Bonggolto / Android Central : Google rolls out a Googlebook update that frees up 3GB-6GB of RAM via on-device AI optimizations, reduces Chrome crashes, patches ~60 Android flaws, and more — Google's latest Googlebook update frees up to 6GB of RAM and fixes Chrome crashes.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
    "id": "17ccfecd6557",
    "title": "Microsecond accurate NTP with a Raspberry Pi and PPS GPS(2021)",
    "url": "https://austinsnerdythings.com/2021/04/19/microsecond-accurate-ntp-with-a-raspberry-pi-and-pps-gps/",
@@ -1583,6 +1652,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "df6a1e5a88d8",
+   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-09T06:15:10+00:00",
+   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Policy & regulation"
    ]
   },
   {
@@ -1877,6 +1960,19 @@
     "Vulnerabilities & patches",
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "285f83056600",
+   "title": "Show HN: Flide: Make Jev-like decision models up to 9.5x faster",
+   "url": "https://github.com/OmniJev/Flide",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-09T04:43:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
