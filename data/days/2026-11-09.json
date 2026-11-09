@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T21:31:03+00:00",
+ "generated": "2026-11-09T22:01:39+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -54,13 +54,13 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -168,14 +168,14 @@
   {
    "source": "ServeTheHome",
    "fetched": 6,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "The Next Platform",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 87,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "Data Center Dynamics",
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 20,
+   "recent": 0,
    "error": null
   },
   {
@@ -624,7 +624,7 @@
   {
    "source": "Cisco PSIRT",
    "fetched": 50,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -810,13 +810,13 @@
   {
    "source": "Virtualization Review",
    "fetched": 60,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "William Lam (VMware)",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1370,
-   "recent": 2,
+   "fetched": 1372,
+   "recent": 4,
    "error": null
   },
   {
@@ -1560,6 +1560,89 @@
  ],
  "items": [
   {
+   "id": "ddef3dd75700",
+   "title": "U.S. urges critical infrastructure orgs to secure refrigeration systems ASAP after EU supermarket and blood bank attacks",
+   "url": "https://www.tenable.com/blog/u-s-urges-critical-infrastructure-orgs-to-secure-refrigeration-systems-asap-after-eu",
+   "source": "Tenable Blog",
+   "source_category": "Security",
+   "published": "2026-11-09T22:00:00+00:00",
+   "summary": "Following recent cyber attacks on French blood banks and European supermarkets, U.S. federal agencies are urging critical infrastructure organizations to immediately secure industrial refrigeration systems against remote tampering and temperature manipulation.",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "9b08084c1635",
+   "title": "PyPI's redesigned project pages with clearer security signals are now live",
+   "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-09T21:45:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "898ecca6e813",
+   "title": "TI Launches Multiprotocol Industrial Networking Devices",
+   "url": "https://www.embedded.com/ti-launches-multiprotocol-industrial-networking-devices/",
+   "source": "Embedded.com",
+   "source_category": "Embedded",
+   "published": "2026-11-09T21:42:18+00:00",
+   "summary": "Texas Instruments Inc. (TI) has expanded its industrial communication portfolio with two devices designed to simplify connectivity across factory automation, robotics, and industrial IoT (IIoT) systems.",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT",
+    "Embedded & IoT",
+    "Networking"
+   ]
+  },
+  {
+   "id": "8877adfcdc55",
+   "title": "Meta’s Conductor deal puts enterprise AI coding workflows on deadline",
+   "url": "https://www.techtarget.com/news/metas-conductor-deal-puts-enterprise-ai-coding-workflows-on-deadline/874200/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-09T21:41:22+00:00",
+   "summary": "Meta's Conductor acquisition and cloud shutdown highlight enterprise risks tied to AI vendor changes, data portability and development workflow continuity.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "361a5028adc5",
+   "title": "Why Fewer People Are Challenging Bad Patents",
+   "url": "https://www.eff.org/deeplinks/2026/11/why-fewer-people-are-challenging-bad-patents",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-09T21:40:14+00:00",
+   "summary": "The number of petitions being filed at the Patent Trial and Appeal Board (PTAB) has collapsed. That’s not reason for celebration. The PTAB is an important line of defense against low-quality software patents being used in lawsuits against people and companies.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "907718f8d430",
+   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-11-09T21:38:20+00:00",
+   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "8da8f9660c73",
    "title": "Mozilla Firefox 160 Is Now Available for Download, Here’s What’s New",
    "url": "https://9to5linux.com/mozilla-firefox-160-is-now-available-for-download-heres-whats-new",
@@ -1567,7 +1650,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-09T21:28:24+00:00",
    "summary": "Mozilla Firefox 160 open-source web browser is now available for download with Mini Window, support for MathML content in PDFs, and Picture-in-Picture playback speed settings.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "8164b46895b1",
+     "source": "Linuxiac",
+     "title": "Mozilla Firefox 160 Introduces Mini Window, Picture-in-Picture Speed Controls",
+     "url": "https://linuxiac.com/firefox-160-introduces-mini-window-picture-in-picture-speed-controls/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -1580,7 +1670,14 @@
    "source_category": "Security",
    "published": "2026-11-09T21:26:25+00:00",
    "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0b35e9b5441c",
+     "source": "TechTarget News",
+     "title": "N-able takes N-central platform offline after zero-day dump",
+     "url": "https://www.techtarget.com/news/n-able-takes-n-central-platform-offline-after-zero-day-dump/874195/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows",
@@ -2012,6 +2109,21 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "caf1c06406ed",
+   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+   "url": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+   "source": "Microsoft Security Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-09T20:17:31+00:00",
+   "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development",
+    "Policy & regulation"
    ]
   },
   {
@@ -2508,6 +2620,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "9adfde667181",
+   "title": "Enhanced resilience with Windows settings backup and restore",
+   "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/enhanced-resilience-with-windows-settings-backup-and-restore/ba-p/4571757",
+   "source": "Windows IT Pro Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-09T19:00:25+00:00",
+   "summary": "We're excited to announce the next evolution of Windows settings backup and restore (formerly, Windows Backup for Organizations). It's built to support continuity as organizations refresh hardware, reimage devices, or prepare for recovery scenarios.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Backup & recovery"
    ]
   },
   {
@@ -3369,6 +3495,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "a02105059fb7",
+   "title": "Quick Tip - How to Manually Verify VCF Software Download Checksums?",
+   "url": "https://williamlam.com/2026/11/quick-tip-how-to-manually-verify-vcf-software-download-checksums.html",
+   "source": "William Lam (VMware)",
+   "source_category": "Virtualization",
+   "published": "2026-11-09T17:44:19+00:00",
+   "summary": "When a new VMware Cloud Foundation (VCF) binary is published for download, its filename, size, and checksum are generated and updated in the VCF manifest files, including productVersionCatalog.json (PVC) and its corresponding signature file, productVersionCatalog.sig.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -5531,6 +5670,12 @@
      "source": "ITPro",
      "title": "Red Hat eyes automated cloud management gains with OpenShift 5 release",
      "url": "https://www.itpro.com/cloud/hybrid-cloud/red-hat-eyes-automated-cloud-management-gains-with-openshift-5-release"
+    },
+    {
+     "id": "7d87d02c4d08",
+     "source": "Virtualization Review",
+     "title": "Red Hat OpenShift 5 Brings AI Agents to Cluster Troubleshooting and Upgrades",
+     "url": "https://virtualizationreview.com/articles/2026/11/09/red-hat-openshift-5-brings-ai-agents-to-cluster-troubleshooting-and-upgrades.aspx"
     }
    ],
    "topics": [
@@ -5599,7 +5744,14 @@
    "source_category": "Security",
    "published": "2026-11-09T14:30:00+00:00",
    "summary": "Security researchers have detected a malicious workflow affecting tens of thousands of GitHub repositories, including Uber-owned ones",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a122d1bf94c5",
+     "source": "Hacker News",
+     "title": "Supply chain attack on Qubole customers",
+     "url": "https://sentra.io/blog/breaches/inside-the-qubole-supply-chain-attack"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Development",
@@ -6762,6 +6914,12 @@
      "source": "Data Center Knowledge",
      "title": "Google Adds TPU 8tx, 8i Max for Enterprise AI",
      "url": "https://www.datacenterknowledge.com/data-center-chips/google-adds-tpu-8tx-8i-max-for-enterprise-ai"
+    },
+    {
+     "id": "1f94304afd15",
+     "source": "ServeTheHome",
+     "title": "Google TPU 8tx Pairs AMD EPYC Turin Hosts with Confidential Computing while TPU 8i Max Doubles Memory Bandwidth",
+     "url": "https://www.servethehome.com/google-tpu-8tx-8i-max-amd-epyc-turin/"
     }
    ],
    "topics": [
@@ -6907,6 +7065,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5d57e1aa0817",
+   "title": "Introducing Control Room: Human control over AI workloads",
+   "url": "https://openai.com/index/introducing-control-room",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-09T13:00:00+00:00",
+   "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -9969,6 +10140,19 @@
    "source_category": "IT industry",
    "published": "2026-11-09T08:00:00+00:00",
    "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "23b94c697622",
+   "title": "CodeRabbit scales agentic software development and ships 20x more",
+   "url": "https://openai.com/index/coderabbit-codex-daybreak",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-09T08:00:00+00:00",
+   "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
    "also_covered_by": [],
    "topics": [
     "AI"
