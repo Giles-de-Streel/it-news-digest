@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T05:00:57+00:00",
+ "generated": "2026-11-09T05:30:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 29,
-   "recent": 29,
+   "fetched": 31,
+   "recent": 31,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1560,6 +1560,96 @@
  ],
  "items": [
   {
+   "id": "86081780d820",
+   "title": "CVE-2026-113364: Buffer Overflow in the data receiving process in NEC Corporation WebSAM WinShare Ver 7.5.0 and earlier, Ver…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113364",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T05:18:26.810000+00:00",
+   "summary": "Buffer Overflow in the data receiving process in NEC Corporation WebSAM WinShare Ver 7.5.0 and earlier, Ver 7.6.0 and Ver 7.7.0 through 7.7.2 on Windows allows a remote unauthenticated attacker to execute arbitrary code with SYSTEM privileges via a crafted packet with a malformed data size value in the protocol header.",
+   "kind": "cve",
+   "cve": "CVE-2026-113364",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-113364",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ccb739afb044",
+   "title": "CVE-2026-113363: Improper Input Validation in the network communication processing in NEC Corporation WebSAM WinShare Ver…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113363",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T05:18:26.107000+00:00",
+   "summary": "Improper Input Validation in the network communication processing in NEC Corporation WebSAM WinShare Ver 7.2.0 through 7.5.0, Ver 7.6.0 and Ver 7.7.0 through 7.7.2 on Windows allows a remote unauthenticated attacker to execute arbitrary commands with SYSTEM privileges via a crafted network packet sent to the computer…",
+   "kind": "cve",
+   "cve": "CVE-2026-113363",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-113363",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "132540d72f16",
+   "title": "When talking about AI safety, President Trump says \"I don't mind guardrails. But I don't wanna put us in a deep second position\", and \"China has no guardrails\" (CBS News)",
+   "url": "https://www.techmeme.com/261109/p2#a261109p2",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T05:15:01+00:00",
+   "summary": "CBS News : When talking about AI safety, President Trump says “I don't mind guardrails. But I don't wanna put us in a deep second position”, and “China has no guardrails” — This past Tuesday, President Donald Trump's Republican Party suffered an extraordinary midterm repudiation …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "f61467fdde1f",
+   "title": "Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261109/p1#a261109p1",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T05:10:00+00:00",
+   "summary": "Wall Street Journal : Sources and filings detail how Jensen Huang has brought his children and other family members into Nvidia, making it unusually family-run for Silicon Valley — The Nvidia CEO has elevated his children to prominence. His board is investigating reports that he was an espionage target.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8d270807606c",
+   "title": "An average of 8 minutes is all hackers need to log in with stolen credentials",
+   "url": "https://www.helpnetsecurity.com/2026/11/09/elastic-businesses-remote-access-attacks-report/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-09T05:00:39+00:00",
+   "summary": "Attackers used stolen credentials to log in an average of eight minutes after infection across 27 confirmed infostealer cases, according to a report from Elastic Security Threat Command.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "70550f6232c9",
    "title": "VMware Aria Automation alternatives, by what each one replaces",
    "url": "https://www.windmill.dev/blog/vmware-aria-automation-alternatives",
@@ -1598,6 +1688,21 @@
    "topics": [
     "Development",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "f95e5ffd3bd7",
+   "title": "Linus Torvalds sees signs AI-prompted patch flood has peaked",
+   "url": "https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-09T04:53:08+00:00",
+   "summary": "Fixes are arriving faster than new bug reports for one major Linux project",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI"
    ]
   },
   {
@@ -1683,6 +1788,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "a4c533ab2b70",
+   "title": "The efficiency trap: why optimising everything can backfire, badly",
+   "url": "https://www.theguardian.com/books/2026/nov/08/the-efficiency-trap-why-optimising-everything-can-backfire-badly",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-08T12:00:39+00:00",
+   "summary": "From roundabouts to the stock market, relentless streamlining could be making the world more dangerous We have all been there: packed shoulder to shoulder on the train while the person beside us coughs and sneezes.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
