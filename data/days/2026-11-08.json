@@ -1,12 +1,12 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-09T03:00:53+00:00",
+ "generated": "2026-11-09T03:31:03+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 28,
-   "recent": 28,
+   "fetched": 29,
+   "recent": 29,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -516,7 +516,7 @@
   {
    "source": "Horizon3.ai",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 20,
-   "recent": 11,
+   "fetched": 24,
+   "recent": 15,
    "error": null
   },
   {
@@ -1560,6 +1560,123 @@
  ],
  "items": [
   {
+   "id": "09cec902885f",
+   "title": "Metrics That Matter: Are We Becoming Harder to Attack?",
+   "url": "https://horizon3.ai/intelligence/infographics/ctem-metrics-that-matter/",
+   "source": "Horizon3.ai",
+   "source_category": "Pen testing",
+   "published": "2026-11-09T03:26:08+00:00",
+   "summary": "Closed tickets and remediation SLAs show what teams have done, not whether the environment is harder to attack. This infographic outlines four Exposure Management metrics: attack paths and impacts, speed of impact reduction, verification coverage, and recurrence.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "fcc2575d97b8",
+   "title": "CVE-2026-124560: A vulnerability was found in D-Link DIR-878 1.20B05.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124560",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T03:16:38.117000+00:00",
+   "summary": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow. The attack can be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-124560",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124560",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9b313a2cb28f",
+   "title": "Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it \"possible to do harm\" and Anthropic has a \"strong argument\" for closed models (Vincent Chow/South China Morning Post)",
+   "url": "https://www.techmeme.com/261108/p21#a261108p21",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T03:15:01+00:00",
+   "summary": "Vincent Chow / South China Morning Post : Tencent's chief AI scientist Yao Shunyu says AI's bio abilities will soon make it “possible to do harm” and Anthropic has a “strong argument” for closed models — Artificial intelligence models will soon be powerful enough to master biology, presenting both benefits …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "2a10b64b3caf",
+   "title": "RHSA-2026:96097: Important: gdb security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96097",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T03:14:48+00:00",
+   "summary": "An update for gdb is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "55541c6e3a43",
+   "title": "RHSA-2026:96089: Important: qt5-qtbase security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96089",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T03:10:43+00:00",
+   "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "8365866d729c",
+   "title": "RHSA-2026:96095: Important: gdb security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96095",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T03:09:08+00:00",
+   "summary": "An update for gdb is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "138c96009417",
+   "title": "RHSA-2026:96086: Important: qt5-qtbase security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:96086",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T03:05:38+00:00",
+   "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "78b21254e81c",
+   "title": "Saving a Vintage High-Voltage Power Supply From the Scrap Heap",
+   "url": "https://hackaday.com/2026/11/08/saving-a-vintage-high-voltage-power-supply-from-the-scrap-heap/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-09T03:00:42+00:00",
+   "summary": "[Mr Carlson’s Lab] saves a Fluke Model 407 high-voltage power supply from the scrap heap, and demonstrates carefully troubleshooting the vintage device to track the cause of the bad output …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "72f96e3ada13",
    "title": "RHSA-2026:96091: Important: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
    "url": "https://access.redhat.com/errata/RHSA-2026:96091",
@@ -1722,6 +1839,19 @@
     "Vulnerabilities & patches",
     "Linux & open source",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "f09ab0b19a40",
+   "title": "RIP, Harvest",
+   "url": "https://aphyr.com/posts/427-rip-harvest",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-09T01:58:21+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5233,6 +5363,19 @@
    "topics": [
     "Linux & open source",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "d9ec2ac153ed",
+   "title": "Are big problems more difficult to solve?",
+   "url": "https://paulitaylor.com/2026/09/11/are-big-problems-really-more-difficult-to-solve/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-07T22:24:30+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
