@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "generated": "2026-11-09T00:00:56+00:00",
+ "generated": "2026-11-09T00:31:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 33,
-   "recent": 33,
+   "fetched": 30,
+   "recent": 30,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 24,
+   "recent": 22,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1122,7 +1122,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1559,6 +1559,61 @@
   }
  ],
  "items": [
+  {
+   "id": "e3eac89d8876",
+   "title": "Can CrowdStrike's New 'AI Kill Switch' Shut Down Rogue AI Agents?",
+   "url": "https://it.slashdot.org/story/26/11/09/0020217/can-crowdstrikes-new-ai-kill-switch-shut-down-rogue-ai-agents?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-09T00:21:00+00:00",
+   "summary": "CrowdStrike's \"Falcon Guardian\" protects Windows systems by enforcing policy, restricting unauthorized applications and blocking USB devices, notes Gartner. And now CrowdStrike says they're giving security teams \"the ultimate human control over AI agents\" with — an \"AI Kill Switch...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "d25735fd51b5",
+   "title": "Unauthorized Access Takes Sega's ALL.Net Arcade Network Offline for a Week: Bandai Namco Begins Trial Restart as Sega Gives No Date",
+   "url": "https://joho-todai.com/en/sega-arcade-allnet-unauthorized-access-outage/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-09T00:05:51+00:00",
+   "summary": "Sega shut down its ALL.Net arcade networking service on November 1 after unauthorized access by a third party. A week later, there was still no timetable for restoring Sega titles, while Bandai Namco titles began a trial restart on November 8.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a0d8a1a0bfe5",
+   "title": "Nvidia board launches independent inquiry following chief executive security concerns",
+   "url": "https://www.neowin.net/news/nvidia-board-launches-independent-inquiry-following-chief-executive-security-concerns/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-09T00:04:01+00:00",
+   "summary": "Nvidia has opened an independent investigation into potential national and economic security concerns after learning its chief executive was targeted in a foreign intelligence effort.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e0590dcfeba3",
+   "title": "M5Stack Core Matrix ESP32-C61 IoT controller features 16×16 LED matrix, WiFi 6, and 6-axis IMU",
+   "url": "https://www.cnx-software.com/2026/11/09/m5stack-core-matrix-esp32-c61-iot-controller-features-16x16-led-matrix-wifi-6-and-6-axis-imu/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-09T00:00:44+00:00",
+   "summary": "M5Stack’s Core Matrix is an ESP32-C61-based IoT controller with a 16×16 white LED matrix for displaying icons, animations, device status, and notifications. It supports 2.4 GHz WiFi 6 connectivity and is designed for IoT applications, sensor data monitoring, and interactive displays.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT",
+    "Networking"
+   ]
+  },
   {
    "id": "19a9de4e2059",
    "title": "Space Invaders on a VFD",
@@ -1750,6 +1805,12 @@
      "source": "SiliconANGLE",
      "title": "Nvidia CEO Jensen Huang admits to having extramarital affair with suspected Chinese spy",
      "url": "https://siliconangle.com/2026/11/08/nvidia-ceo-jensen-huang-admits-to-having-extramarital-affair-with-suspected-chinese-spy/"
+    },
+    {
+     "id": "5fbec8f0d9e1",
+     "source": "Joho no Todai (English)",
+     "title": "NVIDIA CEO Huang Admits Affair as Board Opens Independent Investigation: Rubio Oversaw the Memo",
+     "url": "https://joho-todai.com/en/nvidia-ceo-affair-board-investigation/"
     }
    ],
    "topics": [
@@ -2795,7 +2856,14 @@
    "source_category": "Security",
    "published": "2026-11-08T15:43:08+00:00",
    "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "79ff4cf3881b",
+     "source": "Joho no Todai (English)",
+     "title": "Iris Plaza Breach May Have Exposed Data on About 7.7 Million People: Former Members Also Affected",
+     "url": "https://joho-todai.com/en/iris-plaza-personal-data-breach-7-7-million/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Cloud & infrastructure"
