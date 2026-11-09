@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T11:00:46+00:00",
+ "generated": "2026-11-09T11:30:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 31,
-   "recent": 31,
+   "fetched": 32,
+   "recent": 32,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
@@ -210,19 +210,19 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 5,
+   "recent": 8,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1242,7 +1242,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1458,7 +1458,7 @@
   {
    "source": "TechTarget News",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1559,6 +1559,110 @@
   }
  ],
  "items": [
+  {
+   "id": "baf5045a80a6",
+   "title": "Linux Seeing Driver Work For MSI Mystic Light On Latest Ryzen Motherboards",
+   "url": "https://www.phoronix.com/news/MSI-Mystic-Light-Linux",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-09T11:20:49+00:00",
+   "summary": "MSI's latest Ryzen motherboards with AMD 800 series chipsets feature a new capability marked as Mystic Light for RGB lighting controls of the motherboard as well as compatible graphics cards and cases.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bb54584d5aab",
+   "title": "Amplifon Americas Data Breach Impacts 1.3 Million",
+   "url": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-09T11:20:09+00:00",
+   "summary": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "256aaa354507",
+   "title": "CVE-2026-115252: The Confection WordPress Cable WordPress plugin from 0.4.0 to 0.4.7 does not perform any capability or nonce…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115252",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-09T11:17:21.143000+00:00",
+   "summary": "The Confection WordPress Cable WordPress plugin from 0.4.0 to 0.4.7 does not perform any capability or nonce checks before saving its settings and writing one of them, unmodified, into a standalone PHP file that it then serves, allowing unauthenticated users to execute arbitrary PHP code on the server.",
+   "kind": "cve",
+   "cve": "CVE-2026-115252",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115252",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "813825b7f091",
+   "title": "Internal EU assessment: Russia's \"Operation Overload\" opportunistically exploited recent French riots by spreading fabricated videos impersonating Western media (Reuters)",
+   "url": "https://www.techmeme.com/261109/p14#a261109p14",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T11:10:00+00:00",
+   "summary": "Reuters : Internal EU assessment: Russia's “Operation Overload” opportunistically exploited recent French riots by spreading fabricated videos impersonating Western media — A covert Russian network sought to exploit last month's riots in France by using social media to blame the unrest …",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "38ce7ca90d10",
+   "title": "Linux 7.5 To Convey To User-Space Multi-Grain Timestamp Usage On Files",
+   "url": "https://www.phoronix.com/news/Linux-7.5-Statx-MG-TImestamp",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-09T11:08:22+00:00",
+   "summary": "Merged for Linux 6.13 back in 2024 was multigrain timestamp support for being able to switch between coarse and fine-grained change/modification time reporting on a per-file basis.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3f9ab8d4f19f",
+   "title": "Nasdaq defies Nvidia impact as Huang faces espionage affair probe",
+   "url": "https://www.cnbc.com/2026/11/09/nasdaq-defies-nvidia-impact-huang-faces-espionage-affair-probe.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-09T11:04:49+00:00",
+   "summary": "The board opens an investigation into Huang's relationship with an alleged Chinese spy",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "22855c9d4f86",
+   "title": "Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board (New York Times)",
+   "url": "https://www.techmeme.com/261109/p13#a261109p13",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-09T11:00:01+00:00",
+   "summary": "New York Times : Jensen Huang maintains deep control over Nvidia, managing 60+ direct reports and owning a 3.56% stake, presenting a challenge for Nvidia's 10-person board — The chief executive has a tight grip on his company, presenting a challenge for Nvidia's board, which is investigating his affair with a woman…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "8a977dae9b3f",
    "title": "Synaptics sends cease-and-desist order to creator of open-source DisplayLink driver, dares him to publicize its threats",
@@ -1573,6 +1677,94 @@
    ]
   },
   {
+   "id": "b657f48f282b",
+   "title": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+   "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "At the recent PyTorch Conference North America 2026, Amazon introduced TorchNeuron, a native PyTorch backend that enables developers to run existing PyTorch code on AWS Trainium AI chips with virtually no code modifications. By Sergio De Simone",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "d48ef5afb752",
+   "title": "Podcast: Distributed LLM Inference on Kubernetes with llm-d, Wasm, & TornadoVM",
+   "url": "https://www.infoq.com/podcasts/distributed-llm-inference-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "In this episode, Edoardo Vacchi discusses the evolving landscape of WebAssembly on the backend, running Java workloads on GPUs using TornadoVM, and optimizing distributed AI inference using llm-d and vLLM on Kubernetes.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "bb50f6f42243",
+   "title": "AI agents shouldn’t grade their own work",
+   "url": "https://www.cio.com/article/4245900/ai-agents-shouldnt-grade-their-own-work.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "On July 16, Hugging Face disclosed that an autonomous agent system had breached part of its production infrastructure. Five days later, OpenAI identified its own models as responsible.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI"
+   ]
+  },
+  {
+   "id": "f915add60a39",
+   "title": "AI doesn’t have to go rogue to break the world",
+   "url": "https://cyberscoop.com/ai-hacking-risks-loopholes-bruce-schneier-defcon-keynote-op-ed/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "AI systems are learning to exploit loopholes in everything from software to tax law. The biggest threat may not be malicious intent, but machines doing exactly what we ask.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3e2eb3824356",
+   "title": "Banks catching AI agents in customer accounts and security isn’t ready",
+   "url": "https://www.techtarget.com/news/banks-catching-ai-agents-in-customer-accounts-and-security-isnt-ready/874065/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "Security pros in the finance industry wrestle with how to secure bank accounts when the person accessing them might not be a person at all.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ac8201640fbc",
+   "title": "CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars",
+   "url": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-09T11:00:00+00:00",
+   "summary": "After 378 days without windows, the sounds of the outside world, or real-time calls with family and friends, four research volunteers stepped out of NASA’s Mars Dune Alpha habitat on Oct. 31, completing the agency’s second yearlong Mars surface simulation.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "fe6b3d050e72",
    "title": "Your Router Trusts Its Validator. But Who's Watching the Validator?",
    "url": "https://labs.ripe.net/author/ritesh-mukherjee/your-router-trusts-its-validator-but-whos-watching-the-validator/",
@@ -1583,6 +1775,34 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "28e4e3f44ff2",
+   "title": "Tesla and SpaceX's Terafab Reportedly Seeks Equipment From Japan Within Months: HBM Production Also Planned",
+   "url": "https://joho-todai.com/en/terafab-spacex-tesla-japan-delivery-hbm-manufacturing/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-09T10:56:11+00:00",
+   "summary": "Tesla and SpaceX's Terafab reportedly asked Japanese equipment makers to deliver within months. It plans to make logic chips and high-bandwidth memory (HBM) and bring packaging and testing together. Reaching volume production depends on tuning processes after installation.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "1b6c59173221",
+   "title": "Article: Agentic AI Architecture: Current Challenges and Future Opportunities",
+   "url": "https://www.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-09T10:52:00+00:00",
+   "summary": "Agentic AI architecture extends microservices and cloud-native architectures with AI agents that work with context, memory, and protocols such as MCP and A2A. The article covers bounded-context integration, task-dependent coordination strategies, new security risks, and observability needs.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
    ]
   },
   {
@@ -2038,6 +2258,21 @@
    "topics": [
     "AI",
     "Higher education"
+   ]
+  },
+  {
+   "id": "997ba897c429",
+   "title": "Trump Is Open to Working With Democrats on AI Safety: How Much Will U.S. Evaluators Disclose?",
+   "url": "https://joho-todai.com/en/trump-ai-safety-democratic-cooperation/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-09T09:59:30+00:00",
+   "summary": "President Trump signaled a willingness to work with Democrats on AI safeguards. At the U.S. government's AI evaluation center, CAISSI, questions remain about independence and which findings it will make public. NIST published an assessment of an individual model in September and incident response guidance in October.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Forensics & IR",
+    "Policy & regulation"
    ]
   },
   {
@@ -3478,7 +3713,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-09T04:37:49+00:00",
    "summary": "Dutch police detained 150–200 people on suspicion of trespassing after protesters entered a Microsoft AI data center construction site in Amsterdam on November 6. The demonstration is part of a wider campaign against data center expansion and its environmental impact. Source",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d66e58a0e99a",
+     "source": "Techmeme",
+     "title": "Amsterdam police arrested between 150 and 200 protesters for trespassing and violence at a Microsoft data center construction site owned by Pure Data Centers (Jowi Morales/Tom's Hardware)",
+     "url": "https://www.techmeme.com/261109/p15#a261109p15"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware",
