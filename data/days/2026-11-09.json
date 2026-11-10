@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-10T01:01:22+00:00",
+ "generated": "2026-11-10T01:31:30+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 45,
-   "recent": 45,
+   "fetched": 57,
+   "recent": 57,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -876,7 +876,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -1560,6 +1560,320 @@
  ],
  "items": [
   {
+   "id": "b821790cdc90",
+   "title": "Uber rolls out in-app parking reservations in select areas",
+   "url": "https://www.neowin.net/news/uber-rolls-out-in-app-parking-reservations-in-select-areas/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-10T01:30:01+00:00",
+   "summary": "Uber is making it easier for drivers to find parking spots, thanks to a new feature on its app. The company also hopes that the technology can help with its robotaxi initiative.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bea32a09c15c",
+   "title": "CVE-2026-89126: SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:22.420000+00:00",
+   "summary": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality.",
+   "kind": "cve",
+   "cve": "CVE-2026-89126",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-89126",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3ebeeddfa1f2",
+   "title": "CVE-2026-89119: SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89119",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:22.103000+00:00",
+   "summary": "SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform sufficient request validation in certain administrative functionality.",
+   "kind": "cve",
+   "cve": "CVE-2026-89119",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-89119",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "26d439f5770a",
+   "title": "CVE-2026-89103: SAP Gateway activates the default Access Control List with high privileges allowing categorization of…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:21.013000+00:00",
+   "summary": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness to potentially perform unauthorized actions within the…",
+   "kind": "cve",
+   "cve": "CVE-2026-89103",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-89103",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f7584f1a4ebf",
+   "title": "CVE-2026-76965: SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:20.387000+00:00",
+   "summary": "SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on the underlying host.",
+   "kind": "cve",
+   "cve": "CVE-2026-76965",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76965",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "487d0157318c",
+   "title": "CVE-2026-76964: SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:20.240000+00:00",
+   "summary": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality.",
+   "kind": "cve",
+   "cve": "CVE-2026-76964",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76964",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "30b8232fe567",
+   "title": "CVE-2026-125086: A vulnerability has been found in D-Link M60 1.12.B01.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125086",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:19.640000+00:00",
+   "summary": "A vulnerability has been found in D-Link M60 1.12.B01. Impacted is the function system of the file /etc/emDaemon/mosquitto.conf of the component emDaemon MQTT Broker. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-125086",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-125086",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f857f9b49f43",
+   "title": "CVE-2026-124600: GV-Face transmits sensitive user credentials and related authentication data over unencrypted HTTP…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124600",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:18.467000+00:00",
+   "summary": "GV-Face transmits sensitive user credentials and related authentication data over unencrypted HTTP connections. The HTTP traffic is not encrypted, an attacker with the ability to intercept network traffic.",
+   "kind": "cve",
+   "cve": "CVE-2026-124600",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124600",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "520c88bbbf9d",
+   "title": "CVE-2026-120017: SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120017",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:16.803000+00:00",
+   "summary": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate arbitrary users, including privileged accounts.",
+   "kind": "cve",
+   "cve": "CVE-2026-120017",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120017",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "85c444393b31",
+   "title": "CVE-2026-109803: SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109803",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:14.477000+00:00",
+   "summary": "SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL transformations processed by the affected functionality. Under certain conditions, an authenticated user with access to the affected functionality could cause an unauthorized XSL transformation to be processed,…",
+   "kind": "cve",
+   "cve": "CVE-2026-109803",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109803",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4fb62e27c99d",
+   "title": "CVE-2026-109798: SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109798",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:13.747000+00:00",
+   "summary": "SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external entity resolution when processing OLAP connection requests.",
+   "kind": "cve",
+   "cve": "CVE-2026-109798",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109798",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4ee7fc7e9578",
+   "title": "CVE-2026-109795: SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109795",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:13.330000+00:00",
+   "summary": "SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in certain remote-enabled functionality. An attacker with low privileges could send specially crafted input through a remote interface to inject and execute arbitrary code within the affected system.",
+   "kind": "cve",
+   "cve": "CVE-2026-109795",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109795",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "be2b1c5a1f38",
+   "title": "CVE-2026-107246: The Plesk extension \"Site Import\" before 1.13.2 does not properly validate domain and session identifiers,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107246",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-10T01:17:12.880000+00:00",
+   "summary": "The Plesk extension \"Site Import\" before 1.13.2 does not properly validate domain and session identifiers, allowing path traversal. This lets a non-owner subscription user redirect a privileged backend session into a directory they control, resulting in arbitrary code execution as root.",
+   "kind": "cve",
+   "cve": "CVE-2026-107246",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107246",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "daaeaa9f86a3",
+   "title": "Teenager who planned terror attack in Sydney tells court he was radicalised online and used AI to strategise",
+   "url": "https://www.theguardian.com/australia-news/2026/nov/10/teen-planned-sydney-terror-attack-using-chatgpt-radicalised-tiktok-ntwnfb",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-10T01:09:19+00:00",
+   "summary": "Boy says he was first exposed to extremist material on TikTok, turned to Telegram and YouTube for bomb-making instructions, and used ChatGPT to devise his plans Get our breaking news email , free app or daily news podcast A teenager who admitted to planning a terrorist attack in Sydney in 2024 has told the court he…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9b2c69477099",
+   "title": "BLUETTI Apex 300 Review: 240V From One Box and 3,840W for Two Workstations on One Circuit",
+   "url": "https://www.storagereview.com/review/bluetti-apex-300-review-3840w-240v-grid-input-limit-ups",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-10T01:08:59+00:00",
+   "summary": "The BLUETTI Apex 300 is a 2,764.8Wh portable power station with a 3,840W inverter that does two things the smaller units we have tested cannot: it puts out 240V from a single box, and it lets you cap how much power it pulls from the wall, in 1A steps, while the battery covers whatever the",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "dc14a8e46d2b",
    "title": "Blunt Banhammer Blocks Basic Bots Ballistically",
    "url": "https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/",
@@ -1593,7 +1907,14 @@
    "source_category": "IT industry",
    "published": "2026-11-10T00:40:58+00:00",
    "summary": "AMD has submitted initial Graphics Core support for GFX13, believed to correspond to RDNA 5, for the AMDGPU kernel driver. The patches add the core compute and rendering block to the Linux driver effort after January's compiler work and July's display engine patches.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a40e28045a73",
+     "source": "Phoronix",
+     "title": "AMDGPU Linux Driver Patches Posted For Enabling GFX13 Graphics IP - RDNA5",
+     "url": "https://www.phoronix.com/news/AMDGPU-Patches-GFX13"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
@@ -2023,6 +2344,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "6747f63dbb45",
+   "title": "Chrome for Android Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01533302390.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-09T23:00:00+00:00",
+   "summary": "Hi, everyone! We've just released Chrome 157 (157.0.8103.50) for Android. It'll become available on Google Play over the next few days. This release includes stability and performance improvements. You can see a full list of the changes in the Git log . If you find a new issue, please let us know by filing a bug .",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -4578,6 +4912,21 @@
    }
   },
   {
+   "id": "c043532ecafa",
+   "title": "Commvault Announces AI Recovery for AI Vulnerabilities",
+   "url": "https://www.commvault.com/blogs/commvault-announces-ai-recovery-for-ai-vulnerabilities-2",
+   "source": "Commvault",
+   "source_category": "Backup & recovery",
+   "published": "2026-11-09T17:22:06+00:00",
+   "summary": "Our announcements at SHIFT 2026 reveal how we’re delivering continuous recovery for the AI era.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Backup & recovery"
+   ]
+  },
+  {
    "id": "8acbceff94a3",
    "title": "[In preview] Public Preview: Modernize Arc-enabled Windows Servers with Azure File Sync",
    "url": "https://azure.microsoft.com/updates?id=579854",
@@ -4825,6 +5174,12 @@
      "source": "The Register",
      "title": "France blames Iran for supermarket hack meltdowns",
      "url": "https://www.theregister.com/security/2026/11/09/france-blames-iran-for-supermarket-hack-meltdowns/5308591"
+    },
+    {
+     "id": "e5086748ed87",
+     "source": "Joho no Todai (English)",
+     "title": "France Attributes Cyberattack on Refrigeration at 700 Sites to Iran's Revolutionary Guards: Ambassador Summoned and EU Sanctions Proposed",
+     "url": "https://joho-todai.com/en/france-blames-iran-revolutionary-guards-supermarket-cyberattack/"
     }
    ],
    "topics": [
@@ -7047,7 +7402,14 @@
    "source_category": "Supply chain security",
    "published": "2026-11-09T14:01:14+00:00",
    "summary": "Zarf 1.0 is here, bringing the v1beta1 schema, stronger package signing, and improved stability for air-gapped and constrained software delivery environments.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d8081c20e74c",
+     "source": "Container Journal",
+     "title": "OpenSSF Releases Zarf 1.0 for Air-Gapped Kubernetes Software Delivery",
+     "url": "https://cloudnativenow.com/kubecon-cloudnativecon-north-america-2026/openssf-releases-zarf-1-0-for-air-gapped-kubernetes-software-delivery/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
