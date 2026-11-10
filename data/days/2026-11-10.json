@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "generated": "2026-11-10T06:30:51+00:00",
+ "generated": "2026-11-10T07:00:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -204,13 +204,13 @@
   {
    "source": "Stack Overflow Blog",
    "fetched": 40,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -516,7 +516,7 @@
   {
    "source": "Horizon3.ai",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 0,
+   "recent": 20,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Palo Alto Networks advisories",
    "fetched": 25,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 5,
+   "recent": 7,
    "error": null
   },
   {
@@ -1002,7 +1002,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "OpenTelemetry Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Higher Ed Dive",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1368,7 +1368,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1536,7 +1536,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -1560,6 +1560,157 @@
  ],
  "items": [
   {
+   "id": "949fb0f1d27d",
+   "title": "CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0250",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-10T07:00:34+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-0250",
+     "score": 5.2,
+     "severity": "Medium",
+     "version": "4.0",
+     "scored_by": "palo_alto"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-0250",
+     "score": 0.00392,
+     "percentile": 0.33591,
+     "date": "2026-11-09"
+    }
+   }
+  },
+  {
+   "id": "f417268b3778",
+   "title": "Customer support is the gnarliest AI problem",
+   "url": "https://stackoverflow.blog/2026/11/10/customer-support-is-the-gnarliest-ai-problem/",
+   "source": "Stack Overflow Blog",
+   "source_category": "Development",
+   "published": "2026-11-10T07:00:30+00:00",
+   "summary": "Ryan chats with Ahmad Al-Dahle, CTO at Airbnb, about deploying multi-party AI agents to tackle the uniquely gnarly problem of customer support, how a moving target of rigorous evaluations helps engineers balance latency against accuracy, and the ways in which AI coding tools demand an even higher level of judgment…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "9b32403c530f",
+   "title": "New Audit Events Capture User Access to Purview Solutions",
+   "url": "https://office365itpros.com/2026/11/10/new-audit-events-purview-solutions/?utm_source=rss&utm_medium=rss&utm_campaign=new-audit-events-purview-solutions",
+   "source": "Office 365 for IT Pros",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-10T07:00:00+00:00",
+   "summary": "New audit events are always welcome if they provide additional insight into what happens inside Microsoft 365. Two events are now available to track access to Purview solutions.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "c1cb4bb2860c",
+   "title": "SoftBank swings to $7 billion net loss in second quarter as tech selloff weighs on results",
+   "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-10T06:54:32+00:00",
+   "summary": "SoftBank Group announces fiscal second-quarter results for the year ending March 31, 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d8a18d093482",
+   "title": "GeniosAI, which develops AI software for financial analysis and modeling, raised $19.1M across seed and Series A rounds; FactSet led the Series A (Ryan Lawler/Axios)",
+   "url": "https://www.techmeme.com/261110/p3#a261110p3",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-10T06:45:01+00:00",
+   "summary": "Ryan Lawler / Axios : GeniosAI, which develops AI software for financial analysis and modeling, raised $19.1M across seed and Series A rounds; FactSet led the Series A — GeniosAI, which develops AI software for financial analysis and modeling, has raised $19.1 million in combined seed and Series A funding, CEO PD…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "3a4897cb16ee",
+   "title": "When Missing Telemetry Is the Signal",
+   "url": "https://opentelemetry.io/blog/2026/when-missing-telemetry-is-the-signal/",
+   "source": "OpenTelemetry Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-10T06:42:06+00:00",
+   "summary": "An empty dashboard can mean that nothing happened. It can also mean that the system stopped reporting what happened. On a dashboard, they look the same. One needs no action. The other means you are missing the information you need to act.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d4d73a2c1c52",
+   "title": "CISA’s Installed Base Program to help OEMs identify and secure internet-exposed OT assets across critical infrastructure",
+   "url": "https://industrialcyber.co/cisa/cisas-installed-base-program-to-help-oems-identify-and-secure-internet-exposed-ot-assets-across-critical-infrastructure/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-10T06:37:24+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) announced launch of an Installed Base Program that partners with...",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "20c000a16e03",
+   "title": "CISA updates Cyber Incident Reporting form to improve threat intelligence analysis, national cyber defense",
+   "url": "https://industrialcyber.co/cisa/cisa-updates-cyber-incident-reporting-form-to-improve-threat-intelligence-analysis-national-cyber-defense/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-10T06:34:47+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) released an updated cyber incident reporting form, an enhanced web-enabled...",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a981bd2dcef9",
+   "title": "Effect 4.0 Ships: Dependency-Free Rewrite with 5x Smaller Bundles and Long-Term Support",
+   "url": "https://www.infoq.com/news/2026/11/effect-4-0-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-10T06:33:00+00:00",
+   "summary": "Effect 4.0, a TypeScript framework for typed errors and structured concurrency, was released on 30 September 2026 with a rewritten fiber runtime. The team reports a bundle size drop from 35.6 kB to 7.1 kB and about 6.4x higher throughput, though these figures are not independently verified.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "b579a343e6b6",
+   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+   "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-10T06:31:42+00:00",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "9d577ccad8e4",
    "title": "Nozomi Vantage for Government secures FedRAMP Moderate certification for federal OT and IoT monitoring",
    "url": "https://industrialcyber.co/news/nozomi-vantage-for-government-secures-fedramp-moderate-certification-for-federal-ot-and-iot-monitoring/",
@@ -1572,6 +1723,22 @@
     "ICS / OT",
     "Embedded & IoT",
     "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "cb6bb6ee350d",
+   "title": "Filings: Moonshot signed a deal in August to rent 32 China-based Super Micro servers with Nvidia B300, the most powerful AI chip, possibly in breach of US rules (Andy Lin/Bloomberg)",
+   "url": "https://www.techmeme.com/261110/p2#a261110p2",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-10T06:30:00+00:00",
+   "summary": "Andy Lin / Bloomberg : Filings: Moonshot signed a deal in August to rent 32 China-based Super Micro servers with Nvidia B300, the most powerful AI chip, possibly in breach of US rules — Moonshot AI accessed a trove of Nvidia Corp.'s most advanced chips this summer, according to documents filed with Beijing regulators …",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI",
+    "Hardware",
     "Policy & regulation"
    ]
   },
@@ -1704,6 +1871,19 @@
    "topics": [
     "Hardware",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "09304bdd4daa",
+   "title": "Mathematicians Are Like Luddites",
+   "url": "https://alok.blog/luddite/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-10T05:52:38+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -1862,7 +2042,14 @@
    "source_category": "Security",
    "published": "2026-11-10T05:00:58+00:00",
    "summary": "Application Security Engineer ONE ZERO BANK | Israel | Hybrid – View job details As an Application Security Engineer, you will work with developers to build security into the software development lifecycle.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "92fb7333d530",
+     "source": "NASA News Releases",
+     "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+     "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/"
+    }
+   ],
    "topics": [
     "Development"
    ]
@@ -1910,6 +2097,19 @@
    ]
   },
   {
+   "id": "e07e160d0d82",
+   "title": "Laurenz Albe: Don't dream it, be it!",
+   "url": "https://postgr.es/p/9Br",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-10T04:00:06+00:00",
+   "summary": "No, this is not in commemoration of the late Tim Curry. After repeatedly writing about the Swiss PGDay , I want to share a personal impression from the European PostgreSQL conference 2026 . PGConf EU PGConf EU is the main European PostgreSQL conference, and one of the biggest (or the biggest?) worldwide.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "6aa26246d681",
    "title": "Ultorg: The User Interface for Relational Databases",
    "url": "https://www.ultorg.com/",
@@ -1920,6 +2120,19 @@
    "also_covered_by": [],
    "topics": [
     "Databases"
+   ]
+  },
+  {
+   "id": "aa9d06fdcfe1",
+   "title": "Yonkers Rises",
+   "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-10T03:53:04+00:00",
+   "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed it's location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -1959,6 +2172,33 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "644cfe4e6938",
+   "title": "Now available: OAuth authentication for on-premises Exchange mailbox migrations to Microsoft 365",
+   "url": "https://techcommunity.microsoft.com/t5/exchange-team-blog/now-available-oauth-authentication-for-on-premises-exchange/ba-p/4571777",
+   "source": "Exchange Team Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-09T18:43:30+00:00",
+   "summary": "We are happy to announce that Microsoft 365 Mailbox Replication Service (MRS) now supports OAuth as an authentication method when migrating mailboxes between Microsoft 365 and an on-premises Exchange environment.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f506dd4cb81b",
+   "title": "Securing Financial Services: 5 Critical Cybersecurity Advantages of NodeZero",
+   "url": "https://horizon3.ai/intelligence/infographics/securing-financial-services-5-critical-cybersecurity-advantages-of-nodezero/",
+   "source": "Horizon3.ai",
+   "source_category": "Pen testing",
+   "published": "2026-11-09T17:03:00+00:00",
+   "summary": "Discover 5 key cybersecurity advantages of NodeZero™ for financial services: executive insights, fraud protection, compliance cost reduction, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
