@@ -1,6 +1,6 @@
 {
  "date": "2026-11-10",
- "generated": "2026-11-10T09:31:05+00:00",
+ "generated": "2026-11-10T10:00:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -173,9 +173,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 87,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "Data Center Dynamics",
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 20,
+   "recent": 0,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -743,9 +743,9 @@
   },
   {
    "source": "CNX Software",
-   "fetched": 32,
-   "recent": 7,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Hackaday",
@@ -1242,7 +1242,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1560,6 +1560,72 @@
  ],
  "items": [
   {
+   "id": "40ec5a67c704",
+   "title": "Russian Turla group used new toolset to silently pilfer emails from Kazakhstan, Romanian governments",
+   "url": "https://cyberscoop.com/russian-turla-group-used-new-toolset-to-silently-pilfer-emails-from-kazakhstan-romanian-governments/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-10T10:00:00+00:00",
+   "summary": "Nicknamed “Turla’s Cereal,” the tools target Microsoft Exchange servers and lack many obvious indicators of compromise or malicious telemetry, per a new ESET report.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows",
+    "System administration",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a13aead14039",
+   "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+   "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-10T09:42:27+00:00",
+   "summary": "CISA has added CVE-2026-123218 and CVE-2026-116779 to KEV, urging federal agencies to patch them within three days.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-116779",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "GitHub_M"
+    },
+    {
+     "id": "CVE-2026-123218",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "ibm"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-116779",
+      "added": "2026-11-09",
+      "ransomware": false
+     },
+     {
+      "id": "CVE-2026-123218",
+      "added": "2026-11-09",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-116779",
+     "score": 0.01299,
+     "percentile": 0.70632,
+     "date": "2026-11-09"
+    }
+   }
+  },
+  {
    "id": "8485a0e595c0",
    "title": "Binance Investigates ShinyHunters Breach Claims",
    "url": "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/",
@@ -1581,7 +1647,20 @@
    "source_category": "IT industry",
    "published": "2026-11-10T09:29:53+00:00",
    "summary": "Anthropic has introduced Claude Fable 5.2 and Mythos 5.2, claiming significant improvements in handling complex software engineering tasks while cutting API prices by 20% compared with the previous versions. Fable 5.2 and Mythos 5.2 share the same underlying model but have different safeguards.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1db51eee6273",
+     "source": "CSO Online",
+     "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
+     "url": "https://www.csoonline.com/article/4246688/anthropic-sharpens-ai-coding-and-security-capabilities-with-mythos-5-2.html"
+    },
+    {
+     "id": "7a0c005c0bce",
+     "source": "Computerworld",
+     "title": "Anthropic unveils Claude Fable 5.2, Mythos 5.2 with coding gains and lower prices",
+     "url": "https://www.computerworld.com/article/4246693/anthropic-unveils-claude-fable-5-2-mythos-5-2-with-coding-gains-and-lower-prices-2.html"
+    }
+   ],
    "topics": [
     "AI",
     "Development"
@@ -1635,7 +1714,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-10T09:28:29+00:00",
    "summary": "KDE Plasma 6.8.3 is now available as the third maintenance update to the latest KDE Plasma 6.8 desktop environment series with more bug fixes and improvements.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0f8236e4c5a0",
+     "source": "Linuxiac",
+     "title": "KDE Plasma 6.8.3 Released with KWin, Multi-GPU, and Desktop Fixes",
+     "url": "https://linuxiac.com/kde-plasma-6-8-3-released-with-kwin-multi-gpu-and-desktop-fixes/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -1832,6 +1918,23 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "666d517d3d5b",
+   "title": "USN-9018-1: Linux kernel vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9018-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-10T08:42:59+00:00",
+   "summary": "Several security issues were discovered in the Linux kernel. An attacker could possibly use these to compromise the system. This update corrects flaws in the following subsystems: - Network file systems library; - Stream parser; - ARM64 architecture; - PowerPC architecture; - RISC-V architecture; - S390 architecture;…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Linux & open source",
+    "Embedded & IoT",
+    "Networking"
    ]
   },
   {
@@ -2433,7 +2536,14 @@
    "source_category": "Security",
    "published": "2026-11-10T06:44:36+00:00",
    "summary": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "dbd8ed39a088",
+     "source": "SecurityWeek",
+     "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+     "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows",
