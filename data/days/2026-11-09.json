@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-10T00:31:27+00:00",
+ "generated": "2026-11-10T01:01:22+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -78,7 +78,7 @@
   {
    "source": "eWeek",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 30,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 25,
+   "recent": 23,
    "error": null
   },
   {
@@ -690,7 +690,7 @@
   {
    "source": "Troy Hunt",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -762,7 +762,7 @@
   {
    "source": "Redis blog",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "Google Cloud Blog",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1074,13 +1074,13 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1560,6 +1560,48 @@
  ],
  "items": [
   {
+   "id": "dc14a8e46d2b",
+   "title": "Blunt Banhammer Blocks Basic Bots Ballistically",
+   "url": "https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-10T00:48:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f767d1328aac",
+   "title": "Weekly Update 529: Kids Social Media Bans (and Everything Else)",
+   "url": "https://www.troyhunt.com/weekly-update-529/",
+   "source": "Troy Hunt",
+   "source_category": "Security",
+   "published": "2026-11-10T00:42:35+00:00",
+   "summary": "The kids-and-social-media discussion is just dumb. It's not the premise of delaying their access until 16, but the inability of those who should know better to grasp where the responsibility for enforcement lies. Here's our PM's explainer after the laws passed",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4a43ad2a8d22",
+   "title": "AMD Submits First GFX13 Graphics Core Patches for Linux: RDNA 5 Support Takes Shape",
+   "url": "https://joho-todai.com/en/amd-gfx13-gpu-linux-kernel-rdna-5/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-10T00:40:58+00:00",
+   "summary": "AMD has submitted initial Graphics Core support for GFX13, believed to correspond to RDNA 5, for the AMDGPU kernel driver. The patches add the core compute and rendering block to the Linux driver effort after January's compiler work and July's display engine patches.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
    "id": "6b3152ebf3dc",
    "title": "Datacenter Systems Spending To Go Through The Roof In 2027",
    "url": "https://www.nextplatform.com/compute/2026/11/10/datacenter-systems-spending-to-go-through-the-roof-in-2027/5308636",
@@ -1571,6 +1613,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "c0e79975dea1",
+   "title": "Mesa 26.3 Released With VK_AMD_anti_lag For RADV, Many Other Vulkan Improvements",
+   "url": "https://www.phoronix.com/news/Mesa-26.3-Released",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-10T00:19:46+00:00",
+   "summary": "Mesa 26.3 is out today as the fourth quarter Mesa3D feature release for this collection of open-source OpenGL and Vulkan drivers...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3249,7 +3304,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-09T19:28:01+00:00",
    "summary": "Failed fingerprint or facial recognition attempts can make Windows Hello unnecessarily annoying. Microsoft is finally making it easier to get around them.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5392e6bd47ed",
+     "source": "TechRepublic",
+     "title": "Windows 11 Is Fixing an Annoying Sign-In Problem: Here’s What Changes",
+     "url": "https://www.techrepublic.com/article/news-windows-11-hello-pin-sign-in-update/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
    ]
@@ -6897,7 +6959,14 @@
    "source_category": "IT industry",
    "published": "2026-11-09T14:07:22+00:00",
    "summary": "Amazon is reportedly developing a new home robot. Fauna Robotics, which Amazon acquired, is hiring people to design how robots behave around people and handle repairs. Astro developers have reportedly been reassigned, and the range of tasks a robot can handle at home remains a challenge.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "de4320927d62",
+     "source": "TechRepublic",
+     "title": "Amazon’s Next Home Robot: A Second Chance After Astro’s Rocky Start",
+     "url": "https://www.techrepublic.com/article/news-amazon-new-home-robot-astro-fauna-robotics/"
+    }
+   ],
    "topics": [
     "Development"
    ]
@@ -7941,6 +8010,12 @@
      "source": "ServeTheHome",
      "title": "Google TPU 8tx Pairs AMD EPYC Turin Hosts with Confidential Computing while TPU 8i Max Doubles Memory Bandwidth",
      "url": "https://www.servethehome.com/google-tpu-8tx-8i-max-amd-epyc-turin/"
+    },
+    {
+     "id": "ed213adeba37",
+     "source": "Hacker News",
+     "title": "TPU 8tx and TPU 8i Max",
+     "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
     }
    ],
    "topics": [
@@ -8213,7 +8288,14 @@
    "source_category": "Development",
    "published": "2026-11-09T12:55:11+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3a23c5e97d07",
+     "source": "Hacker News",
+     "title": "Horible public key tricks",
+     "url": "https://maurycyz.com/projects/badcert/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -9627,7 +9709,14 @@
    "source_category": "Development",
    "published": "2026-11-09T11:00:00+00:00",
    "summary": "In this episode, Edoardo Vacchi discusses the evolving landscape of WebAssembly on the backend, running Java workloads on GPUs using TornadoVM, and optimizing distributed AI inference using llm-d and vLLM on Kubernetes.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0615186de1ed",
+     "source": "Google Cloud Blog",
+     "title": "The open AI-native stack on Kubernetes: From open models to distributed inference and agents",
+     "url": "https://cloud.google.com/blog/topics/developers-practitioners/the-open-ai-native-stack-on-kubernetes-from-open-models-to-distributed-inference-and-agents/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
@@ -12058,6 +12147,19 @@
    ]
   },
   {
+   "id": "46b2d373cf4f",
+   "title": "Preparing for 1099 Season Without Starting From Scratch",
+   "url": "https://www.eweek.com/big-data-and-analytics/preparing-1099-season-without-starting-from-scratch/",
+   "source": "eWeek",
+   "source_category": "IT industry",
+   "published": "2026-11-09T05:00:00+00:00",
+   "summary": "Year-round payee validation can reduce 1099 season pressure. Learn how to resolve taxpayer information issues earlier and prepare for filing.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f95e5ffd3bd7",
    "title": "Linus Torvalds sees signs AI-prompted patch flood has peaked",
    "url": "https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345",
@@ -12613,6 +12715,21 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "5a0db0640394",
+   "title": "Give your Vercel AI SDK agents memory with Redis Agent Memory",
+   "url": "https://redis.io/blog/give-your-vercel-ai-sdk-agents-memory-with-redis-agent-memory/",
+   "source": "Redis blog",
+   "source_category": "Databases",
+   "published": "2026-11-09T00:00:00+00:00",
+   "summary": "We've released @redis/vercel-ai-sdk, an open-source package that adds Redis Agent Memory to agents built with Vercel's AI SDK. Most agents start every conversation cold. Users repeat their preferences, and yesterday's context is gone. You can bolt on...",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Databases"
    ]
   },
   {
