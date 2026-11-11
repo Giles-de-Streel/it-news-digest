@@ -215,6 +215,7 @@ def parse_feed(data):
             "url": _text(it, "link", "guid"),
             "summary": _text(it, "description", f"{CONTENT}encoded"),
             "published": _text(it, "pubDate", f"{DC}date"),
+            "categories": [(c.text or "").strip() for c in it.findall("category")],
         })
     for it in root.iter(f"{RSS1}item"):  # RSS 1.0 / RDF (e.g. Slashdot)
         items.append({
@@ -240,6 +241,7 @@ def parse_feed(data):
             "url": link,
             "summary": _text(it, f"{ATOM}summary", f"{ATOM}content"),
             "published": _text(it, f"{ATOM}published", f"{ATOM}updated"),
+            "categories": [(c.get("term") or "").strip() for c in it.findall(f"{ATOM}category")],
         })
     return items
 
@@ -250,12 +252,17 @@ def build_items(items, source):
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0)
     # Optional per-source title filter, e.g. only Important/Critical Red Hat advisories
     include = re.compile(source["title_include"]) if source.get("title_include") else None
+    # Optional per-source feed-category filter, e.g. only Semafor's Technology/Security items:
+    # a regex at least one of the item's <category> values must fully match
+    cat_include = re.compile(source["category_include"]) if source.get("category_include") else None
     for raw in items:
         title = clean_text(raw["title"])
         url = (raw["url"] or "").strip()
         if not title or not url.startswith("http"):
             continue
         if include and not include.search(title):
+            continue
+        if cat_include and not any(cat_include.fullmatch(c) for c in raw.get("categories") or []):
             continue
         published = parse_date(raw["published"])
         if published and published > fetched_at:

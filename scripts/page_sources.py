@@ -209,6 +209,33 @@ def parse_apple_security_releases(page, base_url):
     return items
 
 
+def parse_anthropic_news(page, base_url):
+    """Anthropic newsroom (www.anthropic.com/news). Two layouts carry stories: <article> tiles at the
+    top and <li class="..._row"> rows in the full listing. Each block has a <time>Mon D, YYYY</time>
+    and a link to /news/<slug> wrapping an <h3> headline (possibly inside spans), followed by a <p>
+    summary. Category links (/news/policy etc.) hold no headline, so they never match. Blocks without
+    a date (e.g. a featured hero) are skipped; a story listed twice is kept once."""
+    items, seen = [], set()
+    for block in re.split(r"<article\b|<li\b[^>]*class=\"[^\"]*_row\b", page)[1:]:
+        block = re.split(r"</article>|</li>", block, maxsplit=1)[0]
+        date = re.search(r"<time[^>]*>\s*([A-Z][a-z]{2,8})\s+(\d{1,2}),\s*(\d{4})\s*</time>", block)
+        link = re.search(r'<a[^>]+href="(/news/[a-z0-9][a-z0-9-]*)"[^>]*>(?:(?!</a>).)*?<h\d[^>]*>(.*?)</h\d>', block, re.S)
+        if not date or not link:
+            continue
+        url = urljoin(base_url, link.group(1))
+        if url in seen:
+            continue
+        seen.add(url)
+        summary = re.search(r"<p[^>]*>(.*?)</p>", block[link.end():], re.S)
+        items.append({
+            "title": _strip(link.group(2)),
+            "url": url,
+            "summary": _strip(summary.group(1)) if summary else "",
+            "published": _noon_utc(date.group(2), date.group(1), date.group(3)),
+        })
+    return items
+
+
 NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 NVD_PAGE_SIZE = 2000
 NVD_MAX_PAGES = 5
@@ -275,6 +302,7 @@ API_FETCHERS = {
 
 PARSERS = {
     "adobe_product_bulletins": parse_adobe_product_bulletins,
+    "anthropic_news": parse_anthropic_news,
     "apple_security_releases": parse_apple_security_releases,
     "cisa_kev": parse_cisa_kev,
     "mozilla_advisories": parse_mozilla_advisories,

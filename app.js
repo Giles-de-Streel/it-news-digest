@@ -23,6 +23,7 @@
     source: "",
     query: "",
     cveQuery: "",
+    srcQuery: "", // Sources tab search: filters the sources and suggested-sources tables
     layout: "list",
     catalog: [], // every configured source, from sources.json
     suggest: null, // data/source_candidates.json, loaded the first time the Sources tab opens
@@ -496,6 +497,14 @@
     );
   }
 
+  // Sources-tab search: every word must appear in one of the given fields (case-insensitive)
+  function srcMatch(...fields) {
+    const words = state.srcQuery.toLowerCase().split(/s+/).filter(Boolean);
+    if (!words.length) return true;
+    const hay = fields.filter(Boolean).join(" ").toLowerCase();
+    return words.every((w) => hay.includes(w));
+  }
+
   function renderSources() {
     const d = state.dayData || {};
     $("#sources-meta").textContent = !d.generated ? ""
@@ -513,7 +522,11 @@
       ...(onCount < all.length ? [el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) })] : []),
     );
 
-    $("#sources-body").replaceChildren(...all.map((s) => {
+    const shown = all.filter((s) => srcMatch(s.name, s.category, s.site, s.url));
+    if (state.srcQuery.trim()) {
+      $("#sources-switches").append(el("span", { class: "src-count", text: `${shown.length} of ${all.length} match "${state.srcQuery.trim()}".` }));
+    }
+    $("#sources-body").replaceChildren(...(shown.length ? [] : [el("tr", {}, el("td", { colspan: "6", class: "muted", text: "No source matches this search." }))]), ...shown.map((s) => {
       const st = status.get(s.name);
       const on = !state.off.has(s.name);
       return el("tr", { class: on ? "" : "off" },
@@ -554,9 +567,11 @@
     const names = state.catalog.filter((c) => c.discover).map((c) => c.name);
     const via = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names.at(-1)}` : names[0] || "the aggregator sources";
     // Only sites whose latest linked article was checked and found free to read
-    const list = (s.candidates || []).filter((c) => c.mentions.length >= min && c.access === "free").slice(0, SUGGEST_MAX);
+    const all = (s.candidates || []).filter((c) => c.mentions.length >= min && c.access === "free").slice(0, SUGGEST_MAX);
+    const list = all.filter((c) => srcMatch(c.key, c.home, c.feed && c.feed.url, ...c.examples.map((e) => e.title)));
     $("#suggested").hidden = !s.generated;
-    $("#suggested-meta").textContent = list.length
+    $("#suggested-meta").textContent = all.length && !list.length ? `None of the ${all.length} suggested sites match "${state.srcQuery.trim()}".`
+      : list.length
       ? `Sites that ${via} linked to ${min} or more times in the last ${s.window_days} days, that no source covers yet and that are free to read (paywalled sites are left out), most-linked first. Nothing is added automatically: Add opens a pre-filled GitHub issue, and the Add source workflow test-fetches the feed and adds it to sources.json if it works.`
       : `No free-to-read site has been linked ${min} or more times yet. The list fills in as each fetch records links from ${via}.`;
     $("#suggested-body").replaceChildren(...list.map((c) => {
@@ -687,6 +702,7 @@
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
+    $("#src-search").addEventListener("input", (e) => { state.srcQuery = e.target.value; renderSources(); });
     $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncUrl(false); render(); });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); window.scrollTo({ top: 0 }); });
     $("#topics-toggle").addEventListener("click", () => toggleTopicPanel());
@@ -700,6 +716,8 @@
       const typing = /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement?.tagName || "");
       if (e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
+        // On the Sources tab it searches the sources; everywhere else it jumps to the News search
+        if (state.view === "sources") { $("#src-search").focus(); return; }
         if (state.view !== "news") setView("news");
         $("#search").focus();
       } else if (e.key === "Escape") {
