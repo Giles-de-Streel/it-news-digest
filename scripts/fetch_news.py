@@ -255,8 +255,12 @@ def build_items(items, source):
     # Optional per-source feed-category filter, e.g. only Semafor's Technology/Security items:
     # a regex at least one of the item's <category> values must fully match
     cat_include = re.compile(source["category_include"]) if source.get("category_include") else None
+    # Optional per-source regex removed from titles, e.g. the " - Outlet" suffix Google News appends
+    strip = re.compile(source["title_strip"]) if source.get("title_strip") else None
     for raw in items:
         title = clean_text(raw["title"])
+        if strip:
+            title = strip.sub("", title).strip()
         url = (raw["url"] or "").strip()
         if not title or not url.startswith("http"):
             continue

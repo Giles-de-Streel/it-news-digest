@@ -109,6 +109,7 @@ Vendor advisories: Cisco PSIRT, Fortinet PSIRT, Palo Alto Networks, Ivanti, CERT
 
 - **Red Hat** uses the RHSA feed with `"title_include": ": (Important|Critical):"`. Any source can set `title_include`, a regex an item's title must match to be kept.
 - **Semafor** publishes one all-topics feed, so it uses `"category_include": "Technology|Security"`. Any feed source can set `category_include`, a regex that at least one of an item's RSS `<category>` (or Atom `term`) values must fully match to be kept.
+- **Embedded Computing Design** put its whole site, feed and robots.txt included, behind a Cloudflare browser challenge on 2026-11-06 (403 to every script; its FeedBurner copy stopped the same day). It is read from a Google News search feed limited to the site instead, so its links open through news.google.com, and `"title_strip": " - Embedded Computing Design$"` removes the suffix Google adds. Any source can set `title_strip`, a regex removed from each title. Switch back to https://embeddedcomputing.com/rss if the challenge is lifted.
 - **Adobe ColdFusion bulletins** are read by the `adobe_product_bulletins` page parser from helpx.adobe.com/security/products/coldfusion.html, dated by "Originally posted". Adobe's all-products bulletin list loads with JavaScript, so it isn't used. The same parser should work for other helpx product pages.
 - Checked and left out in Oct 2026: Microsoft Security Update Guide RSS (about 300 CVE entries a day), Broadcom/VMware, Citrix and SC Media feeds (malformed XML).
 
