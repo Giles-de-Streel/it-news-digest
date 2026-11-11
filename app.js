@@ -167,6 +167,7 @@
     "Reverse engineering": ["Reverse engineering", "Decompiling, disassembly, fuzzing and malware analysis."],
     "Supply chain security": ["Software supply chain security", "Malicious packages, dependencies, SBOMs and open-source ecosystem security."],
     "System administration": ["System administration", "Running Windows, Microsoft 365 and Linux systems: AD, Group Policy, PowerShell, patching, releases and end-of-support dates."],
+    "TLS & PKI": ["TLS, PKI and cryptography", "TLS and certificates, certificate authorities and root programs, ACME and Let's Encrypt, revocation, post-quantum cryptography and crypto libraries such as OpenSSL."],
     "Threats & malware": ["Threats and malware", "Malware, phishing, botnets, threat actors and campaigns."],
     "Vulnerabilities & patches": ["Vulnerabilities and patches", "CVEs, zero-days, exploits, security updates and advisories."],
   };
