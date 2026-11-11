@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "generated": "2026-11-11T19:01:21+00:00",
+ "generated": "2026-11-11T19:31:43+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 108,
-   "recent": 108,
+   "fetched": 111,
+   "recent": 111,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 27,
+   "recent": 28,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 10,
+   "recent": 12,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 8,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Palo Alto Networks advisories",
    "fetched": 25,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 321,
-   "recent": 275,
+   "fetched": 322,
+   "recent": 276,
    "error": null
   },
   {
@@ -834,13 +834,13 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 14,
+   "recent": 16,
    "error": null
   },
   {
    "source": "AWS News Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1134,7 +1134,7 @@
   {
    "source": "GitLab Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1344,7 +1344,7 @@
   {
    "source": "EdTech Magazine Higher Ed",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1452,7 +1452,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 40,
+   "recent": 41,
    "error": null
   },
   {
@@ -1728,6 +1728,199 @@
  ],
  "items": [
   {
+   "id": "950206027a35",
+   "title": "CoreWeave Launches Managed PostgreSQL Service That Runs Inside Its Kubernetes Clusters",
+   "url": "https://cloudnativenow.com/kubecon-cloudnativecon-north-america-2026/coreweave-launches-managed-postgresql-service-that-runs-inside-its-kubernetes-clusters/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-11T19:19:45+00:00",
+   "summary": "LIVINGSTON, N.J. -- CoreWeave on Wednesday announced the general availability of CoreWeave Database, a managed PostgreSQL service that runs inside customers’ CoreWeave Kubernetes Service (CKS) clusters alongside their training and inference workloads.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Databases",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "d475881e14f4",
+   "title": "CVE-2026-65840: Fider is a feedback portal for feature requests and suggestions.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65840",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-11T19:17:43.937000+00:00",
+   "summary": "Fider is a feedback portal for feature requests and suggestions. Prior to version 0.36.0, in multi-tenant mode (HOST_MODE=multi), an attacker can use an email verification key issued by Tenant A to authenticate as the same email address on Tenant B.",
+   "kind": "cve",
+   "cve": "CVE-2026-65840",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-65840",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "8290941665c8",
+   "title": "CVE-2026-126777: Traccar 3.15 before 6.17.0 contains an authentication bypass vulnerability in LdapProvider.login() that fails…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126777",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-11T19:17:38.497000+00:00",
+   "summary": "Traccar 3.15 before 6.17.0 contains an authentication bypass vulnerability in LdapProvider.login() that fails to reject empty passwords, causing LDAP binds to be performed as unauthenticated binds when LDAP authentication is enabled.",
+   "kind": "cve",
+   "cve": "CVE-2026-126777",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-126777",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2211fff80515",
+   "title": "CVE-2026-126768: OpsTree REMS through 1.0.0 contains an authentication bypass vulnerability that allows unauthenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126768",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-11T19:17:37.140000+00:00",
+   "summary": "OpsTree REMS through 1.0.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid JWTs by setting the client-controlled is_local_auth field.",
+   "kind": "cve",
+   "cve": "CVE-2026-126768",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-126768",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "8620b38d2309",
+   "title": "Anthropic built a model that beats Opus. It recommends Opus anyway.",
+   "url": "https://thenewstack.io/anthropic-fable-opus-cost/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-11T19:15:21+00:00",
+   "summary": "Anthropic just released a coding model that beats Opus 5.5 on two major benchmarks and can complete certain difficult tasks",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "3a0126a331af",
+   "title": "Why Nvidia gave OpenShell to the CNCF",
+   "url": "https://thenewstack.io/nvidia-donates-openshell-cncf/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-11T19:13:54+00:00",
+   "summary": "Nvidia this week donated OpenShell, its open-source runtime for securing and governing AI agents, to the Cloud Native Computing Foundation.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bcec64075d89",
+   "title": "Technology Enables Higher Ed IT Leaders to Make More Proactive Decisions",
+   "url": "https://edtechmagazine.com/higher/article/2026/11/technology-enables-higher-ed-it-leaders-make-more-proactive-decisions",
+   "source": "EdTech Magazine Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-11T19:13:44+00:00",
+   "summary": "The higher education IT landscape has always been complex, but with distributed systems and governance structures, tight budgets and limited staff, technology decisions are often made in a vacuum.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "57483bacacb0",
+   "title": "Show HN: I recreated Papers Please but you're deciding which YC startups to fund",
+   "url": "https://termsheetplease.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T19:12:16+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "83ae7f7b196c",
+   "title": "Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens (Google)",
+   "url": "https://www.techmeme.com/261111/p40#a261111p40",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-11T19:05:00+00:00",
+   "summary": "Google : Google launches Gemini Decisions API, powered by its new Gemini Decision 1 model, to return predefined answers with confidence scores, at $0.10/1M input tokens — Introducing the Gemini Decisions API, powered by our new Gemini Decision 1 model. Evaluate up to 1,000 yes/no, choice …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a451f48cd129",
+   "title": "Test your applications against AWS locally with AWS Emulator",
+   "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+   "source": "AWS News Blog",
+   "source_category": "Cloud",
+   "published": "2026-11-11T19:00:44+00:00",
+   "summary": "AWS Emulator is a free, open-source local emulator in Rust that lets developers test applications against nearly every AWS service on their own machine using the same CLI and SDK commands, with fidelity measured against real AWS behavior.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development"
+   ]
+  },
+  {
+   "id": "81494ad15c27",
+   "title": "RHSA-2026:99090: Important: gstreamer1 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99090",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T19:00:31+00:00",
+   "summary": "An update for gstreamer1 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "59a74c5da001",
+   "title": "Court Says Trump Can't Use Leaks To Justify Spying On Journalists' LinkedIn DMs",
+   "url": "https://yro.slashdot.org/story/26/11/11/1822204/court-says-trump-cant-use-leaks-to-justify-spying-on-journalists-linkedin-dms?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-11T19:00:00+00:00",
+   "summary": "An anonymous reader quotes a report from Ars Technica: The Trump administration's fight to stop suspected leaks of top-secret military information on LinkedIn can't sweep in \"a vast number of confidential sources\" of random journalists \"who have no conceivable relationship\" to the Department of Justice's…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "096195cb28c5",
    "title": "RHSA-2026:99091: Important: guava security update",
    "url": "https://access.redhat.com/errata/RHSA-2026:99091",
@@ -1755,6 +1948,21 @@
     "Cloud & infrastructure",
     "AI",
     "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "150377aa115e",
+   "title": "AWS gives developers a free local stand-in for its cloud, built from scratch by AI agents",
+   "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-11T18:51:56+00:00",
+   "summary": "AWS released AWS Emulator, a free tool that simulates more than 200 AWS services on a developer's own machine, and says AI agents wrote all of its code without review by its engineers. Agents also maintain the emulator, testing it against the real AWS cloud and fixing the gaps they find. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
     "Development"
    ]
   },
@@ -1838,6 +2046,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "72934d5e0b7c",
+   "title": "Which predictive analytics warnings are worth acting on?",
+   "url": "https://www.techtarget.com/news/which-predictive-analytics-warnings-are-worth-acting-on/874420/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-11T18:33:24+00:00",
+   "summary": "Not every early signal demands a response. Focus on meaningful risks, leave enough time to act and gauge whether decisions have actually improved outcomes.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2330,6 +2551,20 @@
    ]
   },
   {
+   "id": "986b873333e2",
+   "title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-11T18:00:00+00:00",
+   "summary": "AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "78f7a680156c",
    "title": "RHSA-2026:99096: Important: Red Hat JBoss Enterprise Application Platform 7.4.26 Security update",
    "url": "https://access.redhat.com/errata/RHSA-2026:99096",
@@ -2510,6 +2745,19 @@
    ]
   },
   {
+   "id": "e376c11356d9",
+   "title": "The Power and Legacy of Virginia Tech's Mac-Based Supercomputers",
+   "url": "https://512pixels.net/2026/11/va-tech-system-x-system-g/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T17:30:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "cacd8bb61a8d",
    "title": "Amazon’s open-source AWS Emulator lets developers validate their code locally, without the cloud",
    "url": "https://siliconangle.com/2026/11/11/amazons-open-source-aws-emulator-lets-developers-validate-their-code-locally-without-the-cloud/",
@@ -2598,6 +2846,19 @@
    "topics": [
     "Microsoft & Windows",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "cc915257e2fe",
+   "title": "Amazon EKS Auto Mode now supports security groups for Pods",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-11T17:26:00+00:00",
+   "summary": "Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -2857,6 +3118,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "41731f0b9e1b",
+   "title": "How to align AI governance framework with NIST AI RMF, ISO/IEC 42001",
+   "url": "https://www.techtarget.com/news/how-to-align-ai-governance-framework-with-nist-ai-rmf-isoiec-42001/874406/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-11T17:02:02+00:00",
+   "summary": "Explore AI governance framework best practices and how to align governance with leading standards like NIST AI RMF and ISO/IEC 42001.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -8135,6 +8409,12 @@
      "source": "InfoWorld",
      "title": "Claude Code’s ‘don’t ask again’ button has a secrets-spilling problem",
      "url": "https://www.infoworld.com/article/4247344/claude-codes-dont-ask-again-button-has-a-secrets-spilling-problem-2.html"
+    },
+    {
+     "id": "1d61bc2aef70",
+     "source": "GitLab Blog",
+     "title": "How to prevent leaks from Claude Code's 'Don't ask again' file",
+     "url": "https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/"
     }
    ],
    "topics": [
@@ -12506,6 +12786,12 @@
      "source": "4sysops",
      "title": "OpenAI launches Businesses in ChatGPT with profiles and Business Agents",
      "url": "https://4sysops.com/archives/openai-launches-businesses-in-chatgpt-with-profiles-and-business-agents/"
+    },
+    {
+     "id": "884403628684",
+     "source": "TechTarget News",
+     "title": "OpenAI’s Businesses in ChatGPT targets enterprise trust",
+     "url": "https://www.techtarget.com/news/openais-businesses-in-chatgpt-targets-enterprise-trust/874431/"
     }
    ],
    "topics": [
@@ -14306,6 +14592,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "d17cafe77a3d",
+   "title": "The tiny transmitter tracking monarch butterflies' migration, Canada to Mexico",
+   "url": "https://www.begiant.ca/stories/places/monarch-butterflies-tracking-conservation",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-10T10:41:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
