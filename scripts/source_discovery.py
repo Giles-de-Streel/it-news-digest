@@ -56,6 +56,12 @@ MULTI_TENANT = (
     "pages.dev", "neocities.org", "svbtle.com", "hashnode.dev", "dev.to",
 )
 SECOND_LEVEL = {"co", "com", "org", "net", "ac", "gov", "edu", "ne", "or"}
+# One outlet under several registrable domains: every alias counts as the canonical site, so a source
+# filed under one of them (e.g. BBC Technology: site bbc.com, feed bbci.co.uk) covers links to the others.
+DOMAIN_ALIASES = {
+    "bbc.co.uk": "bbc.com",
+    "bbci.co.uk": "bbc.com",
+}
 FEED_PATHS = ("/feed", "/rss.xml", "/feed.xml", "/atom.xml", "/index.xml")
 
 
@@ -68,8 +74,10 @@ def site_key(url):
         return host
     labels = host.split(".")
     if len(labels) >= 3 and labels[-2] in SECOND_LEVEL and len(labels[-1]) == 2:
-        return ".".join(labels[-3:])  # e.g. bbc.co.uk
-    return ".".join(labels[-2:])
+        key = ".".join(labels[-3:])  # e.g. bbc.co.uk
+    else:
+        key = ".".join(labels[-2:])
+    return DOMAIN_ALIASES.get(key, key)
 
 
 class _Links(HTMLParser):
@@ -185,7 +193,9 @@ def update(path, sources, results, user_agent, robots_allows, parse_feed):
         c = cands[key]
         c["mentions"] = [m for m in c["mentions"] if m[1] >= oldest]
         c["examples"] = [e for e in c["examples"] if e["date"] >= oldest]
-        if not c["mentions"] or key in known or key in PAYWALLED:  # aged out, added, or now listed as paywalled
+        # aged out, added (also under an alias, e.g. an old "bbc.co.uk" entry once bbc.com is a source),
+        # or now listed as paywalled
+        if not c["mentions"] or site_key(f"https://{key}/") in known or key in PAYWALLED:
             del cands[key]
 
     recheck = (date.today() - timedelta(days=RECHECK_DAYS)).isoformat()
