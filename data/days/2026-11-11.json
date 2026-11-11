@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "generated": "2026-11-11T16:31:41+00:00",
+ "generated": "2026-11-11T17:01:25+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 36,
+   "recent": 37,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 28,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "dbi services",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "IncompleteRead: IncompleteRead(6274 bytes read)"
   },
   {
    "source": "Pythian",
@@ -528,7 +528,7 @@
   {
    "source": "TrustedSec",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Palo Alto Networks advisories",
    "fetched": 25,
-   "recent": 1,
+   "recent": 11,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -725,7 +725,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 97,
+   "fetched": 96,
    "recent": 12,
    "error": null
   },
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1085,9 +1085,9 @@
   },
   {
    "source": "Ubuntu Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+   "fetched": 12,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Linux kernel releases",
@@ -1109,9 +1109,9 @@
   },
   {
    "source": "Ubuntu security notices",
-   "fetched": 0,
-   "recent": 0,
-   "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+   "fetched": 10,
+   "recent": 10,
+   "error": null
   },
   {
    "source": "Debian security advisories",
@@ -1380,7 +1380,7 @@
   {
    "source": "Backblaze Blog",
    "fetched": 9,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 38,
+   "recent": 39,
    "error": null
   },
   {
@@ -1572,7 +1572,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1620,13 +1620,13 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
    "source": "Google Blog",
    "fetched": 20,
-   "recent": 14,
+   "recent": 17,
    "error": null
   },
   {
@@ -1728,6 +1728,336 @@
  ],
  "items": [
   {
+   "id": "8e7f9f6027da",
+   "title": "CVE-2026-0326 PAN-OS: Buffer Overflow Vulnerability in Protocol and Service Processing (Severity: LOW)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0326",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "708bd4136a4e",
+   "title": "CVE-2026-0327 PAN-OS: Privilege Escalation Vulnerability in GlobalProtect (Severity: LOW)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0327",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team"
+   ],
+   "cves": []
+  },
+  {
+   "id": "a5c2634b4f17",
+   "title": "CVE-2026-0330 PAN-OS: Authenticated Remote Code Execution (RCE) in Panorama (Severity: MEDIUM)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0330",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": []
+  },
+  {
+   "id": "52beed68275b",
+   "title": "PAN-SA-2026-0014 Chromium: Monthly Vulnerability Update (November 2026) (Severity: HIGH)",
+   "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0014",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9a3cd62d9a15",
+   "title": "CVE-2026-0329 PAN-OS: Buffer Overflow Vulnerability (Severity: MEDIUM)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0329",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "cd8aff4ae558",
+   "title": "CVE-2026-0323 Checkov by Prisma Cloud: Server-Side Request Forgery Vulnerability (Severity: LOW)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0323",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ],
+   "cves": []
+  },
+  {
+   "id": "2f72fd954d6e",
+   "title": "CVE-2026-0331 PAN-OS: Sensitive Information Disclosure Vulnerability (Severity: MEDIUM)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0331",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "115085998c53",
+   "title": "CVE-2026-0328 PAN-OS: User Impersonation through GlobalProtect Portal (Severity: LOW)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0328",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "bd00695af2e4",
+   "title": "CVE-2026-0325 PAN-OS: GlobalProtect Authorization Bypass Vulnerability (Severity: LOW)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0325",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "8183ce4524ed",
+   "title": "CVE-2026-0324 GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK on Windows (Severity: MEDIUM)",
+   "url": "https://security.paloaltonetworks.com/CVE-2026-0324",
+   "source": "Palo Alto Networks advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Development"
+   ],
+   "cves": []
+  },
+  {
+   "id": "9742c6034316",
+   "title": "Comedian DoKnow Signs With UTA (EXCLUSIVE)",
+   "url": "https://variety.com/2026/digital/news/doknow-uta-1236944398/",
+   "source": "Variety Digital",
+   "source_category": "IT industry",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "Daniel Lopez, the comedian and podcaster known as DoKnow, has signed with UTA for representation. The signing comes as Lopez is currently embarking on his headlining “DoKnow & Da Hawmies Tour,” with dates slated through the end of 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d89a0189e8cc",
+   "title": "Google’s ongoing commitment to the veteran community",
+   "url": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/veterans-day-2026/",
+   "source": "Google Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "On Veterans’ Day 2026, we’re spotlighting how Google invests in career pathways for veterans and the military community.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "329f10c5763f",
+   "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cybersecurity-2027/",
+   "source": "Google Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "In our Security 2027 analysis, leaders from across Google, Google Cloud, and Mandiant break down the critical trends shaping the next era of defense.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "30fc72fbf285",
+   "title": "Get certified as a Google Cloud Professional Agentic Architect.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/professional-agentic-architect/",
+   "source": "Google Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-11T17:00:00+00:00",
+   "summary": "Today we announced Google Cloud's new Professional Agentic Architect certification.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "89227bd845e4",
+   "title": "AI Agents Can Delete Files. Here’s How IT Teams Get Them Back.",
+   "url": "https://www.backblaze.com/blog/ai-agents-can-delete-files-heres-how-it-teams-get-them-back/",
+   "source": "Backblaze Blog",
+   "source_category": "Backup & recovery",
+   "published": "2026-11-11T16:59:39+00:00",
+   "summary": "AI agents have wiped drives and home folders on real machines. Here is how IT teams reduce the risk and restore files with endpoint backup.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "48879980c6d2",
+   "title": "Kubernetes had settled into quiet maturity until AI blew the doors back open",
+   "url": "https://siliconangle.com/2026/11/11/agent-substrate-how-kubernetes-became-foundation-ai-kubeconna/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:46:05+00:00",
+   "summary": "Kubernetes has grown from a maturing container orchestrator into the agent substrate that enterprises are counting on to run artificial intelligence. The shift revives old security ideas such as perimeters while raising the stakes for portability across clouds.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "bec394c44602",
+   "title": "This curved Sceptre gaming monitor is down to just $78 today",
+   "url": "https://www.neowin.net/deals/this-curved-sceptre-gaming-monitor-is-down-to-just-78-today/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-11T16:46:02+00:00",
+   "summary": "Looking for an affordable monitor upgrade? This curved display packs several useful features and is now available at a tempting price.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d04dc7ba5428",
+   "title": "Study Provides Insights into Impact of Cyberattacks on Hospital Care",
+   "url": "https://www.hipaajournal.com/study-insights-impact-cyberattacks-hospital-care/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-11T16:46:01+00:00",
+   "summary": "A recent analysis by The Health Management Academy of cyberattacks on U.S. hospitals provides insights into the extent to which […]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "da5fdf44af69",
+   "title": "Introducing CNCF User Groups: Long-lived homes for End User collaboration",
+   "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-11T16:41:17+00:00",
+   "summary": "The CNCF End User Community is launching its User Group Program at KubeCon + CloudNativeCon North America. These are long-lived groups, each built around an industry vertical or problem domain, that serves the common need of...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "c383388864ef",
+   "title": "Leaked memo: Meta's head of infrastructure and co-head of engineering Santosh Janardhan plans to leave in early 2027; he will be succeeded by Dave Brown (Riley Griffin/Bloomberg)",
+   "url": "https://www.techmeme.com/261111/p35#a261111p35",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:35:05+00:00",
+   "summary": "Riley Griffin / Bloomberg : Leaked memo: Meta's head of infrastructure and co-head of engineering Santosh Janardhan plans to leave in early 2027; he will be succeeded by Dave Brown — Meta Platforms Inc.'s longtime infrastructure chief will leave the company in early 2027, a major leadership change as it continues …",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "cd8eac6f9e3a",
+   "title": "Writing a SIGGRAPH paper from scratch",
+   "url": "https://alexandergoslin.me/writing-a-siggraph-paper-from-scratch/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-11T16:34:08+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e8d99f0a3e5a",
+   "title": "watchOS 27.3: Three new features coming soon to Apple Watch",
+   "url": "https://9to5mac.com/2026/11/11/watchos-27-3-three-new-features-coming-soon-to-apple-watch/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:33:39+00:00",
+   "summary": "watchOS 27.3 will launch to all users next month and introduce these three new Apple Watch features. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e05d76cd3360",
+   "title": "Why aren't we shipping faster now?",
+   "url": "https://cabird.com/talks/shipping-faster/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T16:33:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "59f8aacfe11e",
+   "title": "Nvidia, Google agent sandboxes meet within CNCF",
+   "url": "https://www.techtarget.com/news/nvidia-google-agent-sandboxes-meet-within-cncf/874392/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:32:00+00:00",
+   "summary": "Nvidia's OpenShell and Google's Agent Substrate join CNCF, deepening agentic security and infrastructure automation ties.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "a7c3ea7c9190",
    "title": "From Automated to Autonomous: Rethinking Fab Design for the Future",
    "url": "https://www.eetimes.com/from-automated-to-autonomous-rethinking-fab-design-for-the-future/",
@@ -1741,6 +2071,19 @@
    ]
   },
   {
+   "id": "ec98e278fd16",
+   "title": "Google DeepMind releases new advanced robotics AI model and next-generation gene prediction model",
+   "url": "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:30:22+00:00",
+   "summary": "Alphabet Inc.’s artificial intelligence research lab, Google DeepMind, Tuesday debuted the next generation of Gemini Robotics, the company’s most capable vision-language-action model to date for creating an “AI brain” for robotics.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "a3a61be2ddde",
    "title": "The Drawer Every Standing Desk Needs",
    "url": "https://hackaday.com/2026/11/11/the-drawer-every-standing-desk-needs/",
@@ -1748,6 +2091,19 @@
    "source_category": "Embedded",
    "published": "2026-11-11T16:30:11+00:00",
    "summary": "Adjustable standing desks have had some ergonomic and health benefits for many people who would otherwise be sitting down all day, but those benefits come at a cost of a …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e4556ad316b6",
+   "title": "Imprint, which helps companies offer co-branded credit cards and manage loyalty programs, raised $130M led by Khosla Ventures at a ~$1.9B valuation (Alex Konrad/Upstarts Media)",
+   "url": "https://www.techmeme.com/261111/p34#a261111p34",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:30:01+00:00",
+   "summary": "Alex Konrad / Upstarts Media : Imprint, which helps companies offer co-branded credit cards and manage loyalty programs, raised $130M led by Khosla Ventures at a ~$1.9B valuation — Imprint CEO Daragh Murphy's co-branded card startup is now solving loyalty for brands in agentic commerce. — ∙ Paid",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -1767,6 +2123,35 @@
    ]
   },
   {
+   "id": "67e73bb8e0d0",
+   "title": "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/georgia-politicians-openai-slapped-with-racketeering-lawsuit-over-3-2-gigawatt-ai-data-centers-plaintiffs-allege-multiple-violations-were-part-of-a-coordinated-scheme-to-get-project-camellia-approved",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-11T16:30:00+00:00",
+   "summary": "The plaintiffs alleged that the parties committed fraud and concealment through NDAs and misleading public statements.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "dd49ec404650",
+   "title": "LCL partners with Wellen Real Estate on rooftop solar project in Antwerp, Belgium",
+   "url": "https://www.datacenterdynamics.com/en/news/lcl-partners-with-wellen-real-estate-on-rooftop-solar-project-in-antwerp-belgium/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-11T16:28:36+00:00",
+   "summary": "Expected to generate between 4 and 4.5GWh of electricity",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "12a9550d1f6a",
    "title": "How a false smoke alarm almost drowned Jane Street's only NYC datacenter",
    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
@@ -1774,7 +2159,14 @@
    "source_category": "Development",
    "published": "2026-11-11T16:27:51+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "12a9550d1f6a",
+     "source": "Hacker News",
+     "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+     "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
@@ -1837,6 +2229,19 @@
    ]
   },
   {
+   "id": "ffce7943be51",
+   "title": "De-influencers call out brands for products they believe don’t live up to the hype",
+   "url": "https://www.nbcnews.com/video/de-influencers-call-out-brands-for-lackluster-products-ahead-of-holidays-273276485910",
+   "source": "NBC News Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-11T16:12:48+00:00",
+   "summary": "People online are in a frenzy over the new Skims Advent Calendar, that they say isn’t living up to the hype or the price tag. It comes as so-called ‘De-influencers’ are sounding the alarm on hyper-consumption ahead of the holidays. NBC News’ Vicky Nguyen reports.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e9b9e3369478",
    "title": "Exchange Online Retention: How MRM Policies and Tags Work",
    "url": "https://petri.com/exchange-online-retention-mrm/",
@@ -1879,6 +2284,45 @@
     "Cloud & infrastructure",
     "System administration",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "3b3664f7464b",
+   "title": "The hardest notes to find on the guitar fretboard",
+   "url": "https://www.gitori.com/blog/articles/hardest-notes-on-the-guitar-fretboard",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T16:05:18+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6d30308b95ca",
+   "title": "N-able issues hotfix after researcher dumps PoCs in disclosure spat",
+   "url": "https://www.cybersecuritydive.com/news/n-able-hotfix-researcher-pocs-zero-days/874388/",
+   "source": "Cybersecurity Dive",
+   "source_category": "Security",
+   "published": "2026-11-11T16:02:52+00:00",
+   "summary": "The company briefly disabled access to its RMM platform after an independent researcher warned of critical flaws.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "3f42633dc5b5",
+   "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+   "url": "https://github.com/klad-app/klad",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T16:00:50+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -2032,6 +2476,19 @@
     "AI",
     "DevOps & SRE",
     "Networking"
+   ]
+  },
+  {
+   "id": "4cc1960e3b74",
+   "title": "The Computer Graphics Book of Knowledge",
+   "url": "https://www.cs.cmu.edu/~ph/nyit/masson/history.htm",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-11T15:50:02+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -10811,6 +11268,12 @@
      "source": "LWN.net",
      "title": "Security updates for Wednesday",
      "url": "https://lwn.net/Articles/1106876/"
+    },
+    {
+     "id": "a70df6c0f4b6",
+     "source": "TechTarget News",
+     "title": "Has Microsoft’s monthly Patch Tuesday outgrown its usefulness?",
+     "url": "https://www.techtarget.com/news/has-microsofts-monthly-patch-tuesday-outgrown-its-usefulness/874400/"
     }
    ],
    "topics": [
@@ -11458,6 +11921,19 @@
    ]
   },
   {
+   "id": "73a4e55b2205",
+   "title": "A Brain Teaser of an Obituary",
+   "url": "https://www.nytimes.com/2026/11/10/obituaries/steve-selvin-dead.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-10T14:49:46+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f9f082306382",
    "title": "How Do Pandas Have Sex While in Human Care? As the National Zoo’s Director Details in Her New Book, It Takes a Village of Dedicated Keepers",
    "url": "https://www.smithsonianmag.com/smithsonian-institution/how-do-pandas-have-sex-while-in-human-care-as-the-national-zoos-director-details-in-her-new-book-it-takes-a-village-of-dedicated-keepers-180989850/",
@@ -11569,7 +12045,14 @@
    "source_category": "Science & space",
    "published": "2026-11-10T14:00:00+00:00",
    "summary": "The probe and its twin, Voyager 2, have been hurtling through space for almost 50 years, stretching humanity's reach into interstellar space. The upcoming milestone is a testament to scientific endeavor and ingenuity",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "25e7b0dd399f",
+     "source": "The Register",
+     "title": "NASA asks Earthlings to wave as Voyager 1 reaches a light-day away",
+     "url": "https://www.theregister.com/offbeat/2026/11/11/nasa-asks-earthlings-to-wave-as-voyager-1-reaches-a-light-day-away/5309127"
+    }
+   ],
    "topics": [
     "General IT"
    ]
