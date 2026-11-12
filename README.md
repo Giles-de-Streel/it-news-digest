@@ -1,6 +1,6 @@
 # IT News
 
-A daily list of IT and security news from 287 sources, refreshed every 30 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 291 sources, refreshed every 30 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
 
 Live page: https://giles-de-streel.github.io/it-news-digest/
 
