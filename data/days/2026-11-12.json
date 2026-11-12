@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "generated": "2026-11-12T06:01:03+00:00",
+ "generated": "2026-11-12T06:31:22+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 116,
-   "recent": 116,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 522: <none>"
   },
   {
    "source": "Tom's Hardware",
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "fetched": 50,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 358,
+   "fetched": 360,
    "recent": 324,
    "error": null
   },
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1014,7 +1014,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1092,7 +1092,7 @@
   {
    "source": "Linux kernel releases",
    "fetched": 10,
-   "recent": 4,
+   "recent": 1,
    "error": null
   },
   {
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 37,
+   "recent": 35,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -1728,6 +1728,117 @@
  ],
  "items": [
   {
+   "id": "f10f7541d6f7",
+   "title": "Dagster: Open-source cloud-native data pipeline orchestrator",
+   "url": "https://www.helpnetsecurity.com/2026/11/12/dagster-open-source-cloud-native-data-pipeline-orchestrator/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-12T06:30:08+00:00",
+   "summary": "Dagster is an open source orchestrator for data pipelines. It decides what runs, in what order, and when. It also tracks how the tables, datasets, machine learning models, and reports it manages connect to the data they came from. When a source table goes bad, the tables built from it carry the problem forward.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "670a6bcffa6a",
+   "title": "RHSA-2026:99514: Important: httpd:2.4 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99514",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T06:13:43+00:00",
+   "summary": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "53c97bfb6963",
+   "title": "RHSA-2026:99513: Important: httpd:2.4 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99513",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T06:09:05+00:00",
+   "summary": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e1a5d273ec51",
+   "title": "Microsoft uses AI choice to get Chrome and Edge users onto Bing from Google",
+   "url": "https://www.neowin.net/news/microsoft-uses-ai-choice-to-get-chrome-and-edge-users-onto-bing-from-google/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T06:06:01+00:00",
+   "summary": "Microsoft is giving Bing Search users two ways to turn off AI-generated answers, acknowledging research that shows many people still prefer non-AI search results.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "a186fb55faf5",
+   "title": "Sources: Chinese AI companies are rushing to rent Nvidia compute capacity overseas amid fears of tighter US restrictions after the Jensen Huang spy scandal (Reuters)",
+   "url": "https://www.techmeme.com/261112/p4#a261112p4",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-12T06:05:01+00:00",
+   "summary": "Reuters : Sources: Chinese AI companies are rushing to rent Nvidia compute capacity overseas amid fears of tighter US restrictions after the Jensen Huang spy scandal — Chinese artificial intelligence companies are trying to rent Nvidia-powered computing capacity at data centres outside China …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "fa73fe237ce9",
+   "title": "Who collects the keys when an AI agent retires?",
+   "url": "https://www.helpnetsecurity.com/2026/11/12/sprinto-ai-agent-offboarding/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-12T06:00:57+00:00",
+   "summary": "Think about the last time a good engineer left your company. Someone collected the laptop and the badge. IT revoked their logins before the end of the day. Their manager reassigned the open tickets, and HR filed their records somewhere they’ll stay for years, in case anyone ever challenges a decision they made.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7cc72e72808c",
+   "title": "A LEGO 3D Printer",
+   "url": "https://hackaday.com/2026/11/11/a-lego-3d-printer/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-12T06:00:42+00:00",
+   "summary": "LEGO building blocks are a great toy, but every so often a hacker decides to take the little bricks outside of the toy room and make them an integral part …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8a1ce106a6c1",
+   "title": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
+   "url": "https://www.getlazarus.org/forums/topic/17/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-12T05:49:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "53555b4de2a1",
    "title": "RHSA-2026:99511: Important: aspell security update",
    "url": "https://access.redhat.com/errata/RHSA-2026:99511",
@@ -1739,6 +1850,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "c7471252f591",
+   "title": "AWS distills its cloud into a local emulator that runs on your PC",
+   "url": "https://www.theregister.com/off-prem/2026/11/12/aws-distills-its-cloud-into-a-local-emulator-that-runs-on-your-pc/5309251",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-12T05:47:31+00:00",
+   "summary": "Hyperscale meets micro-computing by offering APIs to test your apps",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -1841,6 +1965,32 @@
    "cves": []
   },
   {
+   "id": "9c150a07a56c",
+   "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
+   "url": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-12T05:05:00+00:00",
+   "summary": "APOD Science APOD APOD: 2026 November 12 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos!",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3769ee796006",
+   "title": "Scotland’s Flow Country",
+   "url": "https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-12T05:01:00+00:00",
+   "summary": "Blanket bogs in the Scottish Highlands store vast amounts of carbon.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "84dcb122a65e",
    "title": "Bots pose as AI agents, AI agents pose as humans, and defenses believe both",
    "url": "https://www.helpnetsecurity.com/2026/11/12/bots-ai-agent-impersonation/",
@@ -1938,6 +2088,19 @@
    ]
   },
   {
+   "id": "d14bdfc62ea5",
+   "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
+   "url": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-12T04:22:18+00:00",
+   "summary": "Couldn’t get the hardware it needed to generate certs, so tried to code a workaround",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "29d315872f5a",
    "title": "35,578 Grok-Built Apps Were Viewable Without Authentication: Internal SpaceXSI Materials Also Exposed",
    "url": "https://joho-todai.com/en/grok-35578-apps-exposed-without-authentication/",
@@ -1975,6 +2138,19 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "fe84897fa929",
+   "title": "Bad ideas that aren't bad anymore",
+   "url": "https://devonestes.com/bad-ideas-that-arent-bad-anymore",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-12T03:18:13+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
