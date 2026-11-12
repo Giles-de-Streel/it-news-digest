@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "generated": "2026-11-12T07:00:48+00:00",
+ "generated": "2026-11-12T07:30:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 112,
-   "recent": 112,
+   "fetched": 88,
+   "recent": 88,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 8,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "fetched": 25,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -474,7 +474,7 @@
   {
    "source": "Zero Day Initiative",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -618,7 +618,7 @@
   {
    "source": "Data Center Knowledge",
    "fetched": 50,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 361,
-   "recent": 324,
+   "recent": 322,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -924,7 +924,7 @@
   {
    "source": "Packet Pushers",
    "fetched": 1854,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -1002,7 +1002,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1074,7 +1074,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1319,8 +1319,8 @@
   },
   {
    "source": "GitLab Security Releases",
-   "fetched": 111,
-   "recent": 0,
+   "fetched": 112,
+   "recent": 1,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "HTMD Blog (Anoop C Nair)",
    "fetched": 5,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -1728,6 +1728,142 @@
  ],
  "items": [
   {
+   "id": "03712f418a18",
+   "title": "CVE-2026-8333: A stored cross-site scripting vulnerability in Microchip the TimePictra platform could allow an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8333",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-12T07:16:49.413000+00:00",
+   "summary": "A stored cross-site scripting vulnerability in Microchip the TimePictra platform could allow an authenticated, low-privileged attacker to store malicious script content that executes when another user views the affected page",
+   "kind": "cve",
+   "cve": "CVE-2026-8333",
+   "cvss": {
+    "score": 9.4,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-8333",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f46826ab7a1a",
+   "title": "CVE-2026-12591: Zohocorp ManageEngine M365 Manager Plus versions below 4818 is affected by an authenticated technician may…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12591",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-12T07:16:47.260000+00:00",
+   "summary": "Zohocorp ManageEngine M365 Manager Plus versions below 4818 is affected by an authenticated technician may exploit insufficient permission validation in the delegated administration interface to escalate privileges beyond their intended scope, which could result in remote code execution during administrative…",
+   "kind": "cve",
+   "cve": "CVE-2026-12591",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-12591",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ed6a1d396c3d",
+   "title": "CVE-2026-12507: Zohocorp ManageEngine AssetExplorer versions below 7860, ServiceDesk Plus versions below 15290, ServiceDesk…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12507",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-12T07:16:46.750000+00:00",
+   "summary": "Zohocorp ManageEngine AssetExplorer versions below 7860, ServiceDesk Plus versions below 15290, ServiceDesk Plus MSP versions below 15150, and SupportCenter Plus versions below 15150 are affected by a authenticated remote code execution vulnerability in the Reports module.",
+   "kind": "cve",
+   "cve": "CVE-2026-12507",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-12507",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "912a1d91d111",
+   "title": "Munich-based Agile Robots, which develops humanoids, mobile robots, robotic arms, and control software, raised $500M led by SoftBank at an $8.5B valuation (Marilen Martin/Bloomberg)",
+   "url": "https://www.techmeme.com/261112/p6#a261112p6",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:10:00+00:00",
+   "summary": "Marilen Martin / Bloomberg : Munich-based Agile Robots, which develops humanoids, mobile robots, robotic arms, and control software, raised $500M led by SoftBank at an $8.5B valuation — Agile Robots SE raised funds valuing the German robotics maker at $8.5 billion in a round led by SoftBank Group Corp. …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4e029a1a76b4",
+   "title": "GitHub Agentic Autofix and the question of who owns a bad AI patch",
+   "url": "https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-12T07:00:38+00:00",
+   "summary": "In this Help Net Security interview, Marcelo Oliveira, VP of Product Management at GitHub, talks about who is accountable when an AI-generated patch fixes one flaw and introduces another.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "214b83f0eca1",
+   "title": "Power Grids On 5 Continents Pulse Every 60s. Scientists Think They Know Why",
+   "url": "https://hardware.slashdot.org/story/26/11/11/2347221/power-grids-on-5-continents-pulse-every-60s-scientists-think-they-know-why?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:00:00+00:00",
+   "summary": "\"ScienceAlert is reporting that researchers may have finally determined why, for many years, power grids around the world have been pulsing every 60 seconds,\" writes longtime Slashdot reader fahrbot-bot. The likely culprit? Uninterruptible power supplies running routine battery checks.",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "40eb0702981a",
+   "title": "Using Exchange Custom Attributes for Groups Through the Microsoft Graph",
+   "url": "https://office365itpros.com/2026/11/12/custom-attributes-graph/?utm_source=rss&utm_medium=rss&utm_campaign=custom-attributes-graph",
+   "source": "Office 365 for IT Pros",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T07:00:00+00:00",
+   "summary": "Microsoft has released limited Graph support for accessing Exchange custom attributes in groups synchronized from on-premises environments. Not every type of Entra group is available on-premises, so we’re really talking about distribution groups and security groups.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "955db3904516",
+   "title": "Fewer hours and higher wages – or more burnout and surveillance: employers told to prepare for AI",
+   "url": "https://www.theguardian.com/technology/2026/nov/12/fewer-hours-and-higher-wages-or-more-burnout-and-surveillance-employers-told-to-prepare-for-ai",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-12T06:55:44+00:00",
+   "summary": "Workplace relations minister Amanda Rishworth launches best practice guide on AI adoption after Qantas and Canva job cuts Entry-level jobs will be the first to be automated due to AI, but it could mean fewer hours and higher wages for ordinary workers – or make jobs tougher with more burnout and workplace surveillance…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "c974f31d29c5",
    "title": "Radical Numerics unveils Omnii Defense, an edge AI model it says can identify natural and AI-engineered pathogens without an internet connection (Emily Mullin/Wired)",
    "url": "https://www.techmeme.com/261112/p5#a261112p5",
@@ -1738,6 +1874,22 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "417b99b8248b",
+   "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+   "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-12T06:42:47+00:00",
+   "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "Development",
+    "Identity & access"
    ]
   },
   {
@@ -2373,6 +2525,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "98efc04cf4c7",
+   "title": "GitLab Patch Release: 19.5.5, 19.4.7",
+   "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/",
+   "source": "GitLab Security Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T00:00:00+00:00",
+   "summary": "On November 12, 2026, we released versions 19.5.5, 19.4.7 for GitLab Community Edition and Enterprise Edition. These versions resolve a number of regressions and bugs. This patch release does not include any security fixes.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "DevOps & SRE"
    ]
   },
   {
