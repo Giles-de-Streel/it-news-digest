@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "generated": "2026-11-12T02:32:28+00:00",
+ "generated": "2026-11-12T03:02:04+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 8,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 342,
-   "recent": 300,
+   "fetched": 336,
+   "recent": 304,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1007,8 +1007,8 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2294,
-   "recent": 16,
+   "fetched": 2306,
+   "recent": 28,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 15,
+   "recent": 13,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 40,
+   "recent": 37,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 40,
+   "recent": 38,
    "error": null
   },
   {
@@ -1620,7 +1620,7 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1644,7 +1644,7 @@
   {
    "source": "Smithsonian Magazine",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1727,6 +1727,112 @@
   }
  ],
  "items": [
+  {
+   "id": "012308647977",
+   "title": "RHSA-2026:99213: Important: perl-CGI security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99213",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T02:55:30+00:00",
+   "summary": "An update for perl-CGI is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "128eadcc71b6",
+   "title": "RHSA-2026:99215: Important: perl-CGI security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99215",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T02:54:03+00:00",
+   "summary": "An update for perl-CGI is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "414178cf4466",
+   "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
+   "url": "https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-12T02:53:41+00:00",
+   "summary": "As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors. Cloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use in model…",
+   "also_covered_by": [
+    {
+     "id": "462edb7669e7",
+     "source": "Computerworld",
+     "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
+     "url": "https://www.computerworld.com/article/4247584/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill-2.html"
+    }
+   ],
+   "topics": [
+    "Threats & malware",
+    "Cloud & infrastructure",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "4e8588771b6a",
+   "title": "Sources: some Nvidia board members favor naming CFO Colette Kress interim CEO; an administration official says the board briefed the White House on its meeting (Semafor)",
+   "url": "https://www.techmeme.com/261111/p52#a261111p52",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-12T02:45:00+00:00",
+   "summary": "Semafor : Sources: some Nvidia board members favor naming CFO Colette Kress interim CEO; an administration official says the board briefed the White House on its meeting — Some members of Nvidia's board favor appointing Chief Financial Officer Colette Kress as interim CEO, according to people familiar with the matter.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2c2494568563",
+   "title": "RHSA-2026:99152: Important: grafana-pcp security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99152",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T02:36:31+00:00",
+   "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "bac4712083de",
+   "title": "Letter: Sens. Elizabeth Warren and Chris Coons ask the Trump administration to preserve all documents tied to Nvidia's chip exports to China and Huang's affair (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261111/p51#a261111p51",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-12T02:35:01+00:00",
+   "summary": "Wall Street Journal : Letter: Sens. Elizabeth Warren and Chris Coons ask the Trump administration to preserve all documents tied to Nvidia's chip exports to China and Huang's affair — Sens.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "b5240ef98d63",
+   "title": "RHSA-2026:99169: Important: oci-seccomp-bpf-hook security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:99169",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-12T02:33:36+00:00",
+   "summary": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
   {
    "id": "ae94eacb91f1",
    "title": "A decade in, KubeVirt pushes virtual machines into the AI agent era",
@@ -1837,6 +1943,165 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "91fb4b5f19e3",
+   "title": "Dynamics 365 Customer Insights - Journeys: Create event experience that match your business structure by supporting leads, contacts, or both​",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Align event registrations with the way your organization manages customer data. By supporting lead-based registration journeys and existing matching rules, you can avoid unnecessary Contact creation, improve data quality, and ensure event attendees follow the same lead management process used across your business.​…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "40230ed5f7f4",
+   "title": "Power Automate: Direct triggers for desktop flows",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579975",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Desktop flows will support direct triggers, enabling automations to start in response to supported events without requiring an intermediary cloud flow. This simplifies automation design and reduces the effort required to connect desktop flows to business processes. GA date: March CY2027 Preview date: January CY2027",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "046cec6d08cf",
+   "title": "Power Automate: Credentials - Integration with Delinea secret server",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579974",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Power Automate will support Delinea Secret Server as an external credential provider for desktop flows. Organizations can securely use credentials managed in Delinea for machine sign-in and credential retrieval during attended and unattended automation. GA date: March CY2027",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "fdf5817d0ffe",
+   "title": "Dynamics 365 Customer Insights - Journeys: Send each message only once with deduplication for SMS and custom channels",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579903",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Deduplicates recipients by contact point, so each phone number or custom channel address gets the message once per send. Eliminates manual post-send clean-up, wasted messaging spend and the customer annoyance of duplicate texts. Brings SMS and custom channels to parity with email's built-in deduplication.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "159f3293d009",
+   "title": "Outlook: Copilot Chat Sheet UX Update for Mobile",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579897",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Copilot Chat in Outlook on iOS and Android is getting updated! You'll notice smoother animations, improved strings, and some small changes to the header, such as the new/temporary chat button being moved behind the ... button. GA date: December CY2026",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "5de39a07f2de",
+   "title": "Microsoft Edge: Top sites in Edge search bar",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579193",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Adding easy access to top sites in Edge search bar on desktop. Users can add, edit, remove, or hide top sites. Admins can control available to this feature using the NewTabPageManagedQuickLinks and NewTabPageQuickLinksEnabled policies. GA date: January CY2027",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "System administration"
+   ]
+  },
+  {
+   "id": "93caddb2dd78",
+   "title": "Microsoft 365: [Education] Practice presentations with Speaker Coach in Learning Activities",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578880",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "In learning activities, students can rehearse presentations, receive feedback on their delivery, and practice again with targeted suggestions to improve clarity and confidence. #education GA date: December CY2026",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "e319ab976f97",
+   "title": "Dynamics 365 Finance: Submit only validated records to Dynamics 365 Finance",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578877",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "The write to business rules engine configuration experience introduces an option to submit only records that have successfully passed Account structure validation.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1c272bde7321",
+   "title": "Dynamics 365 Customer Insights - Journeys: Build audiences faster with reusable segment templates",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578863",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Segment templates help you build audiences without recreating queries for each campaign. Choose a built-in template for common scenarios such as event attendance or email engagement, or save your own segment query as a reusable custom template.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "0e6edcd183e6",
+   "title": "Microsoft 365: [Education] Microsoft Learning Zone - Minecraft connected lessons",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577545",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Bring Minecraft Education to every classroom with AI-powered tools that match curriculum goals to Build Challenges, blend lessons with project-based learning, launch directly from Learning Zone, and give you full visibility into participation, completion, and student understanding. #education GA date: February CY2027",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "dbe82478ddf3",
+   "title": "Microsoft 365 admin center: Cross-Tenant Orchestrated Migration",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=576273",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Cross-Tenant Orchestrated Migration for User Data Migration (UDM) and Shared Data Migration (SDM) allows customers to move their Microsoft 365 data from one Microsoft tenant to another. UDM includes the ability to move user mailboxes, OneDrive accounts, Teams chats, and Teams meetings.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "System administration"
+   ]
+  },
+  {
+   "id": "97f012633f37",
+   "title": "Dynamics 365 Project Operations: Archive project cost actuals with long-term retention",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=573238",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T01:35:00+00:00",
+   "summary": "Organizations managing high volumes of project transactions need to retain historical cost data without allowing years of completed transactions to continually increase the volume of active operational data.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3519,6 +3784,12 @@
      "source": "NBC News Tech",
      "title": "NYT reports Nvidia CEO had second extramarital relationship",
      "url": "https://www.nbcnews.com/nightly-news/video/nyt-reports-nvidia-ceo-had-second-extramarital-relationship-273303621807"
+    },
+    {
+     "id": "febf7277b323",
+     "source": "SiliconANGLE",
+     "title": "Nvidia’s board reportedly preparing to oust CEO Jensen Huang after reports of a second affair",
+     "url": "https://siliconangle.com/2026/11/11/nvidias-board-reportedly-preparing-to-oust-jensen-huang-after-reports-of-a-second-affair/"
     }
    ],
    "topics": [
@@ -4407,7 +4678,14 @@
    "source_category": "Threat research",
    "published": "2026-11-11T19:49:10+00:00",
    "summary": "Detect and mitigate CVE-2026-119618, a critical RCE vulnerability in Apache HTTP Server. According to Wiz data, 64% of cloud environments have resources vulnerable to CVE-2026-119618. Immediate patching is advised.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5b070766ec4d",
+     "source": "Hacker News",
+     "title": "Critical RCE Vulnerability in Apache HTTP Server",
+     "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Cloud & infrastructure"
@@ -12039,7 +12317,14 @@
    "source_category": "Hardware",
    "published": "2026-11-11T11:43:00+00:00",
    "summary": "Cannot be restored due to damage to the equipment",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6c25034ee4bd",
+     "source": "The Register",
+     "title": "Russian cloud Yandex says drone attacks on its datacenters caused data loss",
+     "url": "https://www.theregister.com/off-prem/2026/11/12/russian-cloud-yandex-says-drone-attacks-on-its-datacenters-caused-data-loss/5309234"
+    }
+   ],
    "topics": [
     "Backup & recovery"
    ]
