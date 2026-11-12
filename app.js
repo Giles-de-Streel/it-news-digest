@@ -143,7 +143,7 @@
   // Full name and a one-line description for each topic pill, shown above the stories when it's picked.
   // Must match the TOPICS keys in scripts/fetch_news.py; an unknown topic falls back to its pill text.
   const TOPIC_INFO = {
-    "Accessibility": ["Accessibility", "Web and digital accessibility: WCAG, Section 508, screen readers."],
+    "Accessibility": ["Accessibility", "Digital accessibility: WCAG, ADA Title II and Section 508, VPATs, screen readers and assistive technology, captions, and accessibility features in products."],
     "AI": ["Artificial intelligence", "AI, machine learning, large language models and AI assistants."],
     "Backup & recovery": ["Backup and recovery", "Backups, disaster recovery, restores and business continuity."],
     "Cloud & infrastructure": ["Cloud and infrastructure", "Public cloud, virtualization, Kubernetes and data centers."],

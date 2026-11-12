@@ -63,7 +63,7 @@ TOPICS = {
     "Endpoint management": r"\bintune\b|configuration manager|\bsccm\b|\bmecm\b|autopilot|\bjamf\b|\bmdm\b|endpoint management|device management|patch management|windows update|release health",
     "Backup & recovery": r"backup|disaster recovery|\bdr\b plan|restore|recovery point|immutable (storage|backup)|veeam|commvault|rubrik|cohesity|business continuity",
     "Supply chain security": r"supply[- ]chain|\bsbom\b|\bnpm\b|\bpypi\b|malicious package|typosquat|dependency|openssf|sigstore|\bslsa\b",
-    "Accessibility": r"accessib|\bwcag\b|\ba11y\b|screen reader|\bada\b (title|compliance)|section 508",
+    "Accessibility": r"accessibility(?! (services?|permissions?)\b)|\ba11y\b|\bwcag\b|screen ?readers?|assistive tech|\bada\b (title|compliance|lawsuits?|websites?|accessib)|title ii (of the ada|rule|deadline|compliance)|section 508|\bvpats?\b|european accessibility act|\ben 301 549\b|closed caption|live caption|captioning|\balt text\b|sign language|\baria[- ](labels?|attributes?|roles?|live)\b|inclusive design|disabilit(y|ies)|\bdeaf (users?|people|community|and hard)|hard of hearing|low vision|colou?r ?blind|dyslexi|braille|voiceover (screen reader|users?)|keyboard (navigation|accessib|only users?)",
     "System administration": r"sysadmin|system administrat|\badmins?\b|administrators?\b|group policy|\bgpos?\b|active directory|\bad ds\b|domain controller|\bkerberos\b|\bntlm\b|exchange (online|server)|powershell|\bwsus\b|windows server|server 20\d\d|patch tuesday|cumulative update|\brhel\b|\bsystemd\b|\bselinux\b|\bdnf\b|apt-get|\bapt (install|update|upgrade)\b|package manager|kernel \d|\bcron\b|\bbash\b|\bssh\b|sysinternals|admin center|microsoft 365 roadmap|message center|deprecat|end of (life|support)|\beol\b",
     "DevOps & SRE": r"devops|\bsre\b|site reliability|\bci/cd\b|continuous (integration|delivery|deployment)|gitops|infrastructure as code|\biac\b|terraform|opentofu|pulumi|ansible|kubernetes|\bk8s\b|\bhelm\b|docker|containeri[sz]|container (image|runtime|registr|security|orchestration|platform)|observability|opentelemetry|prometheus|grafana|platform engineering|postmortem|incident management|argo ?cd|jenkins|github actions|gitlab|service mesh|istio",
     "TLS & PKI": r"\btls\b|\bmtls\b|\bssl\b(?![- ]?vpn)|\bhsts\b|\bpki\b|x\.509|certificate authorit|ca/b forum|cab forum|root (store|program|certificates?|cas?)\b|certificate (transparency|lifetimes?|lifespans?|validity|revocation|pinning|management|automation|expir\w*|chain)|(tls|ssl|https|code[- ]signing|s/mime|server|web|wildcard|digital|x\.509) certificates?|\bacme (protocol|client|challenge|account)|let'?s encrypt|letsencrypt|\bocsp\b|\bcrls?\b|post-quantum|quantum[- ](safe|resistant)|\bpqc\b|ml-kem|ml-dsa|kyber|dilithium|cryptograph|openssl|boringssl|libressl|wolfssl|gnutls|mbed ?tls|\bciphers?\b|cipher suite|key exchange|\bhsms?\b|digicert|sectigo|globalsign|dnssec|end-to-end encrypt",
@@ -75,7 +75,7 @@ TOPICS = {
 TOPIC_RES = {name: re.compile(rx, re.I) for name, rx in TOPICS.items()}
 # Stories from sources in these categories always get the topic, even when no keyword matches
 # (e.g. a games-industry outlet's studio news that never says "game development").
-CATEGORY_TOPICS = {"Game development": "Game development"}
+CATEGORY_TOPICS = {"Game development": "Game development", "Accessibility": "Accessibility"}
 STOPWORDS = set("a an the and or of to in on for with by from at as is are was be it its this that new how why what after over into via up out".split())
 
 
