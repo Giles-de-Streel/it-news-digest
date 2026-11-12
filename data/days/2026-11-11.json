@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "generated": "2026-11-12T01:02:58+00:00",
+ "generated": "2026-11-12T01:31:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 129,
-   "recent": 129,
+   "fetched": 130,
+   "recent": 130,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -516,7 +516,7 @@
   {
    "source": "Horizon3.ai",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
-   "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "fetched": 50,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 15,
+   "recent": 13,
    "error": null
   },
   {
@@ -582,7 +582,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 344,
-   "recent": 297,
+   "recent": 296,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -726,7 +726,7 @@
   {
    "source": "Embedded Computing Design",
    "fetched": 100,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -876,7 +876,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1386,13 +1386,13 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 17,
+   "recent": 15,
    "error": null
   },
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1614,7 +1614,7 @@
   {
    "source": "Resilience Media",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1680,7 +1680,7 @@
   {
    "source": "DigiCert Blog (TLS & PKI)",
    "fetched": 289,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1727,6 +1727,28 @@
   }
  ],
  "items": [
+  {
+   "id": "f46c2242305a",
+   "title": "CVE-2026-126785: A vulnerability has been found in rmalright TR-VISION HOME 2.0.5.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126785",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-12T01:17:11.603000+00:00",
+   "summary": "A vulnerability has been found in rmalright TR-VISION HOME 2.0.5. Impacted is the function sub_11504 in the library WFanManager.sys of the component IOCTL Handler. Such manipulation leads to incorrect default permissions. The attack must be carried out locally.",
+   "kind": "cve",
+   "cve": "CVE-2026-126785",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-126785",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "d9fc7bca781a",
    "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
@@ -1906,6 +1928,19 @@
     "Ransomware & breaches",
     "AI",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "2f9753ffae71",
+   "title": "The Myth of Neutral Code",
+   "url": "https://foss.life/notes/2026/the-myth-of-neutral-code/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-11T23:59:09+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5375,6 +5410,12 @@
      "source": "Simon Willison",
      "title": "Gemini Decisions API",
      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+    },
+    {
+     "id": "829d31b3eee4",
+     "source": "SiliconANGLE",
+     "title": "Google enters the decision model market with Gemini Decisions API",
+     "url": "https://siliconangle.com/2026/11/11/google-enters-the-decision-model-market-with-gemini-decisions-api/"
     }
    ],
    "topics": [
@@ -8724,7 +8765,14 @@
    "source_category": "Backup & recovery",
    "published": "2026-11-11T14:00:49+00:00",
    "summary": "Sovereignty is a control, not a region selection. Now you can extend that control into AWS’s newest European region.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "93371f167368",
+     "source": "AWS What's New",
+     "title": "AWS Network Security Manager now available in AWS European Sovereign Cloud and Additional New Regions",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-security-mgr-eu-sovereign-cloud/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "Backup & recovery"
@@ -16306,6 +16354,12 @@
      "source": "Red Hat security advisories (Important/Critical)",
      "title": "RHSA-2026:99017: Important: Red Hat JBoss Enterprise Application Platform 8.1.9 security update",
      "url": "https://access.redhat.com/errata/RHSA-2026:99017"
+    },
+    {
+     "id": "8d9f25aeba02",
+     "source": "9to5Linux",
+     "title": "Red Hat Enterprise Linux 10.3 Released with Sealed Images for Image Mode",
+     "url": "https://9to5linux.com/red-hat-enterprise-linux-10-3-released-with-sealed-images-for-image-mode"
     }
    ],
    "topics": [
@@ -16732,6 +16786,12 @@
      "source": "CNBC Technology",
      "title": "Jensen Huang affair in D.C.: Resignation calls and moves to tighten Nvidia China exports",
      "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html"
+    },
+    {
+     "id": "b6396ac9927c",
+     "source": "SiliconANGLE",
+     "title": "Nvidia’s board is said to be preparing to oust Jensen Huang after reports of a second affair",
+     "url": "https://siliconangle.com/2026/11/11/nvidias-board-is-said-to-be-preparing-to-oust-jensen-huang-after-reports-of-a-second-affair/"
     }
    ],
    "topics": [
