@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "generated": "2026-11-12T04:01:26+00:00",
+ "generated": "2026-11-12T04:31:42+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -78,7 +78,7 @@
   {
    "source": "eWeek",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 118,
+   "recent": 118,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": ".NET Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 337,
-   "recent": 304,
+   "recent": 303,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Wiz Research",
    "fetched": 720,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -810,7 +810,7 @@
   {
    "source": "Virtualization Review",
    "fetched": 60,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1176,7 +1176,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1254,7 +1254,7 @@
   {
    "source": "Graham Cluley",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 38,
+   "recent": 39,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -1572,7 +1572,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1614,13 +1614,13 @@
   {
    "source": "Resilience Media",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 8,
+   "recent": 6,
    "error": null
   },
   {
@@ -1728,6 +1728,101 @@
  ],
  "items": [
   {
+   "id": "0f232c3234c6",
+   "title": "CVE-2026-76954: An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76954",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-12T04:17:20.407000+00:00",
+   "summary": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
+   "kind": "cve",
+   "cve": "CVE-2026-76954",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76954",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
+  },
+  {
+   "id": "440166ebc9a9",
+   "title": "Latest Windows 11 update KB5132061 could break your PowerShell scripts",
+   "url": "https://www.neowin.net/news/latest-windows-11-update-kb5132061-could-break-your-powershell-scripts/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-12T04:08:01+00:00",
+   "summary": "Microsoft's latest Windows update could cause trouble for PowerShell users. Some previously working scripts may now fail signature verification, but Microsoft has a fix.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development",
+    "Endpoint management",
+    "System administration"
+   ]
+  },
+  {
+   "id": "52e44ec77392",
+   "title": "9to5Mac Daily: November 11, 2026 – New Apple TV feature, more",
+   "url": "https://9to5mac.com/2026/11/11/daily-november-11-2026/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-12T04:01:11+00:00",
+   "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our dedicated RSS feed for Overcast and other podcast players. Sponsored by Backblaze : Backup you can rely on. Save 20% with code 9to5daily . more…",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "4b472ce68c52",
+   "title": "Sources: some Trump officials questioned Jensen Huang's push for Trump to allow more chip sales to China, even before his affair with Alice Huang became public (Wall Street Journal)",
+   "url": "https://www.techmeme.com/261111/p54#a261111p54",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-12T04:00:57+00:00",
+   "summary": "Wall Street Journal : Sources: some Trump officials questioned Jensen Huang's push for Trump to allow more chip sales to China, even before his affair with Alice Huang became public — U.S. officials have repeatedly raised concerns about Nvidia CEO's influence with the president and his posture toward China",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c801dc3570c6",
+   "title": "Deploying OpenEverest on a 3-Node K3s Cluster",
+   "url": "https://www.percona.com/blog/deploying-openeverest-on-a-3-node-k3s-cluster/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-12T03:52:56+00:00",
+   "summary": "Part 1 of 2: From bare Ubuntu servers to a running MySQL cluster OpenEverest is an open source platform for running databases such as MySQL, PostgreSQL and MongoDB on Kubernetes. You get a web console and an API, and Kubernetes operators handle provisioning, scaling, backups and failover behind the scenes.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Databases",
+    "Backup & recovery",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "5c0c34b1ec9f",
+   "title": "Inside an OpenEverest MySQL Cluster: Galera Health and a Live Failover Test",
+   "url": "https://www.percona.com/blog/inside-an-openeverest-mysql-cluster-galera-health-and-a-live-failover-test/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-12T03:51:17+00:00",
+   "summary": "Part 2 of 2: Reading wsrep status, killing the writer, and proving zero data loss In Part 1 we built a 3-node K3s cluster, installed OpenEverest, and created a 3-node Percona XtraDB Cluster (PXC) named mysql-vjg. In this post we look inside that cluster.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "8b75678a16dc",
    "title": "Srsly Risky Biz: Iranian Hacks With Russian Characteristics",
    "url": "https://news.risky.biz/srsly-risky-biz-iranian-hacks-with-russian-characteristics/",
@@ -1738,6 +1833,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "eac824b094d2",
+   "title": "How the fall of Nvidia leader could affect the already shaky AI market",
+   "url": "https://www.techtarget.com/news/how-the-fall-of-nvidia-leader-could-affect-the-already-shaky-ai-market/874471/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-12T03:38:49+00:00",
+   "summary": "Nvidia’s board is reportedly considering ousting Jensen Huang following disclosure of an affair with a Chinese spy.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -2043,6 +2152,19 @@
    ]
   },
   {
+   "id": "a9958f35f5ad",
+   "title": "EU Proposes Banning Paid Loot Boxes for Minors and Requiring Real Prices for In-Game Currency",
+   "url": "https://joho-todai.com/en/eu-bans-paid-loot-boxes-minors-game-currency-pricing/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T03:09:18+00:00",
+   "summary": "The European Commission adopted a proposal for the Digital Fairness Act. It would require real-money prices for virtual game currencies, ban paid loot boxes for minors, and address login rewards and addictive design. The rules remain a proposal.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a0255455c3d9",
    "title": "It’s Elite, For The Commodore Pet",
    "url": "https://hackaday.com/2026/11/11/its-elite-for-the-commodore-pet/",
@@ -2162,6 +2284,21 @@
    ]
   },
   {
+   "id": "461e1c22e4a9",
+   "title": "SoftBank Group Takes ¥597.2 Billion Loss on Early Turbine Reservations: AI Spending Reaches Power Plant Production Slots",
+   "url": "https://joho-todai.com/en/softbank-power-turbine-loss-ai-infrastructure/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T02:30:18+00:00",
+   "summary": "SoftBank Group recorded a ¥597.2 billion loss after revising plans to procure power equipment in advance for U.S. AI data centers. About $2.9 billion of $9.5 billion in advance payments became unrecoverable. The large Ohio project is continuing.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "ae94eacb91f1",
    "title": "A decade in, KubeVirt pushes virtual machines into the AI agent era",
    "url": "https://siliconangle.com/2026/11/11/confidential-computing-ai-agents-push-kubevirt-vms-forward-kubeconna/",
@@ -2184,7 +2321,20 @@
    "source_category": "IT industry",
    "published": "2026-11-12T02:13:21+00:00",
    "summary": "Amazon’s Ring has unveiled an indoor drone for home monitoring that users can manually operate to investigate disturbances. Ring founder and chief inventor Jamie Siminoff discusses the new surveillance robotics and how AI is used to pilot it.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "42993e0a051d",
+     "source": "Slashdot",
+     "title": "Amazon's Ring Unveils Flying Drone and Robot To Patrol Homes and Businesses",
+     "url": "https://hardware.slashdot.org/story/26/11/11/0144217/amazons-ring-unveils-flying-drone-and-robot-to-patrol-homes-and-businesses?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "55cc18ab99ba",
+     "source": "TechRepublic",
+     "title": "Ring Introduces Drone and Rover Cameras for Homes and Businesses",
+     "url": "https://www.techrepublic.com/article/news-ring-drone-rover-cam-security-cameras/"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -3373,6 +3523,12 @@
      "source": "Neowin",
      "title": "Nvidia may soon have a new CEO as board reportedly prepares to oust Jensen Huang",
      "url": "https://www.neowin.net/news/nvidia-may-soon-have-a-new-ceo-as-board-reportedly-prepares-to-oust-jensen-huang/?utm_source=rss"
+    },
+    {
+     "id": "c05501673e61",
+     "source": "Joho no Todai (English)",
+     "title": "NVIDIA Board Is Preparing to Remove CEO Jensen Huang, Multiple Outlets Report: New Workplace Allegation Shifts the Focus",
+     "url": "https://joho-todai.com/en/nvidia-ceo-huang-removal-internal-conflict/"
     }
    ],
    "topics": [
@@ -9094,7 +9250,14 @@
    "source_category": "IT industry",
    "published": "2026-11-11T14:30:43+00:00",
    "summary": "“Zelda” fans didn’t have to face the dangers of going alone last week with the launch of “The Legend of Zelda: Ocarina of Time” remake as 5.2 million copies of the Nintendo Switch 2 game were sold in its first four days post launch. Debuting Nov. 5, “The Legend of Zelda: Ocarina of Time” is […]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b3a9e294bd52",
+     "source": "Joho no Todai (English)",
+     "title": "The Legend of Zelda: Ocarina of Time Sells 5.2 Million Copies in Four Days, Setting a Switch 2 Launch Record",
+     "url": "https://joho-todai.com/en/zelda-ocarina-time-5-2-million-switch-2/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -16457,6 +16620,12 @@
      "source": "The Register",
      "title": "Apple tells its Support Community to STFU",
      "url": "https://www.theregister.com/personal-tech/2026/11/11/apple-tells-its-support-community-to-stfu/5309090"
+    },
+    {
+     "id": "e45df862203d",
+     "source": "Joho no Todai (English)",
+     "title": "Apple to Close Its 28-Year-Old User Forum on November 20: Fate of Past Posts Unclear",
+     "url": "https://joho-todai.com/en/apple-closing-user-forum-after-28-years/"
     }
    ],
    "topics": [
