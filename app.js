@@ -153,6 +153,7 @@
     "Embedded & IoT": ["Embedded systems and IoT", "Microcontrollers, firmware, RTOS, single-board computers and connected devices."],
     "Endpoint management": ["Endpoint management", "Intune, Configuration Manager, Autopilot, Jamf, device management and patching."],
     "Forensics & IR": ["Digital forensics and incident response", "Investigations, evidence collection, memory and disk analysis, IR write-ups."],
+    "Game development": ["Game development", "Game engines, graphics APIs and GPU tech, game platforms and consoles, and the games industry: studios, publishers and releases."],
     "General IT": ["General IT", "Stories that don't match any of the other topics."],
     "Hardware": ["Hardware", "CPUs, GPUs, storage, servers, firmware and data center hardware."],
     "Higher education": ["Higher education", "Universities, campus IT, education technology and student data."],

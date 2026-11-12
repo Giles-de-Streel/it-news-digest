@@ -1,6 +1,6 @@
 # IT News
 
-A daily list of IT and security news from 291 sources, refreshed every 30 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 305 sources, refreshed every 30 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
 
 Live page: https://giles-de-streel.github.io/it-news-digest/
 
@@ -100,6 +100,8 @@ More sources (Nov 2026), each checked from both a workstation and the automation
 - Left out: Wired and The Verge (paywalled), 404 Media (many articles need a sign-up), Windows Central (mostly gaming and consumer), Grafana Labs and Blocks & Files (block GitHub's runners); CISA advisories, EDUCAUSE, Akamai and Rubrik (403 to scripts); Packet Storm (TLS failure); JPCERT/CC English feed (monthly Microsoft/Adobe roundups already covered first-hand); Ars Technica security tag, Red Canary, TPGi and Claroty disclosures (no recent posts); Dragos, SUSE, Citrix, Synacktiv and SonicWall (no feed that parses).
 
 TLS & PKI sources (Nov 11 2026) feed a **TLS & PKI** topic (TLS and certificates, CAs and root programs, ACME, revocation, post-quantum crypto, crypto libraries; it also tags matching stories from every other source): Let's Encrypt, Feisty Duck Newsletter (Ivan Ristić), Mozilla Security Blog, Google Online Security Blog, DigiCert Blog (TLS & PKI posts only, via `title_include`; its UltraDNS and marketing posts are dropped, and `title_strip` removes the " | DigiCert" suffix), IETF Blog, Filippo Valsorda, Matthew Green, Soatok, Latacora, PQShield, and Sectigo (no feed of its own, so it is read from a Google News search for `site:sectigo.com when:7d`; links open through news.google.com, `title_strip` removes the " - Sectigo" suffix and `title_include` drops datasheet, tool and download pages). Checked and left out: CA/Browser Forum, GlobalSign, Keyfactor, Chrome Root Program and NIST CSRC (no working feed), Entrust (403), SSL.com, Chromium Blog and Hanno Böck (no recent posts), wolfSSL (mostly webinar announcements) and IACR News (academic paper firehose).
+
+Game development sources (Nov 12 2026) feed a **Game development** topic (engines, graphics APIs and GPU tech, game platforms and consoles, the games industry; every story from these sources gets it through `CATEGORY_TOPICS`, and it also tags matching stories from every other source by keyword): Game Developer, GamesIndustry.biz, GameFromScratch, GameDev.net, Godot Engine news, Unreal Engine news, Defold blog, Bevy news, Steam news, AMD GPUOpen, DirectX Developer Blog, NVIDIA Developer Blog (gaming and graphics posts only, via `title_include`), Graphics Programming weekly (Jendrik Illner), Aras Pranckevičius. Checked and left out: PocketGamer.biz (about 10 mobile-business stories a day), Unity Blog (robots.txt disallows the fetcher), 80 Level (TLS certificate failure), O3DE and Khronos (no working feed found).
 
 Security research sources feed three extra topics, **Reverse engineering**, **Forensics & IR** and **Pen testing & red team**:
 - Threat research: Cisco Talos, Unit 42, Microsoft Security Blog, Check Point Research, ESET WeLiveSecurity, Securelist, Sophos X-Ops, Huntress, Malwarebytes Labs, Volexity, Schneier on Security.

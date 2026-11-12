@@ -67,11 +67,15 @@ TOPICS = {
     "System administration": r"sysadmin|system administrat|\badmins?\b|administrators?\b|group policy|\bgpos?\b|active directory|\bad ds\b|domain controller|\bkerberos\b|\bntlm\b|exchange (online|server)|powershell|\bwsus\b|windows server|server 20\d\d|patch tuesday|cumulative update|\brhel\b|\bsystemd\b|\bselinux\b|\bdnf\b|apt-get|\bapt (install|update|upgrade)\b|package manager|kernel \d|\bcron\b|\bbash\b|\bssh\b|sysinternals|admin center|microsoft 365 roadmap|message center|deprecat|end of (life|support)|\beol\b",
     "DevOps & SRE": r"devops|\bsre\b|site reliability|\bci/cd\b|continuous (integration|delivery|deployment)|gitops|infrastructure as code|\biac\b|terraform|opentofu|pulumi|ansible|kubernetes|\bk8s\b|\bhelm\b|docker|containeri[sz]|container (image|runtime|registr|security|orchestration|platform)|observability|opentelemetry|prometheus|grafana|platform engineering|postmortem|incident management|argo ?cd|jenkins|github actions|gitlab|service mesh|istio",
     "TLS & PKI": r"\btls\b|\bmtls\b|\bssl\b(?![- ]?vpn)|\bhsts\b|\bpki\b|x\.509|certificate authorit|ca/b forum|cab forum|root (store|program|certificates?|cas?)\b|certificate (transparency|lifetimes?|lifespans?|validity|revocation|pinning|management|automation|expir\w*|chain)|(tls|ssl|https|code[- ]signing|s/mime|server|web|wildcard|digital|x\.509) certificates?|\bacme (protocol|client|challenge|account)|let'?s encrypt|letsencrypt|\bocsp\b|\bcrls?\b|post-quantum|quantum[- ](safe|resistant)|\bpqc\b|ml-kem|ml-dsa|kyber|dilithium|cryptograph|openssl|boringssl|libressl|wolfssl|gnutls|mbed ?tls|\bciphers?\b|cipher suite|key exchange|\bhsms?\b|digicert|sectigo|globalsign|dnssec|end-to-end encrypt",
+    "Game development": r"game ?dev|\bgames? (developers?|development|engines?|studios?|design(ers?)?|industry|publish(ers?|ing)|jams?|consoles?|pass|awards|programming|art|audio|tech|preservation|ratings?|modding)\b|video ?games?|\b(pc|console|mobile|cloud|indie|aaa) games?\b|\bgaming\b(?! (the|laptops?|pcs?|monitors?|mouse|mice|keyboards?|headsets?|chairs?|cpus?|desktops?|routers?|phones?|deals?)\b)|\bgamers?\b|unreal engine|\bue[56]\b|\bunity (engine|technologies|editor|6)\b|\bgodot\b|\bbevy (engine|\d)|\bdefold\b|\bo3de\b|steamworks|\bsteam (deck|machine|store|next fest|achievements?|controller|frame|client)\b|\bsteamos\b|playstation|\bps[45]\b|\bxbox\b|nintendo|switch 2|\besports?\b|\bvulkan\b|directx|\bdx12\b|\bfsr ?\d|\bdlss\b|ray[- ]trac|path[- ]trac|graphics programming|\bgdc\b|\bgpuopen\b",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",
 }
 TOPIC_RES = {name: re.compile(rx, re.I) for name, rx in TOPICS.items()}
+# Stories from sources in these categories always get the topic, even when no keyword matches
+# (e.g. a games-industry outlet's studio news that never says "game development").
+CATEGORY_TOPICS = {"Game development": "Game development"}
 STOPWORDS = set("a an the and or of to in on for with by from at as is are was be it its this that new how why what after over into via up out".split())
 
 
@@ -343,9 +347,10 @@ def fetch_feed(url, attempts=2):
             time.sleep(RETRY_PAUSE_SECONDS)
 
 
-def tag_topics(item):
+def tag_topics(item, categories=()):
     text = f"{item['title']} {item['summary']}"
-    return [name for name, rx in TOPIC_RES.items() if rx.search(text)] or ["General IT"]
+    forced = {CATEGORY_TOPICS[c] for c in categories if c in CATEGORY_TOPICS}
+    return [name for name, rx in TOPIC_RES.items() if name in forced or rx.search(text)] or ["General IT"]
 
 
 def _stem(word):
@@ -411,7 +416,7 @@ def cluster(items):
             seen_sources.add(other["source"])
             primary["also_covered_by"].append({"id": other["id"], "source": other["source"], "title": other["title"], "url": other["url"]})
         primary.pop("_tokens", None)
-        primary["topics"] = tag_topics(primary)
+        primary["topics"] = tag_topics(primary, {x.get("source_category", "") for x in group})
         result.append(primary)
     return result
 
