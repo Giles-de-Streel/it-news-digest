@@ -7,12 +7,12 @@ on:
         description: "Only keep stories published in the last N hours"
         default: "36"
   # The primary trigger is a Windmill job on f1fap-n8n (f/admin_platforms/it_news_digest_backup)
-  # that dispatches this workflow every 30 minutes (:00 and :30 UTC). This schedule is the backup
-  # 5 minutes later (:05 and :35): it fetches only if no other run of this workflow has started
-  # since the current half-hour slot.
+  # that dispatches this workflow every 15 minutes (:00, :15, :30 and :45 UTC). This schedule is the
+  # backup 5 minutes later (:05, :20, :35 and :50): it fetches only if no other run of this workflow
+  # has started since the current quarter-hour slot.
   # GitHub may start scheduled runs late or skip them at busy times, which is why it isn't primary.
   schedule:
-    - cron: "5,35 * * * *"
+    - cron: "5,20,35,50 * * * *"
 
 permissions:
   contents: write
@@ -27,15 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Skip if this half hour's fetch already ran
+      - name: Skip if this quarter hour's fetch already ran
         id: gate
         if: github.event_name == 'schedule'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Start of the current half-hour slot (UTC): HH:00 or HH:30
-          if [ "$(date -u +%-M)" -ge 30 ]; then half=30; else half=00; fi
-          since=$(date -u +%Y-%m-%dT%H:${half}:00Z)
+          # Start of the current quarter-hour slot (UTC): HH:00, HH:15, HH:30 or HH:45
+          slot=$(printf '%02d' $(( $(date -u +%-M) / 15 * 15 )))
+          since=$(date -u +%Y-%m-%dT%H:${slot}:00Z)
           others=$(gh api "repos/${{ github.repository }}/actions/workflows/fetch-news.yml/runs?created=%3E%3D${since}&per_page=20" \
             --jq "[.workflow_runs[] | select(.id != ${{ github.run_id }})] | length")
           echo "Other runs since ${since}: ${others}"

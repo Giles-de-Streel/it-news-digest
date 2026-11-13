@@ -1,13 +1,13 @@
 # IT News
 
-A daily list of IT and security news from 338 sources, refreshed every 30 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
+A daily list of IT and security news from 338 sources, refreshed every 15 minutes, with the same story from different outlets merged into one entry. Stories reported by the most sources appear at the top.
 
 Live page: https://giles-de-streel.github.io/it-news-digest/
 
 ## How it works
 
 1. `scripts/fetch_news.py` reads every source in `sources.json`, keeps stories from the last 36 hours that no earlier day already lists, merges the same story reported by several outlets, tags topics with keyword rules, and writes `data/days/YYYY-MM-DD.json` plus `data/index.json`. It uses only the Python standard library. A feed that times out, returns 429/5xx, or returns a web page instead of XML is retried once after 15 seconds; the Sources tab then says "Got a web page instead of the feed" (with the page title) rather than a raw XML parse error.
-2. The **Fetch news** GitHub Actions workflow runs that script and commits the result. A Windmill job on the team automation host starts it every 30 minutes, at :00 and :30. GitHub's own schedule in the workflow is the backup 5 minutes later (:05 and :35): it fetches only if no other run has started since the current half hour (GitHub sometimes starts scheduled runs late or skips them, so it isn't the primary). Each run adds new stories to the current day (US Eastern date) and keeps the ones already there. To fetch on demand, use Actions → Fetch news → Run workflow on GitHub.
+2. The **Fetch news** GitHub Actions workflow runs that script and commits the result. A Windmill job on the team automation host starts it every 15 minutes, at :00, :15, :30 and :45. GitHub's own schedule in the workflow is the backup 5 minutes later (:05, :20, :35 and :50): it fetches only if no other run has started since the current quarter hour (GitHub sometimes starts scheduled runs late or skips them, so it isn't the primary). Each run adds new stories to the current day (US Eastern date) and keeps the ones already there. To fetch on demand, use Actions → Fetch news → Run workflow on GitHub.
 3. The page (`index.html`, `app.js`, `style.css`, served by GitHub Pages) shows the day's stories:
    - **Most reported:** stories covered by more than one source, ranked by how many. The "N sources" button on each story opens a list of every outlet that covered it, each linked to that outlet's article (in card view the same links appear under "Also reported by").
    - **Current vulnerabilities:** every story with a CVSS badge (a CVE scored High 7.0+ or Critical 9.0+), highest score first. Single-source stories move here from Other stories; multi-source ones also stay in Most reported.
