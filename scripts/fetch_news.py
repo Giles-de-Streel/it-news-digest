@@ -569,6 +569,22 @@ def merge_day(existing, fresh):
     return sorted(by_id.values(), key=lambda x: x["published"] or "", reverse=True)
 
 
+def retag(items, sources):
+    """Re-run topic tagging on every story of the day, so stories saved by earlier runs follow the
+    current TOPICS/CATEGORY_TOPICS rules and pick up categories of sources merged in later.
+    Returns the number of stories whose topics changed."""
+    cat_of = {s["name"]: s.get("category", "") for s in sources}
+    changed = 0
+    for it in items:
+        cats = {it.get("source_category") or cat_of.get(it["source"], "")}
+        cats |= {cat_of.get(c.get("source", ""), "") for c in it.get("also_covered_by", [])}
+        topics = tag_topics(it, cats)
+        if topics != it.get("topics"):
+            it["topics"] = topics
+            changed += 1
+    return changed
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--hours", type=int, default=36, help="only keep stories published in the last N hours (default 36)")
@@ -625,6 +641,7 @@ def main():
 
     existing = json.loads(day_path.read_text(encoding="utf-8")).get("items", []) if day_path.exists() else []
     merged = merge_day(existing, clustered)
+    retag(merged, sources)
     cve_note = add_cve_scores(merged)
     exploit_note = add_exploit_signals(merged, sources)
 
