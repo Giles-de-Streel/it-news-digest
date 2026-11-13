@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T22:15:54+00:00",
+ "generated": "2026-11-13T22:30:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 85,
+   "recent": 85,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 383,
-   "recent": 63,
+   "recent": 61,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -978,7 +978,7 @@
   {
    "source": "ITSM.tools",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1860,7 +1860,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 88,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1872,7 +1872,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -2178,6 +2178,65 @@
  ],
  "items": [
   {
+   "id": "e09a4c46fd44",
+   "title": "Source: the FBI is probing whether the FAA outage was caused by a software update, and doesn't believe it was due to a cyberattack or criminality (Myles Miller/Bloomberg)",
+   "url": "https://www.techmeme.com/261113/p33#a261113p33",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T22:20:00+00:00",
+   "summary": "Myles Miller / Bloomberg : Source: the FBI is probing whether the FAA outage was caused by a software update, and doesn't believe it was due to a cyberattack or criminality — The Federal Bureau of Investigation doesn't believe the communication issue affecting air traffic control was due to a cyberattack or…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9c82c30b6e25",
+   "title": "CVE-2026-124021: Control Web Panel (CWP) before webpanel_version 1.30.6 contains an authorization bypass vulnerability in the…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124021",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T22:17:22.217000+00:00",
+   "summary": "Control Web Panel (CWP) before webpanel_version 1.30.6 contains an authorization bypass vulnerability in the validate() function of api/v1/index.php that allows attackers holding a password-recovery token and a predictable legacy signature to obtain valid remote-API authorization without a proper API key.",
+   "kind": "cve",
+   "cve": "CVE-2026-124021",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124021",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "46f0349aec6e",
+   "title": "CVE-2026-124020: Control Web Panel (CWP) before webpanel_version 1.30.6 contains a host header injection vulnerability that…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124020",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T22:17:22.070000+00:00",
+   "summary": "Control Web Panel (CWP) before webpanel_version 1.30.6 contains a host header injection vulnerability that allows unauthenticated attackers to manipulate the password-recovery reset URL by injecting the HTTP Host header into the /v1/lostpass/ route's token generation process.",
+   "kind": "cve",
+   "cve": "CVE-2026-124020",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124020",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "c9c50cd26f19",
    "title": "10 reasons enterprise AI success hinges on platform teams in 2027",
    "url": "https://www.techtarget.com/news/10-reasons-enterprise-ai-success-hinges-on-platform-teams-in-2027/874697/",
@@ -2398,6 +2457,29 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "90c46e932d97",
+   "title": "CVE-2026-82504: VITEC EZ TV Platform Server before 8.5.0 contains an unrestricted file upload vulnerability in the upload…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82504",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T21:17:48.030000+00:00",
+   "summary": "VITEC EZ TV Platform Server before 8.5.0 contains an unrestricted file upload vulnerability in the upload handler that allows unauthenticated remote attackers to upload arbitrary files by supplying a target filename in the X-FILENAME request header with no authentication or file type validation required.",
+   "kind": "cve",
+   "cve": "CVE-2026-82504",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-82504",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
    ]
   },
   {
@@ -6132,6 +6214,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "35a02003fe0f",
+   "title": "Capping tempdb in SQL Server 2025: Resource Governor in Standard Edition",
+   "url": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/capping-tempdb-in-sql-server-2025-resource-governor-in-standard/ba-p/4573219",
+   "source": "Core Infrastructure and Security Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-13T15:03:46+00:00",
+   "summary": "The situation is familiar. One query spills to disk, tempdb grows until the volume fills and every other session on the instance starts failing. The engine has a lever for this since 2008: Resource Governor But for years years it was only available in Enterprise edition.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "System administration"
    ]
   },
   {
