@@ -47,11 +47,11 @@ TOPICS = {
     "Vulnerabilities & patches": r"\bcve-\d|vulnerab|zero-day|0-day|patch(es|ed)?\b|exploit|security update|hotfix|advisory|kev\b",
     "Ransomware & breaches": r"ransomware|breach|leak(ed)?\b|stolen|extortion|data theft|hacked|compromise",
     "Threats & malware": r"malware|phishing|botnet|trojan|backdoor|apt\d*\b|threat actor|infostealer|campaign|spyware",
-    "Microsoft & Windows": r"microsoft|windows|azure|entra|intune|exchange|sharepoint|office 365|microsoft 365|defender|teams\b|sql server",
+    "Microsoft & Windows": r"microsoft|(?<!maintenance )(?<!patch )(?<!time )(?<!change )\bwindows\b(?! of\b)|azure|\bentra\b|intune|exchange (online|servers?|se|admin|mailbox(es)?|mail|e-?mail|hybrid|web services|20(13|16|19))\b|on-prem(ises)? exchange|sharepoint|office 365|microsoft 365|\bdefender\b(?! of\b)|\bteams (meetings?|chats?|channels?|app|client|rooms?|phone|premium|webhooks?|admins?|administrators?|calls?|outages?)\b|sql server",
     "Linux & open source": r"linux|red hat|rhel|ubuntu|debian|open source|kernel|ansible|openssl",
     "Cloud & infrastructure": r"\baws\b|amazon web services|google cloud|\bgcp\b|cloud|kubernetes|vmware|broadcom|data center|datacenter|virtuali",
     "AI": r"\bai\b|artificial intelligence|llm|chatgpt|openai|copilot|gemini|claude|machine learning|genai",
-    "Hardware": r"\bcpus?\b|\bgpus?\b|processor|semiconductor|\bchips?\b|chipmaker|nvidia|\bamd\b|\bintel\b|ryzen|epyc|xeon|\barm\b|qualcomm|tsmc|\bssds?\b|nvme|\bhdds?\b|hard drive|\bdram\b|\bddr\d|\bhbm\d?\b|flash storage|storage array|firmware|\bbios\b|uefi|motherboard|laptop|workstation|\brack\b|data cent(er|re)|datacenter|liquid cooling|power supply",
+    "Hardware": r"\bcpus?\b|\bgpus?\b|(?<!pre)(?<!payment )(?<!data )processor|semiconductor|\bchips?\b|chipmaker|nvidia|\bamd\b|\bintel\b|ryzen|epyc|xeon|\barm\b|qualcomm|tsmc|\bssds?\b|nvme|\bhdds?\b|hard drive|\bdram\b|\bddr\d|\bhbm\d?\b|flash storage|storage array|firmware|\bbios\b|uefi|motherboard|laptop|workstation|\brack\b|data cent(er|re)|datacenter|liquid cooling|power supply",
     "Development": r"programming|developer|\bcoding\b|source code|\bgit(hub|lab)?\b|python|powershell|javascript|typescript|\brust\b|golang|\bjava\b|\.net\b|c\+\+|compiler|\bsdks?\b|\bides?\b|vs code|visual studio|\bnpm\b|pypi|crates\.io|ci/cd|devops|refactor|open-source (library|project)",
     "Databases": r"database|\bsql\b|sql server|\bmssql\b|t-sql|postgres|mysql|mariadb|oracle (database|db|rac)|\brac\b|\brman\b|data ?guard|mongodb|redis|sqlite|\bdbas?\b|always ?on availability",
     "Reverse engineering": r"reverse[- ]engineer|reversing|decompil|disassembl|\bida pro\b|\bida \d|ghidra|binary ninja|radare|\bfuzz|malware analysis|unpack(ing|er)\b|deobfuscat|firmware analysis",
@@ -71,9 +71,9 @@ TOPICS = {
     "Cloud status": r"\b(cloud|service|services|platform|global|worldwide|widespread|major|massive|internet|network|email|dns|cdn|login|sign-in|microsoft|microsoft 365|m365|office 365|azure|aws|google|gmail|cloudflare|akamai|fastly|github|zoom|slack|teams|outlook|exchange( online)?|canvas|okta|crowdstrike|oracle cloud|oci) outages?\b|\boutages? (hits|hit|takes down|took down|knocks|disrupts|disrupted|affects|affected|impacts|hits users)\b|service (disruption|degradation|incident)s?|degraded performance|elevated error rates?|status page|post-incident (report|review)|\brca\b for|\bdown for (users|thousands|millions|many)\b",
     "ITSM": r"\bitsm\b|\bitil\b|it service management|enterprise service management|service management|service ?desk|help ?desk|servicenow|jira service management|\bjsm\b|topdesk|freshservice|invgate|remedyforce|bmc helix|change (management|enablement|advisory board)|problem management|incident management|service catalog(ue)?|\bcmdb\b|configuration management database|it asset management|\bitam\b|service level (agreement|objective|management)|\bslas\b|peoplecert|axelos",
     "Agile & delivery": r"\bagile\b(?! robots?\b)|\bscrum\b|kanban|scrum@scale|product owners?|scrum masters?|sprint (planning|reviews?|goals?|retrospectives?|backlog)|team retrospectives?|product backlog|backlog refinement|user stor(y|ies)|story points|scaled agile|\bsafe (framework|agile)\b|\blean (thinking|management|manufacturing|startup|enterprise|principles|six sigma|portfolio|transformation|coffee)\b|toyota production system|value stream|\bwip limits?\b|flow metrics|dora metrics|project management|program management|product management|\bpmo\b|\bpmp\b|\bokrs?\b|extreme programming|pair programming|mob programming|socio-technical|team topologies",
-    "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
+    "Networking": r"(?<!neural )(?<!social )(?<!fork-)\bnetwork(?! of\b)|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
-    "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",
+    "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|\bfined\b|\bfines\b|\b(a|record|eu|gdpr|million|billion|antitrust) fine\b",
 }
 TOPIC_RES = {name: re.compile(rx, re.I) for name, rx in TOPICS.items()}
 # Stories from sources in these categories always get the topic, even when no keyword matches
@@ -197,7 +197,28 @@ def _lstrip_prolog(data):
     return data.lstrip(b"\xef\xbb\xbf \t\r\n")
 
 
-_REPAIRS = (_lstrip_prolog, _trim_trailing, _fix_entities, _strip_controls)
+_KNOWN_NS = {b"atom": b"http://www.w3.org/2005/Atom", b"dc": b"http://purl.org/dc/elements/1.1/",
+             b"content": b"http://purl.org/rss/1.0/modules/content/", b"media": b"http://search.yahoo.com/mrss/"}
+_PREFIX_USE_RE = re.compile(rb"</?([A-Za-z_][\w.-]*):[A-Za-z_]")
+_ROOT_TAG_RE = re.compile(rb"<(rss|feed|rdf:RDF)\b")
+
+
+def _declare_prefixes(data):
+    """Some feeds use a namespace prefix they never declare (ManageEngine: <atom:link> with no
+    xmlns:atom), which is fatal ("unbound prefix"). Declare each missing prefix on the root element.
+    None when nothing is missing."""
+    root = _ROOT_TAG_RE.search(data)
+    if not root:
+        return None
+    used = {p for p in _PREFIX_USE_RE.findall(data) if p not in (b"xml", b"xmlns")}
+    missing = sorted(p for p in used if not re.search(rb"xmlns:" + re.escape(p) + rb"\s*=", data))
+    if not missing:
+        return None
+    decl = b"".join(b' xmlns:%s="%s"' % (p, _KNOWN_NS.get(p, b"urn:undeclared:" + p)) for p in missing)
+    return data[:root.end()] + decl + data[root.end():]
+
+
+_REPAIRS = (_lstrip_prolog, _trim_trailing, _fix_entities, _strip_controls, _declare_prefixes)
 
 
 def parse_feed(data):
