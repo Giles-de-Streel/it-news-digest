@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg?v=2026102906" type="image/svg+xml">
   <link rel="icon" href="icon-192.png?v=2026102906" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="icon-192.png?v=2026102906">
-  <link rel="stylesheet" href="style.css?v=2026111302">
+  <link rel="stylesheet" href="style.css?v=2026111303">
   <script>
     // Before first paint: colour mode (saved ind.theme, else the system setting) and the header animation switch
     (function () {
@@ -19,7 +19,10 @@
         t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
       }
       d.setAttribute("data-theme", t);
-      try { if (localStorage.getItem("ind.scene") === "false") d.classList.add("scene-off"); } catch (e) {}
+      // The header animation starts off; it runs only after the match has been lit (ind.scene = true)
+      var lit = false;
+      try { lit = localStorage.getItem("ind.scene") === "true"; } catch (e) {}
+      if (!lit) d.classList.add("scene-off");
     })();
   </script>
 </head>
@@ -231,6 +234,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026111302"></script>
+  <script src="app.js?v=2026111303"></script>
 </body>
 </html>

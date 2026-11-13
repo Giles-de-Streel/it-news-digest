@@ -5,7 +5,7 @@
 
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
-  const LS_SCENE = "ind.scene"; // false = header animation turned off with the match toggle
+  const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
