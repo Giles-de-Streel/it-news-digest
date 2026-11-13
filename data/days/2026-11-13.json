@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T15:46:00+00:00",
+ "generated": "2026-11-13T16:00:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -95,9 +95,9 @@
   },
   {
    "source": "Slashdot",
-   "fetched": 15,
-   "recent": 14,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: unclosed token: line 74, column 0"
   },
   {
    "source": "CircleID",
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 73,
+   "recent": 73,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -570,13 +570,13 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 411,
-   "recent": 75,
+   "fetched": 407,
+   "recent": 72,
    "error": null
   },
   {
@@ -1541,8 +1541,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1385,
-   "recent": 3,
+   "fetched": 1386,
+   "recent": 4,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 36,
+   "recent": 38,
    "error": null
   },
   {
@@ -1739,7 +1739,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 87,
+   "fetched": 86,
    "recent": 20,
    "error": null
   },
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 11,
    "recent": 1,
    "error": null
   },
@@ -1974,7 +1974,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2057,6 +2057,74 @@
   }
  ],
  "items": [
+  {
+   "id": "cea90a007dbe",
+   "title": "iOS 27.2 has two CarPlay improvements, here’s what’s new",
+   "url": "https://9to5mac.com/2026/11/13/ios-27-2-has-two-carplay-improvements-heres-whats-new/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-13T15:59:49+00:00",
+   "summary": "iOS 27.2 arrived last month with new features for Messages , Apple TV , and more, plus two improvements for CarPlay. Here’s what’s new for CarPlay users. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f7d4e5883d63",
+   "title": "ClickHouse expands enterprise platform with Xata acquisition",
+   "url": "https://www.itpro.com/business/acquisition/clickhouse-expands-enterprise-platform-with-xata-acquisition",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-13T15:56:36+00:00",
+   "summary": "The expanded platform introduces new capabilities across transactional databases, observability, security, and AI engineering",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Databases",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "9b98e3fbe09a",
+   "title": "New Nuix Channel Chief Looks To Improve Partner Experience End To End",
+   "url": "https://www.crn.com/news/ai/2026/new-nuix-channel-chief-looks-to-improve-partner-experience-end-to-end",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-13T15:55:00+00:00",
+   "summary": "Lori Cornmesser is working to build the channel ecosystem of AI-powered software provider Nuix.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e4898e146c09",
+   "title": "AMD Leverages AI + HRX Loom In Experiment For Quickly Porting 50 LLMs To Client GPUs",
+   "url": "https://www.phoronix.com/news/AMD-HRX-Loom-Experiment",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-13T15:53:00+00:00",
+   "summary": "Following the recent release of HRX Loom v0.1 and leveraging an AI agent workflow, a team at AMD experimented with bringing 50 trending Hugging Face models over to AMD client GPUs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "9cff996cb61e",
+   "title": "Incident with Pull Requests",
+   "url": "https://www.githubstatus.com/incidents/1xzmt89vv61l",
+   "source": "GitHub Status",
+   "source_category": "Cloud status",
+   "published": "2026-11-13T15:49:36+00:00",
+   "summary": "Nov 13 , 15:49 UTC Update - We’re investigating an issue with Pull Requests where some attempts to merge are timing out. Nov 13 , 15:47 UTC Investigating - We are investigating reports of degraded availability for Pull Requests",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud status"
+   ]
+  },
   {
    "id": "1dfadd811b1b",
    "title": "Microsoft Office alternative Euro-Office gets Windows, macOS, and Linux desktop app",
@@ -2370,6 +2438,19 @@
    ]
   },
   {
+   "id": "bb8608a04f3d",
+   "title": "Palmfrets, Minnesota guitarist's invention, strikes a new chord",
+   "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T15:08:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e8d212e2e33e",
    "title": "TSMC confirms employee data breach tied to cloud service provider",
    "url": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
@@ -2567,6 +2648,12 @@
      "source": "Techmeme",
      "title": "OpenAI announces ChatGPT Wallet, which lets its dots AI agents make purchases on behalf of users, available to ChatGPT Pro subscribers in the US who are over 18 (Ashley Capoot/CNBC)",
      "url": "https://www.techmeme.com/261113/p15#a261113p15"
+    },
+    {
+     "id": "4df7366bd22f",
+     "source": "9to5Mac",
+     "title": "OpenAI launches ChatGPT Wallet, enabling ‘dot’ agents to make purchases",
+     "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/"
     }
    ],
    "topics": [
@@ -2628,6 +2715,19 @@
    ]
   },
   {
+   "id": "5bf4951adbe9",
+   "title": "Introducing ChatGPT Wallet",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-13T15:00:00+00:00",
+   "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "a514fb54d5d8",
    "title": "Google Adds Confidential TPU 8tx and Dual-Chip TPU 8i Max to Its Eighth-Generation TPU Lineup",
    "url": "https://www.storagereview.com/news/google-tpu-8tx-tpu-8i-max-confidential-computing-dual-chip",
@@ -2639,6 +2739,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "69fe561982a0",
+   "title": "EU Digital Identity Wallet rollout: every EU state on one board",
+   "url": "https://myid.ie/business/eu-digital-wallet-tracker/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T14:58:07+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
    ]
   },
   {
@@ -8786,7 +8899,14 @@
    "source_category": "IT industry",
    "published": "2026-11-12T14:01:00+00:00",
    "summary": "While I acknowledge Meta’s role in bringing smart glasses to a mainstream audience, it has proven to be an irresponsible steward. Its “growth at all costs” mindset has actively poisoned people’s perception of the form factor.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "434861b14c5d",
+     "source": "TechRepublic",
+     "title": "Samsung and Google Open AI Glasses Preorders: What $395 Gets You",
+     "url": "https://www.techrepublic.com/article/news-samsung-google-ai-glasses-preorders/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
