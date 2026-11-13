@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T08:01:11+00:00",
+ "generated": "2026-11-13T08:30:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 66,
-   "recent": 66,
+   "fetched": 67,
+   "recent": 67,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -570,13 +570,13 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 8,
+   "recent": 10,
    "error": null
   },
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 15,
+   "recent": 20,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
@@ -1728,7 +1728,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1745,7 +1745,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 88,
+   "fetched": 86,
    "recent": 15,
    "error": null
   },
@@ -1758,7 +1758,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1872,6 +1872,54 @@
  ],
  "items": [
   {
+   "id": "bcbd633b4283",
+   "title": "Microsoft outage live: ‘positive results for server stability’ reported, amid global disruption",
+   "url": "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:25:04+00:00",
+   "summary": "Microsoft reports it is seeing some ‘positive results’ in its efforts to get its services back online for millions of customers around the world. Microsoft struggles to fix huge outage affecting Outlook and Teams What happened and when will it be fixed?",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "b71af49ede5e",
+   "title": "CVE-2026-111334: Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111334",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T08:17:15.557000+00:00",
+   "summary": "Memory overflow in Endpoint Analysis (EPA/EPAS) can lead to unpredictable or erroneous behavior or a Denial of Service in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+   "kind": "cve",
+   "cve": "CVE-2026-111334",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111334",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7e0feb27957d",
+   "title": "Is there a 'right amount' of AI?",
+   "url": "https://coyotetracks.org/blog/right-amount-of-ai/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-13T08:04:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "11a91c158e17",
    "title": "Installing the official Claude Desktop Linux beta on Fedora Linux",
    "url": "https://fedoramagazine.org/installing-the-official-claude-desktop-linux-beta-on-fedora-linux/",
@@ -1882,6 +1930,47 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "eb8ac9c242ff",
+   "title": "Sponsored: Huawei Digital Power launches four innovative solutions in Dubai to power the next generation of data centers",
+   "url": "https://www.datacenterdynamics.com/en/product-news/huawei-digital-power-launches-four-innovative-solutions-in-dubai-to-power-the-next-generation-of-data-centers/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "New power, energy storage, and liquid-cooling innovations target greater efficiency, reliability, and sustainability in AI infrastructure",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "662dec2eea86",
+   "title": "Dell Pro 5 Series 14 laptop review",
+   "url": "https://www.itpro.com/hardware/laptops/the-dell-pro-5-series-14-laptop-is-a-welcome-return-to-form-but-its-battery-life-is-underwhelming",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "A 14in business laptop that's powerful, upgradable, and well-designed from top to bottom",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "993ef90698e3",
+   "title": "Upgrading mission-critical services with AI, without causing disruption",
+   "url": "https://www.itpro.com/business/public-sector/upgrading-mission-critical-services-with-ai-without-causing-disruption",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "NHS 24 CIO Ann-Marie Gallacher explains how the service was able to modernize without jeopardising critical patient care",
+   "also_covered_by": [],
+   "topics": [
     "AI"
    ]
   },
@@ -1906,7 +1995,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T07:42:29+00:00",
    "summary": "Kubernetes has become the go-to platform for distributed training and inference, but what happens to the compute bill when it runs AI agents that spend most of their time waiting? When an agent’s container or virtual machine stays provisioned, customers pay for the wait as well as the work.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "349390d33c3c",
+     "source": "Container Journal",
+     "title": "Solo.io Extends Support for AI Agents Running on Kubernetes Clusters",
+     "url": "https://cloudnativenow.com/features/solo-io-extends-support-for-ai-agents-running-on-kubernetes-clusters/"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
@@ -1921,7 +2017,14 @@
    "source_category": "Security",
    "published": "2026-11-13T07:39:04+00:00",
    "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c0eea237828e",
+     "source": "The Hacker News",
+     "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Ransomware & breaches"
@@ -2666,6 +2769,18 @@
      "source": "Hacker News",
      "title": "Nvidia employees petition to bring back Jensen Huang",
      "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+    },
+    {
+     "id": "05676206f912",
+     "source": "CNBC Technology",
+     "title": "Nvidia without Jensen Huang. What lies ahead for Asian chipmakers?",
+     "url": "https://www.cnbc.com/2026/11/13/nvidia-without-jensen-huang-what-lies-ahead-for-asian-chipmakers-.html"
+    },
+    {
+     "id": "11e5a51b11f8",
+     "source": "GamesIndustry.biz",
+     "title": "Nvidia's Jensen Huang resigns as CEO amid reports of affairs with alleged Chinese spy and two employees",
+     "url": "https://www.gamesindustry.biz/nvidias-jensen-huang-resigns-as-ceo-amid-reports-of-affairs-with-alleged-chinese-spy-and-two-employees"
     }
    ],
    "topics": [
