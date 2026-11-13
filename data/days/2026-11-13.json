@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T12:17:03+00:00",
+ "generated": "2026-11-13T12:31:14+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 69,
+   "recent": 69,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 7,
+   "recent": 9,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1061,7 +1061,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1572,7 +1572,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -2058,6 +2058,117 @@
  ],
  "items": [
   {
+   "id": "c80de89ef4b4",
+   "title": "Microsoft says November security updates cause printing issues",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-13T12:27:40+00:00",
+   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "46d894aa9e65",
+   "title": "Poste Italiane establishes €600m co-investment fund to support data center projects",
+   "url": "https://www.datacenterdynamics.com/en/news/poste-italiane-establishes-600m-co-investment-fund-to-support-data-center-projects/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T12:26:27+00:00",
+   "summary": "As company seeks to bolster data center infrastructure",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e7b18bbab3e9",
+   "title": "Three data center developments in Australia change course after community backlash",
+   "url": "https://www.datacenterdynamics.com/en/news/three-data-center-developments-in-australia-change-course-after-community-backlash/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T12:25:08+00:00",
+   "summary": "Developments in Lane Cove, Cooks River, and Tungkillo",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "122ec4a469c9",
+   "title": "Metabase Zero-Day Exploited in Dorsata Data Breach Affecting 58,000 Patients",
+   "url": "https://www.hipaajournal.com/data-breaches-dorsata-bay-area-psychological-consultants-lansing-urgent-care/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-13T12:23:46+00:00",
+   "summary": "Data breaches have recently been announced by the Virginia healthcare technology company Dorsata, the Florida mental healthcare provider Bay Area […]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "b11f78109a56",
+   "title": "How a sex scandal at Nvidia is putting pressure on the White House",
+   "url": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:22:30+00:00",
+   "summary": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ce4668f9b96d",
+   "title": "DOE advances AI-FORTS program to develop superintelligence-powered cybersecurity tools for critical energy infrastructure",
+   "url": "https://industrialcyber.co/utilities-energy-power-water-waste/doe-advances-ai-forts-program-to-develop-superintelligence-powered-cybersecurity-tools-for-critical-energy-infrastructure/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-13T12:20:35+00:00",
+   "summary": "The U.S. Department of Energy (DOE) is developing artificial intelligence-powered tools to strengthen the cybersecurity and operational resilience...",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e112b1ec635b",
+   "title": "Cosmonic Pushes Sandbox Density Limit Using Wasm on Kubernetes",
+   "url": "https://cloudnativenow.com/features/cosmonic-pushes-sandbox-density-limit-using-wasm-on-kubernetes/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-13T12:20:31+00:00",
+   "summary": "Cosmonic is demonstrating how WebAssembly could dramatically change the economics of deploying AI agents on Kubernetes. At KubeCon + CloudNativeCon North America 2026, the company showcased a wasmCloud deployment capable of supporting 1.42 million sandboxed environments on a single 64-core server.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "862cab13b068",
+   "title": "South Korea-based DeepX tapes out DX-M2, an edge AI chip to run inference of 100B-parameter LLMs on robots and drones, targeting fall 2027 for mass production (Sally Ward-Foxton/EE Times)",
+   "url": "https://www.techmeme.com/261113/p8#a261113p8",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:15:19+00:00",
+   "summary": "Sally Ward-Foxton / EE Times : South Korea-based DeepX tapes out DX-M2, an edge AI chip to run inference of 100B-parameter LLMs on robots and drones, targeting fall 2027 for mass production — DeepX is targeting edge markets including robotics with its second-generation AI accelerator, which can run large LLMs on…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "80564d3199a7",
    "title": "For November, Patch Tuesday means a to-do list that starts with Outlook",
    "url": "https://www.computerworld.com/article/4248384/for-november-patch-tuesday-means-a-to-do-list-that-starts-with-outlook.html",
@@ -2121,6 +2232,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "fa6597bd5498",
+   "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance",
+   "url": "https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:03:24+00:00",
+   "summary": "The DOJ said it was taking action against the North Korean government's \"schemes to fund its regime through the massive theft of cryptocurrency.\"",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Policy & regulation"
    ]
   },
   {
@@ -2193,6 +2318,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "23546ebf32cb",
+   "title": "The Tech Download: I interviewed Huang at peak ‘Jensenmania.’ Three weeks later, Nvidia is grappling with a world without him",
+   "url": "https://www.cnbc.com/2026/11/13/tech-download-jensen-huang-nvidia-departure-jensenmania.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:00:02+00:00",
+   "summary": "CNBC's Arjun Kharpal, who interviewed Huang just a few weeks ago at GTC Berlin, unpacks how everything came crashing down for the popular CEO.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2549,7 +2687,14 @@
    "source_category": "Security",
    "published": "2026-11-13T11:10:40+00:00",
    "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "ea2ec047b09c",
+     "source": "SecurityWeek",
+     "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+     "url": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Networking"
@@ -4526,7 +4671,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T08:45:00+00:00",
    "summary": "The program will match public sector bodies and critical infrastructure providers with accredited partners",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "22fdda936d49",
+     "source": "Industrial Cyber",
+     "title": "NCSC launches CyAS scheme to boost critical infrastructure cyber resilience through adversary simulation, testing",
+     "url": "https://industrialcyber.co/critical-infrastructure/ncsc-launches-cyas-scheme-to-boost-critical-infrastructure-cyber-resilience-through-adversary-simulation-testing/"
+    }
+   ],
    "topics": [
     "ICS / OT"
    ]
@@ -6030,7 +6182,14 @@
    "source_category": "IT industry",
    "published": "2026-11-12T19:04:13+00:00",
    "summary": "Jensen Huang's shocking exit as CEO of Nvidia unspooled suddenly, yet signs of trouble had emerged much earlier.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3aeaac4b1af6",
+     "source": "CNBC Technology",
+     "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
+     "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -6043,6 +6202,19 @@
    "source_category": "IT industry",
    "published": "2026-11-12T18:45:00+00:00",
    "summary": "Available now, Pebblebee’s latest Android Find Hub tracker color drop might also be the first real miss, with the festive theme falling short of what it’s supposed to look like. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a1bf43ea2887",
+   "title": "Attention, Android power users: This app unlocks 30+ features you won’t find in Settings",
+   "url": "https://www.zdnet.com/tech/essentials-android-app-power-user-settings/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-12T18:15:00+00:00",
+   "summary": "Is Android Settings not delivering enough power? The Essentials app features 30+ mods and tweaks – but you won’t find it in the Play Store",
    "also_covered_by": [],
    "topics": [
     "General IT"
