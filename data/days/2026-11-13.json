@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T17:16:39+00:00",
+ "generated": "2026-11-13T17:31:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -78,7 +78,7 @@
   {
    "source": "eWeek",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 80,
+   "recent": 80,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -204,7 +204,7 @@
   {
    "source": "Stack Overflow Blog",
    "fetched": 40,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 403,
+   "fetched": 402,
    "recent": 73,
    "error": null
   },
@@ -858,7 +858,7 @@
   {
    "source": "Google Cloud Blog",
    "fetched": 20,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1637,8 +1637,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 47,
-   "recent": 9,
+   "fetched": 48,
+   "recent": 10,
    "error": null
   },
   {
@@ -2058,6 +2058,156 @@
  ],
  "items": [
   {
+   "id": "7ffc1af26978",
+   "title": "Your coding agent shouldn't grade its own homework",
+   "url": "https://stackoverflow.blog/2026/11/13/your-coding-agent-shouldn-t-grade-its-own-homework/",
+   "source": "Stack Overflow Blog",
+   "source_category": "Development",
+   "published": "2026-11-13T17:27:39+00:00",
+   "summary": "AI coding agents can now write design docs, mock up frontends, and implement entire projects end to end. But can they be trusted to verify that their own code actually works?",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "ae955a718584",
+   "title": "OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics (Wen Shao/Fortune)",
+   "url": "https://www.techmeme.com/261113/p19#a261113p19",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T17:25:01+00:00",
+   "summary": "Wen Shao / Fortune : OpenAI disbands its standalone robotics team, moving its staff to research and Applied units, saying models like GPT-6 Astra can be directly applied to robotics — OpenAI has disbanded its stand-alone robotics team, moving its researchers onto other teams.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "719347a224ab",
+   "title": "Integrated data center infrastructure",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/integrated-data-center-infrastructure/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T17:23:09+00:00",
+   "summary": "A unified lifecycle framework for cooling, critical power, power generation and building management systems",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ed4af6e7775c",
+   "title": "Agent fleets drag the messaging layer from afterthought to AI’s coordination core",
+   "url": "https://siliconangle.com/2026/11/13/data-center-telemetry-runs-nats-graduates-from-cncf-kubeconna/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-13T17:23:02+00:00",
+   "summary": "Data center telemetry, sandboxed AI workloads and fleets of agents are pushing more machine-to-machine traffic through infrastructure than ever before, exposing the limits of messaging systems built for steadier demand.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "0a74c7ff8fd9",
+   "title": "Jensen Huang’s biggest mistake was getting too involved in DC",
+   "url": "https://www.semafor.com/article/11/13/2026/jensen-huangs-biggest-mistake-was-getting-too-involved-in-dc",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-13T17:22:52+00:00",
+   "summary": "For a while, it seemed like Huang was one of the few technologists to find success in DC. But it was all a mirage.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "35d26e22a248",
+   "title": "CVE-2026-129126: C-Kermit before 11.1.515 contains a heap buffer overflow vulnerability in putsrv() in ckcfns.c that allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129126",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T17:17:29.977000+00:00",
+   "summary": "C-Kermit before 11.1.515 contains a heap buffer overflow vulnerability in putsrv() in ckcfns.c that allows malicious peers to write past the srvcmd buffer by sending crafted packets.",
+   "kind": "cve",
+   "cve": "CVE-2026-129126",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129126",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7062345eb923",
+   "title": "CVE-2026-129125: C-Kermit 6.0.192 before 11.1.515 contains a remote code execution vulnerability that allows Kermit clients to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129125",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T17:17:29.827000+00:00",
+   "summary": "C-Kermit 6.0.192 before 11.1.515 contains a remote code execution vulnerability that allows Kermit clients to run shell commands on servers with host commands disabled by abusing REMOTE QUERY evaluation.",
+   "kind": "cve",
+   "cve": "CVE-2026-129125",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129125",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "1a433d63be54",
+   "title": "CVE-2026-129124: C-Kermit before 11.1.515 contains an OS command injection vulnerability that allows remote clients to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129124",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T17:17:29.670000+00:00",
+   "summary": "C-Kermit before 11.1.515 contains an OS command injection vulnerability that allows remote clients to execute shell commands by supplying unquoted arguments to REMOTE WHO or REMOTE SPACE.",
+   "kind": "cve",
+   "cve": "CVE-2026-129124",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129124",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e9d55e6320ad",
+   "title": "Five ways CISOs can use ‘dark AI’ to their own advantage",
+   "url": "https://www.itpro.com/security/its-the-ai-cybersecurity-apocalypse-for-threat-actors-five-ways-cisos-can-use-dark-ai-to-their-own-advantage",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-13T17:14:58+00:00",
+   "summary": "Vulnerability discovery will explode over the next few years, but CIOs can use AI to beat hackers at their own game",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
    "id": "2fc85a6baa42",
    "title": "ZTB API Service Issues in AMER (ZTB-US-M4) Cloud - ztb-us-m4",
    "url": "https://trust.zscaler.com/ztb-us-m4/posts/32691",
@@ -2085,6 +2235,19 @@
    ]
   },
   {
+   "id": "d6b5bcff4d0c",
+   "title": "\"LibreOffice works 365 days a year. Just saying.\"",
+   "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T17:09:58+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "8f213d38e50f",
    "title": "Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago (Michael Acton/Financial Times)",
    "url": "https://www.techmeme.com/261113/p17#a261113p17",
@@ -2092,7 +2255,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T17:03:26+00:00",
    "summary": "Michael Acton / Financial Times : Sources: Nvidia's board has approached Arm CEO Rene Haas in its search for a potential successor to Jensen Huang; Haas worked at Nvidia more than a decade ago — Head of SoftBank-owned UK semiconductor group sounded out after Jensen Huang resigned over affairs",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "bbccf64c970d",
+     "source": "Hacker News",
+     "title": "Arm boss Rene Haas approached in Nvidia CEO search",
+     "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -2904,6 +3074,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "1cdc0dd9cda6",
+   "title": "JPMorgan Forecasts 1.5 Million US Humanoid Robots by 2035",
+   "url": "https://www.eweek.com/news/jpmorgan-us-humanoid-robots-2035/",
+   "source": "eWeek",
+   "source_category": "IT industry",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "JPMorgan forecasts US humanoid robot production could reach 1.5 million by 2035, as manufacturers expand and businesses weigh costs and worker resistance.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5758,6 +5941,20 @@
    "id": "a1c572184d99",
    "title": "Jensen Huang is out. An AI expert explains what his exit could mean for the AI boom",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-jensen-huang-exit-scandal-colette-kress-ai-future",
+   "source": "NPR Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T11:47:00+00:00",
+   "summary": "AI expert Gary Marcus breaks down what's at stake for Nvidia and the mess its new CEO has inherited.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "befc332a288a",
+   "title": "Jensen Huang is out. An AI expert explains what his exit means for the AI boom",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-jensen-huang-exit-investigation-lutnick-ai-boom",
    "source": "NPR Technology",
    "source_category": "IT industry",
    "published": "2026-11-13T11:47:00+00:00",
