@@ -8,7 +8,7 @@
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
-  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: every headline is shown as "It looks like you're ..."
+  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: every headline is shown as "It looks like you want to read about: ..."
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
@@ -24,7 +24,7 @@
   const state = {
     days: [],
     day: null, // the latest day: the News, CVEs and Sources tabs always show it
-    clippy: false, // paperclip toggle (ind.clippy): "It looks like you're" before every headline
+    clippy: false, // paperclip toggle (ind.clippy): "It looks like you want to read about:" before every headline
     dayData: null,
     hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
     view: "news",
@@ -524,15 +524,9 @@
     return ul;
   }
 
-  // Paperclip mode: display-only prefix on headlines (search and filters still use the real title).
-  // The first word is lowercased only when it's a common word, so names and acronyms keep their case.
-  const CLIPPY_LOWER = new Set("a an the how why what when where who which this these that your you our my its it is are was will can new why's what's here there".split(" "));
-  const headline = (t) => {
-    if (!state.clippy || !t) return t;
-    const first = t.split(/\s/, 1)[0];
-    const word = CLIPPY_LOWER.has(first.toLowerCase()) && /^[A-Z][a-z']*$/.test(first) ? first.toLowerCase() : first;
-    return `It looks like you're ${word}${t.slice(first.length)}`;
-  };
+  // Paperclip mode: display-only prefix on headlines (search and filters still use the real title)
+  const CLIPPY_PREFIX = "It looks like you want to read about: ";
+  const headline = (t) => (state.clippy && t ? CLIPPY_PREFIX + t : t);
 
   // One outlet's coverage: the whole "Source: headline" line links to that outlet's article
   const sourceLine = (c) => el("li", {},
