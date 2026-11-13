@@ -261,6 +261,19 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   90% { transform: rotate(12deg); } 93% { transform: rotate(-6deg); } 96% { transform: rotate(2deg); }
 }
 @media (prefers-reduced-motion: reduce) { .clippy-toggle[aria-pressed="true"] svg { animation: none; } .clippy-toggle .clip-brow { transition: none; } }
+/* Tux toggle (right of the paperclip): on = only open-source stories, CVEs and sources (ind.tux) */
+.tux-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 3px; border: 0; background: none; cursor: pointer; line-height: 0; }
+.tux-toggle svg { width: 13px; height: 17px; overflow: visible; }
+.tux-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
+.tux-toggle .tux-black { fill: #1d1d1f; stroke: var(--muted); stroke-width: .45; }
+.tux-toggle .tux-belly, .tux-toggle .tux-eye { fill: #fff; }
+.tux-toggle .tux-pupil { fill: #1d1d1f; }
+.tux-toggle .tux-orange { fill: #f2a516; }
+.tux-toggle .tux-body { filter: grayscale(1); opacity: .65; transition: filter .2s, opacity .2s; transform-box: fill-box; transform-origin: 50% 100%; }
+.tux-toggle:hover .tux-body { opacity: .9; }
+.tux-toggle[aria-pressed="true"] .tux-body { filter: none; opacity: 1; animation: tux-waddle 3s ease-in-out infinite; }
+@keyframes tux-waddle { 0%, 76%, 100% { transform: none; } 80% { transform: rotate(-9deg); } 86% { transform: rotate(9deg); } 92% { transform: rotate(-5deg); } 96% { transform: rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .tux-toggle[aria-pressed="true"] .tux-body { animation: none; } .tux-toggle .tux-body { transition: none; } }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
 .scene-off .scene-toggle .match-flame { display: none; }
 .scene-off .scene-toggle .match-head { fill: var(--match-burnt); }

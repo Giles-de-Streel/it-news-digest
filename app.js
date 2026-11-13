@@ -9,6 +9,7 @@
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
   const LS_CLIPPY = "ind.clippy"; // true = paperclip on: every headline is shown as "It looks like you want to read about: ..."
+  const LS_TUX = "ind.tux"; // true = Tux on: only open-source stories, CVEs and sources are shown
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
@@ -25,6 +26,7 @@
     days: [],
     day: null, // the latest day: the News, CVEs and Sources tabs always show it
     clippy: false, // paperclip toggle (ind.clippy): "It looks like you want to read about:" before every headline
+    tux: false, // Tux toggle (ind.tux): hide everything that isn't about open-source software
     dayData: null,
     hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
     view: "news",
@@ -71,6 +73,7 @@
   async function loadCatalog() {
     const res = await fetch(`sources.json?t=${Date.now()}`, { cache: "no-store" });
     state.catalog = res.ok ? await res.json() : [];
+    ossCache = null;
   }
   async function loadSuggestions() {
     try {
@@ -109,8 +112,17 @@
   const rank = (a, b) => coverage(b) - coverage(a) || (b.published || "").localeCompare(a.published || "");
 
   const isCve = (it) => it.kind === "cve";
-  // A story stays visible while at least one source that covered it is switched on
-  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s));
+  // Tux mode keeps a story or CVE when a source that covered it is an open-source project or community
+  // ("oss": true in sources.json), or when its title or summary names open-source software
+  const OSS_RE = /\b(linux|gnu|foss|open[- ]source[ds]?|libreoffice|libre ?ssl|ubuntu|debian|fedora|centos|almalinux|rocky linux|red hat|rhel|opensuse|freebsd|openbsd|netbsd|kubernetes|k8s|kubevirt|openshift|proxmox|xcp-ng|xen|kvm|qemu|openstack|incus|lxc|lxd|podman|containerd|docker|moby|istio|envoy proxy|cncf|postgres(ql)?|mysql|mariadb|sqlite|valkey|python|pypi|rust(lang)?|golang|node\.?js|npm|php|perl|ruby on rails|apache|nginx|haproxy|traefik|openssl|openssh|wireguard|firefox|thunderbird|mozilla|chromium|gnome|kde|wayland|systemd|godot|blender|ansible|opentofu|jenkins|git|wordpress|drupal|joomla|zephyr|risc-v|raspberry pi|aosp|mastodon|fediverse|openjdk|grafana|prometheus|elasticsearch|opensearch|vlc|ffmpeg|curl|samba|bind 9|postfix|exim|roundcube)\b/i;
+  const ossSources = () => new Set(state.catalog.filter((s) => s.oss).map((s) => s.name));
+  let ossCache = null;
+  const isOss = (it) => {
+    if (!ossCache) ossCache = ossSources();
+    return sourcesOf(it).some((s) => ossCache.has(s)) || OSS_RE.test(`${it.title || ""} ${it.summary || ""}`);
+  };
+  // A story stays visible while at least one source that covered it is switched on (and, in Tux mode, it's open source)
+  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it));
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
   const cveItems = () => (state.dayData?.items || []).filter((it) => isCve(it) && isOn(it));
 
@@ -194,16 +206,19 @@
   // Says what the story list is showing: the picked topic in full, plus any source or search filter
   function renderFilterHead(count, cveCount = 0) {
     const head = $("#filter-head");
-    const filtered = state.topic || state.source || state.query;
+    const filtered = state.topic || state.source || state.query || state.tux;
     if (!filtered) { head.hidden = true; return; }
     const [name, desc] = state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
     const extra = [
+      state.tux ? "about open-source software (Tux is on)" : "",
       state.source ? `from ${state.source}` : "",
       state.query ? `matching "${state.query}"` : "",
     ].filter(Boolean).join(", ");
     const cveNote = cveCount ? ` and ${cveCount} ${cveCount === 1 ? "CVE" : "CVEs"}` : "";
     const note = `${count} ${count === 1 ? "story" : "stories"}${cveNote}${extra ? ` ${extra}` : ""}`;
+    const onlyTux = state.tux && !state.topic && !state.source && !state.query;
     const clear = () => {
+      if (onlyTux) { setTux(false); return; }
       Object.assign(state, { topic: "", source: "", query: "" });
       $("#search").value = "";
       $("#source-filter").value = "";
@@ -212,11 +227,11 @@
     };
     head.replaceChildren(
       el("div", { class: "filter-head-text" },
-        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : "Filtered" }),
+        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : "Filtered" }),
         el("h2", { text: name }),
         ...(desc ? [el("p", { class: "muted filter-desc", text: desc })] : []),
         el("p", { class: "muted filter-note", text: note })),
-      el("button", { class: "filter-clear", type: "button", onclick: clear, text: state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
+      el("button", { class: "filter-clear", type: "button", onclick: clear, text: onlyTux ? "Show everything" : state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
     head.hidden = false;
   }
 
@@ -651,7 +666,11 @@
       ...(onCount < all.length ? [el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) })] : []),
     );
 
-    const shown = all.filter((s) => srcMatch(s.name, s.category, s.site, s.url));
+    // Tux mode lists only the open-source project and community sources
+    const shown = all.filter((s) => (!state.tux || s.oss) && srcMatch(s.name, s.category, s.site, s.url));
+    if (state.tux) {
+      $("#sources-switches").append(el("span", { class: "src-count", text: `Tux is on: showing the ${all.filter((s) => s.oss).length} open-source sources. Stories from other sources still show on the News tab when they're about open-source software.` }));
+    }
     if (state.srcQuery.trim()) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `${shown.length} of ${all.length} match "${state.srcQuery.trim()}".` }));
     }
@@ -837,6 +856,20 @@
     b.title = state.clippy ? "It looks like you're done with me. Click to dismiss" : "It looks like you're reading the news. Would you like help?";
   }
 
+  // Tux (right of the paperclip): open-source-only filter on/off, saved as ind.tux
+  function syncTuxToggle() {
+    const b = $("#tux-toggle");
+    b.setAttribute("aria-pressed", String(state.tux));
+    b.title = state.tux ? "Showing open source only. Click to show everything again" : "Open source only: hide everything that isn't about open-source software";
+  }
+  function setTux(on) {
+    state.tux = on;
+    store.set(LS_TUX, on);
+    syncTuxToggle();
+    populateFilters();
+    render();
+  }
+
   // ---------- events ----------
   function wire() {
     $("#home").addEventListener("click", goHome);
@@ -849,6 +882,8 @@
       syncClippyToggle();
       render();
     });
+    syncTuxToggle();
+    $("#tux-toggle").addEventListener("click", () => setTux(!state.tux));
     $("#theme-toggle").addEventListener("click", () => {
       const next = THEMES[(THEMES.indexOf(themeNow()) + 1) % THEMES.length];
       store.set(LS_THEME, next);
@@ -904,6 +939,7 @@
 
   async function init() {
     state.clippy = store.get(LS_CLIPPY, false) === true;
+    state.tux = store.get(LS_TUX, false) === true;
     wire();
     trackTopbar();
     readUrl();
