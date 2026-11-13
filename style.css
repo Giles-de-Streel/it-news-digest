@@ -253,7 +253,14 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .clippy-toggle[aria-pressed="true"] .clip-brow { opacity: 1; }
 .clippy-toggle[aria-pressed="true"] svg { animation: clippy-hop 2.4s ease-in-out infinite; transform-origin: 50% 100%; }
 @keyframes clippy-hop { 0%, 80%, 100% { transform: none; } 86% { transform: translateY(-2px) rotate(-6deg); } 92% { transform: translateY(0) rotate(4deg); } }
-@media (prefers-reduced-motion: reduce) { .clippy-toggle[aria-pressed="true"] svg { animation: none; } .clippy-toggle .clip-brow { transition: none; } }
+/* wave: every 7 s the clip rocks side to side from its base, on or off */
+.clippy-toggle .clip-body { transform-box: fill-box; transform-origin: 50% 100%; animation: clippy-wave 7s ease-in-out infinite; }
+@keyframes clippy-wave {
+  0%, 78%, 100% { transform: none; }
+  81% { transform: rotate(-16deg); } 84% { transform: rotate(14deg); } 87% { transform: rotate(-14deg); }
+  90% { transform: rotate(12deg); } 93% { transform: rotate(-6deg); } 96% { transform: rotate(2deg); }
+}
+@media (prefers-reduced-motion: reduce) { .clippy-toggle[aria-pressed="true"] svg, .clippy-toggle .clip-body { animation: none; } .clippy-toggle .clip-brow { transition: none; } }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
 .scene-off .scene-toggle .match-flame { display: none; }
 .scene-off .scene-toggle .match-head { fill: var(--match-burnt); }
