@@ -804,7 +804,7 @@
     const on = !document.documentElement.classList.contains("scene-off");
     const b = $("#scene-toggle");
     b.setAttribute("aria-pressed", String(on));
-    b.title = on ? "Turn the header animation off" : "Turn the header animation on";
+    b.title = on ? "extinguish!" : "fire!";
   }
 
   // Colour mode (second match). html[data-theme] is set before first paint by a script in <head>.
