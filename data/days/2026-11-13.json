@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T18:30:37+00:00",
+ "generated": "2026-11-13T18:45:39+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 82,
-   "recent": 82,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 402,
-   "recent": 69,
+   "recent": 67,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -984,7 +984,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1571,9 +1571,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "OpenSSL News",
@@ -1621,6 +1621,54 @@
    "source": "Joho no Todai (English)",
    "fetched": 20,
    "recent": 20,
+   "error": null
+  },
+  {
+   "source": "heise online (English)",
+   "fetched": 150,
+   "recent": 64,
+   "error": null
+  },
+  {
+   "source": "Le Monde in English (Pixels)",
+   "fetched": 20,
+   "recent": 6,
+   "error": null
+  },
+  {
+   "source": "TechNode",
+   "fetched": 1998,
+   "recent": 14,
+   "error": null
+  },
+  {
+   "source": "Pandaily",
+   "fetched": 0,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "VnExpress International (Tech)",
+   "fetched": 60,
+   "recent": 6,
+   "error": null
+  },
+  {
+   "source": "AhnLab ASEC",
+   "fetched": 30,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "JPCERT/CC Eyes",
+   "fetched": 15,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Sekoia blog",
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -1812,13 +1860,13 @@
   {
    "source": "Calcalist Tech",
    "fetched": 88,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
    "source": "Game Developer",
    "fetched": 50,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -2130,6 +2178,72 @@
  ],
  "items": [
   {
+   "id": "58dca34b1f30",
+   "title": "CJIS Compliance Checklist (2027): Policy Areas And Inventory",
+   "url": "https://blog.invgate.com/cjis-compliance-checklist",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-13T18:41:02+00:00",
+   "summary": "A CJIS compliance checklist lists what the FBI's Criminal Justice Information Services (CJIS) Security Policy requires from any organization that accesses Criminal Justice Information (CJI) or runs the systems that process, store or transmit it.",
+   "also_covered_by": [],
+   "topics": [
+    "ITSM"
+   ]
+  },
+  {
+   "id": "b5d93e407ee2",
+   "title": "Microsoft improving Windows 11 BitLocker to make TPM management easier on latest build",
+   "url": "https://www.neowin.net/news/microsoft-improving-windows-11-bitlocker-to-make-tpm-management-easier-on-latest-build/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-13T18:33:34+00:00",
+   "summary": "Microsoft has released new Windows 11 builds under the Beta and Experimental channel. It brings some new features and improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "0ddf7adb70a8",
+   "title": "Newly-proposed EU law could place tight restrictions on free-to-play games",
+   "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development",
+   "source": "Game Developer",
+   "source_category": "Game development",
+   "published": "2026-11-13T18:32:59+00:00",
+   "summary": "The Digital Fairness Act, if adopted, could massively change the way some games are developed and published not just in Europe, but across the globe.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "8c563995892e",
+   "title": "How Does UCIe Support Multiple Protocols?",
+   "url": "https://www.electronicdesign.com/technologies/eda/video/55418867/electronic-design-how-does-ucie-support-multiple-protocols",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-13T18:25:54+00:00",
+   "summary": "Find out about the way UCIe can be used to link chiplets together.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c4780fab5c4c",
+   "title": "Keyboards and keyboard accessories under $100 — budget-friendly gifts for keyboard enthusiasts",
+   "url": "https://www.tomshardware.com/gift-guides-seasonal-sales/keyboards-and-keyboard-accessories-under-usd100-budget-friendly-gifts-for-keyboard-enthusiasts",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-13T18:25:25+00:00",
+   "summary": "The best sub-$100 gifts to get the keyboard enthusiast in your life — even if they already have their end-game keyboard.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "ada35633e4e5",
    "title": "KB5132057 and KB5132265: Windows 11 26H2, 25H2, and 26H1 get a long list of new features",
    "url": "https://www.neowin.net/news/kb5132057-and-kb5132265-windows-11-26h2-25h2-and-26h1-get-a-long-list-of-new-features/?utm_source=rss",
@@ -2140,6 +2254,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "4aefac836b62",
+   "title": "AMD openSIL Achieves Its Production Goal With 6th Gen EPYC \"Venice\"",
+   "url": "https://www.phoronix.com/news/AMD-openSIL-Venice-Goal",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-13T18:20:29+00:00",
+   "summary": "Since 2023 I and many open-source advocates have been very eager for AMD's openSIL project for delivering open-source CPU silicon initialization as a replacement to the traditional AGESA code.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2442,6 +2569,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "4a36f6adfa9f",
+   "title": "OpenAI disbands its robotics team as its general models start running robots",
+   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T17:55:23+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3955,6 +4095,20 @@
    ]
   },
   {
+   "id": "ee8d70bf910e",
+   "title": "US Treasury secretary blames the Department of Commerce for leak of Nvidia chips to China",
+   "url": "https://www.lemonde.fr/en/economy/article/2026/11/13/us-treasury-secretary-blames-the-department-of-commerce-for-the-leak-of-nvidia-chips-to-china_6780061_19.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T15:29:55+00:00",
+   "summary": "Speaking on CNBC on Friday, Scott Bessent said several departments had backed adding Megaspeed to Washington's trade blacklist 'for months,' but that the Department of Commerce has the final say.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Hardware"
+   ]
+  },
+  {
    "id": "9e86f995b80f",
    "title": "Another Linux kernel developer steps back from some duties due to overload",
    "url": "https://www.theregister.com/ai-and-ml/2026/11/13/another-linux-kernel-developer-steps-back-from-some-duties-due-to-overload/5309628",
@@ -4760,7 +4914,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T14:45:00+00:00",
    "summary": "In the aftermath of Jensen Huang's resignation, not only may the AI bubble pop, but the world economy is in some peril",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3358f6336d8a",
+     "source": "heise online (English)",
+     "title": "Reports detail Nvidia antitrust probe and another affair involving ex-CEO",
+     "url": "https://www.heise.de/en/news/Reports-detail-Nvidia-antitrust-probe-and-another-affair-involving-ex-CEO-11523641.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "AI",
     "Hardware"
@@ -4780,6 +4941,12 @@
      "source": "Game Developer",
      "title": "Witcher 3 devs use AI to help Polish voice actor reprise role of Geralt after stroke",
      "url": "https://www.gamedeveloper.com/production/polish-voice-actor-for-geralt-returns-for-the-witcher-3-with-ai"
+    },
+    {
+     "id": "cd1f9b2b2648",
+     "source": "heise online (English)",
+     "title": "“The Witcher 3”: AI reworks Geralt’s Polish voice after stroke",
+     "url": "https://www.heise.de/en/news/The-Witcher-3-AI-reworks-Geralt-s-Polish-voice-after-stroke-11521812.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
     }
    ],
    "topics": [
@@ -5164,7 +5331,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T14:15:56+00:00",
    "summary": "Today the new Apple TV 4K has arrived ( order here ) with Siri AI as a major tentpole feature. But older Apple TV 4K models are about to get Siri AI too via a tvOS 27.2.1 software update. more…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "7cda607fcf65",
+     "source": "heise online (English)",
+     "title": "Apple TV 4K 2026 review: More power, new Siri features and HomePod surround",
+     "url": "https://www.heise.de/en/tests/Apple-TV-4K-2026-review-More-power-new-Siri-features-and-HomePod-surround-11522653.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -5983,6 +6157,12 @@
      "source": "4sysops",
      "title": "Gemini 4 Hydrogen replaces Flash in Google Search and the Gemini app",
      "url": "https://4sysops.com/archives/gemini-4-hydrogen-replaces-flash-in-google-search-and-the-gemini-app/"
+    },
+    {
+     "id": "715177dd5c33",
+     "source": "heise online (English)",
+     "title": "Gemini 4 Hydrogen: Google’s efficient alternative to Argon and Carbon",
+     "url": "https://www.heise.de/en/news/Gemini-4-Hydrogen-Google-s-efficient-alternative-to-Argon-and-Carbon-11523905.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
     }
    ],
    "topics": [
@@ -6298,6 +6478,19 @@
    ]
   },
   {
+   "id": "8038f2a71b1e",
+   "title": "DHL to raise package prices for individuals in 2027, especially at branches",
+   "url": "https://www.heise.de/en/news/DHL-to-raise-package-prices-for-individuals-in-2027-especially-at-branches-11524413.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:04:00+00:00",
+   "summary": "Deutsche Post will raise package prices for individual customers starting Jan. 1, 2027. Branch prices will rise most; many online prices will stay the same.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f5b71ee6de0e",
    "title": "AI Doesn’t Have to Go Rogue to Break the World",
    "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
@@ -6400,6 +6593,19 @@
     "Cloud & infrastructure",
     "AI",
     "Cloud status"
+   ]
+  },
+  {
+   "id": "26252560d0da",
+   "title": "Google meets first requirement for exporting maps to South Korea",
+   "url": "https://www.heise.de/en/news/Google-meets-first-requirement-for-exporting-maps-to-South-Korea-11524297.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:01:00+00:00",
+   "summary": "Google has met one of South Korea’s security requirements and removed coordinates from Maps and Earth. Navigation could soon become available.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -6575,6 +6781,32 @@
    }
   },
   {
+   "id": "a93915b017ea",
+   "title": "Pangolin adds a Linux tray app for remote access",
+   "url": "https://www.heise.de/en/news/Pangolin-adds-a-Linux-tray-app-for-remote-access-11524275.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T11:57:00+00:00",
+   "summary": "No longer command-line only: Remote access platform Pangolin now has a Linux desktop client with a tray menu and graphical settings.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e5765348cd6c",
+   "title": "MacBook Pro with PROLED-XDR display teardown: Some repairs are easier",
+   "url": "https://www.heise.de/en/news/MacBook-Pro-with-PROLED-XDR-display-teardown-Some-repairs-are-easier-11524093.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T11:54:00+00:00",
+   "summary": "The OLED-and-touch MacBook Pro builds on its predecessor but changes several things, as iFixit’s teardown shows.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "4035cfa90fff",
    "title": "Forensic Focus Digest, 13 Nov 2026",
    "url": "https://www.forensicfocus.com/news/forensic-focus-digest-13-nov-2026/",
@@ -6630,6 +6862,19 @@
     "Microsoft & Windows",
     "Cloud status",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "9a8e20a9fbde",
+   "title": "Indian iPhone factory: Three supplier workers die",
+   "url": "https://www.heise.de/en/news/Indian-iPhone-factory-Three-supplier-workers-die-11524159.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T11:48:00+00:00",
+   "summary": "A mishap occurred during repairs to water filters in Hosur. Apple is investigating the cause. It’s not the first incident at the iPhone factory.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -7115,6 +7360,30 @@
      "source": "NPR Technology",
      "title": "Microsoft investigating widespread outage that took email and other apps offline",
      "url": "https://www.npr.org/2026/11/13/nx-s1-6039350/microsoft-investigating-widespread-outage-that-took-email-and-other-apps-offline"
+    },
+    {
+     "id": "69a524324945",
+     "source": "4sysops",
+     "title": "Microsoft Outlook recovery spreads as email backlog remains",
+     "url": "https://4sysops.com/archives/microsoft-outlook-recovery-spreads-as-email-backlog-remains/"
+    },
+    {
+     "id": "788422fffe71",
+     "source": "Neowin",
+     "title": "Microsoft \"regrets\" Outlook, Exchange, SharePoint outage after admitting it still can't fix",
+     "url": "https://www.neowin.net/news/microsoft-regrets-outlook-exchange-sharepoint-outage-after-admitting-it-still-cant-fix/?utm_source=rss"
+    },
+    {
+     "id": "9f5b7fd03bab",
+     "source": "heise online (English)",
+     "title": "Microsoft cloud outage: Emails still inaccessible",
+     "url": "https://www.heise.de/en/news/Microsoft-cloud-outage-Emails-still-inaccessible-11524253.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    },
+    {
+     "id": "9c30f5410128",
+     "source": "CBS News Tech",
+     "title": "Widespread Microsoft 365 outage continues, impacting email and other services",
+     "url": "https://www.cbsnews.com/video/widespread-microsoft-365-outage-continues-impacting-email-and-other-services/"
     }
    ],
    "topics": [
@@ -7490,6 +7759,20 @@
    ]
   },
   {
+   "id": "a6494d244847",
+   "title": "From near-bankruptcy to $5T AI empire: Jensen Huang’s rise and fall at Nvidia",
+   "url": "https://e.vnexpress.net/news/tech/personalities/from-near-bankruptcy-to-5t-ai-empire-jensen-huang-s-rise-and-fall-at-nvidia-5144063.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T10:33:01+00:00",
+   "summary": "Jensen Huang steered Nvidia from the brink of bankruptcy to a $5 trillion AI powerhouse over three decades before resigning as CEO following revelations of multiple extramarital affairs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "2aff8797af1b",
    "title": "Beyond AI Applications: How openEuler Is Rethinking the Agentic Infra OS",
    "url": "https://feed.itsfoss.com/link/24361/17523787/openeuler-agentic-infra-os",
@@ -7640,6 +7923,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "542226ab1e32",
+   "title": "Apple TV adds optional sign language to streaming",
+   "url": "https://www.heise.de/en/news/Apple-TV-adds-optional-sign-language-to-streaming-11524025.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T10:19:00+00:00",
+   "summary": "Apple is launching a new service with its first movie: Apple TV content will soon offer optional sign language. It starts with “Being Heumann”.",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
    ]
   },
   {
@@ -8355,6 +8651,19 @@
    ]
   },
   {
+   "id": "83a6b135b25f",
+   "title": "New supernova in NGC 1433 will keep getting brighter for days",
+   "url": "https://www.heise.de/en/news/New-supernova-in-NGC-1433-will-keep-getting-brighter-for-days-11523959.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T10:17:00+00:00",
+   "summary": "A star has exploded in the Horologium constellation’s NGC 1433 galaxy, and the blast has been getting brighter for days. It will peak next week.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "3d73f32a4f35",
    "title": "STTGDC launches 22MW data center in Noida, India",
    "url": "https://www.datacenterdynamics.com/en/news/sttgdc-launches-22mw-data-center-in-noida-india/",
@@ -8366,6 +8675,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "1193f26eb009",
+   "title": "Mercedes freezes German investments and weighs plant closures",
+   "url": "https://www.heise.de/en/news/Mercedes-freezes-German-investments-and-weighs-plant-closures-11523917.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T10:16:00+00:00",
+   "summary": "Without an agreement with the works council and IG Metall, Mercedes will stop investing in German plants. An assembly and powertrain plant may close.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -8558,6 +8880,19 @@
    ]
   },
   {
+   "id": "518dd48928f5",
+   "title": "Humble Bundle’s new website drops two-factor authentication",
+   "url": "https://www.heise.de/en/news/Humble-Bundle-s-new-website-drops-two-factor-authentication-11523895.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T09:59:00+00:00",
+   "summary": "After a redesign, Humble Bundle no longer lets users set up two-factor authentication. The reason is unclear. Users should be cautious.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
    "id": "5d63e0022409",
    "title": "IBM unveils Quantum Nighthawk r3 processor, slated for deployment in 2027",
    "url": "https://www.datacenterdynamics.com/en/news/ibm-unveils-quantum-nighthawk-r3-processor-slated-for-deployment-in-2027/",
@@ -8581,6 +8916,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "508ed2c66d4c",
+   "title": "Windows updates cause side effects and service changes",
+   "url": "https://www.heise.de/en/news/Windows-updates-cause-side-effects-and-service-changes-11523865.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T09:57:00+00:00",
+   "summary": "Windows updates are causing problems. Microsoft also announces changes to ReFS on removable media and RD Web Access.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Endpoint management"
    ]
   },
   {
@@ -8646,6 +8995,19 @@
    ]
   },
   {
+   "id": "88af32e4c8dd",
+   "title": "Flexible rubber rotors could make tidal power cheaper",
+   "url": "https://www.heise.de/en/news/Flexible-rubber-rotors-could-make-tidal-power-cheaper-11523859.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T09:53:00+00:00",
+   "summary": "Tidal power plants face heavy loads and require complex technology. Flexible rubber rotors could reduce that complexity.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "eba681784367",
    "title": "Google Voice Is Changing How Your Texts Look — With a Bigger Upgrade Still Missing",
    "url": "https://www.techrepublic.com/article/news-google-voice-web-redesign-sms-mms/",
@@ -8680,6 +9042,19 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-13T09:40:01+00:00",
    "summary": "They say if it's too good to be true, then it probably is. This is what prospective home buyers in the United Kingdom are experiencing with a rising trend called \"housefishing.\"",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "01725a64e549",
+   "title": "World's youngest self-made billionaires double fortunes to $4.2B each",
+   "url": "https://e.vnexpress.net/news/tech/personalities/world-s-youngest-self-made-billionaires-double-fortunes-to-4-2b-each-5144032.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T09:37:03+00:00",
+   "summary": "Brendan Foody, Adarsh Hiremath and Surya Midha, 23-year-old cofounders of U.S. AI startup Mercor, have doubled their fortunes to some $4.2 billion each following the company's latest funding round.",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -8764,6 +9139,20 @@
    "topics": [
     "Cloud & infrastructure",
     "Supply chain security"
+   ]
+  },
+  {
+   "id": "b8b80c0edf90",
+   "title": "Xbox backward compatibility: 21 more original Xbox games come to PC",
+   "url": "https://www.heise.de/en/news/Xbox-backward-compatibility-21-more-original-Xbox-games-come-to-PC-11523831.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T09:31:00+00:00",
+   "summary": "Microsoft brings 21 more original Xbox games to Windows PCs, including “Knights of the Old Republic”. Four titles get achievements for the first time.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Game development"
    ]
   },
   {
@@ -9158,6 +9547,19 @@
    ]
   },
   {
+   "id": "57c3e07ee5e5",
+   "title": "Alibaba’s Chip Unit Wants to Go Public. Who Pays It?",
+   "url": "https://technode.com/2026/11/13/alibaba-t-head-chip-business-hong-kong-ipo/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:37:22+00:00",
+   "summary": "Editor’s note: This article is republished from Jumpstart, a TechNode Group publication. Alibaba says more than 60% of T-Head’s computing capacity serves customers outside the group. Some of them are carmakers that use its Zhenwu chips to develop driver-assistance systems.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "57df534c8c2e",
    "title": "Introducing Platform Engineering 2.0: An evolution for the AI era",
    "url": "https://platformengineering.org/blog/introducing-platform-engineering-2-0-an-evolution-for-the-ai-era",
@@ -9254,6 +9656,73 @@
    "topics": [
     "Microsoft & Windows",
     "Cloud status"
+   ]
+  },
+  {
+   "id": "ee98a001089a",
+   "title": "DJI to revise prices on some products as chip and memory costs climb",
+   "url": "https://technode.com/2026/11/13/dji-to-revise-prices-on-some-products-as-chip-and-memory-costs-climb/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:21:12+00:00",
+   "summary": "DJI said Friday it will change suggested retail prices for some products starting November 18, citing sustained increases in the cost of semiconductors, memory and other key components. The changes take effect at midnight, according to a notice posted on DJI’s Chinese website.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2a3ee2279c93",
+   "title": "BYD’s Denza launches five-seat N8 SUV with up to 1,003 km of electric range",
+   "url": "https://technode.com/2026/11/13/byds-denza-launches-five-seat-n8-suv-with-up-to-1003-km-of-electric-range/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:20:58+00:00",
+   "summary": "BYD’s premium brand Denza has launched the N8 in China, with prices ranging from RMB 269,900 to RMB 329,900. The five-seat SUV comes in four battery-electric and two plug-in hybrid versions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a561bc1d5feb",
+   "title": "MetaX and UBTech-backed robotics chip startup Xilect raises RMB 500 million",
+   "url": "https://technode.com/2026/11/13/metax-and-ubtech-backed-robotics-chip-startup-xilect-raises-rmb-500-million/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:20:28+00:00",
+   "summary": "Xilect, a robotics chip startup jointly founded by Chinese GPU maker MetaX and humanoid robot maker UBTech Robotics, has raised RMB 500 million in an angel round.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "df5b7b37883e",
+   "title": "Xiaohongshu tests standalone app for users to build and share AI agents",
+   "url": "https://technode.com/2026/11/13/xiaohongshu-tests-standalone-app-for-users-to-build-and-share-ai-agents/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:20:19+00:00",
+   "summary": "Xiaohongshu, the Chinese social platform also known as RedNote, is testing a standalone app called Dada that lets users turn their expertise into AI agents others can use. Ebrun found dozens of agents in the app, covering tasks such as design, job hunting and studying.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e27326967d9a",
+   "title": "ByteDance’s AI chip chief has submitted his resignation, report says",
+   "url": "https://technode.com/2026/11/13/bytedances-ai-chip-chief-has-submitted-his-resignation-report-says/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T08:20:11+00:00",
+   "summary": "Shi Yunfeng, who leads ByteDance’s AI chip and data processing unit teams, has submitted his resignation and is handing over his responsibilities, LatePost reported. Shi joined ByteDance in 2018 and reports to Yang Zhenyuan, who heads the company’s cloud business, Volcano Engine.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -9698,6 +10167,32 @@
    ]
   },
   {
+   "id": "3a0868ad3929",
+   "title": "“FaceStealer”: North Korea increasingly targets open-source developers, FBI says",
+   "url": "https://www.heise.de/en/news/FaceStealer-North-Korea-increasingly-targets-open-source-developers-FBI-says-11523695.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:27:00+00:00",
+   "summary": "The Department of Justice has exposed and disrupted an alleged North Korean hacking scheme that increasingly targets open-source developers.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "9767fb158262",
+   "title": "SpaceX and Tesla said to be in intense merger talks: Deal in 2026?",
+   "url": "https://www.heise.de/en/news/SpaceX-and-Tesla-said-to-be-in-intense-merger-talks-Deal-in-2026-11523673.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:26:00+00:00",
+   "summary": "Elon Musk wants to merge his two biggest companies — and quickly. A report outlines the plan and its biggest obstacles.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a2f3281a2cbb",
    "title": "SANS 2026 survey finds sharp rise in ICS/OT cyber incidents, slower detection, more severe operational impacts",
    "url": "https://industrialcyber.co/threats-attacks/sans-2026-survey-finds-sharp-rise-in-ics-ot-cyber-incidents-slower-detection-more-severe-operational-impacts/",
@@ -9778,6 +10273,19 @@
    ]
   },
   {
+   "id": "f0435a50710d",
+   "title": "When robots dive underwater, HeymanDex sees new possibilities for dexterous hands",
+   "url": "https://technode.com/2026/11/13/when-robots-dive-underwater-heymandex-sees-new-possibilities-for-dexterous-hands/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:19:53+00:00",
+   "summary": "Dexterous hands are becoming a new focus of competition in the humanoid robotics industry. Companies are working to improve robots’ hand capabilities in terms of degrees of freedom, gripping force and movement precision.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "bdf9d3831b97",
    "title": "What happened overnight with the Microsoft global outage",
    "url": "https://www.bbc.co.uk/news/videos/cwm2591k27e2o?at_medium=RSS&at_campaign=rss",
@@ -9849,6 +10357,18 @@
      "source": "Semafor Technology & Security",
      "title": "Microsoft reports progress in restoring service after global outage",
      "url": "https://www.semafor.com/article/11/13/2026/microsoft-reports-progress-in-restoring-service-after-global-outage"
+    },
+    {
+     "id": "7a72050b2520",
+     "source": "VnExpress International (Tech)",
+     "title": "Who is Nvidia interim CEO Colette Kress?",
+     "url": "https://e.vnexpress.net/news/tech/tech-news/who-is-nvidia-interim-ceo-colette-kress-5144091.html"
+    },
+    {
+     "id": "ace15c24476f",
+     "source": "Le Monde in English (Pixels)",
+     "title": "Microsoft starts seeing 'improvements' after global Outlook outage",
+     "url": "https://www.lemonde.fr/en/economy/article/2026/11/13/major-outage-hits-microsoft-outlook_6779302_19.html"
     }
    ],
    "topics": [
@@ -9892,9 +10412,30 @@
    "source_category": "IT industry",
    "published": "2026-11-13T07:00:00+00:00",
    "summary": "The European Space Agency has released the largest dataset yet from its Euclid space telescope, containing 1.7 petabytes of observations covering more than 900 million galaxies.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fad5c4366d95",
+     "source": "heise online (English)",
+     "title": "Euclid releases data on 900 million galaxies for largest 3D map",
+     "url": "https://www.heise.de/en/news/Euclid-releases-data-on-900-million-galaxies-for-largest-3D-map-11524355.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c04918914299",
+   "title": "In Nvidia’s Shadow, a Chinese Chipmaker Takes a Different Route",
+   "url": "https://technode.com/2026/11/13/in-nvidias-shadow-denglin-chinese-gpu-chipmaker/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:59:31+00:00",
+   "summary": "Editor’s note: Denglin Technology, a Chinese maker of general-purpose GPUs for AI computing, went public in Hong Kong on November 10, raising HK$1.41 billion. Revenue reached RMB 200.4 million in the first four months of 2026, already exceeding its full-year 2025 total.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -10544,6 +11085,12 @@
      "source": "ITPro",
      "title": "Microsoft 365 outage: Disruption continues with issues spanning Copilot, Exchange, and SharePoint",
      "url": "https://www.itpro.com/software/microsoft/microsoft-365-outage-disruption-continues-with-issues-spanning-copilot-exchange-and-sharepoint"
+    },
+    {
+     "id": "1389029d7da0",
+     "source": "heise online (English)",
+     "title": "Microsoft 365 outage takes down Teams, Exchange and Copilot",
+     "url": "https://www.heise.de/en/news/Microsoft-365-outage-takes-down-Teams-Exchange-and-Copilot-11523584.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
     }
    ],
    "topics": [
@@ -10558,6 +11105,19 @@
    "source_category": "IT industry",
    "published": "2026-11-13T04:45:01+00:00",
    "summary": "Sarah Klearman / Wall Street Journal : Mirendil, founded by former Anthropic researchers to build self-improving AI, raised a $1B Series A led by Kleiner Perkins and Clearlake Capital — The fundraise comes six months after Mirendil, founded by Anthropic alumni, announced a $200 million seed round",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "2c34c15b1df9",
+   "title": "Singapore tops Southeast Asia in digital and AI competitiveness",
+   "url": "https://e.vnexpress.net/news/tech/tech-news/singapore-tops-southeast-asia-in-digital-and-ai-competitiveness-5144155.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T04:04:56+00:00",
+   "summary": "Singapore has emerged as Southeast Asia’s most competitive economy in digital technology and artificial intelligence, ranking second worldwide behind the U.S., according to a new assessment of 70 economies.",
    "also_covered_by": [],
    "topics": [
     "AI"
@@ -10620,6 +11180,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d2ee610a97e2",
+   "title": "Microsoft outage drags on for hours, disrupting Outlook, Teams for thousands",
+   "url": "https://e.vnexpress.net/news/tech/tech-news/microsoft-outage-drags-on-for-hours-disrupting-outlook-teams-for-thousands-5144121.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T01:30:34+00:00",
+   "summary": "Microsoft 365, Outlook, Teams and other apps of the company remained disrupted for thousands of users for more than five ​hours on Thursday, with the outage also hitting connectors used by OpenAI's ‌and Anthropic's AI services.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Cloud status"
    ]
   },
   {
@@ -10690,6 +11265,30 @@
      "source": "SiliconANGLE",
      "title": "Nvidia CEO Jensen Huang’s abrupt departure shakes AI industry’s foundations",
      "url": "https://siliconangle.com/2026/11/13/nvidia-ceo-jensen-huangs-abrupt-departure-shakes-ai-industrys-foundations/"
+    },
+    {
+     "id": "c3a03028956d",
+     "source": "Le Monde in English (Pixels)",
+     "title": "Who is Alice Huang, the intermediary suspected of espionage behind Nvidia CEO Jensen Huang's downfall?",
+     "url": "https://www.lemonde.fr/en/economy/article/2026/11/13/alice-huang-the-elusive-intermediary-behind-the-downfall-of-nvidia-s-ceo-jensen-huang_6779269_19.html"
+    },
+    {
+     "id": "4e03fdb2c539",
+     "source": "Slashdot",
+     "title": "Nvidia Employees Petition For Jensen Huang's Return",
+     "url": "https://slashdot.org/story/26/11/13/1656259/nvidia-employees-petition-for-jensen-huangs-return?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "be5f2f8efc05",
+     "source": "VnExpress International (Tech)",
+     "title": "How Jensen Huang spent his last hours as Nvidia CEO",
+     "url": "https://e.vnexpress.net/news/tech/personalities/how-jensen-huang-spent-his-last-hours-as-nvidia-ceo-5144260.html"
+    },
+    {
+     "id": "2e5ccd787af0",
+     "source": "heise online (English)",
+     "title": "Jensen Huang may be out at Nvidia after another affair with an employee",
+     "url": "https://www.heise.de/en/news/Jensen-Huang-may-be-out-at-Nvidia-after-another-affair-with-an-employee-11521630.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
     }
    ],
    "topics": [
@@ -11043,6 +11642,99 @@
    ]
   },
   {
+   "id": "51c53a9dfb21",
+   "title": "Another Starlink slowdown hampers Ukraine’s drone defenses",
+   "url": "https://www.heise.de/en/news/Another-Starlink-slowdown-hampers-Ukraine-s-drone-defenses-11523554.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T20:34:00+00:00",
+   "summary": "SpaceX has again throttled Starshield, its military version of Starlink, in Ukraine, disrupting defenses against Russian drones.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cf5b4257fbe1",
+   "title": "AdSense multibillion-euro fine: EU advocate general seeks to overturn ruling",
+   "url": "https://www.heise.de/en/news/AdSense-multibillion-euro-fine-EU-advocate-general-seeks-to-overturn-ruling-11523528.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T20:30:00+00:00",
+   "summary": "Advocate General Kokott says the ruling overturning Google’s EU fine was flawed. The Court of Justice of the EU should send the case back to the lower court.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "403dc7281968",
+   "title": "Commodities as leverage: Berlin reshapes global supply chains",
+   "url": "https://www.heise.de/en/news/Commodities-as-leverage-Berlin-reshapes-global-supply-chains-11523500.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T20:19:00+00:00",
+   "summary": "To reduce one-sided dependencies, three German ministries are pooling their efforts to better secure industry access to critical materials such as rare earths.",
+   "also_covered_by": [],
+   "topics": [
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "09ddec550124",
+   "title": "BKA fall conference: Police call for more data sharing to fight fraud",
+   "url": "https://www.heise.de/en/news/BKA-fall-conference-Police-call-for-more-data-sharing-to-fight-fraud-11523490.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T20:06:00+00:00",
+   "summary": "Germany’s Federal Criminal Police Office and its counterparts are grappling with a sharp rise in cases and seeking technological solutions to some problems.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "46b6f0aa2022",
+   "title": "Nvidia without Jensen Huang: How will business fare?",
+   "url": "https://www.heise.de/en/news/Nvidia-without-Jensen-Huang-How-will-business-fare-11523445.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T19:56:00+00:00",
+   "summary": "Nvidia is trying to contain the scandal surrounding CEO Jensen Huang, who has resigned. What happens next?",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "0ef9f8a519e5",
+   "title": "Digital media rules: States seek strict regulation of Big Tech and AI",
+   "url": "https://www.heise.de/en/news/Digital-media-rules-States-seek-strict-regulation-of-Big-Tech-and-AI-11523341.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T19:34:00+00:00",
+   "summary": "A digital media treaty would prioritize journalism in feeds, hold AI systems accountable and reform media concentration rules.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "098c39e3791c",
+   "title": "In Taiwan, AI-related stocks send investors into a frenzy",
+   "url": "https://www.lemonde.fr/en/economy/article/2026/11/12/in-taiwan-ai-related-stocks-send-investors-into-a-frenzy_6778973_19.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T19:30:05+00:00",
+   "summary": "The surge in TSMC's stock price – the only company in the world capable of producing the processors essential for powering the most advanced artificial intelligence – has fueled growing enthusiasm for investment among the Taiwanese, at the risk of widening wealth inequality in Taiwan.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "375a65e609af",
    "title": "Here's how Jensen Huang's abrupt resignation unfolded at Nvidia",
    "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/",
@@ -11060,6 +11752,47 @@
    ],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "dcd52ab08c03",
+   "title": "Date official: Anthropic shares to begin trading Nov. 19",
+   "url": "https://www.heise.de/en/news/Date-official-Anthropic-shares-to-begin-trading-Nov-19-11523329.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T18:59:00+00:00",
+   "summary": "Anthropic shares are set to begin trading Nov. 19. The final price per share will be set a day earlier.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "196dd3623430",
+   "title": "Simulation: Nuclear bomb would disable Starlink and other satellites in 15 days",
+   "url": "https://www.heise.de/en/news/Simulation-Nuclear-bomb-would-disable-Starlink-and-other-satellites-in-15-days-11523311.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T18:56:00+00:00",
+   "summary": "A nuclear blast in space could cause significant damage. A new simulation shows how many satellites it could disable.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d3a1445ca2c6",
+   "title": "Zoom for Windows: Attackers can escalate privileges over the network",
+   "url": "https://www.heise.de/en/news/Zoom-for-Windows-Attackers-can-escalate-privileges-over-the-network-11522569.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T18:46:00+00:00",
+   "summary": "Zoom has fixed two serious Windows security flaws that enable privilege escalation with updated software packages.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Pen testing & red team",
+    "Networking"
    ]
   },
   {
@@ -11179,6 +11912,12 @@
      "source": "CBS News Tech",
      "title": "Former Nvidia CEO Jensen Huang willing to appear before Congress amid probe into alleged spy affair",
      "url": "https://www.cbsnews.com/video/former-nvidia-ceo-jensen-huang-willing-to-appear-before-congress-amid-probe-into-alleged-spy-affair/"
+    },
+    {
+     "id": "18c6c9ee070f",
+     "source": "Le Monde in English (Pixels)",
+     "title": "Jensen Huang, iconic Nvidia CEO and godfather of AI, resigns",
+     "url": "https://www.lemonde.fr/en/economy/article/2026/11/12/the-fall-of-jensen-huang-iconic-nvidia-ceo-and-godfather-of-ai_6778841_19.html"
     }
    ],
    "topics": [
@@ -11197,6 +11936,167 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "fb14d737bd9d",
+   "title": "GPU Taskman: New task manager for graphics cards and AI",
+   "url": "https://www.heise.de/en/news/GPU-Taskman-New-task-manager-for-graphics-cards-and-AI-11523257.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:48:00+00:00",
+   "summary": "What’s using video memory right now? Open-source GPU Taskman shows VRAM use by process and details about running LLMs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "0427380053a3",
+   "title": "Critical Apache2 vulnerability allows code injection",
+   "url": "https://www.heise.de/en/news/Critical-Apache2-vulnerability-allows-code-injection-11523215.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:46:00+00:00",
+   "summary": "Only servers with HTTP/2 enabled are affected, and updates are recommended. An exploit is possible but difficult.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "cc7b4597670b",
+   "title": "United Airlines bans AI agents from booking flights",
+   "url": "https://www.heise.de/en/news/United-Airlines-bans-AI-agents-from-booking-flights-11523191.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:45:00+00:00",
+   "summary": "United Airlines bans unauthorized AI agents from booking flights. Security concerns and business interests are both at play.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "c0077c03e14d",
+   "title": "Pager breach in Saxony: Emergency alerts apparently exposed online",
+   "url": "https://www.heise.de/en/news/Pager-breach-in-Saxony-Emergency-alerts-apparently-exposed-online-11523179.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:42:00+00:00",
+   "summary": "Emergency alert comes in, and anyone can read it: Sensitive patient data from emergency services and fire department pagers in Saxony was apparently intercepted.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "cce984cd8599",
+   "title": "OSCAL Foundation is dissolving",
+   "url": "https://www.heise.de/en/news/OSCAL-Foundation-is-dissolving-11523165.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:41:00+00:00",
+   "summary": "The organization behind the OSCAL compliance format is calling it quits after nearly two years. The BSI only moved IT-Grundschutz++ to the format in 2025.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f41ef1477dd0",
+   "title": "“That’s unfortunate”: Amazon has thousands of AI agents write code",
+   "url": "https://www.heise.de/en/news/That-s-unfortunate-Amazon-has-thousands-of-AI-agents-write-code-11523107.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:40:00+00:00",
+   "summary": "Amazon releases a tool written entirely by AI bots. Developers are far from impressed.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "b7ca255e2ba0",
+   "title": "Attackers can take Citrix NetScaler ADC and NetScaler Gateway offline",
+   "url": "https://www.heise.de/en/news/Attackers-can-take-Citrix-NetScaler-ADC-and-NetScaler-Gateway-offline-11523095.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:39:00+00:00",
+   "summary": "Admins must update their Citrix NetScaler ADC and NetScaler Gateway installations to fix several security vulnerabilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration"
+   ]
+  },
+  {
+   "id": "61ec6505e020",
+   "title": "AMD driver’s heavy write load puts SSD lifespan at risk",
+   "url": "https://www.heise.de/en/news/AMD-driver-s-heavy-write-load-puts-SSD-lifespan-at-risk-11523007.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:37:00+00:00",
+   "summary": "A bug in AMD’s Adrenalin driver has been hammering system drives for months. An independent developer’s tool measures the damage and works around the bug.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "efd23e66fa42",
+   "title": "For JetBrains, Neovim, and KDE: libghostty 1.0 is here",
+   "url": "https://www.heise.de/en/news/For-JetBrains-Neovim-and-KDE-libghostty-1-0-is-here-11522910.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:35:00+00:00",
+   "summary": "Ghostty’s terminal core now has a stable C ABI: libghostty-vt 1.0 can be packaged reliably by distributions — and JetBrains and Neovim are on board.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "df66bd261094",
+   "title": "MCP server attack puts host Mittwald in crisis mode",
+   "url": "https://www.heise.de/en/news/MCP-server-attack-puts-host-Mittwald-in-crisis-mode-11522845.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:33:00+00:00",
+   "summary": "The hosting provider’s website is in emergency mode, its blog is offline, and administrative services are disabled for customers.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4cd07109b45e",
+   "title": "China secures computing capacity amid fears of new AI chip export controls",
+   "url": "https://www.heise.de/en/news/China-secures-computing-capacity-amid-fears-of-new-AI-chip-export-controls-11522779.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:32:00+00:00",
+   "summary": "Chinese AI companies are reportedly securing more computing capacity outside China to get around U.S. export controls. New laws loom.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "1b95b8066b0f",
+   "title": "Apple Watch Series 12 and Ultra 4 recognize sounds for hard-of-hearing users",
+   "url": "https://www.heise.de/en/news/Apple-Watch-Series-12-and-Ultra-4-recognize-sounds-for-hard-of-hearing-users-11522741.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T15:31:00+00:00",
+   "summary": "As part of Apple’s Audio Intelligence features, useful sound recognition is also coming to current Apple Watches. Here’s what the new feature can do.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -11294,7 +12194,20 @@
    "source_category": "IT industry",
    "published": "2026-11-12T14:00:00+00:00",
    "summary": "After years of development, Google is launching its second foray into smart glasses with Intelligent Eyewear that supports Android and iOS. Pre-orders start today at Gentle Monster and Warby Parker , with the audio glasses shipping on December 10. more…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "434861b14c5d",
+     "source": "TechRepublic",
+     "title": "Samsung and Google Open AI Glasses Preorders: What $395 Gets You",
+     "url": "https://www.techrepublic.com/article/news-samsung-google-ai-glasses-preorders/"
+    },
+    {
+     "id": "db1de42795fc",
+     "source": "heise online (English)",
+     "title": "Google’s AI glasses launch in December, starting at $395",
+     "url": "https://www.heise.de/en/news/Google-s-AI-glasses-launch-in-December-starting-at-395-11523423.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -11341,6 +12254,167 @@
    ]
   },
   {
+   "id": "05dbe46b3f08",
+   "title": "History’s fastest ocean liner sunk to become artificial reef",
+   "url": "https://www.heise.de/en/news/History-s-fastest-ocean-liner-sunk-to-become-artificial-reef-11522515.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:16:00+00:00",
+   "summary": "After 74 years, the SS United States has found its final resting place and is serving a good purpose as an artificial reef.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4ee49046a81d",
+   "title": "Harbor: Apple subsidiary Claris launches app for local AI models",
+   "url": "https://www.heise.de/en/news/Harbor-Apple-subsidiary-Claris-launches-app-for-local-AI-models-11522475.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:15:00+00:00",
+   "summary": "The team behind FileMaker is working on local AI models for the Mac. The app is also designed to make it easier to connect multiple computers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1b2be5321fca",
+   "title": "From HTML and Word to PDF: Gotenberg 9 PDF generator gets a major overhaul",
+   "url": "https://www.heise.de/en/news/From-HTML-and-Word-to-PDF-Gotenberg-9-PDF-generator-gets-a-major-overhaul-11522422.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:14:00+00:00",
+   "summary": "Gotenberg 9 replaces external PDF tools with its own litho engine, adds flexible pipelines and modernizes its LibreOffice integration.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "609eafe3ab60",
+   "title": "US firms reportedly sell AI training data to China",
+   "url": "https://www.heise.de/en/news/US-firms-reportedly-sell-AI-training-data-to-China-11522464.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:14:00+00:00",
+   "summary": "U.S. firms that supply OpenAI and Anthropic reportedly sell training data and RL environments to Chinese AI companies.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "46b1dd3574bc",
+   "title": "Another Calif.io attack: Brotli flaw enables a jailbreak on Mac, iPhone and iPad",
+   "url": "https://www.heise.de/en/news/Another-Calif-io-attack-Brotli-flaw-enables-a-jailbreak-on-Mac-iPhone-and-iPad-11522448.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:13:00+00:00",
+   "summary": "Open a Wi-Fi captive portal and get hacked: Calif.io’s security team shows another exploit. Apple users should update their devices as soon as possible.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "3ca9e67315d6",
+   "title": "ADAC test: Six of seven retrofit LEDs shine farther than halogen bulbs",
+   "url": "https://www.heise.de/en/news/ADAC-test-Six-of-seven-retrofit-LEDs-shine-farther-than-halogen-bulbs-11522436.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:12:00+00:00",
+   "summary": "ADAC tests seven H7 LEDs for low beams: Most shine much farther than halogen bulbs, while one cheap bulb causes severe glare and isn’t approved for road use.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6108e9a8b57e",
+   "title": "Checkmk monitoring software updates fix critical code-injection flaws",
+   "url": "https://www.heise.de/en/news/Checkmk-monitoring-software-updates-fix-critical-code-injection-flaws-11522440.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:11:00+00:00",
+   "summary": "Updates for Checkmk monitoring software fix critical security flaws that attackers could exploit to inject malicious code.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f87ad6d45e40",
+   "title": "KubeCon 2026: CNCF aims to make AI agents safer and more efficient",
+   "url": "https://www.heise.de/en/news/KubeCon-2026-CNCF-aims-to-make-AI-agents-safer-and-more-efficient-11522412.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:07:00+00:00",
+   "summary": "At KubeCon + CloudNativeCon NA, the CNCF accepted several projects to promote the safe operation of AI agents.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "84a4de072cd4",
+   "title": "Report: Singapore is Apple’s new tax haven",
+   "url": "https://www.heise.de/en/news/Report-Singapore-is-Apple-s-new-tax-haven-11522352.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:07:00+00:00",
+   "summary": "Apple long benefited from Ireland’s low tax rates. An EU case put an end to that. Now the company appears to have found a replacement in Southeast Asia.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9b02d89c2130",
+   "title": "Federal IT: Tighter control over digital government",
+   "url": "https://www.heise.de/en/news/Federal-IT-Tighter-control-over-digital-government-11522396.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:06:00+00:00",
+   "summary": "The German government is using a new veto power to enforce common standards and stop duplicate development. Exceptions for media discontinuities remain.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "847eb919ab13",
+   "title": "Yandex acknowledges data loss after Ukrainian drone attacks",
+   "url": "https://www.heise.de/en/news/Yandex-acknowledges-data-loss-after-Ukrainian-drone-attacks-11522358.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:05:00+00:00",
+   "summary": "Yandex restored more than 97% of data from attacked data centers in recent weeks. The rest is irretrievably lost.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "fca422f3fc78",
+   "title": "AlphaGenome 2: Google AI factors cell states into DNA predictions",
+   "url": "https://www.heise.de/en/news/AlphaGenome-2-Google-AI-factors-cell-states-into-DNA-predictions-11522374.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T12:05:00+00:00",
+   "summary": "Google’s new DNA model predicts how genetic changes affect different cell types. That could make it easier to find the causes of disease.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "ec17d07109cc",
    "title": "The iPhone Duo’s rocky launch is a reminder of how far Android foldables have come",
    "url": "https://9to5google.com/2026/11/12/the-iphone-duos-rocky-launch-is-a-reminder-of-how-far-android-foldables-have-come/",
@@ -11364,6 +12438,89 @@
    "also_covered_by": [],
    "topics": [
     "ITSM"
+   ]
+  },
+  {
+   "id": "9945b92b9d89",
+   "title": "TeleClinic acquires Swiss telemedicine provider Medi24",
+   "url": "https://www.heise.de/en/news/TeleClinic-acquires-Swiss-telemedicine-provider-Medi24-11522058.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T10:01:00+00:00",
+   "summary": "By acquiring Swiss telemedicine provider Medi24, German platform TeleClinic is taking its first step into other European countries.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ca03bc4757c2",
+   "title": "AI in the courts: Help for judges or a threat to the rule of law?",
+   "url": "https://www.heise.de/en/news/AI-in-the-courts-Help-for-judges-or-a-threat-to-the-rule-of-law-11522038.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T10:00:00+00:00",
+   "summary": "Should AI decide cases? Georg Borges sets limits for the courts; Silja Vöneky calls for rules on risky models. Responsibility stays with humans.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "321e54cb989e",
+   "title": "Picofly: Nintendo has GitHub block Switch modchip firmware",
+   "url": "https://www.heise.de/en/news/Picofly-Nintendo-has-GitHub-block-Switch-modchip-firmware-11521862.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T09:59:00+00:00",
+   "summary": "Nintendo used a DMCA request to have GitHub block firmware for the Switch modchip Picofly. The action affects a network of 144 repositories.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development",
+    "Embedded & IoT",
+    "Game development"
+   ]
+  },
+  {
+   "id": "e7188378c4ae",
+   "title": "Poland’s ePUAP portal offline after cyberattack",
+   "url": "https://www.heise.de/en/news/Poland-s-ePUAP-portal-offline-after-cyberattack-11521850.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T09:58:00+00:00",
+   "summary": "The Polish government’s ePUAP digital services portal is currently offline after a cyberattack.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "b8d6367bd5e6",
+   "title": "Ring Robotics unveils autonomous home surveillance drone",
+   "url": "https://www.heise.de/en/news/Ring-Robotics-unveils-autonomous-home-surveillance-drone-11521828.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T09:56:00+00:00",
+   "summary": "Ring has launched its new Ring Robotics division and unveiled an autonomous surveillance drone and a security robot.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "5cd8a3666207",
+   "title": "Microsoft: E-invoice switch causes confusion and phishing concerns",
+   "url": "https://www.heise.de/en/news/Microsoft-E-invoice-switch-causes-confusion-and-phishing-concerns-11521730.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T09:53:00+00:00",
+   "summary": "B2B invoices must be sent electronically starting in 2027. Microsoft switched early, in November, confusing customers.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows"
    ]
   },
   {
@@ -11393,6 +12550,19 @@
    ]
   },
   {
+   "id": "b05a24a66c03",
+   "title": "Baidu’s Robin Li says AI’s next phase is the “intelligent organization,” outlines three principles",
+   "url": "https://technode.com/2026/11/12/baidus-robin-li-says-ais-next-phase-is-the-intelligent-organization-outlines-three-principles/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T08:10:47+00:00",
+   "summary": "Baidu founder Robin Li said Thursday that the next stage of AI adoption will require companies to redesign how they work. Speaking at Baidu World 2026 in Beijing, he laid out three principles for what he calls an “intelligent organization”: organize work around tasks that cross job boundaries, document employee…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "66a09fb405f8",
    "title": "Amazon Connect Customer now supports batch actions on up to 100 cases at once",
    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-batch-actions-100-cases/",
@@ -11403,6 +12573,97 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "cf138f0637f1",
+   "title": "Chinese woman accused of spying on Nvidia chief entered Taiwan 8 times",
+   "url": "https://www.lemonde.fr/en/international/article/2026/11/12/chinese-woman-accused-of-spying-on-nvidia-chief-entered-taiwan-8-times_6778543_4.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:29:15+00:00",
+   "summary": "A Mainland Affairs Council minister said records show that Alice Huang, the woman Nvidia CEO Jensen Huang is reported to have had an extramarital affair with, visited Taiwan three times in 2024 and five times in 2025.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a77f12056992",
+   "title": "ByteDance reportedly plans AI assistant similar to Meta’s Muse",
+   "url": "https://technode.com/2026/11/12/bytedance-reportedly-plans-ai-assistant-similar-to-metas-muse/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:11:14+00:00",
+   "summary": "ByteDance plans to introduce an AI assistant similar to Meta’s Muse in the coming weeks, IT Home reported on Wednesday, citing Bloomberg. ByteDance co-founder Zhang Yiming outlined the plan at an internal meeting with the company’s AI team, according to people familiar with the discussion.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "21372144d489",
+   "title": "Baidu opens API access to ERNIE 5.5 Flash Preview",
+   "url": "https://technode.com/2026/11/12/baidu-opens-api-access-to-ernie-5-5-flash-preview/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:10:52+00:00",
+   "summary": "Baidu released ERNIE 5.5 Flash Preview on Wednesday and opened API access through its Qianfan platform. It is the first post-trained version of ERNIE 5.5 Flash Base, which Baidu released earlier this month.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "14f73e2c74c9",
+   "title": "Rockstar Games joins Douyin ahead of GTA 6 launch",
+   "url": "https://technode.com/2026/11/12/rockstar-games-joins-douyin-ahead-of-gta-6-launch/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:10:15+00:00",
+   "summary": "Rockstar Games has opened a verified account on Douyin, ByteDance’s Chinese short-video platform, GamerSky reported Thursday. Its first post is a Chinese-language promotion for Grand Theft Auto VI, telling players they can preload the game ahead of its November 19 release on PlayStation 5 and Xbox Series X and S.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "861567c5db6f",
+   "title": "Nexperia interim CEO says chipmaker could still reunite with China operations",
+   "url": "https://technode.com/2026/11/12/nexperia-interim-ceo-says-chipmaker-could-still-reunite-with-china-operations/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:09:43+00:00",
+   "summary": "Nexperia interim CEO Stefan Tilger told Reuters on Tuesday that the Dutch chipmaker could still reunite with its Chinese operations after more than a year of operating separately. He said taking an equity stake in the Chinese business was another possibility, provided European industrial interests were protected.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "757de7dfb42f",
+   "title": "Source close to Tencent denies rumor of 50% layoffs",
+   "url": "https://technode.com/2026/11/12/source-close-to-tencent-denies-rumor-of-50-layoffs/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:09:11+00:00",
+   "summary": "A person close to Tencent told Sina Tech on Thursday that a rumor the company planned to cut half its workforce was false. The claim circulated after Tencent’s 28th-anniversary all-hands meeting, where executives called for faster organizational changes as the company shifts resources toward AI.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "7ac612524613",
+   "title": "Stop and shut down: CrowdStrike unveils AI kill switch",
+   "url": "https://www.heise.de/en/news/Stop-and-shut-down-CrowdStrike-unveils-AI-kill-switch-11521544.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-12T07:00:00+00:00",
+   "summary": "At its Fal.Con user conference, CrowdStrike unveiled a kill switch for Falcon Guardian designed to stop rogue agents.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
