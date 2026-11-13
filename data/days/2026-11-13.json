@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T12:00:59+00:00",
+ "generated": "2026-11-13T12:17:03+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 4,
+   "error": null
   },
   {
    "source": "The Record",
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -157,7 +157,7 @@
    "source": "NVD new CVEs",
    "fetched": 0,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Schneier on Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1061,7 +1061,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
+   "fetched": 10,
    "recent": 0,
    "error": null
   },
@@ -1338,7 +1338,7 @@
   {
    "source": "Higher Ed Dive",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1404,7 +1404,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1740,7 +1740,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 86,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -1752,7 +1752,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 13,
    "recent": 1,
    "error": null
   },
@@ -2058,6 +2058,131 @@
  ],
  "items": [
   {
+   "id": "80564d3199a7",
+   "title": "For November, Patch Tuesday means a to-do list that starts with Outlook",
+   "url": "https://www.computerworld.com/article/4248384/for-november-patch-tuesday-means-a-to-do-list-that-starts-with-outlook.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:09:33+00:00",
+   "summary": "November is a (relatively) big month. Microsoft’s November 2026 Patch Tuesday fixes 1,240 CVEs, 64 of them rated critical. Start with Outlook: attackers are already using CVE-2026-124194 , a spoofing flaw.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "System administration"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-124194",
+     "score": 6.5,
+     "severity": "Medium",
+     "version": "3.1",
+     "scored_by": "microsoft"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-124194",
+      "added": "2026-11-10",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-124194",
+     "score": 0.0162,
+     "percentile": 0.76419,
+     "date": "2026-11-12"
+    }
+   }
+  },
+  {
+   "id": "a8fb8eefba99",
+   "title": "\"It's a wild situation\" – an investor and publisher perspective on the rise of AI copycats, the discoverability crisis, and more",
+   "url": "https://www.gamesindustry.biz/its-a-wild-situation-an-investor-and-publisher-perspective-on-the-rise-of-ai-copycats-the-discoverability-crisis-and-more",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-13T12:04:00+00:00",
+   "summary": "GamesIndustry.biz attended the AI and Games Conference in London this week, where a publisher and investor panel discussed the problems and opportunities of AI when it comes to marketing, funding, and publishing games (the full talk will be available via the AI and Games Conference YouTube channel at a later date).",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Game development"
+   ]
+  },
+  {
+   "id": "f5b71ee6de0e",
+   "title": "AI Doesn’t Have to Go Rogue to Break the World",
+   "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+   "source": "Schneier on Security",
+   "source_category": "Threat research",
+   "published": "2026-11-13T12:03:30+00:00",
+   "summary": "This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop . I want to talk about AI hacking.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "7df059f63f11",
+   "title": "Terminal borders that don't cost a cell",
+   "url": "https://www.joshka.net/cell-borders/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-13T12:03:19+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "021ba1d69710",
+   "title": "Colette Kress helped bring Israel to the heart of Nvidia's AI business. Now she's in charge. - www.calcalistech.com",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtcVpnOXE4Sk9DN25tRFl0VDBSV3dCWUpZTFNpak5FTFhmVVRYWWppV3ZQYkxPSzVsSnJpN3Jwb2hrNmhFRGc2bFJxU3RUMklncm1KemFxai16WU5rNlMtSTZwblYxTC1Y?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:02:00+00:00",
+   "summary": "Colette Kress helped bring Israel to the heart of Nvidia's AI business. Now she's in charge. www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8e96ba411a53",
+   "title": "Claude AI and Code hit by sign-in outage as Microsoft 365 connector fails",
+   "url": "https://4sysops.com/archives/claude-ai-and-code-hit-by-sign-in-outage-as-microsoft-365-connector-fails/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-13T12:01:51+00:00",
+   "summary": "Anthropic’s online AI assistant Claude suffered a new authentication outage on November 13, preventing some users from signing in to Claude.ai and Claude Code. The disruption followed a separate Microsoft 365 connector failure, but Anthropic had not linked the sign-in problem to Microsoft’s outage. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Cloud status",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "428b05d7f6e8",
+   "title": "Microsoft apologizes as Microsoft 365 outage begins to stabilize",
+   "url": "https://4sysops.com/archives/microsoft-apologizes-as-microsoft-365-outage-begins-to-stabilize/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-13T12:01:50+00:00",
+   "summary": "Microsoft’s Copilot chief has apologized for the Microsoft 365 outage as services begin to stabilize, although capacity has not returned to normal. The update follows a prolonged disruption affecting Cloud PCs and Microsoft 365 services . Microsoft says it has seen no indication of malicious activity. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Cloud status"
+   ]
+  },
+  {
    "id": "f1c6a5c7499c",
    "title": "Fixing a Dead Socket LGA 1851 Mainboard with a Resistor",
    "url": "https://hackaday.com/2026/11/13/fixing-a-dead-socket-lga-1851-mainboard-with-a-resistor/",
@@ -2095,6 +2220,20 @@
    "topics": [
     "Development",
     "Game development"
+   ]
+  },
+  {
+   "id": "f936ce5d9f15",
+   "title": "Netflix Turns Operational Data Into a Knowledge Graph for AI-Driven Observability",
+   "url": "https://www.infoq.com/news/2026/11/netflix-ai-driven-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-13T12:00:00+00:00",
+   "summary": "Netflix is developing an ontology-driven knowledge graph to accelerate production investigations and provide AI agents with a shared understanding of its operational environment. By Craig Risi",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "DevOps & SRE"
    ]
   },
   {
@@ -3903,7 +4042,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-13T09:56:02+00:00",
    "summary": "Microsoft's AI strategy isn't sitting well with everyone. One of AI Frontiers' co-founders has quit, claiming the company's leadership wasn't interested in his team's research.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "85bdf782e884",
+     "source": "Joho no Todai (English)",
+     "title": "Microsoft AI Frontiers Co-Founder Departs, Says 'Scaling Alone Is the Wrong Direction'",
+     "url": "https://joho-todai.com/en/microsoft-ai-frontiers-co-founder-exits-scaling-strategy/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "AI"
@@ -4926,6 +5072,12 @@
      "source": "Help Net Security",
      "title": "OpenAI’s Daybreak brings AI agents to security testing and vulnerability fixes",
      "url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/"
+    },
+    {
+     "id": "9fe5782b20d0",
+     "source": "Joho no Todai (English)",
+     "title": "OpenAI Unveils AI Penetration-Testing Product Daybreak Red Team, Connecting Validation and Remediation",
+     "url": "https://joho-todai.com/en/openai-daybreak-red-team-ai-penetration-testing/"
     }
    ],
    "topics": [
@@ -4982,6 +5134,12 @@
      "source": "Petri IT Knowledgebase",
      "title": "Microsoft Deploys Configuration Patch to Stabilize Global Microsoft 365 Outage",
      "url": "https://petri.com/microsoft-deploys-patch-stabilize-microsoft-365-outage/"
+    },
+    {
+     "id": "fb8dd9d6fb18",
+     "source": "4sysops",
+     "title": "Microsoft 365 outage eases in parts of Asia Pacific after configuration patch",
+     "url": "https://4sysops.com/archives/microsoft-365-outage-eases-in-parts-of-asia-pacific-after-configuration-patch/"
     }
    ],
    "topics": [
@@ -5100,6 +5258,21 @@
    "topics": [
     "Microsoft & Windows",
     "System administration"
+   ]
+  },
+  {
+   "id": "0bb2f5463dec",
+   "title": "Microsoft's massive M365 outage stretches past 15 hours as its fixes keep failing",
+   "url": "https://www.theregister.com/saas/2026/11/13/microsofts-massive-m365-outage-stretches-past-15-hours-as-its-fixes-keep-failing/5309609",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:40:06+00:00",
+   "summary": "Hasn't completely ruled out cyberattack as cause of incident that's damaged Exchange Online and services that rely on it",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "System administration",
+    "Cloud status"
    ]
   },
   {
@@ -5551,6 +5724,12 @@
      "source": "Variety Digital",
      "title": "Microsoft Says ‘No Evidence of Malicious Activity’ in Global Outage of Outlook and Exchange Email",
      "url": "https://variety.com/2026/digital/news/microsoft-outlook-email-outage-no-evidence-malicious-activity-1236946855/"
+    },
+    {
+     "id": "55b91d77fe5a",
+     "source": "Calcalist Tech",
+     "title": "Microsoft outage drags into a second day, disrupting businesses and governments worldwide",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2SjJIQVFJOThQSi1xdFE3NXhSSWJFdWpaYzBHX2IxNW1NaURLV3ZKX0xWU2JfdURaVkJ2RWlZSTNjS3pNQ2JncTlGWExWRVNFbm9BS19rNnhDRDJVZXh3RklrdjJkYkE?oc=5"
     }
    ],
    "topics": [
