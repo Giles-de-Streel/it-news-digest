@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T06:30:43+00:00",
+ "generated": "2026-11-13T07:02:00+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 69,
-   "recent": 69,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 413,
-   "recent": 139,
+   "recent": 137,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1002,7 +1002,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1061,7 +1061,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1392,7 +1392,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1745,8 +1745,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 87,
-   "recent": 16,
+   "fetched": 89,
+   "recent": 17,
    "error": null
   },
   {
@@ -1865,12 +1865,99 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
+   "fetched": 14,
    "recent": 2,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "b6b318a3f4ad",
+   "title": "Microsoft Revamps Exchange Online Admin API Permissions",
+   "url": "https://office365itpros.com/2026/11/13/exchange-admin-api-changes/?utm_source=rss&utm_medium=rss&utm_campaign=exchange-admin-api-changes",
+   "source": "Office 365 for IT Pros",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-13T07:00:00+00:00",
+   "summary": "The Exchange Online Admin API is a REST API to help app developers move from their code from Exchange Web Services before the final deprecation of EWS in April 2027. The permissions originally defined for the API are changing to become less confusing. The change must happen before November 30, 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development",
+    "System administration",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "fd468ea554c1",
+   "title": "Microsoft struggles to get M365 services back online after widespread outage",
+   "url": "https://www.cio.com/article/4248249/microsoft-struggles-to-get-m365-services-back-online-after-widespread-outage.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:56:56+00:00",
+   "summary": "If you’re struggling to send or receive emails, you’re not alone. Microsoft has been unable to fully restore Microsoft 365 more than 13 hours after an Exchange Online failure took down Outlook and spread to Teams, SharePoint, Copilot and parts of the company’s security tooling, and it said overnight that its latest…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Backup & recovery",
+    "System administration"
+   ]
+  },
+  {
+   "id": "a8bb107a678d",
+   "title": "Microsoft's massive outage hits government agencies and businesses across three continents",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1lUVFueFhnRXZsYUpra0JETXhoWTFsMTZKdk5RVUx6RW1qWHRSMFE5LXJTZWdwSkcxeXVFZ19idFhqQmhyVGhPTDhqTmd5amtEcTRIbDY2OHZBaE5DX0o3eWV3WXo5MVU?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:41:00+00:00",
+   "summary": "Microsoft's massive outage hits government agencies and businesses across three continents CTech",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "fe9babf6897e",
+   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:34:07+00:00",
+   "summary": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e44e9304c953",
+   "title": "Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+   "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-13T06:30:30+00:00",
+   "summary": "North Korean state hackers have stolen more than $400 million in cryptocurrency over the past 18 months by pulling targets into fake Zoom and Teams calls filled with webcam footage of earlier victims. The FBI calls the scheme FaceStealer.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "4d79e537096d",
+   "title": "Sources: Samsung is in talks to buy Modine Manufacturing, a US maker of data center cooling systems, as soon as the coming weeks; Modine's market value is $5.6B (Bloomberg)",
+   "url": "https://www.techmeme.com/261113/p4#a261113p4",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:30:00+00:00",
+   "summary": "Bloomberg : Sources: Samsung is in talks to buy Modine Manufacturing, a US maker of data center cooling systems, as soon as the coming weeks; Modine's market value is $5.6B — Samsung Electronics Co.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
   {
    "id": "7223c6f131a9",
    "title": "Analyst: Samsung remains king of foldables, holds 69% of foldable market",
