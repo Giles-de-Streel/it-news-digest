@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T13:31:00+00:00",
+ "generated": "2026-11-13T13:45:58+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 68,
-   "recent": 68,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -600,7 +600,7 @@
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 411,
-   "recent": 97,
+   "recent": 96,
    "error": null
   },
   {
@@ -672,13 +672,13 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -725,7 +725,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 93,
+   "fetched": 92,
    "recent": 6,
    "error": null
   },
@@ -1008,7 +1008,7 @@
   {
    "source": "Microsoft 365 Roadmap",
    "fetched": 2306,
-   "recent": 12,
+   "recent": 0,
    "error": null
   },
   {
@@ -1068,7 +1068,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1739,7 +1739,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 86,
+   "fetched": 85,
    "recent": 20,
    "error": null
   },
@@ -1752,7 +1752,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 13,
    "recent": 1,
    "error": null
   },
@@ -2057,6 +2057,34 @@
   }
  ],
  "items": [
+  {
+   "id": "a2fc62414d4a",
+   "title": "Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says",
+   "url": "https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-13T13:45:00+00:00",
+   "summary": "Proofpoint’s Selena Larson notes that threat actors’ reliance on AI has led to lots of mistakes being made, with little evidence of increased sophistication",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI"
+   ]
+  },
+  {
+   "id": "9597e11a6ca2",
+   "title": "The Digital Fairness Act is a decade-long bill coming due | Opinion",
+   "url": "https://www.gamesindustry.biz/the-digital-fairness-act-is-a-decade-long-bill-coming-due-opinion",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-13T13:42:30+00:00",
+   "summary": "When a draft of the European Commission's Digital Fairness Act leaked earlier this week, some industry reactions had a distinctly end-of-days flavour. The official responses now winding their way out of trade bodies after the official draft of the act was released are only ratcheting down the tone a little; less…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Game development"
+   ]
+  },
   {
    "id": "5502b06e57dc",
    "title": "New Xbox update lets you move the Guide menu and shuffle Home backgrounds",
@@ -3071,7 +3099,14 @@
    "source_category": "Hardware",
    "published": "2026-11-13T11:29:00+00:00",
    "summary": "One of the consistent wonderful praise I have for Intel over the past 22+ years of covering the Linux hardware scene has been their upstreaming of new CPU targets into the open-source compilers like GCC well ahead of product launches.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c0c56fb597e4",
+     "source": "Joho no Todai (English)",
+     "title": "Intel's Next-Generation \"Razor Lake\" CPU Is a Nova Lake Alias in GCC: Coral Rapids Is a Separate New Target",
+     "url": "https://joho-todai.com/en/intel-razor-lake-nova-lake-coral-rapids/"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Hardware",
@@ -3322,6 +3357,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "697608c5c100",
+   "title": "Engineer Overhead Lines to Withstand Ice, Wind and FreezingRain",
+   "url": "https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+   "source": "IEEE Spectrum",
+   "source_category": "IT industry",
+   "published": "2026-11-13T11:00:02+00:00",
+   "summary": "This White Paper explains how ice, wind and vegetation load overhead distribution lines at the same time. It shows engineers how to assess the complete line and compare resilience options. What you will learn about: How freezing rain, rime ice and wet snow add weight to conductors and change their shape in the wind.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5875,6 +5923,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "9d7752f61662",
+   "title": "Microsoft 365 caught a bug and the whole world sneezed",
+   "url": "https://www.computerworld.com/article/4248396/microsoft-365-caught-a-bug-and-the-whole-world-sneezed.html",
+   "source": "Computerworld",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:59:00+00:00",
+   "summary": "While Microsoft seems at last to be on the edge of fixing the global outage that hammered its services overnight, causing chaos across Asia-Pacific and Europe, we should still ask: How many times must we endure outages of this kind?",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud status"
    ]
   },
   {
