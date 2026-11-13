@@ -6,6 +6,8 @@
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
   const LS_SCENE = "ind.scene"; // false = header animation turned off with the match toggle
+  const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
+  const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
@@ -803,10 +805,37 @@
     b.title = on ? "Turn the header animation off" : "Turn the header animation on";
   }
 
+  // Colour mode (second match). html[data-theme] is set before first paint by a script in <head>.
+  const themeNow = () => {
+    const t = document.documentElement.getAttribute("data-theme");
+    return THEMES.includes(t) ? t : "light";
+  };
+  function syncThemeToggle() {
+    const t = themeNow(), next = THEMES[(THEMES.indexOf(t) + 1) % THEMES.length];
+    const b = $("#theme-toggle");
+    b.dataset.mode = t;
+    b.title = `${t[0].toUpperCase()}${t.slice(1)} mode: click for ${next} mode`;
+    b.setAttribute("aria-label", `Colour mode: ${t}. Switch to ${next} mode`);
+  }
+  function setTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    syncThemeToggle();
+  }
+
   // ---------- events ----------
   function wire() {
     $("#home").addEventListener("click", goHome);
     syncSceneToggle();
+    syncThemeToggle();
+    $("#theme-toggle").addEventListener("click", () => {
+      const next = THEMES[(THEMES.indexOf(themeNow()) + 1) % THEMES.length];
+      store.set(LS_THEME, next);
+      setTheme(next);
+    });
+    // Until a mode is picked, follow the system setting when it changes
+    window.matchMedia?.("(prefers-color-scheme: dark)").addEventListener?.("change", (e) => {
+      if (!THEMES.includes(store.get(LS_THEME, ""))) setTheme(e.matches ? "dark" : "light");
+    });
     $("#scene-toggle").addEventListener("click", () => {
       const off = document.documentElement.classList.toggle("scene-off");
       store.set(LS_SCENE, !off);
