@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T19:16:32+00:00",
+ "generated": "2026-11-13T19:32:42+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -90,7 +90,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 82,
-   "recent": 82,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 402,
+   "fetched": 394,
    "recent": 67,
    "error": null
   },
@@ -936,7 +936,7 @@
   {
    "source": "Cloudflare Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1284,7 +1284,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1626,13 +1626,13 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 62,
+   "recent": 69,
    "error": null
   },
   {
    "source": "Le Monde in English (Pixels)",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1841,8 +1841,8 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 2,
-   "recent": 2,
+   "fetched": 3,
+   "recent": 3,
    "error": null
   },
   {
@@ -1860,7 +1860,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 88,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -2153,7 +2153,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 84,
+   "fetched": 83,
    "recent": 23,
    "error": null
   },
@@ -2177,6 +2177,157 @@
   }
  ],
  "items": [
+  {
+   "id": "ae77e0b5de99",
+   "title": "Drop-in Vintage CPU Replacements with the tranZPUter Project",
+   "url": "https://hackaday.com/2026/11/13/drop-in-vintage-cpu-replacements-with-the-tranzputer-project/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-13T19:30:00+00:00",
+   "summary": "One of the struggles with vintage computer systems is that many of the ICs in them have no modern-day version that you can just purchase and drop-in. Creating replacements that …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "ICS / OT"
+   ]
+  },
+  {
+   "id": "850e2eae2301",
+   "title": "Cisco forecasts $9 billion in AI infrastructure revenue in FY27",
+   "url": "https://www.networkworld.com/article/4248551/cisco-forecasts-9-billion-in-ai-infrastructure-revenue-in-fy27.html",
+   "source": "Network World",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:28:44+00:00",
+   "summary": "Cisco continues to benefit from a “ networking supercycle ,” reporting record revenue—driven by demand for AI infrastructure, security, and campus refreshes from hyperscalers and enterprise customers—for its fiscal first quarter ended October 24.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education",
+    "Networking"
+   ]
+  },
+  {
+   "id": "4766c254790f",
+   "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+   "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+   "source": "Cloudflare Blog",
+   "source_category": "Networking",
+   "published": "2026-11-13T19:26:07+00:00",
+   "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "0de139af9d3d",
+   "title": "Siri AI is coming to older Apple TV 4K models",
+   "url": "https://www.heise.de/en/news/Siri-AI-is-coming-to-older-Apple-TV-4K-models-11524932.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:25:00+00:00",
+   "summary": "Apple has shared when its upgraded AI system will arrive on older streaming boxes. The EU remains an obstacle.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e7a6d9020e09",
+   "title": "Supermarket attacks: Danfoss controllers remained vulnerable after updates",
+   "url": "https://www.heise.de/en/news/Supermarket-attacks-Danfoss-controllers-remained-vulnerable-after-updates-11524473.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:22:00+00:00",
+   "summary": "Danfoss refrigeration controllers “AK-SM 800A”, considered vulnerable since August, apparently contained further critical security flaws.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d7da405a5bce",
+   "title": "Google AI: Gemini comes to CarPlay",
+   "url": "https://www.heise.de/en/news/Google-AI-Gemini-comes-to-CarPlay-11524802.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:21:00+00:00",
+   "summary": "You can already access Google’s AI system through the Maps app in a CarPlay-equipped vehicle. Now the Gemini app itself has also been updated.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a5c615b28176",
+   "title": "Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's \"deepest business dilemma\" due to the unpredictability of revenue (Shirin Ghaffary/Bloomberg)",
+   "url": "https://www.techmeme.com/261113/p25#a261113p25",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:20:01+00:00",
+   "summary": "Shirin Ghaffary / Bloomberg : Dario Amodei says figuring out how much computing is needed in a year or two is Anthropic's “deepest business dilemma” due to the unpredictability of revenue — Anthropic PBC Chief Executive Officer Dario Amodei named sourcing computing power as one of the artificial intelligence …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "18102e7f1f0e",
+   "title": "Algorithmic rage-shifting and memocracy: How memes make politics emotional",
+   "url": "https://www.heise.de/en/news/Algorithmic-rage-shifting-and-memocracy-How-memes-make-politics-emotional-11524794.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:20:00+00:00",
+   "summary": "Political power is no longer wielded only through platforms and debates, but increasingly through memes and AI-generated images.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "3ae03a082b03",
+   "title": "Ceph in Rust: New code, old cluster",
+   "url": "https://www.heise.de/en/news/Ceph-in-Rust-New-code-old-cluster-11524764.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:19:00+00:00",
+   "summary": "Move Ceph to Rust gradually: Croit’s new NVMe OSD runs alongside classic OSDs. The components are now available in preview.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "28994a40ceab",
+   "title": "25 years of “Empire Earth”: 500,000 years of human history in one game",
+   "url": "https://www.heise.de/en/background/25-years-of-Empire-Earth-500-000-years-of-human-history-in-one-game-11524643.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:18:00+00:00",
+   "summary": "“Empire Earth” was released 25 years ago today. The RTS from the creator of AoE didn’t change the market, but still has a large fan base.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c68185725b4e",
+   "title": "Operation Endgame: Global crackdown on cybercrime",
+   "url": "https://www.heise.de/en/news/Operation-Endgame-Global-crackdown-on-cybercrime-11524697.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:15:00+00:00",
+   "summary": "Europol coordinates Operation Endgame actions against malware networks. Law enforcement officers have now secured millions of victims’ records.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "c4a22dceb544",
    "title": "Some investors and founders say they lost an ally in Jensen Huang; Nvidia held $48B in 229 private companies as of July and offered $165B in cloud backstops (New York Times)",
@@ -2230,6 +2381,20 @@
     "Microsoft & Windows",
     "Cloud status",
     "Networking"
+   ]
+  },
+  {
+   "id": "31151b521467",
+   "title": "Will your MongoDB upgrade break? Check it with UCFM",
+   "url": "https://www.percona.com/blog/will-your-mongodb-upgrade-break-check-it-with-ucfm/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-13T19:01:03+00:00",
+   "summary": "You were assigned one of the most common, yet feared, tasks in the life of a database administrator: Upgrades are needed for many reasons, whether to fix an existing bug or to keep the environment under support and eligible to receive security fixes. Either way, the task is yours.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "System administration"
    ]
   },
   {
@@ -2321,6 +2486,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "80a7173f8db2",
+   "title": "The avalanche that hit math is coming for AI development",
+   "url": "https://www.dwarkesh.com/p/rsi",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T18:39:42+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2876,6 +3054,19 @@
    "topics": [
     "Microsoft & Windows",
     "Cloud status"
+   ]
+  },
+  {
+   "id": "6e8a42935552",
+   "title": "47-day architecture impact paper",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5aMTdZTElVZWRNRW16aU1MMUtkbzVwcDRlTXVmNjdCLV9GYW9qRGQ3UldvNG81WDJfVXVacVZ2R3pVNnlfRHA4RldwcW1UamtlZ1VlRWNqU0l0a280QWZLbnFXUmFJdzd5NVBjYU5HOGpOY3RRRE5KQXA5QnhLdw?oc=5",
+   "source": "Sectigo",
+   "source_category": "TLS & PKI",
+   "published": "2026-11-13T17:36:22+00:00",
+   "summary": "47-day architecture impact paper Sectigo",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI"
    ]
   },
   {
@@ -4951,7 +5142,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T15:00:00+00:00",
    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b0dc4e1845da",
+     "source": "Slashdot",
+     "title": "ChatGPT's New Wallet Lets AI Agents Shop For You",
+     "url": "https://news.slashdot.org/story/26/11/13/1911210/chatgpts-new-wallet-lets-ai-agents-shop-for-you?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -6403,6 +6601,12 @@
      "source": "heise online (English)",
      "title": "Gemini 4 Hydrogen: Google’s efficient alternative to Argon and Carbon",
      "url": "https://www.heise.de/en/news/Gemini-4-Hydrogen-Google-s-efficient-alternative-to-Argon-and-Carbon-11523905.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    },
+    {
+     "id": "e8c3c469932b",
+     "source": "GitHub Changelog",
+     "title": "Gemini 4 Hydrogen in GitHub Copilot",
+     "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot"
     }
    ],
    "topics": [
@@ -7842,7 +8046,14 @@
    "source_category": "Security",
    "published": "2026-11-13T10:55:03+00:00",
    "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "83ad5d1b19cb",
+     "source": "SecurityWeek",
+     "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
+     "url": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware",
