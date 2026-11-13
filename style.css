@@ -625,6 +625,27 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @media (max-width: 600px) {
   .news-main .filters select { flex: 1 1 160px; min-width: 0; }
 }
+/* History tab: day list as a sticky sidebar; below 900px a horizontally scrolling row of days */
+.day-nav {
+  position: sticky; top: calc(var(--topbar-h, 60px) + 12px);
+  max-height: calc(100vh - var(--topbar-h, 60px) - 24px);
+  max-height: calc(100dvh - var(--topbar-h, 60px) - 24px);
+  overflow-y: auto; overscroll-behavior: contain;
+  margin-top: 16px; padding: 8px 6px 10px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.day-nav .nav-group-title:first-of-type { margin-top: 4px; }
+#hist-search, #hist-topic { font-size: 14px; }
+.news-main .filters select:disabled { opacity: .5; }
+@media (max-width: 900px) {
+  .day-nav { position: static; display: flex; align-items: center; gap: 4px; max-height: none; margin-top: 12px; padding: 6px;
+    overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+  .day-nav .nav-list { display: flex; gap: 4px; }
+  .day-nav .nav-all { margin: 0; padding: 0 6px 0 0; border-bottom: 0; border-right: 1px solid var(--border); }
+  .day-nav .nav-group-title { display: none; }
+  .day-nav .nav-item { width: auto; white-space: nowrap; padding: 5px 10px; font-size: 14px; }
+  .day-nav .nav-label { overflow-wrap: normal; }
+}
 .nav-sheet-head { display: none; }
 @media (max-width: 900px) {
   .nav-sheet-head { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; padding: 4px 0 8px; font-weight: 700; }

@@ -7,17 +7,22 @@
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
   const LS_SCENE = "ind.scene"; // false = header animation turned off with the match toggle
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
-  const VIEWS = ["news", "cves", "sources"];
+  const VIEWS = ["news", "cves", "sources", "history"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
   const SOURCE_CAP = 8; // single-source stories shown per source before the rest fold away
   const SECTION_CAP = 7; // stories shown per News section before the rest fold into "N more stories"
-  const WEEK = "week"; // day-picker value for the combined last-7-days view
+  // History tab: "week" and "all" combine several day files; any other value is one date
+  const WEEK = "week";
+  const ALL = "all";
   const WEEK_DAYS = 7;
+  const HIST_CAP_RANGE = 15; // per-day rows shown when several days are listed; the rest fold away
+  const HIST_CAP_DAY = 60; // rows shown for a single day, or for any day while searching
 
   const state = {
     days: [],
-    day: null,
+    day: null, // the latest day: the News, CVEs and Sources tabs always show it
     dayData: null,
+    hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
     view: "news",
     topic: "",
     source: "",
@@ -75,18 +80,23 @@
     return res.ok ? await res.json() : { date: day, items: [], sources: [] };
   }
   async function loadDay(day) {
-    if (day === WEEK) {
-      // Each day file only holds stories no earlier day listed, so the days combine without overlap
-      const days = await Promise.all(state.days.slice(0, WEEK_DAYS).map((d) => fetchDay(d.date)));
-      const seen = new Set();
-      const items = days.flatMap((d) => d.items || []).filter((it) => !seen.has(it.id) && seen.add(it.id));
-      const latest = days[0] || {};
-      state.dayData = { ...latest, items, week: days.map((d) => d.date) };
-    } else {
-      state.dayData = await fetchDay(day);
-    }
+    state.dayData = await fetchDay(day);
     state.day = day;
   }
+
+  // Past day files for the History tab, fetched once per page load. The latest day reuses the
+  // News tab's copy. A failed fetch is dropped from the cache so the next visit retries it.
+  const dayCache = new Map();
+  function historyDay(date) {
+    if (date === state.day && state.dayData) return Promise.resolve(state.dayData);
+    if (!dayCache.has(date)) {
+      dayCache.set(date, fetchDay(date).catch((e) => { dayCache.delete(date); throw e; }));
+    }
+    return dayCache.get(date);
+  }
+  const histDates = (range) => (range === WEEK ? state.days.slice(0, WEEK_DAYS)
+    : range === ALL ? state.days
+    : state.days.filter((d) => d.date === range)).map((d) => d.date);
 
   const sourcesOf = (it) => [it.source, ...(it.also_covered_by || []).map((c) => c.source)];
   const coverage = (it) => 1 + (it.also_covered_by || []).length;
@@ -130,14 +140,15 @@
   function render() {
     for (const tab of document.querySelectorAll(".tabs button")) tab.setAttribute("aria-selected", String(tab.dataset.view === state.view));
     for (const v of VIEWS) $(`#view-${v}`).hidden = state.view !== v;
-    for (const b of document.querySelectorAll(".seg button")) b.setAttribute("aria-pressed", String(b.dataset.layout === state.layout));
+    for (const b of document.querySelectorAll("[data-layout]")) b.setAttribute("aria-pressed", String(b.dataset.layout === state.layout));
     $("#cve-tab-count").textContent = cveItems().length ? String(cveItems().length) : "";
     const generated = state.dayData?.generated;
     $("#updated").textContent = generated ? `Updated ${fmtTime(generated)}` : "";
     $("#updated").title = generated ? `Last fetch for this day: ${new Date(generated).toLocaleString()}` : "";
     if (state.view === "news") renderNews();
     else if (state.view === "cves") renderCves();
-    else renderSources();
+    else if (state.view === "sources") renderSources();
+    else renderHistory();
   }
 
   // Full name and a one-line description for each topic pill, shown above the stories when it's picked.
@@ -334,10 +345,9 @@
     const cves = visibleCves();
     const nvd = (state.dayData?.sources || []).find((s) => s.source === "NVD new CVEs");
     const hours = state.dayData?.window_hours || 36;
-    const span = state.dayData?.week ? `over the last ${state.dayData.week.length} days` : `in the ${hours} hours before this fetch`;
-    $("#cves-meta").textContent = nvd?.error && !state.dayData?.week
+    $("#cves-meta").textContent = nvd?.error
       ? `The NVD fetch failed for this day: ${nvd.error}`
-      : `${all.length} CVEs published to NIST's NVD ${span} with a CVSS score of 9.0 or higher, highest first. EPSS is the estimated chance of exploitation in the next 30 days; "Exploited" means CISA lists it as known exploited.`;
+      : `${all.length} CVEs published to NIST's NVD in the ${hours} hours before this fetch with a CVSS score of 9.0 or higher, highest first. EPSS is the estimated chance of exploitation in the next 30 days; "Exploited" means CISA lists it as known exploited. Earlier days are on the History tab.`;
     $("#cves-list").replaceChildren(cves.length
       ? el("ul", { class: "cve-list" }, ...cves.map(cveRow))
       : el("p", { class: "empty", text: all.length ? "Nothing matches this search." : "No critical CVEs for this day." }));
@@ -374,6 +384,113 @@
       ...(rest.length ? [el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
         el("summary", { text: `${rest.length} more matching CVEs` }),
         el("ul", { class: "cve-list" }, ...rest.map(cveRow)))] : []));
+  }
+
+  // ---------- History tab ----------
+  // Every earlier day file: pick a day (or the last 7 days, or all of them) in the left list, then
+  // search, filter by topic, and switch between stories and critical CVEs. One section per day.
+  const fmtDay = (date, opts) => new Date(`${date}T12:00:00`).toLocaleDateString(undefined, opts);
+  const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+
+  function renderDayNav() {
+    const sum = (list) => list.reduce((n, d) => n + d.count, 0);
+    const item = (label, value, n, title) => el("li", {},
+      el("button", {
+        type: "button", class: "nav-item", title,
+        "aria-current": state.hist.range === value ? "true" : "false",
+        onclick: () => { state.hist.range = value; renderHistory(); window.scrollTo({ top: 0 }); },
+      }, ...navLabel(label, n)));
+    // Dates grouped under their month, newest first
+    const months = new Map();
+    for (const d of state.days) {
+      const m = fmtDay(d.date, { month: "long", year: "numeric" });
+      if (!months.has(m)) months.set(m, []);
+      months.get(m).push(d);
+    }
+    const week = state.days.slice(0, WEEK_DAYS);
+    $("#day-nav").replaceChildren(
+      el("ul", { class: "nav-list nav-all" },
+        item(`Last ${week.length} days`, WEEK, sum(week), "Every story from the last seven day files"),
+        item(`All ${state.days.length} days`, ALL, sum(state.days), "Every day the digest has kept; loads every day file")),
+      ...[...months].flatMap(([m, days]) => [
+        el("div", { class: "nav-group-title", text: m }),
+        el("ul", { class: "nav-list" }, ...days.map((d) => item(
+          `${fmtDay(d.date, { weekday: "short", month: "short", day: "numeric" })}${d.date === state.day ? " (today)" : ""}`,
+          d.date, d.count, d.date)))]));
+  }
+
+  const histMatch = (it, q) => !q || `${it.title} ${it.summary} ${it.cve || ""} ${sourcesOf(it).join(" ")}`.toLowerCase().includes(q);
+
+  let histToken = 0; // ignores a slow load that finishes after the user has picked something else
+  async function renderHistory() {
+    renderDayNav();
+    for (const b of document.querySelectorAll("[data-hkind]")) b.setAttribute("aria-pressed", String(b.dataset.hkind === state.hist.kind));
+    const { range, kind } = state.hist;
+    const dates = histDates(range);
+    const box = $("#hist-list");
+    $("#hist-title").textContent = range === WEEK ? `Last ${dates.length} days` : range === ALL ? `All ${dates.length} days`
+      : fmtDay(range, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+    if (!dates.length) {
+      $("#hist-meta").textContent = "";
+      box.replaceChildren(el("p", { class: "empty", text: "No days to show yet." }));
+      return;
+    }
+    const token = ++histToken;
+    const pending = dates.filter((d) => !dayCache.has(d) && d !== state.day).length;
+    if (pending) {
+      $("#hist-meta").textContent = `Loading ${plural(pending, "day", "days")}...`;
+      box.replaceChildren();
+    }
+    let days;
+    try {
+      days = await Promise.all(dates.map(historyDay));
+    } catch (e) {
+      if (token === histToken) box.replaceChildren(el("p", { class: "empty", text: `Couldn't load history: ${e.message}` }));
+      return;
+    }
+    if (token !== histToken) return;
+
+    // Topic drop-down: every topic in the loaded days, A-Z
+    const topics = [...new Set(days.flatMap((d) => (d.items || []).flatMap((it) => it.topics || [])))]
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+    const topicSel = $("#hist-topic");
+    if (state.hist.topic && !topics.includes(state.hist.topic)) topics.unshift(state.hist.topic);
+    topicSel.replaceChildren(el("option", { value: "", text: "All topics" }), ...topics.map((t) => el("option", { value: t, text: t })));
+    topicSel.value = state.hist.topic;
+    topicSel.disabled = kind === "cves";
+
+    const q = state.hist.query.trim().toLowerCase();
+    const searching = Boolean(q || (kind === "news" && state.hist.topic));
+    const cap = dates.length === 1 || searching ? HIST_CAP_DAY : HIST_CAP_RANGE;
+    let total = 0;
+    const sections = days.map((d, i) => {
+      const items = (d.items || []).filter((it) => (kind === "cves" ? isCve(it) : !isCve(it)) && isOn(it)
+        && histMatch(it, q) && (kind === "cves" || !state.hist.topic || (it.topics || []).includes(state.hist.topic)))
+        .sort(kind === "cves" ? byScore : rank);
+      total += items.length;
+      if (!items.length) return null;
+      const list = (xs) => (kind === "cves" ? el("ul", { class: "cve-list" }, ...xs.map(cveRow)) : el("ul", { class: "rows" }, ...xs.map(row)));
+      const first = items.slice(0, cap), rest = items.slice(cap);
+      // The folded rows are only built when opened, so a long range stays quick to draw
+      let built = false;
+      const more = rest.length ? el("details", {
+        class: "more",
+        ontoggle: (e) => { if (!built) { e.target.append(list(rest)); built = true; } addMoreToggles(e.target); },
+      }, el("summary", { text: `${rest.length} more from this day` })) : null;
+      const one = kind === "cves" ? "critical CVE" : "story", many = kind === "cves" ? "critical CVEs" : "stories";
+      return el("section", { class: "news-section" },
+        el("div", { class: "section-head" },
+          el("h2", { text: fmtDay(dates[i], { weekday: "long", month: "long", day: "numeric" }) }),
+          el("span", { class: "muted", text: `${plural(items.length, one, many)}${kind === "cves" ? ", highest score first" : ", most reported first"}` })),
+        list(first), more);
+    }).filter(Boolean);
+
+    const what = kind === "cves" ? plural(total, "critical CVE", "critical CVEs") : plural(total, "story", "stories");
+    const filters = [state.hist.topic && kind === "news" ? `in ${state.hist.topic}` : "", q ? `matching "${state.hist.query.trim()}"` : ""].filter(Boolean).join(" ");
+    $("#hist-meta").textContent = `${what}${filters ? ` ${filters}` : ""}. Each day lists the stories first fetched that day; sources switched off on the Sources tab stay hidden here too.`;
+    box.replaceChildren(...(sections.length ? sections
+      : [el("p", { class: "empty", text: searching ? "Nothing matches these filters." : "Nothing for these days." })]));
+    addMoreToggles(box);
   }
 
   // With cap set, the first SECTION_CAP stories show and the rest fold into a "N more stories" drop-down
@@ -502,7 +619,7 @@
 
   // Sources-tab search: every word must appear in one of the given fields (case-insensitive)
   function srcMatch(...fields) {
-    const words = state.srcQuery.toLowerCase().split(/s+/).filter(Boolean);
+    const words = state.srcQuery.toLowerCase().split(/\s+/).filter(Boolean);
     if (!words.length) return true;
     const hay = fields.filter(Boolean).join(" ").toLowerCase();
     return words.every((w) => hay.includes(w));
@@ -511,7 +628,6 @@
   function renderSources() {
     const d = state.dayData || {};
     $("#sources-meta").textContent = !d.generated ? ""
-      : d.week ? `Showing the latest day's fetch (${d.date}, ${fmtTime(d.generated)}). Pick a single day to see its sources.`
       : `Fetched ${fmtTime(d.generated)}, window ${d.window_hours} hours. ${(d.items || []).length} stories after merging duplicates.`;
     // Every configured source, one row each; sources dropped from sources.json still show if this day fetched them
     const status = new Map((d.sources || []).map((s) => [s.source, s]));
@@ -608,12 +724,6 @@
   }
 
   function populateFilters() {
-    const daySel = $("#day");
-    const weekCount = state.days.slice(0, WEEK_DAYS).reduce((n, d) => n + d.count, 0);
-    daySel.replaceChildren(
-      ...(state.days.length > 1 ? [el("option", { value: WEEK, text: `Last ${Math.min(WEEK_DAYS, state.days.length)} days (${weekCount})` })] : []),
-      ...state.days.map((d) => el("option", { value: d.date, text: `${d.date} (${d.count})` })));
-    daySel.value = state.day || "";
     const sources = [...new Set(newsItems().flatMap(sourcesOf))].filter((s) => !state.off.has(s)).sort();
     const srcSel = $("#source-filter");
     srcSel.replaceChildren(el("option", { value: "", text: "All sources" }), ...sources.map((s) => el("option", { value: s, text: s })));
@@ -721,18 +831,24 @@
         e.preventDefault();
         // On the Sources tab it searches the sources; everywhere else it jumps to the News search
         if (state.view === "sources") { $("#src-search").focus(); return; }
+        if (state.view === "history") { $("#hist-search").focus(); return; }
         if (state.view !== "news") setView("news");
         $("#search").focus();
       } else if (e.key === "Escape") {
         toggleTopicPanel(false);
       }
     });
-    document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+    document.querySelectorAll("[data-layout]").forEach((b) => b.addEventListener("click", () => {
       state.layout = b.dataset.layout;
       store.set(LS_LAYOUT, state.layout);
       render();
     }));
-    $("#day").addEventListener("change", async (e) => { await loadDay(e.target.value); populateFilters(); render(); });
+    $("#hist-search").addEventListener("input", (e) => { state.hist.query = e.target.value; renderHistory(); });
+    $("#hist-topic").addEventListener("change", (e) => { state.hist.topic = e.target.value; renderHistory(); });
+    document.querySelectorAll("[data-hkind]").forEach((b) => b.addEventListener("click", () => {
+      state.hist.kind = b.dataset.hkind;
+      renderHistory();
+    }));
   }
 
   async function init() {
