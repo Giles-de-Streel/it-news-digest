@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T20:15:55+00:00",
+ "generated": "2026-11-13T20:30:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 85,
-   "recent": 85,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -600,7 +600,7 @@
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -936,7 +936,7 @@
   {
    "source": "Cloudflare Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -984,7 +984,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1073,8 +1073,8 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2306,
-   "recent": 0,
+   "fetched": 2311,
+   "recent": 5,
    "error": null
   },
   {
@@ -1565,9 +1565,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "source": "Adrian Roselli",
@@ -1595,8 +1595,8 @@
   },
   {
    "source": "Apple security releases",
-   "fetched": 278,
-   "recent": 1,
+   "fetched": 279,
+   "recent": 2,
    "error": null
   },
   {
@@ -1740,7 +1740,7 @@
   {
    "source": "Google Blog",
    "fetched": 20,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -2123,7 +2123,7 @@
   },
   {
    "source": "DigitalOcean status",
-   "fetched": 16,
+   "fetched": 15,
    "recent": 0,
    "error": null
   },
@@ -2177,6 +2177,21 @@
   }
  ],
  "items": [
+  {
+   "id": "09e5e80125ce",
+   "title": "Kitesurf is now open source",
+   "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+   "source": "Cloudflare Blog",
+   "source_category": "Networking",
+   "published": "2026-11-13T20:20:21+00:00",
+   "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
   {
    "id": "6512f77973be",
    "title": "Copilot experiencing degraded model availability for some GPT models",
@@ -2274,6 +2289,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "f0632826eee2",
+   "title": "No AI Slop: A Manifesto",
+   "url": "https://www.slopmanifesto.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T19:51:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2495,7 +2523,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T19:33:08+00:00",
    "summary": "Apple has just released tvOS 27.2.1 for Apple TV 4K and HomePod 27.2.1 for HomePod models, here’s what’s new. more…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d169ee18cb49",
+     "source": "Apple security releases",
+     "title": "Apple security release: tvOS 27.2.1",
+     "url": "https://support.apple.com/en-us/149721"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -2569,6 +2604,19 @@
     "AI",
     "Higher education",
     "Networking"
+   ]
+  },
+  {
+   "id": "93e9c6194ae7",
+   "title": "Technology as a Search Problem",
+   "url": "https://www.construction-physics.com/p/technology-as-a-search-problem",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T19:27:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2816,6 +2864,20 @@
    "topics": [
     "Databases",
     "System administration"
+   ]
+  },
+  {
+   "id": "0d9fae548b15",
+   "title": "How Microcredentials Help Engineers Build Trustworthy AI",
+   "url": "https://spectrum.ieee.org/microcredentials-trustworthy-ai",
+   "source": "IEEE Spectrum",
+   "source_category": "IT industry",
+   "published": "2026-11-13T19:00:03+00:00",
+   "summary": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics , governance , and auditing into daily operational workflows has become one of the industry’s toughest challenges.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Identity & access"
    ]
   },
   {
@@ -3597,6 +3659,20 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "181fbe180ab7",
+   "title": "Support tip: Why Windows driver recommendations may vary between deployment rings",
+   "url": "https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-why-windows-driver-recommendations-may-vary-between/ba-p/4572700",
+   "source": "Intune Customer Success",
+   "source_category": "Endpoint management",
+   "published": "2026-11-13T17:26:10+00:00",
+   "summary": "By: Dorin Mardari – Sr Technical Support Engineer | Microsoft Intune Managing Windows driver updates across deployment rings might give results that seem inconsistent. You might expect the same update to behave the same way everywhere, but Windows Update evaluates updates separately for the devices in each ring.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Endpoint management"
    ]
   },
   {
@@ -6475,6 +6551,19 @@
    ]
   },
   {
+   "id": "18702861fcd5",
+   "title": "Cloudera data management comes through for comms tech provider",
+   "url": "https://www.techtarget.com/news/cloudera-data-management-comes-through-for-comms-tech-provider/874671/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-13T13:52:37+00:00",
+   "summary": "More than a decade ago, Amdocs made Cloudera its platform for managing data and building data products. Here's how the team-up has grown.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "181217127fcf",
    "title": "Eli Lilly CEO pushes back on Dario Amodei's ludicrous medical claims",
    "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
@@ -7999,8 +8088,16 @@
    "source_category": "Hardware",
    "published": "2026-11-13T11:16:32+00:00",
    "summary": "Extends the long-standing partnership between the two companies",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5766391aad32",
+     "source": "InvGate blog",
+     "title": "IT Support Automation: What to Automate First, With Examples (2027)",
+     "url": "https://blog.invgate.com/it-support-automation"
+    }
+   ],
    "topics": [
+    "ITSM",
     "Networking"
    ]
   },
@@ -12101,6 +12198,12 @@
      "source": "heise online (English)",
      "title": "Microsoft 365 outage takes down Teams, Exchange and Copilot",
      "url": "https://www.heise.de/en/news/Microsoft-365-outage-takes-down-Teams-Exchange-and-Copilot-11523584.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    },
+    {
+     "id": "17e30fb78274",
+     "source": "Google Blog",
+     "title": "Claim your Google Cloud Credits in Google AI Studio",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/"
     }
    ],
    "topics": [
