@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T23:01:32+00:00",
+ "generated": "2026-11-13T23:03:41+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 40,
+   "recent": 39,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 85,
-   "recent": 85,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -725,7 +725,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 95,
+   "fetched": 94,
    "recent": 8,
    "error": null
   },
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -1458,7 +1458,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1470,7 +1470,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 13,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 88,
+   "fetched": 89,
    "recent": 10,
    "error": null
   },
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -2240,9 +2240,52 @@
    "fetched": 10,
    "recent": 0,
    "error": null
+  },
+  {
+   "source": "A10 Networks Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "HAProxy Blog",
+   "fetched": 10,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Traefik Labs Blog",
+   "fetched": 100,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Loadbalancer.org Blog",
+   "fetched": 15,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "F5 Labs",
+   "fetched": 50,
+   "recent": 0,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "0c3f1f6ffc31",
+   "title": "Lego's BrickLink Marketplace Back Online After Week-Long Outage Caused By 'Cyber Incident'",
+   "url": "https://tech.slashdot.org/story/26/11/13/2053209/legos-bricklink-marketplace-back-online-after-week-long-outage-caused-by-cyber-incident?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-13T23:00:00+00:00",
+   "summary": "LEGO's BrickLink marketplace is back online after a week-long outage caused by what the company described as a \"cyber incident,\" during which an unauthorized third party accessed some user data. Details about exactly what data was accessed remain unclear.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "1dfe69487eb0",
    "title": "Microsoft 365 Outage Traced to Flaw in Earlier Network Expansion, With AI Involvement Denied",
@@ -10907,7 +10950,8 @@
    "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.",
    "also_covered_by": [],
    "topics": [
-    "Vulnerabilities & patches"
+    "Vulnerabilities & patches",
+    "Networking"
    ]
   },
   {
@@ -11093,7 +11137,8 @@
    "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120864",
    "also_covered_by": [],
    "topics": [
-    "Vulnerabilities & patches"
+    "Vulnerabilities & patches",
+    "Networking"
    ]
   },
   {
@@ -11559,7 +11604,8 @@
    "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-111334",
    "also_covered_by": [],
    "topics": [
-    "Vulnerabilities & patches"
+    "Vulnerabilities & patches",
+    "Networking"
    ]
   },
   {
@@ -11883,6 +11929,33 @@
    "also_covered_by": [],
    "topics": [
     "System administration"
+   ]
+  },
+  {
+   "id": "6241e33920a5",
+   "title": "AWS Marketplace now supports VAT credit notes for deemed supply refunds",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-vat-credit-notes/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "AWS Marketplace sellers can now submit Value Added Tax (VAT) credit notes for refunded deemed supply transactions through a self-service experience in AWS Partner Central.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "e8eadb6e4184",
+   "title": "AWS Systems Manager simplifies onboarding of Google Cloud VMs for centralized management",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-google-cloud-support/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "AWS Systems Manager Cloud Connector now extends simplified multicloud onboarding support to Google Cloud, making it easy to connect your existing Google Cloud VMs to Systems Manager for centralized management alongside AWS, on-premises, and Azure resources without manual agent installation.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -13521,6 +13594,12 @@
      "source": "Semafor Technology & Security",
      "title": "How Nvidia’s Jensen Huang – and Trump – jumped the guardrails",
      "url": "https://www.semafor.com/article/11/13/2026/how-nvidias-jensen-huang-and-trump-jumped-the-guardrails"
+    },
+    {
+     "id": "93e2a4b9f246",
+     "source": "BBC Technology",
+     "title": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
+     "url": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss"
     }
    ],
    "topics": [
@@ -14272,7 +14351,8 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches",
-    "System administration"
+    "System administration",
+    "Networking"
    ]
   },
   {
@@ -14692,6 +14772,34 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "1b5104e2bf13",
+   "title": "Announcing HAProxy Kubernetes Ingress Controller 3.4",
+   "url": "https://www.haproxy.com/blog/announcing-haproxy-kubernetes-ingress-controller-3-4",
+   "source": "HAProxy Blog",
+   "source_category": "Networking",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "HAProxy Kubernetes Ingress Controller 3.4 has arrived! This release brings dynamic server management to applications that scale in Kubernetes, improved configuration via CRDs, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a9d1d4216224",
+   "title": "Announcing HAProxy Unified Gateway 1.1",
+   "url": "https://www.haproxy.com/blog/announcing-haproxy-unified-gateway-1-1",
+   "source": "HAProxy Blog",
+   "source_category": "Networking",
+   "published": "2026-11-12T12:00:00+00:00",
+   "summary": "This release further solidifies the migration path bolstered in version 1.0. Simultaneously serve supported Ingress resources and adopt Gateway API without converting Ingress rules, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
