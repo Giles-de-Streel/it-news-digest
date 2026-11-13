@@ -147,6 +147,7 @@
     "AI": ["Artificial intelligence", "AI, machine learning, large language models and AI assistants."],
     "Backup & recovery": ["Backup and recovery", "Backups, disaster recovery, restores and business continuity."],
     "Cloud & infrastructure": ["Cloud and infrastructure", "Public cloud, virtualization, Kubernetes and data centers."],
+    "Cloud status": ["Cloud service status and outages", "Incidents posted on cloud and SaaS status pages (Microsoft 365, Azure, AWS, Google, Cloudflare, Zoom, Canvas and others) and news about service outages. Planned maintenance notices are left out."],
     "Databases": ["Databases", "SQL Server, Oracle, PostgreSQL, MySQL and other database platforms."],
     "DevOps & SRE": ["DevOps and site reliability", "CI/CD, infrastructure as code, containers and Kubernetes, observability, platform engineering and incident practice."],
     "Development": ["Software development", "Programming languages, developer tools, source control and CI/CD."],

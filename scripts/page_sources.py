@@ -10,6 +10,7 @@ Rules every parser follows:
 - Parsers are tied to each site's current markup. When a site changes, the parser returns
   nothing and the Sources tab shows "0 items", which is the cue to update the parser here.
 """
+import hashlib
 import html
 import json
 import re
@@ -295,7 +296,45 @@ def fetch_nvd_cves(source, user_agent, hours):
     return items
 
 
+MS_STATUS_API = "https://status.cloud.microsoft/api/posts/"
+MS_STATUS_PAGE = "https://status.cloud.microsoft/"
+
+
+def fetch_microsoft_status(source, user_agent, hours):
+    """The current post for each service on status.cloud.microsoft (source["services"], e.g.
+    "mac" = Microsoft 365, "ppac" = Power Platform). The page's own RSS feeds title every post
+    with the service name and share one link, so this reads the JSON the page itself uses.
+
+    Each service shows one post at a time; "Status": "Available" with no title means no incident.
+    Every update to an incident gets a new post Id, so the stored id is built from the service and
+    the incident title instead: one story per incident, not one per hourly update."""
+    items = []
+    for service in source.get("services", ["mac"]):
+        with urlopen(Request(MS_STATUS_API + service, headers={"User-Agent": user_agent, "Accept": "application/json"}), timeout=30) as resp:
+            post = json.load(resp)
+        posts = post if isinstance(post, list) else [post]
+        for p in posts:
+            title = (p.get("Title") or "").strip()
+            if not title or p.get("Status") == "Available":
+                continue
+            message = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", p.get("Message") or ""))).strip()
+            current = re.search(r"Current status:\s*(.*?)(?:Scope of impact:|Next update by:|$)", message, re.S)
+            status = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", p.get("Status") or "").capitalize()
+            summary = (f"{status}. " if status else "") + (current.group(1).strip() if current else message)
+            key = f"{MS_STATUS_PAGE}|{service}|{title.lower()}"
+            items.append({
+                "title": title,
+                "url": MS_STATUS_PAGE,
+                "summary": summary,
+                "published": p.get("AuthoredDateTime") or p.get("LastUpdatedTime") or "",
+                # Overrides the url-based id (all posts share the page URL), see docstring
+                "extra": {"id": hashlib.sha1(key.encode()).hexdigest()[:12]},
+            })
+    return items
+
+
 API_FETCHERS = {
+    "microsoft_status": fetch_microsoft_status,
     "nvd_cves": fetch_nvd_cves,
 }
 

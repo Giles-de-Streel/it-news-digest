@@ -68,6 +68,7 @@ TOPICS = {
     "DevOps & SRE": r"devops|\bsre\b|site reliability|\bci/cd\b|continuous (integration|delivery|deployment)|gitops|infrastructure as code|\biac\b|terraform|opentofu|pulumi|ansible|kubernetes|\bk8s\b|\bhelm\b|docker|containeri[sz]|container (image|runtime|registr|security|orchestration|platform)|observability|opentelemetry|prometheus|grafana|platform engineering|postmortem|incident management|argo ?cd|jenkins|github actions|gitlab|service mesh|istio",
     "TLS & PKI": r"\btls\b|\bmtls\b|\bssl\b(?![- ]?vpn)|\bhsts\b|\bpki\b|x\.509|certificate authorit|ca/b forum|cab forum|root (store|program|certificates?|cas?)\b|certificate (transparency|lifetimes?|lifespans?|validity|revocation|pinning|management|automation|expir\w*|chain)|(tls|ssl|https|code[- ]signing|s/mime|server|web|wildcard|digital|x\.509) certificates?|\bacme (protocol|client|challenge|account)|let'?s encrypt|letsencrypt|\bocsp\b|\bcrls?\b|post-quantum|quantum[- ](safe|resistant)|\bpqc\b|ml-kem|ml-dsa|kyber|dilithium|cryptograph|openssl|boringssl|libressl|wolfssl|gnutls|mbed ?tls|\bciphers?\b|cipher suite|key exchange|\bhsms?\b|digicert|sectigo|globalsign|dnssec|end-to-end encrypt",
     "Game development": r"game ?dev|\bgames? (developers?|development|engines?|studios?|design(ers?)?|industry|publish(ers?|ing)|jams?|consoles?|pass|awards|programming|art|audio|tech|preservation|ratings?|modding)\b|video ?games?|\b(pc|console|mobile|cloud|indie|aaa) games?\b|\bgaming\b(?! (the|laptops?|pcs?|monitors?|mouse|mice|keyboards?|headsets?|chairs?|cpus?|desktops?|routers?|phones?|deals?)\b)|\bgamers?\b|unreal engine|\bue[56]\b|\bunity (engine|technologies|editor|6)\b|\bgodot\b|\bbevy (engine|\d)|\bdefold\b|\bo3de\b|steamworks|\bsteam (deck|machine|store|next fest|achievements?|controller|frame|client)\b|\bsteamos\b|playstation|\bps[45]\b|\bxbox\b|nintendo|switch 2|\besports?\b|\bvulkan\b|directx|\bdx12\b|\bfsr ?\d|\bdlss\b|ray[- ]trac|path[- ]trac|graphics programming|\bgdc\b|\bgpuopen\b",
+    "Cloud status": r"\b(cloud|service|services|platform|global|worldwide|widespread|major|massive|internet|network|email|dns|cdn|login|sign-in|microsoft|microsoft 365|m365|office 365|azure|aws|google|gmail|cloudflare|akamai|fastly|github|zoom|slack|teams|outlook|exchange( online)?|canvas|okta|crowdstrike|oracle cloud|oci) outages?\b|\boutages? (hits|hit|takes down|took down|knocks|disrupts|disrupted|affects|affected|impacts|hits users)\b|service (disruption|degradation|incident)s?|degraded performance|elevated error rates?|status page|post-incident (report|review)|\brca\b for|\bdown for (users|thousands|millions|many)\b",
     "Networking": r"network|router|firewall|vpn|cisco|fortinet|palo alto|juniper|wi-?fi|\bdns\b|sd-wan",
     "Identity & access": r"identity|authenticat|passkey|\bmfa\b|password|sso\b|saml|oauth|credential",
     "Policy & regulation": r"regulat|\blaw\b|legislat|\bfcc\b|\bftc\b|\bsec\b filing|gdpr|cisa\b|government|congress|lawsuit|fine[ds]?\b",
@@ -75,7 +76,13 @@ TOPICS = {
 TOPIC_RES = {name: re.compile(rx, re.I) for name, rx in TOPICS.items()}
 # Stories from sources in these categories always get the topic, even when no keyword matches
 # (e.g. a games-industry outlet's studio news that never says "game development").
-CATEGORY_TOPICS = {"Game development": "Game development", "Accessibility": "Accessibility"}
+CATEGORY_TOPICS = {"Game development": "Game development", "Accessibility": "Accessibility", "Cloud status": "Cloud status"}
+# Status-page posts for planned work (sources with "skip_maintenance": true). Statuspage.io feeds
+# mark them "THIS IS A SCHEDULED EVENT" and start the update log with "Scheduled - "; real
+# incidents start with "Investigating - "/"Identified - " instead.
+# The bare word "maintenance" is only checked in titles: an incident's text may mention it.
+MAINTENANCE_TITLE_RE = re.compile(r"\bmaintenance\b|\bplanned (work|upgrade)\b", re.I)
+MAINTENANCE_TEXT_RE = re.compile(r"this is a scheduled event|^[^.]{0,40}\bscheduled\s*-\s|scheduled maintenance", re.I)
 STOPWORDS = set("a an the and or of to in on for with by from at as is are was be it its this that new how why what after over into via up out".split())
 
 
@@ -218,6 +225,7 @@ def parse_feed(data):
         items.append({
             "title": _text(it, "title"),
             "url": _text(it, "link", "guid"),
+            "guid": _text(it, "guid"),
             "summary": _text(it, "description", f"{CONTENT}encoded"),
             "published": _text(it, "pubDate", f"{DC}date"),
             "categories": [(c.text or "").strip() for c in it.findall("category")],
@@ -244,6 +252,7 @@ def parse_feed(data):
         items.append({
             "title": _text(it, f"{ATOM}title"),
             "url": link,
+            "guid": _text(it, f"{ATOM}id"),
             "summary": _text(it, f"{ATOM}summary", f"{ATOM}content"),
             "published": _text(it, f"{ATOM}published", f"{ATOM}updated"),
             "categories": [(c.get("term") or "").strip() for c in it.findall(f"{ATOM}category")],
@@ -262,6 +271,12 @@ def build_items(items, source):
     cat_include = re.compile(source["category_include"]) if source.get("category_include") else None
     # Optional per-source regex removed from titles, e.g. the " - Outlet" suffix Google News appends
     strip = re.compile(source["title_strip"]) if source.get("title_strip") else None
+    # Some status feeds give every entry the same link (AWS: the dashboard home page; Oracle Cloud:
+    # links that differ only after "#"). Those entries are told apart by their guid instead.
+    url_counts = {}
+    for raw in items:
+        key = normalize_url(raw["url"]) if (raw["url"] or "").startswith("http") else ""
+        url_counts[key] = url_counts.get(key, 0) + 1
     for raw in items:
         title = clean_text(raw["title"])
         if strip:
@@ -273,11 +288,16 @@ def build_items(items, source):
             continue
         if cat_include and not any(cat_include.fullmatch(c) for c in raw.get("categories") or []):
             continue
+        if source.get("skip_maintenance") and (MAINTENANCE_TITLE_RE.search(title) or MAINTENANCE_TEXT_RE.search(clean_text(raw["summary"])[:300])):
+            continue
+        id_key = normalize_url(url)
+        if url_counts.get(id_key, 0) > 1 and (raw.get("guid") or "").strip():
+            id_key = raw["guid"].strip()
         published = parse_date(raw["published"])
         if published and published > fetched_at:
             published = fetched_at  # some feeds post-date entries (VS Code release notes); use when we saw it
         out.append({
-            "id": hashlib.sha1(normalize_url(url).encode()).hexdigest()[:12],
+            "id": hashlib.sha1(id_key.encode()).hexdigest()[:12],
             "title": title,
             "url": url,
             "source": source["name"],
@@ -398,6 +418,10 @@ def cluster(items):
             # A source reports a story once; two items from one source are different stories
             # (e.g. two CISA KEV entries whose titles share a template)
             if group[0].get("kind") == "cve" or any(other["source"] == item["source"] for other in group):
+                continue
+            # Status pages reuse stock wording ("Elevated error rates", "Degraded performance"), so two
+            # providers' status posts are never one story; a status post can still join a news story.
+            if item.get("source_category") == "Cloud status" and any(other.get("source_category") == "Cloud status" for other in group):
                 continue
             if any(same_story(item, other, idf) for other in group):
                 group.append(item)
