@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T20:01:06+00:00",
+ "generated": "2026-11-13T20:15:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 85,
+   "recent": 85,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -659,7 +659,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 394,
+   "fetched": 390,
    "recent": 67,
    "error": null
   },
@@ -744,7 +744,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 8,
+   "recent": 13,
    "error": null
   },
   {
@@ -1127,7 +1127,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1565,9 +1565,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1638,7 +1638,7 @@
   {
    "source": "TechNode",
    "fetched": 1998,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1859,8 +1859,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 89,
-   "recent": 15,
+   "fetched": 88,
+   "recent": 14,
    "error": null
   },
   {
@@ -1926,7 +1926,7 @@
   {
    "source": "DirectX Developer Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2094,7 +2094,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -2178,6 +2178,49 @@
  ],
  "items": [
   {
+   "id": "6512f77973be",
+   "title": "Copilot experiencing degraded model availability for some GPT models",
+   "url": "https://www.githubstatus.com/incidents/51drrqvsv66g",
+   "source": "GitHub Status",
+   "source_category": "Cloud status",
+   "published": "2026-11-13T20:14:07+00:00",
+   "summary": "Nov 13 , 20:14 UTC Update - We are experiencing degraded availability for gpt-5.6-sol-fast, gpt-5.6-sol, gpt-6.1-terra, and gpt-6-luna in Copilot products and IDE surfaces. This is due to an issue with an upstream model provider.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "536ff3f6564f",
+   "title": "Sources: Meta staffers are testing a prediction-market app called Takes, letting users wager on the outcome of questions or events using \"cred\", not real money (Meghan Bobrowsky/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261113/p26#a261113p26",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T20:05:01+00:00",
+   "summary": "Meghan Bobrowsky / Wall Street Journal : Sources: Meta staffers are testing a prediction-market app called Takes, letting users wager on the outcome of questions or events using “cred”, not real money — On the app, currently called Takes, employees can wager on the outcome of questions using ‘cred,’ not real money",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7f0ed83ec52b",
+   "title": "Challenges of building machine learning compilers across varying hardware architecture",
+   "url": "https://devblogs.microsoft.com/directx/challenges-of-building-machine-learning-compilers-across-varying-hardware-architecture/",
+   "source": "DirectX Developer Blog",
+   "source_category": "Game development",
+   "published": "2026-11-13T20:03:38+00:00",
+   "summary": "Contributors: Justin Stoecker, Sheil Kumar Overview One of the biggest challenges in building AI/ML platform stacks for mobile, client, or server is creating a machine learning (ML) compiler that is both scalable yet performant.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Game development"
+   ]
+  },
+  {
    "id": "0067fdd73bf1",
    "title": "Epic formally asks SCOTUS to uphold contempt ruling against Apple",
    "url": "https://9to5mac.com/2026/11/13/epic-formally-asks-scotus-to-uphold-contempt-ruling-against-apple/",
@@ -2202,6 +2245,22 @@
    "topics": [
     "AI",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c65d31145dc8",
+   "title": "Microsoft's Global Outage May Be Worse Than Amazon's Or Crowdstrike's, Expert Says",
+   "url": "https://tech.slashdot.org/story/26/11/13/1936221/microsofts-global-outage-may-be-worse-than-amazons-or-crowdstrikes-expert-says?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-13T20:00:00+00:00",
+   "summary": "An anonymous reader quotes a report from Ars Technica: A global outage taking down a wide range of Microsoft 365 services remains ongoing Friday morning. The outage started midday Thursday, impacting users of Microsoft email, cloud, and AI services.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Cloud status"
    ]
   },
   {
@@ -2295,6 +2354,19 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "4fc67bea017c",
+   "title": "Someone's Impersonating This Blog",
+   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T19:41:09+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2529,6 +2601,19 @@
     "Microsoft & Windows",
     "Cloud & infrastructure",
     "Development"
+   ]
+  },
+  {
+   "id": "b99b3bf0ad66",
+   "title": "Found: A protein that drives ageing without unleashing inflammation",
+   "url": "https://www.nature.com/articles/d41586-026-03638-3",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T19:25:21+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2809,6 +2894,19 @@
    "also_covered_by": [],
    "topics": [
     "ITSM"
+   ]
+  },
+  {
+   "id": "406adb72e894",
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T18:40:44+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -4637,6 +4735,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "a23c21722554",
+   "title": "Aurora PostgreSQL with express configuration now supported in CloudFormation",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T16:00:00+00:00",
+   "summary": "Aurora PostgreSQL now supports express configuration in AWS CloudFormation for infrastructure as code deployment. This launch enables you to automate the infrastructure deployment of your Aurora clusters through CloudFormation templates while benefiting from the speed of express configuration.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Databases",
+    "DevOps & SRE"
    ]
   },
   {
@@ -10588,6 +10701,62 @@
    "also_covered_by": [],
    "topics": [
     "Databases"
+   ]
+  },
+  {
+   "id": "18791530eb64",
+   "title": "AWS Security Hub CSPM now supports centralized configuration with AWS Organizations declarative policies",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-cspm-org-policies/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "AWS Security Hub CSPM now supports AWS Organizations declarative policies. You can use them to enable Security Hub CSPM across all accounts and Regions in your organization and to define which security standards and controls are enabled.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "11b027d3d65c",
+   "title": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 discovery URLs",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-oauth2-discovery/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 authorization server discovery URLs for both inbound JWT authorization and outbound OAuth credential providers. This update enables developers to configure AgentCore with OAuth 2.0 authorization servers that do not use OpenID Connect (OIDC).",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "91e3c4fc4010",
+   "title": "AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "AWS Batch now supports additional Kubernetes security context settings in Amazon EKS job definitions, including Linux capabilities, seccomp profiles, and pod-level settings.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "882d998dd55b",
+   "title": "AWS Secrets Manager now supports cross-account replication",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/secrets-manager-cross-account/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "AWS Secrets Manager now supports cross-account replication, enabling you to maintain a synchronized copy of a primary secret in a secondary AWS account for cross-account access, backup, and disaster recovery. Cross-account replication extends the existing multi-Region replication capability across account boundaries.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Backup & recovery"
    ]
   },
   {
