@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T12:31:14+00:00",
+ "generated": "2026-11-13T12:47:05+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 35,
+   "recent": 36,
    "error": null
   },
   {
@@ -84,7 +84,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 69,
-   "recent": 69,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1061,7 +1061,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
+   "fetched": 10,
    "recent": 0,
    "error": null
   },
@@ -1218,7 +1218,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1254,7 +1254,7 @@
   {
    "source": "Graham Cluley",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1578,7 +1578,7 @@
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1739,8 +1739,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 86,
-   "recent": 19,
+   "fetched": 87,
+   "recent": 20,
    "error": null
   },
   {
@@ -2058,6 +2058,130 @@
  ],
  "items": [
   {
+   "id": "5177075a13cb",
+   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+   "url": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-13T12:41:01+00:00",
+   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "71f711941a3f",
+   "title": "Fake Sites Slip Into AI Shopping Recommendations: Perplexity 15%, ChatGPT 8%, and Gemini 4% in Study of 6,795 Answers",
+   "url": "https://joho-todai.com/en/ai-shopping-fake-sites-perplexity-chatgpt-gemini/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:40:11+00:00",
+   "summary": "When you ask an AI where to buy something, is the URL it returns genuine? In a study covering 151 brands and 6,795 answers, suspicious sites appeared in 15% of Perplexity responses, 8% of ChatGPT responses, and 4% of Gemini responses.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1102d4ac2078",
+   "title": "The Jensen Huang controversy overshadowed a major open source announcement at Nvidia",
+   "url": "https://www.itpro.com/software/open-source/the-jensen-huang-controversy-overshadowed-a-major-open-source-announcement-at-nvidia",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:40:00+00:00",
+   "summary": "Nvidia’s donation of OpenShell to the CNCF tracks with its long-running commitment to open source",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "444500aa52ff",
+   "title": "Google adds multi-model Orchestrator, Gemini 4 Hydrogen, to Antigravity",
+   "url": "https://www.infoworld.com/article/4248403/google-adds-multi-model-orchestrator-gemini-4-hydrogen-to-antigravity.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:37:34+00:00",
+   "summary": "Google is adding a new feature, Orchestrator, to Antigravity, its AI-powered development environment, to help enterprises improve software development efficiency by automatically coordinating multiple Gemini models, including the newly introduced Gemini 4 Hydrogen.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "1048f764b364",
+   "title": "Cerebras secures Microsoft as a customer",
+   "url": "https://www.datacenterdynamics.com/en/news/cerebras-secures-microsoft-as-a-customer/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T12:37:09+00:00",
+   "summary": "Wafer-scale chip and AI cloud company now has three hyperscalers in its books",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "6caac15f15ba",
+   "title": "AI tears through legacy TCP/IP stacks, exposing vulnerabilities across critical infrastructure, OT and IoT devices",
+   "url": "https://industrialcyber.co/reports/ai-tears-through-legacy-tcp-ip-stacks-exposing-vulnerabilities-across-critical-infrastructure-ot-and-iot-devices/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-13T12:36:32+00:00",
+   "summary": "Forescout Research’s Vedere Labs found that artificial intelligence (AI)-assisted vulnerability analysis reduced the time needed to examine foundational...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "ICS / OT",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "b25be94550ca",
+   "title": "Gadget Review: Thermal Master P3 Lite - and Linux Instructions ★★★★⯪",
+   "url": "https://shkspr.mobi/blog/2026/11/gadget-review-thermal-master-p3-lite-p2-max-and-linux-instructions/",
+   "source": "Terence Eden's Blog",
+   "source_category": "Development",
+   "published": "2026-11-13T12:34:48+00:00",
+   "summary": "The good folks at Thermal Master have sent me (yet another) thermal camera. The P3 Lite has a detachable macro lens. As well as being good for scanning your house for leaks and looking for wildlife, it can focus down on tiny electronic components.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "f55fdb9ae634",
+   "title": "Palantir adds three UK police forces to its beat with £10.1M deal",
+   "url": "https://www.theregister.com/public-sector/2026/11/13/palantir-adds-three-uk-police-forces-to-its-beat-with-101m-deal/5309699",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:33:45+00:00",
+   "summary": "Five-year contract follows London setback as former Met chief Cressida Dick emerges as a paid adviser",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f535ef90bb43",
+   "title": "VodafoneThree considers feasibility of UK-Norway subsea cable route",
+   "url": "https://www.datacenterdynamics.com/en/news/vodafonethree-considers-feasibility-of-uk-norway-subsea-cable-route/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-13T12:31:15+00:00",
+   "summary": "A study is expected to take place next year",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "c80de89ef4b4",
    "title": "Microsoft says November security updates cause printing issues",
    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
@@ -2069,6 +2193,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "fc2d75286c79",
+   "title": "Cisco posts its fastest growth in 15 years with about 8,000 fewer employees than two years ago",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zVEM2WFZNNWhYUGUwcmQ5cnBxMnZnaDdTUmpvckxlWGlCbUo1M0I0Ql82TVc1RW4yOVd3RlZoNF9hQW02YlNFM1JGdldmOHcxa29sdmpqZ0wtcm81RmptbmpsRlg1N1k?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-13T12:27:00+00:00",
+   "summary": "Cisco posts its fastest growth in 15 years with about 8,000 fewer employees than two years ago CTech",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -2111,6 +2248,20 @@
    "topics": [
     "Vulnerabilities & patches",
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "fba640cc6c89",
+   "title": "Manage AI Scan for repositories using the REST API",
+   "url": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+   "source": "GitHub Changelog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-13T12:22:41+00:00",
+   "summary": "You can now turn GitHub code scanning’s AI Scan for repositories on or off with the REST API at the organization and repository levels. This public preview adds a repository_scan…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
    ]
   },
   {
@@ -2166,6 +2317,19 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "fb5f7b47b18d",
+   "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+   "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T12:10:24+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3184,6 +3348,20 @@
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "f7b4f66f92c1",
+   "title": "Llama.cpp: 6.5x faster prompt processing on Arm with a NEON kernel",
+   "url": "https://github.com/hardwiredagent/silicon-forge-arm-neon-study",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T10:28:36+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
    ]
   },
   {
@@ -6089,6 +6267,21 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "f88082b89135",
+   "title": "Record number of cyber incidents reported to UK privacy regulator",
+   "url": "https://therecord.media/record-number-of-cyber-incidents-reported-to-uk-regulator",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-13T00:00:00+00:00",
+   "summary": "British organizations have reported a record number of cyber incidents to the country’s data protection regulator this year, as cybersecurity firms blame data extortion and artificial intelligence for a surge in attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI",
+    "Policy & regulation"
    ]
   },
   {
