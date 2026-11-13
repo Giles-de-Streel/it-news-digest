@@ -8,6 +8,7 @@
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
+  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: every headline is shown as "It looks like you're ..."
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
   const HIGH_CVSS = 7.0; // badge stories that mention a CVE scored High (7.0+) or Critical (9.0+)
@@ -23,6 +24,7 @@
   const state = {
     days: [],
     day: null, // the latest day: the News, CVEs and Sources tabs always show it
+    clippy: false, // paperclip toggle (ind.clippy): "It looks like you're" before every headline
     dayData: null,
     hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
     view: "news",
@@ -522,10 +524,20 @@
     return ul;
   }
 
+  // Paperclip mode: display-only prefix on headlines (search and filters still use the real title).
+  // The first word is lowercased only when it's a common word, so names and acronyms keep their case.
+  const CLIPPY_LOWER = new Set("a an the how why what when where who which this these that your you our my its it is are was will can new why's what's here there".split(" "));
+  const headline = (t) => {
+    if (!state.clippy || !t) return t;
+    const first = t.split(/\s/, 1)[0];
+    const word = CLIPPY_LOWER.has(first.toLowerCase()) && /^[A-Z][a-z']*$/.test(first) ? first.toLowerCase() : first;
+    return `It looks like you're ${word}${t.slice(first.length)}`;
+  };
+
   // One outlet's coverage: the whole "Source: headline" line links to that outlet's article
   const sourceLine = (c) => el("li", {},
     el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
-      el("span", { class: "source", text: `${c.source}: ` }), c.title));
+      el("span", { class: "source", text: `${c.source}: ` }), headline(c.title)));
 
   // Source-count pill colour: green for a few outlets up to red for many
   const heat = (n) => (n >= 6 ? "heat-4" : n >= 4 ? "heat-3" : n === 3 ? "heat-2" : "heat-1");
@@ -551,7 +563,7 @@
     return el("li", { class: `row${n > 1 ? " multi" : ""}` },
       el("div", { class: "row-main" },
         badges.length ? el("span", { class: "meta row-badges" }, ...badges) : null,
-        el("a", { class: "row-title", href: safeUrl(it.url), target: "_blank", rel: "noopener noreferrer", title: it.summary || it.title, text: it.title }),
+        el("a", { class: "row-title", href: safeUrl(it.url), target: "_blank", rel: "noopener noreferrer", title: it.summary || it.title, text: headline(it.title) }),
       ),
       el("span", {
         class: "row-meta",
@@ -613,7 +625,7 @@
         el("span", { class: "source", text: it.source }),
         el("span", { text: fmtTime(it.published) }),
       ),
-      el("h3", {}, link(it.url, it.title)),
+      el("h3", {}, link(it.url, headline(it.title))),
       it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
       also.length ? el("div", { class: "also-head", text: "Also reported by" }) : null,
       also.length ? el("ul", { class: "also-list" }, ...also.map(sourceLine)) : null,
@@ -824,11 +836,25 @@
     syncThemeToggle();
   }
 
+  // Paperclip (right of the two matches): headline prefix on/off, saved as ind.clippy
+  function syncClippyToggle() {
+    const b = $("#clippy-toggle");
+    b.setAttribute("aria-pressed", String(state.clippy));
+    b.title = state.clippy ? "It looks like you're done with me. Click to dismiss" : "It looks like you're reading the news. Would you like help?";
+  }
+
   // ---------- events ----------
   function wire() {
     $("#home").addEventListener("click", goHome);
     syncSceneToggle();
     syncThemeToggle();
+    syncClippyToggle();
+    $("#clippy-toggle").addEventListener("click", () => {
+      state.clippy = !state.clippy;
+      store.set(LS_CLIPPY, state.clippy);
+      syncClippyToggle();
+      render();
+    });
     $("#theme-toggle").addEventListener("click", () => {
       const next = THEMES[(THEMES.indexOf(themeNow()) + 1) % THEMES.length];
       store.set(LS_THEME, next);
@@ -883,6 +909,7 @@
   }
 
   async function init() {
+    state.clippy = store.get(LS_CLIPPY, false) === true;
     wire();
     trackTopbar();
     readUrl();

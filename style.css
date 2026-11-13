@@ -241,6 +241,19 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .theme-toggle[data-mode="medium"] .flame-size { transform: scale(.72); }
 .theme-toggle[data-mode="light"] .flame-size { transform: scale(1.08); }
 @media (prefers-reduced-motion: reduce) { .theme-toggle .match-flame { animation: none; } .theme-toggle .flame-size { transition: none; } }
+/* paperclip toggle: on = every headline reads "It looks like you're ..." (ind.clippy) */
+.clippy-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 2px; border: 0; background: none; cursor: pointer; line-height: 0; }
+.clippy-toggle svg { width: 13px; height: 17px; overflow: visible; }
+.clippy-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
+.clippy-toggle .clip-wire { fill: none; stroke: var(--muted); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+.clippy-toggle .clip-eye { fill: var(--surface, #fff); stroke: var(--text); stroke-width: .55; }
+.clippy-toggle .clip-pupil { fill: var(--text); }
+.clippy-toggle .clip-brow { fill: none; stroke: var(--text); stroke-width: .6; stroke-linecap: round; opacity: 0; transition: opacity .2s; }
+.clippy-toggle[aria-pressed="true"] .clip-wire { stroke: var(--accent); }
+.clippy-toggle[aria-pressed="true"] .clip-brow { opacity: 1; }
+.clippy-toggle[aria-pressed="true"] svg { animation: clippy-hop 2.4s ease-in-out infinite; transform-origin: 50% 100%; }
+@keyframes clippy-hop { 0%, 80%, 100% { transform: none; } 86% { transform: translateY(-2px) rotate(-6deg); } 92% { transform: translateY(0) rotate(4deg); } }
+@media (prefers-reduced-motion: reduce) { .clippy-toggle[aria-pressed="true"] svg { animation: none; } .clippy-toggle .clip-brow { transition: none; } }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
 .scene-off .scene-toggle .match-flame { display: none; }
 .scene-off .scene-toggle .match-head { fill: var(--match-burnt); }
