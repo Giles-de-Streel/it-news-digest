@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "generated": "2026-11-13T02:01:36+00:00",
+ "generated": "2026-11-13T02:31:46+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 66,
-   "recent": 66,
+   "fetched": 71,
+   "recent": 71,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 22,
+   "recent": 20,
    "error": null
   },
   {
@@ -216,13 +216,13 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -504,7 +504,7 @@
   {
    "source": "PortSwigger Research",
    "fetched": 40,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 413,
-   "recent": 184,
+   "recent": 176,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -876,7 +876,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -936,7 +936,7 @@
   {
    "source": "Cloudflare Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1061,7 +1061,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1146,7 +1146,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1368,7 +1368,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1740,13 +1740,13 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 89,
-   "recent": 23,
+   "fetched": 88,
+   "recent": 22,
    "error": null
   },
   {
@@ -1865,12 +1865,165 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
+   "fetched": 14,
    "recent": 2,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "1cb25e91144d",
+   "title": "CVE-2026-127277: A security flaw has been discovered in Linksys EA8100 1.0.3.216940.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127277",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T02:18:54.520000+00:00",
+   "summary": "A security flaw has been discovered in Linksys EA8100 1.0.3.216940. The affected element is an unknown function of the file etc/init.d/service_smbd.sh of the component SMB Service. Performing a manipulation of the argument ANON_ACCESS results in improper initialization. The attack can be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-127277",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-127277",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "26368480cb71",
+   "title": "CVE-2026-107410: Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107410",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T02:18:49.997000+00:00",
+   "summary": "Memory overflow in NetScaler Push can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+   "kind": "cve",
+   "cve": "CVE-2026-107410",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107410",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "995d19e903b4",
+   "title": "CVE-2026-107409: Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107409",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T02:18:49.863000+00:00",
+   "summary": "Memory corruption in DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or a Denial of Service in NetScaler ADC and NetScaler Gateway.",
+   "kind": "cve",
+   "cve": "CVE-2026-107409",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107409",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "c308f82907f7",
+   "title": "CVE-2026-107408: Memory corruption in DNS / DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or Denial of…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107408",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T02:18:49.740000+00:00",
+   "summary": "Memory corruption in DNS / DNS-over-HTTPS (DoH) can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+   "kind": "cve",
+   "cve": "CVE-2026-107408",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107408",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "8380f7b69472",
+   "title": "CVE-2026-107407: Memory overflow in SMPP traffic can lead to unpredictable or erroneous behavior or Denial of Service in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107407",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-13T02:18:49.613000+00:00",
+   "summary": "Memory overflow in SMPP traffic can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+   "kind": "cve",
+   "cve": "CVE-2026-107407",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-107407",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b2a9de2dfbe5",
+   "title": "Sources: Nvidia faced pressure to boost its 25% residual value support backstop on a planned $500B AI financing vehicle with asset managers before Huang's exit (Bloomberg)",
+   "url": "https://www.techmeme.com/261112/p69#a261112p69",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-13T02:11:02+00:00",
+   "summary": "Bloomberg : Sources: Nvidia faced pressure to boost its 25% residual value support backstop on a planned $500B AI financing vehicle with asset managers before Huang's exit — Before Nvidia Corp. was thrown into turmoil by the ouster of longtime chief executive Jensen Huang, a major initiative …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "63b20348035c",
+   "title": "Applied Materials posts an impressive 53% jump in revenue as it beats expectations again",
+   "url": "https://siliconangle.com/2026/11/12/applied-materials-posts-an-impressive-53-jump-in-revenue-as-it-beats-expectations-again/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-13T02:09:46+00:00",
+   "summary": "Semiconductor industry giant Applied Materials Inc. chalked up another strong quarter as it continued to cash in on the artificial intelligence boom, delivering fourth-quarter results that surpassed Wall Street’s expectations on earnings and revenue.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "6ad20a315632",
+   "title": "Apple TV just debuted three new originals, including a heist thriller series",
+   "url": "https://9to5mac.com/2026/11/12/apple-tv-just-debuted-three-new-originals-including-a-heist-thriller-series/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-13T02:02:34+00:00",
+   "summary": "Apple TV subscribers can now watch three new originals, including a heist thriller series, a film based on true events, and the first of two holiday specials coming to the platform this season. Watch the trailers below. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "34edbf5084ab",
    "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
@@ -2057,7 +2210,14 @@
    "source_category": "Security",
    "published": "2026-11-13T00:32:19+00:00",
    "summary": "The infrastructure, said to belong to APT38, contained footage used to fool victims over video calls.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "00d0d0b22177",
+     "source": "SecurityWeek",
+     "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+     "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware"
@@ -12428,6 +12588,12 @@
      "source": "Linuxiac",
      "title": "MATE Desktop Moves Closer to Native Wayland Support with Polo 1.0",
      "url": "https://linuxiac.com/mate-desktop-moves-closer-to-native-wayland-support-with-polo-1-0/"
+    },
+    {
+     "id": "cf61c804dd9b",
+     "source": "OMG! Ubuntu",
+     "title": "Polo is a Wayland compositor for the MATE desktop",
+     "url": "https://www.omgubuntu.co.uk/2026/11/mate-wayland-compositor-polo"
     }
    ],
    "topics": [
