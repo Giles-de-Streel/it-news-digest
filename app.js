@@ -157,6 +157,7 @@
   // Must match the TOPICS keys in scripts/fetch_news.py; an unknown topic falls back to its pill text.
   const TOPIC_INFO = {
     "Accessibility": ["Accessibility", "Digital accessibility: WCAG, ADA Title II and Section 508, VPATs, screen readers and assistive technology, captions, and accessibility features in products."],
+    "Agile & delivery": ["Agile and delivery", "Agile, Scrum, Kanban and Lean, product and project management, team practices and flow of work."],
     "AI": ["Artificial intelligence", "AI, machine learning, large language models and AI assistants."],
     "Backup & recovery": ["Backup and recovery", "Backups, disaster recovery, restores and business continuity."],
     "Cloud & infrastructure": ["Cloud and infrastructure", "Public cloud, virtualization, Kubernetes and data centers."],
@@ -173,6 +174,7 @@
     "Higher education": ["Higher education", "Universities, campus IT, education technology and student data."],
     "ICS / OT": ["Industrial control systems and operational technology", "SCADA, PLCs, industrial networks, critical infrastructure and OT security."],
     "Identity & access": ["Identity and access", "Authentication, MFA, passkeys, SSO, SAML/OAuth and credentials."],
+    "ITSM": ["IT service management", "ITIL, service desks, incident, problem and change management, CMDB and IT asset management, and ITSM tools such as ServiceNow and Jira Service Management."],
     "Linux & open source": ["Linux and open source", "Linux distributions, the kernel, open-source projects and tools."],
     "Microsoft & Windows": ["Microsoft and Windows", "Windows, Microsoft 365, Azure, Entra, Exchange, SQL Server and Defender."],
     "Networking": ["Networking", "Routers, firewalls, VPN, Wi-Fi, DNS and network vendors."],
