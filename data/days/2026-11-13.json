@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T22:45:57+00:00",
+ "generated": "2026-11-13T22:48:35+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 85,
+   "recent": 85,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -2174,9 +2174,91 @@
    "fetched": 42,
    "recent": 1,
    "error": null
+  },
+  {
+   "source": "VMware Blogs (Broadcom)",
+   "fetched": 10,
+   "recent": 2,
+   "error": null
+  },
+  {
+   "source": "Proxmox press releases",
+   "fetched": 96,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "XCP-ng Blog",
+   "fetched": 15,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Vates Blog",
+   "fetched": 15,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "KubeVirt Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Incus / Linux Containers news",
+   "fetched": 25,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "OpenStack Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Kubernetes official CVE feed",
+   "fetched": 95,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Red Hat OpenShift blog",
+   "fetched": 2,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Sysdig Blog",
+   "fetched": 100,
+   "recent": 0,
+   "error": null
+  },
+  {
+   "source": "Aqua Security Blog",
+   "fetched": 10,
+   "recent": 0,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "1dfe69487eb0",
+   "title": "Microsoft 365 Outage Traced to Flaw in Earlier Network Expansion, With AI Involvement Denied",
+   "url": "https://joho-todai.com/en/microsoft-365-outage-network-upgrade-failure/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T22:42:33+00:00",
+   "summary": "Microsoft has provided its first explanation of the major Microsoft 365 outage: a flaw introduced during an earlier network capacity expansion surfaced after a recent change. The company denied involvement by AI or a cyberattack; services have broadly recovered, but processing of queued email continues.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Cloud status",
+    "Networking"
+   ]
+  },
   {
    "id": "e09a4c46fd44",
    "title": "Source: the FBI is probing whether the FAA outage was caused by a software update, and doesn't believe it was due to a cyberattack or criminality (Myles Miller/Bloomberg)",
@@ -2188,6 +2270,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "151f8b5cb30c",
+   "title": "More Than 1,600 Internal Comments Call for NVIDIA's Huang to Return, While VP Says Executive-Signed Demand Letter Is Fake",
+   "url": "https://joho-todai.com/en/nvidia-fan-return-petition-fake-executive-letter/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-13T22:18:33+00:00",
+   "summary": "Calls for NVIDIA co-founder Jensen Huang to return are spreading internally following his resignation, announced on November 12. At the same time, a letter circulating on X claimed that senior executives had jointly demanded his return; the internal activity was confirmed through reporting, while an executive named as…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -14024,6 +14119,24 @@
    ]
   },
   {
+   "id": "8b36d5019c56",
+   "title": "Strengthening Cloud-Native Security Through Upstream Collaboration",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/12/strengthening-cloud-native-security-through-upstream-collaboration/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-12T16:00:00+00:00",
+   "summary": "Open source has always been foundational to cloud-native computing. Kubernetes itself is the product of thousands of contributors, but the platforms we build around it depend on an even broader ecosystem of projects spanning networking, storage, identity, backup and recovery, cluster lifecycle management, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Backup & recovery",
+    "DevOps & SRE",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "fb14d737bd9d",
    "title": "GPU Taskman: New task manager for graphics cards and AI",
    "url": "https://www.heise.de/en/news/GPU-Taskman-New-task-manager-for-graphics-cards-and-AI-11523257.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
@@ -14225,6 +14338,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "e03f7310abce",
+   "title": "Unlocking AI Performance: Benefits and Certification of VMware AI ReadyNodes",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/12/benefits-and-certification-of-vmware-ai-readynodes/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-12T15:00:00+00:00",
+   "summary": "Author: Tony Huynh, VCF Product Management Selecting the right hardware for enterprise AI deployment can be a complex and daunting task. With VMware AI ReadyNodes, customers have a clear, reliable path to running Artificial Intelligence (AI) model fine-tuning and inference workloads on VMware Cloud Foundation (VCF).",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Agile & delivery"
    ]
   },
   {
