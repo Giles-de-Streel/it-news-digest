@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T13:45:58+00:00",
+ "generated": "2026-11-13T14:01:47+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 36,
+   "recent": 37,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 68,
+   "recent": 68,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -414,7 +414,7 @@
   {
    "source": "Huntress",
    "fetched": 757,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -461,8 +461,8 @@
   },
   {
    "source": "Elastic Security Labs",
-   "fetched": 311,
-   "recent": 1,
+   "fetched": 312,
+   "recent": 2,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 411,
-   "recent": 96,
+   "recent": 94,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1560,13 +1560,13 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 31,
+   "recent": 32,
    "error": null
   },
   {
    "source": "Kevin Boone",
-   "fetched": 348,
-   "recent": 0,
+   "fetched": 349,
+   "recent": 1,
    "error": null
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "source": "Nieman Lab",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1637,7 +1637,7 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 48,
+   "fetched": 47,
    "recent": 9,
    "error": null
   },
@@ -1739,7 +1739,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 85,
+   "fetched": 86,
    "recent": 20,
    "error": null
   },
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
+   "fetched": 11,
    "recent": 1,
    "error": null
   },
@@ -2058,6 +2058,72 @@
  ],
  "items": [
   {
+   "id": "04d39ddabcc8",
+   "title": "56 AWS API calls in 141 milliseconds: Inside an AI-run intrusion",
+   "url": "https://www.elastic.co/security-labs/threat-command/cyberstrikeai-aws-cloudtrail-intrusion",
+   "source": "Elastic Security Labs",
+   "source_category": "Reverse engineering",
+   "published": "2026-11-13T14:00:34+00:00",
+   "summary": "A CyberStrikeAI server spent 16 days in four AWS accounts using eight identities, and the CloudTrail record shows why six detection rules each caught only part of it.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "752899521109",
+   "title": "The Nieman Lab News-About-News Quiz, November 13, 2026",
+   "url": "https://www.niemanlab.org/2026/11/the-nieman-lab-news-about-news-quiz-november-13-2026/",
+   "source": "Nieman Lab",
+   "source_category": "IT industry",
+   "published": "2026-11-13T14:00:33+00:00",
+   "summary": "It’s been another busy week. Recap it with the second edition of the Nieman Lab News-About-News Quiz, your weekly incentive to keep up with the latest happenings in the world of digital journalism.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "012f958a5219",
+   "title": "New Apple TV 4K and HomeView now available: Here’s everything you need to know",
+   "url": "https://9to5mac.com/2026/11/13/new-apple-tv-4k-and-homeview-now-available-heres-everything-you-need-to-know/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-13T13:57:26+00:00",
+   "summary": "The new Apple TV 4K and HomeView smart display are officially available. The first pre-orders have arrived for eager shoppers, and you can now also head to your local Apple Store to buy select configurations. Buy HomeView on Amazon Buy Apple TV 4K (4th generation) on Amazon Buy the new Siri Remote on Amazon more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c26a0af69258",
+   "title": "Oregon Dental Practice Reports Two Data Breaches Affecting More Than 31,000 Patients",
+   "url": "https://www.hipaajournal.com/data-breach-hood-river-dental-liberty-health-keep-smiling-dental/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-13T13:49:19+00:00",
+   "summary": "Data security incidents have been announced by the dental practices Hood River Dental in Oregon and Keep Smiling Dental Group […]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "12278c7b9fef",
+   "title": "Graphene OS on Motorola's new flagship cellphone",
+   "url": "https://kevinboone.me/graphene-moto.html",
+   "source": "Kevin Boone",
+   "source_category": "Development",
+   "published": "2026-11-13T13:49:03+00:00",
+   "summary": "Who's going to spend US\\$1600 on a Motorola phone with Graphene OS?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a2fc62414d4a",
    "title": "Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says",
    "url": "https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/",
@@ -2138,6 +2204,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "7495c20ae317",
+   "title": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade",
+   "url": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T13:15:35+00:00",
+   "summary": "The top U.S. commodities regulator in October announced proposed crypto rules to assert its jurisdiction over the asset class.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
@@ -2623,6 +2702,19 @@
     "Cloud & infrastructure",
     "AI",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "1509eb779dbd",
+   "title": "Show HN: Reflota – Open-source data recovery for NTFS/FAT disks with phased copy",
+   "url": "https://github.com/Christ10-8/reflota",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-13T12:17:52+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Forensics & IR"
    ]
   },
   {
@@ -3380,7 +3472,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-13T11:00:01+00:00",
    "summary": "Older Word documents could soon look different as Microsoft prepares a change to Compatibility Mode, but the full impact remains unclear.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b1ac9423a570",
+     "source": "The Register",
+     "title": "Oh my Word! Microsoft retires compatibility options, because who needs layouts to stay put",
+     "url": "https://www.theregister.com/applications/2026/11/13/oh-my-word-microsoft-retires-compatibility-options-because-who-needs-layouts-to-stay-put/5309664"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
    ]
@@ -5856,6 +5955,12 @@
      "source": "4sysops",
      "title": "Microsoft 365 outage eases in parts of Asia Pacific after configuration patch",
      "url": "https://4sysops.com/archives/microsoft-365-outage-eases-in-parts-of-asia-pacific-after-configuration-patch/"
+    },
+    {
+     "id": "df1817dfc39a",
+     "source": "SecurityWeek",
+     "title": "Microsoft Struggles to Restore Email and Other Services in a Global Outage",
+     "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/"
     }
    ],
    "topics": [
