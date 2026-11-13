@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-13T07:31:14+00:00",
+ "generated": "2026-11-13T08:01:11+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 29,
+   "recent": 31,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -413,8 +413,8 @@
   },
   {
    "source": "Huntress",
-   "fetched": 756,
-   "recent": 1,
+   "fetched": 757,
+   "recent": 2,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 15,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 413,
-   "recent": 136,
+   "recent": 133,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Wiz Research",
    "fetched": 721,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -1296,7 +1296,7 @@
   {
    "source": "Arctic Wolf",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1362,7 +1362,7 @@
   {
    "source": "Fedora Magazine",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 37,
+   "recent": 35,
    "error": null
   },
   {
@@ -1746,7 +1746,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 88,
-   "recent": 17,
+   "recent": 15,
    "error": null
   },
   {
@@ -1866,11 +1866,115 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 13,
-   "recent": 2,
+   "recent": 1,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "11a91c158e17",
+   "title": "Installing the official Claude Desktop Linux beta on Fedora Linux",
+   "url": "https://fedoramagazine.org/installing-the-official-claude-desktop-linux-beta-on-fedora-linux/",
+   "source": "Fedora Magazine",
+   "source_category": "Linux admin",
+   "published": "2026-11-13T08:00:00+00:00",
+   "summary": "Anthropic ships its Claude Desktop beta for Linux only as a .deb. This article shows how to install that same package on Fedora with a small MIT-licensed script that verifies it first, installs it without root, and removes it cleanly.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI"
+   ]
+  },
+  {
+   "id": "05cf9eadd6ea",
+   "title": "“From digital mischief to outright destruction”",
+   "url": "https://unsung.aresluna.org/from-digital-mischief-to-outright-destruction",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-13T07:50:10+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "86fdbf97a528",
+   "title": "Google Cloud takes aim at the cost of keeping idle AI agents running on Kubernetes",
+   "url": "https://siliconangle.com/2026/11/13/distributed-training-inference-google-s-agent-projects-kubeconna/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:42:29+00:00",
+   "summary": "Kubernetes has become the go-to platform for distributed training and inference, but what happens to the compute bill when it runs AI agents that spend most of their time waiting? When an agent’s container or virtual machine stays provisioned, customers pay for the wait as well as the work.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "cdbf361f582e",
+   "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+   "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-13T07:39:04+00:00",
+   "summary": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-123039",
+     "score": 7.8,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "checkpoint"
+    }
+   ]
+  },
+  {
+   "id": "0f5b428a9fe0",
+   "title": "Steadfast Update I - The Baseline",
+   "url": "https://noteflakes.com/articles/2026-11-13-steadfast-update-1",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-13T07:31:32+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c36e90f8a1e3",
+   "title": "C++26 stumbles at finish line over Contracts dispute",
+   "url": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:31:00+00:00",
+   "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "05676206f912",
+   "title": "Nvidia without Jensen Huang. What lies ahead for Asian chipmakers?",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-without-jensen-huang-what-lies-ahead-for-asian-chipmakers-.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-13T07:29:15+00:00",
+   "summary": "Nvidia's leadership shake-up raises questions for Asian chipmakers, though analysts expect limited near-term disruption.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "a2f3281a2cbb",
    "title": "SANS 2026 survey finds sharp rise in ICS/OT cyber incidents, slower detection, more severe operational impacts",
@@ -1892,7 +1996,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T07:25:02+00:00",
    "summary": "Jessica Lyons / The Register : OpenAI launches Daybreak Red Team in early access to test web apps for flaws and Daybreak Defense Factory to automate finding, validating, and fixing them — OpenAI has launched two new security products, one for penetration testing and another for defense, and warned organizations …",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "10c323150351",
+     "source": "Neowin",
+     "title": "OpenAI launches Daybreak Red Team and Defense Factory to fix vulnerabilities using AI",
+     "url": "https://www.neowin.net/news/openai-launches-daybreak-red-team-and-defense-factory-to-fix-vulnerabilities-using-ai/?utm_source=rss"
+    }
+   ],
    "topics": [
     "AI",
     "Pen testing & red team"
@@ -1935,7 +2046,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T07:18:17+00:00",
    "summary": "Microsoft is struggling to fix a global outage, with services including Teams, Outlook and AI software Copilot affected by \"connectivity problems\".",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "35eb1824f5c6",
+     "source": "Hacker News",
+     "title": "Global Microsoft Outage",
+     "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "AI"
@@ -2031,6 +2149,20 @@
    "topics": [
     "Microsoft & Windows",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "5ebbacd127cf",
+   "title": "Microsoft's massive M365 outage stretches past 12 hours as its fixes keep failing",
+   "url": "https://www.theregister.com/saas/2026/11/13/microsofts-massive-m365-outage-stretches-past-12-hours-as-its-fixes-keep-failing/5309609",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-13T06:40:06+00:00",
+   "summary": "Hasn't completely ruled out cyberattack as cause of incident that's damaged Exchange Online and services that rely on it",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "System administration"
    ]
   },
   {
@@ -2137,7 +2269,14 @@
    "source_category": "Security",
    "published": "2026-11-13T06:15:48+00:00",
    "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick an employee at a construction company into approving a device code sign-in. They got a valid session token before Huntress’s security operations center identified the incident. Device code phishing abuses a real Microsoft sign-in flow.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d33bd9214edf",
+     "source": "Huntress",
+     "title": "Crafty Microsoft Teams Booking Flow Disguises Device Code Phishing",
+     "url": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing"
+    }
+   ],
    "topics": [
     "Threats & malware",
     "Microsoft & Windows"
