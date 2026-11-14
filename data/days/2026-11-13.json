@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-14T03:16:00+00:00",
+ "generated": "2026-11-14T03:30:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -138,7 +138,7 @@
   {
    "source": "SANS NewsBites",
    "fetched": 11,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 82,
-   "recent": 82,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -720,19 +720,19 @@
   {
    "source": "Embedded.com",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 92,
-   "recent": 5,
+   "fetched": 91,
+   "recent": 4,
    "error": null
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -768,7 +768,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "CrowdStrike Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 58,
+   "recent": 57,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 34,
+   "recent": 33,
    "error": null
   },
   {
@@ -1848,7 +1848,7 @@
   {
    "source": "Terence Tao",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 88,
+   "fetched": 87,
    "recent": 7,
    "error": null
   },
@@ -2117,8 +2117,8 @@
   },
   {
    "source": "HashiCorp status",
-   "fetched": 10,
-   "recent": 0,
+   "fetched": 11,
+   "recent": 1,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,32 @@
   }
  ],
  "items": [
+  {
+   "id": "4e7953c4b36e",
+   "title": "HYOK, Private VCS, and Private Run Tasks returning 403 errors",
+   "url": "https://status.hashicorp.com//incidents/01M7C1A98RQS3K3096WX80FFT1",
+   "source": "HashiCorp status",
+   "source_category": "Cloud status",
+   "published": "2026-11-14T03:23:46.839000+00:00",
+   "summary": "Status: Investigating We are aware of elevated 403 errors being returned when requests are forwarded through the tfc-agent. This may impact HYOK, Private VCS, and Private Run Tasks. Action underway: Our engineers are investigating the cause now.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "ff4e54c0b1df",
+   "title": "Introducing MathHelm: A Place to discuss AI-generated papers",
+   "url": "https://terrytao.wordpress.com/2026/11/13/introducing-mathhelm-a-place-to-discuss-ai-generated-papers/",
+   "source": "Terence Tao",
+   "source_category": "Science & space",
+   "published": "2026-11-14T03:19:00+00:00",
+   "summary": "[This is a guest post by the MathHelm scientific committee, whose membership is listed at the bottom of this post. -T.] Mathematics depends on our regular conversations with colleagues and with the wider public.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "94308d4b42df",
    "title": "US officials say Trump is not expected to raise allegations of a Chinese intelligence operation involving Jensen Huang during his upcoming meeting with Xi (Dan Mangan/CNBC)",
@@ -2464,6 +2490,20 @@
    "topics": [
     "AI",
     "Cloud status"
+   ]
+  },
+  {
+   "id": "c6caa4d4f0b0",
+   "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+   "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T02:52:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -2926,6 +2966,19 @@
     "Linux & open source",
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "a0f5a54698a4",
+   "title": "Philip Roth and David Remnick Getting Personal",
+   "url": "https://salmagundi.skidmore.edu/articles/2001-philip-roth-david-remnick",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T00:21:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -14557,6 +14610,19 @@
    ]
   },
   {
+   "id": "4c21f6f6ca3f",
+   "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+   "url": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
+   "source": "CrowdStrike Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-13T06:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "f496cb118bce",
    "title": "Sites: Publishing failing",
    "url": "https://status.openai.com//incidents/01M79GYA0GA772Y6D089AH5478",
@@ -14898,6 +14964,12 @@
      "source": "NBC News Tech",
      "title": "Microsoft scrambles to recover after massive outage",
      "url": "https://www.nbcnews.com/nightly-news/video/microsoft-scrambles-to-recover-after-massive-outage-273485381533"
+    },
+    {
+     "id": "5e54ac9622fb",
+     "source": "Hacker News",
+     "title": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
+     "url": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/"
     }
    ],
    "topics": [
