@@ -148,6 +148,34 @@ def parse_adobe_product_bulletins(page, base_url):
     return items
 
 
+def parse_zoom_security_bulletins(page, base_url):
+    """Zoom security bulletins (www.zoom.com/en/trust/security-bulletin/): a table with one row per
+    bulletin: ZSB id (linked), title, severity, CVE(s), Date Published and Date Updated (MM/DD/YYYY).
+    The published date is used, at noon UTC like the KEV dates; an update to an old bulletin is not
+    treated as new. The header row has no ZSB link, so it never matches."""
+    items, seen = [], set()
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S):
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+        if len(cells) < 5:
+            continue
+        link = re.search(r'<a[^>]+href="([^"]*security-bulletin/(ZSB-\d+)/?)"', cells[0])
+        date = re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", _strip(cells[4]))
+        if not link or not date or link.group(2) in seen:
+            continue
+        zsb = link.group(2)
+        seen.add(zsb)
+        title, severity, cves = _strip(cells[1]), _strip(cells[2]), _strip(cells[3])
+        mm, dd, yyyy = (int(x) for x in date.groups())
+        items.append({
+            "title": f"{zsb}: {title}",
+            "url": urljoin(base_url, link.group(1)),
+            "summary": "Zoom security bulletin" + (f", severity {severity}" if severity else "")
+                       + (f", {cves}" if cves else "") + ".",
+            "published": f"{yyyy:04d}-{mm:02d}-{dd:02d}T12:00:00+00:00",
+        })
+    return items
+
+
 _MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
@@ -347,4 +375,5 @@ PARSERS = {
     "mozilla_advisories": parse_mozilla_advisories,
     "msrc_blog": parse_msrc_blog,
     "sans_newsbites": parse_sans_newsbites,
+    "zoom_security_bulletins": parse_zoom_security_bulletins,
 }

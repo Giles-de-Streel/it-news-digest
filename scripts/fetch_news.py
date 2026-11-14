@@ -98,6 +98,9 @@ class _TextExtractor(HTMLParser):
         self.parts.append(data)
 
 
+_LEFTOVER_TAG_RE = re.compile(r"</?(p|span|b|i|u|br|div|a|strong|em|li|ul|ol|h[1-6]|table|tr|td|font|code|pre)\b[^>]*>", re.I)
+
+
 def clean_text(raw):
     if not raw:
         return ""
@@ -108,6 +111,10 @@ def clean_text(raw):
     except Exception:
         text = re.sub(r"<[^>]+>", " ", raw)
     text = html.unescape(text)
+    # Some feeds escape their HTML twice (SonicWall PSIRT: "&amp;lt;p&amp;gt;"), which leaves real
+    # tags after one unescape; strip those too
+    if _LEFTOVER_TAG_RE.search(text):
+        text = html.unescape(re.sub(r"<[^>]+>", " ", text))
     text = re.sub(r"\s+", " ", text).strip()
     # Common feed boilerplate
     text = re.sub(r"(The post .* appeared first on .*|Continue reading.*|Read more.*)$", "", text).strip()

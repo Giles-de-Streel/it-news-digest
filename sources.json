@@ -394,5 +394,8 @@
   {"name": "Mr. Macintosh", "site": "https://mrmacintosh.com/", "url": "https://mrmacintosh.com/feed/", "category": "Endpoint management"},
   {"name": "Der Flounder (Mac admin)", "site": "https://derflounder.wordpress.com/", "url": "https://derflounder.wordpress.com/feed/", "category": "Endpoint management"},
   {"name": "Hugging Face blog", "site": "https://huggingface.co/blog", "url": "https://huggingface.co/blog/feed.xml", "category": "IT industry", "oss": true},
-  {"name": "Google DeepMind blog", "site": "https://deepmind.google/discover/blog/", "url": "https://deepmind.google/blog/rss.xml", "category": "IT industry"}
+  {"name": "Google DeepMind blog", "site": "https://deepmind.google/discover/blog/", "url": "https://deepmind.google/blog/rss.xml", "category": "IT industry"},
+  {"name": "SonicWall PSIRT", "site": "https://psirt.global.sonicwall.com/vuln-list", "url": "https://psirtapi.global.sonicwall.com/api/v1/feed/rss.xml", "category": "Vendor advisories"},
+  {"name": "Zoom security bulletins", "site": "https://www.zoom.com/en/trust/security-bulletin/", "url": "https://www.zoom.com/en/trust/security-bulletin/", "category": "Vendor advisories", "type": "page", "parser": "zoom_security_bulletins"},
+  {"name": "Veeam security advisories", "site": "https://www.veeam.com/knowledge-base.html?type=security", "url": "https://www.veeam.com/kb_rss.xml", "category": "Vendor advisories", "title_include": "(?i)vulnerabilit|CVE-\\d|security (advisory|bulletin)"}
 ]
