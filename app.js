@@ -74,6 +74,7 @@
     const res = await fetch(`sources.json?t=${Date.now()}`, { cache: "no-store" });
     state.catalog = res.ok ? await res.json() : [];
     ossCache = null;
+    advCache = null;
   }
   async function loadSuggestions() {
     try {
@@ -121,6 +122,18 @@
     if (!ossCache) ossCache = ossSources();
     return sourcesOf(it).some((s) => ossCache.has(s)) || OSS_RE.test(`${it.title || ""} ${it.summary || ""}`);
   };
+  // "Vendor advisories" entry under All topics: stories and CVEs from any source in that category of
+  // sources.json (vendor PSIRTs and bulletins, plus national CERTs), i.e. one place to see what to patch
+  const ADVISORIES = "Vendor advisories";
+  let advCache = null;
+  const isAdvisory = (it) => {
+    if (!advCache) advCache = new Set(state.catalog.filter((s) => s.category === ADVISORIES).map((s) => s.name));
+    return sourcesOf(it).some((s) => advCache.has(s));
+  };
+  const advisoryInfo = () => {
+    const n = state.catalog.filter((s) => s.category === ADVISORIES).length;
+    return ["Vendor security advisories", `Security advisories and bulletins straight from ${n} vendors and CERTs: Cisco, Fortinet, Palo Alto Networks, SonicWall, Ivanti, Zoom, Veeam, Red Hat, Ubuntu, Debian, Apple, Chrome, Adobe ColdFusion and more. Check here for what needs patching.`];
+  };
   // A story stays visible while at least one source that covered it is switched on (and, in Tux mode, it's open source)
   const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it));
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
@@ -129,7 +142,8 @@
   // The News tab's topic, source and search filters, shared by stories and CVE records
   function matchesFilters(it) {
     const q = state.query.toLowerCase();
-    if (state.topic && !(it.topics || []).includes(state.topic)) return false;
+    if (state.topic === ADVISORIES) { if (!isAdvisory(it)) return false; }
+    else if (state.topic && !(it.topics || []).includes(state.topic)) return false;
     if (state.source && !sourcesOf(it).includes(state.source)) return false;
     if (q && !`${it.title} ${it.summary} ${it.cve || ""}`.toLowerCase().includes(q)) return false;
     return true;
@@ -208,7 +222,8 @@
     const head = $("#filter-head");
     const filtered = state.topic || state.source || state.query || state.tux;
     if (!filtered) { head.hidden = true; return; }
-    const [name, desc] = state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
+    const [name, desc] = state.topic === ADVISORIES ? advisoryInfo()
+      : state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
     const extra = [
       state.tux ? "about open-source software (Tux is on)" : "",
       state.source ? `from ${state.source}` : "",
@@ -260,14 +275,15 @@
         type: "button",
         class: `nav-item${n ? "" : " empty"}`,
         "aria-current": state.topic === topic ? "true" : "false",
-        title: topic ? (TOPIC_INFO[topic] || [topic, ""])[1] || topic : "Show every topic",
+        title: topic === ADVISORIES ? advisoryInfo()[1] : topic ? (TOPIC_INFO[topic] || [topic, ""])[1] || topic : "Show every topic",
         onclick: () => setTopic(topic),
       }, ...navLabel(label, n)));
+    const advCount = items.filter(isAdvisory).length;
     $("#topic-nav").replaceChildren(
       el("div", { class: "nav-sheet-head" },
         el("span", { text: "Topics" }),
         el("button", { type: "button", class: "nav-close", text: "Close", onclick: () => toggleTopicPanel(false) })),
-      el("ul", { class: "nav-list nav-all" }, item("All topics", "", items.length)),
+      el("ul", { class: "nav-list nav-all" }, item("All topics", "", items.length), item(ADVISORIES, ADVISORIES, advCount)),
       el("ul", { class: "nav-list nav-topics" }, ...topics.map((t) => item(t, t, counts[t] || 0))));
     $("#topics-toggle").textContent = state.topic ? `Topic: ${state.topic}` : "Topics";
   }
@@ -650,6 +666,14 @@
     return words.every((w) => hay.includes(w));
   }
 
+  // How a source is read (Sources tab "Type" column): [label, tooltip]
+  function sourceType(s) {
+    if (s.type === "page") return ["Page", `Listing page read by the ${s.parser || ""} parser in scripts/page_sources.py (the site has no usable feed)`];
+    if (s.type === "api") return ["API", `Data API queried by the ${s.fetcher || ""} fetcher in scripts/page_sources.py`];
+    if (s.category === "Removed") return ["", ""];
+    return ["Feed", s.title_include ? `RSS/Atom feed, only titles matching ${s.title_include}` : "RSS/Atom feed"];
+  }
+
   function renderSources() {
     const d = state.dayData || {};
     $("#sources-meta").textContent = !d.generated ? ""
@@ -674,13 +698,14 @@
     if (state.srcQuery.trim()) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `${shown.length} of ${all.length} match "${state.srcQuery.trim()}".` }));
     }
-    $("#sources-body").replaceChildren(...(shown.length ? [] : [el("tr", {}, el("td", { colspan: "6", class: "muted", text: "No source matches this search." }))]), ...shown.map((s) => {
+    $("#sources-body").replaceChildren(...(shown.length ? [] : [el("tr", {}, el("td", { colspan: "7", class: "muted", text: "No source matches this search." }))]), ...shown.map((s) => {
       const st = status.get(s.name);
       const on = !state.off.has(s.name);
       return el("tr", { class: on ? "" : "off" },
         el("td", { class: "sw" }, toggle(on, `Show ${s.name}`, (v) => setOff([s.name], !v))),
         el("td", {}, s.site ? link(s.site, s.name) : s.name), // the outlet's own site, not its feed
         el("td", { class: "muted", text: s.category || "" }),
+        el("td", { class: "muted", text: sourceType(s)[0], title: sourceType(s)[1] }),
         el("td", { text: st ? String(st.fetched) : "" }),
         el("td", { text: st ? String(st.recent) : "" }),
         st ? el("td", { class: st.error ? "bad" : "good", text: st.error || "OK" })
