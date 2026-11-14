@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T14:30:51+00:00",
+ "generated": "2026-11-14T14:46:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 66,
-   "recent": 66,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -911,9 +911,9 @@
   },
   {
    "source": "NGINX Blog",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "IIS Support Blog",
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1644,7 +1644,7 @@
   {
    "source": "Pandaily",
    "fetched": 20,
-   "recent": 17,
+   "recent": 11,
    "error": null
   },
   {
@@ -1686,7 +1686,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2400,6 +2400,19 @@
  ],
  "items": [
   {
+   "id": "b67df2668da0",
+   "title": "How Marco Rubio helped topple Jensen Huang; source: Rubio used a CIA report about Alice Huang to write his own, recasting CIA reporting in more assertive terms (Washington Post)",
+   "url": "https://www.techmeme.com/261114/p10#a261114p10",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-14T14:30:23+00:00",
+   "summary": "Washington Post : How Marco Rubio helped topple Jensen Huang; source: Rubio used a CIA report about Alice Huang to write his own, recasting CIA reporting in more assertive terms — Rubio's intervention helped topple one of Washington's most influential corporate voices on China, giving momentum to officials pushing for…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "b935addbc6bc",
    "title": "Contractor turns a Milwaukee Hackzall into a portable Ethernet untwister after facing job requiring 50,000 custom Cat6 cables",
    "url": "https://www.tomshardware.com/maker-stem/contractor-builds-ethernet-cable-untwisting-machine-after-facing-100-000-cat6-termination-job-modified-milwaukee-hackzall-straightens-cables-in-under-two-seconds",
@@ -2424,6 +2437,58 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "3f060b226b66",
+   "title": "Show HN: Agweb – a browser for agents that stays out of your way",
+   "url": "https://github.com/paul-nameless/agweb",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T14:08:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "87a4e5733200",
+   "title": "Show HN: Lampka – a Windows PDF reader whose dark mode keeps figures in colour",
+   "url": "https://lampka.app/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T14:06:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "ad49a76de154",
+   "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
+   "url": "https://github.com/FURSOY/fursoy-cpu",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T14:06:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "5bfa2e37b7da",
+   "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+   "url": "https://gitlab.com/snipedbywifi/terminactory",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T14:05:54+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -2505,6 +2570,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "957c7395a880",
+   "title": "Human-Engineered Oscilloscope Panel",
+   "url": "https://www.electronicdesign.com/resources/ideas-for-design/article/55415787/electronic-design-human-engineered-oscilloscope-panel",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-14T14:00:00+00:00",
+   "summary": "This is the first Ideas for Design originally published in Electronic Design February 1955",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
