@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-14T00:00:55+00:00",
+ "generated": "2026-11-14T00:15:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 38,
+   "recent": 37,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Schneier on Security",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -863,8 +863,8 @@
   },
   {
    "source": "Okta Security",
-   "fetched": 92,
-   "recent": 1,
+   "fetched": 93,
+   "recent": 2,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 70,
+   "recent": 59,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 44,
+   "recent": 45,
    "error": null
   },
   {
@@ -2502,6 +2502,19 @@
    ]
   },
   {
+   "id": "fa1c932616e2",
+   "title": "Tired of paying for cloud storage every month? pCloud’s Black Friday Lifetime deal is the cure for subscription fatigue",
+   "url": "https://9to5mac.com/2026/11/13/tired-paying-cloud-storage-every-month-pclouds-black-friday-lifetime-deal-cure-subscription-fatigue/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-13T23:00:00+00:00",
+   "summary": "Software used to be a one-time purchase, but over time, with the addition of cloud storage and services, everything has become a subscription. One company even tried to make your car seat heaters a subscription .",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "f2c77ca10cdc",
    "title": "US National Weather Service reports nationwide internet, communications issues",
    "url": "https://www.reuters.com/technology/us-national-weather-service-reports-nationwide-internet-communications-issues-2026-11-13/",
@@ -2551,6 +2564,19 @@
    "source_category": "IT industry",
    "published": "2026-11-13T22:35:03+00:00",
    "summary": "Jeff Bezos' space venture indicates that it won't seek further NASA funding for an outpost once touted as a 'mixed-use business park' in orbit. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "673d8bd62405",
+   "title": "datasette-leaflet 0.3",
+   "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-13T22:30:54+00:00",
+   "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -14383,6 +14409,38 @@
     "Linux & open source",
     "Pen testing & red team"
    ]
+  },
+  {
+   "id": "298caa41e042",
+   "title": "Linux Kernel TCP Flaw (CVE-2026-98432)",
+   "url": "https://sec.okta.com/articles/2026/11/linux-kernel-tcp-flaw-cve-2026-98432/",
+   "source": "Okta Security",
+   "source_category": "Identity",
+   "published": "2026-11-13T00:00:00+00:00",
+   "summary": "What happened? On October 25, 2026, the National Vulnerability Database published CVE-2026-98432, a vulnerability in the Linux kernel's IPv4 TCP stack. The flaw is a use-after-free: when a server handles a retransmitted SYN for a connection request, ...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Databases"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-98432",
+     "score": 0.00777,
+     "percentile": 0.56375,
+     "date": "2026-11-13"
+    }
+   }
   },
   {
    "id": "e2afb6794c42",
