@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T23:31:15+00:00",
+ "generated": "2026-11-14T23:45:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 31,
+   "recent": 31,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 21,
+   "recent": 19,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1464,7 +1464,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -2400,6 +2400,19 @@
  ],
  "items": [
   {
+   "id": "41ccd991209b",
+   "title": "America Officially Loses Its Measles-elimination Status After Continued Spread of the Disease",
+   "url": "https://yro.slashdot.org/story/26/11/14/2325219/america-officially-loses-its-measles-elimination-status-after-continued-spread-of-the-disease?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-14T23:37:00+00:00",
+   "summary": "Reuters reports: The Pan American Health Organization has revoked the United States' measles-elimination status, ending a 26-year run after determining the country failed to halt continuous transmission of the highly contagious virus for more than a year, the Wall Street Journal reported on Friday...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "37f75911359f",
    "title": "Walking across my Minecraft backups with Plakar",
    "url": "https://poolp.org/posts/2026-11-14/walking-across-my-minecraft-backups-with-plakar/",
@@ -2410,6 +2423,50 @@
    "also_covered_by": [],
    "topics": [
     "Backup & recovery"
+   ]
+  },
+  {
+   "id": "c418b0adb0f6",
+   "title": "CVE-2026-129352: A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129352",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-14T23:16:48.033000+00:00",
+   "summary": "A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-129352",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129352",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "4566bb1124be",
+   "title": "CVE-2026-129351: A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129351",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-14T23:16:47.753000+00:00",
+   "summary": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-129351",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129351",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
