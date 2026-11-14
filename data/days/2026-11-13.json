@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-14T02:46:08+00:00",
+ "generated": "2026-11-14T03:01:00+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 34,
+   "recent": 33,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 82,
-   "recent": 82,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -828,7 +828,7 @@
   {
    "source": "Nutanix.dev",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -960,7 +960,7 @@
   {
    "source": "Socket",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1002,7 +1002,7 @@
   {
    "source": "Scrum.org blog",
    "fetched": 44,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1368,7 +1368,7 @@
   {
    "source": "CERT/CC Vulnerability Notes",
    "fetched": 15,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1686,7 +1686,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1758,7 +1758,7 @@
   {
    "source": "Semafor Technology & Security",
    "fetched": 50,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -2142,7 +2142,7 @@
   {
    "source": "Anthropic status",
    "fetched": 25,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -2178,7 +2178,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -2400,6 +2400,33 @@
  ],
  "items": [
   {
+   "id": "0b4a828bf081",
+   "title": "Writing a DSL for high performance parallel programming in OxCaml",
+   "url": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-14T02:57:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "a79ac9efb4bd",
+   "title": "Elevated purchasing errors on claude.ai",
+   "url": "https://status.claude.com/incidents/qrpz8k79qm7x",
+   "source": "Anthropic status",
+   "source_category": "Cloud status",
+   "published": "2026-11-14T02:54:33+00:00",
+   "summary": "Nov 14 , 02:54 UTC Investigating - We are investigating elevated errors affecting purchases, plan upgrades and cancellations on claude.ai. Core functionality is not affected. We will provide an update as soon as possible.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Cloud status"
+   ]
+  },
+  {
    "id": "8b292886d845",
    "title": "Tesla says \"select customers\" can now place orders for its Cybercab \"for personal use\", for $30K plus a required $299/month Autonomy Subscription to operate (Kara Carlson/Bloomberg)",
    "url": "https://www.techmeme.com/261113/p39#a261113p39",
@@ -2517,6 +2544,19 @@
    ]
   },
   {
+   "id": "b74e0c849765",
+   "title": "Google Drafts Stricter Key-Management Rules for Web Certificates, Requiring Audits for All Subordinate CA Key Generation",
+   "url": "https://joho-todai.com/en/google-web-certificate-key-management-stricter-rules/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-14T01:54:44+00:00",
+   "summary": "A proposed revision to the common standards governing issuers of browser-trusted website certificates would uniformly require approved forms of private-key protection, audited key generation, transfer procedures, and key inventories.",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI"
+   ]
+  },
+  {
    "id": "39b58f1680ba",
    "title": "Europeans face challenge of reaching consensus on AI to stay competitive and improve regulation",
    "url": "https://www.lemonde.fr/en/international/article/2026/11/14/ai-europeans-face-challenge-of-reaching-consensus-to-stay-competitive-and-improve-regulation_6780458_4.html",
@@ -2541,6 +2581,24 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "110f0e2611be",
+   "title": "AI-Powered Penetration Testing Traffic Surges More Than 30x, Cloudflare Says, as Stolen Tokens Enable Internal Breaches",
+   "url": "https://joho-todai.com/en/ai-penetration-testing-traffic-spike-cloudflare/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-14T01:39:34+00:00",
+   "summary": "Cloudflare reported that traffic from AI penetration-testing tools has grown more than 30-fold since October 1. More than 12,000 ARTEX-related repositories now exist, and real-world breaches have been confirmed when the tools are combined with stolen CI/CD tokens.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "AI",
+    "Development",
+    "Pen testing & red team",
+    "DevOps & SRE"
    ]
   },
   {
@@ -2575,6 +2633,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "8489e2dc86f4",
+   "title": "Standard PS5 QSSR Support Expands From Two Games to Eight, With Spider-Man 2 Update Available Now",
+   "url": "https://joho-todai.com/en/ps5-qssr-support-expanded-eight-games-spider-man-2/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-14T01:20:54+00:00",
+   "summary": "Six more games have added support for QSSR, the standard PS5's AI image-enhancement technology, bringing the total to eight. The update for *Spider-Man 2* is already available.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Game development"
    ]
   },
   {
@@ -8855,6 +8927,12 @@
      "source": "LWN.net",
      "title": "Announcing XRAID: declustered parity RAID for zoned XFS",
      "url": "https://lwn.net/Articles/1107473/"
+    },
+    {
+     "id": "ef48108577d9",
+     "source": "Joho no Todai (English)",
+     "title": "XFS Gets New XRAID Implementation That Avoids Parity RAID's Weaknesses With an Overwrite-Free Design",
+     "url": "https://joho-todai.com/en/xfs-xraid-parity-avoid-overwrite/"
     }
    ],
    "topics": [
