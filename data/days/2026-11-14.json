@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T05:16:50+00:00",
+ "generated": "2026-11-14T05:30:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 80,
+   "recent": 80,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 336,
-   "recent": 39,
+   "recent": 35,
    "error": null
   },
   {
@@ -726,7 +726,7 @@
   {
    "source": "Embedded Computing Design",
    "fetched": 91,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -923,9 +923,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 1856,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "APNIC Blog",
@@ -1332,7 +1332,7 @@
   {
    "source": "CrowdStrike Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2334,13 +2334,13 @@
   {
    "source": "Censys blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Cisco Blogs",
    "fetched": 9,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,28 @@
   }
  ],
  "items": [
+  {
+   "id": "257b8ee01863",
+   "title": "CVE-2026-126173: The AutomatorWP Pro plugin for WordPress' webhook addon is vulnerable to authorization bypass in all versions…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126173",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-14T05:18:37.750000+00:00",
+   "summary": "The AutomatorWP Pro plugin for WordPress' webhook addon is vulnerable to authorization bypass in all versions up to, and including, 1.4.4. This is due to the plugin not properly verifying that a user is authorized to perform an action.",
+   "kind": "cve",
+   "cve": "CVE-2026-126173",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-126173",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "eaad6c160abc",
    "title": "JD.com completes its takeover of German electronics retailer Ceconomy, after acquiring a ~60% stake for ~$1.5B, following the EU's approval of the deal (Tomoko Wakasugi/Nikkei Asia)",
