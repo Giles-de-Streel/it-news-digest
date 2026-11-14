@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T12:30:52+00:00",
+ "generated": "2026-11-14T12:45:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 67,
+   "recent": 67,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -558,7 +558,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -1692,7 +1692,7 @@
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,67 @@
   }
  ],
  "items": [
+  {
+   "id": "3424f14ba76e",
+   "title": "Theatre Review: FrankenTacit ★★☆☆☆",
+   "url": "https://shkspr.mobi/blog/2026/11/theatre-review-frankentacit/",
+   "source": "Terence Eden's Blog",
+   "source_category": "Development",
+   "published": "2026-11-14T12:34:35+00:00",
+   "summary": "Is Frankenstein the first cautionary tale about AI? If so, what does it mean to re-imagine it through the lens of Korean algorave music? The Seoul-based Tacit Group have crafted a new version of an ancient tale.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e66c3b08e9bd",
+   "title": "China’s Air Force builds drone that shoots painkiller darts at wounded soldiers",
+   "url": "https://www.tomshardware.com/tech-industry/drones/chinas-air-force-builds-drone-that-shoots-painkiller-darts-at-wounded-soldiers-experimental-pla-uav-injects-emergency-meds-from-a-distance-to-keep-medics-out-of-danger-and-buys-time-during-the-golden-hour",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-14T12:30:00+00:00",
+   "summary": "The Air Force Medical University of the Chinese People's Liberation Army (PLA) built this drone so it could remotely administer pain killers to injured soldiers and make extraction easier.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "07f20635c967",
+   "title": "Wine 11.22 Emulates x86 AVX Instructions on ARM64, Adds Memory Layout Randomization and 34 Fixes",
+   "url": "https://joho-todai.com/en/wine-11-22-arm64-x86-avx-emulation/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-14T12:24:05+00:00",
+   "summary": "Wine 11.22, a development release of the Windows compatibility layer, was published on November 13, 2026. It adds x86 AVX emulation on ARM64, memory layout randomization, and 34 bug fixes.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "3b47c6d9dd97",
+   "title": "CVE-2026-129250: A security vulnerability has been detected in Edimax BR6478ACV2 1.23.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129250",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-14T12:17:44.240000+00:00",
+   "summary": "A security vulnerability has been detected in Edimax BR6478ACV2 1.23. The impacted element is the function formPPTPSetup of the file webs. The manipulation of the argument pptpUserName leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-129250",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129250",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "0ff364750688",
    "title": "Meet the seven co-founders of Anthropic",
@@ -3471,6 +3532,12 @@
      "source": "Neowin",
      "title": "FAA expanded its \"SMART\" AI air traffic control just before nationwide flight ground stop",
      "url": "https://www.neowin.net/news/faa-expanded-its-smart-ai-air-traffic-control-just-before-nationwide-flight-ground-stop/?utm_source=rss"
+    },
+    {
+     "id": "732fa8731ddc",
+     "source": "Joho no Todai (English)",
+     "title": "FAA Rolled Out AI Air Traffic Support Nationwide Three Days Before U.S. Ground Stop; Transportation Secretary Denies Connection",
+     "url": "https://joho-todai.com/en/faa-ai-air-traffic-control-nationwide-rollout/"
     }
    ],
    "topics": [
@@ -3525,7 +3592,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T21:14:22+00:00",
    "summary": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b67c4d635d9d",
+     "source": "Guardian Technology",
+     "title": "Microsoft says services fully restored after global outage hits governments",
+     "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Cloud status"
