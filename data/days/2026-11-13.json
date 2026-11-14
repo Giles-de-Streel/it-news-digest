@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "generated": "2026-11-14T03:30:54+00:00",
+ "generated": "2026-11-14T03:46:15+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 10,
-   "recent": 10,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
   },
   {
    "source": "SANS ISC",
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -618,7 +618,7 @@
   {
    "source": "Data Center Knowledge",
    "fetched": 50,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1062,7 +1062,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "CrowdStrike Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1565,9 +1565,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 57,
+   "recent": 46,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -2399,6 +2399,20 @@
   }
  ],
  "items": [
+  {
+   "id": "bb6d046d33d6",
+   "title": "Which passkey should users get? FIDO CTO weighs in as quantum-ready YubiKey enters beta",
+   "url": "https://4sysops.com/archives/which-passkey-should-users-get-fido-cto-weighs-in-as-quantum-ready-yubikey-enters-beta/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-14T03:31:07+00:00",
+   "summary": "A post-quantum-ready YubiKey is now in beta, giving organizations an early way to test future cryptographic hardware. Meanwhile, FIDO Alliance CTO Nishant Kaushik recommends choosing workforce passkeys by user risk—and planning for recovery and eventual key replacement.",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI",
+    "Identity & access"
+   ]
+  },
   {
    "id": "4e7953c4b36e",
    "title": "HYOK, Private VCS, and Private Run Tasks returning 403 errors",
@@ -4051,7 +4065,14 @@
    "source_category": "Threat research",
    "published": "2026-11-13T20:57:13+00:00",
    "summary": "AI-enabled penetration testing and red team frameworks can automate and chain reconnaissance, vulnerability testing, and follow-on actions, lowering the skill threshold for attackers and accelerating intrusions when the tools are misused.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d9f52c83f8e5",
+     "source": "4sysops",
+     "title": "ARTEX forks drive 30-fold surge in AI penetration testing traffic, Cloudflare says",
+     "url": "https://4sysops.com/archives/artex-forks-drive-30-fold-surge-in-ai-penetration-testing-traffic-cloudflare-says/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "AI",
@@ -4079,7 +4100,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T20:52:17+00:00",
    "summary": "‘We don’t have a security problem anymore. We have a data problem now’",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5cca2553bce6",
+     "source": "4sysops",
+     "title": "2026 CVE count passes 100,000 as AI accelerates bug hunting",
+     "url": "https://4sysops.com/archives/2026-cve-count-passes-100000-as-ai-accelerates-bug-hunting/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -4246,6 +4274,12 @@
      "source": "Phoronix",
      "title": "Cloudflare Open Sources Kitesurf: Their Web Browser For AI Agents",
      "url": "https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source"
+    },
+    {
+     "id": "b84366164390",
+     "source": "4sysops",
+     "title": "Cloudflare open-sources Kitesurf, letting AI agents run their own browser",
+     "url": "https://4sysops.com/archives/cloudflare-open-sources-kitesurf-letting-ai-agents-run-their-own-browser/"
     }
    ],
    "topics": [
@@ -4985,6 +5019,12 @@
      "source": "Techmeme",
      "title": "Microsoft apologizes for the outage, calling it a \"technical issue\" from a \"network capacity upgrade\", and says it was \"not related to cyber or AI/agents\" (@microsoft)",
      "url": "https://www.techmeme.com/261113/p28#a261113p28"
+    },
+    {
+     "id": "d52f85f64fd5",
+     "source": "4sysops",
+     "title": "Microsoft 365 outage traced to hidden network upgrade fault",
+     "url": "https://4sysops.com/archives/microsoft-365-outage-traced-to-hidden-network-upgrade-fault/"
     }
    ],
    "topics": [
@@ -6585,7 +6625,14 @@
    "source_category": "IT industry",
    "published": "2026-11-13T16:26:32+00:00",
    "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "16d727d47819",
+     "source": "Slashdot",
+     "title": "Windows 0-Day Dropped By Disgruntled Researcher Hands Hackers System Rights",
+     "url": "https://it.slashdot.org/story/26/11/14/020218/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Microsoft & Windows"
@@ -7273,6 +7320,12 @@
      "source": "OMG! Ubuntu",
      "title": "Euro-Office is now available on desktop (as Nextcloud Office Desktop)",
      "url": "https://www.omgubuntu.co.uk/2026/11/euro-office-desktop-apps-nextcloud"
+    },
+    {
+     "id": "375f6a97750e",
+     "source": "4sysops",
+     "title": "Euro-Office gets an offline desktop app for Windows, macOS and Linux",
+     "url": "https://4sysops.com/archives/euro-office-gets-an-offline-desktop-app-for-windows-macos-and-linux/"
     }
    ],
    "topics": [
@@ -13655,6 +13708,12 @@
      "source": "Security Affairs",
      "title": "Unpatched Check Point Gateways Are Being Wiped exploiting PHP2Shell",
      "url": "https://securityaffairs.com/202982/hacking/unpatched-check-point-gateways-are-being-wiped-exploiting-php2shell.html"
+    },
+    {
+     "id": "64eae16acfca",
+     "source": "4sysops",
+     "title": "Check Point gateways hit by PHP2Shell attacks that deploy backdoors and ESXi wiper",
+     "url": "https://4sysops.com/archives/check-point-gateways-hit-by-php2shell-attacks-that-deploy-backdoors-and-esxi-wiper/"
     }
    ],
    "topics": [
