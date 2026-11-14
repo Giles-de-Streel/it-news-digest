@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T19:45:51+00:00",
+ "generated": "2026-11-14T20:01:01+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 60,
-   "recent": 60,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -438,7 +438,7 @@
   {
    "source": "Google Project Zero",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -780,7 +780,7 @@
   {
    "source": "Inside Higher Ed",
    "fetched": 10,
-   "recent": 10,
+   "recent": 2,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 10,
+   "recent": 2,
    "error": null
   },
   {
@@ -1182,7 +1182,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "Fedora Magazine",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -1608,7 +1608,7 @@
   {
    "source": "OpenAI News",
    "fetched": 1387,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -1859,8 +1859,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 85,
-   "recent": 9,
+   "fetched": 88,
+   "recent": 10,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -2340,7 +2340,7 @@
   {
    "source": "Cisco Blogs",
    "fetched": 9,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,46 @@
   }
  ],
  "items": [
+  {
+   "id": "d84b8a4f26a0",
+   "title": "DSA-6629-1 network-manager-iodine - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00549.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-14T20:00:39+00:00",
+   "summary": "Andreas Gabriel Berbescu discovered that network-manager-iodine, the iodine VPN plugin for NetworkManager, did not properly validate the nameserver setting when establishing a connection, allowing a local unprivileged user to execute arbitrary commands as root prior to privilege dropping.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "103ed775700c",
+   "title": "Nvidia employees want Jensen Huang back",
+   "url": "https://www.heise.de/en/news/Nvidia-employees-want-Jensen-Huang-back-11525304.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-14T19:54:00+00:00",
+   "summary": "After news broke of a third affair involving former Nvidia CEO Jensen Huang, the fallout begins. Still, some want him back.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "917814762533",
+   "title": "ServiceNow spends $211 million on acquired talent while layoffs continue - www.calcalistech.com",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWd0hKNDBmeWtnQTVtRXd5YWdCcm5jako5dUxZemdjak44cHZldjVYYjFBaFFSclJwdUlhZ1FKODk3LWlCcWN4eERacHpYU0c1Q2JkSl9SZVFPdlRGbXlCRjhjTGdWaFE?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-14T19:50:00+00:00",
+   "summary": "ServiceNow spends $211 million on acquired talent while layoffs continue www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "ITSM"
+   ]
+  },
   {
    "id": "dd3daee7bce9",
    "title": "AT&T uses agentic AI to reinvent business processes from the ground up",
@@ -2459,6 +2499,19 @@
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-11-14T18:56:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "79f3cde8a063",
+   "title": "A reimagined OS with no folders and no apps",
+   "url": "https://www.mercuryos.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T18:55:12+00:00",
    "summary": "Comments",
    "also_covered_by": [],
    "topics": [
@@ -2728,7 +2781,14 @@
    "source_category": "IT industry",
    "published": "2026-11-14T17:35:51+00:00",
    "summary": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e7dbcffaa991",
+     "source": "Techmeme",
+     "title": "Letter: Altimeter's Brad Gerstner and Atreides's Gavin Baker urge Nvidia's board to consider \"the potential return of Jensen Huang\"; they own $2.13B in Nvidia (Katie Tarasov/CNBC)",
+     "url": "https://www.techmeme.com/261114/p18#a261114p18"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
