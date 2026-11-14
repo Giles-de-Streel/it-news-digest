@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-14T15:01:04+00:00",
+ "generated": "2026-11-14T15:16:03+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 23,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Ars Technica IT",
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 66,
+   "recent": 66,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 25,
    "error": null
   },
   {
@@ -173,9 +173,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 87,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Data Center Dynamics",
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -353,9 +353,9 @@
   },
   {
    "source": "PostgreSQL News",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "RemoteDisconnected: Remote end closed connection without response"
+   "error": null
   },
   {
    "source": "Planet PostgreSQL",
@@ -684,7 +684,7 @@
   {
    "source": "Risky Business News",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1859,8 +1859,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 86,
-   "recent": 8,
+   "fetched": 85,
+   "recent": 7,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,22 @@
   }
  ],
  "items": [
+  {
+   "id": "1550629ee152",
+   "title": "Malaysia plans new law using data center power consumption to catch AI GPU smugglers",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-plans-new-law-using-data-center-power-consumption-to-catch-ai-gpu-smugglers-but-real-world-tdp-variance-and-lack-of-physical-audits-could-undermine-it-new-law-also-forces-operators-to-pay-for-unused-electricity-capacity",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-14T15:10:00+00:00",
+   "summary": "Malaysia plans to track AI GPU imports and data center power consumption to combat chip smuggling. But will it be able to do so?",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "1a08ff51acae",
    "title": "IRis Learning Remote Has Five Buttons, Supports Thousands of Devices",
@@ -2423,6 +2439,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "2990c14363c1",
+   "title": "AMD's fastest gaming CPU and the Radeon RX 9070 just hit a massive $550 discount — 32GB DDR5 RAM and 1TB SSD round off $1,749.99 gaming rig",
+   "url": "https://www.tomshardware.com/desktops/gaming-pcs/amds-fastest-gaming-cpu-and-the-radeon-rx-9070-just-hit-a-massive-usd550-discount-32gb-ddr5-ram-and-1tb-ssd-round-off-usd1-749-99-gaming-rig",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-14T15:00:00+00:00",
+   "summary": "Alongside the Ryzen 7 9800X3D and Radeon RX 9070, buyers get a 360mm AIO liquid cooler, 850W PSU, 32GB DDR5-5600 memory, and a 1TB SSD, all inside a premium mid-tower chassis with RGB lighting.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Game development"
    ]
   },
   {
@@ -2646,9 +2676,29 @@
    "source_category": "Development",
    "published": "2026-11-14T13:48:06+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1b2323ae814d",
+     "source": "Techmeme",
+     "title": "Italy's data protection agency fines Meta €805M for allegedly accessing Android users' photos and videos without their consent or informing them (Reuters)",
+     "url": "https://www.techmeme.com/261114/p11#a261114p11"
+    }
+   ],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "fbb4c2fd353e",
+   "title": "KDE: The Documentary on Free Software [video]",
+   "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T13:43:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
