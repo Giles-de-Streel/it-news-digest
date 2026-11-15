@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-15T00:30:55+00:00",
+ "generated": "2026-11-15T00:46:15+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -84,7 +84,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 32,
-   "recent": 32,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -180,7 +180,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 19,
+   "recent": 17,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -1692,7 +1692,7 @@
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1764,7 +1764,7 @@
   {
    "source": "Smithsonian Magazine",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -2400,6 +2400,19 @@
  ],
  "items": [
   {
+   "id": "25b8b41e12a2",
+   "title": "Hands-on: ESR’s MagSafe kickstand charger solves two key iPhone Duo shortcomings",
+   "url": "https://9to5mac.com/2026/11/14/hands-on-esrs-magsafe-kickstand-charger-solves-two-key-iphone-duo-shortcomings/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-15T00:42:21+00:00",
+   "summary": "iPhone Duo, because it offers a much larger inside display, means theres all tons of new use cases that you wouldn’t normally come across with your iPhone. Of course, one of them is the fact that you might want to prop up your iPhone Duo to watch a video on the larger display.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e5f8a478349d",
    "title": "CVE-2026-129353: A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02.",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129353",
@@ -2461,6 +2474,19 @@
    "topics": [
     "Hardware",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "f9a3c449e598",
+   "title": "datasette-llm 0.1a11",
+   "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-14T23:59:28+00:00",
+   "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
