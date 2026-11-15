@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T11:15:50+00:00",
+ "generated": "2026-11-15T11:30:48+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 14,
-   "recent": 14,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -486,7 +486,7 @@
   {
    "source": "This Week in 4n6",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1979,8 +1979,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
-   "recent": 2,
+   "fetched": 13,
+   "recent": 1,
    "error": null
   },
   {
@@ -2399,6 +2399,47 @@
   }
  ],
  "items": [
+  {
+   "id": "ea841caf9a9d",
+   "title": "Linux Gets a New XRAID Implementation with Up to 20x Faster Writes",
+   "url": "https://linuxiac.com/linux-gets-a-new-xraid-implementation-with-up-to-20x-faster-writes/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-15T11:27:38+00:00",
+   "summary": "XRAID debuts as a new RAID implementation for Linux, promising faster writes, improved rebuilds, and support for zoned storage devices.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e686205e6e60",
+   "title": "Week 46 – 2026",
+   "url": "https://thisweekin4n6.com/2026/11/15/week-46-2026/",
+   "source": "This Week in 4n6",
+   "source_category": "Forensics & IR",
+   "published": "2026-11-15T11:26:24+00:00",
+   "summary": "If your organisation is interested in sponsoring an upcoming post then reach out via the contact form! No sponsor this week",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f6e9c7df3d56",
+   "title": "AMD ARG \"AMD Root Guest\" Linux Patches Coming In 2027",
+   "url": "https://www.phoronix.com/news/AMD-Root-Guest-ARG-Linux",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-15T11:24:06+00:00",
+   "summary": "A new feature of EPYC 9006 \"Venice\" server processors that isn't yet brought up in the public Linux software support is AMD Root Guest (ARG). The initial patches are expected in Q1'2027 for further enhancing the AMD SEV-SNP confidential computing experience...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
   {
    "id": "cd3fd211db83",
    "title": "ASUS Ascent QN10 Mini PC Powered By Snapdragon X2 Elite Seeing Linux Support",
