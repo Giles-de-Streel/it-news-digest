@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T10:15:57+00:00",
+ "generated": "2026-11-15T10:30:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 15,
-   "recent": 15,
+   "fetched": 14,
+   "recent": 14,
    "error": null
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 88,
+   "fetched": 87,
    "recent": 12,
    "error": null
   },
@@ -2399,6 +2399,29 @@
   }
  ],
  "items": [
+  {
+   "id": "b41096f3ccb8",
+   "title": "CVE-2026-129349: When authentication caching is enabled on DefaultLdapRealm, after a user logs in successfully once,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129349",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T10:16:53.020000+00:00",
+   "summary": "When authentication caching is enabled on DefaultLdapRealm, after a user logs in successfully once, subsequent logins for that user succeed with any password. A cached authentication skips the LDAP bind, and the AllowAllCredentialsMatcher installed by default in DefaultLdapRealm accepts any credentials, allowing an…",
+   "kind": "cve",
+   "cve": "CVE-2026-129349",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129349",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
   {
    "id": "9d07b354d59a",
    "title": "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
