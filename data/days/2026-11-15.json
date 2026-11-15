@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T16:00:50+00:00",
+ "generated": "2026-11-15T16:15:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 23,
+   "recent": 23,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -725,7 +725,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 83,
+   "fetched": 84,
    "recent": 0,
    "error": null
   },
@@ -767,9 +767,9 @@
   },
   {
    "source": "MongoDB blog",
-   "fetched": 0,
+   "fetched": 150,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Campus Technology",
@@ -1056,7 +1056,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1458,7 +1458,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 78,
+   "fetched": 79,
    "recent": 13,
    "error": null
   },
@@ -2400,6 +2400,33 @@
  ],
  "items": [
   {
+   "id": "fdb520f8ff97",
+   "title": "Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent (New York Times)",
+   "url": "https://www.techmeme.com/261115/p9#a261115p9",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-15T16:10:01+00:00",
+   "summary": "New York Times : Investigation: Howard Lutnick pushed to narrow chip curbs affecting a client of his former firm Cantor Fitzgerald whose Malaysia data center may serve Tencent — The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ea71f6465a36",
+   "title": "Asahi Linux Moves from MIT to GPL Licensing, Expands M3 Support",
+   "url": "https://linuxiac.com/asahi-linux-moves-from-mit-to-gpl-licensing-expands-m3-support/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-15T16:06:28+00:00",
+   "summary": "Asahi Linux moves toward GPL licensing amid concerns over commercial code reuse and removes installation restrictions for M3 Macs.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "284ffe709b09",
    "title": "Firefox now has Picture-in-picture for webpages, here's how to use it",
    "url": "https://www.neowin.net/guides/firefox-now-has-picture-in-picture-for-webpages-heres-how-to-use-it/?utm_source=rss",
@@ -2410,6 +2437,33 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "3b9f0def13a3",
+   "title": "Week in Review: Most popular stories on GeekWire for the week of Nov. 8, 2026",
+   "url": "https://www.geekwire.com/2026/geekwire-weekly-roundup-2026-11-08/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-15T16:00:02+00:00",
+   "summary": "See the technology stories that people were reading on GeekWire for the week of Nov. 8, 2026. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ab8909b5ae85",
+   "title": "357 detailed CPU die shots spanning 1971 to 2024 crammed into a new gallery",
+   "url": "https://www.tomshardware.com/pc-components/cpus/357-detailed-cpu-die-shots-spanning-1971-to-2024-crammed-into-a-new-gallery-motorola-68000-intel-486dx2-amd-athlon-xp-apple-m1-and-many-more-in-beautiful-detail",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-15T16:00:00+00:00",
+   "summary": "A CPU enthusiast has put together an eye-popping visual database containing crystal clear detailed die shots of 357 legendary, and some lesser-known, processors.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Databases"
    ]
   },
   {
@@ -2531,6 +2585,28 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "9a1876adb768",
+   "title": "CVE-2026-125795: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125795",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T15:16:47.163000+00:00",
+   "summary": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP Local File Inclusion.This issue affects Estatik: from n/a through 4.3.6.",
+   "kind": "cve",
+   "cve": "CVE-2026-125795",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-125795",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
