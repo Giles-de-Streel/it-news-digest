@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T22:30:55+00:00",
+ "generated": "2026-11-15T22:45:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 22,
+   "recent": 22,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1620,7 +1620,7 @@
   {
    "source": "Joho no Todai (English)",
    "fetched": 20,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 43,
-   "recent": 0,
+   "fetched": 46,
+   "recent": 4,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 83,
+   "fetched": 81,
    "recent": 17,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,73 @@
   }
  ],
  "items": [
+  {
+   "id": "8fad1bf5b58a",
+   "title": "Linuxiac Weekly Wrap-Up: Week 46, 2026 (November 9 – 15)",
+   "url": "https://linuxiac.com/linuxiac-weekly-wrap-up-week-46-2026-november-9-15/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-15T22:44:46+00:00",
+   "summary": "Catch up on the latest Linux news: RHEL 10.3, Wine 11.22, Blender 5.3, KDE Plasma 6.8.3, Firefox 160, Manjaro moves toward independent community governance, and more.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "36cf899b1962",
+   "title": "A datetime library for Rust",
+   "url": "https://burntsushi.net/jiff/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-15T22:39:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "f623da72aba4",
+   "title": "Russia renews demand for NATO pullback in Ukraine talks",
+   "url": "https://www.semafor.com/article/11/15/2026/russia-renews-demand-for-nato-pullback-in-ukraine-talks",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-15T22:38:18+00:00",
+   "summary": "The reported demand sharpened questions over Moscow’s and Kyiv’s competing red lines ahead of further talks to end the war.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "627fd0e31bc1",
+   "title": "Faulty router, aging infrastructure blamed in US flight stoppage",
+   "url": "https://www.semafor.com/article/11/15/2026/faulty-router-aging-infrastructure-blamed-in-us-flight-stoppage",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-15T22:35:35+00:00",
+   "summary": "A single faulty router may have triggered the nationwide ground stop ordered by the Federal Aviation Administration on Friday, underscoring the dangers posed by the US’ outmoded technological infrastructure.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "cc02464aef83",
+   "title": "Chris van Eijk: invalid input syntax for type json in PostgreSQL, measured",
+   "url": "https://postgr.es/p/9C2",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-15T22:30:11+00:00",
+   "summary": "What raises 'invalid input syntax for type json' (22P02), measured on PostgreSQL 16 to 18: JS arrays, Python lists, NUL escapes, bad rows and a safe ALTER.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Databases"
+   ]
+  },
   {
    "id": "286313831039",
    "title": "Old Bitly Links Are Being Hijacked",
@@ -2585,6 +2652,12 @@
      "source": "GeekWire",
      "title": "Amazon loses 40 Leo satellites in ULA Vulcan launch failure — a new setback for its Starlink rival",
      "url": "https://www.geekwire.com/2026/amazon-loses-40-leo-satellites-as-ula-vulcan-launch-failure-deals-setback-to-tech-giants-starlink-rival/"
+    },
+    {
+     "id": "4d8abdfb64c8",
+     "source": "Techmeme",
+     "title": "Amazon loses 40 Leo satellites after ULA's Vulcan rocket fails 10 minutes into flight, marking the first mission failure for the Boeing-Lockheed joint venture (Joey Roulette/Reuters)",
+     "url": "https://www.techmeme.com/261115/p17#a261115p17"
     }
    ],
    "topics": [
@@ -3919,7 +3992,14 @@
    "source_category": "IT industry",
    "published": "2026-11-15T13:43:03+00:00",
    "summary": "A SpaceX Starship Rocket successfully returned from orbit and was caught by mechanical arms on the launchpad. It’s the latest milestone as SpaceX hopes to create fully reusable rockets.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "4b48ddf0a296",
+     "source": "Semafor Technology & Security",
+     "title": "SpaceX makes history by catching spacecraft",
+     "url": "https://www.semafor.com/article/11/15/2026/spacex-catches-spacecraft-in-first"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -4315,7 +4395,14 @@
    "source_category": "IT industry",
    "published": "2026-11-15T12:00:01+00:00",
    "summary": "Anthropic's IPO has outsized importance in the tech industry, which is heavily invested in the AI lab and is desperate for some positive momentum.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "55f4f2b36467",
+     "source": "Semafor Technology & Security",
+     "title": "Anthropic IPO set to define AI trade",
+     "url": "https://www.semafor.com/article/11/15/2026/anthropic-ipo-set-to-define-ai-trade"
+    }
+   ],
    "topics": [
     "AI"
    ]
