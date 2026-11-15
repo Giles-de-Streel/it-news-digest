@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T14:16:02+00:00",
+ "generated": "2026-11-15T14:31:45+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 18,
-   "recent": 18,
+   "fetched": 22,
+   "recent": 22,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -353,9 +353,9 @@
   },
   {
    "source": "PostgreSQL News",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
   },
   {
    "source": "Planet PostgreSQL",
@@ -1620,7 +1620,7 @@
   {
    "source": "Joho no Todai (English)",
    "fetched": 20,
-   "recent": 17,
+   "recent": 20,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 82,
+   "fetched": 81,
    "recent": 13,
    "error": null
   },
@@ -1979,7 +1979,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
+   "fetched": 13,
    "recent": 2,
    "error": null
   },
@@ -2003,8 +2003,8 @@
   },
   {
    "source": "AWS Health Dashboard",
-   "fetched": 41,
-   "recent": 3,
+   "fetched": 42,
+   "recent": 4,
    "error": null
   },
   {
@@ -2400,6 +2400,124 @@
  ],
  "items": [
   {
+   "id": "59663b0a73c8",
+   "title": "AMD Posts Linux Patches For Capacity Aware Scheduling On Hybrid CPUs",
+   "url": "https://www.phoronix.com/news/AMD-Hybrid-Capacity-Aware-Sched",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-15T14:20:01+00:00",
+   "summary": "On Saturday a new set of Linux kernel driver patches were posted by AMD for enabling Capacity Aware Scheduling on AMD heterogeneous/hybrid processors...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "61b504e1d8d4",
+   "title": "Pentagon tests pack hunting with autonomous war robots",
+   "url": "https://www.tomshardware.com/tech-industry/drones/pentagon-tests-pack-hunting-with-autonomous-war-robots-darpa-experimented-with-four-drone-ground-vehicles-that-detected-tracked-and-engaged-simulated-threats",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-15T14:19:24+00:00",
+   "summary": "The Pentagon has been testing packs of autonomous ground vehicles in simulated combat situations.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0717f95a1a59",
+   "title": "CVE-2026-129483: Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism because…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129483",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T14:17:27.530000+00:00",
+   "summary": "Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism because srp_server_mech_step2 does not reject client public values A that are multiples of N.",
+   "kind": "cve",
+   "cve": "CVE-2026-129483",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129483",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "9898175c1267",
+   "title": "CVE-2026-129453: A vulnerability was found in DrayTek Vigor2960 1.5.1.6.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129453",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T14:17:26.583000+00:00",
+   "summary": "A vulnerability was found in DrayTek Vigor2960 1.5.1.6. This issue affects the function check_file_exist of the file /cgi-bin/mainfunction.cgi of the component File Existence Check. Performing a manipulation of the argument upload_name results in heap-based buffer overflow. The attack may be initiated remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-129453",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129453",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b4bbc9c8d6ac",
+   "title": "CVE-2026-125769: Incorrect Privilege Assignment vulnerability in Nasir Ahmed Advanced Form Integration…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125769",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T14:17:24.813000+00:00",
+   "summary": "Incorrect Privilege Assignment vulnerability in Nasir Ahmed Advanced Form Integration advanced-form-integration allows Privilege Escalation.This issue affects Advanced Form Integration: from n/a through 2.11.3.",
+   "kind": "cve",
+   "cve": "CVE-2026-125769",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-125769",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "347fe64a78f9",
+   "title": "CVE-2026-122662: Deserialization of Untrusted Data vulnerability in Barn2 Plugins Document Library Pro document-library-pro…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122662",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T14:17:20.507000+00:00",
+   "summary": "Deserialization of Untrusted Data vulnerability in Barn2 Plugins Document Library Pro document-library-pro allows Object Injection.This issue affects Document Library Pro: from n/a before 4.2.2.",
+   "kind": "cve",
+   "cve": "CVE-2026-122662",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-122662",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "3f4c07423abd",
    "title": "‘Grand Theft Auto Flu’: is the whole world really taking the day off work to play GTA VI?",
    "url": "https://www.theguardian.com/games/2026/nov/16/grand-theft-auto-gta-vi-first-new-game-released-in-13-years",
@@ -2436,6 +2554,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "e3b75c8a79a7",
+   "title": "Fed Names AI Infrastructure Investment Its Top Financial-Stability Concern; Debt Issuance Quintuples to $680 Billion in Three Years",
+   "url": "https://joho-todai.com/en/frb-ai-infrastructure-investment-financial-stability/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-15T13:55:36+00:00",
+   "summary": "AI-related risks emerged as the top concern in the Federal Reserve's Financial Stability Report released on November 13. Data-center debt issuance has reached $680 billion, while the total including guarantees and leases could exceed $3 trillion.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2586,6 +2717,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "6572a7c2118b",
+   "title": "Nexperia Faces Simultaneous Lawsuits in the Netherlands and China, Affecting Japan's Auto Supply",
+   "url": "https://joho-todai.com/en/nexperia-lawsuit-netherlands-china-auto-supply/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-15T13:10:16+00:00",
+   "summary": "A Dutch court imposed additional measures on November 11 barring Chinese parent Wingtech from interference, and Wingtech announced an appeal on November 15. The fate of a global source of essential semiconductors such as diodes and transistors now hinges on litigation in two jurisdictions.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
    ]
   },
   {
@@ -3294,6 +3439,12 @@
      "source": "VnExpress International (Tech)",
      "title": "Megaspeed says Alice Huang left the company in August 2025",
      "url": "https://e.vnexpress.net/news/tech/personalities/megaspeed-says-alice-huang-left-the-company-in-august-2025-5144932.html"
+    },
+    {
+     "id": "8c196f897434",
+     "source": "Joho no Todai (English)",
+     "title": "Megaspeed Opens Internal Investigation After Reports; Singapore Government Denies Espionage Probe",
+     "url": "https://joho-todai.com/en/megaspeed-internal-investigation-singapore-denies-espionage-probe/"
     }
    ],
    "topics": [
@@ -3881,6 +4032,19 @@
    "topics": [
     "AI",
     "Databases"
+   ]
+  },
+  {
+   "id": "c1b37e19e6e4",
+   "title": "The Telephone Changed the World",
+   "url": "https://lithub.com/how-the-telephone-changed-the-world/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-14T22:56:09+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
