@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T12:30:54+00:00",
+ "generated": "2026-11-15T12:45:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SANS ISC",
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 16,
+   "recent": 16,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -174,7 +174,7 @@
   {
    "source": "The Next Platform",
    "fetched": 87,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -210,13 +210,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -821,9 +821,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -923,9 +923,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1856,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1013,9 +1013,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1458,13 +1458,13 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1691,9 +1691,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -2003,8 +2003,8 @@
   },
   {
    "source": "AWS Health Dashboard",
-   "fetched": 38,
-   "recent": 0,
+   "fetched": 39,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,88 @@
   }
  ],
  "items": [
+  {
+   "id": "68aa0e7ea290",
+   "title": "Service impact: Increased Connectivity issues in US-EAST-1",
+   "url": "https://status.aws.amazon.com/",
+   "source": "AWS Health Dashboard",
+   "source_category": "Cloud status",
+   "published": "2026-11-15T12:38:02+00:00",
+   "summary": "We are investigating reports of Connectivity issues in the US-EAST-1 Region. IAM Identity center sign-in requests and AWS SignUps are also impacted at this time.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Cloud status",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "96e1a1a80255",
+   "title": "A NES emulator written in Odin",
+   "url": "https://lucypero.com/lucynes.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-15T12:37:33+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d94338030cba",
+   "title": "How Will AI Affect Open Source Development?",
+   "url": "https://news.slashdot.org/story/26/11/15/0615219/how-will-ai-affect-open-source-development?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-15T12:34:00+00:00",
+   "summary": "This week the Linux Foundation's Open Source Security Foundation (OpenSSF) announced it would broaden its AI security resources, including a new guide to finding and fixing vulnerabilities using AI, \"from preparing and sandboxing AI to validating, fixing, and preventing issues.\" The guide \"stresses that AI-generated…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "AI",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "ce4d7e3c532b",
+   "title": "Dev hacks Coway air purifier to cut it off from the cloud",
+   "url": "https://www.tomshardware.com/tech-industry/cyber-security/dev-hacks-coway-air-purifier-to-cut-it-off-from-the-cloud-now-runs-locally-in-home-assistant-fan-downloads-the-certificate-over-plain-http-letting-a-home-server-stand-in-for-coways",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-15T12:30:00+00:00",
+   "summary": "A developer reverse-engineered his Coway Airmega IconS air purifier to run it locally in Home Assistant, without Coway’s cloud.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development",
+    "Reverse engineering"
+   ]
+  },
+  {
+   "id": "2885ee5ba4d2",
+   "title": "CVE-2026-129450: A vulnerability was detected in DrayTek Vigor2960 1.5.1.6.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129450",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T12:17:20.913000+00:00",
+   "summary": "A vulnerability was detected in DrayTek Vigor2960 1.5.1.6. Affected by this issue is the function sub_1E084 of the file /cgi-bin/mainfunction.cgi?action=doWebBackup. The manipulation of the argument option results in path traversal. It is possible to launch the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-129450",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129450",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Backup & recovery"
+   ]
+  },
   {
    "id": "56d3f3546eee",
    "title": "SPAR Israel plans six new stores as it takes on supermarket giants",
