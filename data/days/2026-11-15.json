@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T20:30:58+00:00",
+ "generated": "2026-11-15T20:46:00+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 22,
+   "recent": 22,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,19 @@
   }
  ],
  "items": [
+  {
+   "id": "3f181235b89d",
+   "title": "Blog: Preventing Cross-Service UDP Loops in QUIC",
+   "url": "https://bughunters.google.com/blog/preventing-cross-service-udp-loops-in-quic",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-15T20:34:37+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "cb1f17f14ba1",
    "title": "Dell Pro Max Micro Review: A 24GB RTX PRO 4000 and 24 Cores in a 2.9-Liter Workstation",
@@ -4064,7 +4077,14 @@
    "source_category": "Hardware",
    "published": "2026-11-15T12:00:00+00:00",
    "summary": "An online petition with over 91,000 signatures is calling for the reinstatement of Nvidia's disgraced former CEO.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fb466a35c2a7",
+     "source": "Hacker News",
+     "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
+     "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
