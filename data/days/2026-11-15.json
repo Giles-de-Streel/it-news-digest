@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T09:30:53+00:00",
+ "generated": "2026-11-15T09:45:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -48,7 +48,7 @@
   {
    "source": "The Record",
    "fetched": 5,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 15,
+   "recent": 15,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -384,7 +384,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1073,7 +1073,7 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2312,
+   "fetched": 2310,
    "recent": 8,
    "error": null
   },
@@ -1452,7 +1452,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -1698,7 +1698,7 @@
   {
    "source": "David Bushell",
    "fetched": 11,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1764,7 +1764,7 @@
   {
    "source": "Smithsonian Magazine",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2052,7 +2052,7 @@
   {
    "source": "Zoom status",
    "fetched": 6,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2399,6 +2399,68 @@
   }
  ],
  "items": [
+  {
+   "id": "00f4400ce0fe",
+   "title": "Visited links are purple",
+   "url": "https://dbushell.com/2026/11/16/visited-links/",
+   "source": "David Bushell",
+   "source_category": "Development",
+   "published": "2026-11-15T09:45:48+00:00",
+   "summary": "A few weeks ago Kev Quirk asked: Do you use :visited on links? — and I said to myself: No! I don’t use visited links… but why don’t I use visited links? TL;DR: I’ve gone and styled visited links, and they’re purple. Blue and purple I did a cursory five minutes of research and found Wikipedia still […]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "a83f093a9127",
+   "title": "RSS Club #010: Chatbots",
+   "url": "https://dbushell.com/2026/11/15/RSS010/",
+   "source": "David Bushell",
+   "source_category": "Development",
+   "published": "2026-11-15T09:45:48+00:00",
+   "summary": "This is an RSS-only post, thank you for subscribing :) My RSS-only posts have a permalink for those who prefer reading from my website. That link is hidden and unindexed. URLs can be linked to but in the spirit of “RSS Club” I’d prefer if my RSS-only posts were only linked to from other RSS-only […]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "67e14499d251",
+   "title": "Service Degradation Affecting Zoom Events custom domain",
+   "url": "https://www.zoomstatus.com/incidents/zg1tnj4z21p6",
+   "source": "Zoom status",
+   "source_category": "Cloud status",
+   "published": "2026-11-15T09:34:15+00:00",
+   "summary": "Nov 15 , 01:34 PST Investigating - We are currently investigating a service degradation affecting Zoom Events custom domain Our team is actively working to identify the impact and root cause. We will provide an update as soon as more information becomes available.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "42fc1caad2b7",
+   "title": "CVE-2026-129444: A vulnerability was identified in D-Link DSL-6740C 20131126.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129444",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T09:16:44.570000+00:00",
+   "summary": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit is publicly available and might be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-129444",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129444",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
   {
    "id": "c913fd136d77",
    "title": "cursor:pointer on buttons",
