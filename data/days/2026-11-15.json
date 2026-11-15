@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T20:01:09+00:00",
+ "generated": "2026-11-15T20:15:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 22,
-   "recent": 22,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -389,9 +389,9 @@
   },
   {
    "source": "Check Point Research",
-   "fetched": 15,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "source": "ESET WeLiveSecurity",
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -1979,7 +1979,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
+   "fetched": 12,
    "recent": 2,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,33 @@
   }
  ],
  "items": [
+  {
+   "id": "cb1f17f14ba1",
+   "title": "Dell Pro Max Micro Review: A 24GB RTX PRO 4000 and 24 Cores in a 2.9-Liter Workstation",
+   "url": "https://www.storagereview.com/review/dell-pro-max-micro-fcm2250-review",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-15T20:10:49+00:00",
+   "summary": "The Dell Pro Max Micro (FCM2250) fits a 24-core Intel Core Ultra 9 285, a 24GB NVIDIA RTX PRO 4000 Blackwell SFF Edition, and 96GB of DDR5-6400 into a chassis Dell lists at about 2.9 liters. It is the smallest workstation in the Pro Max desktop line, and it carries the vPro Enterprise management and",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "5cbdca8f599d",
+   "title": "Uber's Secure AI Framework Governs Autonomous AI Agents Across Their Lifecycle",
+   "url": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-15T20:00:00+00:00",
+   "summary": "In a recent article, Uber Engineering highlights the limitations of traditional identity and API controls in securing AI agents that dynamically reason over external content and take real-world actions.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Identity & access"
+   ]
+  },
   {
    "id": "9aa0821c8f0b",
    "title": "What does resilience really mean?",
@@ -2436,6 +2463,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "da5a45ac447a",
+   "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+   "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-15T19:39:46+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -4464,6 +4504,12 @@
      "source": "Joho no Todai (English)",
      "title": "Megaspeed Opens Internal Investigation After Reports; Singapore Government Denies Espionage Probe",
      "url": "https://joho-todai.com/en/megaspeed-internal-investigation-singapore-denies-espionage-probe/"
+    },
+    {
+     "id": "aff7589c72e9",
+     "source": "Techmeme",
+     "title": "Megaspeed says Alice Huang left in August 2025 and has no current role, and that it runs a \"legitimate and lawful business\" as it opens an internal probe (Associated Press)",
+     "url": "https://www.techmeme.com/261115/p15#a261115p15"
     }
    ],
    "topics": [
