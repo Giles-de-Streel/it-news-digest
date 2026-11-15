@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-15T19:46:17+00:00",
+ "generated": "2026-11-15T20:01:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -180,7 +180,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1182,7 +1182,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1728,7 +1728,7 @@
   {
    "source": "Resilience Media",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1757,7 +1757,7 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 44,
+   "fetched": 43,
    "recent": 0,
    "error": null
   },
@@ -2400,6 +2400,32 @@
  ],
  "items": [
   {
+   "id": "9aa0821c8f0b",
+   "title": "What does resilience really mean?",
+   "url": "https://resiliencemedia.co/what-does-resilience-really-mean/",
+   "source": "Resilience Media",
+   "source_category": "IT industry",
+   "published": "2026-11-15T19:48:30+00:00",
+   "summary": "Resilience is now one of the most prominent buzzwords employed across government, industry and defence. Yet, despite widespread agreement on its importance, there remains far less consensus on what resilience means in practice.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "ce71e423327a",
+   "title": "When AI agents escape: What does it mean for national security?",
+   "url": "https://resiliencemedia.co/when-ai-agents-escape-what-does-it-mean-for-national-security/",
+   "source": "Resilience Media",
+   "source_category": "IT industry",
+   "published": "2026-11-15T19:43:14+00:00",
+   "summary": "You’ve probably read the news and seen the headlines about AI agents running riot. AI agents — artificial intelligence programmes that use Large Language Models as their brains — can on their own, with no human involvement, carry out multi-step tasks, engage with software and other AI agents, and pursue goals.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "b9bd994f5948",
    "title": "Rust Declarative Macros: Organization, Scoping, and Common Use-Cases",
    "url": "https://sigseis.dev/articles/2026/11/10",
@@ -2507,6 +2533,19 @@
    ]
   },
   {
+   "id": "f01e83ae288d",
+   "title": "The price of exclusion: A young Kenyan lawyer counts what disability barriers cost",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTGpCZ2xaY2hyYXE5Rnhocm5LM1dsLTIxYUFfcDVyOWkxazltOGl6SUF4amZvb1dacGFwUVpWZ3YxRGVuaDFmWGtmOUl0bXZLaWRncW9XMldaRHlPMlJwbHdQeUU0a3o2RGZhUDIybF9VS0lrZEc5XzlOVHllVkFOY3JTV1R6TjVxajh4MHJZU3FFMXJuODAyN0d0c0t6R3pmLWlGV1BwZk9ITW8?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-15T18:51:18+00:00",
+   "summary": "The price of exclusion: A young Kenyan lawyer counts what disability barriers cost Welcome to the United Nations",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
+   ]
+  },
+  {
    "id": "d08bbf32c36c",
    "title": "Corsair FlexPrime V20C Review: A 24-Core Linux Workstation Built Around a 32GB Arc Pro B70",
    "url": "https://www.storagereview.com/review/corsair-flexprime-v20c-review",
@@ -2529,7 +2568,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-15T18:39:16+00:00",
    "summary": "Purism is crowdfunding a new version of its Librem 5 Linux smartphone, this one powered by RISC-V rather than Arm. Librem 5 v2 will use an octa-core SpacemiT K1 RISC-V SoC, replacing the quad-core ARM64 NXP CPU This platform shift will provide much better performance and longer battery life than the existing Librem 5…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6b305653f2eb",
+     "source": "Linuxiac",
+     "title": "Purism Unveils $1,599 Librem 5 V2 Linux Phone Powered by RISC-V",
+     "url": "https://linuxiac.com/purism-unveils-1599-librem-5-v2-linux-phone-powered-by-risc-v/"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Hardware",
@@ -5018,6 +5064,21 @@
    "topics": [
     "AI",
     "Databases"
+   ]
+  },
+  {
+   "id": "305bdf9463e2",
+   "title": "DSA-6631-1 freedombox - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00551.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-15T00:00:00+00:00",
+   "summary": "It was discovered that FreedomBox, a privacy-oriented home server, was susceptible to privilege escalation. https://security-tracker.debian.org/tracker/DSA-6631-1",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Pen testing & red team"
    ]
   },
   {
