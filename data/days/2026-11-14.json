@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "generated": "2026-11-15T01:15:55+00:00",
+ "generated": "2026-11-15T01:30:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 33,
+   "recent": 33,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Core Infrastructure and Security Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 84,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -2225,7 +2225,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2399,6 +2399,28 @@
   }
  ],
  "items": [
+  {
+   "id": "199e6c4132e5",
+   "title": "CVE-2026-129354: A flaw has been found in D-Link DIR-600L 2.17b02.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129354",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-15T01:18:03.043000+00:00",
+   "summary": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-129354",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129354",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "7dad05e2f198",
    "title": "Bitcoin Plummets 24% in 46 Days as Crypto Falls on Rising Inflation",
