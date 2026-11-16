@@ -1,12 +1,12 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T11:15:59+00:00",
+ "generated": "2026-11-16T11:30:56+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 13,
+   "recent": 13,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 7,
+   "recent": 9,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -1470,7 +1470,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -2400,6 +2400,83 @@
  ],
  "items": [
   {
+   "id": "fc1dd664850f",
+   "title": "GCC 17 Might Land Native AArch64 Darwin/macOS Support",
+   "url": "https://www.phoronix.com/news/GCC-Native-AArch64-Darwin-Patch",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-16T11:25:16+00:00",
+   "summary": "After being in development since the GCC 10 days (2020) and already patched in the GCC compiler builds for Homebrew and MacPorts, the upstream GCC 17 compiler might finally land native AArch64 Darwin support for benefiting macOS with Apple Silicon...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "5a88737243b4",
+   "title": "Programming a language",
+   "url": "https://nrinaudo.github.io/articles/pl.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-16T11:24:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "3a400bfe52a4",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "url": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-16T11:15:48+00:00",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-114713",
+     "score": 8.6,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "mitre"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-114713",
+      "added": "2026-11-13",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-114713",
+     "score": 0.00508,
+     "percentile": 0.43875,
+     "date": "2026-11-15"
+    }
+   }
+  },
+  {
+   "id": "4b25c29524b3",
+   "title": "Grab a DDR5 gaming PC with a 10GB GPU for only $949",
+   "url": "https://www.tomshardware.com/desktops/gaming-pcs/grab-a-ddr5-gaming-pc-with-a-10gb-gpu-for-only-usd949-ibuypowers-slate-gaming-rig-features-an-intel-b570-graphics-card-and-16gb-of-ram",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-16T11:15:25+00:00",
+   "summary": "Save $250 on a brand-new iBuypower Slate gaming PC in this Best Buy deal.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "4fea9836b5d9",
    "title": "Google AI Studio lead gets Windows 11 running on the iPhone Duo with help from Gemini 4",
    "url": "https://www.neowin.net/news/google-ai-studio-lead-gets-windows-11-running-on-the-iphone-duo-with-help-from-gemini-4/?utm_source=rss",
@@ -2411,6 +2488,19 @@
    "topics": [
     "Microsoft & Windows",
     "AI"
+   ]
+  },
+  {
+   "id": "7c9719d3d4fe",
+   "title": "Modern NTFS Driver Gaining O_TMPFILE Support With Linux 7.5",
+   "url": "https://www.phoronix.com/news/Linux-7.5-NTFS-TMPFILE",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-16T11:13:08+00:00",
+   "summary": "The modern NTFS Linux driver that was introduced with the \"NTFS Resurrection\" back in Linux 7.2 continues seeing new features enabled and other improvements made to this open-source NTFS read/write kernel driver. For the upcoming Linux 7.5 kernel cycle, O_TMPFILE support is being queued for temporary file handling...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -3277,6 +3367,19 @@
    ]
   },
   {
+   "id": "a1debf9bb79a",
+   "title": "It's always DNS, so why are we running our own?",
+   "url": "https://s2.dev/blog/dns-server",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T09:19:38+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "606e3c3feced",
    "title": "Israel’s Defense Ministry turns to startups to build the next generation of weapons",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HT1dDTDNQOHdDNzk4ZW4yckNUaFI0X0FuZFg1eGpGZE5sSkxBbV82SG5vRV9NaE1yNXJDSzNKR3FzMW1TcTB1Y09NT2dQSThmNWxTNmJtU1BtcnNYbkg1OWhtOFJUbmty?oc=5",
@@ -3736,7 +3839,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-16T08:46:01+00:00",
    "summary": "Shortly after European supermarkets encountered cyberattacks that disrupted its freezers, an Australian retailer also encountered a security incident. However, the firm provided very little details.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3db25f931add",
+     "source": "BleepingComputer",
+     "title": "Australian retail giant Coles investigates cybersecurity incident",
+     "url": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -4157,6 +4267,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "AI"
+   ]
+  },
+  {
+   "id": "43916558be0e",
+   "title": "Winudf – DVD / BluRay driver for DOS, Windows 1.x – 3x / 95 / 98 / ME",
+   "url": "https://github.com/ages2001/WINUDF",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T08:00:13+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -5087,7 +5210,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T05:01:07+00:00",
    "summary": "Europe is doubling down on defence and resilience, and now one of the earliest investors in Europe to back startups building for those goals is doubling down, too.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5004265c06b4",
+     "source": "Techmeme",
+     "title": "London-based Plural raised a €1B fund to back European startups, one of only a handful of European VCs that raised €1B+ in one go, planning to back 30+ startups (Financial Times)",
+     "url": "https://www.techmeme.com/261116/p14#a261116p14"
+    }
+   ],
    "topics": [
     "General IT"
    ]
