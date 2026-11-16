@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T10:15:53+00:00",
+ "generated": "2026-11-16T10:31:15+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -702,7 +702,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1224,7 +1224,7 @@
   {
    "source": "Octopus Deploy Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1620,13 +1620,13 @@
   {
    "source": "Joho no Todai (English)",
    "fetched": 20,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 18,
+   "recent": 20,
    "error": null
   },
   {
@@ -2292,7 +2292,7 @@
   {
    "source": "n8n blog",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,60 @@
   }
  ],
  "items": [
+  {
+   "id": "fc0e2187009d",
+   "title": "Check Point finds ransomware at record levels as n0n rises into top three and high-risk GenAI prompts increase",
+   "url": "https://industrialcyber.co/ransomware/check-point-finds-ransomware-at-record-levels-as-n0n-rises-into-top-three-and-high-risk-genai-prompts-increase/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-16T10:26:44+00:00",
+   "summary": "New data from Check Point Research disclosed a record 1,063 ransomware attacks in October this year, marking a...",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI"
+   ]
+  },
+  {
+   "id": "8e46922ad0ca",
+   "title": "Marlink urges energy operators to strengthen connectivity resilience across offshore and remote assets",
+   "url": "https://industrialcyber.co/utilities-energy-power-water-waste/marlink-urges-energy-operators-to-strengthen-connectivity-resilience-across-offshore-and-remote-assets/",
+   "source": "Industrial Cyber",
+   "source_category": "ICS / OT",
+   "published": "2026-11-16T10:24:26+00:00",
+   "summary": "New analysis from Marlink highlighted network resilience as a critical requirement for energy operations, warning that connectivity disruptions...",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "27b657b69ea6",
+   "title": "AI made integrations the vendor’s problem",
+   "url": "https://blog.n8n.io/ai-made-integrations-the-vendors-problem/",
+   "source": "n8n blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-16T10:17:32+00:00",
+   "summary": "In the second iteration of the AI Agent Development Tools report , I replaced the integrability axis with enterprise-readiness. I wanted this to signify the departure from 2020-style IPaaS. With MCP getting traction to the point where every vendor offers an MCP server, I said the integration burden now",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "5e1ed9dedf1d",
+   "title": "ConnectWise ScreenConnect: Attackers install malware through RMM+ extension",
+   "url": "https://www.heise.de/en/news/ConnectWise-ScreenConnect-Attackers-install-malware-through-RMM-extension-11526194.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T10:17:00+00:00",
+   "summary": "IT researchers have observed attacks exploiting a vulnerability in ConnectWise ScreenConnect. Attackers are using it to install malware.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ]
+  },
   {
    "id": "1e8dc65c627f",
    "title": "Omaxian takes the Omarchy look down a different Linux backstreet",
@@ -2658,6 +2712,22 @@
    ]
   },
   {
+   "id": "ab141f2f3d91",
+   "title": "ARTEX: How Cybercriminals Use AI Agents to Scale Their Attacks",
+   "url": "https://securityaffairs.com/203188/ai/artex-how-cybercriminals-use-ai-agents-to-scale-their-attacks.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-16T09:55:32+00:00",
+   "summary": "Amazon spotted AI agents running on ARTEX steal AI credentials and test deepfake ID bypasses. Amazon’s threat intelligence team published findings on criminals running offensive campaigns with ARTEX, an open-source agentic AI penetration testing framework.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI",
+    "Pen testing & red team",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "15132bb23f0f",
    "title": "Microsoft Intune Adds 10 New Protected Apps for iOS and Android",
    "url": "https://www.anoopcnair.com/intune-adds-10-new-protected-apps-for-ios-and/",
@@ -2776,6 +2846,21 @@
     "Vulnerabilities & patches",
     "Linux & open source",
     "System administration"
+   ]
+  },
+  {
+   "id": "32b076595ed2",
+   "title": "Run AI Agents in TeamCity",
+   "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-16T09:28:51+00:00",
+   "summary": "AI coding agents don’t have to run only on a developer’s machine. You can also make them part of your CI/CD workflows to review code, investigate failed builds, update documentation, or handle other repository tasks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "DevOps & SRE"
    ]
   },
   {
@@ -2990,7 +3075,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T09:01:06+00:00",
    "summary": "The ban comes after the October 23 attack on a church in the southern Karak governorate that killed nine people and wounded dozens of others.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d5c310a65d32",
+     "source": "heise online (English)",
+     "title": "After terror attack, Jordan blocks Telegram",
+     "url": "https://www.heise.de/en/news/After-terror-attack-Jordan-blocks-Telegram-11526074.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -4738,6 +4830,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "5dfc46d85f2d",
+   "title": "For platform teams, the challenge is the way",
+   "url": "https://octopus.com/blog/platform-challenge-is-the-way",
+   "source": "Octopus Deploy Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-16T00:00:00+00:00",
+   "summary": "Find out why some Platform Engineering obstacles highlight dysfunction, while others tell us where the valuable work is.",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE"
    ]
   },
   {
