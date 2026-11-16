@@ -1,12 +1,12 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T08:21:31+00:00",
+ "generated": "2026-11-16T08:37:19+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 15,
-   "recent": 15,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -180,7 +180,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -804,7 +804,7 @@
   {
    "source": "Patch My PC",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1056,7 +1056,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1350,7 +1350,7 @@
   {
    "source": "Qualys Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,103 @@
   }
  ],
  "items": [
+  {
+   "id": "a556dce4be7f",
+   "title": "The Return of the Maintenance Window",
+   "url": "https://patchmypc.com/blog/the-return-of-the-maintenance-window/?utm_term=rss",
+   "source": "Patch My PC",
+   "source_category": "Endpoint management",
+   "published": "2026-11-16T08:31:18+00:00",
+   "summary": "Maintenance Windows are finally back in Microsoft Intune! After previously appearing and disappearing, Microsoft has officially announced their return. Let's look at what has changed, how you can schedule Windows and driver updates, and what the new configuration experience could look like.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Endpoint management"
+   ]
+  },
+  {
+   "id": "6b04ea2e49e4",
+   "title": "you won't win at copyright",
+   "url": "https://ingrids.space/posts/you-wont-win-at-copyright/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-16T08:30:13+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7e3c2db368ac",
+   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-16T08:26:52+00:00",
+   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "44cc4fe43fce",
+   "title": "The Hidden Cost of Identity Technical Debt",
+   "url": "https://blog.qualys.com/product-tech/2026/11/16/identity-technical-debt-hidden-costs-and-fixes",
+   "source": "Qualys Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-16T08:25:34+00:00",
+   "summary": "Key Takeaways Identity technical debt is the accumulated security, governance, and operational burden created by unmanaged identities, excessive permissions, outdated access, and fragmented controls.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1e58b5bb0c0b",
+   "title": "AI-written patches are becoming attack maps for hackers",
+   "url": "https://www.csoonline.com/article/4248687/ai-written-patches-are-becoming-attack-maps-for-hackers.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-16T08:25:00+00:00",
+   "summary": "This summer, the maintainers of vm2, an open-source JavaScript sandboxing library with 1 million downloads per week, shipped fixes for 34 separate sandbox-escape vulnerabilities and Anthropic’s Claude co-wrote 19 of them.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "c9e35689c04d",
+   "title": "Windows 11 setup reportedly stalls on IPv6-only networks despite internet access",
+   "url": "https://4sysops.com/archives/windows-11-setup-reportedly-stalls-on-ipv6-only-networks-despite-internet-access/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-16T08:21:13+00:00",
+   "summary": "Windows 11’s initial setup can reportedly stop on an IPv6-only network even when the PC has internet access. Tester Bob Pony reproduced the problem during the out-of-box experience (OOBE), including on a recent Insider build. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Networking"
+   ]
+  },
+  {
+   "id": "af537dfa82f1",
+   "title": "AWS breaks ground on $7bn data center in Indiana",
+   "url": "https://www.datacenterdynamics.com/en/news/aws-breaks-ground-on-7bn-data-center-in-indiana/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-16T08:20:26+00:00",
+   "summary": "Also purchases land in Chantilly, Virginia, for data center",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
   {
    "id": "945e75ee0338",
    "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
@@ -3062,7 +3159,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T06:04:02+00:00",
    "summary": "Version 4.0 of Redmond’s cloudy OS is free to use in its cloud. Repeat. Free to use",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "91f961ec659d",
+     "source": "4sysops",
+     "title": "Microsoft Azure Linux 4.0 targets mainstream workloads without an OS license fee",
+     "url": "https://4sysops.com/archives/microsoft-azure-linux-4-0-targets-mainstream-workloads-without-an-os-license-fee/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Linux & open source",
