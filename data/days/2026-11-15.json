@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "generated": "2026-11-16T03:46:28+00:00",
+ "generated": "2026-11-16T04:00:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -157,12 +157,12 @@
    "source": "NVD new CVEs",
    "fetched": 0,
    "recent": 0,
-   "error": "IncompleteRead: IncompleteRead(97909 bytes read, 252026 more expected)"
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -173,9 +173,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 87,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1134,7 +1134,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1470,7 +1470,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 86,
+   "fetched": 85,
    "recent": 17,
    "error": null
   },
@@ -2034,7 +2034,7 @@
   {
    "source": "Akamai status",
    "fetched": 24,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2399,6 +2399,46 @@
   }
  ],
  "items": [
+  {
+   "id": "f33535479651",
+   "title": "Application Load Balancer reporting availability issues",
+   "url": "https://www.akamaistatus.com/incidents/b911nmqjbdwk",
+   "source": "Akamai status",
+   "source_category": "Cloud status",
+   "published": "2026-11-16T03:49:00+00:00",
+   "summary": "Nov 16 , 03:49 UTC Investigating - We are investigating an issue with Application Load Balancer (ALB) reporting related to availability with errors. We are actively investigating the issue and will provide another update within the next 60 minutes.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud status",
+    "Networking"
+   ]
+  },
+  {
+   "id": "61d5750504eb",
+   "title": "AI-Generated Books Confront Publishing Industry With Big Questions",
+   "url": "https://news.slashdot.org/story/26/11/16/0342245/ai-generated-books-confront-publishing-industry-with-big-questions?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-16T03:45:00+00:00",
+   "summary": "Romance novelist Coral Hart publishes her own romance novels for the Kindle, and found a kind of superpowere when she realized \"the algorithm favours those who can produce a new book at least once a month,\" reports The Guardian: Hart says she knows of authors who hire more than a dozen ghostwriters to keep pace.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "48368d91ebbc",
+   "title": "Alibaba says Qwen4-Max, which isn't open weight, beats Fable 5.1 and Kimi K3.1 Pro in coding benchmarks, and plans to release weights for smaller Qwen4 models (Luz Ding/Bloomberg)",
+   "url": "https://www.techmeme.com/261115/p26#a261115p26",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T03:45:00+00:00",
+   "summary": "Luz Ding / Bloomberg : Alibaba says Qwen4-Max, which isn't open weight, beats Fable 5.1 and Kimi K3.1 Pro in coding benchmarks, and plans to release weights for smaller Qwen4 models — Alibaba Group Holding Ltd.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
   {
    "id": "55fc211b9282",
    "title": "Alibaba releases Qwen4-Max, its new flagship 2.4T-parameter MoE model with a 1M-token context window, saying it beats Qwen3.8-Max with up to ~50% fewer tokens (Qwen)",
@@ -3286,7 +3326,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-15T22:44:46+00:00",
    "summary": "Catch up on the latest Linux news: RHEL 10.3, Wine 11.22, Blender 5.3, KDE Plasma 6.8.3, Firefox 160, Manjaro moves toward independent community governance, and more.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5d9a74b1b1b1",
+     "source": "9to5Linux",
+     "title": "9to5Linux Weekly Roundup: November 15th, 2026",
+     "url": "https://9to5linux.com/9to5linux-weekly-roundup-november-15th-2026"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "System administration"
@@ -3539,6 +3586,19 @@
    "source_category": "Development",
    "published": "2026-11-15T21:10:39+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b2ecf40f1bd5",
+   "title": "How sensitive data from Centrelink and other Australian agencies may have been fed to Palantir software",
+   "url": "https://www.theguardian.com/technology/2026/nov/16/personal-data-centrelink-ato-ndis-palantir",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-15T21:06:03+00:00",
+   "summary": "Exclusive: Personal information of Centrelink clients and childcare workers is among data shared with ACIC, which uses US tech company’s software The personal information of Centrelink customers, taxpayers and childcare workers is among a trove of sensitive data that may be ending up in Palantir’s surveillance…",
    "also_covered_by": [],
    "topics": [
     "General IT"
