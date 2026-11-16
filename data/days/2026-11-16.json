@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T09:01:08+00:00",
+ "generated": "2026-11-16T09:16:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 10,
-   "recent": 6,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
   },
   {
    "source": "SANS ISC",
@@ -84,7 +84,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 4,
+   "recent": 6,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -552,7 +552,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -612,7 +612,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1056,7 +1056,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1626,13 +1626,13 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 11,
+   "recent": 16,
    "error": null
   },
   {
    "source": "Le Monde in English (Pixels)",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2178,7 +2178,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2400,6 +2400,103 @@
  ],
  "items": [
   {
+   "id": "6aef44b82c29",
+   "title": "Kernel prepatch 7.4-rc3",
+   "url": "https://lwn.net/Articles/1107606/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-16T09:07:45+00:00",
+   "summary": "The 7.4-rc3 kernel prepatch is out for testing. Linus declared: \" It looks fairly normal, with drivers (networking and gpu) leading the charge. There's lots and lots of changes, but most of the actual patches are tiny. \"",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Hardware",
+    "Networking"
+   ]
+  },
+  {
+   "id": "7517afcce300",
+   "title": "Gitea 28.4 Patches Multiple Security Vulnerabilities",
+   "url": "https://linuxiac.com/gitea-28-4-patches-multiple-security-vulnerabilities/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-16T09:04:57+00:00",
+   "summary": "Gitea 28.4 addresses security vulnerabilities involving remote code execution, password hash exposure, authentication, and repository permissions.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "5798f01a278f",
+   "title": "EVs: Nearly 220,000 charging points in Germany",
+   "url": "https://www.heise.de/en/news/EVs-Nearly-220-000-charging-points-in-Germany-11525866.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:04:00+00:00",
+   "summary": "The charging network continues to expand. Nearly 58,000 of about 220,000 charging points use direct current — and are therefore considered fast chargers.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "ab7eae6f0bb2",
+   "title": "Back to the future: YouTuber builds a miniature levitating hoverboard",
+   "url": "https://www.heise.de/en/news/Back-to-the-future-YouTuber-builds-a-miniature-levitating-hoverboard-11525851.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:03:00+00:00",
+   "summary": "YouTuber Jake Rogers wants to build the levitating hoverboard from “Back to the Future Part II”. A scaled-down prototype already works in principle.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "47666fe1a5a2",
+   "title": "Free live webinar: Take your PowerShell automation beyond DIY",
+   "url": "https://4sysops.com/archives/free-live-webinar-take-your-powershell-automation-beyond-diy/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-16T09:02:14+00:00",
+   "summary": "When PowerShell scripts and scheduled tasks multiply, is DIY automation still enough? Source",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "3d42ae5acaf5",
+   "title": "Startups unveil plans to develop floating offshore data centers to bypass land and power constraints, while experts warn of challenges like saltwater corrosion (Jackie Snow/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261116/p8#a261116p8",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:01:35+00:00",
+   "summary": "Jackie Snow / Wall Street Journal : Startups unveil plans to develop floating offshore data centers to bypass land and power constraints, while experts warn of challenges like saltwater corrosion — Announcements of floating data-center projects are growing, as more startups try to prove the concept is viable",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8ae5db504935",
+   "title": "Jordan bans Telegram app over 'radicalization' claims",
+   "url": "https://www.lemonde.fr/en/international/article/2026/11/16/jordan-bans-telegram-app-over-radicalization-claims_6781975_4.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:01:06+00:00",
+   "summary": "The ban comes after the October 23 attack on a church in the southern Karak governorate that killed nine people and wounded dozens of others.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "2689f3dff7a6",
    "title": "Follow The Grid With An Arduino Uno",
    "url": "https://hackaday.com/2026/11/16/follow-the-grid-with-an-arduino-uno/",
@@ -2410,6 +2507,172 @@
    "also_covered_by": [],
    "topics": [
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "ef8581de8903",
+   "title": "How AI is warping both developers and developer tools",
+   "url": "https://www.infoworld.com/article/4247952/how-ai-is-warping-both-developers-and-developer-tools.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "By now you’ve no doubt heard of the ArtCraft software collection , where a group of developers used AI-powered software development tools to build feature-exact clones of the Adobe Creative Suite — and the Microsoft Office suite, and the AutoDesk CAD applications, and the list goes on.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "646a73dc4941",
+   "title": "How AI agents are changing the rules of software governance",
+   "url": "https://www.infoworld.com/article/4248100/how-ai-agents-are-changing-the-rules-of-software-governance.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "The conversation around AI governance is already happening. Organizations have spent the past few years accelerating AI adoption across software development. Now they face a different problem. AI systems can act faster than the organizations responsible for them can understand or govern what is happening.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "e1234559aa6c",
+   "title": "Getting started with AG-UI — the agent-user interaction protocol",
+   "url": "https://www.infoworld.com/article/4248550/getting-started-with-ag-ui-the-agent-user-interaction-protocol.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "While AI agents, which can perform long-running work autonomously, have supplanted simple chats for serious work with large (and small) language models, agents have a last-mile problem: How do you display what an agent is doing in front of a user and let the user act on it, without forcing every team to build its own…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a5a592ce08a6",
+   "title": "Uno Platform 7.0 Adds WebGPU Backend, Apple TV and Reactor Support, and Retires Native Rendering",
+   "url": "https://www.infoq.com/news/2026/11/Uno-Platform-6-7-targets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "Uno Platform 7.0 unifies rendering on SkiaSharp 4 with an opt-in WebGPU backend, adds Apple TV as a target and supports .NET 11 from day zero. It also runs third-party .NET MAUI controls and Microsoft.UI.Reactor on all targets, and removes native rendering and Mac Catalyst. By Edin Kapić",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
+   "id": "411a0048203a",
+   "title": "Alpine Linux Users Urged to Patch OpenSSH Authentication Flaw",
+   "url": "https://www.infoq.com/news/2026/11/alpine-linux-openssh-sshhole/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "A recently disclosed vulnerability in OpenSSH lets an unauthenticated attacker log into accounts that should have no usable password. The issue, named *sshole and tracked as CVE-2026-123158, affects Linux systems running OpenSSH with the musl C library and which don't use PAM.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-123158",
+     "score": 8.1,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "mitre"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-123158",
+      "added": "2026-11-09",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-123158",
+     "score": 0.189,
+     "percentile": 0.97341,
+     "date": "2026-11-15"
+    }
+   }
+  },
+  {
+   "id": "c305dd34fd37",
+   "title": "Your AI is smarter. Is your business still working the same way?",
+   "url": "https://www.cio.com/article/4248443/your-ai-is-smarter-is-your-business-still-working-the-same-way.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "AI is getting smarter at remarkable speed. Employees can draft, analyze, search and automate routine work faster than they could a year ago. Recent research on the state of AI shows organizations continuing to expand adoption across functions and use cases.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "b3392a7a9640",
+   "title": "The benign true positive: When trusted AI agents look like attackers",
+   "url": "https://www.csoonline.com/article/4248451/the-benign-true-positive-when-trusted-ai-agents-look-like-attackers.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "A coding agent opens hundreds of files, launches command-line tools and connects to an internal service to complete a task. A support agent authenticates to several systems, retrieves customer records and updates another application.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "6cbe9ae57dd2",
+   "title": "Microsoft cloud outage leaves 15 injured at Phantasialand",
+   "url": "https://www.heise.de/en/news/Microsoft-cloud-outage-leaves-15-injured-at-Phantasialand-11525764.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "An alarm system went off at Phantasialand Brühl, but its emails never arrived because of the Microsoft outage. Fifteen people were injured.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "6e619acc8030",
+   "title": "Commentary: What do we need M365 for again?",
+   "url": "https://www.heise.de/en/opinion/Commentary-What-do-we-need-M365-for-again-11525720.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "The global outage of Microsoft’s cloud highlights the risks of centralization once again. It’s time to ask some fundamental questions, Volker Briegleb writes.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "87cf9dbbd636",
+   "title": "After stock drop, Intel faces class-action suit over misleading statements",
+   "url": "https://www.heise.de/en/news/After-stock-drop-Intel-faces-class-action-suit-over-misleading-statements-11525736.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T08:59:00+00:00",
+   "summary": "Intel’s latest results were unexpectedly poor, sending shares down nearly 29%. Shareholders have now filed a class-action lawsuit.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
    ]
   },
   {
@@ -2638,6 +2901,20 @@
     "Linux & open source",
     "Hardware",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c672abc5ec2e",
+   "title": "Building a VCF 9.1 Installer Depot Offline, without a Download Token",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/16/building-a-vcf-9-1-installer-depot-offline-without-a-download-token/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-16T08:33:04+00:00",
+   "summary": "In 9.1, the VCF Download Tool (VCFDT) needs an activation code tied to an entitled site. A username and password don’t work in 9.x. If you’re a Broadcom partner or an employee, your portal login can usually download individual files from the Broadcom Support Portal, but it often can’t generate an activation code.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Identity & access"
    ]
   },
   {
