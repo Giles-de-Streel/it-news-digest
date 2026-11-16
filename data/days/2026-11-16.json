@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T13:15:53+00:00",
+ "generated": "2026-11-16T13:30:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -54,13 +54,13 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 16,
-   "recent": 16,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -582,7 +582,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -857,9 +857,9 @@
   },
   {
    "source": "Google Cloud Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
   },
   {
    "source": "Okta Security",
@@ -1452,7 +1452,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1602,7 +1602,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 25,
+   "recent": 34,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 48,
-   "recent": 8,
+   "fetched": 49,
+   "recent": 9,
    "error": null
   },
   {
@@ -1872,7 +1872,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2400,6 +2400,193 @@
  ],
  "items": [
   {
+   "id": "b2ab2e4705a7",
+   "title": "Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment",
+   "url": "https://www.tenable.com/blog/tenable-one-adversary-view-claude-mythos-break-attack-paths",
+   "source": "Tenable Blog",
+   "source_category": "Security",
+   "published": "2026-11-16T13:30:00+00:00",
+   "summary": "Tenable One Adversary View is now generally available. Powered by Claude Mythos, it reads your scan data like an attacker would and tells you what to fix first. Key takeaways Adversary View is generally available. Tenable One customers with Tenable Hexa AI can run it today, with nothing new to deploy.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "db60829f1aaa",
+   "title": "The Jensen Huang saga could be the beginning of the end of the AI bubble – or just a boon for competitors",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/16/the-jensen-huang-saga-could-be-the-beginning-of-the-end-of-the-ai-bubble-or-just-a-boon-for-competitors/5309856",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:30:00+00:00",
+   "summary": "There could be no greater irony than if the misdeeds of one of AI's biggest names brought the whole house of cards crashing down",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a0338a2d9b1c",
+   "title": "\"Gamers don't hate ads; they hate bad ads\" – Why EA and Xbox are putting adverts in their games",
+   "url": "https://www.gamesindustry.biz/gamers-dont-hate-ads-they-hate-bad-ads-why-ea-and-xbox-are-putting-adverts-in-their-games",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-16T13:30:00+00:00",
+   "summary": "Once again, game companies are putting more adverts into PC and console titles.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "fc0a69c2d53d",
+   "title": "Industry headwinds won't slow AI infrastructure buildout",
+   "url": "https://www.semafor.com/article/11/16/2026/industry-headwinds-wont-slow-ai-infrastructure-buildout-ceo-says",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:26:01+00:00",
+   "summary": "The remarks by the head of Acwa came as Samsung indicated that it wanted to deepen its involvement in the AI sector by constructing data centers.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "08174bb16f6d",
+   "title": "Off to Hogwarts: 25 years of “Harry Potter” on film",
+   "url": "https://www.heise.de/en/news/Off-to-Hogwarts-25-years-of-Harry-Potter-on-film-11526567.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:24:00+00:00",
+   "summary": "In November 2001, “Harry Potter and the Sorcerer’s Stone” hits theaters. In Germany, it becomes the top-grossing film in 50 years, behind only “Titanic”.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "00c7060e43e7",
+   "title": "“Uh-oh!”: ICQ turns 30",
+   "url": "https://www.heise.de/en/news/Uh-oh-ICQ-turns-30-11526521.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:20:00+00:00",
+   "summary": "Uh-oh! The first popular instant messenger would have celebrated its 30th birthday on Nov. 15. A look back at ICQ’s beginnings and end.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1aef75905528",
+   "title": "BundID hit by mass attacks, locking users out",
+   "url": "https://www.heise.de/en/news/BundID-hit-by-mass-attacks-locking-users-out-11526485.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:19:00+00:00",
+   "summary": "After a surge in reports that BundID accounts were locked following failed login attempts, Germany’s Federal Office for Information Security confirms attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9f27becbbdd3",
+   "title": "Apple studies health AI with a doctor chatbot",
+   "url": "https://www.heise.de/en/news/Apple-studies-health-AI-with-a-doctor-chatbot-11526474.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:18:00+00:00",
+   "summary": "In the U.S., iPhone users can share body data and chat about health topics in an Apple AI app. Apple is exploring the genre.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "2b043f8fc7a2",
+   "title": "Memory crunch: Companies keep hardware longer and delay purchases",
+   "url": "https://www.heise.de/en/news/Memory-crunch-Companies-keep-hardware-longer-and-delay-purchases-11526437.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:17:00+00:00",
+   "summary": "Many German companies are feeling the effects of sharply higher memory prices, a Bitkom survey says. Some are keeping hardware longer.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c1c7e3ba3177",
+   "title": "“Wolfenstein 3” is official: Xbox announces sequel after nine years",
+   "url": "https://www.heise.de/en/news/Wolfenstein-3-is-official-Xbox-announces-sequel-after-nine-years-11526425.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:16:00+00:00",
+   "summary": "Bethesda and Xbox announce a new “Wolfenstein” game. It’s unclear which platforms the shooter will come to.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "611c6fd9a527",
+   "title": "funkycache: a Python library to cache functions in SQLite",
+   "url": "https://alexwlchan.net/2026/funkycache/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-16T13:15:54+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Databases"
+   ]
+  },
+  {
+   "id": "c624f3d7492c",
+   "title": "JIM study: Messaging leads as social media use turns passive",
+   "url": "https://www.heise.de/en/background/JIM-study-Messaging-leads-as-social-media-use-turns-passive-11526407.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:15:00+00:00",
+   "summary": "The 2026 JIM study finds teens post less and use AI chatbots more. Younger users are more likely than older ones to accept AI answers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "c01ce49d3f9c",
+   "title": "AI finds zero-day flaws for just $4 now – even mediocre hackers can cash in",
+   "url": "https://www.zdnet.com/innovation/ai-finds-zero-day-security-flaws-for-cheap-hackers/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:14:25+00:00",
+   "summary": "Rapidly advancing AI models are making it cheaper and easier to uncover critical vulnerabilities, but it’s a double-edged sword – and a gift to hackers.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "11e93ba8d814",
+   "title": "Manjaro Linux project becomes registered association",
+   "url": "https://www.heise.de/en/news/Manjaro-Linux-project-becomes-registered-association-11526381.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:13:00+00:00",
+   "summary": "The Manjaro project is now officially a registered association. The restructuring is intended to restore trust and bring in more support.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Backup & recovery"
+   ]
+  },
+  {
    "id": "530386716574",
    "title": "Know the Moment Your VCF Platform Changes: Alerting on New Services Runtime Nodes",
    "url": "https://blogs.vmware.com/cloud-foundation/2026/11/16/know-the-moment-your-vcf-platform-changes-alerting-on-new-services-runtime-nodes/",
@@ -2411,6 +2598,22 @@
    "topics": [
     "Cloud & infrastructure",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "e9073e7d24e0",
+   "title": "AI chips could push data centers to the limit: 1,000 kW per rack",
+   "url": "https://www.heise.de/en/news/AI-chips-could-push-data-centers-to-the-limit-1-000-kW-per-rack-11526339.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:12:00+00:00",
+   "summary": "Modern processors generate so much heat that water must flow over chips, while 800-volt power networks emerge. Politicians debate efficiency rules.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Networking"
    ]
   },
   {
@@ -2484,6 +2687,19 @@
    "source_category": "IT industry",
    "published": "2026-11-16T13:10:00+00:00",
    "summary": "After 19 uncrewed flights, Chinese aircraft maker Comac’s CE-25A electric aircraft took off with three people on board for the first time.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "56309863115c",
+   "title": "The Download: testing tech promises and searching for cognitive immortality",
+   "url": "https://www.technologyreview.com/2026/11/16/1148599/the-download-testing-tech-promises-cognitive-immortality-quest/",
+   "source": "MIT Technology Review",
+   "source_category": "IT industry",
+   "published": "2026-11-16T13:10:00+00:00",
+   "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Are we there yet? Six technologies that promised to change the world How do you measure progress towards the future?",
    "also_covered_by": [],
    "topics": [
     "General IT"
