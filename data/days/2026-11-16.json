@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T18:31:00+00:00",
+ "generated": "2026-11-16T18:45:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 36,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -984,7 +984,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1176,7 +1176,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1332,7 +1332,7 @@
   {
    "source": "CrowdStrike Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1391,8 +1391,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 44,
-   "recent": 0,
+   "fetched": 45,
+   "recent": 1,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
@@ -1740,7 +1740,7 @@
   {
    "source": "Google Blog",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 48,
-   "recent": 12,
+   "fetched": 49,
+   "recent": 13,
    "error": null
   },
   {
@@ -1841,8 +1841,8 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 2,
-   "recent": 1,
+   "fetched": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
+   "fetched": 90,
    "recent": 28,
    "error": null
   },
@@ -1872,7 +1872,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2400,6 +2400,85 @@
  ],
  "items": [
   {
+   "id": "139322571358",
+   "title": "OpenAI doubles free ChatGPT access to 200,000 scientists, but there's a catch",
+   "url": "https://www.neowin.net/news/openai-doubles-free-chatgpt-access-to-200000-scientists-but-theres-a-catch/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-16T18:38:01+00:00",
+   "summary": "OpenAI is expanding its ChatGPT for Academic Researchers initiative to reach 200,000 scientists, mathematicians, and engineers worldwide, but with a catch.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "7b2da8321dd4",
+   "title": "Shigeru Miyamoto to receive inaugural Legend Award at the 30th DICE Awards",
+   "url": "https://www.gamesindustry.biz/shigeru-miyamoto-to-receive-inaugural-legend-award-at-the-30th-dice-awards",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-16T18:37:20+00:00",
+   "summary": "Nintendo's Shigeru Miyamoto will be the first recipient of the Academy of Interactive Arts & Sciences' new Legend Award.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "70ac10a9c6c6",
+   "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-16T18:37:04+00:00",
+   "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Development",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-129266",
+     "score": 8.7,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "bde1d65777cb",
+   "title": "Weaponized ARTEX Pen Testing Framework Used in Attacks on Healthcare Orgs",
+   "url": "https://www.hipaajournal.com/weaponized-artex-pen-testing-framework-attacks-healthcare/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-16T18:32:37+00:00",
+   "summary": "Threat actors are using a weaponized version of the ARTEX open source penetration testing tool to attack organizations in a […]",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Linux & open source",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "4f9e47450f76",
+   "title": "Four Seasons CEO says 2026 will be the best year on record",
+   "url": "https://www.semafor.com/article/11/16/2026/four-seasons-ceo-says-2026-will-be-the-best-year-on-record",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-16T18:30:32+00:00",
+   "summary": "Alejandro Reynal said the company has ‘experienced a lot of tailwinds’ at Semafor’s Silicon Valley & The World.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "5f59a3e292da",
    "title": "Hearing Aids on Windows 11: ReSound Enzo IA Streams From the Dell Pro 7 13 2-in-1 Over Bluetooth LE Audio",
    "url": "https://www.storagereview.com/review/hearing-aids-on-windows-11-le-audio-with-the-dell-pro-7",
@@ -2410,6 +2489,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "d86f16b537a4",
+   "title": "The era of autonomous attacks has arrived.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+   "source": "Google Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-16T18:30:00+00:00",
+   "summary": "See how bad actors are shifting to autonomous attacks and how Google AI Threat Defense uses Gemini to defend against them.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2597,6 +2689,36 @@
     "AI",
     "Development"
    ]
+  },
+  {
+   "id": "540f9921cab9",
+   "title": "USN-9064-2: Pillow regression",
+   "url": "https://ubuntu.com/security/notices/USN-9064-2",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-16T18:07:22+00:00",
+   "summary": "USN-9064-1 fixed vulnerabilities in Pillow. Unfortunately, the fix for CVE-2026-112402 introduced a regression that caused resizing images with the NEAREST filter, and resizing any \"1\" or \"P\" mode image, to fail. This update fixes the problem. We apologize for the inconvenience.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-112402",
+     "score": 8.7,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "GitHub_M"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-112402",
+     "score": 0.00594,
+     "percentile": 0.48994,
+     "date": "2026-11-16"
+    }
+   }
   },
   {
    "id": "4b4b8357bb66",
@@ -4461,6 +4583,20 @@
    ],
    "topics": [
     "Agile & delivery"
+   ]
+  },
+  {
+   "id": "3482a23ff608",
+   "title": "USN-8997-2: Net-SNMP vulnerability",
+   "url": "https://ubuntu.com/security/notices/USN-8997-2",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-16T15:28:07+00:00",
+   "summary": "USN-8997-1 fixed a vulnerability in Net-SNMP. This update provides the corresponding fix for Net-SNMP on Ubuntu 20.04 LTS, Ubuntu 18.04 LTS, Ubuntu 16.04 LTS and Ubuntu 14.04 LTS. Original advisory details: It was discovered that Net-SNMP incorrectly handled newly accepted connections in the SMUX module.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -7560,6 +7696,19 @@
    ]
   },
   {
+   "id": "20b405a9882f",
+   "title": "10 Best Help Desk Software for 2027, Compared by Use Case",
+   "url": "https://blog.invgate.com/help-desk-software",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-16T12:00:00+00:00",
+   "summary": "Help desk software brings support requests from email, chat, web forms, and other channels into one system, helping teams organize and resolve them more efficiently.",
+   "also_covered_by": [],
+   "topics": [
+    "ITSM"
+   ]
+  },
+  {
    "id": "b3ed1fd9c38d",
    "title": "Microsoft previews remote lock for lost or stolen Windows devices",
    "url": "https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/",
@@ -7750,7 +7899,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T11:42:44+00:00",
    "summary": "Chip stocks are in the red as exports face additional scrutiny",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b380dfe95e53",
+     "source": "Tom's Hardware",
+     "title": "Trump calls for Jensen Huang reinstatement as Nvidia CEO",
+     "url": "https://www.tomshardware.com/tech-industry/trump-calls-for-jensen-huang-reinstatement-as-nvidia-ceo-nvidia-board-reportedly-refuses-to-reinstate-disgraced-ceo-due-to-ongoing-national-security-investigation-into-jensen"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
