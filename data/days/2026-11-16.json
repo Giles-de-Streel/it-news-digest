@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T07:18:39+00:00",
+ "generated": "2026-11-16T07:30:48+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 15,
-   "recent": 15,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,19 @@
   }
  ],
  "items": [
+  {
+   "id": "b7c352a77a26",
+   "title": "Redo, trail volume, and apply lag by key strategy in Oracle GoldenGate: a controlled empirical study",
+   "url": "https://www.dbi-services.com/blog/redo-trail-volume-and-apply-lag-by-key-strategy-in-oracle-goldengate-a-controlled-empirical-study/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-16T07:21:00+00:00",
+   "summary": "I have written twice about what happens when a table replicated with GoldenGate has no primary key. I covered the common misconceptions about row identification and the risk of migrating tables with no primary key. Both explain why a missing key can be a real risk, but I often get asked what a missing primary…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "c19c77a204a6",
    "title": "iPhone Duo 2 rumored to have Face ID, but Apple is already facing challenges",
@@ -2908,6 +2921,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "d910a6ab4df7",
+   "title": "Did the Apollo Guidance Computer use 60% of the ICs in 1963?",
+   "url": "https://retrocomputing.stackexchange.com/questions/12158/did-the-apollo-guidance-computer-really-use-60-of-the-worlds-ics-in-1963",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T05:05:54+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "ICS / OT"
    ]
   },
   {
