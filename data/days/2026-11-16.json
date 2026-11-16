@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T11:46:16+00:00",
+ "generated": "2026-11-16T12:00:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -90,7 +90,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 13,
-   "recent": 13,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -354,7 +354,7 @@
   {
    "source": "PostgreSQL News",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -876,7 +876,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -1182,7 +1182,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 3,
+   "recent": 0,
    "error": null
   },
   {
@@ -1464,7 +1464,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1607,8 +1607,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1390,
-   "recent": 3,
+   "fetched": 1391,
+   "recent": 4,
    "error": null
   },
   {
@@ -1650,7 +1650,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1757,7 +1757,7 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 50,
+   "fetched": 48,
    "recent": 8,
    "error": null
   },
@@ -1979,8 +1979,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 11,
-   "recent": 1,
+   "fetched": 12,
+   "recent": 2,
    "error": null
   },
   {
@@ -2094,7 +2094,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2400,6 +2400,102 @@
  ],
  "items": [
   {
+   "id": "e72d3337e142",
+   "title": "Incident with Pull Requests",
+   "url": "https://www.githubstatus.com/incidents/2zfqmghmg3s3",
+   "source": "GitHub Status",
+   "source_category": "Cloud status",
+   "published": "2026-11-16T12:00:25+00:00",
+   "summary": "Nov 16 , 12:00 UTC Update - We’re investigating elevated timeouts when merging pull requests. Some users may be unable to merge pull requests successfully; timeouts are occurring at a higher rate than usual. We’re working to identify the cause and restore normal performance.",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "ec22309abd62",
+   "title": "FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX",
+   "url": "https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-16T12:00:00+00:00",
+   "summary": "The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "fbea89d702fe",
+   "title": "An interview with Rockstar executives at the company's Edinburgh HQ about GTA VI, encouraging players to avoid rampages, realism, building the game, and more (Keza MacDonald/The Guardian)",
+   "url": "https://www.techmeme.com/261116/p18#a261116p18",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T11:55:01+00:00",
+   "summary": "Keza MacDonald / The Guardian : An interview with Rockstar executives at the company's Edinburgh HQ about GTA VI, encouraging players to avoid rampages, realism, building the game, and more — The latest instalment of the epic crime saga is finally here.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "51325d7ffa61",
+   "title": "Tech startups and VC firms are hiring for \"ecosystem\" roles, like \"startup ecosystem lead\", to prioritize in-person networking and cut through AI marketing slop (Lora Kelley/New York Times)",
+   "url": "https://www.techmeme.com/261116/p17#a261116p17",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T11:50:01+00:00",
+   "summary": "Lora Kelley / New York Times : Tech startups and VC firms are hiring for “ecosystem” roles, like “startup ecosystem lead”, to prioritize in-person networking and cut through AI marketing slop — The people ushering in the artificial intelligence revolution are also doubling down on in-person relationships in their own…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "028bfbdaf780",
+   "title": "From Academic Research to Product Commercialization: How Yuxin Liu Is Tackling the Digital Accessibility Challenges Facing SMEs",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQX2hpSGtPYlhBTTVFRzAyUkU2Uk8teUhxU1pDNDNlR05VYTd4ZDVfYTNvNFJGMk9kSEZTS1FlNXdhbldDTHJ4cnlRUS1XbmVEMkFfM1daNEhHa29ReDF5YVZnZG83SUphTnFiUTZ2UG9oVmkxcU04QnJyM0VKVXNDR3NYQ0dHTVlpNnhKN1YtdFVCakdaM20yLXYzZzRyU0JTaTItUW9fWUk5WmNiWnJ0U3UweFVtcWUtaWxGVEM2bWZGeFVyTWVFZUg4NUp5S3V3amRNMkFUa1gzaDBFY1RoZWMyZWJ6Zw?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-16T11:48:34+00:00",
+   "summary": "From Academic Research to Product Commercialization: How Yuxin Liu Is Tackling the Digital Accessibility Challenges Facing SMEs TechBullion",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
+   ]
+  },
+  {
+   "id": "349134aed1b0",
+   "title": "Jensen Huang allies campaign to reinstate the former Nvidia boss",
+   "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-16T11:45:40+00:00",
+   "summary": "Tech leaders, including Elon Musk, are among those backing a campaign to \"Bring Jensen Back\".",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "df57a01d65f5",
+   "title": "Amazon's Prime Air drone service, which operates across 18 sites in 10 US states, is drawing local opposition; its Baton Rouge hub launches ~30 drones per hour (Kris Maher/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261116/p16#a261116p16",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T11:45:01+00:00",
+   "summary": "Kris Maher / Wall Street Journal : Amazon's Prime Air drone service, which operates across 18 sites in 10 US states, is drawing local opposition; its Baton Rouge hub launches ~30 drones per hour — Aerial package drops draw plenty of gawkers, but some say they're destroying the neighborhood",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "d0652b504600",
    "title": "Enterprises to pay up to 20% more for Microsoft cloud services in some countries",
    "url": "https://www.computerworld.com/article/4248407/enterprises-to-pay-up-to-20-more-for-microsoft-cloud-services-in-some-countries.html",
@@ -2407,7 +2503,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T11:44:02+00:00",
    "summary": "Microsoft is slated to raise commercial cloud prices in several markets, with customers in India and New Zealand facing the steepest price hikes. The changes, which are set to take effect from January 1, 2027, will increase commercial cloud prices by 15.7% in India and 10% in New Zealand, the company wrote in a blog…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d39ac9f5fcd2",
+     "source": "Network World",
+     "title": "Enterprises to pay up to 20% more for Microsoft cloud services in some countries",
+     "url": "https://www.networkworld.com/article/4248987/enterprises-to-pay-up-to-20-more-for-microsoft-cloud-services-in-some-countries-2.html"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Cloud & infrastructure"
@@ -5502,6 +5605,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "e3915f7e4cf0",
+   "title": "The King’s Trust and OpenAI launch £1m partnership",
+   "url": "https://openai.com/index/the-kings-trust-and-openai",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-16T00:00:00+00:00",
+   "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
