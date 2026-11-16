@@ -1,12 +1,12 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T09:16:51+00:00",
+ "generated": "2026-11-16T09:32:00+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
+   "fetched": 10,
+   "recent": 7,
+   "error": null
   },
   {
    "source": "SANS ISC",
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 15,
+   "recent": 15,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -780,7 +780,7 @@
   {
    "source": "Inside Higher Ed",
    "fetched": 10,
-   "recent": 0,
+   "recent": 10,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1481,9 +1481,9 @@
   },
   {
    "source": "Neowin",
-   "fetched": 40,
-   "recent": 18,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "NIST Cybersecurity Insights",
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 16,
+   "recent": 18,
    "error": null
   },
   {
@@ -1860,7 +1860,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 88,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -2400,6 +2400,60 @@
  ],
  "items": [
   {
+   "id": "dd88cdaa7c56",
+   "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+   "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-16T09:30:04+00:00",
+   "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "530c74f6a864",
+   "title": "Rspamd 4.3.0 stops forwarded mail from softening DMARC rejects",
+   "url": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-16T09:27:24+00:00",
+   "summary": "Rspamd 4.3.0 fixes bugs that let an unauthenticated attacker crash the spam filter’s workers or slip forged authentication results through it. The worst crash took one HTTP request. A header line without a colon was enough to stop a worker, and an empty Deliver-To header could crash workers again and again.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ea59005358f3",
+   "title": "Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since June as the AI \"picks and shovels\" trade swings into reverse (Clara Murray/Financial Times)",
+   "url": "https://www.techmeme.com/261116/p9#a261116p9",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:20:02+00:00",
+   "summary": "Clara Murray / Financial Times : Analysis: global manufacturing, utility, and mining companies have shed $4.2T in market value since June as the AI “picks and shovels” trade swings into reverse — Shares in AI ‘picks and shovels’ companies hit hard by tech sell-off — Global manufacturing …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "606e3c3feced",
+   "title": "Israel’s Defense Ministry turns to startups to build the next generation of weapons",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HT1dDTDNQOHdDNzk4ZW4yckNUaFI0X0FuZFg1eGpGZE5sSkxBbV82SG5vRV9NaE1yNXJDSzNKR3FzMW1TcTB1Y09NT2dQSThmNWxTNmJtU1BtcnNYbkg1OWhtOFJUbmty?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:19:00+00:00",
+   "summary": "Israel’s Defense Ministry turns to startups to build the next generation of weapons CTech",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "6aef44b82c29",
    "title": "Kernel prepatch 7.4-rc3",
    "url": "https://lwn.net/Articles/1107606/",
@@ -2413,6 +2467,61 @@
     "Linux & open source",
     "Hardware",
     "Networking"
+   ]
+  },
+  {
+   "id": "20b1099aeedb",
+   "title": "AWS Nitro Sandboxes Put Each EKS Pod in Its Own MicroVM with One RuntimeClass Field",
+   "url": "https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-16T09:07:00+00:00",
+   "summary": "AWS has launched Nitro Sandboxes, running each opted-in EKS pod, ECS task or EC2 workload in its own Firecracker microVM with a separate kernel, enabled by one runtimeClassName field at no extra charge. A confidential mode adds attestation-gated key release.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "8125ceae6a06",
+   "title": "D-You Wallet: EUDI developers plan support for Android custom ROMs",
+   "url": "https://www.heise.de/en/news/D-You-Wallet-EUDI-developers-plan-support-for-Android-custom-ROMs-11526006.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:07:00+00:00",
+   "summary": "The EUDI Wallet, expected next year, will eventually support Android devices running custom ROMs, its developer “D-You” says.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "81705f9b4027",
+   "title": "German Military Grounds Quantum Systems Drones Following Reported Cyberattack",
+   "url": "https://securityaffairs.com/203085/cyber-crime/german-military-grounds-quantum-systems-drones-following-reported-cyberattack.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-16T09:06:11+00:00",
+   "summary": "German drone maker Quantum Systems confirms a cyberattack that disrupted operations, with reports pointing to a malicious software update. Quantum Systems, a German defense company that builds reconnaissance and interceptor drones and the software that controls them, confirmed an incident in late October.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1fa29e4af777",
+   "title": "Windows: Out-of-band update fixes licensing errors",
+   "url": "https://www.heise.de/en/news/Windows-Out-of-band-update-fixes-licensing-errors-11525878.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:06:00+00:00",
+   "summary": "November Patch Tuesday updates can cause licensing and activation errors. An unscheduled update fixes them.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "System administration"
    ]
   },
   {
@@ -2510,6 +2619,26 @@
    ]
   },
   {
+   "id": "646a73dc4941",
+   "title": "How AI agents are changing the rules of software governance",
+   "url": "https://www.infoworld.com/article/4248100/how-ai-agents-are-changing-the-rules-of-software-governance.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:00:00+00:00",
+   "summary": "The conversation around AI governance is already happening. Organizations have spent the past few years accelerating AI adoption across software development. Now they face a different problem. AI systems can act faster than the organizations responsible for them can understand or govern what is happening.",
+   "also_covered_by": [
+    {
+     "id": "43bda8b28771",
+     "source": "Inside Higher Ed",
+     "title": "NSF Walks Back Changes to Grant Rules",
+     "url": "https://www.insidehighered.com/news/quick-takes/2026/11/16/nsf-walks-back-changes-grant-rules"
+    }
+   ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "ef8581de8903",
    "title": "How AI is warping both developers and developer tools",
    "url": "https://www.infoworld.com/article/4247952/how-ai-is-warping-both-developers-and-developer-tools.html",
@@ -2522,19 +2651,6 @@
     "Microsoft & Windows",
     "AI",
     "Development"
-   ]
-  },
-  {
-   "id": "646a73dc4941",
-   "title": "How AI agents are changing the rules of software governance",
-   "url": "https://www.infoworld.com/article/4248100/how-ai-agents-are-changing-the-rules-of-software-governance.html",
-   "source": "InfoWorld",
-   "source_category": "IT industry",
-   "published": "2026-11-16T09:00:00+00:00",
-   "summary": "The conversation around AI governance is already happening. Organizations have spent the past few years accelerating AI adoption across software development. Now they face a different problem. AI systems can act faster than the organizations responsible for them can understand or govern what is happening.",
-   "also_covered_by": [],
-   "topics": [
-    "AI"
    ]
   },
   {
@@ -3225,6 +3341,111 @@
    ]
   },
   {
+   "id": "82f42609428c",
+   "title": "When Students Are Scattered",
+   "url": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/11/16/when-students-are-scattered",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "When Students Are Scattered Sara Brady Mon, 11/16/2026 - 03:00 AM Serving rural dual-enrollment students brings up additional challenges. Byline(s) Matt Reed",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "123bc92022f7",
+   "title": "ABA Accreditation Council Votes to Loosen Law School Standards",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/16/aba-votes-loosen-law-school-accreditation-standards",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "ABA Accreditation Council Votes to Loosen Law School Standards Susan H. Greenberg Mon, 11/16/2026 - 03:00 AM Byline(s) Susan H. Greenberg",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "8a94c16195de",
+   "title": "Can We Agree on How Higher Education Should Change?",
+   "url": "https://www.insidehighered.com/opinion/columns/tough-love/2026/11/16/can-we-agree-how-higher-education-should-change-column",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "Can We Agree on How Higher Education Should Change? Doug Lederman Mon, 11/16/2026 - 03:00 AM Prescriptions for the industry’s future align more than not. But the overlap would be clearer if groups with ideological differences took fewer potshots at each other. Byline(s) Doug Lederman",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "f15ba9f0eff3",
+   "title": "NSF May Finally Get a Director. It’s Unclear What That Would Change.",
+   "url": "https://www.insidehighered.com/news/government/science-research-policy/2026/11/16/nsf-may-finally-get-director-will-anything",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "NSF May Finally Get a Director. It’s Unclear What That Would Change. Ryan Quinn Mon, 11/16/2026 - 03:00 AM The National Science Foundation has been directorless for a year and a half. An “undecided” Senate committee chair is putting Trump’s nominee up for a vote.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "698e6f56ce73",
+   "title": "U of Kentucky Proposes Technology Policy Restricting All ‘Political Activity’",
+   "url": "https://www.insidehighered.com/news/faculty/academic-freedom/2026/11/16/kentucky-tech-policy-aims-restrict-political-activity",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "U of Kentucky Proposes Technology Policy Restricting All ‘Political Activity’ Emma Whitford Mon, 11/16/2026 - 03:00 AM The draft policy would prohibit students and employees from posting to personal social media accounts or sending personal messages using university devices, networks or software.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education",
+    "Networking"
+   ]
+  },
+  {
+   "id": "c4e0e3a125da",
+   "title": "How to Expand Degree Apprenticeships",
+   "url": "https://www.insidehighered.com/news/student-success/life-after-college/2026/11/16/how-expand-degree-apprenticeships",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "How to Expand Degree Apprenticeships Joshua.Bay Mon, 11/16/2026 - 03:00 AM A new report from New America outlines 14 policy recommendations to help colleges and employers increase opportunities to earn a degree while gaining paid work experience. Byline(s) Joshua Bay",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "4e5f0685557b",
+   "title": "Embrace Your Rookieness",
+   "url": "https://www.insidehighered.com/opinion/career-advice/carpe-careers/2026/11/16/embrace-your-rookieness-opinion",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "Embrace Your Rookieness Elizabeth Redden Mon, 11/16/2026 - 03:00 AM Being a beginner is a superpower in the workplace. Byline(s) Anne Meyer-Miner",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3f9830645b52",
+   "title": "The Tao of 2 Cultures",
+   "url": "https://www.insidehighered.com/opinion/views/2026/11/16/tao-2-cultures-opinion",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "The Tao of 2 Cultures Elizabeth Redden Mon, 11/16/2026 - 03:00 AM Taoism’s yin-yang pattern shows why humanities and sciences need each other—and how that should shape a liberal arts education. Byline(s) Gerald R. Greenberg",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "9a48a5162ed2",
    "title": "Elevated errors for Claude Sonnet 5.5 and Claude Fable 5.2",
    "url": "https://status.claude.com/incidents/r1b4f9bbnsx1",
@@ -3903,7 +4124,14 @@
    "source_category": "Higher ed",
    "published": "2026-11-16T05:05:00+00:00",
    "summary": "The annual Open Doors report also found signs losses are poised to continue, with the number of new foreign students plummeting 17.7% from the prior year.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a4a9ade6731e",
+     "source": "Inside Higher Ed",
+     "title": "International Student Enrollment Down 9% in Fall 2026",
+     "url": "https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026"
+    }
+   ],
    "topics": [
     "AI"
    ]
