@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-16T20:16:03+00:00",
+ "generated": "2026-11-16T20:31:07+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 20,
-   "recent": 20,
+   "fetched": 21,
+   "recent": 21,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -725,8 +725,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 86,
-   "recent": 3,
+   "fetched": 88,
+   "recent": 4,
    "error": null
   },
   {
@@ -984,7 +984,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1391,8 +1391,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 45,
-   "recent": 1,
+   "fetched": 46,
+   "recent": 2,
    "error": null
   },
   {
@@ -1427,9 +1427,9 @@
   },
   {
    "source": "Fedora Magazine",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "OMG! Ubuntu",
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 35,
+   "recent": 36,
    "error": null
   },
   {
@@ -1650,7 +1650,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 34,
+   "recent": 35,
    "error": null
   },
   {
@@ -1860,7 +1860,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 91,
-   "recent": 29,
+   "recent": 27,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,109 @@
   }
  ],
  "items": [
+  {
+   "id": "1782e8f97d33",
+   "title": "Samsung wants to run data centers for AI companies",
+   "url": "https://www.heise.de/en/news/Samsung-wants-to-run-data-centers-for-AI-companies-11526737.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-16T20:23:00+00:00",
+   "summary": "Samsung reportedly wants to become a data center operator for the AI boom and is discussing capacity rentals with OpenAI and Anthropic.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e6f072f18766",
+   "title": "The Hidden Cost of Running Tickets And Assets in Separate Tools",
+   "url": "https://blog.invgate.com/tickets-and-assets-in-separate-tools",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-16T20:21:43+00:00",
+   "summary": "Running ticketing and Asset Management in separate tools is a common setup: one system holds the tickets, another holds the hardware, software, and licenses. Each works well on its own. The gap between them shows up every time an agent needs to know which device a request is actually about.",
+   "also_covered_by": [],
+   "topics": [
+    "ITSM"
+   ]
+  },
+  {
+   "id": "dbf67bf1a1e1",
+   "title": "CVE-2026-53998: Phoenix is an AI observability and evaluation platform.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53998",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-16T20:19:06.807000+00:00",
+   "summary": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format, while DotDict.__getattr__ did not prevent traversal through Python private attributes.",
+   "kind": "cve",
+   "cve": "CVE-2026-53998",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-53998",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "1fc865c6c85c",
+   "title": "Kudelski Labs Showcased Embedded, Edge AI, and Device Lifecycle Security Solutions at electronica 2026",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZTVhZkZLLTNqQW5mWlVYamUyMFN4THEyM0lrRnR3VnlSbDlRTllCRnJIaHk5eFN6YjdQY2RnVndtWE0wNTRNemJUb040YnZrc0JEVE9KU2F6YkJ3ejdCbDg0Wktuay13eGlHT25wVDFFNTNrNVlRYzd2eDkzN0ktb2ZNamlOMWlNTG9aVEtvd2NnV194Nlgxb0VXV2w1YURjc1BEakNSc3FJaFFaZlFyZzM2RUtNdGt0a2pUNHlXSFMtNXFNUXhTLVI4bUN5cm9qazlPbUh4czE1STdWMGM1UUlvQWk?oc=5",
+   "source": "Embedded Computing Design",
+   "source_category": "Embedded",
+   "published": "2026-11-16T20:18:56+00:00",
+   "summary": "Kudelski Labs Showcased Embedded, Edge AI, and Device Lifecycle Security Solutions at electronica 2026 Embedded Computing Design",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "ba3a764f522b",
+   "title": "iPhone Duo now has twice as many optimized apps as it did 10 days ago",
+   "url": "https://9to5mac.com/2026/11/16/iphone-duo-now-has-twice-as-many-optimized-apps-as-it-did-10-days-ago/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-16T20:18:40+00:00",
+   "summary": "Apple marketing SVP Greg Joswiak said today that the number of iPhone Duo-ready apps on the App Store is twice what it was when Apple last reported the figure. Here are the details. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fe99f294fd9c",
+   "title": "CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-16T20:12:51+00:00",
+   "summary": "Bulletin ID: 2026-184-AWS Publication Date: 11/16/2026 12:00 PM PST Description: Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to write actor controlled…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-126816",
+     "score": 6.8,
+     "severity": "Medium",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
   {
    "id": "b263140d8039",
    "title": "Sacks criticizes rush to judgment on ex-Nvidia CEO",
@@ -2463,6 +2566,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "9baaf74a9599",
+   "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+   "url": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-16T20:00:00+00:00",
+   "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -2609,6 +2727,21 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "008c412d2a2d",
+   "title": "Google GTIG Warns AI Agents Automate Exploits, Steal Credentials and Scale Cybercrime",
+   "url": "https://securityaffairs.com/203260/hacking/google-gtig-warns-ai-agents-automate-exploits-steal-credentials-and-scale-cybercrime.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-16T19:42:48+00:00",
+   "summary": "Google finds attackers using autonomous AI agents to automate exploits, steal AI access and scale intrusions, often sacrificing stealth for speed. Google’s Threat Intelligence Group (GTIG) says attackers have moved past typing prompts into a chatbot.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Identity & access"
    ]
   },
   {
@@ -3411,6 +3544,12 @@
      "source": "Neowin",
      "title": "Here's what Chase says about the outage affecting Wells Fargo and other banks",
      "url": "https://www.neowin.net/news/heres-what-chase-says-about-the-outage-affecting-wells-fargo-and-other-banks/?utm_source=rss"
+    },
+    {
+     "id": "d06550657e2b",
+     "source": "Techmeme",
+     "title": "Customers of BofA, Chase, Wells Fargo, and other US banks report online service issues; Chase says a technical issue, not a cyber issue, is causing delays (Associated Press)",
+     "url": "https://www.techmeme.com/261116/p42#a261116p42"
     }
    ],
    "topics": [
@@ -10880,7 +11019,14 @@
    "source_category": "IT industry",
    "published": "2026-11-16T08:42:00+00:00",
    "summary": "Meta accessed photos from 20 million users on Android devices through the Facebook app without their consent. Italy’s privacy watchdog has now fined the company.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "460686b6b1c6",
+     "source": "The Record",
+     "title": "Match fined $10 million for alleged Tinder privacy violations",
+     "url": "https://therecord.media/ireland-tinder-privacy-fine"
+    }
+   ],
    "topics": [
     "Policy & regulation"
    ]
