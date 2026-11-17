@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T21:16:20+00:00",
+ "generated": "2026-11-17T21:30:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 52,
-   "recent": 52,
+   "fetched": 54,
+   "recent": 54,
    "error": null
   },
   {
@@ -276,7 +276,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "fetched": 25,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 4,
+   "recent": 0,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 138,
+   "recent": 141,
    "error": null
   },
   {
@@ -888,7 +888,7 @@
   {
    "source": "HashiCorp Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -972,7 +972,7 @@
   {
    "source": "Deque (accessibility)",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1073,8 +1073,8 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2355,
-   "recent": 52,
+   "fetched": 2363,
+   "recent": 60,
    "error": null
   },
   {
@@ -1110,7 +1110,7 @@
   {
    "source": "Windows Admin Center Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1374,7 +1374,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -1608,7 +1608,7 @@
   {
    "source": "OpenAI News",
    "fetched": 1405,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 59,
+   "recent": 61,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 59,
+   "recent": 60,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 79,
-   "recent": 36,
+   "fetched": 80,
+   "recent": 37,
    "error": null
   },
   {
@@ -1800,7 +1800,7 @@
   {
    "source": "DigiCert Blog (TLS & PKI)",
    "fetched": 289,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1860,13 +1860,13 @@
   {
    "source": "Calcalist Tech",
    "fetched": 92,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
    "source": "Game Developer",
    "fetched": 50,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,192 @@
   }
  ],
  "items": [
+  {
+   "id": "cfe16dc039c6",
+   "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+   "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-17T21:27:17+00:00",
+   "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "534a0e2022ba",
+   "title": "Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% to $107.6B, and net income up 105% to $65.3B (Nvidia Newsroom)",
+   "url": "https://www.techmeme.com/261117/p56#a261117p56",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:26:56+00:00",
+   "summary": "Nvidia Newsroom : Nvidia reports Q3 revenue up 103% YoY to $115.8B, above $109.1B est., Data Center revenue up 110% to $107.6B, and net income up 105% to $65.3B — - Revenue of $115.8 billion, up 103% from a year ago — Data Center revenue of $107.6 billion, up 110% from a year ago",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2f26497725aa",
+   "title": "Dubbing: Netflix increases residual payments, but AI dispute remains unresolved",
+   "url": "https://www.heise.de/en/news/Dubbing-Netflix-increases-residual-payments-but-AI-dispute-remains-unresolved-11528300.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:26:00+00:00",
+   "summary": "Netflix is increasing residual payments for German voice actors and contributing to their retirement benefits. But the disputed AI clause remains in place.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "d5157665987f",
+   "title": "Epic accuses Apple of withholding 122,000 documents, seeks daily fines",
+   "url": "https://9to5mac.com/2026/11/17/epic-accuses-apple-of-withholding-122000-documents-seeks-daily-fines/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:22:55+00:00",
+   "summary": "In a new filing, Epic Games accuses Apple of withholding more than 122,000 documents related to its proposed App Store commissions and asks the court to impose daily fines until the company complies. Here are the details. more…",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "e5ae2fc427fe",
+   "title": "NetApp Raises Storage Prices, Keystone Rates By Up To 35 Percent",
+   "url": "https://www.crn.com/news/storage/2026/netapp-raises-storage-prices-keystone-rates-by-up-to-35-percent",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:21:00+00:00",
+   "summary": "NetApp raises HDD storage prices by up to 40 percent and select Keystone subscription rates as much as 35 percent.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "8f75784be3f3",
+   "title": "Website management platform Optimizely confirms hackers put malicious code into customer sites",
+   "url": "https://therecord.media/optimizely-malicious-code-customer-sites",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-17T21:20:00+00:00",
+   "summary": "Researchers said they found malicious JavaScript code on 178 different widely visited websites run through the Optimizely Web experimentation platform. The company confirmed the breach.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Development"
+   ]
+  },
+  {
+   "id": "6c6171982981",
+   "title": "GSA says post-quantum work on PIV cards shows new encryption can work on old tech",
+   "url": "https://cyberscoop.com/gsa-post-quantum-encryption-piv-cards/",
+   "source": "CyberScoop",
+   "source_category": "Security",
+   "published": "2026-11-17T21:19:45+00:00",
+   "summary": "Agency leaders and federal contractors are mulling over how to best adapt the new protections to older, legacy technology and address gaps in visibility over federal encryption protocols.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "b220984f0e04",
+   "title": "Xiaomi 18 Pro and Pro Max: Expensive flagships coming to Germany",
+   "url": "https://www.heise.de/en/news/Xiaomi-18-Pro-and-Pro-Max-Expensive-flagships-coming-to-Germany-11527393.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:19:00+00:00",
+   "summary": "After a three-year break, Xiaomi is bringing its Pro series back to Germany. The 18 series comes with steep prices.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "16c3c74aa81e",
+   "title": "CVE-2026-69157: Atomic Server is an open source headless CMS and real-time database.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69157",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:18:12.620000+00:00",
+   "summary": "Atomic Server is an open source headless CMS and real-time database. From 0.29.0 to 0.40.2, Atomic Server provisions a well-known /setup invite with write enabled, the Drive root as its target, and usagesLeft set to one.",
+   "kind": "cve",
+   "cve": "CVE-2026-69157",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-69157",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Databases"
+   ]
+  },
+  {
+   "id": "1ec83dd71442",
+   "title": "Samsung Galaxy Tab S10 FE now down to its lowest price in Early Black Friday deal",
+   "url": "https://www.neowin.net/deals/samsung-galaxy-tab-s10-fe-now-down-to-its-lowest-price-in-early-black-friday-deal/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T21:18:01+00:00",
+   "summary": "Need a capable Android tablet for work and entertainment? Samsung's Galaxy Tab S10 FE deal makes this a tempting time to upgrade.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "60fb0d5d8f72",
+   "title": "CVE-2025-62165: Pi-hole FTL is the core engine of the Pi-hole network-level advertisement and tracker blocker.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62165",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:34.990000+00:00",
+   "summary": "Pi-hole FTL is the core engine of the Pi-hole network-level advertisement and tracker blocker. From 6.0 until 6.7, CivetWeb permits unauthenticated clients to flood the WebUI login page and API invalid paths without connection or request-rate limits.",
+   "kind": "cve",
+   "cve": "CVE-2025-62165",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2025-62165",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "7f658de31098",
+   "title": "Data center industry should repurpose older infrastructure, SambaNova CEO says",
+   "url": "https://www.semafor.com/article/11/17/2026/data-center-industry-should-repurpose-older-infrastructure-sambanova-ceo-says",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-17T21:15:42+00:00",
+   "summary": "Reclaiming existing data centers “disrupts the communities less,” Rodrigo Liang said at Semafor’s Silicon Valley & The World.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
   {
    "id": "20da8bfeb6d7",
    "title": "Europe needs ‘innovation-friendly’ regulation to catch up on AI, German official says",
@@ -2429,6 +2615,19 @@
    ]
   },
   {
+   "id": "86aeaafbc09d",
+   "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+   "url": "https://calif.io/java4shell/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T21:11:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "19fc7805ae99",
    "title": "The Justice Department Wants To Give Patent Trolls More Power",
    "url": "https://www.eff.org/deeplinks/2026/11/justice-department-wants-give-patent-trolls-more-power",
@@ -2439,6 +2638,19 @@
    "also_covered_by": [],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "668faa03f231",
+   "title": "This Tiny, Unassuming Fungus Is a 'Dark Magic Mushroom'—the First Found to Contain Both Psychedelic Compounds and Deadly Toxins",
+   "url": "https://www.smithsonianmag.com/smart-news/this-tiny-unassuming-fungus-is-a-dark-magic-mushroom-the-first-found-to-contain-both-psychedelic-compounds-and-deadly-toxins-180989885/",
+   "source": "Smithsonian Magazine",
+   "source_category": "Science & space",
+   "published": "2026-11-17T21:06:13+00:00",
+   "summary": "Researchers collected the mushroom from a moss-covered palm trunk in the central Florida wetland. Its relatives are known to produce amatoxins, but the fungus surprisingly turned blue when handled, a telltale sign that the organism makes psilocybin",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2509,6 +2721,33 @@
     "Hardware",
     "Embedded & IoT",
     "Networking"
+   ]
+  },
+  {
+   "id": "2d55219ab355",
+   "title": "[Launched] Generally Available: Confidential VMs with Intel TDX support on AKS",
+   "url": "https://azure.microsoft.com/updates?id=581130",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-17T21:00:05+00:00",
+   "summary": "Customers standardized on Intel Trust Domain Extensions (TDX) for attestation and hardware confidentiality can't run those workloads on AKS Confidential VM node pools today, because CVM node images only support AMD SEV-SNP. AKS Confidential VM node pools",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "06af9fb6a248",
+   "title": "[In preview] Public Preview: Confidential VMs with OS Disk Encryption support on AKS",
+   "url": "https://azure.microsoft.com/updates?id=581125",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-17T21:00:05+00:00",
+   "summary": "Regulated customers running AKS Confidential VM node pools protect workloads in memory today, but the OS disk isn't encrypted at rest, so they have to close the data-at-rest gap outside the platform. In Preview, Ubuntu 26.04 Confidential VM node pools ena",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Policy & regulation"
    ]
   },
   {
@@ -2602,6 +2841,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "52433adfe38e",
+   "title": "[In preview] Generally Available: Private endpoint support for Azure HorizonDB clusters",
+   "url": "https://azure.microsoft.com/updates?id=574153",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-17T20:56:06+00:00",
+   "summary": "You can now connect to Azure HorizonDB clusters privately through Azure Private Link, using a private IP address from your virtual network. Private DNS integration makes connection setup easier, while the option to disable public access keeps database tra",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "Networking"
    ]
   },
   {
@@ -3021,6 +3275,114 @@
    "source_category": "IT industry",
    "published": "2026-11-17T20:24:00+00:00",
    "summary": "\"Israeli high-tech has become the 'defense' of our economy\" www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "50cf2e3e123f",
+   "title": "Microsoft Contact Center Intelligence: connecting to Genesys.",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=575279",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:25+00:00",
+   "summary": "Microsoft now supports out-of-the-box integration with Genesys Cloud through the publicly available connectors and APIs exposed by Genesys. Customers can quickly connect Microsoft AI-powered voice and chat experiences to their existing Genesys environment without custom integration work.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "29926a330b2b",
+   "title": "Dynamics 365 Sales: Plan accounts from Microsoft 365 Copilot Cowork with Sales Research Agent",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=580440",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Sellers can draft, review, and work their Dynamics 365 Sales account plans from Cowork. Sales Research Agent brings the same account-planning experience - objectives, targets, actions, and gaps grounded in CRM data - into the place sellers already work, and changes are saved to the plan in Dynamics 365 Sales.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "f3e206770ad5",
+   "title": "Dynamics 365 Sales: Plan your sales portfolio with Sales Research Agent",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=580438",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Portfolio planning is an AI-first capability in Sales Research Agent that turns CRM data, lakehouse signals (such as budgets, targets, usage, billing, and adoption), and web context into a continuously updated plan across accounts, segments, and partners.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "8dcd36cc4ab3",
+   "title": "Dynamics 365 Sales: Create custom blueprints in Sales Research Agent",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=580437",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Blueprint Builder lets makers define a reusable, AI-driven planning experience in Sales Research Agent - the starter prompt, sections, data sources, narratives, and visualizations - and save it as a custom blueprint that runs across every account, portfolio, and territory.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "bbb50803fe45",
+   "title": "Dynamics 365 Sales: Build business functions for Sales Research Agent",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=580436",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "A business function gives Sales Research Agent the context and instructions it needs for a specific use case, such as account planning, territory planning, pipeline review, or engagement analysis.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "433585e29f3f",
+   "title": "Dynamics 365 Sales: Plan Accounts with Sales Research Agent",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=580434",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Account planning gives sellers one place in Dynamics 365 Sales to decide what they want to achieve with an account, how they'll get there, and how they're tracking against it.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e239c0c59387",
+   "title": "Microsoft Contact Center Intelligence: usage-based billing for agents and features",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=575276",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Microsoft Contact Center Intelligence uses consumption-based billing for AI-powered interactions. Usage generated by voice and digital agents is metered and billed based on actual consumption, including AI model processing, tool usage, orchestration, and related AI services.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "c08fb0edc8c6",
+   "title": "Work IQ: Dynamic skills",
+   "url": "https://www.microsoft.com/microsoft-365/roadmap?id=570869",
+   "source": "Microsoft 365 Roadmap",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T20:22:13+00:00",
+   "summary": "Enable agents to select and use the most relevant skills dynamically for each request. GA date: November CY2026 Preview date: October CY2026",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -5897,6 +6259,20 @@
    ]
   },
   {
+   "id": "f7ed84a768c3",
+   "title": "Stable Channel Update for Desktop",
+   "url": "http://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-17T19:12:07.339000+00:00",
+   "summary": "The Chrome team is delighted to announce the promotion of Chrome 158 to the stable channel for Windows, Mac and Linux. This will roll out over the coming days/weeks. Chrome 158.0.8127.36 (Linux) 158.0.8127.36/.37 Windows/Mac contains a number of fixes and improvements -- a list of changes is available in the log .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "d5790153bc31",
    "title": "Clearer Security Signals: Making Attestations Comprehensible for PyPI Users",
    "url": "https://openssf.org/blog/2026/11/17/clearer-security-signals-making-attestations-comprehensible-for-pypi-users/",
@@ -7130,6 +7506,12 @@
      "source": "Hacker News",
      "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
      "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938"
+    },
+    {
+     "id": "ec56bdc65448",
+     "source": "Techmeme",
+     "title": "Cybersecurity startup Calif says it used GPT-6 Cyber to uncover an RCE flaw in Java dubbed \"Java4Shell\"; Oracle has released a patch (New York Times)",
+     "url": "https://www.techmeme.com/261117/p55#a261117p55"
     }
    ],
    "topics": [
@@ -7189,7 +7571,14 @@
    "source_category": "IT industry",
    "published": "2026-11-17T18:21:55+00:00",
    "summary": "The Chrome update includes more useful vertical tabs, easier screen sharing, and some handy keyboard shortcuts.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "23d2ca938067",
+     "source": "Chrome Releases",
+     "title": "Chrome for Android Update",
+     "url": "http://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0281314271.html"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -11131,7 +11520,14 @@
    "source_category": "Game development",
    "published": "2026-11-17T14:28:00+00:00",
    "summary": "Six European game workers' unions have published a manifesto examining the use of generative AI in the games industry and its implications.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0fbd479e146e",
+     "source": "Game Developer",
+     "title": "European Game Worker unions publish manifesto warning against unchecked AI usage",
+     "url": "https://www.gamedeveloper.com/production/europe-s-game-worker-unions-publish-a-manifesto-warning-against-unchecked-ai-usage"
+    }
+   ],
    "topics": [
     "AI",
     "Game development"
@@ -14761,6 +15157,12 @@
      "source": "TechTarget News",
      "title": "Nvidia creates committee to oversee national security, chip exports",
      "url": "https://www.techtarget.com/news/nvidia-creates-committee-to-oversee-national-security-chip-exports/874958/"
+    },
+    {
+     "id": "377a111c9e7f",
+     "source": "SiliconANGLE",
+     "title": "Jensen Huang says he’s willing to return as CEO in first statement since resignation",
+     "url": "https://siliconangle.com/2026/11/17/jensen-huang-says-hes-willing-to-return-as-ceo-in-first-statement-since-resignation/"
     }
    ],
    "topics": [
@@ -14781,6 +15183,12 @@
      "source": "LWN.net",
      "title": "Three stable kernels for Tuesday",
      "url": "https://lwn.net/Articles/1108142/"
+    },
+    {
+     "id": "571735e00ed1",
+     "source": "Chrome Releases",
+     "title": "Extended Stable Update for Desktop",
+     "url": "http://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01061812727.html"
     }
    ],
    "topics": [
@@ -16248,6 +16656,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Networking"
+   ]
+  },
+  {
+   "id": "a3360f47f497",
+   "title": "From exposed secrets to managed credentials: Reducing credential risk across the application lifecycle",
+   "url": "https://www.hashicorp.com/blog/from-exposed-secrets-to-managed-credentials",
+   "source": "HashiCorp Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Learn how Vault Radar and Vault help organizations find exposed secrets, improve remediation, and reduce credential risk across the application lifecycle.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
    ]
   },
   {
