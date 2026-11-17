@@ -271,6 +271,19 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   90% { transform: rotate(12deg); } 93% { transform: rotate(-6deg); } 96% { transform: rotate(2deg); }
 }
 @media (prefers-reduced-motion: reduce) { .clippy-toggle[aria-pressed="true"] svg { animation: none; } .clippy-toggle .clip-brow { transition: none; } }
+/* Apple toggle (between the paperclip and Tux): on = only Apple / Mac stories, CVEs and sources (ind.apple) */
+.apple-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 3px; border: 0; background: none; cursor: pointer; line-height: 0; }
+.apple-toggle svg { width: 13px; height: 17px; overflow: visible; }
+.apple-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
+.apple-toggle .apple-fruit { fill: #d62d20; stroke: var(--muted); stroke-width: .4; }
+.apple-toggle .apple-leaf { fill: #3c9a3a; }
+.apple-toggle .apple-stem { fill: none; stroke: #7a4a22; stroke-width: 1.1; stroke-linecap: round; }
+.apple-toggle .apple-shine { fill: #fff; opacity: .55; }
+.apple-toggle .apple-body { filter: grayscale(1); opacity: .65; transition: filter .2s, opacity .2s; transform-box: fill-box; transform-origin: 50% 100%; }
+.apple-toggle:hover .apple-body { opacity: .9; }
+.apple-toggle[aria-pressed="true"] .apple-body { filter: none; opacity: 1; animation: apple-bob 3.4s ease-in-out infinite; }
+@keyframes apple-bob { 0%, 78%, 100% { transform: none; } 84% { transform: translateY(-2px) rotate(-7deg); } 90% { transform: translateY(0) rotate(5deg); } 95% { transform: rotate(-2deg); } }
+@media (prefers-reduced-motion: reduce) { .apple-toggle[aria-pressed="true"] .apple-body { animation: none; } .apple-toggle .apple-body { transition: none; } }
 /* Tux toggle (right of the paperclip): on = only open-source stories, CVEs and sources (ind.tux) */
 .tux-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 3px; border: 0; background: none; cursor: pointer; line-height: 0; }
 .tux-toggle svg { width: 13px; height: 17px; overflow: visible; }

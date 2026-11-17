@@ -8,7 +8,8 @@
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
-  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources, headlines prefixed "It looks like you want to read about: ..."
+  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources are shown
+  const LS_APPLE = "ind.apple"; // true = apple on: only Apple / Mac stories, CVEs and sources are shown
   const LS_TUX = "ind.tux"; // true = Tux on: only open-source stories, CVEs and sources are shown
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
@@ -25,7 +26,8 @@
   const state = {
     days: [],
     day: null, // the latest day: the News, CVEs and Sources tabs always show it
-    clippy: false, // paperclip toggle (ind.clippy): Microsoft/Windows only, with "It looks like you want to read about:" before every headline
+    clippy: false, // paperclip toggle (ind.clippy): hide everything that isn't about Microsoft or Windows
+    apple: false, // apple toggle (ind.apple): hide everything that isn't about Apple, Mac, iPhone or iPad
     tux: false, // Tux toggle (ind.tux): hide everything that isn't about open-source software
     dayData: null,
     hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
@@ -75,6 +77,7 @@
     state.catalog = res.ok ? await res.json() : [];
     ossCache = null;
     msCache = null;
+    appleCache = null;
     advCache = null;
   }
   async function loadSuggestions() {
@@ -132,6 +135,17 @@
     if (!msCache) msCache = new Set(state.catalog.filter((s) => s.ms).map((s) => s.name));
     return sourcesOf(it).some((s) => msCache.has(s)) || MS_RE.test(it.title || "");
   };
+  // Apple mode works the same way: "apple": true sources (Apple-only ones; 9to5Mac is left unflagged because it
+  // also covers general tech news) or a headline naming Apple or its products. iOS is matched case-sensitively
+  // so Cisco IOS / IOS XE advisories don't count; "Mac" alone isn't matched because of MAC addresses.
+  const APPLE_RE = /\b(apple|macos|mac ?os|macbook( air| pro)?|imac|mac (mini|studio|pro)|macs|iphones?|ipads?|ipados|watchos|visionos|tvos|vision pro|airpods|airtag|apple watch|safari|xcode|swiftui|swift (\d|language|programming)|app store|icloud|facetime|imessage|siri|tim cook|cupertino|homepod|webkit|jamf|mosyle|kandji|filevault|gatekeeper|xprotect)\b/i;
+  const IOS_RE = /\biOS\b/;
+  let appleCache = null;
+  const isApple = (it) => {
+    if (!appleCache) appleCache = new Set(state.catalog.filter((s) => s.apple).map((s) => s.name));
+    const t = it.title || "";
+    return sourcesOf(it).some((s) => appleCache.has(s)) || APPLE_RE.test(t) || IOS_RE.test(t);
+  };
   // "Vendor advisories" entry under All topics: stories and CVEs from any source in that category of
   // sources.json (vendor PSIRTs and bulletins, plus national CERTs), i.e. one place to see what to patch
   const ADVISORIES = "Vendor advisories";
@@ -145,8 +159,9 @@
     return ["Vendor security advisories", `Security advisories and bulletins straight from ${n} vendors and CERTs: Cisco, Fortinet, Palo Alto Networks, SonicWall, Ivanti, Zoom, Veeam, Red Hat, Ubuntu, Debian, Apple, Chrome, Adobe ColdFusion and more. Check here for what needs patching.`];
   };
   // A story stays visible while at least one source that covered it is switched on (and, in Tux mode, it's
-  // open source; in Clippy mode, it's about Microsoft)
-  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it)) && (!state.clippy || isMs(it));
+  // open source; in Clippy mode, it's about Microsoft; in Apple mode, it's about Apple)
+  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it)) && (!state.clippy || isMs(it))
+    && (!state.apple || isApple(it));
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
   const cveItems = () => (state.dayData?.items || []).filter((it) => isCve(it) && isOn(it));
 
@@ -231,13 +246,14 @@
   // Says what the story list is showing: the picked topic in full, plus any source or search filter
   function renderFilterHead(count, cveCount = 0) {
     const head = $("#filter-head");
-    const filtered = state.topic || state.source || state.query || state.tux || state.clippy;
+    const filtered = state.topic || state.source || state.query || state.tux || state.clippy || state.apple;
     if (!filtered) { head.hidden = true; return; }
     const [name, desc] = state.topic === ADVISORIES ? advisoryInfo()
       : state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
     const extra = [
       state.tux ? "about open-source software (Tux is on)" : "",
       state.clippy ? "about Microsoft and Windows (Clippy is on)" : "",
+      state.apple ? "about Apple and the Mac (Apple is on)" : "",
       state.source ? `from ${state.source}` : "",
       state.query ? `matching "${state.query}"` : "",
     ].filter(Boolean).join(", ");
@@ -245,9 +261,11 @@
     const note = `${count} ${count === 1 ? "story" : "stories"}${cveNote}${extra ? ` ${extra}` : ""}`;
     const onlyTux = state.tux && !state.topic && !state.source && !state.query;
     const onlyClippy = state.clippy && !state.topic && !state.source && !state.query;
+    const onlyApple = state.apple && !state.topic && !state.source && !state.query;
     const clear = () => {
       if (onlyTux) { setTux(false); return; }
       if (onlyClippy) { setClippy(false); return; }
+      if (onlyApple) { setApple(false); return; }
       Object.assign(state, { topic: "", source: "", query: "" });
       $("#search").value = "";
       syncSearchClear();
@@ -257,11 +275,11 @@
     };
     head.replaceChildren(
       el("div", { class: "filter-head-text" },
-        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : onlyClippy ? "Microsoft only" : "Filtered" }),
+        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : onlyClippy ? "Microsoft only" : onlyApple ? "Apple only" : "Filtered" }),
         el("h2", { text: name }),
         ...(desc ? [el("p", { class: "muted filter-desc", text: desc })] : []),
         el("p", { class: "muted filter-note", text: note })),
-      el("button", { class: "filter-clear", type: "button", onclick: clear, text: onlyTux || onlyClippy ? "Show everything" : state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
+      el("button", { class: "filter-clear", type: "button", onclick: clear, text: onlyTux || onlyClippy || onlyApple ? "Show everything" : state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
     head.hidden = false;
   }
 
@@ -570,14 +588,11 @@
     return ul;
   }
 
-  // Paperclip mode: display-only prefix on headlines (search and filters still use the real title)
-  const CLIPPY_PREFIX = "It looks like you want to read about: ";
-  const headline = (t) => (state.clippy && t ? CLIPPY_PREFIX + t : t);
 
   // One outlet's coverage: the whole "Source: headline" line links to that outlet's article
   const sourceLine = (c) => el("li", {},
     el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
-      el("span", { class: "source", text: `${c.source}: ` }), headline(c.title)));
+      el("span", { class: "source", text: `${c.source}: ` }), c.title));
 
   // Source-count pill colour: green for a few outlets, through teal and sky, up to blue for many
   const heat = (n) => (n >= 6 ? "heat-4" : n >= 4 ? "heat-3" : n === 3 ? "heat-2" : "heat-1");
@@ -603,7 +618,7 @@
     return el("li", { class: `row${n > 1 ? " multi" : ""}` },
       el("div", { class: "row-main" },
         badges.length ? el("span", { class: "meta row-badges" }, ...badges) : null,
-        el("a", { class: "row-title", href: safeUrl(it.url), target: "_blank", rel: "noopener noreferrer", title: it.summary || it.title, text: headline(it.title) }),
+        el("a", { class: "row-title", href: safeUrl(it.url), target: "_blank", rel: "noopener noreferrer", title: it.summary || it.title, text: it.title }),
       ),
       el("span", {
         class: "row-meta",
@@ -665,7 +680,7 @@
         el("span", { class: "source", text: it.source }),
         el("span", { text: fmtTime(it.published) }),
       ),
-      el("h3", {}, link(it.url, headline(it.title))),
+      el("h3", {}, link(it.url, it.title)),
       it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
       also.length ? el("div", { class: "also-head", text: "Also reported by" }) : null,
       also.length ? el("ul", { class: "also-list" }, ...also.map(sourceLine)) : null,
@@ -705,13 +720,18 @@
       ...(onCount < all.length ? [el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) })] : []),
     );
 
-    // Tux mode lists only the open-source project and community sources; Clippy mode only the Microsoft ones
-    const shown = all.filter((s) => (!state.tux || s.oss) && (!state.clippy || s.ms) && srcMatch(s.name, s.category, s.site, s.url));
+    // Tux mode lists only the open-source project and community sources; Clippy mode only the Microsoft ones;
+    // Apple mode only the Apple ones
+    const shown = all.filter((s) => (!state.tux || s.oss) && (!state.clippy || s.ms) && (!state.apple || s.apple)
+      && srcMatch(s.name, s.category, s.site, s.url));
     if (state.tux) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `Tux is on: showing the ${all.filter((s) => s.oss).length} open-source sources. Stories from other sources still show on the News tab when they're about open-source software.` }));
     }
     if (state.clippy) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `Clippy is on: showing the ${all.filter((s) => s.ms).length} Microsoft and Windows sources. Stories from other sources still show on the News tab when their headline is about Microsoft.` }));
+    }
+    if (state.apple) {
+      $("#sources-switches").append(el("span", { class: "src-count", text: `Apple is on: showing the ${all.filter((s) => s.apple).length} Apple and Mac sources. Stories from other sources still show on the News tab when their headline is about Apple.` }));
     }
     if (state.srcQuery.trim()) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `${shown.length} of ${all.length} match "${state.srcQuery.trim()}".` }));
@@ -897,23 +917,45 @@
     syncThemeToggle();
   }
 
-  // Paperclip (right of the two matches): Microsoft/Windows-only filter plus headline prefix, saved as ind.clippy.
-  // Clippy and Tux are either/or: switching one on switches the other off.
+  // Paperclip (right of the two matches): Microsoft/Windows-only filter, saved as ind.clippy.
+  // Clippy, Apple and Tux are one-at-a-time: switching one on switches the others off.
+  const MODES = { clippy: LS_CLIPPY, apple: LS_APPLE, tux: LS_TUX };
+  function soloMode(keep) {
+    for (const [m, key] of Object.entries(MODES)) {
+      if (m !== keep && state[m]) { state[m] = false; store.set(key, false); }
+    }
+    syncClippyToggle(); syncAppleToggle(); syncTuxToggle();
+  }
   function syncClippyToggle() {
     const b = $("#clippy-toggle");
     b.setAttribute("aria-pressed", String(state.clippy));
-    b.title = state.clippy ? "It looks like you're only reading about Microsoft. Click to show everything again" : "It looks like you're reading the news. Would you like to see only Microsoft and Windows stories?";
+    b.title = state.clippy ? "Showing Microsoft and Windows only. Click to show everything again" : "Microsoft only: hide everything that isn't about Microsoft or Windows";
   }
   function setClippy(on) {
     state.clippy = on;
     store.set(LS_CLIPPY, on);
-    if (on && state.tux) { state.tux = false; store.set(LS_TUX, false); syncTuxToggle(); }
+    if (on) soloMode("clippy");
     syncClippyToggle();
     populateFilters();
     render();
   }
 
-  // Tux (right of the paperclip): open-source-only filter on/off, saved as ind.tux
+  // Apple (right of the paperclip): Apple / Mac-only filter on/off, saved as ind.apple
+  function syncAppleToggle() {
+    const b = $("#apple-toggle");
+    b.setAttribute("aria-pressed", String(state.apple));
+    b.title = state.apple ? "Showing Apple and Mac only. Click to show everything again" : "Apple only: hide everything that isn't about Apple, Mac, iPhone or iPad";
+  }
+  function setApple(on) {
+    state.apple = on;
+    store.set(LS_APPLE, on);
+    if (on) soloMode("apple");
+    syncAppleToggle();
+    populateFilters();
+    render();
+  }
+
+  // Tux (right of the apple): open-source-only filter on/off, saved as ind.tux
   function syncTuxToggle() {
     const b = $("#tux-toggle");
     b.setAttribute("aria-pressed", String(state.tux));
@@ -922,7 +964,7 @@
   function setTux(on) {
     state.tux = on;
     store.set(LS_TUX, on);
-    if (on && state.clippy) { state.clippy = false; store.set(LS_CLIPPY, false); syncClippyToggle(); }
+    if (on) soloMode("tux");
     syncTuxToggle();
     populateFilters();
     render();
@@ -935,6 +977,8 @@
     syncThemeToggle();
     syncClippyToggle();
     $("#clippy-toggle").addEventListener("click", () => setClippy(!state.clippy));
+    syncAppleToggle();
+    $("#apple-toggle").addEventListener("click", () => setApple(!state.apple));
     syncTuxToggle();
     $("#tux-toggle").addEventListener("click", () => setTux(!state.tux));
     $("#theme-toggle").addEventListener("click", () => {
@@ -1003,6 +1047,7 @@
 
   async function init() {
     state.clippy = store.get(LS_CLIPPY, false) === true;
+    state.apple = store.get(LS_APPLE, false) === true;
     state.tux = store.get(LS_TUX, false) === true;
     wire();
     trackTopbar();
