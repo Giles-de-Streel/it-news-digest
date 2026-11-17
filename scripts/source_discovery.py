@@ -37,7 +37,24 @@ IGNORE = {
     "wikipedia.org", "archive.org", "archive.ph", "archive.is", "google.com", "goo.gl",
     "docs.google.com", "drive.google.com", "apple.com", "apps.apple.com", "play.google.com",
     "arxiv.org", "doi.org", "pdfs.semanticscholar.org", "mastodon.social", "t.co", "bit.ly",
-    "feedburner.com", "imgur.com", "dropbox.com", "notion.site",
+    "feedburner.com", "imgur.com", "dropbox.com", "notion.site", "tangled.org", "stackexchange.com",
+}
+# Reviewed on the Sources tab and turned down (not IT news, too consumer-focused, or no usable feed);
+# never suggested again. Note the reason so a later review doesn't redo the work.
+DECLINED = {
+    "engadget.com": "consumer gadgets and entertainment",
+    "techspot.com": "mostly consumer/gaming news (like Neowin, TechPowerUp)",
+    "electrek.co": "electric vehicles",
+    "nypost.com": "general tabloid news",
+    "yahoo.com": "finance and general news, no feed found",
+    "lesswrong.com": "AI-safety forum essays, not news",
+    "longreads.com": "general long-form journalism",
+    "quantamagazine.org": "science, not IT",
+    "cornell.edu": "university research news, mostly non-IT, no feed found",
+    "faa.gov": "air traffic status pages, no feed",
+    "jefftk.com": "personal blog on mixed, mostly non-IT topics",
+    "homeip.net": "retro computing history blog (dfarq.homeip.net), home page times out",
+    "artificialanalysis.ai": "AI benchmark site, no feed",
 }
 # Outlets with a paywall or registration wall on most articles; never suggested or checked
 PAYWALLED = {
@@ -174,7 +191,7 @@ def update(path, sources, results, user_agent, robots_allows, parse_feed):
         for it in found:
             link = it.pop("_outlink", None) if source["discover"] == "summary_link" else it["url"]
             key = site_key(link or "")
-            if not key or key in IGNORE or key in PAYWALLED or key in known:
+            if not key or key in IGNORE or key in PAYWALLED or key in DECLINED or key in known:
                 continue
             c = cands.setdefault(key, {"key": key, "mentions": [], "examples": []})
             mid = hashlib.sha1(link.encode()).hexdigest()[:12]
@@ -194,8 +211,9 @@ def update(path, sources, results, user_agent, robots_allows, parse_feed):
         c["mentions"] = [m for m in c["mentions"] if m[1] >= oldest]
         c["examples"] = [e for e in c["examples"] if e["date"] >= oldest]
         # aged out, added (also under an alias, e.g. an old "bbc.co.uk" entry once bbc.com is a source),
-        # or now listed as paywalled
-        if not c["mentions"] or site_key(f"https://{key}/") in known or key in PAYWALLED:
+        # or now listed as paywalled, declined or ignored
+        if (not c["mentions"] or site_key(f"https://{key}/") in known
+                or key in PAYWALLED or key in DECLINED or key in IGNORE):
             del cands[key]
 
     recheck = (date.today() - timedelta(days=RECHECK_DAYS)).isoformat()
