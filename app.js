@@ -564,7 +564,7 @@
     el("a", { href: safeUrl(c.url), target: "_blank", rel: "noopener noreferrer", title: `Open ${c.source}'s article` },
       el("span", { class: "source", text: `${c.source}: ` }), headline(c.title)));
 
-  // Source-count pill colour: green for a few outlets up to red for many
+  // Source-count pill colour: green for a few outlets, through teal and sky, up to blue for many
   const heat = (n) => (n >= 6 ? "heat-4" : n >= 4 ? "heat-3" : n === 3 ? "heat-2" : "heat-1");
 
   // The "N sources" pill in List layout: a button that shows or hides the sources panel
