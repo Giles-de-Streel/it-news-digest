@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T00:31:09+00:00",
+ "generated": "2026-11-17T00:45:52+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "fetched": 25,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -894,7 +894,7 @@
   {
    "source": "Kubernetes Blog",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1284,7 +1284,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1565,9 +1565,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "source": "Adrian Roselli",
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 42,
+   "recent": 43,
    "error": null
   },
   {
@@ -1692,7 +1692,7 @@
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2154,7 +2154,7 @@
   {
    "source": "9to5Google",
    "fetched": 85,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,32 @@
   }
  ],
  "items": [
+  {
+   "id": "6e11547e8db8",
+   "title": "What’s new in Android’s November 2026 Google System Updates [U: Pixel virtual gamepad]",
+   "url": "https://9to5google.com/2026/11/16/november-2026-google-system-updates/",
+   "source": "9to5Google",
+   "source_category": "IT industry",
+   "published": "2026-11-17T00:43:00+00:00",
+   "summary": "The monthly “ Google System Release Notes ” primarily detail what’s new in Play services, Play Store, and Play system update across Android phones/tablets, Wear OS, Google/Android TV, Auto, and PC. Some features apply to end users, while others are aimed at developers. more…",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "282db44db2c9",
+   "title": "Former Apple chairman Arthur Levinson files to sell $31.8 million in company stock",
+   "url": "https://9to5mac.com/2026/11/16/former-apple-chairman-arthur-levinson-files-to-sell-31-8-million-in-company-stock/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-17T00:32:01+00:00",
+   "summary": "Arthur Levinson, who currently serves as Apple’s lead independent director, informed the SEC today of his plans to sell 90,000 shares of Apple stock worth approximately $31.8 million. Here are the details. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "c11b8f4649b7",
    "title": "AI agents still act like ‘Day 1 employees,’ Glean CEO says",
@@ -2436,6 +2462,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "18a4aa790fbb",
+   "title": "Dependabot alert dismissal requests now last one year",
+   "url": "https://github.blog/changelog/2026-11-16-dependabot-alert-dismissal-requests-now-last-one-year",
+   "source": "GitHub Changelog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-17T00:09:27+00:00",
+   "summary": "If you use delegated alert dismissal for Dependabot, dismissal requests now stay open for one year instead of one week. Reviewers have more time to respond before a request expires…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5392,6 +5431,21 @@
      "version": "4.0",
      "scored_by": "AMZN"
     }
+   ]
+  },
+  {
+   "id": "72fd99be9787",
+   "title": "Scheduling the removal of the kube-proxy IPVS backend",
+   "url": "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
+   "source": "Kubernetes Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-16T18:35:00+00:00",
+   "summary": "The ipvs backend for kube-proxy was an experiment in providing a service proxy implementation with better performance than the iptables backend. While it succeeded in that goal, the kernel IPVS API has turned out to be a bad match for the Kubernetes Services API, and the ipvs backend was never able to implement all of…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "DevOps & SRE"
    ]
   },
   {
