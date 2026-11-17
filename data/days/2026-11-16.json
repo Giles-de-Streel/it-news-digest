@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T04:16:03+00:00",
+ "generated": "2026-11-17T04:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 44,
+   "recent": 45,
    "error": null
   },
   {
@@ -1650,7 +1650,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1979,9 +1979,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Microsoft 365 status",
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,62 @@
   }
  ],
  "items": [
+  {
+   "id": "eb3a7470b823",
+   "title": "Linux Foundation: AI coding tools leave security reviews struggling to keep up",
+   "url": "https://4sysops.com/archives/linux-foundation-ai-coding-tools-leave-security-reviews-struggling-to-keep-up/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T04:29:03+00:00",
+   "summary": "AI coding tools are helping teams ship software faster than security staff can review it, according to 58% of respondents in a Linux Foundation survey of 308 cybersecurity practitioners.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "e387a82222a6",
+   "title": "Nvidia board puts Jensen Huang’s comeback on hold as probe continues",
+   "url": "https://4sysops.com/archives/nvidia-board-puts-jensen-huangs-comeback-on-hold-as-probe-continues/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T04:29:02+00:00",
+   "summary": "A petition with more than 180,000 signatures and support from Elon Musk hasn’t put Jensen Huang’s return on Nvidia’s board agenda. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "16c32d7e5b71",
+   "title": "World's largest China-built unmanned cargo aircraft completes maiden flight",
+   "url": "https://e.vnexpress.net/news/tech/tech-news/world-s-largest-china-built-unmanned-cargo-aircraft-completes-maiden-flight-5145498.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-17T04:27:57+00:00",
+   "summary": "China's W5000 unmanned cargo aircraft, capable of carrying five metric tons, has completed its maiden flight in Inner Mongolia Autonomous Region ahead of planned commercial operations in 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c00b630f64e8",
+   "title": "U.S. closes loopholes in AI chip export ban",
+   "url": "https://www.heise.de/en/news/U-S-closes-loopholes-in-AI-chip-export-ban-11527056.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-17T04:15:00+00:00",
+   "summary": "U.S. export bans on AI chips have limited reach: Their targets can use the banned hardware in the cloud. That will get harder next year.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
   {
    "id": "d5901e1c473d",
    "title": "Claude brings interactive HTML to canvas graphics with Flash-style effects",
@@ -5733,7 +5789,14 @@
    "source_category": "DevOps & automation",
    "published": "2026-11-16T19:22:56+00:00",
    "summary": "Visual Studio Code 1.146 deprecates the Local harness, the older software that coordinates the model, context, and tools for GitHub Copilot agent sessions in the editor. The Local harness will…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "36af5f5ed098",
+     "source": "4sysops",
+     "title": "VS Code retires the Local harness in February 2027",
+     "url": "https://4sysops.com/archives/vs-code-retires-the-local-harness-in-february-2027/"
+    }
+   ],
    "topics": [
     "AI",
     "Development",
@@ -15086,6 +15149,12 @@
      "source": "9to5Mac",
      "title": "iOS 27.3 adds new face unlock feature for iPhone Duo",
      "url": "https://9to5mac.com/2026/11/16/ios-27-3-adds-new-face-unlock-feature-for-iphone-duo/"
+    },
+    {
+     "id": "8ec41b8580bf",
+     "source": "4sysops",
+     "title": "iPhone Duo gets face unlock in iOS 27.3 beta, but it’s not Face ID",
+     "url": "https://4sysops.com/archives/iphone-duo-gets-face-unlock-in-ios-27-3-beta-but-its-not-face-id/"
     }
    ],
    "topics": [
@@ -16092,6 +16161,26 @@
    ]
   },
   {
+   "id": "853b24ff0d6e",
+   "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+   "url": "https://huggingface.co/blog/openrouter",
+   "source": "Hugging Face blog",
+   "source_category": "IT industry",
+   "published": "2026-11-16T00:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [
+    {
+     "id": "93948f963f34",
+     "source": "4sysops",
+     "title": "Hugging Face hands model routing to OpenRouter, adding failover",
+     "url": "https://4sysops.com/archives/hugging-face-hands-model-routing-to-openrouter-adding-failover/"
+    }
+   ],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "5dfc46d85f2d",
    "title": "For platform teams, the challenge is the way",
    "url": "https://octopus.com/blog/platform-challenge-is-the-way",
@@ -16267,19 +16356,6 @@
    ]
   },
   {
-   "id": "853b24ff0d6e",
-   "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-   "url": "https://huggingface.co/blog/openrouter",
-   "source": "Hugging Face blog",
-   "source_category": "IT industry",
-   "published": "2026-11-16T00:00:00+00:00",
-   "summary": "",
-   "also_covered_by": [],
-   "topics": [
-    "Networking"
-   ]
-  },
-  {
    "id": "66dd67c926d8",
    "title": "XTM Transifex sponsors Python’s documentation translations",
    "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
@@ -16359,6 +16435,19 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "4b1b9634e704",
+   "title": "Why did modems have speakers? (2019)",
+   "url": "https://retrocomputing.stackexchange.com/questions/11765",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-15T21:27:29+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
