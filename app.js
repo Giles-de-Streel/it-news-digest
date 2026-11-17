@@ -8,7 +8,7 @@
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
   const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
   const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
-  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: every headline is shown as "It looks like you want to read about: ..."
+  const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources, headlines prefixed "It looks like you want to read about: ..."
   const LS_TUX = "ind.tux"; // true = Tux on: only open-source stories, CVEs and sources are shown
   const LS_OFF = "ind.sourcesOff"; // sources switched off on the Sources tab (hidden here, still fetched)
   const VIEWS = ["news", "cves", "sources", "history"];
@@ -25,7 +25,7 @@
   const state = {
     days: [],
     day: null, // the latest day: the News, CVEs and Sources tabs always show it
-    clippy: false, // paperclip toggle (ind.clippy): "It looks like you want to read about:" before every headline
+    clippy: false, // paperclip toggle (ind.clippy): Microsoft/Windows only, with "It looks like you want to read about:" before every headline
     tux: false, // Tux toggle (ind.tux): hide everything that isn't about open-source software
     dayData: null,
     hist: { range: WEEK, query: "", topic: "", kind: "news" }, // History tab picks
@@ -74,6 +74,7 @@
     const res = await fetch(`sources.json?t=${Date.now()}`, { cache: "no-store" });
     state.catalog = res.ok ? await res.json() : [];
     ossCache = null;
+    msCache = null;
     advCache = null;
   }
   async function loadSuggestions() {
@@ -122,6 +123,15 @@
     if (!ossCache) ossCache = ossSources();
     return sourcesOf(it).some((s) => ossCache.has(s)) || OSS_RE.test(`${it.title || ""} ${it.summary || ""}`);
   };
+  // Clippy mode keeps a story or CVE when a source that covered it is Microsoft's own or Microsoft-focused
+  // ("ms": true in sources.json), or when its headline names Microsoft or a Microsoft product. Only the
+  // headline is checked: summaries mention Windows or Azure in passing too often (supported platforms, etc.)
+  const MS_RE = /\b(microsoft|msft|windows|win32|winget|azure|entra|intune|autopilot|office 365|microsoft 365|m365|exchange (server|online)|sharepoint|onedrive|power bi|power platform|power apps|power automate|dynamics 365|copilot|xbox|bing|hyper-v|active directory|group policy|powershell|asp\.net|visual studio|vs ?code|sql server|msrc|patch tuesday|defender|sysinternals|wsl|directx|nadella|redmond)\b|(?<![\w.])\.net\b/i;
+  let msCache = null;
+  const isMs = (it) => {
+    if (!msCache) msCache = new Set(state.catalog.filter((s) => s.ms).map((s) => s.name));
+    return sourcesOf(it).some((s) => msCache.has(s)) || MS_RE.test(it.title || "");
+  };
   // "Vendor advisories" entry under All topics: stories and CVEs from any source in that category of
   // sources.json (vendor PSIRTs and bulletins, plus national CERTs), i.e. one place to see what to patch
   const ADVISORIES = "Vendor advisories";
@@ -134,8 +144,9 @@
     const n = state.catalog.filter((s) => s.category === ADVISORIES).length;
     return ["Vendor security advisories", `Security advisories and bulletins straight from ${n} vendors and CERTs: Cisco, Fortinet, Palo Alto Networks, SonicWall, Ivanti, Zoom, Veeam, Red Hat, Ubuntu, Debian, Apple, Chrome, Adobe ColdFusion and more. Check here for what needs patching.`];
   };
-  // A story stays visible while at least one source that covered it is switched on (and, in Tux mode, it's open source)
-  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it));
+  // A story stays visible while at least one source that covered it is switched on (and, in Tux mode, it's
+  // open source; in Clippy mode, it's about Microsoft)
+  const isOn = (it) => sourcesOf(it).some((s) => !state.off.has(s)) && (!state.tux || isOss(it)) && (!state.clippy || isMs(it));
   const newsItems = () => (state.dayData?.items || []).filter((it) => !isCve(it) && isOn(it));
   const cveItems = () => (state.dayData?.items || []).filter((it) => isCve(it) && isOn(it));
 
@@ -220,33 +231,37 @@
   // Says what the story list is showing: the picked topic in full, plus any source or search filter
   function renderFilterHead(count, cveCount = 0) {
     const head = $("#filter-head");
-    const filtered = state.topic || state.source || state.query || state.tux;
+    const filtered = state.topic || state.source || state.query || state.tux || state.clippy;
     if (!filtered) { head.hidden = true; return; }
     const [name, desc] = state.topic === ADVISORIES ? advisoryInfo()
       : state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
     const extra = [
       state.tux ? "about open-source software (Tux is on)" : "",
+      state.clippy ? "about Microsoft and Windows (Clippy is on)" : "",
       state.source ? `from ${state.source}` : "",
       state.query ? `matching "${state.query}"` : "",
     ].filter(Boolean).join(", ");
     const cveNote = cveCount ? ` and ${cveCount} ${cveCount === 1 ? "CVE" : "CVEs"}` : "";
     const note = `${count} ${count === 1 ? "story" : "stories"}${cveNote}${extra ? ` ${extra}` : ""}`;
     const onlyTux = state.tux && !state.topic && !state.source && !state.query;
+    const onlyClippy = state.clippy && !state.topic && !state.source && !state.query;
     const clear = () => {
       if (onlyTux) { setTux(false); return; }
+      if (onlyClippy) { setClippy(false); return; }
       Object.assign(state, { topic: "", source: "", query: "" });
       $("#search").value = "";
+      syncSearchClear();
       $("#source-filter").value = "";
       syncUrl(true);
       render();
     };
     head.replaceChildren(
       el("div", { class: "filter-head-text" },
-        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : "Filtered" }),
+        el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : onlyClippy ? "Microsoft only" : "Filtered" }),
         el("h2", { text: name }),
         ...(desc ? [el("p", { class: "muted filter-desc", text: desc })] : []),
         el("p", { class: "muted filter-note", text: note })),
-      el("button", { class: "filter-clear", type: "button", onclick: clear, text: onlyTux ? "Show everything" : state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
+      el("button", { class: "filter-clear", type: "button", onclick: clear, text: onlyTux || onlyClippy ? "Show everything" : state.topic && !state.source && !state.query ? "Show all topics" : "Clear filters" }));
     head.hidden = false;
   }
 
@@ -690,10 +705,13 @@
       ...(onCount < all.length ? [el("button", { class: "chip", text: "Show all", onclick: () => setOff(all.map((s) => s.name), false) })] : []),
     );
 
-    // Tux mode lists only the open-source project and community sources
-    const shown = all.filter((s) => (!state.tux || s.oss) && srcMatch(s.name, s.category, s.site, s.url));
+    // Tux mode lists only the open-source project and community sources; Clippy mode only the Microsoft ones
+    const shown = all.filter((s) => (!state.tux || s.oss) && (!state.clippy || s.ms) && srcMatch(s.name, s.category, s.site, s.url));
     if (state.tux) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `Tux is on: showing the ${all.filter((s) => s.oss).length} open-source sources. Stories from other sources still show on the News tab when they're about open-source software.` }));
+    }
+    if (state.clippy) {
+      $("#sources-switches").append(el("span", { class: "src-count", text: `Clippy is on: showing the ${all.filter((s) => s.ms).length} Microsoft and Windows sources. Stories from other sources still show on the News tab when their headline is about Microsoft.` }));
     }
     if (state.srcQuery.trim()) {
       $("#sources-switches").append(el("span", { class: "src-count", text: `${shown.length} of ${all.length} match "${state.srcQuery.trim()}".` }));
@@ -814,7 +832,10 @@
     state.source = params.get("source") || "";
     state.query = params.get("q") || "";
     $("#search").value = state.query;
+    syncSearchClear();
   }
+  // The X at the left of the News search shows only while the box has text
+  const syncSearchClear = () => { $("#search-clear").hidden = !$("#search").value; };
 
   // ---------- small-screen topic panel and sticky offsets ----------
   // Height the sticky topbar covers; 0 on phones, where the topbar scrolls away (see style.css)
@@ -874,11 +895,20 @@
     syncThemeToggle();
   }
 
-  // Paperclip (right of the two matches): headline prefix on/off, saved as ind.clippy
+  // Paperclip (right of the two matches): Microsoft/Windows-only filter plus headline prefix, saved as ind.clippy.
+  // Clippy and Tux are either/or: switching one on switches the other off.
   function syncClippyToggle() {
     const b = $("#clippy-toggle");
     b.setAttribute("aria-pressed", String(state.clippy));
-    b.title = state.clippy ? "It looks like you're done with me. Click to dismiss" : "It looks like you're reading the news. Would you like help?";
+    b.title = state.clippy ? "It looks like you're only reading about Microsoft. Click to show everything again" : "It looks like you're reading the news. Would you like to see only Microsoft and Windows stories?";
+  }
+  function setClippy(on) {
+    state.clippy = on;
+    store.set(LS_CLIPPY, on);
+    if (on && state.tux) { state.tux = false; store.set(LS_TUX, false); syncTuxToggle(); }
+    syncClippyToggle();
+    populateFilters();
+    render();
   }
 
   // Tux (right of the paperclip): open-source-only filter on/off, saved as ind.tux
@@ -890,6 +920,7 @@
   function setTux(on) {
     state.tux = on;
     store.set(LS_TUX, on);
+    if (on && state.clippy) { state.clippy = false; store.set(LS_CLIPPY, false); syncClippyToggle(); }
     syncTuxToggle();
     populateFilters();
     render();
@@ -901,12 +932,7 @@
     syncSceneToggle();
     syncThemeToggle();
     syncClippyToggle();
-    $("#clippy-toggle").addEventListener("click", () => {
-      state.clippy = !state.clippy;
-      store.set(LS_CLIPPY, state.clippy);
-      syncClippyToggle();
-      render();
-    });
+    $("#clippy-toggle").addEventListener("click", () => setClippy(!state.clippy));
     syncTuxToggle();
     $("#tux-toggle").addEventListener("click", () => setTux(!state.tux));
     $("#theme-toggle").addEventListener("click", () => {
@@ -927,7 +953,15 @@
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
     $("#src-search").addEventListener("input", (e) => { state.srcQuery = e.target.value; renderSources(); });
-    $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncUrl(false); render(); });
+    $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncSearchClear(); syncUrl(false); render(); });
+    $("#search-clear").addEventListener("click", () => {
+      $("#search").value = "";
+      state.query = "";
+      syncSearchClear();
+      syncUrl(true);
+      render();
+      $("#search").focus();
+    });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); window.scrollTo({ top: 0 }); });
     $("#topics-toggle").addEventListener("click", () => toggleTopicPanel());
     // A tap outside the open topic sheet closes it
