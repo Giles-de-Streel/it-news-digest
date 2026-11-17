@@ -1,12 +1,12 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T06:15:51+00:00",
+ "generated": "2026-11-17T06:32:15+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 23,
-   "recent": 23,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -173,9 +173,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 88,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -762,7 +762,7 @@
   {
    "source": "Redis blog",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1571,9 +1571,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1607,8 +1607,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1398,
-   "recent": 11,
+   "fetched": 1399,
+   "recent": 12,
    "error": null
   },
   {
@@ -1638,7 +1638,7 @@
   {
    "source": "TechNode",
    "fetched": 1998,
-   "recent": 8,
+   "recent": 14,
    "error": null
   },
   {
@@ -1860,7 +1860,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 90,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1943,9 +1943,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 3,
+   "recent": 0,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,127 @@
   }
  ],
  "items": [
+  {
+   "id": "627de46862a2",
+   "title": "Huawei reveals the design of its first OSTA phone ahead of November 20 launch",
+   "url": "https://technode.com/2026/11/17/huawei-reveals-the-design-of-its-first-osta-phone-ahead-of-november-20-launch/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:28:53+00:00",
+   "summary": "Huawei’s new smartphone brand OSTA on Tuesday revealed the design of its first phone, the O1 Pro, ahead of its November 20 launch. The phone has an unusually wide body and a purple gradient finish, with a horizontal pill-shaped rear camera module. OSTA is positioning the O1 Pro as an AI phone running HarmonyOS. The […]",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "f69d63404033",
+   "title": "ByteDance opens Seedance 2.5’s 4K video generation API to developers",
+   "url": "https://technode.com/2026/11/17/bytedance-opens-seedance-2-5s-4k-video-generation-api-to-developers/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:28:41+00:00",
+   "summary": "ByteDance’s cloud unit Volcano Engine opened API access to the 4K version of its Seedance 2.5 video generation model on Monday. The wider release follows a trial that gave a first group of 20 studios and directors access to the model.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development"
+   ]
+  },
+  {
+   "id": "7f1c6aab4b3b",
+   "title": "Former Meituan and Feishu executives reportedly team up to build an AI recording ring",
+   "url": "https://technode.com/2026/11/17/former-meituan-and-feishu-executives-reportedly-team-up-to-build-an-ai-recording-ring/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:28:31+00:00",
+   "summary": "Liu Yanxiang, who previously ran Meituan’s ticketing, vacation and transportation business, has left the company and teamed up with a former Feishu executive who led international operations to start Beijing-based Huling Technology, Sina Tech reported Tuesday.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "b7f954d5f604",
+   "title": "Apple adds generative AI compliance filings to App Store Connect in China",
+   "url": "https://technode.com/2026/11/17/apple-adds-generative-ai-compliance-filings-to-app-store-connect-in-china/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:28:21+00:00",
+   "summary": "Apple has added a compliance page in App Store Connect where developers can submit declarations for apps distributed in mainland China that offer AI-generated or synthetic content or include features subject to a security assessment.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "ccba437d0167",
+   "title": "Huawei details Kirin 9050 display processor that enhances SDR content",
+   "url": "https://technode.com/2026/11/17/huawei-details-kirin-9050-display-processor-that-enhances-sdr-content/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:28:09+00:00",
+   "summary": "Huawei on Tuesday disclosed new details about the display processing unit in its Kirin 9050 series chips. The processor supports Huawei’s AI-HDR2020 technology, which enhances the brightness range and color of standard dynamic range content.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "844378a0935c",
+   "title": "Baidu’s Robin Li warns of AI bubble risk as applications lag infrastructure spending",
+   "url": "https://technode.com/2026/11/17/baidus-robin-li-warns-of-ai-bubble-risk-as-applications-lag-infrastructure-spending/",
+   "source": "TechNode",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:27:58+00:00",
+   "summary": "Baidu CEO Robin Li warned on Tuesday that the AI industry could face a bubble if businesses fail to turn adoption into higher profits. Speaking at the APEC CEO Summit in Shenzhen, Li said the spread of AI applications had fallen short of expectations despite heavy spending on infrastructure, rapid model development…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "004ea735884a",
+   "title": "Nvidia unveils its Rubin HPC GPU with \"more than 50,000\" CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations (Jeffrey Kampman/Tom's Hardware)",
+   "url": "https://www.techmeme.com/261117/p3#a261117p3",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T06:20:00+00:00",
+   "summary": "Jeffrey Kampman / Tom's Hardware : Nvidia unveils its Rubin HPC GPU with “more than 50,000” CUDA cores, up from 28,672 in the current Rubin GPU, for agentic workflows and scientific simulations — Rubin HPC puts “over 50,000” CUDA cores on a chip, implies four-die layout — The Supercomputing 2026 conference is under…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "365053261ed4",
+   "title": "AI security took more than one in three cybersecurity seed funding deals",
+   "url": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-17T06:19:27+00:00",
+   "summary": "Seed deals for cybersecurity startups dipped slightly in the third quarter of 2026, the second decline in a row, while the wider U.S. venture market had one of its best quarters since 2021. Investment firm DataTribe tracked the split using PitchBook data on U.S.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ae3ee0f483ed",
+   "title": "Quoting Go Proverbs",
+   "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-17T06:16:26+00:00",
+   "summary": "A little copying is better than a little dependency. — Go Proverbs , via Tags: go , programming",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Supply chain security"
+   ]
+  },
   {
    "id": "df59cf38dc43",
    "title": "The Fastest Paddleboard in the World",
@@ -2793,6 +2914,20 @@
    ]
   },
   {
+   "id": "f054a54f8228",
+   "title": "How Revolut raises ambition without lowering the bar",
+   "url": "https://openai.com/business/customer-stories/revolut",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-16T09:30:00+00:00",
+   "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
    "id": "a8f500d1761f",
    "title": "Test/verification technique effectiveness with Astra",
    "url": "https://danluu.com/astra-testing/",
@@ -2803,6 +2938,36 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "f2fba5b2cfc6",
+   "title": "The Fossils That Haunted Lovecraft",
+   "url": "https://paleonerdish.wordpress.com/2026/10/30/halloween-special-xiv-the-fossils-that-haunted-lovecraft/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T00:38:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0ef67c4ddab7",
+   "title": "Run RediSearch, vector sets, & RedisJSON natively on Windows with Memurai",
+   "url": "https://redis.io/blog/run-redisearch-vector-sets-and-redisjson-natively-on-windows-with-memurai/",
+   "source": "Redis blog",
+   "source_category": "Databases",
+   "published": "2026-11-16T00:00:00+00:00",
+   "summary": "Memurai for Redis 8 is now generally available, bringing Redis 8.2 capabilities to Windows developers without requiring Docker, WSL, or a separate Linux environment. For organizations running Windows-based apps, this means access to modern Redis capab...",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Development",
+    "Databases",
+    "DevOps & SRE"
    ]
   }
  ]
