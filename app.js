@@ -834,8 +834,10 @@
     $("#search").value = state.query;
     syncSearchClear();
   }
-  // The X at the left of the News search shows only while the box has text
-  const syncSearchClear = () => { $("#search-clear").hidden = !$("#search").value; };
+  // The X at the left of each search box (News, CVEs, Sources, History) shows only while the box has text
+  const syncSearchClear = () => document.querySelectorAll(".search-wrap").forEach((w) => {
+    w.querySelector(".search-clear").hidden = !w.querySelector("input").value;
+  });
 
   // ---------- small-screen topic panel and sticky offsets ----------
   // Height the sticky topbar covers; 0 on phones, where the topbar scrolls away (see style.css)
@@ -953,14 +955,17 @@
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
     $("#src-search").addEventListener("input", (e) => { state.srcQuery = e.target.value; renderSources(); });
-    $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncSearchClear(); syncUrl(false); render(); });
-    $("#search-clear").addEventListener("click", () => {
-      $("#search").value = "";
-      state.query = "";
-      syncSearchClear();
-      syncUrl(true);
-      render();
-      $("#search").focus();
+    $("#search").addEventListener("input", (e) => { state.query = e.target.value; syncUrl(false); render(); });
+    // Every search box: keep its X in step with the text; clicking the X empties the box and runs the
+    // box's own input handler (so state, the link and the list update as if the text had been deleted)
+    document.querySelectorAll(".search-wrap").forEach((w) => {
+      const input = w.querySelector("input");
+      input.addEventListener("input", syncSearchClear);
+      w.querySelector(".search-clear").addEventListener("click", () => {
+        input.value = "";
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+        input.focus();
+      });
     });
     $("#source-filter").addEventListener("change", (e) => { state.source = e.target.value; syncUrl(true); render(); window.scrollTo({ top: 0 }); });
     $("#topics-toggle").addEventListener("click", () => toggleTopicPanel());
