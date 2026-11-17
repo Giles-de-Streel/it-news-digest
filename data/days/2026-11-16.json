@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T02:16:09+00:00",
+ "generated": "2026-11-17T02:31:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 22,
-   "recent": 22,
+   "fetched": 23,
+   "recent": 23,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 33,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -941,9 +941,9 @@
   },
   {
    "source": "HIPAA Journal",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 10,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "NIST News",
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 67,
-   "recent": 31,
+   "fetched": 68,
+   "recent": 32,
    "error": null
   },
   {
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -2400,6 +2400,138 @@
  ],
  "items": [
   {
+   "id": "57a7a8693cbe",
+   "title": "CVE-2026-79614: An out-of-bounds write vulnerability in “libclinkc.so” in Zyxel DX3301-T0/EX3301-T0 firmware versions through…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79614",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T02:17:22.743000+00:00",
+   "summary": "An out-of-bounds write vulnerability in “libclinkc.so” in Zyxel DX3301-T0/EX3301-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an unauthenticated attacker to elevate privileges and potentially execute arbitrary commands by sending a crafted HTTP request. WAN access is disabled by default on these devices.",
+   "kind": "cve",
+   "cve": "CVE-2026-79614",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-79614",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware",
+    "Embedded & IoT",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "48fe3cb2d1dc",
+   "title": "CVE-2026-130380: AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the sqlsrv-based MS SQL driver that…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130380",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T02:17:22.037000+00:00",
+   "summary": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the sqlsrv-based MS SQL driver that allows unauthenticated attackers to log in by submitting an empty username.",
+   "kind": "cve",
+   "cve": "CVE-2026-130380",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130380",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3c99fe626d05",
+   "title": "CVE-2026-130371: phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass vulnerability…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130371",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T02:17:20.490000+00:00",
+   "summary": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass vulnerability because the web installer ignores the legacy config/database.php during 3.x upgrades.",
+   "kind": "cve",
+   "cve": "CVE-2026-130371",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130371",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2bac541e3efb",
+   "title": "CVE-2026-130369: phpMyFAQ 4.1.9 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130369",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T02:17:20.130000+00:00",
+   "summary": "phpMyFAQ 4.1.9 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in multisite deployments that allows attackers to overwrite passkeys of accounts on other tenants via a shared PHP session store.",
+   "kind": "cve",
+   "cve": "CVE-2026-130369",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130369",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "0aa47d2e37fb",
+   "title": "CVE-2026-130366: AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the ClickHouse driver that allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130366",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T02:17:19.593000+00:00",
+   "summary": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the ClickHouse driver that allows remote attackers to log in to passwordless accounts without the configured defaultPasswordHash password.",
+   "kind": "cve",
+   "cve": "CVE-2026-130366",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130366",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "38484c93ecc7",
+   "title": "Singapore discussing effect of new chip rules with US, minister says",
+   "url": "https://www.semafor.com/article/11/16/2026/singapore-working-to-gauge-effect-of-new-us-chip-rules-minister-says",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:16:56+00:00",
+   "summary": "Josephine Teo told Semafor’s Silicon Valley & The World she’s in touch with the US State Department.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "9596d6ebc556",
    "title": "Optimizely supply chain attack infects major brands' sites with malware",
    "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
@@ -2518,6 +2650,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "cb7c4105521e",
+   "title": "Show HN: Win98 PE Interpreter in WebAssembly – StarCraft and Diablo on Phones",
+   "url": "https://wine-assembly.berrry.app/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T01:50:54+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -15006,6 +15151,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "7a0c09322df2",
+   "title": "Large Angle Period of the Pendulum",
+   "url": "https://jslandy.com/pendulum/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T06:11:35+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
