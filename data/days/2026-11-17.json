@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T05:16:29+00:00",
+ "generated": "2026-11-17T05:31:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 22,
-   "recent": 22,
+   "fetched": 23,
+   "recent": 23,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -551,9 +551,9 @@
   },
   {
    "source": "CIO.com",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "fetched": 20,
+   "recent": 6,
+   "error": null
   },
   {
    "source": "SiliconANGLE",
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1469,7 +1469,7 @@
   },
   {
    "source": "Guardian Technology",
-   "fetched": 31,
+   "fetched": 36,
    "recent": 8,
    "error": null
   },
@@ -1979,9 +1979,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "fetched": 13,
+   "recent": 3,
+   "error": null
   },
   {
    "source": "Microsoft 365 status",
@@ -2178,7 +2178,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2226,7 +2226,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -2400,6 +2400,44 @@
  ],
  "items": [
   {
+   "id": "e6a5eef27ea3",
+   "title": "Announcing the General Availability of Holodeck 9.1.1",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/16/announcing-the-general-availability-of-holodeck-9-1-1/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-17T05:21:31+00:00",
+   "summary": "Holodeck 9.1.1, a patch release for the nested VMware Cloud Foundation (VCF) toolkit, is now available. This release follows Holodeck 9.1 and focuses on deployment reliability, tighter prechecks, and added support for new versions.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "5a88fe8f215f",
+   "title": "CVE-2026-120387: An improper JWT signature verification vulnerability in CIRCUTOR PowerStudio SCADA WAVE desktop version…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120387",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T05:18:33.067000+00:00",
+   "summary": "An improper JWT signature verification vulnerability in CIRCUTOR PowerStudio SCADA WAVE desktop version allows an unauthenticated remote attacker to bypass authentication by submitting an unsigned JWT with the algorithm set to “none”.",
+   "kind": "cve",
+   "cve": "CVE-2026-120387",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120387",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "ICS / OT",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "1ef65dbe395d",
    "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
    "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
@@ -2452,6 +2490,19 @@
    "topics": [
     "Linux & open source",
     "Databases"
+   ]
+  },
+  {
+   "id": "7d5642ecb0f0",
+   "title": "Unkernel: Linux kernel in WASM",
+   "url": "https://unkernel.dev",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T04:08:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -2533,6 +2584,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "a8f500d1761f",
+   "title": "Test/verification technique effectiveness with Astra",
+   "url": "https://danluu.com/astra-testing/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T07:33:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   }
  ]
