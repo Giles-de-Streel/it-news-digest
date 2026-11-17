@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T03:01:06+00:00",
+ "generated": "2026-11-17T03:16:38+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 4,
+   "error": null
   },
   {
    "source": "The Record",
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -300,7 +300,7 @@
   {
    "source": "Azure SQL Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,32 @@
   }
  ],
  "items": [
+  {
+   "id": "c498748e89b0",
+   "title": "SqlPackage Deployment History and Fast Comparison Preview",
+   "url": "https://devblogs.microsoft.com/azure-sql/sqlpackage-deployment-history-and-fast-comparison-preview/",
+   "source": "Azure SQL Blog",
+   "source_category": "Databases",
+   "published": "2026-11-17T03:11:04+00:00",
+   "summary": "Database deployments should be repeatable. A SQL database project describes the desired schema, its build produces a .dacpac, and SqlPackage compares that model with a target database to work out the changes to apply. But what happens when a pipeline publishes the same database model again?",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "fabf1614f4b1",
+   "title": "Water in the Ancient Desert",
+   "url": "https://hackaday.com/2026/11/16/water-in-the-ancient-desert/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-17T03:00:29+00:00",
+   "summary": "The desert of the Iranian Plateau receives very little rainfall, and most of it falls in the mountains before flowing underneath the porous ground of the region. The ancient Persians …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "acabe6d7ee3b",
    "title": "macOS 27.3 beta warns if an app would get full device control, nudging users to \"Choose Apps\" for the app to control instead, brought on by AI apps' popularity (Juli Clover/MacRumors)",
