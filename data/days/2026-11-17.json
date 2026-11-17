@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T13:16:06+00:00",
+ "generated": "2026-11-17T13:31:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -444,7 +444,7 @@
   {
    "source": "Hex-Rays (IDA)",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -942,7 +942,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1151,9 +1151,9 @@
   },
   {
    "source": "Ubuntu Blog",
-   "fetched": 12,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Linux kernel releases",
@@ -1470,7 +1470,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 39,
+   "recent": 40,
    "error": null
   },
   {
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 69,
-   "recent": 29,
+   "fetched": 70,
+   "recent": 30,
    "error": null
   },
   {
@@ -1979,7 +1979,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 11,
    "recent": 3,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,113 @@
   }
  ],
  "items": [
+  {
+   "id": "c8e1a93d7941",
+   "title": "HHS Issues Final Rule Implementing HIPAA Privacy Rule Modifications",
+   "url": "https://www.hipaajournal.com/hhsfinal-rule-hipaa-privacy-rule-modifications/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-17T13:29:24+00:00",
+   "summary": "A final rule has been issued by the U.S. Department of Health and Human Services (HHS), implementing proposed modifications to […]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6475db78ce3e",
+   "title": "IDA 9.5: Introducing Native UEFI Firmware Support",
+   "url": "https://hex-rays.com/blog/introducing-native-uefi-firmware-support-in-ida-9.5",
+   "source": "Hex-Rays (IDA)",
+   "source_category": "Reverse engineering",
+   "published": "2026-11-17T13:25:50+00:00",
+   "summary": "We are excited to introduce native UEFI firmware analysis support in IDA 9.5! Firmware is a prime target for persistent malware and a fertile hunting ground for vulnerabilities. It is also one of the most challenging environments in which to understand what code is actually doing.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "Hardware",
+    "Reverse engineering",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "65dfa74b7d10",
+   "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
+   "url": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-17T13:24:43+00:00",
+   "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-84869",
+     "score": 9.9,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "ConnectWise"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-84869",
+      "added": "2026-09-11",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-84869",
+     "score": 0.01173,
+     "percentile": 0.67987,
+     "date": "2026-11-16"
+    }
+   }
+  },
+  {
+   "id": "876f45705410",
+   "title": "Face unlock is a good compromise for the iPhone Duo – now let’s have it for the Mac",
+   "url": "https://9to5mac.com/2026/11/17/face-unlock-is-a-good-compromise-for-the-iphone-duo-now-lets-have-it-for-the-mac/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-17T13:23:14+00:00",
+   "summary": "When Apple first announced Face ID , the company talked a great deal about how secure the system is, contrasting it to the far less secure image-based facial unlock systems used by the likes of Google and Samsung.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "86d5ddc9e216",
+   "title": "Global stocks fall on growing fears of a tech downturn",
+   "url": "https://www.semafor.com/article/11/17/2026/global-tech-stocks-fall-on-growing-fears-of-a-downturn",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-17T13:19:50+00:00",
+   "summary": "Bourses in Japan, South Korea, and Taiwan all fell after AI stocks in the US declined yesterday.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "8009126fdd5e",
+   "title": "The UK's NHS plans to keep its £330M Palantir contract until 2029, rather than triggering an early release clause in 2027; the deal was due to run until 2031 (Hugh Pym/BBC)",
+   "url": "https://www.techmeme.com/261117/p24#a261117p24",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T13:15:01+00:00",
+   "summary": "Hugh Pym / BBC : The UK's NHS plans to keep its £330M Palantir contract until 2029, rather than triggering an early release clause in 2027; the deal was due to run until 2031 — The government says it will continue a key NHS data contract in England with the controversial US tech giant Palantir until 2029 …",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "6d3ee34d0f6c",
    "title": "Continuous process manufacturing: Why OT cybersecurity demands different approach when plants cannot stop",
@@ -3023,6 +3130,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "8c5b4e01285e",
+   "title": "Regulatory Capture by Anthropic Through METR",
+   "url": "https://nitter.cf/kevinnbass/status/2099621874279817638",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T12:21:57+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
@@ -4452,7 +4572,14 @@
    "source_category": "IT industry",
    "published": "2026-11-17T10:08:00+00:00",
    "summary": "Anthropic IPO could make its employees worth an average of $41 million www.calcalistech.com",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6344945c0469",
+     "source": "Guardian Technology",
+     "title": "Anthropic IPO: how can I buy shares, and is it worth it?",
+     "url": "https://www.theguardian.com/technology/2026/nov/17/anthropic-ipo-flotation-buy-shares-stock-market-claude-ai"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6645,6 +6772,19 @@
    ]
   },
   {
+   "id": "3c57a6a33709",
+   "title": "USN-9105-1: Apache Jackrabbit vulnerability",
+   "url": "https://ubuntu.com/security/notices/USN-9105-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-17T00:45:37+00:00",
+   "summary": "Lukas Reschke discovered that the WebDAV support in Apache Jackrabbit incorrectly checked the content type of requests when protecting against cross-site request forgery. A remote attacker could possibly use this issue to perform cross-site request forgery attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "4b8a9dca29d1",
    "title": "USN-9103-1: HTMLDOC vulnerability",
    "url": "https://ubuntu.com/security/notices/USN-9103-1",
@@ -6958,6 +7098,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "b0559879070b",
+   "title": "Why sending notifications is a nightmare for engineers",
+   "url": "https://notifkit.dev/articles/why-notification-systems-are-a-nightmare",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-16T13:46:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
