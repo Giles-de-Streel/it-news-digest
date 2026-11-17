@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T08:31:42+00:00",
+ "generated": "2026-11-17T08:45:49+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 10,
-   "recent": 10,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
   },
   {
    "source": "SANS ISC",
@@ -354,7 +354,7 @@
   {
    "source": "PostgreSQL News",
    "fetched": 10,
-   "recent": 1,
+   "recent": 4,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1859,8 +1859,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
-   "recent": 24,
+   "fetched": 92,
+   "recent": 25,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,20 @@
   }
  ],
  "items": [
+  {
+   "id": "612c1a4ea417",
+   "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
+   "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-17T08:35:42+00:00",
+   "summary": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI"
+   ]
+  },
   {
    "id": "9581e50f8c99",
    "title": "Building Sovereign AI in Europe, With Europe: Our New Startup Accelerator",
@@ -2427,6 +2441,20 @@
    ]
   },
   {
+   "id": "15708cf3fa3f",
+   "title": "Enlight and Shemen join race for Israeli data centers with 150MW Haifa project",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsM1Z6TW1QM3pQV0dQdWd3SXRKSi0yZ3BDSVF6U2ZoUUpvZVRSLW5PdVNQeXlwX3czSnpMbF9OTUw3WHNvUXhsUnZuc0NVZzdMTkx5RU4wNXFvUHRvUVVNUEhaU1J2UEE?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-17T08:26:00+00:00",
+   "summary": "Enlight and Shemen join race for Israeli data centers with 150MW Haifa project CTech",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "e7b96a492dfc",
    "title": "Redict is deprecated",
    "url": "https://redict.io/posts/2026-11-17-redict-deprecated/",
@@ -2437,6 +2465,19 @@
    "also_covered_by": [],
    "topics": [
     "System administration"
+   ]
+  },
+  {
+   "id": "8b3b3b977d3f",
+   "title": "Germany: Greiz Hospital Reopens Emergency Room After Ransom Attack",
+   "url": "https://securityaffairs.com/203279/cyber-crime/germany-greiz-hospital-reopens-emergency-room-after-ransom-attack.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-17T08:20:03+00:00",
+   "summary": "Greiz hospital reopens its emergency room after an extortion attack. Investigators are probing the case, but no state links have emerged. The Greiz-Ronneburg district hospital in Thuringia reported its system failure on Saturday evening, 14 November. By Sunday morning the emergency room was out of service.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
    ]
   },
   {
@@ -3463,6 +3504,50 @@
    "source_category": "Databases",
    "published": "2026-11-17T00:00:00+00:00",
    "summary": "pg_fastload 1.0.0 is a parallel bulk loader for PostgreSQL, 1.58x faster than the best pg_bulkload mode and 6.07x faster than COPY. It parallelises the loading pipeline across background workers while keeping the load inside a single transaction.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "c05b77e809bd",
+   "title": "PG_CVE 1.1.1 Released",
+   "url": "https://www.postgresql.org/about/news/pg_cve-111-released-3443/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "We are pleased to announce the release 1.1.1 of PG_CVE, a lightweight tool designed to provide DBAs and system administrators with a clear, up-to-date overview of CVEs (Common Vulnerabilities and Exposures), known exploits, and release stability across PostgreSQL versions.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "System administration"
+   ]
+  },
+  {
+   "id": "f2641915adb4",
+   "title": "Apache Cloudberry 2.2.0 Released: PostgreSQL-Based MPP Database Moves to the PostgreSQL 14.10 Kernel",
+   "url": "https://www.postgresql.org/about/news/apache-cloudberry-220-released-postgresql-based-mpp-database-moves-to-the-postgresql-1410-kernel-3440/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "The Apache Cloudberry (Incubating) community is pleased to announce the release of Apache Cloudberry 2.2.0, the latest version of its open-source massively parallel processing (MPP) database built on PostgreSQL for large-scale analytics and AI workloads.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI",
+    "Databases"
+   ]
+  },
+  {
+   "id": "818db250fd72",
+   "title": "Navicat Introduces Navicat 18 for PostgreSQL: Experience Enterprise-Grade PostgreSQL Database Management and Development",
+   "url": "https://www.postgresql.org/about/news/navicat-introduces-navicat-18-for-postgresql-experience-enterprise-grade-postgresql-database-management-and-development-3441/",
+   "source": "PostgreSQL News",
+   "source_category": "Databases",
+   "published": "2026-11-17T00:00:00+00:00",
+   "summary": "Navicat, a leading provider of powerful database management and development software, is proud to unveil Navicat 18 for PostgreSQL, an innovative release that sets a new standard in PostgreSQL administration and development.",
    "also_covered_by": [],
    "topics": [
     "Databases"
