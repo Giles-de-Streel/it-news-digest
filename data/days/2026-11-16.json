@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T00:16:01+00:00",
+ "generated": "2026-11-17T00:31:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -155,14 +155,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 25,
-   "recent": 25,
+   "fetched": 24,
+   "recent": 24,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 40,
+   "recent": 39,
    "error": null
   },
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1565,9 +1565,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1757,8 +1757,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 61,
-   "recent": 25,
+   "fetched": 62,
+   "recent": 26,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 92,
+   "fetched": 91,
    "recent": 25,
    "error": null
   },
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,32 @@
   }
  ],
  "items": [
+  {
+   "id": "c11b8f4649b7",
+   "title": "AI agents still act like ‘Day 1 employees,’ Glean CEO says",
+   "url": "https://www.semafor.com/article/11/16/2026/ai-agents-still-act-like-day-1-employees-glean-ceo-says",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-17T00:28:49+00:00",
+   "summary": "Arvind Jain said he doesn’t worry about AI eliminating humans’ jobs yet because the technology isn’t powerful enough.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a7c9b99c664d",
+   "title": "Sources: the US DOJ will review DoorDash's ~$17B acquisition of Instacart; DoorDash has agreed to pay a $1.25B breakup fee if the deal fails antitrust review (Jody Godoy/Reuters)",
+   "url": "https://www.techmeme.com/261116/p48#a261116p48",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T00:16:11+00:00",
+   "summary": "Jody Godoy / Reuters : Sources: the US DOJ will review DoorDash's ~$17B acquisition of Instacart; DoorDash has agreed to pay a $1.25B breakup fee if the deal fails antitrust review — The US Department of Justice will review DoorDash's proposed acquisition of Instacart, two people familiar with the matter told Reuters…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "4fbc1424cef9",
    "title": "Trump cyber director: AI labs ‘extremely good’ about sharing models",
@@ -2476,6 +2502,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "764198fc49a3",
+   "title": "llm 0.37.3",
+   "url": "https://simonwillison.net/2026/Nov/16/llm/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-16T23:57:26+00:00",
+   "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code .",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Databases"
    ]
   },
   {
@@ -2559,6 +2599,19 @@
    "source_category": "IT industry",
    "published": "2026-11-16T23:40:36+00:00",
    "summary": "France's attribution to Iran of the attack on the refrigeration systems of numerous French supermarkets is only its first response. This move is part of a deliberate strategy and was a necessary step before any potential countermeasures.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1ecad49c0fe2",
+   "title": "[SPLASH'26] Mojo: Towards One Systems Language for All Hardware",
+   "url": "https://www.youtube.com/watch?v=9-97SB5XJh4",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-16T23:27:11+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2733,6 +2786,19 @@
    "id": "bfbec7e59df3",
    "title": "Supreme Court declines Trump bid to revive case over DEI research funding cuts",
    "url": "https://www.highereddive.com/news/supreme-court-declines-trump-bid-to-revive-case-over-dei-research-funding-c/874788/",
+   "source": "Higher Ed Dive",
+   "source_category": "Higher ed",
+   "published": "2026-11-16T23:07:00+00:00",
+   "summary": "A lower court blocked the administration from pulling funding from University of California researchers over project topics it opposed.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "9278678f3057",
+   "title": "Supreme Court declines Trump bid to revive DEI research funding cuts",
+   "url": "https://www.highereddive.com/news/supreme-court-declines-trump-bid-to-revive-dei-research-funding-cuts/874788/",
    "source": "Higher Ed Dive",
    "source_category": "Higher ed",
    "published": "2026-11-16T23:07:00+00:00",
@@ -13459,6 +13525,12 @@
      "source": "Lobsters",
      "title": "What are you doing this week?",
      "url": "https://lobste.rs/s/isejqv/what_are_you_doing_this_week"
+    },
+    {
+     "id": "20bfd03621f2",
+     "source": "Hacker News",
+     "title": "Do Repeat Yourself",
+     "url": "https://arcentry.com/blog/do-repeat-yourself/"
     }
    ],
    "topics": [
