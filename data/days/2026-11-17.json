@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T11:31:08+00:00",
+ "generated": "2026-11-17T11:46:33+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 10,
+   "recent": 12,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 36,
+   "recent": 37,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1153,7 +1153,7 @@
    "source": "Ubuntu Blog",
    "fetched": 0,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
   },
   {
    "source": "Linux kernel releases",
@@ -1175,9 +1175,9 @@
   },
   {
    "source": "Ubuntu security notices",
-   "fetched": 10,
-   "recent": 5,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Debian security advisories",
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 58,
+   "recent": 59,
    "error": null
   },
   {
@@ -1872,7 +1872,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -2166,7 +2166,7 @@
   {
    "source": "Unsung (Marcin Wichary)",
    "fetched": 618,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,125 @@
   }
  ],
  "items": [
+  {
+   "id": "7a4747fd2c1b",
+   "title": "Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'",
+   "url": "https://www.theregister.com/security/2026/11/17/opinion-pollster-ipsos-fesses-up-to-cybersecurity-incident/5310405",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-17T11:44:00+00:00",
+   "summary": "Market research company brings in external specialists to grok cause and scope",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f8c3fc3a6c24",
+   "title": "Xbox's Project Helix \"is not a PC that can also play console games\"",
+   "url": "https://www.gamesindustry.biz/xboxs-project-helix-is-not-a-pc-that-can-also-play-console-games",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-17T11:44:00+00:00",
+   "summary": "Xbox VP of Next Generation Jason Ronald has clarified that Project Helix is \"designed to be a console that is also capable of playing games, not a PC that can also play console games.\"",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "3290a89f82c5",
+   "title": "KDE Koko Image Viewer Moves Closer to Replacing Gwenview",
+   "url": "https://linuxiac.com/kde-koko-26-12-image-viewer-moves-closer-to-replacing-gwenview/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-17T11:38:38+00:00",
+   "summary": "KDE Koko 26.12 adds image editing tools, file management features, and interface improvements as it moves closer to becoming a Gwenview alternative.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3bfcc7619f4f",
+   "title": "Telo MT1 electric pickup: Mini-length, but with 106 kWh",
+   "url": "https://www.heise.de/en/news/Telo-MT1-electric-pickup-Mini-length-but-with-106-kWh-11527547.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-17T11:36:00+00:00",
+   "summary": "If enough preorders come in, Telo plans to build the MT1 in 2027. Two prototypes are on the road, but regulatory approval is still needed.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "f24536100db1",
+   "title": "AMD Gets Its Firmware Ready For Upcoming RDNA 4m iGPUs On Linux",
+   "url": "https://www.phoronix.com/news/AMD-RDNA-4m-Firmware",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-17T11:34:00+00:00",
+   "summary": "AMD overnight merged the latest changes of the open-source graphics driver puzzle for the upcoming RDNA 4m \"GFX17x\" iGPUs on Linux. The firmware is ready for enabling the next-gen AMD iGPUs on Linux...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "9d315588bdd5",
+   "title": "European Commission Plan to Give Frontex Trusted Flagger Status Is A Threat to Free Speech",
+   "url": "https://www.eff.org/deeplinks/2026/11/european-commission-plan-give-frontex-trusted-flagger-status-threat-free-speech",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-17T11:33:26+00:00",
+   "summary": "EFF and 27 other human rights organizations today called on the European Commission to retract a dangerous proposal granting its border agency Frontex to request that national authorities issue take-down orders for social media content and giving it so-called “trusted flagger” status under the Digital Services Act…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7aa2b6ea7fa1",
+   "title": "Samsung, SK hynix, and Micron form unlikely alliance to standardize robot charging as chipmakers push toward unmanned fabs",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/samsung-sk-hynix-and-micron-form-unlikely-alliance-to-standardize-robot-charging-as-chipmakers-push-toward-unmanned-chip-fabs-standard-specs-would-allow-manufacturer-agnostic-charging-equipment",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-17T11:30:00+00:00",
+   "summary": "Samsung, SK hynix, and Micron are working to standardize charging infrastructure for mobile fab robot batteries to simplify automation and help fabs deploy larger mixed robotic fleets.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ba094620ea17",
+   "title": "Model ML, which builds AI agents integrated in Excel and PowerPoint to automate pitch decks, research, and due diligence, raised $250M at a $1.5B valuation (Yazhou Sun/Bloomberg)",
+   "url": "https://www.techmeme.com/261117/p15#a261117p15",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T11:30:00+00:00",
+   "summary": "Yazhou Sun / Bloomberg : Model ML, which builds AI agents integrated in Excel and PowerPoint to automate pitch decks, research, and due diligence, raised $250M at a $1.5B valuation — Model ML, a startup that builds artificial intelligence agents to handle rote tasks for bankers, consultants and investors …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "624a51153dd2",
+   "title": "Holiday shopping in a world of fakes: How AI is changing the game",
+   "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/holiday-shopping-in-a-world-of-fakes-how-ai-is-changing-the-game",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-17T11:29:09+00:00",
+   "summary": "It’s the most wonderful time of the year—especially for scammers looking to make the most of shopping season.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "2c4016418943",
    "title": "Vodafone joint venture to develop two major data center projects in Egypt",
@@ -2451,6 +2570,24 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5e43b1695ab6",
+   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-17T11:20:18+00:00",
+   "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Development",
+    "Pen testing & red team",
+    "Policy & regulation"
    ]
   },
   {
@@ -2920,6 +3057,21 @@
    "also_covered_by": [],
    "topics": [
     "Threats & malware"
+   ]
+  },
+  {
+   "id": "380b27664083",
+   "title": "Infoblox Confirms Supply Chain Breach After Attackers Access Sensitive Data",
+   "url": "https://securityaffairs.com/203309/data-breach/infoblox-confirms-supply-chain-breach-after-attackers-access-sensitive-data.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-17T10:54:35+00:00",
+   "summary": "A breach at an Infoblox supplier exposed customer network snapshots and employee data, highlighting the risks of trusted third-party access. Infoblox, one of the major players in cybersecurity and network infrastructure, is investigating a data breach after attackers gained access to internal company information…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Supply chain security",
+    "Networking"
    ]
   },
   {
@@ -3549,7 +3701,14 @@
    "source_category": "Security",
    "published": "2026-11-17T09:41:58+00:00",
    "summary": "Apple has introduced more granular permissions and greater transparency for Device Control and Data Access, and Full Disk Access in macOS 27.3 beta 2, following its earlier announcement of additional controls.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "cb74b2746cc6",
+     "source": "The Hacker News",
+     "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+     "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html"
+    }
+   ],
    "topics": [
     "AI"
    ]
