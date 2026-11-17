@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T06:32:15+00:00",
+ "generated": "2026-11-17T06:46:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -155,9 +155,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 23,
+   "recent": 23,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -173,9 +173,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 88,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Data Center Dynamics",
@@ -186,7 +186,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -317,9 +317,9 @@
   },
   {
    "source": "SQLServerCentral",
-   "fetched": 10,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Oracle Security Alerts",
@@ -342,7 +342,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1176,7 +1176,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1434,7 +1434,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1571,9 +1571,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1656,7 +1656,7 @@
   {
    "source": "AhnLab ASEC",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1859,8 +1859,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 90,
-   "recent": 21,
+   "fetched": 89,
+   "recent": 20,
    "error": null
   },
   {
@@ -1943,9 +1943,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,33 @@
   }
  ],
  "items": [
+  {
+   "id": "d5b939b1bbd8",
+   "title": "SQL Server: How many row versions does an RCSI read walk?",
+   "url": "https://www.dbi-services.com/blog/sql-server-how-many-row-versions-does-an-rcsi-read-walk/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-17T06:36:00+00:00",
+   "summary": "How many row versions does an RCSI read walk when a transaction stays open? Measured with the new Azure SQL version read metrics.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
+  {
+   "id": "e5f38235f326",
+   "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+   "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-17T06:29:27+00:00",
+   "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "627de46862a2",
    "title": "Huawei reveals the design of its first OSTA phone ahead of November 20 launch",
@@ -2846,6 +2873,37 @@
    ]
   },
   {
+   "id": "0003d77433aa",
+   "title": "USN-9131-1: CRaC JDK 25 vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9131-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-17T01:05:37+00:00",
+   "summary": "It was discovered that the Security component of CRaC JDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114820) It was discovered that the Security component of CRaC JDK 25 did not correctly authenticate users.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-114820",
+     "score": 9.1,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "oracle"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114820",
+     "score": 0.00253,
+     "percentile": 0.16941,
+     "date": "2026-11-16"
+    }
+   }
+  },
+  {
    "id": "f6e40dc8caa7",
    "title": "Outages impact Chase banking online and in person",
    "url": "https://www.nbcnews.com/video/outages-impact-chase-banking-online-and-in-person-273597509525",
@@ -2898,6 +2956,21 @@
    "topics": [
     "Cloud & infrastructure",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "53aeb0dcaa4e",
+   "title": "October 2026: Major APT Group Trends",
+   "url": "https://asec.ahnlab.com/en/96569/",
+   "source": "AhnLab ASEC",
+   "source_category": "Threat research",
+   "published": "2026-11-16T15:00:00+00:00",
+   "summary": "Purpose and Scope In October 2026, state-sponsored threat actors expanded their attacks beyond their traditional spear phishing-centric activities to directly target development environments, cloud services, virtual asset infrastructure, and network equipment.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Cloud & infrastructure",
+    "Networking"
    ]
   },
   {
