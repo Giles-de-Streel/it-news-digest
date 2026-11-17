@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "generated": "2026-11-17T02:01:01+00:00",
+ "generated": "2026-11-17T02:16:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -941,9 +941,9 @@
   },
   {
    "source": "HIPAA Journal",
-   "fetched": 10,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "NIST News",
@@ -1644,7 +1644,7 @@
   {
    "source": "Pandaily",
    "fetched": 20,
-   "recent": 11,
+   "recent": 16,
    "error": null
   },
   {
@@ -2375,9 +2375,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2399,6 +2399,101 @@
   }
  ],
  "items": [
+  {
+   "id": "9596d6ebc556",
+   "title": "Optimizely supply chain attack infects major brands' sites with malware",
+   "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-17T02:12:17+00:00",
+   "summary": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Threats & malware",
+    "Development",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "e65b54b96a12",
+   "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
+   "url": "https://isc.sans.edu/diary/rss/33524",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-11-17T02:05:15+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "324e637a4b31",
+   "title": "METASTONE Launches Multimodal Inference Service, Reports 2.48x Video Speedup in Self-Tests",
+   "url": "https://pandaily.com/metastone-multimodal-inference-service-adaptive-cache-context-engine",
+   "source": "Pandaily",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:04:38+00:00",
+   "summary": "METASTONE's multimodal service combines adaptive caching, token compression and a Context Engine. Its 2.48x video speedup and quality claims are vendor self-tests.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "91c316984f9c",
+   "title": "Doubao Work Adds AI Workbenches for 21 Professional Scenarios",
+   "url": "https://pandaily.com/doubao-work-industry-workbenches-professional-skills-tools-sharing",
+   "source": "Pandaily",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:04:29+00:00",
+   "summary": "Doubao Work bundles skills and tools into workbenches for 21 professional scenarios, with custom configurations users can save and share.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "29499e44d11c",
+   "title": "Robbyant's LingBot-VLA 2.0 Challenge Ends With a 48-Hour Real-Robot Final",
+   "url": "https://pandaily.com/robbyant-lingbot-vla-2-0-challenge-final-real-robot-tars",
+   "source": "Pandaily",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:04:18+00:00",
+   "summary": "Fifteen teams adapted LingBot-VLA 2.0 on real robots in 48 hours. Robbyant's Shanghai final exposed challenges in data, perception and execution.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d7beb591494c",
+   "title": "ByteDance Opens Seedance 2.5 4K API to Developers and Enterprises",
+   "url": "https://pandaily.com/bytedance-seedance-2-5-4k-api-general-availability-draft-mode",
+   "source": "Pandaily",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:04:00+00:00",
+   "summary": "Seedance 2.5 4K API access is now generally available. Its Draft mode lets users test 480p previews before separately billed 4K rendering.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "ac2d84e5fd0c",
+   "title": "Alibaba's QwenWork Adds Third-Party Models From Kimi, GLM and DeepSeek",
+   "url": "https://pandaily.com/alibaba-qwenwork-third-party-model-selection-kimi-glm-deepseek",
+   "source": "Pandaily",
+   "source_category": "IT industry",
+   "published": "2026-11-17T02:03:52+00:00",
+   "summary": "Alibaba's QwenWork expands model choice to Kimi, GLM, DeepSeek and other providers, with enterprise access controls by department, group or member.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "a90e538dfa61",
    "title": "The tech industry has a public image problem, Arianna Huffington says",
@@ -2496,6 +2591,19 @@
    ]
   },
   {
+   "id": "e9c4dc607eba",
+   "title": "Show HN: 1.499x speedup and 28.5% dynamic energy drop on A40 via BF16 tiling",
+   "url": "https://cwtractors.com",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T01:31:35+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "756b933b5f5f",
    "title": "Dave Stokes: Getting Started With Ollama With DBeaver Community Edition",
    "url": "https://postgr.es/p/9C9",
@@ -2507,6 +2615,19 @@
    "topics": [
     "AI",
     "Databases"
+   ]
+  },
+  {
+   "id": "3cac7ca3c789",
+   "title": "The Weather at Home",
+   "url": "https://alexhowells.com/writing/the-weather-at-home/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-17T01:24:31+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -14311,6 +14432,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "f156923d7fc9",
+   "title": "Amazon SageMaker AI now supports KV cache-aware routing for real-time inference endpoints",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-kv-cache-routing/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-16T08:00:00+00:00",
+   "summary": "Amazon SageMaker AI now supports KV cache-aware routing for real-time inference endpoints, enabling you to reduce time to first token for LLM workloads with long or repeated prompts.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
