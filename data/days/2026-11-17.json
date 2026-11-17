@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T09:16:14+00:00",
+ "generated": "2026-11-17T09:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -95,9 +95,9 @@
   },
   {
    "source": "Slashdot",
-   "fetched": 15,
-   "recent": 15,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: no element found: line 1, column 0"
   },
   {
    "source": "CircleID",
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 26,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "ESET WeLiveSecurity",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -738,7 +738,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1470,7 +1470,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
+   "fetched": 92,
    "recent": 26,
    "error": null
   },
@@ -1979,7 +1979,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 13,
    "recent": 2,
    "error": null
   },
@@ -2400,6 +2400,72 @@
  ],
  "items": [
   {
+   "id": "acc3b4915eef",
+   "title": "PostgreSQL patches 52 security holes, sends version 14 into retirement",
+   "url": "https://www.theregister.com/databases/2026/11/17/postgresql-patches-52-security-holes-sends-version-14-into-retirement/5310108",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-17T09:30:00+00:00",
+   "summary": "Some fixes need more than installation, while the next major release is due November 19",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
+  },
+  {
+   "id": "91c2de4d437d",
+   "title": "Fully Autonomous Agentic Attacks Are Three Months Away, Google Warns",
+   "url": "https://www.infosecurity-magazine.com/news/fully-autonomous-agentic-attacks/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-17T09:30:00+00:00",
+   "summary": "Google Threat Intelligence Group warns of “paradigm shift” in use of agentic pen-test frameworks",
+   "also_covered_by": [],
+   "topics": [
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "d97800a73912",
+   "title": "Github Redesign",
+   "url": "https://tonsky.me/blog/github-redesign/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-17T09:28:18+00:00",
+   "summary": "I suggest the conversation steer away from the controversial last point where he flattens the UI quite a bit to make it less \"dated\", as the rest was quite good up until that point, and that deserves being discussed. Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "e38749e813a2",
+   "title": "Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a $45M Series C, a source says at a $500M post-money valuation (Camila Grigera Naón/Fortune)",
+   "url": "https://www.techmeme.com/261117/p7#a261117p7",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T09:20:01+00:00",
+   "summary": "Camila Grigera Naón / Fortune : Oakland-based Numa, which builds an AI platform to manage car dealership customer service, raised a $45M Series C, a source says at a $500M post-money valuation — Artificial intelligence promises to untangle the messy workflows that have long plagued legacy industries.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "fc828a53acc7",
+   "title": "Intesa Sanpaolo Finds Value Before Quantum Computers Are Ready",
+   "url": "https://www.eetimes.com/intesa-sanpaolo-finds-value-before-quantum-computers-are-ready/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-17T09:16:07+00:00",
+   "summary": "The banking group reports double-digit cost savings from quantum-inspired optimization, but useful quantum hardware faces a tougher test than faster calculations.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e7eda426e5f2",
    "title": "Meta says it modified Instagram's recommendation systems in India to show less sexual and violent content, after New Delhi called for tighter content checks (Reuters)",
    "url": "https://www.techmeme.com/261117/p6#a261117p6",
@@ -2436,6 +2502,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "696a1e498fca",
+   "title": "Actors in UK to get more rights over their ‘digital replicas’ in deal on AI protections",
+   "url": "https://www.theguardian.com/technology/2026/nov/17/actors-uk-rights-digital-replicas-ai-protections",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-17T09:00:08+00:00",
+   "summary": "Agreement secured by Equity union gives actors rights over payment and consent when digital replicas are used Actors in the UK are to be given more rights over their “digital replicas” as part of a new agreement on AI protections with TV and film producers, secured after a growing on-set backlash.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2960,6 +3039,126 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "126b51258c06",
+   "title": "Federal Health Care Cuts Could Have Devastating Effects on College Students",
+   "url": "https://www.insidehighered.com/opinion/columns/resident-scholar/2026/11/17/federal-health-care-cuts-could-devastate-college",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Federal Health Care Cuts Could Have Devastating Effects on College Students Sara Brady Tue, 11/17/2026 - 03:00 AM Medicare and Medicaid cuts threaten college students’ health, financial security and ability to graduate. Byline(s) Shaun Harper",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "8d6c711cf89f",
+   "title": "Cornell President Promises Changes to Curb Sexual Violence",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/17/cornell-president-promises-changes-curb-sexual-violence",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Cornell President Promises Changes to Curb Sexual Violence Susan H. Greenberg Tue, 11/17/2026 - 03:00 AM Byline(s) Susan H. Greenberg",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fa2d7e6ce926",
+   "title": "Office for Civil Rights Probes Teacher Prep Programs",
+   "url": "https://www.insidehighered.com/news/government/2026/11/17/ed-probes-teacher-prep-programs",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Office for Civil Rights Probes Teacher Prep Programs kathryn.palmer… Tue, 11/17/2026 - 03:00 AM One government official accused some programs of seemingly “recruiting and training ‘minority’ candidates rather than evaluating candidates based solely on merit.” Byline(s) Kathryn Palmer",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "6b92840cdf40",
+   "title": "Trump Admin Moves to Consolidate Student Aid Data at Treasury",
+   "url": "https://www.insidehighered.com/news/government/student-aid-policy/2026/11/17/trump-admin-consolidate-student-aid-data-treasury",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Trump Admin Moves to Consolidate Student Aid Data at Treasury jessica.blake@… Tue, 11/17/2026 - 03:00 AM Higher education legal experts and student advocates argue this latest move violates federal privacy law. An ED official dismissed their concerns. Byline(s) Jessica Blake",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education",
+    "System administration",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "ebde261133ee",
+   "title": "Defamed MIT Professor Seeks to Block Accuser From Disposing of Assets",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/17/mit-professor-seeks-block-accuser-disposing-assets",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Defamed MIT Professor Seeks to Block Accuser From Disposing of Assets Emma Whitford Tue, 11/17/2026 - 03:00 AM Byline(s) Emma Whitford",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b2a5abdbbfc3",
+   "title": "Former Foundation CEO Sues U of Memphis President",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/17/former-foundation-ceo-sues-memphis-president",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "Former Foundation CEO Sues U of Memphis President Josh Moody Tue, 11/17/2026 - 03:00 AM Byline(s) Josh Moody",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "07e8319dd236",
+   "title": "As AI Changes How Students Approach College, Old Challenges Persist",
+   "url": "https://www.insidehighered.com/news/student-success/academic-life/2026/11/17/ai-changing-college-old-challenges-persist",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "As AI Changes How Students Approach College, Old Challenges Persist colleen.flaherty Tue, 11/17/2026 - 03:00 AM The student experience is in transition, but unmet financial needs and mental health continue to limit students’ success, according to new Student Voice data. Byline(s) Colleen Flaherty",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "8cc13912ab37",
+   "title": "What if the Justice Department Studied ‘Mar-a-Lago Face’ and Violent Crime?",
+   "url": "https://www.insidehighered.com/opinion/views/2026/11/17/research-questions-we-ask-matter-opinion",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "What if the Justice Department Studied ‘Mar-a-Lago Face’ and Violent Crime? Elizabeth Redden Tue, 11/17/2026 - 03:00 AM It would make as much sense as a new federal grant opportunity for research linking gender dysphoria and violent crime. Byline(s) Omi Salas-SantaCruz",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a817f3cab1e5",
+   "title": "‘Breakneck,’ China and Campus Construction Projects",
+   "url": "https://www.insidehighered.com/opinion/columns/learning-innovation/2026/11/17/breakneck-china-and-campus-construction-projects",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-17T08:00:00+00:00",
+   "summary": "‘Breakneck,’ China and Campus Construction Projects joshua.m.kim@d… Tue, 11/17/2026 - 03:00 AM A list of big university construction projects inspired by a fantastic book explaining why China is better at building big than the U.S. Byline(s) Joshua Kim",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
    ]
   },
   {
