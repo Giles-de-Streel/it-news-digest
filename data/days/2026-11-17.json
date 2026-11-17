@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated": "2026-11-17T12:17:07+00:00",
+ "generated": "2026-11-17T12:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 12,
+   "recent": 14,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -1153,7 +1153,7 @@
    "source": "Ubuntu Blog",
    "fetched": 0,
    "recent": 0,
-   "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Linux kernel releases",
@@ -1175,9 +1175,9 @@
   },
   {
    "source": "Ubuntu security notices",
-   "fetched": 10,
-   "recent": 7,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Debian security advisories",
@@ -1188,7 +1188,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1458,7 +1458,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -2148,13 +2148,13 @@
   {
    "source": "OpenAI status",
    "fetched": 104,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "9to5Google",
    "fetched": 85,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -2400,6 +2400,90 @@
  ],
  "items": [
   {
+   "id": "21fb6e238437",
+   "title": "Microsoft Teams adds transcript scanning as impersonation warnings move to December",
+   "url": "https://4sysops.com/archives/microsoft-teams-adds-transcript-scanning-as-impersonation-warnings-move-to-december/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T12:28:55+00:00",
+   "summary": "Microsoft Teams’ meeting impersonation warnings , previously expected in November, are now scheduled to begin rolling out in mid-December 2026. A separate Facilitator feature will scan meeting transcripts for social engineering attempts starting in late January 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "a5082a4810b2",
+   "title": "Gemini arrives on sovereign Google Cloud Dedicated",
+   "url": "https://4sysops.com/archives/gemini-arrives-on-sovereign-google-cloud-dedicated/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-17T12:28:54+00:00",
+   "summary": "Google Cloud Dedicated is a partner-operated cloud service designed for organizations that need local control over sensitive workloads. Google is adding its Gemini AI models to Dedicated, which previously offered only open models from its Model Garden.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "14d9deb7c32a",
+   "title": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
+   "url": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-17T12:28:45+00:00",
+   "summary": "The patches target recently disclosed zero-days, including vulnerabilities already exploited in the wild.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6085ef54790f",
+   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+   "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-17T12:25:06+00:00",
+   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Supply chain security",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "225bbd604f7f",
+   "title": "Is your OpenTelemetry pipeline becoming a performance bottleneck?",
+   "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+   "source": "CNCF Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-17T12:21:00+00:00",
+   "summary": "At Cloud Native Days Austria 2026, I presented a talk called How to Defeat OTel’s Silent Killer: The Performance Overhead, exploring a problem that is easy to overlook when building observability pipelines: the cost of collecting...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "0e7f197e6149",
+   "title": "Sources: the Trump administration is moving forward with an FCC proposal to ban US imports of new Chinese optical transceiver models, despite Big Tech pushback (Reuters)",
+   "url": "https://www.techmeme.com/261117/p19#a261117p19",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-17T12:20:02+00:00",
+   "summary": "Reuters : Sources: the Trump administration is moving forward with an FCC proposal to ban US imports of new Chinese optical transceiver models, despite Big Tech pushback — The Trump administration plans to press ahead with efforts to block imports of Chinese data center equipment despite pushback from Amazon …",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "22e853f64b70",
    "title": "Apple Podcasts 2026 Show of the Year is ‘Baby, this is Keke Palmer’",
    "url": "https://9to5mac.com/2026/11/17/apple-podcasts-2026-show-of-the-year-is-baby-this-is-keke-palmer/",
@@ -2410,6 +2494,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "b69860df4218",
+   "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-17T12:14:36+00:00",
+   "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
@@ -2544,6 +2641,32 @@
    "source_category": "Science & space",
    "published": "2026-11-17T12:00:00+00:00",
    "summary": "Facing mounting losses, the prime minister was worried the U.S. would concentrate its war efforts on the Pacific. But he never ceased to persevere in forging an alliance",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "50de3b58dbfe",
+   "title": "Radian Aerospace plans to make its own composite materials for space plane (and for other companies, too)",
+   "url": "https://www.geekwire.com/2026/radian-aerospace-advanced-composites/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "Seattle space startup sees its focus on advanced composites as a way to get around a technological bottleneck and create an additional revenue stream. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d71d7256ae53",
+   "title": "Jensen’s exit could be Google’s TPU moment",
+   "url": "https://9to5google.com/2026/11/17/nvidias-tough-spot-is-googles-tpu-opportunity/",
+   "source": "9to5Google",
+   "source_category": "IT industry",
+   "published": "2026-11-17T12:00:00+00:00",
+   "summary": "Good morning. Today I’m rewatching Tenet to better picture Robert Pattinson in his new role , sighing over the inevitability of delivery drones triggering PTSD symptoms , and laugh-cringing at some of these Bit.ly link hijack stories from the weekend.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -4563,7 +4686,14 @@
    "source_category": "Security",
    "published": "2026-11-17T08:33:27+00:00",
    "summary": "NATO’s Communications and Information Agency (NCIA) gives NATO’s core institutions access to OpenAI’s cybersecurity models to help protect Allied networks. NATO has used up to 300 billion raw input and output tokens a month.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "9e9c5f719bf8",
+     "source": "4sysops",
+     "title": "NATO’s AI cyber defense work reaches 300 billion OpenAI tokens a month",
+     "url": "https://4sysops.com/archives/natos-ai-cyber-defense-work-reaches-300-billion-openai-tokens-a-month/"
+    }
+   ],
    "topics": [
     "AI",
     "Networking"
@@ -5977,6 +6107,12 @@
      "source": "heise online (English)",
      "title": "California says OpenAI lawsuit concerns public safety",
      "url": "https://www.heise.de/en/news/California-says-OpenAI-lawsuit-concerns-public-safety-11527449.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    },
+    {
+     "id": "c0ed70924a1a",
+     "source": "SecurityWeek",
+     "title": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+     "url": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/"
     }
    ],
    "topics": [
