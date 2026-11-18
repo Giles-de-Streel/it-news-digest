@@ -881,14 +881,18 @@
     else window.addEventListener("resize", set);
   }
 
-  // The header goes back to the start: today's news as a list, all topics and sources, no search
-  // The IT NEWS logo is "home": a full page reload (fresh data, and a new random set of header trees)
-  // on today's News tab with filters cleared. Ctrl/Cmd/Shift/middle-click keep the browser's default.
+  // The IT NEWS logo is "home": a full reset and reload (fresh data, a new random set of header trees).
+  // Every saved ind.* setting is cleared except the colour mode (ind.theme): Clippy/Apple/Tux, the Sources
+  // tab on/off switches, Cards/List, the saved tab and the header animation all go back to their defaults,
+  // and the reload drops ?topic/source/q and #tab. Ctrl/Cmd/Shift/middle-click keep the browser's default.
   function goHome(e) {
     if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
-    store.set(LS_VIEW, "news");
-    store.set(LS_LAYOUT, "list");
+    try {
+      const keys = [];
+      for (let i = 0; i < localStorage.length; i++) keys.push(localStorage.key(i));
+      keys.filter((k) => k && k.startsWith("ind.") && k !== LS_THEME).forEach((k) => localStorage.removeItem(k));
+    } catch { /* storage blocked: the reload still clears the URL filters */ }
     location.assign(location.pathname); // drops ?filters and #tab
   }
 
