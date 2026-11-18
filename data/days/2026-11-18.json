@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "generated": "2026-11-18T09:32:06+00:00",
+ "generated": "2026-11-18T09:46:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -210,7 +210,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -576,7 +576,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -672,7 +672,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -786,13 +786,13 @@
   {
    "source": "Microsoft Intune Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 4,
    "error": null
   },
   {
@@ -852,14 +852,14 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 6,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Google Cloud Blog",
-   "fetched": 20,
-   "recent": 8,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 500: Internal Server Error"
   },
   {
    "source": "Okta Security",
@@ -1626,7 +1626,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 58,
+   "recent": 57,
    "error": null
   },
   {
@@ -1674,7 +1674,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -2034,7 +2034,7 @@
   {
    "source": "Akamai status",
    "fetched": 24,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2124,7 +2124,7 @@
   {
    "source": "DigitalOcean status",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2160,7 +2160,7 @@
   {
    "source": "NPR Technology",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -2250,7 +2250,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2345,9 +2345,9 @@
   },
   {
    "source": "Zscaler ThreatLabz",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "Recorded Future",
@@ -2399,9 +2399,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2423,6 +2423,34 @@
   }
  ],
  "items": [
+  {
+   "id": "0083e066de34",
+   "title": "Government Accountability Office IT director discusses the recent tech outages",
+   "url": "https://www.npr.org/2026/11/18/nx-s1-6042543/government-accountability-office-it-director-discusses-the-recent-tech-outages",
+   "source": "NPR Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-18T09:42:54+00:00",
+   "summary": "NPR's Leila Fadel speaks with Government Accountability Office IT and cybersecurity director Dave Hinchman about outdated government technology and the risk of system failures.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "09554ca8b404",
+   "title": "Customer Security Advisory: CVE-2026-114938",
+   "url": "https://www.akamaistatus.com/incidents/g25kzbr58dw8",
+   "source": "Akamai status",
+   "source_category": "Cloud status",
+   "published": "2026-11-18T09:31:33+00:00",
+   "summary": "Nov 18 , 09:31 UTC Investigating - Akamai is aware of the recently identified Java4Shell Remote Code Execution (RCE) vulnerability, tracked as CVE-2026-114938.We are actively assessing the potential impact of this vulnerability across our platform and services.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud status"
+   ],
+   "cves": []
+  },
   {
    "id": "a668d2c3dc32",
    "title": "Visual Studio Code 1.148 (Insiders)",
@@ -2447,6 +2475,33 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "b658c22a0600",
+   "title": "Watchdog Warns UK Government Is Falling Short on Risk Management",
+   "url": "https://www.infosecurity-magazine.com/news/watchdog-government-risk/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-18T09:30:00+00:00",
+   "summary": "National Audit Office report claims risk management failures are leading to poor government decisions",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "54530b62732e",
+   "title": "AWS PrivateLink Tunnel Endpoints Open a Whole CIDR Range to Another Account",
+   "url": "https://www.infoq.com/news/2026/11/aws-privatelink-tunnel-endpoints/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-18T09:29:00+00:00",
+   "summary": "AWS has detailed tunnel endpoints, a PrivateLink endpoint type that gives a consumer VPC access to an entire network segment in another account rather than one resource at a time, over an overlapping address space and with consumer-initiated connections only.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Networking"
    ]
   },
   {
@@ -2851,6 +2906,44 @@
    "topics": [
     "Game development"
    ]
+  },
+  {
+   "id": "aee4cf00ea78",
+   "title": "U.S. CISA adds Perforce Puppet Enterprise flaw to its Known Exploited Vulnerabilities catalog",
+   "url": "https://securityaffairs.com/203377/hacking/u-s-cisa-adds-perforce-puppet-enterprise-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-18T08:41:13+00:00",
+   "summary": "U.S. CISA adds Perforce Puppet Enterprise vulnerability CVE-2026-115731 to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added a Perforce Puppet Enterprise flaw, tracked as CVE-2026-115731 (CVSS score of 9.4), to its Known Exploited Vulnerabilities (KEV)…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-115731",
+     "score": 9.4,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "Perforce"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-115731",
+      "added": "2026-11-17",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-115731",
+     "score": 0.00366,
+     "percentile": 0.30882,
+     "date": "2026-11-17"
+    }
+   }
   },
   {
    "id": "52cc8b774a99",
@@ -4432,6 +4525,23 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "c36817af9a4b",
+   "title": "CISA warns of ‘Java4Shell,’ an AI-found Java bug touching most of the Fortune 500",
+   "url": "https://therecord.media/cisa-issues-java4shell-alert",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-18T00:00:00+00:00",
+   "summary": "The federal cybersecurity agency urged organizations to immediately patch a new vulnerability affecting Java — one of the world’s most used programming languages — after experts warned that it could allow an attacker to take over servers without a password.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Development",
+    "Identity & access",
+    "Policy & regulation"
    ]
   },
   {
