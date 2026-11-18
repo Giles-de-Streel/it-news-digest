@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "generated": "2026-11-18T20:16:11+00:00",
+ "generated": "2026-11-18T20:31:16+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 5,
    "error": null
   },
   {
@@ -155,8 +155,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 188,
-   "recent": 188,
+   "fetched": 196,
+   "recent": 196,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -725,8 +725,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 90,
+   "recent": 11,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 4,
    "error": null
   },
   {
@@ -852,13 +852,13 @@
   {
    "source": "Azure Blog",
    "fetched": 10,
-   "recent": 6,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Google Cloud Blog",
    "fetched": 20,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "HTMD Blog (Anoop C Nair)",
    "fetched": 5,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1607,8 +1607,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1410,
-   "recent": 5,
+   "fetched": 1411,
+   "recent": 6,
    "error": null
   },
   {
@@ -1650,7 +1650,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
+   "fetched": 94,
    "recent": 36,
    "error": null
   },
@@ -2405,9 +2405,9 @@
   },
   {
    "source": "SonicWall PSIRT",
-   "fetched": 225,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "RemoteDisconnected: Remote end closed connection without response"
   },
   {
    "source": "Zoom security bulletins",
@@ -2424,6 +2424,73 @@
  ],
  "items": [
   {
+   "id": "1caf9dd24871",
+   "title": "Sony PlayStation outage hits as PSN goes down on GTA 6 release day",
+   "url": "https://www.neowin.net/news/sony-playstation-outage-hits-as-psn-goes-down-on-gta-6-release-day/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-18T20:28:01+00:00",
+   "summary": "Many users report the PlayStation Network outage as it is currently down. We have some preliminary details now.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development",
+    "Cloud status",
+    "Networking"
+   ]
+  },
+  {
+   "id": "882923c2ff90",
+   "title": "“The best escape room players that you’ve ever met”: What Red Hat’s AI architect really thinks about agents.",
+   "url": "https://thenewstack.io/openshell-ai-agent-security/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-18T20:25:18+00:00",
+   "summary": "Last week at KubeCon + CloudNativeCon North America, a major gathering of the open-source and cloud-native communities, many speakers —",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "28ff02639282",
+   "title": "CVE-2026-76807: Todoist MCP Server provides tools that allow AI agents to access and modify a Todoist account.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76807",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-18T20:19:13.090000+00:00",
+   "summary": "Todoist MCP Server provides tools that allow AI agents to access and modify a Todoist account. Prior to 10.3.3, the optional todoist-mcp-http server accepts browser-origin requests to POST /mcp without validating the Host and Origin headers or authenticating the browser caller.",
+   "kind": "cve",
+   "cve": "CVE-2026-76807",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-76807",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "e2487e18b0bf",
+   "title": "\"In the AI era, cyber needs to be thought of in terms of tasks rather than products or tools\" - www.calcalistech.com",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9aVGpONFoxcHZQZEdZMnluWVl0MTI5SFVWSFVOalZ2YWlyQ0Z1VHFfSDRXY09JVVBucWp1QVNtSmZSa3pUTlI5VDl5eGI3bGlGbHBpZUptSGdWQkI3YXVGUVFwNDVvWkRl?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-18T20:06:00+00:00",
+   "summary": "\"In the AI era, cyber needs to be thought of in terms of tasks rather than products or tools\" www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "6aa25b5fae24",
    "title": "Apple among the companies facing pressure from US senators over ‘nudify’ apps",
    "url": "https://9to5mac.com/2026/11/18/apple-among-the-companies-facing-pressure-from-us-senators-over-nudify-apps/",
@@ -2434,6 +2501,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "9de59b9dc687",
+   "title": "Search Browser – Minimalist WebKit browser with Chrome extension support",
+   "url": "https://searchbrowser.app/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-18T20:04:31+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2570,6 +2650,19 @@
    "topics": [
     "AI",
     "Networking"
+   ]
+  },
+  {
+   "id": "81230d61a839",
+   "title": "Outage Chaos: When Tech is too Big to Fail",
+   "url": "https://www.eff.org/deeplinks/2026/11/outage-chaos-when-tech-too-big-fail",
+   "source": "EFF Deeplinks",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-18T19:52:17+00:00",
+   "summary": "Outages happen, but we deserve a resilient internet where no one outage at one company can put people at risk and disrupt the global economy. We can only get there by addressing an over-reliance on a few cloud monopolists through effective antitrust laws and interoperability requirements.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -3509,6 +3602,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "772a06aa8226",
+   "title": "When Free Software Isn't Free Enough",
+   "url": "https://foss.life/notes/2026/free-software-isnt-free-enough/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-18T18:39:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -8845,7 +8951,14 @@
    "source_category": "IT industry",
    "published": "2026-11-18T13:47:39+00:00",
    "summary": "Concern is growing over technology failures, including Tuesday's NSA and Apple outages. Meanwhile the Trump administration denies any are related to cyberattacks. Matt Gutman reports.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "db1d82795c0b",
+     "source": "The Record",
+     "title": "Trump administration officials size-up a bad stretch for tech",
+     "url": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -14392,6 +14505,19 @@
    ]
   },
   {
+   "id": "8b6ac2940fdc",
+   "title": "Managing frontier AI risk: From training to deployment",
+   "url": "https://openai.com/index/managing-frontier-ai-risk",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-18T06:00:00+00:00",
+   "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "ee9a23761ba0",
    "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
    "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
@@ -15454,6 +15580,223 @@
      "id": "CVE-2026-131157",
      "score": 0.00231,
      "percentile": 0.14012,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "3288e12c75e2",
+   "title": "CVE-2026-131043: Use after free in HID in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131043",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:18:03.227000+00:00",
+   "summary": "Use after free in HID in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-131043",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-131043",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-131043",
+     "score": 0.00247,
+     "percentile": 0.16095,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "9cc879a7cc70",
+   "title": "CVE-2026-131037: !MISSING CAUSE!",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131037",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:18:01.653000+00:00",
+   "summary": "!MISSING CAUSE! in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Low)",
+   "kind": "cve",
+   "cve": "CVE-2026-131037",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-131037",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-131037",
+     "score": 0.00237,
+     "percentile": 0.14924,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "41c037c0da58",
+   "title": "CVE-2026-131020: Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131020",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:59.463000+00:00",
+   "summary": "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-131020",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-131020",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-131020",
+     "score": 0.00247,
+     "percentile": 0.16095,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "147eaeffcf93",
+   "title": "CVE-2026-130968: Use after free in Views in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130968",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:53.033000+00:00",
+   "summary": "Use after free in Views in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-130968",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130968",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-130968",
+     "score": 0.00247,
+     "percentile": 0.16095,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "0b958430c661",
+   "title": "CVE-2026-130963: Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130963",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:52.430000+00:00",
+   "summary": "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-130963",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130963",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-130963",
+     "score": 0.00247,
+     "percentile": 0.16096,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "64c5f28dfba0",
+   "title": "CVE-2026-130929: Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130929",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:48.213000+00:00",
+   "summary": "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+   "kind": "cve",
+   "cve": "CVE-2026-130929",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130929",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-130929",
+     "score": 0.00247,
+     "percentile": 0.16095,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "0d8717f28641",
+   "title": "CVE-2026-130926: Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130926",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-17T21:17:47.047000+00:00",
+   "summary": "Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+   "kind": "cve",
+   "cve": "CVE-2026-130926",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-130926",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Networking"
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-130926",
+     "score": 0.00237,
+     "percentile": 0.14923,
      "date": "2026-11-18"
     }
    }
