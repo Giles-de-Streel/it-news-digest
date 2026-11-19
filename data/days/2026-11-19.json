@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "generated": "2026-11-19T17:31:16+00:00",
+ "generated": "2026-11-19T17:46:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -240,13 +240,13 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 86,
-   "recent": 8,
+   "fetched": 85,
+   "recent": 7,
    "error": null
   },
   {
@@ -881,9 +881,9 @@
   },
   {
    "source": "Google Cloud Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 500: Internal Server Error"
+   "fetched": 20,
+   "recent": 12,
+   "error": null
   },
   {
    "source": "Okta Security",
@@ -1218,7 +1218,7 @@
   {
    "source": "Docker Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1302,7 +1302,7 @@
   {
    "source": "Azure DevOps Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1476,7 +1476,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 9,
+   "recent": 11,
    "error": null
   },
   {
@@ -1631,8 +1631,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1413,
-   "recent": 5,
+   "fetched": 1414,
+   "recent": 6,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 9,
-   "recent": 2,
+   "fetched": 10,
+   "recent": 3,
    "error": null
   },
   {
@@ -2183,7 +2183,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 79,
+   "fetched": 78,
    "recent": 28,
    "error": null
   },
@@ -2490,6 +2490,62 @@
  ],
  "items": [
   {
+   "id": "b1665814824a",
+   "title": "Azure DevOps integration with the GitHub Copilot app (public preview)",
+   "url": "https://devblogs.microsoft.com/devops/azure-devops-integration-with-the-github-copilot-app-public-preview/",
+   "source": "Azure DevOps Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-19T17:39:09+00:00",
+   "summary": "We’re excited to announce the public preview of Azure DevOps integration in the Copilot app. You can now start agent sessions that work directly with your Azure DevOps repositories to create branches, make code changes, commit changes, and open pull requests.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "050cab0e1265",
+   "title": "[$] Added indirection allows for larger BPF programs",
+   "url": "https://lwn.net/Articles/1106537/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-19T17:32:42+00:00",
+   "summary": "The BPF verifier has historically worked by tracing every possible path of execution through a program, checking, at each instruction, that various safety properties hold. This works, but it can result in an exponential increase in the number of states that need checking in programs with complicated control-flow.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4bb89822c774",
+   "title": "IDrive wants to back up your coding agents, too",
+   "url": "https://thenewstack.io/idrive-ai-agents-backup/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-19T17:31:44+00:00",
+   "summary": "Coding agents need backups, too, or at least that’s what IDrive is arguing. Backup and storage service IDrive on Thursday",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "4d72da01ce95",
+   "title": "I’ve tested countless Linux distros, and Pond is unlike anything I’ve tried – here’s why",
+   "url": "https://www.zdnet.com/tech/pond-distro-arch-linux-unique-ui/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-19T17:30:38+00:00",
+   "summary": "Feeling adventurous? This Linux distribution is exciting, efficient and totally unique.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "c6847bc083fd",
    "title": "MongoDB is a Leader in The Forrester Wave™: Translytical Data Platforms",
    "url": "https://www.mongodb.com/company/blog/news/mongodb-leader-in-forrester-wave-translytical-data-platforms",
@@ -2500,6 +2556,20 @@
    "also_covered_by": [],
    "topics": [
     "Databases"
+   ]
+  },
+  {
+   "id": "b72206e3f7bc",
+   "title": "Ubisoft reports Q2 net bookings down 21% YoY to €388.9M, above €350.7M est., driven by Assassin's Creed Black Flag Resynced, as it overhauls its operations (Mauro Orru/Wall Street Journal)",
+   "url": "https://www.techmeme.com/261119/p44#a261119p44",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-19T17:30:00+00:00",
+   "summary": "Mauro Orru / Wall Street Journal : Ubisoft reports Q2 net bookings down 21% YoY to €388.9M, above €350.7M est., driven by Assassin's Creed Black Flag Resynced, as it overhauls its operations — The videogame developer is looking to get its finances back on track following a major overhaul of its operations",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Game development"
    ]
   },
   {
@@ -2520,6 +2590,19 @@
    ]
   },
   {
+   "id": "15afac09c340",
+   "title": "Deepfake Elon Musk nearly costs viewers $4.7 million in crypto",
+   "url": "https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-19T17:26:39+00:00",
+   "summary": "Coinbase says it blocked $4.7 million in attempted payments to an Elon Musk deepfake scam.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "6d54345bedde",
    "title": "Google built a \"Mirror Dimension\", an isolated internet with simulated environments like social media and banking dashboards, to test AI browsing agents (Lily Hay Newman/Wired)",
    "url": "https://www.techmeme.com/261119/p43#a261119p43",
@@ -2530,6 +2613,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "4692e0d9ed57",
+   "title": "DOJ, DHS partner on new unit tackling scams and cybercrime",
+   "url": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-19T17:25:00+00:00",
+   "summary": "The departments are partnering on the Threat Disruption Center to better triage victim complaints, map cybercriminal networks and provide a direct channel to private sector organizations that work with victims.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -2907,6 +3003,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "056e110330cd",
+   "title": "Your Google AI mode searches can stay private now with ‘temporary threads’ – here’s how",
+   "url": "https://www.zdnet.com/innovation/google-ai-mode-searches-private-temporary-threads/",
+   "source": "ZDNet",
+   "source_category": "IT industry",
+   "published": "2026-11-19T17:12:31+00:00",
+   "summary": "With temporary threads, any searches you run in Google’s AI Mode won’t be associated with your account or saved to your chat history.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3298,6 +3407,19 @@
    ]
   },
   {
+   "id": "648f4746253c",
+   "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+   "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-19T16:59:56+00:00",
+   "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "87ef0774c1e3",
    "title": "A “headless Slack”: Vercel’s new message board lets Claude Code and Codex agents work together",
    "url": "https://thenewstack.io/vercel-board-agent-swarms/",
@@ -3402,6 +3524,19 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "2a92e8f73fe8",
+   "title": "Anthropic (ANT) stock lists at nearly $2T valuation",
+   "url": "https://news.ycombinator.com/item?id=50562528",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-19T16:47:32+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4465,7 +4600,14 @@
    "source_category": "Networking",
    "published": "2026-11-19T15:22:14+00:00",
    "summary": "When a carmaker issues a safety recall, you take the car to the dealer. What do you do when the dealer closed 8 months ago?",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "ae9dfbfde2f4",
+     "source": "Docker Blog",
+     "title": "Docker patches Java4Shell and the NGINX HTTP/2 with Docker Hardened Images",
+     "url": "https://www.docker.com/blog/docker-patches-java4shell-and-the-nginx-http-2-with-docker-hardened-images/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches"
    ]
@@ -9040,7 +9182,14 @@
    "source_category": "IT industry",
    "published": "2026-11-19T10:52:19+00:00",
    "summary": "OpenAI's new ChatGPT for Sales brings more than 30 new and enhanced partner plugins, CRM workflows, and persistent AI agents into a single sales experience. Here's what businesses should verify before deploying it.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6687f7be62c3",
+     "source": "OpenAI News",
+     "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+     "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+    }
+   ],
    "topics": [
     "AI"
    ]
