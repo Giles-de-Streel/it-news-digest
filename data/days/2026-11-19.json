@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "generated": "2026-11-19T09:45:50+00:00",
+ "generated": "2026-11-19T10:01:22+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -84,7 +84,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -288,13 +288,13 @@
   {
    "source": "Microsoft SQL Server Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -360,7 +360,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -420,7 +420,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -618,7 +618,7 @@
   {
    "source": "Data Center Knowledge",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -786,7 +786,7 @@
   {
    "source": "Microsoft Intune Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 29,
+   "recent": 26,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1314,7 +1314,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1518,7 +1518,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1758,7 +1758,7 @@
   {
    "source": "Semafor Technology & Security",
    "fetched": 93,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -1979,7 +1979,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 2,
    "error": null
   },
@@ -2142,7 +2142,7 @@
   {
    "source": "Anthropic status",
    "fetched": 25,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2399,9 +2399,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2424,6 +2424,80 @@
  ],
  "items": [
   {
+   "id": "273befb01121",
+   "title": "AI Workloads Hit by Power-Quality Issues at Data Centers",
+   "url": "https://www.datacenterknowledge.com/energy-power-supply/ai-workloads-hit-by-power-quality-issues-at-data-centers",
+   "source": "Data Center Knowledge",
+   "source_category": "Hardware",
+   "published": "2026-11-19T10:00:00+00:00",
+   "summary": "Power quality, not just grid access, is limiting AI growth at US data centers, exposing weaknesses in internal infrastructure and monitoring.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "169aea6832ee",
+   "title": "Google’s water stewardship commitments for local communities",
+   "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
+   "source": "Google Blog",
+   "source_category": "Vendor",
+   "published": "2026-11-19T10:00:00+00:00",
+   "summary": "Learn about our new water stewardship commitments, initiatives and recent Water Replenishment Projects Request for Information.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "05676ae8b52f",
+   "title": "Is It the Network or the Website?",
+   "url": "https://labs.ripe.net/author/ciprian-lucanu/is-it-the-network-or-the-website/",
+   "source": "RIPE Labs",
+   "source_category": "Internet infrastructure",
+   "published": "2026-11-19T09:57:50+00:00",
+   "summary": "Some visitors couldn't open a US school's website. Packet captures showed a mobile carrier forging TLS replies and a VPN refusing DNS lookups, both because the domain was on a reputation blocklist. With a credit grant from RIPE Atlas, we checked DNS and TLS from 45 probes inside 21 US ISPs.",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a2249c663af2",
+   "title": "Google launches Gemini 4 Neon, touting lower costs for complex AI coding tasks",
+   "url": "https://www.infoworld.com/article/4250618/google-launches-gemini-4-neon-touting-lower-costs-for-complex-ai-coding-tasks.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-19T09:49:58+00:00",
+   "summary": "Google is rolling out Gemini 4 Neon, a new model designed for complex software engineering tasks that the company says can complete work more economically than larger models, as it seeks to expand the use of AI coding agents among enterprise developers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "2cb2d893a73d",
+   "title": "Cybercriminals compromise Microsoft's Agent Framework PyPI package to steal credentials",
+   "url": "https://www.neowin.net/news/cybercriminals-compromise-microsofts-agent-framework-pypi-package-to-steal-credentials/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-19T09:48:01+00:00",
+   "summary": "Threat actors were recently able to publish two malicious versions of Microsoft's official Agent Framework Python package on PyPI. Both releases contained malware that stole data.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Microsoft & Windows",
+    "Development",
+    "Supply chain security",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "3d00fbcf6168",
    "title": "Raspberry Pi SBCs get an open-source hardware I2C TPM 2.0 security module (Crowdfunding)",
    "url": "https://www.cnx-software.com/2026/11/19/raspberry-pi-sbcs-get-an-open-source-hardware-i2c-tpm-2-0-security-module/",
@@ -2438,9 +2512,38 @@
    ]
   },
   {
+   "id": "5366363290a3",
+   "title": "Scattered Spider’s phishing and SIM-swap tactics led to six-year sentence",
+   "url": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-19T09:41:18+00:00",
+   "summary": "Scattered Spider used fake texts to break into systems and SIM swaps to intercept security codes. Here’s how to protect your number.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
    "id": "222f73c4bfa8",
    "title": "Mumbai VI, Mumbai VII, New Delhi I Datacenter Issue - zscaler.net",
    "url": "https://trust.zscaler.com/zscaler.net/posts/32806",
+   "source": "Zscaler trust",
+   "source_category": "Cloud status",
+   "published": "2026-11-19T09:38:20+00:00",
+   "summary": "Zscaler is currently investigating reports of an issue with its Mumbai VI, Mumbai VII, New Delhi I datacenter. We are investigating periods of slowness, connection timeouts and/or increased latency.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Development",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "60f03cd18b14",
+   "title": "Mumbai VI, Mumbai VII, New Delhi I Datacenter Issue - zscloud.net",
+   "url": "https://trust.zscaler.com/zscloud.net/posts/32806",
    "source": "Zscaler trust",
    "source_category": "Cloud status",
    "published": "2026-11-19T09:38:20+00:00",
@@ -2464,6 +2567,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "5174c21f9e43",
+   "title": "What's New in PHP 8.6",
+   "url": "https://www.php.net/releases/8.6/en.php",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-19T09:27:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2855,6 +2971,20 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "77b89c255984",
+   "title": "Mysterium VPN on Linux is Strictly for Terminal Junkies",
+   "url": "https://feed.itsfoss.com/link/24361/17529073/mysterium-vpn",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-11-19T08:17:00+00:00",
+   "summary": "The Mysterium VPN client is open source and works on Ubuntu 26.04 LTS. It is command line option only, though.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Networking"
    ]
   },
   {
@@ -4029,7 +4159,14 @@
    "source_category": "Security",
    "published": "2026-11-19T00:18:05+00:00",
    "summary": "Frequently asked questions about five critical NGINX remote code execution vulnerabilities and five additional flaws fixed in F5’s November 18 out-of-band release.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "bfadadb8ef76",
+     "source": "Security Affairs",
+     "title": "nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root",
+     "url": "https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches"
    ],
@@ -4205,6 +4342,21 @@
     "Cloud & infrastructure",
     "Development",
     "TLS & PKI"
+   ]
+  },
+  {
+   "id": "e5e26066f69c",
+   "title": "Modernize your apps with Azure SQL Database Hyperscale",
+   "url": "https://www.microsoft.com/en-us/sql-server/blog/2026/11/18/modernize-your-apps-with-azure-sql-database-hyperscale/",
+   "source": "Microsoft SQL Server Blog",
+   "source_category": "Databases",
+   "published": "2026-11-18T14:00:00+00:00",
+   "summary": "Learn how Azure SQL Database Hyperscale brings scale, competitive economics, and AI to the apps you already run, and the ones you build next.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Databases"
    ]
   },
   {
