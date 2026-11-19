@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "generated": "2026-11-19T07:45:58+00:00",
+ "generated": "2026-11-19T08:01:04+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -324,7 +324,7 @@
   {
    "source": "Oracle Security Alerts",
    "fetched": 131,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -545,9 +545,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -792,7 +792,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -834,7 +834,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 32,
+   "recent": 30,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 165,
+   "recent": 162,
    "error": null
   },
   {
@@ -1062,7 +1062,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1074,13 +1074,13 @@
   {
    "source": "Microsoft 365 Roadmap",
    "fetched": 2381,
-   "recent": 31,
+   "recent": 28,
    "error": null
   },
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1182,7 +1182,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "CyberScoop",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1374,7 +1374,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1452,13 +1452,13 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1512,7 +1512,7 @@
   {
    "source": "Palo Alto Identity Security",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1560,7 +1560,7 @@
   {
    "source": "HTMD Blog (Anoop C Nair)",
    "fetched": 5,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1698,7 +1698,7 @@
   {
    "source": "David Bushell",
    "fetched": 11,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1758,7 +1758,7 @@
   {
    "source": "Semafor Technology & Security",
    "fetched": 93,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1841,9 +1841,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 3,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Terence Tao",
@@ -2328,13 +2328,13 @@
   {
    "source": "Windows Server News",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Microsoft Defender XDR blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2423,6 +2423,73 @@
   }
  ],
  "items": [
+  {
+   "id": "76c26148ba8f",
+   "title": "Where we’re going, we don’t need chatbots",
+   "url": "https://dbushell.com/2026/11/19/we-dont-need-chatbots/",
+   "source": "David Bushell",
+   "source_category": "Development",
+   "published": "2026-11-19T08:00:46+00:00",
+   "summary": "“You’ve been working hard, why not take a weekend vacation!” Your chatbot says, after a 72 hour unattended session. It says that New York is nice this time of year. You ask it to book the cheapest flights. Half the airlines respond with a 429 code because your residential IP is part of five botnets. […]",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "93e674422924",
+   "title": "Microsoft Entra Identity Verification Integration with Conditional Access",
+   "url": "https://www.anoopcnair.com/entra-identity-verification-integration/",
+   "source": "HTMD Blog (Anoop C Nair)",
+   "source_category": "Endpoint management",
+   "published": "2026-11-19T07:55:09+00:00",
+   "summary": "Hello - Here is the new HTMD Blog Article for you. Enjoy reading it. Subscribe to YouTube Channel https://www.youtube.com/c/AnoopCNairSCCM?sub_confirmation=1 and LinkedIn page for latest updates https://www.linkedin.com/company/how-to-manage-devices/",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c3696419af60",
+   "title": "A profile of Netflix's new Chief Content Officer Peter Rice, a former Fox and Disney executive, as sources say he may focus on revamping its film strategy (Alex Weprin/The Hollywood Reporter)",
+   "url": "https://www.techmeme.com/261119/p10#a261119p10",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-19T07:50:02+00:00",
+   "summary": "Alex Weprin / The Hollywood Reporter : A profile of Netflix's new Chief Content Officer Peter Rice, a former Fox and Disney executive, as sources say he may focus on revamping its film strategy — Ted Sarandos' handpicked consigliere is tasked with reinventing the streamer — while his boss promises Wall Street that…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "874c2371478c",
+   "title": "\"In Israel, the best talent starts companies\": Why US CISO Karl Mattson keeps backing Israeli founders",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WN0dEM3BYSk81YVY3WlBkczMwT1hubS1NcURvUzN4eXpZOUFROVI3cnNDR3BMVl9BcXZidUVMMC1wOThvaG9PbHNPOVMzNTdtRm5EX1ZDWUlidTRVSl84dEdvUl9hampxb1c0?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-19T07:46:00+00:00",
+   "summary": "\"In Israel, the best talent starts companies\": Why US CISO Karl Mattson keeps backing Israeli founders CTech",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0f040814aea2",
+   "title": "College students are increasingly pushing back against campus AI mandates, demanding opt-outs from AI-required assignments and an end to enterprise licenses (Dana Goldstein/New York Times)",
+   "url": "https://www.techmeme.com/261119/p9#a261119p9",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-19T07:45:02+00:00",
+   "summary": "Dana Goldstein / New York Times : College students are increasingly pushing back against campus AI mandates, demanding opt-outs from AI-required assignments and an end to enterprise licenses — Some students are refusing to use A.I., and others are starting petitions to limit it across entire campuses.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education"
+   ]
+  },
   {
    "id": "ddedfe352ee8",
    "title": "Association for Advancing Automation: North American companies ordered ~11K robots in Q3 2026, up 25% YoY, as they seek to ease labor shortages in manufacturing (Christian Davies/Financial Times)",
@@ -3259,7 +3326,14 @@
    "source_category": "Security",
    "published": "2026-11-19T04:33:46+00:00",
    "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "94c331f30cc4",
+     "source": "SecurityWeek",
+     "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
+     "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Development"
@@ -3354,6 +3428,19 @@
      "version": "4.0",
      "scored_by": "f5"
     }
+   ]
+  },
+  {
+   "id": "24fd205d842a",
+   "title": "DSA-6637-2 needrestart - regression update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00560.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-19T00:00:00+00:00",
+   "summary": "The update for needrestart announced as DSA 6637-1 introduced a regression due to an incorrect backport when using notify-send to notify a user session via dbus. Updated packages are now available to correct this issue. https://security-tracker.debian.org/tracker/DSA-6637-2",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
