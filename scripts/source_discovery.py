@@ -55,6 +55,8 @@ DECLINED = {
     "jefftk.com": "personal blog on mixed, mostly non-IT topics",
     "homeip.net": "retro computing history blog (dfarq.homeip.net), home page times out",
     "artificialanalysis.ai": "AI benchmark site, no feed",
+    "ign.com": "consumer gaming and entertainment news (Game development covers the industry side)",
+    "andros.dev": "personal hobby blog, about one post a month on mixed topics",
 }
 # Outlets with a paywall or registration wall on most articles; never suggested or checked
 PAYWALLED = {

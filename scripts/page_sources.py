@@ -361,7 +361,106 @@ def fetch_microsoft_status(source, user_agent, hours):
     return items
 
 
+BROADCOM_ADVISORY_API = "https://support.broadcom.com/web/ecx/security-advisory/-/securityadvisory/getSecurityAdvisoryList"
+BROADCOM_ADVISORY_PAGE = "https://support.broadcom.com/web/ecx/security-advisory?segment="
+
+
+def fetch_broadcom_advisories(source, user_agent, hours):
+    """Broadcom security advisories for one support segment (source["segment"], "VC" = VMware
+    Cloud Foundation division: vSphere, ESX, vCenter, Workstation, Fusion = the VMSA list).
+    The advisory page has no feed; this reads the JSON list the page itself loads.
+    The list is newest first; "published" is a date only, stored as noon UTC like the KEV dates.
+    Revisions (VMSA-yyyy-nnnn.1) keep the same notificationUrl, so they don't repeat as new stories."""
+    segment = source.get("segment", "VC")
+    if not robots_allows(BROADCOM_ADVISORY_API, user_agent):
+        raise RuntimeError("robots.txt disallows the Broadcom advisory list")
+    body = json.dumps({"pageNumber": 0, "pageSize": int(source.get("page_size", 20)), "searchVal": "",
+                       "segment": segment, "sortInfo": {"column": "", "order": ""}}).encode()
+    req = Request(BROADCOM_ADVISORY_API, data=body, method="POST",
+                  headers={"User-Agent": user_agent, "Content-Type": "application/json", "Accept": "application/json"})
+    with urlopen(req, timeout=60) as resp:
+        data = json.load(resp)
+    if not data.get("success"):
+        raise RuntimeError("Broadcom advisory list returned success=false")
+    items = []
+    for adv in (data.get("data") or {}).get("list") or []:
+        title = re.sub(r"\s+", " ", adv.get("title") or "").strip()
+        if not title:
+            continue
+        m = re.match(r"(\d{1,2}) (\w+) (\d{4})$", (adv.get("published") or "").strip())
+        published = _noon_utc(*m.groups()) if m else ""
+        parts = [p for p in ((adv.get("severity") or "").title(),
+                             f"Products: {adv['supportProducts']}" if adv.get("supportProducts") else "",
+                             f"CVEs: {adv['affectedCve']}" if adv.get("affectedCve") else "",
+                             f"Workaround: {adv['workAround']}" if adv.get("workAround") else "") if p]
+        items.append({
+            "title": title,
+            "url": adv.get("notificationUrl") or BROADCOM_ADVISORY_PAGE + segment,
+            "summary": ". ".join(parts),
+            "published": published,
+        })
+    return items
+
+
+PROXMOX_PSA_THREADS = {
+    "Proxmox VE": "https://forum.proxmox.com/threads/proxmox-virtual-environment-security-advisories.149331/",
+    "Proxmox Backup Server": "https://forum.proxmox.com/threads/proxmox-backup-server-security-advisories.149332/",
+    "Proxmox Mail Gateway": "https://forum.proxmox.com/threads/proxmox-mail-gateway-security-advisories.149333/",
+    "Proxmox Datacenter Manager": "https://forum.proxmox.com/threads/proxmox-datacenter-manager-security-advisories.179160/",
+}
+
+
+def _proxmox_posts(page):
+    """(post id, ISO datetime, plain text) for each post on a XenForo thread page."""
+    posts = []
+    for m in re.finditer(r'data-content="post-(\d+)".*?<time[^>]*datetime="([^"]+)".*?<div class="bbWrapper">(.*?)</div>', page, re.S):
+        text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<br\s*/?>", "\n", m.group(3)))).strip()
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text)).replace("​", "").strip()
+        posts.append((m.group(1), m.group(2), text))
+    return posts
+
+
+def fetch_proxmox_advisories(source, user_agent, hours):
+    """Proxmox security advisories (PSA-yyyy-nnnnn). Proxmox posts each advisory as a new reply in
+    one sticky forum thread per product, and the forum RSS only shows the thread, so this reads
+    the last two pages of each thread (page-9999 redirects to the last page). One story per post,
+    linked to the post itself; the thread's opening post (no "PSA-") is skipped."""
+    items = []
+    for product, thread in PROXMOX_PSA_THREADS.items():
+        if not robots_allows(thread, user_agent):
+            raise RuntimeError(f"robots.txt disallows {thread}")
+        with urlopen(Request(thread + "page-9999", headers={"User-Agent": user_agent}), timeout=45) as resp:
+            last_url, page = resp.geturl(), resp.read().decode("utf-8", "replace")
+        pages = [page]
+        m = re.search(r"/page-(\d+)$", last_url.rstrip("/"))
+        if m and int(m.group(1)) > 1:
+            prev = thread + (f"page-{int(m.group(1)) - 1}" if int(m.group(1)) > 2 else "")
+            time.sleep(1)
+            with urlopen(Request(prev, headers={"User-Agent": user_agent}), timeout=45) as resp:
+                pages.append(resp.read().decode("utf-8", "replace"))
+        for pg in pages:
+            for post_id, stamp, text in _proxmox_posts(pg):
+                subj = re.search(r"Subject\s*:?\s*(PSA-\d{4}-\d+(?:-\d+)?)\s*:\s*(.*?)\s+Advisory date", text)
+                if not subj:
+                    continue
+                psa, what = subj.group(1), subj.group(2).strip()
+                details = re.search(r"Details\s*:\s*(.*?)(?:\s+(?:Fixed|Impact|Mitigation|Credits|References)\s*:|$)", text)
+                pkgs = re.search(r"Packages\s*:\s*(.*?)\s+Details", text)
+                summary = " ".join(p for p in (f"Packages: {pkgs.group(1)}." if pkgs else "",
+                                               details.group(1).strip() if details else "") if p)
+                items.append({
+                    "title": f"{product} {psa}: {what}",
+                    "url": f"https://forum.proxmox.com/posts/{post_id}/",
+                    "summary": summary[:600],
+                    "published": stamp,
+                })
+        time.sleep(1)
+    return items
+
+
 API_FETCHERS = {
+    "broadcom_advisories": fetch_broadcom_advisories,
+    "proxmox_advisories": fetch_proxmox_advisories,
     "microsoft_status": fetch_microsoft_status,
     "nvd_cves": fetch_nvd_cves,
 }

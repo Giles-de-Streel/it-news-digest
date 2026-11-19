@@ -22,7 +22,7 @@ from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -381,9 +381,15 @@ def fetch_feed(url, attempts=2):
         try:
             req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"})
             with urlopen(req, timeout=30) as resp:
-                data = resp.read()
+                data, final_url = resp.read(), resp.geturl()
             try:
-                return parse_feed(data)
+                items = parse_feed(data)
+                # Some feeds (Jekyll's jekyll-feed, e.g. QEMU) give site-relative links; resolve
+                # them against the feed URL so build_items doesn't drop them as non-http
+                for item in items:
+                    if item.get("url") and not item["url"].startswith(("http://", "https://")):
+                        item["url"] = urljoin(final_url, item["url"])
+                return items
             except ET.ParseError as exc:
                 head = data[:600].lstrip().lower()
                 if head.startswith((b"<!doctype html", b"<html")) or b"<html" in head:
