@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "generated": "2026-11-19T16:15:59+00:00",
+ "generated": "2026-11-19T16:31:52+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 38,
+   "recent": 39,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -413,9 +413,9 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Sophos X-Ops",
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -708,7 +708,7 @@
   {
    "source": "Risky Business News",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1554,7 +1554,7 @@
   {
    "source": "Rapid7 Blog",
    "fetched": 20,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1698,7 +1698,7 @@
   {
    "source": "Sekoia blog",
    "fetched": 100,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -1787,8 +1787,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 94,
-   "recent": 13,
+   "fetched": 93,
+   "recent": 12,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 90,
-   "recent": 33,
+   "fetched": 91,
+   "recent": 34,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 80,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -2346,7 +2346,7 @@
   {
    "source": "Traefik Labs Blog",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2490,6 +2490,140 @@
  ],
  "items": [
   {
+   "id": "4e7663b4540e",
+   "title": "Windows 11 hotpatch breaks Office apps; Microsoft offers registry workaround",
+   "url": "https://4sysops.com/archives/windows-11-hotpatch-breaks-office-apps-microsoft-offers-registry-workaround/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-19T16:27:10+00:00",
+   "summary": "Microsoft has offered a registry workaround for a Windows 11 hotpatch bug that can prevent Office and other applications from installing or running. The confirmation follows reports that KB5132043 disrupted Citrix Workspace and the 32-bit Windows Installer . Source",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "0274a7089107",
+   "title": "DDR6 preview promises shorter modules and a 50% wider data bus",
+   "url": "https://4sysops.com/archives/ddr6-preview-promises-shorter-modules-and-a-50-wider-data-bus/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-19T16:27:09+00:00",
+   "summary": "JEDEC’s preview of DDR6 system memory targets a 12.8 GT/s transfer rate and a wider data bus for AI and other data-intensive workloads. The proposed modules would also be shorter than DDR5 DIMMs, potentially allowing more memory capacity per system.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "6ffa760ff7c8",
+   "title": "NGINX2Root: Second HTTP/2 flaw enables server takeover as millions remain exposed",
+   "url": "https://4sysops.com/archives/nginx2root-second-http-2-flaw-enables-server-takeover-as-millions-remain-exposed/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-19T16:27:07+00:00",
+   "summary": "NGINX, a web server and reverse proxy, has a second critical HTTP/2 flaw that researchers demonstrated can let unauthenticated attackers execute code. The newly detailed CVE-2026-123633 affects servers proxying requests to a backend, while the previously disclosed CVE-2026-123007 also affects ordinary static-file…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-123007",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "f5"
+    },
+    {
+     "id": "CVE-2026-123633",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "f5"
+    }
+   ]
+  },
+  {
+   "id": "aec48229c86f",
+   "title": "QTS data center site in Georgia partially evacuated after shooting threat letter",
+   "url": "https://www.datacenterdynamics.com/en/news/qts-data-center-site-in-georgia-partially-evacuated-after-shooting-threat-letter/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-19T16:25:52+00:00",
+   "summary": "Follows bomb hoax at site last summer",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c6e1c60b1531",
+   "title": "Java4Shell: Buy Time with a WAF, Then Update the JDK",
+   "url": "https://traefik.io/java4shell-buy-time-with-a-waf-then-update-the-jdk",
+   "source": "Traefik Labs Blog",
+   "source_category": "Networking",
+   "published": "2026-11-19T16:24:39+00:00",
+   "summary": "Java4Shell (CVE-2026-114938), rated 9.8, lets one crafted Base64 string corrupt a Java service's memory. Block the trigger at the gateway, then update the JDK.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ],
+   "cves": [],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114938",
+     "score": 0.00734,
+     "percentile": 0.55119,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "df0688a67691",
+   "title": "Google Chrome dev team declares bug report bankruptcy",
+   "url": "https://blog.plover.com/tech/bug-reports.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-19T16:20:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "651d5e5904ae",
+   "title": "Samsung 9100 PRO, 990 PRO 1TB 2TB 4TB NVMe SSDs are great deals this Black Friday",
+   "url": "https://www.neowin.net/deals/samsung-9100-pro-990-pro-1tb-2tb-4tb-nvme-ssds-are-great-deals-this-black-friday/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-19T16:20:02+00:00",
+   "summary": "This Black Friday 2026, there are multiple great NVMe SSD deals from Samsung, Acer, and Kingston. Check them out here.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2df95cf4f563",
+   "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
+   "url": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-19T16:20:00+00:00",
+   "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "cc590fdc0878",
    "title": "Identity context is essential for exposure management: Tenable One adds ways to bring in identity security data",
    "url": "https://www.tenable.com/blog/identity-context-is-essential-for-exposure-management-tenable-one-adds-ways-to-bring-in",
@@ -2501,6 +2635,62 @@
    "topics": [
     "Vulnerabilities & patches",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "85aae475b2fc",
+   "title": "Nest Wifi Pro is 65% off right now, just $70",
+   "url": "https://9to5google.com/2026/11/19/google-nest-wifi-pro-black-friday-deal/",
+   "source": "9to5Google",
+   "source_category": "IT industry",
+   "published": "2026-11-19T16:15:00+00:00",
+   "summary": "A huge Black Friday deal on Google’s Nest Wifi Pro takes the Wi-Fi 6E router down to just $70, a massive 65% off. more…",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "7edc57f7a227",
+   "title": "DCD Survey: Airflow management",
+   "url": "https://www.datacenterdynamics.com/en/research/dcd-survey-airflow-management/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-19T16:13:00+00:00",
+   "summary": "Examining advanced airflow management and contaminant control in AI data centers",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "5194c19461fd",
+   "title": "The GTA 6 effect: Israeli internet traffic jumps as gamers log on",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZNi1hNHRrZVlVXzJHV1FCUU9qSkVkUUdVcmpPWXRIbXYtTlN1eFZRaEdzbE9sMkNVN2NhSGVWWkZvdHFqVFRYU09wVzQ3TkRUUFAzX25VcVpGYlA5emVpeGRaOTN0VmM?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-19T16:13:00+00:00",
+   "summary": "The GTA 6 effect: Israeli internet traffic jumps as gamers log on CTech",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "b439309efe40",
+   "title": "From GPU to SLA backstops: The next step in neocloud finance",
+   "url": "https://www.datacenterdynamics.com/en/whitepapers/from-gpu-to-sla-backstops-the-next-step-in-neocloud-finance/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-19T16:12:47+00:00",
+   "summary": "Closing the operational risk gap in AI infrastructure financing",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -2700,6 +2890,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "54225f4d777e",
+   "title": "What Is Preemptive MDR? A Guide For Security Leaders",
+   "url": "https://www.rapid7.com/blog/post/dr-what-is-preemptive-mdr-security-leaders-guide",
+   "source": "Rapid7 Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-19T15:58:53+00:00",
+   "summary": "When an MDR provider contains a compromised endpoint, your team needs to know whether the weakness that enabled the attack exists elsewhere and who is responsible for addressing it. Without that follow-through, the immediate incident may be resolved while another attacker still has a way in.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
    ]
   },
   {
@@ -3475,6 +3678,94 @@
    ]
   },
   {
+   "id": "c347873154de",
+   "title": "USN-9171-2: Linux kernel (Oracle) vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9171-2",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-19T15:12:06+00:00",
+   "summary": "Several security issues were discovered in the Linux kernel. An attacker could possibly use these to compromise the system. This update corrects flaws in the following subsystems: - IPv4 networking; - Ethernet bridge; - Netfilter; - XFRM subsystem; (CVE-2026-98432, CVE-2026-99999)",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Linux & open source",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    },
+    {
+     "id": "CVE-2026-99999",
+     "score": 9.3,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-99999",
+     "score": 0.00788,
+     "percentile": 0.56911,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
+   "id": "444ca391b9a5",
+   "title": "USN-9170-2: Linux kernel (AWS FIPS) vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9170-2",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-19T15:12:06+00:00",
+   "summary": "Several security issues were discovered in the Linux kernel. An attacker could possibly use these to compromise the system. This update corrects flaws in the following subsystems: - IPv4 networking; - Ethernet bridge; - Netfilter; - SCTP protocol; - XFRM subsystem; (CVE-2026-64564, CVE-2026-98432, CVE-2026-99999)",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-64564",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    },
+    {
+     "id": "CVE-2026-98432",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    },
+    {
+     "id": "CVE-2026-99999",
+     "score": 9.3,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-64564",
+     "score": 0.01389,
+     "percentile": 0.72852,
+     "date": "2026-11-18"
+    }
+   }
+  },
+  {
    "id": "c165b0eb8af4",
    "title": "Agentic AI Workflows: Certifiable Multicore Software Dev for Safety-Critical Auto Apps (Part 1)",
    "url": "https://www.electronicdesign.com/technologies/embedded/machine-learning/article/55420223/tasking-agentic-ai-workflows-certifiable-multicore-software-development-for-safety-critical-automotive-applications-part-1",
@@ -3495,7 +3786,14 @@
    "source_category": "Security",
    "published": "2026-11-19T15:11:06+00:00",
    "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fee65e765778",
+     "source": "4sysops",
+     "title": "Critical VMware vCenter login bypass demands emergency patching",
+     "url": "https://4sysops.com/archives/critical-vmware-vcenter-login-bypass-demands-emergency-patching/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Cloud & infrastructure",
@@ -3622,9 +3920,30 @@
    "source_category": "IT industry",
    "published": "2026-11-19T15:01:45+00:00",
    "summary": "The Investigatory Powers Tribunal – essentially a British court that deals with complaints about state surveillance – has ruled that Apple is allowed to reveal a secret order it received from the UK government.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6ddd580a0952",
+     "source": "The Record",
+     "title": "UK court confirms British government served Apple with secret encryption notice",
+     "url": "https://therecord.media/apple-uk-encryption-notice"
+    }
+   ],
    "topics": [
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "c82145ccfda6",
+   "title": "On-Premises vs. Cloud: Choosing the Right SOC Deployment",
+   "url": "https://www.sekoia.com/blog/on-premises-vs-cloud-how-to-choose-a-deployment-model-for-your-soc",
+   "source": "Sekoia blog",
+   "source_category": "Threat research",
+   "published": "2026-11-19T15:01:00+00:00",
+   "summary": "Cloud or on-premises? Hybrid or self-hosted? See how each model handles cost and control, then pick the SOC deployment that fits your data and your team.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Embedded & IoT"
    ]
   },
   {
@@ -6867,7 +7186,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-19T11:36:03+00:00",
    "summary": "Some Windows 11 laptop users report missing webcam controls, with one describing the loss of zoom, pan, tilt, and auto-framing. Microsoft has not confirmed a regression.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "aeb7dc9cda3c",
+     "source": "4sysops",
+     "title": "Windows 11 update reportedly removes webcam zoom controls on Lenovo laptops",
+     "url": "https://4sysops.com/archives/windows-11-update-reportedly-removes-webcam-zoom-controls-on-lenovo-laptops/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Hardware"
@@ -8501,6 +8827,18 @@
      "source": "SecurityWeek",
      "title": "PHP Patches Seven Critical RCE Vulnerabilities",
      "url": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/"
+    },
+    {
+     "id": "c23a56f69f68",
+     "source": "BleepingComputer",
+     "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
+     "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/"
+    },
+    {
+     "id": "dae8ea7214b7",
+     "source": "Linuxiac",
+     "title": "PHP 8.6 Released with Partial Function Application, New Polling API",
+     "url": "https://linuxiac.com/php-8-6-released-with-partial-function-application-new-polling-api/"
     }
    ],
    "topics": [
@@ -9768,7 +10106,14 @@
    "source_category": "IT industry",
    "published": "2026-11-19T06:22:43+00:00",
    "summary": "Microsoft announced on November 18 that it is gradually expanding automatic delivery of Windows 11 26H2 to unmanaged PCs. As of November 19, the official Japanese guidance still had not been updated beyond its October 28 information.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6be91304aee7",
+     "source": "4sysops",
+     "title": "Windows 11 26H2 automatic rollout starts for unmanaged 24H2 and 25H2 PCs",
+     "url": "https://4sysops.com/archives/windows-11-26h2-automatic-rollout-starts-for-unmanaged-24h2-and-25h2-pcs/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
    ]
@@ -10410,6 +10755,12 @@
      "source": "The Register",
      "title": "Another critical PHP security release has dropped",
      "url": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911"
+    },
+    {
+     "id": "8de4df299794",
+     "source": "4sysops",
+     "title": "PHP fixes seven critical flaws, including phpAfterShell RCE",
+     "url": "https://4sysops.com/archives/php-fixes-seven-critical-flaws-including-phpaftershell-rce/"
     }
    ],
    "topics": [
@@ -10789,6 +11140,12 @@
      "source": "Semafor Technology & Security",
      "title": "Anthropic raises record sums in IPO",
      "url": "https://www.semafor.com/article/11/19/2026/anthropic-poised-for-record-ipo-in-bellwether-for-ai-boom"
+    },
+    {
+     "id": "59cc3ee7405c",
+     "source": "Data Center Dynamics",
+     "title": "Anthropic launches IPO at $83 per share",
+     "url": "https://www.datacenterdynamics.com/en/news/anthropic-launches-ipo-at-83-per-share/"
     }
    ],
    "topics": [
