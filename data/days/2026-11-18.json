@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "generated": "2026-11-19T00:31:29+00:00",
+ "generated": "2026-11-19T00:46:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 41,
+   "recent": 40,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -108,7 +108,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 5,
    "error": null
   },
   {
@@ -162,7 +162,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -366,7 +366,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "TechCrunch Enterprise",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -659,8 +659,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 8,
-   "recent": 6,
+   "fetched": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -857,9 +857,9 @@
   },
   {
    "source": "Google Cloud Blog",
-   "fetched": 20,
-   "recent": 13,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Okta Security",
@@ -1080,7 +1080,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1434,7 +1434,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1686,13 +1686,13 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1728,7 +1728,7 @@
   {
    "source": "Resilience Media",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1859,7 +1859,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 92,
+   "fetched": 91,
    "recent": 34,
    "error": null
   },
@@ -2424,6 +2424,45 @@
  ],
  "items": [
   {
+   "id": "4eb466a26434",
+   "title": "Filing: Anthropic raised ~$3B from Japanese investors as part of its IPO, the lower end of its planned range of $3B to $3.5B (Yasutaka Tamura/Bloomberg)",
+   "url": "https://www.techmeme.com/261118/p51#a261118p51",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-19T00:40:03+00:00",
+   "summary": "Yasutaka Tamura / Bloomberg : Filing: Anthropic raised ~$3B from Japanese investors as part of its IPO, the lower end of its planned range of $3B to $3.5B — Anthropic PBC raised about $3 billion from Japanese investors as part of its initial public offering, the lower end of its planned range, according to a…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1f20fecfbd6e",
+   "title": "Inside world’s largest electronic market in China",
+   "url": "https://www.nbcnews.com/nightly-news/video/inside-world-s-largest-electronic-market-in-china-273776197709",
+   "source": "NBC News Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-19T00:37:28+00:00",
+   "summary": "Tens of thousands of vendors sell tech and electronics inside Huaqiangbei. Shoppers can check out drones, tablets, toys, and gaming systems. NBC News’ Tom Llamas got an inside look.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "4a36ca457be0",
+   "title": "Why MySQL OR is slower than IN",
+   "url": "https://www.percona.com/blog/why-mysql-or-is-slower-than-in/",
+   "source": "Percona Blog",
+   "source_category": "Databases",
+   "published": "2026-11-19T00:22:44+00:00",
+   "summary": "Queries with OR conditions are commonly used to implement business logic. However, it might be slower than we expected. Although the query below scans only 1 million rows, it runs for 6,7254 seconds.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "c2898281017d",
    "title": "Gemini 4 Neon costs $3/1M input tokens and $15/1M output tokens; the model sits between Hydrogen and Carbon and replaces Argon in the Gemini app (Abner Li/9to5Google)",
    "url": "https://www.techmeme.com/261118/p49#a261118p49",
@@ -2434,6 +2473,38 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "1e917e32b221",
+   "title": "RHSA-2026:100571: Critical: java-25-openjdk security update for RHEL 9",
+   "url": "https://access.redhat.com/errata/RHSA-2026:100571",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-19T00:19:44+00:00",
+   "summary": "An update for java-25-openjdk is now available for Red Hat Enterprise Linux 9.8 Extended Update Support and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "cbd6bf3f130b",
+   "title": "RHSA-2026:100572: Critical: java-25-openjdk security update for RHEL 10",
+   "url": "https://access.redhat.com/errata/RHSA-2026:100572",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-19T00:15:03+00:00",
+   "summary": "An update for java-25-openjdk is now available for Red Hat Enterprise Linux 10.2 Extended Update Support and Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development",
+    "System administration"
    ]
   },
   {
@@ -4271,6 +4342,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c6cc01738753",
+   "title": "Sending From Email Aliases – General Availability",
+   "url": "https://techcommunity.microsoft.com/t5/exchange-team-blog/sending-from-email-aliases-general-availability/ba-p/4562543",
+   "source": "Exchange Team Blog",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-18T21:11:05+00:00",
+   "summary": "Today we are announcing the General Availability (GA) of Sending from Aliases for Exchange Online. This was a highly requested feature that now empowers users to send emails from any alias (proxy address) associated with their mailbox, not just their primary SMTP address.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "System administration"
    ]
   },
   {
@@ -9649,6 +9734,12 @@
      "source": "Linuxiac",
      "title": "System76’s Redesigned Thelio Prime Linux Desktop Is Now Available",
      "url": "https://linuxiac.com/system76s-redesigned-thelio-prime-linux-desktop-is-now-available/"
+    },
+    {
+     "id": "623748b4f3c5",
+     "source": "OMG! Ubuntu",
+     "title": "Proton’s Lumo AI chatbot is now available on Linux desktops",
+     "url": "https://www.omgubuntu.co.uk/2026/11/proton-lumo-ai-linux-desktop"
     }
    ],
    "topics": [
@@ -14728,6 +14819,12 @@
      "source": "Slashdot",
      "title": "Satya Nadella Says He's AGI-Pilled Now",
      "url": "https://slashdot.org/story/26/11/18/026229/satya-nadella-says-hes-agi-pilled-now?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "c8a4b2ac137e",
+     "source": "TechCrunch Enterprise",
+     "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+     "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/"
     }
    ],
    "topics": [
