@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T18:16:09+00:00",
+ "generated": "2026-11-20T18:31:15+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -131,8 +131,8 @@
   },
   {
    "source": "CISA KEV",
-   "fetched": 1786,
-   "recent": 0,
+   "fetched": 1790,
+   "recent": 4,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 77,
-   "recent": 77,
+   "fetched": 79,
+   "recent": 79,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -288,7 +288,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -396,7 +396,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 82,
-   "recent": 1,
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1278,7 +1278,7 @@
   {
    "source": "Datadog Blog",
    "fetched": 97,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 61,
+   "recent": 62,
    "error": null
   },
   {
@@ -1787,8 +1787,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 94,
-   "recent": 8,
+   "fetched": 96,
+   "recent": 10,
    "error": null
   },
   {
@@ -2316,7 +2316,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2490,6 +2490,106 @@
  ],
  "items": [
   {
+   "id": "e0ed88440bcb",
+   "title": "OpenAI tightens grip on model resellers",
+   "url": "https://www.semafor.com/article/11/20/2026/openai-tightens-grip-on-model-resellers",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-20T18:24:02+00:00",
+   "summary": "Gateways and routers that provide third-party access to OpenAI’s tech now need the company’s review and approval.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "244193f4f19c",
+   "title": "Silicon Valley should ditch the 'handover' talking point",
+   "url": "https://www.semafor.com/article/11/20/2026/silicon-valley-should-ditch-the-handover-talking-point",
+   "source": "Semafor Technology & Security",
+   "source_category": "IT industry",
+   "published": "2026-11-20T18:21:35+00:00",
+   "summary": "There’s no evidence we’re on the verge of the handover or anything remotely like it, so tech leaders would be wise to find a more optimistic talking point.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f8ee9504303c",
+   "title": "CVE-2026-62318: Netatalk is a Free and Open Source file server suite for Unix-like operating systems.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62318",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-20T18:18:54.807000+00:00",
+   "summary": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 2.0.0 until 4.5.1, the DHX2 and DHX2-PAM authentication state machine in etc/uams/uams_dhx2_pam.c permits logincont1 to be invoked again with the same FPLoginCont retID after it has released the global gcry_mpi_t Ra object.",
+   "kind": "cve",
+   "cve": "CVE-2026-62318",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-62318",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "e0210ee759ff",
+   "title": "CVE-2026-133212: @fastify/reply-from is a Fastify plugin that forwards an incoming HTTP request to an upstream server.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133212",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-20T18:18:47.127000+00:00",
+   "summary": "@fastify/reply-from is a Fastify plugin that forwards an incoming HTTP request to an upstream server. In versions before 12.9.1, when the plugin forwards a request whose body is not written to the upstream connection, such as a GET, HEAD, or TRACE request that carried a body, or a request with a falsy JSON body, it…",
+   "kind": "cve",
+   "cve": "CVE-2026-133212",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133212",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5abf6cf120bb",
+   "title": "Microsoft Account benefits are getting easier to discover with latest Windows 11 build",
+   "url": "https://www.neowin.net/news/microsoft-account-benefits-are-getting-easier-to-discover-with-latest-windows-11-build/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T18:18:03+00:00",
+   "summary": "Microsoft has released new Windows 11 builds under the Beta channel. It brings some new features and improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "2fdd7a0916ab",
+   "title": "The most misunderstood graph in AI just got a major update",
+   "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+   "source": "MIT Technology Review",
+   "source_category": "IT industry",
+   "published": "2026-11-20T18:15:15+00:00",
+   "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
    "id": "f3fa17044b2e",
    "title": "‘GTA 6’: First Half-Hour Reveals Major Plot Twist Rockstar Has Managed to Keep Secret for Years",
    "url": "https://variety.com/2026/gaming/news/gta-6-jason-lucia-baby-tomas-parents-twist-1236954289/",
@@ -2651,6 +2751,21 @@
     "Cloud & infrastructure",
     "AI",
     "Networking"
+   ]
+  },
+  {
+   "id": "bbd8e3407746",
+   "title": "Chrome Dev for Desktop Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_0667948876.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T17:58:33.217000+00:00",
+   "summary": "The Dev channel has been updated to 160.0.8171.0 for Windows, Mac and Linux. A partial list of changes is available in the Git log . Interested in switching release channels? Find out how . If you find a new issue, please let us know by filing a bug .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -4803,7 +4918,14 @@
    "source_category": "IT industry",
    "published": "2026-11-20T14:54:43+00:00",
    "summary": "The long-awaited \"Grand Theft Auto VI\" is already a blockbuster hit, earning critical acclaim and taking pop culture by storm.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e0006c8114ba",
+     "source": "Guardian Technology",
+     "title": "‘The greatest game ever made’: readers and Guardian staff on Grand Theft Auto VI",
+     "url": "https://www.theguardian.com/games/2026/nov/20/grand-theft-auto-vi-players-review"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6913,6 +7035,13 @@
     }
    ],
    "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2025-42884",
+      "added": "2026-11-20",
+      "ransomware": false
+     }
+    ],
     "epss": {
      "id": "CVE-2025-42884",
      "score": 0.00276,
@@ -6947,6 +7076,13 @@
     }
    ],
    "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-76466",
+      "added": "2026-11-20",
+      "ransomware": false
+     }
+    ],
     "epss": {
      "id": "CVE-2026-76466",
      "score": 0.00417,
@@ -8220,6 +8356,13 @@
     }
    ],
    "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-76466",
+      "added": "2026-11-20",
+      "ransomware": false
+     }
+    ],
     "epss": {
      "id": "CVE-2026-76466",
      "score": 0.00417,
@@ -11754,7 +11897,16 @@
     "Cloud & infrastructure",
     "Identity & access"
    ],
-   "cves": []
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-123890",
+      "added": "2026-11-20",
+      "ransomware": false
+     }
+    ]
+   }
   },
   {
    "id": "2ba7b52835e4",
@@ -12064,7 +12216,14 @@
    "source_category": "Vendor advisories",
    "published": "2026-11-20T00:00:00+00:00",
    "summary": "On November 20, 2026, we released versions 19.6.1, 19.5.8, 19.4.10 for GitLab Community Edition and Enterprise Edition. These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c15e0dc21b88",
+     "source": "heise online (English)",
+     "title": "Ruby patches critical flaws, affecting Rails, GitHub and GitLab",
+     "url": "https://www.heise.de/en/news/Ruby-patches-critical-flaws-affecting-Rails-GitHub-and-GitLab-11532787.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Development",
@@ -12272,6 +12431,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bb049b400199",
+   "title": "Let your product dashboards report to you with the Dashboard Reporter Agent",
+   "url": "https://www.datadoghq.com/blog/agentic-reporting-product-analytics/",
+   "source": "Datadog Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-20T00:00:00+00:00",
+   "summary": "Get proactive product insights delivered to your team with Datadog Product Analytics, then investigate conversion drops with Bits AI and unified telemetry.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
