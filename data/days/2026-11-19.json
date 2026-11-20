@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "generated": "2026-11-20T03:02:17+00:00",
+ "generated": "2026-11-20T03:16:08+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -528,7 +528,7 @@
   {
    "source": "Horizon3.ai",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -624,7 +624,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Wiz Research",
    "fetched": 727,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -792,7 +792,7 @@
   {
    "source": "MongoDB blog",
    "fetched": 150,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 74,
+   "recent": 75,
    "error": null
   },
   {
@@ -1104,7 +1104,7 @@
   {
    "source": "Exchange Team Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1518,7 +1518,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 50,
+   "recent": 49,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
+   "fetched": 90,
    "recent": 22,
    "error": null
   },
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 10,
    "recent": 2,
    "error": null
   },
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -2400,7 +2400,7 @@
   {
    "source": "Microsoft Defender XDR blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,50 @@
  ],
  "items": [
   {
+   "id": "ec3944c17308",
+   "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
+   "url": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
+   "source": "CSO Online",
+   "source_category": "Security",
+   "published": "2026-11-20T03:10:04+00:00",
+   "summary": "The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them. Researchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Package Manager (WinGet),…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Pen testing & red team",
+    "Supply chain security",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "95c8bc044fea",
+   "title": "GPT-6.2 Astra and Sol reviews: Benchmarks and early tester bashing",
+   "url": "https://4sysops.com/archives/gpt-6-2-astra-and-sol-reviews-benchmarks-and-early-tester-bashing/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T03:09:30+00:00",
+   "summary": "Early reviewers gave OpenAI’s GPT-6.2 Astra and Sol mostly negative assessments. Theo Browne found Astra strong at code review but frustrating on long tasks; Matt Shumer called both models unusable; Paul Solt criticized early stops; and Dan Shipper faulted Astra’s writing and follow-through.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "39275de62d90",
+   "title": "DabbleCAD Takes Design Offline",
+   "url": "https://hackaday.com/2026/11/19/dabblecad-takes-design-offline/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-20T03:00:57+00:00",
+   "summary": "These days, there are all kind of online-only and in-browser CAD packages. DabbleCAD is the opposite of all that—a simple, offline, open-source design solution. DabbleCAD handles 3D design in a …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e486efe85b2a",
    "title": "Token fraud is here and it’s BAD (YouTube)",
    "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
@@ -2500,6 +2544,79 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "bb190340d2e2",
+   "title": "USN-9181-1: OpenJDK 8 vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9181-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T02:42:46+00:00",
+   "summary": "It was discovered that the JGSS component of OpenJDK 8 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-114939) Nicholas Carlini discovered that the JSSE component of OpenJDK 8 did not correctly authorize users.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-114939",
+     "score": 7.4,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "oracle"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114939",
+     "score": 0.00318,
+     "percentile": 0.25318,
+     "date": "2026-11-19"
+    }
+   }
+  },
+  {
+   "id": "08ae8f32e634",
+   "title": "USN-9179-1: CRaC JDK 21 vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9179-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T02:36:27+00:00",
+   "summary": "Albert Yang and Quang Luong discovered that the Compiler component of CRaC JDK 21 did not correctly handle certain inputs. A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "63c3308c2eab",
+   "title": "USN-9178-1: CRaC JDK 17 vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9178-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T02:36:11+00:00",
+   "summary": "Albert Yang and Quang Luong discovered that the Compiler component of CRaC JDK 17 did not correctly handle certain inputs. A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "7bb0a3a1c009",
+   "title": "USN-9180-1: CRaC JDK 25 vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9180-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T02:34:22+00:00",
+   "summary": "Albert Yang and Quang Luong discovered that the Compiler component of CRaC JDK 25 did not correctly handle certain inputs. A remote attacker could possibly use this issue to cause a denial of service or execute arbitrary code.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
    ]
   },
   {
@@ -2539,6 +2656,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "27955ff7c2b1",
+   "title": "導入事例：株式会社ラウンドワンジャパン様",
+   "url": "https://blogs.vmware.com/vmware-japan/2026/11/customer-case-studies-roundone.html",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-20T02:15:20+00:00",
+   "summary": "ボウリングやアミューズメント、カラオケ、スポッチャなど、屋内型複合レジャー施設を国内外に162店舗展開する株式会社ラウンドワンジャパン様。本日は、VMware Cloud Foundation® Edge（VCF Edge）および VMware Cloud Foundation Operations（VCF Operations）を活用した店舗サーバー基盤の刷新事例をご紹介いたします。…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -14487,6 +14617,12 @@
      "source": "Neowin",
      "title": "Microsoft confirms November 2026 Windows 11 hotpatch breaks app installs and launches",
      "url": "https://www.neowin.net/news/microsoft-confirms-november-2026-windows-11-hotpatch-breaks-app-installs-and-launches/?utm_source=rss"
+    },
+    {
+     "id": "669a411bfef4",
+     "source": "4sysops",
+     "title": "Windows 11 hotpatch breaks app launches; Microsoft offers registry workaround",
+     "url": "https://4sysops.com/archives/windows-11-hotpatch-breaks-app-launches-microsoft-offers-registry-workaround/"
     }
    ],
    "topics": [
@@ -15022,6 +15158,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "5da30e04b8d9",
+   "title": "AgentCore runtime instances now support Nested Virtualization",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-nested-virtualization/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-19T10:00:00+00:00",
+   "summary": "Amazon Bedrock AgentCore runtime instances now support nested virtualization, so your agents can run their own virtual machines and emulators inside a session with Kernel-based Virtual Machine (KVM).",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure"
    ]
   },
   {
