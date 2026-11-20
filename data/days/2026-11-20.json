@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T15:31:15+00:00",
+ "generated": "2026-11-20T15:46:46+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -342,7 +342,7 @@
   {
    "source": "Mike Dietrich (Oracle upgrades)",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -557,14 +557,14 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -762,7 +762,7 @@
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1266,7 +1266,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 20,
+   "fetched": 96,
+   "recent": 23,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 19,
+   "fetched": 18,
    "recent": 10,
    "error": null
   },
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 75,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -2394,7 +2394,7 @@
   {
    "source": "Windows Server News",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2489,6 +2489,103 @@
   }
  ],
  "items": [
+  {
+   "id": "e6717c361e5a",
+   "title": "New AutoUpgrade version 26.7.2 is available",
+   "url": "https://mikedietrichde.com/2026/11/20/new-autoupgrade-version-26-7-2-is-available/",
+   "source": "Mike Dietrich (Oracle upgrades)",
+   "source_category": "Databases",
+   "published": "2026-11-20T15:42:52+00:00",
+   "summary": "The Upgrade Dev team does an amazing job. At DOAG conference this week in Nuernberg, Daniel and I realized again how popular AutoUpgrade’s ability to download patches has become.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "e29072e459f7",
+   "title": "Palo Alto Networks Expands into Enterprise AI with $4.5B Deal",
+   "url": "https://www.eetimes.com/palo-alto-networks-expands-into-enterprise-ai-with-4-5b-deal/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-20T15:37:26+00:00",
+   "summary": "Enterprise security outfit Palo Alto Networks snaps up a startup with a platform for post-training and inference of open-weight AI models.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a117dbd51b9d",
+   "title": "The Prompt: AI agents force companies to rethink cybersecurity recovery",
+   "url": "https://www.techtarget.com/news/the-prompt-ai-agents-force-companies-to-rethink-cybersecurity-recovery/875327/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-20T15:37:08+00:00",
+   "summary": "Agents are speeding up attacks and slowing down rebuild.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "37f4e7ffc95d",
+   "title": "USN-9183-1: Linux kernel (FIPS) vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9183-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T15:34:40+00:00",
+   "summary": "Several security issues were discovered in the Linux kernel. An attacker could possibly use these to compromise the system. This update corrects flaws in the following subsystems: - USB Gadget drivers; - Memory management; - Multiple devices driver; - Network file systems library; - Networking core; - eXpress Data…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Linux & open source",
+    "Networking"
+   ]
+  },
+  {
+   "id": "10726ecf7252",
+   "title": "Why AI hardware supply chains demand board-level disaster prevention",
+   "url": "https://www.datacenterdynamics.com/en/opinions/why-ai-hardware-supply-chains-demand-board-level-disaster-prevention/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-20T15:30:46+00:00",
+   "summary": "And why it might be time to play defense",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "6264e9eac7f8",
+   "title": "What developers and QA need from each other when AI writes the code",
+   "url": "https://www.cio.com/article/4251514/what-developers-and-qa-need-from-each-other-when-ai-writes-the-code.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-20T15:30:21+00:00",
+   "summary": "The change was a small edit to a shared component. It passed code review and QA; the tests were green and the code did what the ticket asked. When a customer purchased a subscription and closed the browser, the system normally turned that order into working access in the background.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "e2c2870c7f7f",
+   "title": "Filings: Jensen Huang's charity committed $350M to rent compute from CoreWeave for its Computing Initiative for Open Science, and has already spent $108.3M (Bloomberg)",
+   "url": "https://www.techmeme.com/261120/p18#a261120p18",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-20T15:30:00+00:00",
+   "summary": "Bloomberg : Filings: Jensen Huang's charity committed $350M to rent compute from CoreWeave for its Computing Initiative for Open Science, and has already spent $108.3M — Former Nvidia Corp. Chief Executive Officer Jensen Huang's charitable foundation plans to spend $350 million renting computer time from CoreWeave Inc.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "6880be0e6e3e",
    "title": "Seco Opens Sampling of AMD Ryzen Embedded 8000 Module",
@@ -5143,7 +5240,14 @@
    "source_category": "IT industry",
    "published": "2026-11-20T11:26:37+00:00",
    "summary": "Nasdaq futures trade lower after steep declines extend across global tech stocks",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c21961bd0b38",
+     "source": "NBC News Tech",
+     "title": "Anthropic stock is down during its second day of trading after a historic Wall Street debut",
+     "url": "https://www.nbcnews.com/video/anthropic-stock-is-down-during-its-second-day-of-trading-after-a-historic-wall-street-debut-273897541540"
+    }
+   ],
    "topics": [
     "General IT"
    ]
