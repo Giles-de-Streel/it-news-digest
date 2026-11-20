@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T21:02:09+00:00",
+ "generated": "2026-11-20T21:16:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -66,7 +66,7 @@
   {
    "source": "Ars Technica IT",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -456,7 +456,7 @@
   {
    "source": "Hex-Rays (IDA)",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -510,7 +510,7 @@
   {
    "source": "Magnet Forensics",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -654,7 +654,7 @@
   {
    "source": "Fortinet PSIRT",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 145,
+   "fetched": 144,
    "recent": 123,
    "error": null
   },
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 44,
+   "recent": 59,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "AskWoody",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1638,7 +1638,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -2394,7 +2394,7 @@
   {
    "source": "Windows Server News",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2418,7 +2418,7 @@
   {
    "source": "Recorded Future",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,32 @@
  ],
  "items": [
   {
+   "id": "0113c25d9b81",
+   "title": "Recovering from Indirect Branch Obfuscation with Hex-Rays Microcode",
+   "url": "https://hex-rays.com/blog/recovering-from-indirect-branch-obfuscation",
+   "source": "Hex-Rays (IDA)",
+   "source_category": "Reverse engineering",
+   "published": "2026-11-20T21:13:39+00:00",
+   "summary": "This article uses samples obfuscated with the Hikari-LLVM19 framework to present a recovery method for AArch64 indirect branch obfuscation. The method is not intended to handle all indirect branches.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8f7842936df5",
+   "title": "Beyond the phone: where confidence in evidence access drops",
+   "url": "https://www.magnetforensics.com/blog/beyond-the-phone-where-confidence-in-evidence-access-drops/",
+   "source": "Magnet Forensics",
+   "source_category": "Forensics & IR",
+   "published": "2026-11-20T21:04:52+00:00",
+   "summary": "More than eight in 10 professionals are confident accessing mobile data, but fewer than half say so for vehicles and drones as encryption spreads.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "289939c10e26",
    "title": "Old FireWire Audio Interface Gets USB C Upgrade",
    "url": "https://hackaday.com/2026/11/20/old-firewire-audio-interface-gets-usb-c-upgrade/",
@@ -2500,6 +2526,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "e7e982d925ba",
+   "title": "South Korea busts 54 students cheating on national college admission exam by deploying emergency disaster alert during test",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/south-korea-busts-54-students-cheating-on-national-college-admission-exam-by-deploying-emergency-disaster-alert-during-test-ai-micro-cameras-and-phones-drive-cheating-epidemic-that-forced-government-crackdown",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-20T21:00:00+00:00",
+   "summary": "The South Korean government used extra measures to prevent cheating in its national college admission exams, due to a confession from a tax accountant exam top scorer admitting to AI-assisted cheating days before the CSAT.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education",
+    "Policy & regulation"
    ]
   },
   {
@@ -2571,6 +2612,19 @@
    ]
   },
   {
+   "id": "505fccce5c30",
+   "title": "The Search for a Top Dark Matter Candidate Was Losing Hope. Then Came a Potential Signal. Will It Be Enough to Energize the Struggling Field?",
+   "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
+   "source": "Smithsonian Magazine",
+   "source_category": "Science & space",
+   "published": "2026-11-20T20:50:38+00:00",
+   "summary": "Physicists were growing weary with WIMPs, one proposed contender for the particles that make up dark matter. Despite their new cautious optimism, many challenges remain",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "ca04b4aca8ad",
    "title": "GnuPG's GPGME Affected By Critical Security Bug In Turn Affecting Mail Clients, Flatpak",
    "url": "https://www.phoronix.com/news/GnuPG-GPGME-Critical",
@@ -2578,6 +2632,19 @@
    "source_category": "Hardware",
    "published": "2026-11-20T20:46:51+00:00",
    "summary": "Werner Koch announced a late Friday afternoon \"critical security bug\" affecting GnuPG's GPGME library - GnuPG Made Easy. Unfortunately this in turn affects GPGME users like most email clients, most XMPP clients, Flatpak, Samba, and other software...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3d456a93ee71",
+   "title": "New NASA Seed Funding Primes Small Businesses for Innovation",
+   "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-20T20:46:14+00:00",
+   "summary": "Awards to small businesses around the country are addressing some of NASA’s most crucial technology needs for exploration of the Moon and Mars while fueling the U.S. space economy.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2988,6 +3055,20 @@
    ]
   },
   {
+   "id": "5935ce3bd4d4",
+   "title": "Amazon CloudWatch Observability EKS add-on now supports custom OpenTelemetry and Prometheus telemetry",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-addon-custom-telemetry/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T20:05:00+00:00",
+   "summary": "Today, Amazon CloudWatch announces support for your own application telemetry in the CloudWatch Observability EKS add-on. The CloudWatch agent you already run now accepts metrics, traces, and logs from your applications, so you don't deploy and operate a separate collector to get them into CloudWatch.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "ac6264fec7d5",
    "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
    "url": "https://scottaaronson.blog/?p=10344",
@@ -3069,6 +3150,32 @@
    "topics": [
     "System administration",
     "Networking"
+   ]
+  },
+  {
+   "id": "ee98756135b1",
+   "title": "Amazon Transcribe announces a synchronous transcription API",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-transcribe-sync-api/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T20:00:00+00:00",
+   "summary": "Amazon Transcribe now offers a synchronous transcription API, `TranscribeAudio`. Send a complete audio file in a single request and get the full transcript back in the same response. There is no job to start, no status to poll, no connection to manage.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6c61c9261903",
+   "title": "Amazon DynamoDB vector search now supports new inline filter operators",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-vector-filters/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T20:00:00+00:00",
+   "summary": "Amazon DynamoDB vector search inline filters now support range comparisons, value lists, and logical operators in addition to the equality operator, so you can narrow a vector search to exactly the items you want.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3341,6 +3448,19 @@
    ]
   },
   {
+   "id": "799088cbdcd2",
+   "title": "Amazon SageMaker JumpStart now offers a model leaderboard to compare models on quality, speed, and cost",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/1/sagemaker-jumpstart-model-leaderboard/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T19:27:00+00:00",
+   "summary": "Amazon SageMaker JumpStart now offers a model leaderboard in Amazon SageMaker Studio. You can use it to compare foundation models side by side on throughput, latency, and cost, and then deploy or customize the model that fits your workload.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a17f1f1d7159",
    "title": "Trump says recent tech outages 'all separate events' and 'bad things happen' with upgrades",
    "url": "https://www.nbcnews.com/now/video/trump-comments-on-recent-tech-outages-faa-ground-stop-at-white-house-briefing-273913413700",
@@ -3380,6 +3500,12 @@
      "source": "GamesIndustry.biz",
      "title": "GTA 6 hits $3.79 billion in its first day on sale, becoming \"the biggest entertainment launch in history\"",
      "url": "https://www.gamesindustry.biz/gta-6-hits-379-billion-in-its-first-day-on-sale-becoming-the-biggest-entertainment-launch-in-history"
+    },
+    {
+     "id": "1f59a442a9f0",
+     "source": "Neowin",
+     "title": "GTA 6 earns $3.79 billion in 24 hours, becomes biggest entertainment launch in history",
+     "url": "https://www.neowin.net/news/gta-6-earns-379-billion-in-24-hours-becomes-biggest-entertainment-launch-in-history/?utm_source=rss"
     }
    ],
    "topics": [
@@ -3722,6 +3848,19 @@
    ]
   },
   {
+   "id": "3355723f528d",
+   "title": "AWS Partner Central Agents now help partners create and manage Partner Central and Marketplace support cases",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-agents-support/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T19:07:00+00:00",
+   "summary": "AWS Partner Central Agents now help AWS Partners create and manage AWS Partner Central and AWS Marketplace support cases in one place. The agents are available 24/7 and draw on Partner Central account details and authoritative, partner-specific knowledge from AWS to resolve most inquiries instantly.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "54034e9613fc",
    "title": "METR updates its time horizon plot to add judgment-heavy tasks, finding some AI capabilities still grow exponentially but models lag at designing AI evaluations (Grace Huckins/MIT Technology Review)",
    "url": "https://www.techmeme.com/261120/p25#a261120p25",
@@ -3732,6 +3871,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "dc295e1cc350",
+   "title": "Spend limits in the new AWS experience now support SMS alerts",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sms/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T19:03:00+00:00",
+   "summary": "Builders using the new AWS experience on the Paid plan can now receive spend limit alerts by text message (SMS), alongside existing email notifications. A spend limit sets the maximum monthly cost for a project.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -3786,6 +3938,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Databases"
+   ]
+  },
+  {
+   "id": "aa5f89df0d80",
+   "title": "Amazon S3 Vectors raises the filterable metadata limit to 40 KB per vector",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-vectors-raises-filterable-metadata-40kb-per-vector/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T19:00:00+00:00",
+   "summary": "Amazon S3 Vectors now supports up to 40 KB of filterable metadata per vector, up from 2 KB. You can attach and filter on more attributes per vector, such as category, permissions, timestamps, and descriptive tags, so your retrieval-augmented generation (RAG), agentic, and semantic-search applications can narrow…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -5921,6 +6086,27 @@
    ]
   },
   {
+   "id": "6efd36cb8fbb",
+   "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20nginx%20Affecting%20Cisco%20Products:%20November%202026%26vs_k=1",
+   "source": "Cisco PSIRT",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T16:00:00+00:00",
+   "summary": "On November 18, 2026, nginx announced the availability of a fix for multiple critical vulnerabilities in nginx that could lead to remote code execution. These vulnerabilities affect nginx releases 1.9.5 through 1.31.8 and is fixed in releases 1.31.9 (mainline) and 1.30.7 (stable).",
+   "also_covered_by": [
+    {
+     "id": "8c171e133dd7",
+     "source": "Fortinet PSIRT",
+     "title": "NGINX vulnerabilities",
+     "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-279"
+    }
+   ],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
    "id": "08af260c3980",
    "title": "Sponsored: Principles of a financeable GPUaaS SLA",
    "url": "https://www.datacenterdynamics.com/en/opinions/principles-of-a-financeable-gpuaas-sla/",
@@ -6002,17 +6188,16 @@
    ]
   },
   {
-   "id": "6efd36cb8fbb",
-   "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
-   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20nginx%20Affecting%20Cisco%20Products:%20November%202026%26vs_k=1",
-   "source": "Cisco PSIRT",
-   "source_category": "Vendor advisories",
+   "id": "b646ddb2faf0",
+   "title": "AWS Lambda MicroVMs is now available in 7 additional AWS regions",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-7-regions",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
    "published": "2026-11-20T16:00:00+00:00",
-   "summary": "On November 18, 2026, nginx announced the availability of a fix for multiple critical vulnerabilities in nginx that could lead to remote code execution. These vulnerabilities affect nginx releases 1.9.5 through 1.31.8 and is fixed in releases 1.31.9 (mainline) and 1.30.7 (stable).",
+   "summary": "AWS Lambda MicroVMs is now available in 7 additional AWS Regions: Asia Pacific (Osaka), Asia Pacific (Seoul), Canada (Central), Europe (London), Europe (Paris), South America (São Paulo), and US West (N. California). With this launch, you can use Lambda MicroVMs in a total of 21 AWS Regions.",
    "also_covered_by": [],
    "topics": [
-    "Vulnerabilities & patches",
-    "Networking"
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -6360,7 +6545,14 @@
    "source_category": "Hardware",
    "published": "2026-11-20T15:30:46+00:00",
    "summary": "And why it might be time to play defense",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6e086317ffb3",
+     "source": "Ars Technica IT",
+     "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+     "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+    }
+   ],
    "topics": [
     "AI",
     "Supply chain security"
@@ -7260,7 +7452,14 @@
    "source_category": "IT industry",
    "published": "2026-11-20T14:20:57+00:00",
    "summary": "A bruising stock market sell off looked set to continued despite a record-setting IPO by Anthropic and hopes it would revive sentiment on the AI trade.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "7567ebaea614",
+     "source": "Slashdot",
+     "title": "Anthropic Shares Tank After Huge IPO As the Nasdaq Erases 2026 Gains",
+     "url": "https://news.slashdot.org/story/26/11/20/1934244/anthropic-shares-tank-after-huge-ipo-as-the-nasdaq-erases-2026-gains?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -10819,6 +11018,19 @@
    ]
   },
   {
+   "id": "42caf8f61ce9",
+   "title": "AgentCore runtime instances now support Amazon EC2 G7 instances",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-ec2-g7/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T10:00:00+00:00",
+   "summary": "Amazon Bedrock AgentCore runtime instances now support Amazon EC2 G7 instances, powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. Runtime instances run your agents on Amazon EC2 instances while AgentCore handles provisioning, patching, scaling, and lifecycle management.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "eff10dd94532",
    "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
    "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
@@ -12721,6 +12933,84 @@
    "topics": [
     "Cloud & infrastructure",
     "Databases"
+   ]
+  },
+  {
+   "id": "ac20cf0fc3ab",
+   "title": "AWS Continuum for Penetration Testing now estimates task hours before you run a test",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/continuum-pentest-cost-estimates/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "AWS Continuum for Penetration Testing (formerly AWS Security Agent) now lets you estimate task hours before running a penetration test, so developers and security teams can see how many billable task hours a test is likely to need and choose a maximum task-hours limit with confidence.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "0465bc9cebb1",
+   "title": "Amazon Transcribe now available in AWS European Sovereign Cloud",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-transcribe-germany/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "Amazon Transcribe is now available in the AWS European Sovereign Cloud (Germany) Region. Customers who need to keep data and operations within the EU for regulatory compliance and data sovereignty requirements can now use automatic speech recognition (ASR) in the Region to turn speech into text.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "8641079a187b",
+   "title": "AWS DevOps Agent adds community and partner tools repository",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-tools-repository/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "AWS DevOps Agent now gives you ways to share and leverage skills, MCP servers, connectors, and custom agents that enhance the capabilities of your AWS DevOps Agent instances. The AWS DevOps Agent Tools open source repository is a centralized, AWS-curated collection of tools that extend AWS DevOps Agent capabilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "106c05b75c33",
+   "title": "AWS DevOps Agent adds new chat capabilities",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "AWS DevOps Agent now extends its chat capabilities across MCP clients like Kiro and Claude Code, as well as Slack and Microsoft Teams channels. With Model Context Protocol (MCP) support, AWS DevOps Agent can now take directed chat actions including support for GitHub, GitLab, Azure DevOps, ServiceNow, and PagerDuty…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Development",
+    "DevOps & SRE",
+    "ITSM"
+   ]
+  },
+  {
+   "id": "1f584c92130d",
+   "title": "AWS DevOps Agent reduces investigation latency",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-reduces-latency/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "When an incident is occurring, mean time to recover needs to be as fast as possible. With this launch, incident investigations performed by AWS DevOps Agent complete faster.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development",
+    "DevOps & SRE"
    ]
   },
   {
@@ -14637,6 +14927,21 @@
    ]
   },
   {
+   "id": "be3516e3b239",
+   "title": "AI Joins the Industrial Attack Workflow",
+   "url": "https://www.recordedfuture.com/blog/ai-industrial-attack-workflow",
+   "source": "Recorded Future",
+   "source_category": "Threat research",
+   "published": "2026-11-20T00:00:00+00:00",
+   "summary": "Insikt Group analyzes how GreenJuliett and AI frameworks like ARTEX are accelerating cyberattacks on OT networks.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "ICS / OT",
+    "Networking"
+   ]
+  },
+  {
    "id": "5a4e285b0bb1",
    "title": "The Frame Holds the Picture. How You Paint it is Up to You.",
    "url": "https://www.scrum.org/resources/blog/frame-holds-picture-how-you-paint-it-you",
@@ -14838,6 +15143,19 @@
    "topics": [
     "AI",
     "Networking"
+   ]
+  },
+  {
+   "id": "1fcf24e38446",
+   "title": "AWS Partner Central guides now available in the console and through AWS Partner Central Agents",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-guides-mcp/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-19T21:51:00+00:00",
+   "summary": "AWS announces AWS Partner Central guides with access through the AWS Partner Central console and the AWS Partner Central Agents Model Context Protocol (MCP) server. The guides give AWS Partners one place to search, read, and share content that AWS organizes to help partners grow and expand their business.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -15268,6 +15586,21 @@
     "Linux & open source",
     "Development",
     "System administration"
+   ]
+  },
+  {
+   "id": "b4538c44560f",
+   "title": "IAM Roles Anywhere now supports aliases to simplify workload configuration",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-roles-anywhere-alias/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-19T19:23:00+00:00",
+   "summary": "AWS Identity and Access Management (IAM) Roles Anywhere now supports aliases, which are readable names that you assign to trust anchors, profiles, and certificate revocation lists (CRLs).",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "TLS & PKI",
+    "Identity & access"
    ]
   },
   {
