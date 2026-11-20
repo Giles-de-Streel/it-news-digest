@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T17:16:13+00:00",
+ "generated": "2026-11-20T17:31:16+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 80,
-   "recent": 80,
+   "fetched": 77,
+   "recent": 77,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -288,7 +288,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1860,
-   "recent": 3,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1187,8 +1187,8 @@
   },
   {
    "source": "Rocky Linux news",
-   "fetched": 77,
-   "recent": 0,
+   "fetched": 78,
+   "recent": 1,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1476,13 +1476,13 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1878,7 +1878,7 @@
   {
    "source": "Terence Tao",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2183,8 +2183,8 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 74,
-   "recent": 22,
+   "fetched": 75,
+   "recent": 23,
    "error": null
   },
   {
@@ -2316,7 +2316,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2394,7 +2394,7 @@
   {
    "source": "Windows Server News",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2483,12 +2483,156 @@
   },
   {
    "source": "Veeam security advisories",
-   "fetched": 5,
+   "fetched": 4,
    "recent": 0,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "82b76084c3aa",
+   "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
+   "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-20T17:30:00+00:00",
+   "summary": "'Agents kept adapting for nearly a full day without human direction,' Amazon CISO said",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "2c8855aae393",
+   "title": "How the surge in AI-discovered bugs is straining Microsoft security and threatening tech stability",
+   "url": "https://www.geekwire.com/2026/how-the-surge-in-ai-discovered-bugs-is-straining-microsoft-security-and-threatening-tech-stability/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-20T17:25:22+00:00",
+   "summary": "Microsoft has patched an estimated 5,383 security flaws so far in 2026, up from 1,180 in all of 2025, as AI tools flood it with bug reports. Former Microsoft security staffer Angela Gunn explains why a patch process built on human judgment calls can't keep up. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "432d7931eade",
+   "title": "Scott Bessent says Trump and Xi agreed that military AI decisions should involve humans, and that the spying allegations involving Alice Huang didn't come up (Reuters)",
+   "url": "https://www.techmeme.com/261120/p20#a261120p20",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-20T17:20:01+00:00",
+   "summary": "Reuters : Scott Bessent says Trump and Xi agreed that military AI decisions should involve humans, and that the spying allegations involving Alice Huang didn't come up — US President Donald Trump and Chinese President Xi Jinping agreed humans should always be involved in military decisions …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "dc0a65e6fd6d",
+   "title": "Unforced Euler singularity, unforced Navier-Stokes singularity, and the Generalized Riemann Hypothesis",
+   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+   "source": "Terence Tao",
+   "source_category": "Science & space",
+   "published": "2026-11-20T17:19:00+00:00",
+   "summary": "Obviously these results will be reported widely in other outlets, but I will note them here, in decreasing order of how “digested” the results currently are: Laurent Alpoge, Tristan Buckmaster, and Matei Coiculescu, with heavy AI assistance, have written a human-readable proof of the finite time blowup for the…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "50e75f78e998",
+   "title": "CVE-2026-133872: LessPass self-hosted sync server backend before commit 9469b0c lacks rate limiting on the JWT login endpoints…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133872",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-20T17:18:24.293000+00:00",
+   "summary": "LessPass self-hosted sync server backend before commit 9469b0c lacks rate limiting on the JWT login endpoints /tokens/auth/ and /auth/jwt/create/, allowing unlimited authentication attempts.",
+   "kind": "cve",
+   "cve": "CVE-2026-133872",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133872",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "108e6fcc0631",
+   "title": "CVE-2026-115407: In `github.com/eclipse-keypont/crypto11/v2` versions ` < = 2.0.0-rc8` (and the deprecated v1 module paths…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115407",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-20T17:18:07.373000+00:00",
+   "summary": "In `github.com/eclipse-keypont/crypto11/v2` versions ` < = 2.0.0-rc8` (and the deprecated v1 module paths `github.com/eclipse-keypont/crypto11 < = 1.6.8`, `github.com/ThalesGroup/crypto11 < = 1.7.0-rc1` and `github.com/ThalesIgnite/crypto11 < = 1.2.5`), the `cipher.AEAD` returned by `SecretKey.NewGCM()` passes…",
+   "kind": "cve",
+   "cve": "CVE-2026-115407",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115407",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "System administration",
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "f6bccacf6c59",
+   "title": "Graid VROC Is Coming to AMD EPYC in February 2027, Starting With Linux RAID 1 Boot Drives",
+   "url": "https://www.storagereview.com/news/graid-vroc-amd-epyc-february-2027-linux-raid-1-boot",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-20T17:17:15+00:00",
+   "summary": "Graid Technology plans to bring VROC, the CPU-based NVMe RAID stack it took over from Intel, to AMD EPYC servers. The first release is scheduled for February 2027 with Linux support and RAID 1 protection for boot drives, and it requires no dedicated RAID controller.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c6878a5b8cb2",
+   "title": "Motorola accidentally releases ‘Moto Tag 3’ tracker early with new colors",
+   "url": "https://9to5google.com/2026/11/20/motorola-moto-tag-3-leak/",
+   "source": "9to5Google",
+   "source_category": "IT industry",
+   "published": "2026-11-20T17:15:00+00:00",
+   "summary": "Despite the fact that Moto Tag 2 has only been on the market for a few months at this point, Motorola is apparently getting Moto Tag 3 out in the not-too-distant future, and it’s already on sale (probably by mistake). more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3c1f8452c0b4",
+   "title": "Running two PSP emulators on one Switch 2 and sharing one via GameShare",
+   "url": "https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T17:14:03+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
   {
    "id": "0107ac67709a",
    "title": "UK competition body probes hyperscaler security and cloud lock-in",
@@ -2504,6 +2648,19 @@
    ]
   },
   {
+   "id": "3cc68ecd0e5c",
+   "title": "PostgreSQL 19: A hands-on tour with runnable browser examples",
+   "url": "https://certuvia.com/blog/postgres-19",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T17:08:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
    "id": "b8a2c7c472fd",
    "title": "An Isolated Group of Amazonian Hunter-Gatherers Made a Rare Request for Help From Outsiders, Raising Concerns About Forest Degradation",
    "url": "https://www.smithsonianmag.com/smart-news/an-isolated-group-of-amazonian-hunter-gatherers-made-a-rare-request-for-help-from-outsiders-raising-concerns-about-forest-degradation-180989909/",
@@ -2511,6 +2668,19 @@
    "source_category": "Science & space",
    "published": "2026-11-20T17:08:26+00:00",
    "summary": "Around 20 members of the Indigenous Awá tribe emerged from the rainforest and received food from neighboring villagers. The group has not made contact with the outside world in decades, so experts say deforestation may have left these individuals with no other option",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "db87266e5464",
+   "title": "The best dehumidifiers: 14 favourites to beat damp and cut bills, tested",
+   "url": "https://www.theguardian.com/thefilter/2025/oct/21/best-dehumidifiers-tested-uk",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-20T17:08:04+00:00",
+   "summary": "Fed up with condensation, mould and musty smells? A dehumidifier could help – plus, they’re a cheaper way to dry laundry compared with tumble dryers • The best electric blankets and heated throws, tested by our expert You don’t have to live in the American deep south to feel the effects of humidity.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2758,6 +2928,21 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "9dbbebdeb6a3",
+   "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+   "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-20T16:58:16+00:00",
+   "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI",
+    "Identity & access"
    ]
   },
   {
@@ -6835,6 +7020,12 @@
      "source": "Neowin",
      "title": "Signal moves to stop Gemini and Siri AI from reading your private conversations",
      "url": "https://www.neowin.net/news/signal-moves-to-stop-gemini-and-siri-ai-from-reading-your-private-conversations/?utm_source=rss"
+    },
+    {
+     "id": "b051218681af",
+     "source": "ZDNet",
+     "title": "Signal to restrict screenshots over AI agent concerns – again",
+     "url": "https://www.zdnet.com/innovation/signal-restricts-screenshots-over-ai-agent-concerns/"
     }
    ],
    "topics": [
@@ -11433,6 +11624,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "ca6731731ca6",
+   "title": "Security Updates - CVEs",
+   "url": "https://rockylinux.org/news/2026-11-20-cve-updates",
+   "source": "Rocky Linux news",
+   "source_category": "Linux admin",
+   "published": "2026-11-20T00:00:00+00:00",
+   "summary": "There have been a large number of CVEs that we've shipped patches for, please review the below for what may be applicable to your environment and ensu...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
