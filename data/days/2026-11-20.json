@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T22:16:10+00:00",
+ "generated": "2026-11-20T22:31:05+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -78,7 +78,7 @@
   {
    "source": "eWeek",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -161,14 +161,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 89,
-   "recent": 89,
+   "fetched": 88,
+   "recent": 88,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -312,7 +312,7 @@
   {
    "source": "Azure SQL Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -372,13 +372,13 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1428,7 +1428,7 @@
   {
    "source": "Higher Ed Dive",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 66,
+   "recent": 67,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 95,
+   "fetched": 94,
    "recent": 16,
    "error": null
   },
@@ -2190,7 +2190,7 @@
   {
    "source": "NPR Technology",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -2490,6 +2490,100 @@
  ],
  "items": [
   {
+   "id": "644f29f5ebaa",
+   "title": "Education Department faces management challenges from recent changes, watchdog says",
+   "url": "https://www.highereddive.com/news/education-department-faces-management-challenges-from-recent-changes-watch/875415/",
+   "source": "Higher Ed Dive",
+   "source_category": "Higher ed",
+   "published": "2026-11-20T22:27:00+00:00",
+   "summary": "An annual federal report cited interagency agreements and a handful of executive orders as key factors that will challenge the agency in 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "867e9024be8e",
+   "title": "Texas Democrats propose bills to nix state DEI ban at public colleges",
+   "url": "https://www.highereddive.com/news/texas-democrats-propose-bills-to-nix-state-dei-ban-at-public-colleges/875414/",
+   "source": "Higher Ed Dive",
+   "source_category": "Higher ed",
+   "published": "2026-11-20T22:26:00+00:00",
+   "summary": "The party clinched the state’s House and governorship in the midterm elections, though that still may not be enough to get the legislation passed.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "cfd71cfaf6d5",
+   "title": "Pat Gelsinger Goes Hunting for Europe’s Unbuilt Tech Companies",
+   "url": "https://www.eetimes.com/pat-gelsinger-goes-hunting-for-europes-unbuilt-tech-companies/",
+   "source": "EE Times",
+   "source_category": "Embedded",
+   "published": "2026-11-20T22:23:32+00:00",
+   "summary": "Playground Global is searching CEA laboratories for technologies that could create new markets—but global capital complicates European sovereignty.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "5ab53694c3f8",
+   "title": "How to Chunk Documents in Azure SQL Database for RAG",
+   "url": "https://devblogs.microsoft.com/azure-sql/how-to-chunk-documents-in-azure-sql-database-for-rag/",
+   "source": "Azure SQL Blog",
+   "source_category": "Databases",
+   "published": "2026-11-20T22:23:17+00:00",
+   "summary": "Quick answer Azure SQL Database can split text into fixed-size chunks using AI_GENERATE_CHUNKS, with the OVERLAP percentage controlling repeated text between chunks. Store embeddings generated through an external Azure OpenAI endpoint in VECTOR columns, then retrieve passages with VECTOR_DISTANCE or VECTOR_SEARCH.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Databases"
+   ]
+  },
+  {
+   "id": "378a565147e7",
+   "title": "Samsung Galaxy Watch8 46mm 44mm 40mm Bluetooth LTE smartwatches are great deals",
+   "url": "https://www.neowin.net/deals/samsung-galaxy-watch8-46mm-44mm-40mm-bluetooth-lte-smartwatches-are-great-deals/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T22:16:01+00:00",
+   "summary": "All Samsung Galaxy Watch8 series smartwatches are currently excellently priced. Do not miss this chance.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "080272ced502",
+   "title": "Anthropic IPO: Mixed verdict despite record-setting debut",
+   "url": "https://www.heise.de/en/news/Anthropic-IPO-Mixed-verdict-despite-record-setting-debut-11533389.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-20T22:16:00+00:00",
+   "summary": "Anthropic’s historic IPO got off to a rocky start, with shares falling soon after trading began. Analysts are reluctant to predict what comes next.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d143a578a81d",
+   "title": "S&P 500 sinks 3.7% and the Nasdaq composite goes negative for the year",
+   "url": "https://www.npr.org/2026/11/20/g-s1-154797/nasdaq-sp500-stock-market-ai-sink-negative",
+   "source": "NPR Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-20T22:11:29+00:00",
+   "summary": "AI stocks have hefty market values and have a much bigger impact on the market's direction. They were responsible for Wall Street's big gains this year and are now behind the big slide for the market.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "84ef9497820e",
    "title": "Artificial Analysis says Inkling 2 Mini, with 5.4B active parameters, matches Qwen3.8 27B (xhigh) on its Intelligence Index with ~5x fewer active parameters (Artificial Analysis)",
    "url": "https://www.techmeme.com/261120/p37#a261120p37",
@@ -2500,6 +2594,33 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "f835fa648ffc",
+   "title": "Markets plummet as tech sell-off intensifies",
+   "url": "https://www.nbcnews.com/video/markets-plummet-as-tech-sell-off-intensifies-273925701683",
+   "source": "NBC News Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-20T22:08:26+00:00",
+   "summary": "The stock market plummeted as a tech sell-off intensified after Anthropic's record-setting IPO. Nvidia also dragged markets lower, tumbling about 14% following a Reuters report that regulators are looking into accounting irregularities at the chip giant.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "7cdefed316c5",
+   "title": "Microsoft ‘To Do’ users make a big to-do over popular task app’s pending retirement",
+   "url": "https://www.geekwire.com/2026/microsoft-to-do-users-make-a-big-to-do-over-popular-task-apps-retirement/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-20T22:06:40+00:00",
+   "summary": "Microsoft will retire its To Do app on June 30, 2027, moving work and school users to Planner and leaving personal-account users to pick another app. Users vented on X and LinkedIn as rival apps including Todoist, TickTick and Superlist pitched themselves as replacements. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -2590,6 +2711,19 @@
    "source_category": "IT industry",
    "published": "2026-11-20T21:52:00+00:00",
    "summary": "Germany’s digital minister, Wildberger, is relying on the BSI’s security assessment by Christmas as the D-You Wallet launch approaches.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bdd5b2b8b61d",
+   "title": "Supreme Court sentences 29-year-old activist to prison over FB post",
+   "url": "https://prachataienglish.com/node/12123",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T21:50:25+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -6583,6 +6717,19 @@
    "also_covered_by": [],
    "topics": [
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "0822d690989d",
+   "title": "AI Background Swaps on Product Photos: What Stayed and What Changed",
+   "url": "https://www.eweek.com/news/ai-product-photo-background-label-test/",
+   "source": "eWeek",
+   "source_category": "IT industry",
+   "published": "2026-11-20T16:00:00+00:00",
+   "summary": "We tried AI background swaps on three mock products. Here’s what stayed the same, what changed, and what to check before you publish an edit.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -14365,6 +14512,12 @@
      "source": "TechTarget News",
      "title": "The AI data center building boom",
      "url": "https://www.techtarget.com/news/the-ai-data-center-building-boom/874894/"
+    },
+    {
+     "id": "673098a6675a",
+     "source": "Slashdot",
+     "title": "Trump Vows To Stop US Companies From Building Data Centers Abroad",
+     "url": "https://news.slashdot.org/story/26/11/20/2223202/trump-vows-to-stop-us-companies-from-building-data-centers-abroad?utm_source=rss1.0mainlinkanon&utm_medium=feed"
     }
    ],
    "topics": [
