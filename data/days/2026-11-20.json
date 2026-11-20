@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T12:16:12+00:00",
+ "generated": "2026-11-20T12:31:07+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -54,7 +54,7 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -378,7 +378,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 138,
-   "recent": 130,
+   "recent": 129,
    "error": null
   },
   {
@@ -1284,7 +1284,7 @@
   {
    "source": "Last Week in Kubernetes Development",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 56,
+   "recent": 59,
    "error": null
   },
   {
@@ -1871,8 +1871,8 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 6,
-   "recent": 1,
+   "fetched": 7,
+   "recent": 2,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
+   "fetched": 90,
    "recent": 20,
    "error": null
   },
@@ -1902,7 +1902,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 21,
-   "recent": 11,
+   "fetched": 18,
+   "recent": 9,
    "error": null
   },
   {
@@ -2069,8 +2069,8 @@
   },
   {
    "source": "Zscaler trust",
-   "fetched": 135,
-   "recent": 4,
+   "fetched": 136,
+   "recent": 5,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,76 @@
  ],
  "items": [
   {
+   "id": "1649e614cf2f",
+   "title": "How the EU's Digital Fairness Act will impact game design, and why it hits European indies particularly hard",
+   "url": "https://www.gamesindustry.biz/how-the-eus-digital-fairness-act-will-impact-game-design-and-why-it-hits-european-indies-particularly-hard",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-20T12:27:00+00:00",
+   "summary": "The European Commission's publication of its draft Digital Fairness Act (DFA) last week prompted uproar within the games industry, with many notable voices candidly expressing their concerns.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "f8cd09fa3ce7",
+   "title": "Week Ending November 15, 2026",
+   "url": "https://lwkd.info/2026/20261120",
+   "source": "Last Week in Kubernetes Development",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-20T12:22:32+00:00",
+   "summary": "Developer News",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "e6e316ff2fa3",
+   "title": "Local founders get cash, office space and compute in return for keeping inference in Canada",
+   "url": "https://siliconangle.com/2026/11/20/public-private-partnerships-keep-canadian-ai-inference-home-dellatsc26/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-20T12:16:57+00:00",
+   "summary": "Data center backlash is pushing builders to show communities what they get in return, and public-private partnerships are becoming one answer. As the race for sovereign AI heats up, the question is shifting from where intellectual property lives to where compute runs and who profits from it.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "0a4a4285e4a8",
+   "title": "Administration UI Issue - zscaler.net",
+   "url": "https://trust.zscaler.com/zscaler.net/posts/32831",
+   "source": "Zscaler trust",
+   "source_category": "Cloud status",
+   "published": "2026-11-20T12:16:12+00:00",
+   "summary": "We are investigating an issue with the administration UI on our zscaler.net Cloud. As a precautionary measure, the Admin UI will be temporarily set to Read Only Mode while we implement mitigation steps.We will provide further updates as soon as they are available. For more information, please check our FAQ.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development",
+    "System administration",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "f5aabe35d498",
+   "title": "3D emoji on Android require 6GB of RAM and 10GB of storage space",
+   "url": "https://www.neowin.net/news/3d-emoji-on-android-require-6gb-of-ram-and-10gb-of-storage-space/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T12:16:01+00:00",
+   "summary": "Google's new 3D emoji promise richer expressions and greater detail, but getting them on your Android phone comes with some rather surprising restrictions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "89097e0b21a0",
    "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
@@ -2503,6 +2573,19 @@
    ]
   },
   {
+   "id": "ee00a5296dcf",
+   "title": "D-App: Private company builds citizen app, puts pressure on federal government",
+   "url": "https://www.heise.de/en/news/D-App-Private-company-builds-citizen-app-puts-pressure-on-federal-government-11532709.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-20T12:13:00+00:00",
+   "summary": "D-App is designed to make it easier for citizens to apply to government agencies. Funding comes from entrepreneur Holger Friedrich’s family.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "5108ea7f71e0",
    "title": "Meta’s pocket-sized AI gadget is expected to cost $300",
    "url": "https://www.heise.de/en/news/Meta-s-pocket-sized-AI-gadget-is-expected-to-cost-300-11532623.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
@@ -2513,6 +2596,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "d2d64d448351",
+   "title": "FFmpeg 9.1 adds frames — with help from an Nvidia GPU",
+   "url": "https://www.heise.de/en/news/FFmpeg-9-1-adds-frames-with-help-from-an-Nvidia-GPU-11532651.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-20T12:10:00+00:00",
+   "summary": "Better AAC sound, GPU-powered frame interpolation and a Vulkan encoder for APV: Version 9.1 expands the FFmpeg media framework in many ways.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Game development"
    ]
   },
   {
@@ -2604,6 +2701,19 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-20T12:00:04+00:00",
    "summary": "Black Friday 2026 is just around the corner, and if you're looking to upgrade your PC, now may be the right time. Check out the best early deals:",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6969f8d6a051",
+   "title": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
+   "url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-20T12:00:02+00:00",
+   "summary": "Access to the huge quantities of compute the company needs to continue developing and deploying models is a challenge for Anthropic to navigate.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3199,6 +3309,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "0f64c9e5f572",
+   "title": "Root Causes 691: The AI cryptographic proof factory",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObUlPRFI2c21SbzJjODNLSDNrbklObkRpWEZfYWl3LVlHaE1mUnZkODRYaVZ6eHExYW9leGtrTFRpd3h2aUxjY3ptNG5oQkVhdUh5R3pWYzlFZFc1NjE1WDhQQmlDelVyZ01ENThlc0MxRklIRjRZZ094YVBnWGx2M3VydER2Wlk1dVpKSExTWQ?oc=5",
+   "source": "Sectigo",
+   "source_category": "TLS & PKI",
+   "published": "2026-11-20T11:01:16+00:00",
+   "summary": "Root Causes 691: The AI cryptographic proof factory Sectigo",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "TLS & PKI"
    ]
   },
   {
@@ -6857,7 +6981,14 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-20T05:10:37+00:00",
    "summary": "PHP 8.6, the latest release of the server-side language used by web applications, enables stricter session defaults that may affect existing login flows. It also adds partial function application and tools for timing and event loops.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6f6fa6ae871f",
+     "source": "heise online (English)",
+     "title": "PHP 8.6 is ready and tightens session defaults",
+     "url": "https://www.heise.de/en/news/PHP-8-6-is-ready-and-tightens-session-defaults-11532688.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag"
+    }
+   ],
    "topics": [
     "General IT"
    ]
