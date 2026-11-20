@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T14:30:56+00:00",
+ "generated": "2026-11-20T14:47:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -126,7 +126,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -1146,7 +1146,7 @@
   {
    "source": "Red Hat Enable Sysadmin",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1487,9 +1487,9 @@
   },
   {
    "source": "BBC Technology",
-   "fetched": 21,
-   "recent": 9,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Guardian Technology",
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 38,
+   "recent": 40,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 20,
+   "fetched": 96,
+   "recent": 23,
    "error": null
   },
   {
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 19,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -2178,13 +2178,13 @@
   {
    "source": "OpenAI status",
    "fetched": 103,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "9to5Google",
-   "fetched": 76,
-   "recent": 18,
+   "fetched": 75,
+   "recent": 19,
    "error": null
   },
   {
@@ -2412,7 +2412,7 @@
   {
    "source": "Zscaler ThreatLabz",
    "fetched": 50,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2477,7 +2477,7 @@
   },
   {
    "source": "Zoom security bulletins",
-   "fetched": 18,
+   "fetched": 20,
    "recent": 0,
    "error": null
   },
@@ -2490,6 +2490,103 @@
  ],
  "items": [
   {
+   "id": "30bc75c317f0",
+   "title": "Apple’s ‘just works’ approach is great, but goes a little too far",
+   "url": "https://9to5mac.com/2026/11/20/apples-just-works-approach-is-great-but-goes-a-little-too-far/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:45:01+00:00",
+   "summary": "“It just works” is one of the phrases most commonly associated with Apple . Interestingly, it appears to have been coined by the company’s customers and then used by reviewers before it was later picked up by Steve Jobs .",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7e3a59a598a3",
+   "title": "Convert VMware ESXi VMs to Hyper-V with Windows Admin Center",
+   "url": "https://4sysops.com/archives/convert-vmware-esxi-vms-to-hyper-v-with-windows-admin-center/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T14:42:01+00:00",
+   "summary": "VM Conversion is back in Windows Admin Center—now bundled with Virtualization Mode (vMode), the browser UI for Hyper-V hosts and clusters. Rather than the gateway extension Microsoft withdrew earlier this year, the revised flow puts an appliance VM on each VMware ESXi host and moves workloads from there onto Hyper-V.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "System administration"
+   ]
+  },
+  {
+   "id": "8b9497dde784",
+   "title": "Ignite 2026: Intune targets unauthorized AI agents as Windows Server 2028 enters preview",
+   "url": "https://4sysops.com/archives/ignite-2026-intune-targets-unauthorized-ai-agents-as-windows-server-2028-enters-preview/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T14:40:16+00:00",
+   "summary": "Microsoft’s Ignite 2026 announcements give administrators new ways to identify and restrict AI agents, alongside a preview of Windows Server 2028. Intune can flag devices running unapproved agents as noncompliant, extending controls beyond Microsoft’s agent discovery and identity management .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Endpoint management",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "1a396ab5e35f",
+   "title": "Motorola confirms list of devices getting Android 17 updates",
+   "url": "https://9to5google.com/2026/11/20/motorola-confirms-list-of-devices-getting-android-17-updates/",
+   "source": "9to5Google",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:40:00+00:00",
+   "summary": "Motorola has posted an updated list of devices getting its Android 17 update, with a few updates already available and many more left to go. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1e6699f5e45b",
+   "title": "Uber Cuts Translation Cache Memory by up to 90% While Keeping P99 Latency Below 1 MS",
+   "url": "https://www.infoq.com/news/2026/11/uber-go-translation-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-20T14:38:00+00:00",
+   "summary": "Uber redesigned its Go-based translation cache to reduce its initial memory footprint by more than 90% while maintaining a cache hit rate above 99.9% and p99 disk-backed cache miss latency below 100 microseconds.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6b5a271625e4",
+   "title": "Apple TV unveils return of one of its biggest hit series",
+   "url": "https://9to5mac.com/2026/11/20/apple-tv-unveils-return-of-one-of-its-biggest-hit-series/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:36:52+00:00",
+   "summary": "Apple TV ( now $6.99/month for limited time ) has just unveiled the return of one of its most popular series: Presumed Innocent. Here’s the release date and first trailer. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2f27485864d5",
+   "title": "Beyls: Wrapping up LLVM's relicensing effort",
+   "url": "https://lwn.net/Articles/1108818/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-20T14:35:24+00:00",
+   "summary": "Kristof Beyls has published a summary to the LLVM discussion forum to announce that the project is declaring success and bringing its relicensing effort to a close after eight years. We've been asking past contributors to relicense their work since 2018.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "e7e60a230ab6",
    "title": "South Korea Moves Quantum-Safe Encryption Deadline Up to 2031",
    "url": "https://www.eweek.com/news/south-korea-post-quantum-cryptography-2031-apac/",
@@ -2500,6 +2597,46 @@
    "also_covered_by": [],
    "topics": [
     "TLS & PKI"
+   ]
+  },
+  {
+   "id": "bc89033bca78",
+   "title": "Get 32GB of DDR5 RAM for $111 in this premium AM5 gaming bundle from Newegg — 4-item combo includes 9950X3D, 32GB V-Color DDR5 RAM, Asus ROG Strix X870E-E Gaming motherboard, and 2TB Samsung 990 Pro SSD for only $1,549",
+   "url": "https://www.tomshardware.com/pc-components/get-32gb-of-ddr5-ram-for-usd111-in-this-premium-am5-gaming-bundle-from-newegg-4-item-combo-includes-9950x3d-32gb-v-color-ddr5-ram-asus-rog-strix-x870e-e-gaming-motherboard-and-2tb-samsung-990-pro-ssd-for-only-usd1-549",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-20T14:30:06+00:00",
+   "summary": "Newegg’s freshest Black Friday combo deal takes $369 off four premium PC components, including the Ryzen 9 9950X3D, 32GB DDR5-6000 RAM, Asus ROG Strix X870E-E motherboard, 2TB Samsung SSD, and a free MSI AIO for just $1,549.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Game development"
+   ]
+  },
+  {
+   "id": "026a6f310f27",
+   "title": "Source: Coinbase is targeting H1 2027 to begin offering in-house event contracts in the US; it currently offers prediction markets through a Kalshi partnership (Bloomberg)",
+   "url": "https://www.techmeme.com/261120/p15#a261120p15",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:30:03+00:00",
+   "summary": "Bloomberg : Source: Coinbase is targeting H1 2027 to begin offering in-house event contracts in the US; it currently offers prediction markets through a Kalshi partnership — Coinbase Global Inc.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "57375f482cd6",
+   "title": "Cyber Director Cairncross out as White House resets cyber leadership",
+   "url": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-20T14:30:00+00:00",
+   "summary": "Sean Cairncross is leaving the White House as Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2629,6 +2766,32 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "51bd30f0d5dc",
+   "title": "Cisco's latest layoffs could affect hundreds as workforce reduction continues",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yU0hJZUNzS3JkSjBldl9VWjVjSGZxdXlhejAxaEtXdTRnc3k5dzRQMU9MQXlnOEdUNkltUkpuSktHeV8xUXVTWUlWdkxsWThBOUNSU1BBUWw2bFJuQ1BEQVhPUHlaOTA?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:17:00+00:00",
+   "summary": "Cisco's latest layoffs could affect hundreds as workforce reduction continues CTech",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "bbe099f2944c",
+   "title": "Anthropic employee claims general proof of the Riemann Hypothesis [pdf]",
+   "url": "https://alpo.ge/remark.pdf",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T14:16:21+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2776,6 +2939,19 @@
    "topics": [
     "Microsoft & Windows",
     "Hardware"
+   ]
+  },
+  {
+   "id": "6a460c8e0ef3",
+   "title": "I build AI for a living. Here’s why AI can never hire by itself",
+   "url": "https://www.techtarget.com/news/i-build-ai-for-a-living-heres-why-ai-can-never-hire-by-itself/875302/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-20T14:06:20+00:00",
+   "summary": "A chief AI officer discusses why AI should propose decisions in the hiring process, not decide.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -8793,6 +8969,19 @@
    "id": "250e6a55f9ea",
    "title": "MeitY Engages with UN Special Rapporteur on Digital Accessibility and Inclusion of Persons with Disabilities",
    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1BTGRZYlNISENSc09feld4X0RyZzBiRTM5VVZrLXNCdGw5VmlPWUFiRFJTaXBKc040QjR3Uk0zQWRXOG5KOHZuNmhUMUE1TmlWekJjLWVNZGsxbGRDcEhVMjQ2eVplTUZNbFdRRTk5QzdhRU1XZkFFUmxjT3k?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-20T05:10:00+00:00",
+   "summary": "MeitY Engages with UN Special Rapporteur on Digital Accessibility and Inclusion of Persons with Disabilities www.pib.gov.in",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
+   ]
+  },
+  {
+   "id": "b73a6b413bb1",
+   "title": "MeitY Engages with UN Special Rapporteur on Digital Accessibility and Inclusion of Persons with Disabilities",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9oU2RaeTRNVlRoeElrOEFXT0RBUGlYOVZJS0dHekJyZTAzZ3JtbG1kN1d2dWpmSWlfaFhVX3dyMzdVQ1lRanFFYS05QXFFbWdYb2J5Mjl0WFVBczV1TktQc05SenFnTlhsdEJ4NHJDV203b3RBUm5QSzFaUk8?oc=5",
    "source": "Accessibility news (Google News)",
    "source_category": "Accessibility",
    "published": "2026-11-20T05:10:00+00:00",
