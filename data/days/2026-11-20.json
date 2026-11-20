@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T10:01:56+00:00",
+ "generated": "2026-11-20T10:16:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -84,7 +84,7 @@
   {
    "source": "The Decoder",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 4,
+   "recent": 6,
    "error": null
   },
   {
@@ -936,7 +936,7 @@
   {
    "source": "NGINX Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1266,7 +1266,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "source": "GitHub Changelog",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 18,
+   "fetched": 94,
+   "recent": 19,
    "error": null
   },
   {
@@ -1902,7 +1902,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 15,
+   "fetched": 16,
    "recent": 7,
    "error": null
   },
@@ -2316,7 +2316,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2490,6 +2490,159 @@
  ],
  "items": [
   {
+   "id": "41a44127fc12",
+   "title": "PlatformCon 2026 wrap-up: No AI at scale without platform engineering",
+   "url": "https://platformengineering.org/blog/platformcon-2026-wrap-up-no-ai-at-scale-without-platform-engineering",
+   "source": "PlatformEngineering.org",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-20T10:14:19+00:00",
+   "summary": "PlatformCon 2026 wrapped with a verdict: no AI at scale without platform engineering. Key takeaways from 250+ talks and live events in London and NYC.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "ad86f728476c",
+   "title": "NGINX Gateway Fabric 2.9: API key authentication, availability on Nutanix Kubernetes Platform, and snippets for TCP and UDP traffic",
+   "url": "https://blog.nginx.org/blog/nginx-gateway-fabric-2-9-api-key-authentication-availability-on-nutanix-kubernetes-platform-and-snippets-for-tcp-and-udp-traffic",
+   "source": "NGINX Blog",
+   "source_category": "Java & web servers",
+   "published": "2026-11-20T10:12:56+00:00",
+   "summary": "API key authentication is new in NGINX Gateway Fabric 2.9: protect a route so only clients with a valid key reach your service. Renewed TLS certificates now take effect without reloading NGINX, and snippets can now configure TCP and UDP traffic.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "TLS & PKI",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2c622536eead",
+   "title": "NGINX Ingress Controller 5.8: Connection limits, auth response headers, and offline Helm installs",
+   "url": "https://blog.nginx.org/blog/nginx-ingress-controller-5-8-connection-limits-auth-response-headers-and-offline-helm-installs",
+   "source": "NGINX Blog",
+   "source_category": "Java & web servers",
+   "published": "2026-11-20T10:12:53+00:00",
+   "summary": "With NGINX Ingress Controller 5.8, you can limit how many requests each client has open at once, install the Helm chart in a cluster with no internet access, and pass user details from your authentication service to your backends.",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "7423ff3441b0",
+   "title": "Gemini and Copilot licence counts revealed by UK government FOIs",
+   "url": "https://www.neowin.net/news/gemini-and-copilot-licence-counts-revealed-by-uk-government-fois/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-20T10:12:02+00:00",
+   "summary": "Neowin FOI requests show how many Gemini and Copilot licences two UK government departments hold, and what one of them pays for AI.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "19a4168e9971",
+   "title": "Kitty 0.51 Terminal Emulator Adds Docked Windows, New Shaders",
+   "url": "https://linuxiac.com/kitty-0-51-terminal-emulator-adds-docked-windows-new-shaders/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-20T10:11:43+00:00",
+   "summary": "Kitty 0.51 adds OS-level docked windows, fixes security vulnerabilities, and improves session management and rendering.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "cb8790c72382",
+   "title": "IGN partners with Rockstar to host Official Strategy Guide for GTA 6",
+   "url": "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-20T10:07:40+00:00",
+   "summary": "IGN Entertainment, the parent company of GamesIndustry.biz , has released the Official Online Guide for GTA 6 , created through direct collaboration with Rockstar Games.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "99532ee29e84",
+   "title": "What are you doing this weekend?",
+   "url": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-20T10:05:29+00:00",
+   "summary": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback. Please keep in mind it’s more than OK to do nothing at all too!",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ae97aedb4dca",
+   "title": "How to become a platform engineer",
+   "url": "https://platformengineering.org/blog/how-to-become-a-platform-engineer",
+   "source": "PlatformEngineering.org",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-20T10:05:22+00:00",
+   "summary": "Platform engineering boosts developer productivity by creating self-service platforms. Learn what platform engineers do, why demand is rising, and how to become one.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "e875290b057a",
+   "title": "Vim Classic 8.3.1 released",
+   "url": "https://vim-classic.org/news/vim-8.3.1-released.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-20T10:02:03+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "79a26ef17b31",
+   "title": "An insider’s look at SAP’s ‘Autonomous Enterprise’",
+   "url": "https://www.cio.com/article/4249833/sap-caio-we-need-to-be-more-precise-in-managing-the-use-of-ai.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-20T10:01:00+00:00",
+   "summary": "At the TechEd developer conference in Berlin, SAP presented additional details of its “ Autonomous Enterprise ” concept, which includes AI capabilities via Joule Work and SAP Autonomous Suite, built on the SAP Business AI Platform.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "2e0b430afbc7",
+   "title": "I’m a tech expert and new mum. Here’s what I learned testing 17 baby monitors",
+   "url": "https://www.theguardian.com/thefilter/2026/nov/20/best-baby-monitor-tested-uk",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-20T10:00:28+00:00",
+   "summary": "Our tech expert and new mum tested 17 monitors for picture quality, battery life and reliability – here’s what she recommends • The best eco-friendly baby products Moving my baby into her own room to sleep felt liberating and stressful. She was ready for her own space – but was I ready to let her out of my sight?",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "85e3cba312ea",
    "title": "How GPUs Are Changing the Colocation vs. Private Data Center Debate",
    "url": "https://www.datacenterknowledge.com/colocation/how-gpus-are-changing-the-colocation-vs-private-data-center-debate",
@@ -2504,6 +2657,46 @@
    ]
   },
   {
+   "id": "b47c1d5a6bca",
+   "title": "Autonomous 5-ton John Deere skid-steer loader trained to perform acrobatic maneuvers using AI",
+   "url": "https://www.tomshardware.com/tech-industry/robotics/autonomous-5-tonne-john-deere-skid-steer-loader-trained-to-perform-acrobatic-maneuvers-using-ai-researchers-discuss-reinforcement-learning-tech-in-a-paper-titled-heavy-metal-acrobatics",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-20T10:00:00+00:00",
+   "summary": "Videos of an incredibly acrobatic, nimble, and graceful John Deere 332G 5-tonne skid-steer loader have been shared by a group of researchers from the U.S. and Switzerland.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "53c848534e93",
+   "title": "Why quantum readiness is the next test of global competitiveness",
+   "url": "https://www.cio.com/article/4250932/why-quantum-readiness-is-the-next-test-of-global-competitiveness.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-20T10:00:00+00:00",
+   "summary": "The arrival of a quantum computer capable of breaking today’s encryption may still be years away. The business consequences, however, have already begun. That is the central message of the G7 Cybersecurity Working Group’s new call to action on post-quantum cryptography.",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "eff10dd94532",
+   "title": "Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill",
+   "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+   "source": "The Decoder",
+   "source_category": "IT industry",
+   "published": "2026-11-20T09:59:51+00:00",
+   "summary": "Companies will soon be able to run the open-source Hermes Agent from Nous Research directly inside Microsoft Teams. The article Hermes Agent's Collective Wisdom feature turns one employee's AI trick into the whole team's skill appeared first on The Decoder .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
    "id": "ea7bf2956228",
    "title": "How to Decide Whether to Continue an Initiative in the Age of AI",
    "url": "https://www.scrum.org/resources/blog/how-decide-whether-continue-initiative-age-ai",
@@ -2515,6 +2708,21 @@
    "topics": [
     "AI",
     "Agile & delivery"
+   ]
+  },
+  {
+   "id": "15d0990b32c5",
+   "title": "SQL Server Linked Server Connection Bug Still Unresolved a Week After \"Within Days\" Fix Pledge; Issue Remains in KB5132057",
+   "url": "https://joho-todai.com/en/sql-server-linked-server-connection-issue-unresolved/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-20T09:52:04+00:00",
+   "summary": "An out-of-band fix promised \"within days\" for the accumulation of SQL Server linked server connections following October Windows updates could not be confirmed as of November 19. KB5132057, released that day, still lists the issue as unresolved.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "Endpoint management"
    ]
   },
   {
@@ -2754,6 +2962,19 @@
    ]
   },
   {
+   "id": "2c3757b0893a",
+   "title": "California investigates Nvidia over whether chip exports ended up in China",
+   "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-20T09:18:30+00:00",
+   "summary": "State attorney says scandal ‘raises bright red flags’ and aims to find out if company misled investors California has served an investigative subpoena on Nvidia after a scandal that prompted the departure of co-founder and longtime chief executive Jensen Huang.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "bf72dbf8e4a6",
    "title": "QCon San Francisco 2026: The Future of Apache Iceberg",
    "url": "https://www.infoq.com/news/2026/11/iceberg-v4-metadata/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -2764,6 +2985,22 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "e85ccbe3dd00",
+   "title": "Taking On Red Hat? Ubuntu Now Has an Official SysAdmin Certification",
+   "url": "https://feed.itsfoss.com/link/24361/17536064/ubuntu-academy-certification-program",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-11-20T09:09:25+00:00",
+   "summary": "Ubuntu is now offering certification exams, covering the basics of Linux to DevOps. The Academy launch also offers a 10% discount on these certification exams.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development",
+    "System administration",
+    "DevOps & SRE"
    ]
   },
   {
