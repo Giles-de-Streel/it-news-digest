@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-20T16:31:02+00:00",
+ "generated": "2026-11-20T16:46:52+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 30,
+   "recent": 31,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "Arctic Wolf",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1415,8 +1415,8 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 38,
-   "recent": 4,
+   "fetched": 39,
+   "recent": 5,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1680,7 +1680,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 44,
+   "recent": 45,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 96,
-   "recent": 23,
+   "fetched": 100,
+   "recent": 21,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,152 @@
   }
  ],
  "items": [
+  {
+   "id": "3a09279070bb",
+   "title": "Alice v0.6.0",
+   "url": "https://www.alicecaml.org/blog/alice-v0-6-0/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-20T16:44:09+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9dc6e67e2bea",
+   "title": "Healthcare Sector Disclosed 100 Ransomware Attacks in Q3",
+   "url": "https://www.hipaajournal.com/q3-2026-ransomware-report-healthcare/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-20T16:43:10+00:00",
+   "summary": "Ransomware groups are running riot, with 353 disclosed attacks in Q3 2026 and 2,668 undisclosed attacks, an increase of 20% […]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "c61ba21ba682",
+   "title": "CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-20T16:41:29+00:00",
+   "summary": "Bulletin ID: 2026-194-AWS Publication Date: 11/20/2026 08:30 AM PST Description: Incorrect privilege assignment in the user and group reconciliation logic in AWS ssosync before 2.9.5 might allow an authenticated remote user who is assigned a reused Google Workspace e-mail address or group name to inherit the IAM…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-133199",
+     "score": 8.5,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "0a081a7490c4",
+   "title": "AI-Driven Attacks Are Here. Five Steps CISOs Should Take Now",
+   "url": "https://arcticwolf.com/resources/blog/ai-driven-attacks-are-here-five-steps-cisos-should-take-now/",
+   "source": "Arctic Wolf",
+   "source_category": "Threat research",
+   "published": "2026-11-20T16:41:20+00:00",
+   "summary": "Earlier this year, Claude Mythos Preview showed the security community what a frontier AI model can do when it’s pointed at software, finding and linking vulnerabilities far faster than defenders had ever seen up to that point.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "af8b8adc7e90",
+   "title": "System76 Thelio Prime: A Petite But Performant AMD-Powered Linux PC",
+   "url": "https://www.phoronix.com/review/system76-thelio-prime",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-20T16:38:02+00:00",
+   "summary": "After teasing the new System76 Thelio Prime last month, this week officially launched their redesigned Thelio Prime mini desktop PC. This AMD Ryzen 9000 series powered creation is quite small with an internal volume of just 9.78 liters but quite capable with up to the Ryzen 9 9900X being supported, AMD or NVIDIA…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "495f54cd42cd",
+   "title": "Black Friday Week deals: AirPods Max 2 $130 off, AirPods Pro 3, M5 MacBook Air $1,049, iPhone Air up to $799 off, more",
+   "url": "https://9to5mac.com/2026/11/20/black-friday-airpods-max-2-airpods-pro-3-macbook-air/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-20T16:33:38+00:00",
+   "summary": "We have now made our way into Day 2 of the massive Amazon Black Friday sale with all-time lows on Apple Watch Series 12, AirPods Pro 3 at $70 off , MacBook Neo from $649 , and a fantastic price drop on the most affordable M5 MacBook Air at $1,049 .",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b8e1839046bc",
+   "title": "Quoting Levent Alpöge",
+   "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-20T16:30:48+00:00",
+   "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "295ecf428d5a",
+   "title": "e-Paper Price Tags Become Picture Frames",
+   "url": "https://hackaday.com/2026/11/20/e-paper-price-tags-become-picture-frames/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-20T16:30:42+00:00",
+   "summary": "E-paper has lots of applications, though it’s found a particularly solid market penetration as a replacement for simple paper price tags. Because why have a cheap slip of paper for …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9fe3e937f57a",
+   "title": "Language Models Can Rewrite Their Own Weights",
+   "url": "https://arxiv.org/abs/2611.21885",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T16:29:06+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "399b6cb8818b",
+   "title": "StepSecurity, founded by two Microsoft vets, raises $20M to defend developers’ tools from hackers",
+   "url": "https://www.geekwire.com/2026/stepsecurity-founded-by-two-microsoft-vets-raises-20m-to-defend-developers-tools-from-hackers/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-20T16:28:29+00:00",
+   "summary": "StepSecurity, a Seattle-area startup founded by two former Microsoft engineers, raised a $20 million Series A to protect the laptops, code repositories and build systems that developers use from supply chain attacks. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware",
+    "Development",
+    "Supply chain security"
+   ]
+  },
   {
    "id": "7c935144aa13",
    "title": "NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center",
@@ -4037,7 +4183,14 @@
    "source_category": "Development",
    "published": "2026-11-20T14:16:21+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3f23871144f3",
+     "source": "Tom's Hardware",
+     "title": "Anthropic mathematician claims to have solved 167-year-old math problem with Claude — Riemann hypothesis proof allegedly discovered but remains unconfirmed",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-mathematician-claims-to-have-solved-167-year-old-math-problem-with-claude-riemann-hypothesis-proof-allegedly-discovered-but-remains-unconfirmed"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -4982,7 +5135,14 @@
    "source_category": "Development",
    "published": "2026-11-20T12:41:38+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "4506b9f63937",
+     "source": "The New Stack",
+     "title": "Anthropic says Claude writes and reviews 90% of its team’s code. The catch is how it checks the work.",
+     "url": "https://thenewstack.io/anthropic-claude-code-verification/"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -6255,6 +6415,12 @@
      "source": "9to5Mac",
      "title": "Signal now blocks screenshots on iPhone to stop Siri AI from seeing chats",
      "url": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/"
+    },
+    {
+     "id": "789314426fb4",
+     "source": "Neowin",
+     "title": "Signal moves to stop Gemini and Siri AI from reading your private conversations",
+     "url": "https://www.neowin.net/news/signal-moves-to-stop-gemini-and-siri-ai-from-reading-your-private-conversations/?utm_source=rss"
     }
    ],
    "topics": [
@@ -9477,6 +9643,26 @@
    ]
   },
   {
+   "id": "a23e6f17f91c",
+   "title": "Dutch privacy watchdog warns against AI-powered smart glasses",
+   "url": "https://www.heise.de/en/news/Dutch-privacy-watchdog-warns-against-AI-powered-smart-glasses-11531926.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-20T07:01:00+00:00",
+   "summary": "After studying several AI glasses, privacy advocates advise against buying them. The glasses could give users false or illegal advice and put them in danger.",
+   "also_covered_by": [
+    {
+     "id": "170cd467c630",
+     "source": "The Register",
+     "title": "Dutch data watchdog highlights safety issues with AI glasses",
+     "url": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345"
+    }
+   ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "0ebae9309646",
    "title": "MongoDB buys Firebolt, adds real-time analytics engine",
    "url": "https://www.heise.de/en/news/MongoDB-buys-Firebolt-adds-real-time-analytics-engine-11531944.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
@@ -9488,19 +9674,6 @@
    "topics": [
     "AI",
     "Databases"
-   ]
-  },
-  {
-   "id": "a23e6f17f91c",
-   "title": "Dutch privacy watchdog warns against AI-powered smart glasses",
-   "url": "https://www.heise.de/en/news/Dutch-privacy-watchdog-warns-against-AI-powered-smart-glasses-11531926.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
-   "source": "heise online (English)",
-   "source_category": "IT industry",
-   "published": "2026-11-20T07:01:00+00:00",
-   "summary": "After studying several AI glasses, privacy advocates advise against buying them. The glasses could give users false or illegal advice and put them in danger.",
-   "also_covered_by": [],
-   "topics": [
-    "AI"
    ]
   },
   {
