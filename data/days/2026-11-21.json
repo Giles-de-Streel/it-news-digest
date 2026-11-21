@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T18:16:13+00:00",
+ "generated": "2026-11-21T18:31:13+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 82,
+   "recent": 2,
    "error": null
   },
   {
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 90,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,56 @@
   }
  ],
  "items": [
+  {
+   "id": "a5ec725473fc",
+   "title": "Inference now drives two-thirds of AI workloads, changing where chips get deployed",
+   "url": "https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-21T18:28:26+00:00",
+   "summary": "AI spending is shifting from giant training clusters toward smaller, quickly built sites, and modular data centers are becoming a natural home for inference workloads. Power, cooling and memory supply now shape where tokens get generated as much as raw chip performance does.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "17800d7ea672",
+   "title": "CVE-2026-133993: A security flaw has been discovered in D-Link DIR-600L 2.17b02.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T18:16:54.277000+00:00",
+   "summary": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-133993",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133993",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "c6e0f6fe1d32",
+   "title": "Inkling-2-Mini in 5.4 GB Memory",
+   "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T18:02:19+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "e975666d955a",
    "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
@@ -2555,6 +2605,19 @@
    "also_covered_by": [],
    "topics": [
     "Identity & access"
+   ]
+  },
+  {
+   "id": "c2f60c13cbe0",
+   "title": "Jensen Huang's fall is bad news for Silicon Valley's accelerationists",
+   "url": "https://www.economist.com/business/2026/11/19/jensen-huangs-fall-is-bad-news-for-silicon-valleys-accelerationists",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T17:59:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2967,6 +3030,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "520c82ccf41b",
+   "title": "Owl OS is a New Kali Linux Competitor",
+   "url": "https://feed.itsfoss.com/link/24361/17536916/owl-os-launch",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-11-21T17:01:00+00:00",
+   "summary": "The ISO ships with a claimed 275+ tools, but the included README calls it proprietary.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
