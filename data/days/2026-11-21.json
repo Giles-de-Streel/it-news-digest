@@ -1,12 +1,12 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T06:17:08+00:00",
+ "generated": "2026-11-21T06:31:08+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 60,
-   "recent": 60,
+   "fetched": 59,
+   "recent": 59,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "fetched": 25,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -1416,13 +1416,13 @@
   {
    "source": "AWS Security Bulletins",
    "fetched": 37,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 10,
+   "recent": 7,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2070,7 +2070,7 @@
   {
    "source": "Zscaler trust",
    "fetched": 136,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2124,7 +2124,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -2388,13 +2388,13 @@
   {
    "source": "Internet2 news",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Windows Server News",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2489,6 +2489,28 @@
   }
  ],
  "items": [
+  {
+   "id": "62fc744c1182",
+   "title": "CVE-2026-120539: The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120539",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T06:16:33.227000+00:00",
+   "summary": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval().",
+   "kind": "cve",
+   "cve": "CVE-2026-120539",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-120539",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "7571d9674123",
    "title": "Microsoft plans to retire its To Do app on June 30, 2027, offering migration to Planner for work and school accounts, but no replacement for personal accounts (Todd Bishop/GeekWire)",
