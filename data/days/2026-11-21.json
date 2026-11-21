@@ -1,12 +1,12 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T14:16:53+00:00",
+ "generated": "2026-11-21T14:32:11+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 82,
+   "recent": 2,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 90,
-   "recent": 12,
+   "fetched": 100,
+   "recent": 9,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2184,13 +2184,13 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
    "source": "NPR Technology",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -2411,9 +2411,9 @@
   },
   {
    "source": "Zscaler ThreatLabz",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Recorded Future",
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,32 @@
   }
  ],
  "items": [
+  {
+   "id": "bcc0c6aa4ac2",
+   "title": "LLVM Wraps Up Eight-Year Transition to Apache 2.0 Licensing",
+   "url": "https://linuxiac.com/llvm-wraps-up-eight-year-transition-to-apache-2-0-licensing/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-21T14:26:39+00:00",
+   "summary": "LLVM concludes its eight-year relicensing effort, reaching 99.5% coverage under Apache 2.0 with LLVM Exceptions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d615c59e615c",
+   "title": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+   "source": "NPR Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-21T14:18:17+00:00",
+   "summary": "U.N. talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "f077389309ff",
    "title": "‘I was shaking, crying, having trouble breathing’: the unchartered trauma of breaking up with AI companions",
@@ -2513,6 +2539,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bda492f39659",
+   "title": "Apple @ Work: Workbrew 2.0 is an inventory for the development software your employees installed without asking",
+   "url": "https://9to5mac.com/2026/11/21/apple-work/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-21T14:00:00+00:00",
+   "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect Apple devices at work.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3242,7 +3281,14 @@
    "source_category": "Development",
    "published": "2026-11-21T10:33:57+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f4c78575a730",
+     "source": "BleepingComputer",
+     "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+     "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+    }
+   ],
    "topics": [
     "Databases"
    ]
