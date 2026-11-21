@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T15:31:07+00:00",
+ "generated": "2026-11-21T15:47:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 20,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 30,
+   "recent": 32,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 82,
-   "recent": 2,
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -1350,7 +1350,7 @@
   {
    "source": "Have I Been Pwned breaches",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -1589,15 +1589,15 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1884,7 +1884,7 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2489,6 +2489,61 @@
   }
  ],
  "items": [
+  {
+   "id": "7fe66f85a737",
+   "title": "How China gets access to American AI chips",
+   "url": "https://www.cbsnews.com/video/how-china-gets-access-to-american-ai-chips/",
+   "source": "CBS News Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-21T15:35:23+00:00",
+   "summary": "Jensen Huang resigned from his role as Nvidia CEO following an extramarital affair with a suspected Chinese spy. After the Nvidia scandal, China's access to American-made technology and advanced AI chips came under renewed scrutiny.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "13d943843be9",
+   "title": "Modder cools gaming laptop with a bounce house blower for a 35-degree drop",
+   "url": "https://www.tomshardware.com/pc-components/air-cooling/laptop-cooled-by-bounce-house-blower-gets-35-degree-drop-in-temperatures-modder-compares-laptop-cooler-with-increasingly-powerful-fan-setups",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-21T15:31:48+00:00",
+   "summary": "A PC cooling enthusiast attached a bounce house blower to the bottom of his laptop, bringing temperatures below 50 degrees Celsius.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "ca5b927c2a93",
+   "title": "Rapidus reportedly struggles to produce working SRAM on its 2nm node, putting 2027 mass production at risk",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/rapidus-reportedly-struggles-to-produce-working-sram-on-its-2nm-node-putting-2027-mass-production-at-risk-company-faces-significant-challenges-using-euv-to-develop-gaa-transistors",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-21T15:30:00+00:00",
+   "summary": "Japan's semiconductor startup has demonstrated functioning GAA transistors, but integrating them into working memory cells appears to be a considerably greater challenge.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2e3a62a68c1f",
+   "title": "Nvidia used 20,000 training examples to fix its AI’s mistakes. Its coding score jumped.",
+   "url": "https://thenewstack.io/nvidia-droid-harness-nemotron/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-21T15:30:00+00:00",
+   "summary": "Nvidia used Factory’s Droid coding-agent harness to generate roughly 20,000 rows of post-training data for Nemotron 3 Ultra, the 550-billion-parameter",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Development"
+   ]
+  },
   {
    "id": "9a7d62160314",
    "title": "AI may not work like the human brain after all, scientists discover",
