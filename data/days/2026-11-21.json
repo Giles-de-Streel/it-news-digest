@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T07:32:11+00:00",
+ "generated": "2026-11-21T07:46:04+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -528,7 +528,7 @@
   {
    "source": "Horizon3.ai",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 154,
-   "recent": 108,
+   "recent": 105,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -1638,7 +1638,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 48,
+   "recent": 49,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
@@ -1764,7 +1764,7 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
+   "fetched": 92,
    "recent": 11,
    "error": null
   },
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 18,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,62 @@
  ],
  "items": [
   {
+   "id": "28bceee84878",
+   "title": "GeForce Hotfix 621.35 Fixes Excessive SSD Writes",
+   "url": "https://joho-todai.com/en/geforce-hotfix-621-35-ssd-write-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T07:36:40+00:00",
+   "summary": "NVIDIA has released a driver fix for abnormal SSD writes reported with GeForce Game Ready Driver 621.14 and later. The release is a beta hotfix, and no date has been announced for a formally WHQL-certified version.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "f0fe35765991",
+   "title": "Health Care Security Framework: How to Test Cyber Resilience",
+   "url": "https://www.heise.de/en/background/Health-Care-Security-Framework-How-to-Test-Cyber-Resilience-11530458.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T07:35:00+00:00",
+   "summary": "How can hospitals test and assess their cyber resilience? One approach considers how software, infrastructure and people interact.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a966754945ea",
+   "title": "Critical GPGME Vulnerability CVE-2026-129975 Triggers Double Free with Crafted OpenPGP Keys; Gpg4win and Debian Patched",
+   "url": "https://joho-todai.com/en/gpgme-cve-2026-129975-openpgp-vulnerability/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T07:31:00+00:00",
+   "summary": "A critical vulnerability, CVE-2026-129975, has been confirmed in the GnuPG library GPGME. Processing a crafted public key can trigger a double free and potentially expose application data; a broad range of software, including email clients and Flatpak, is affected, and the fixed GPGME 2.3.1 is available.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ],
+   "cves": []
+  },
+  {
+   "id": "81b70d85c6b9",
+   "title": "How quantum computers built from laser-trapped atoms may correct qubit errors more easily than supercooled chips, speeding the race to a usable machine (Cade Metz/New York Times)",
+   "url": "https://www.techmeme.com/261121/p5#a261121p5",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-21T07:30:00+00:00",
+   "summary": "Cade Metz / New York Times : How quantum computers built from laser-trapped atoms may correct qubit errors more easily than supercooled chips, speeding the race to a usable machine — Optical tools in a quantum computer at Harvard University.Lucy Lu for The New York Times — For almost a decade, a Google lab in Santa…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
    "id": "219ec52b366a",
    "title": "AI lowered the cost of starting a company, but not the cost of winning",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1CcklnOXBpOUFpYktXOUUzQzBmTTczUjltSG05WjdQdHZYenQ1WmJrSHpNSFRodkVQUkRhR29vb3FxMS0yVWxSVEpTdFVFR0YyalF5RHVBZ25MWUdxUDBuWWpFZHB2bVU?oc=5",
@@ -2500,6 +2556,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "d96aa9895183",
+   "title": "Up to 14 Million Records Exposed at SMBC as Contractor's KARTE Breach Spreads to Hundreds of Companies",
+   "url": "https://joho-todai.com/en/mitsui-sumitomo-bank-data-breach-karte/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T07:10:59+00:00",
+   "summary": "Sumitomo Mitsui Banking Corporation announced on November 20 that up to about 14 million customer data records were exposed in unauthorized access to KARTE, operated by contractor PLAID. The data did not include names or account numbers, and the impact extends to hundreds of companies that used KARTE.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
    ]
   },
   {
