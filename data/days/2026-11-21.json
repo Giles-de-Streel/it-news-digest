@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T10:31:12+00:00",
+ "generated": "2026-11-21T10:46:33+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 12,
+   "recent": 14,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -641,9 +641,9 @@
   },
   {
    "source": "VMware Security Advisories (Broadcom)",
-   "fetched": 20,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Proxmox Security Advisories",
@@ -954,7 +954,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -1788,7 +1788,7 @@
   {
    "source": "Semafor Technology & Security",
    "fetched": 93,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 9,
+   "fetched": 92,
+   "recent": 12,
    "error": null
   },
   {
@@ -2316,7 +2316,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 8,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,71 @@
  ],
  "items": [
   {
+   "id": "ed06fdc4ca00",
+   "title": "FreeDesktop.org Launches Redesigned Website",
+   "url": "https://www.phoronix.com/news/FreeDesktop.org-Redesigned-2026",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-21T10:38:39+00:00",
+   "summary": "FreeDesktop.org has been the hosting hub for the X.Org project, Wayland, and the Mesa projects to other notable open-source Linux desktop projects like PipeWire, GStreamer, and countless other projects. Since it's launch over two decades ago, it has basically looked the same... A bland Wiki.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "4806b0fffd46",
+   "title": "Calibre 9.19 Adds Grammar Checking and Suggestions to the Book Editor",
+   "url": "https://9to5linux.com/calibre-9-19-adds-grammar-checking-and-suggestions-to-the-book-editor",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-21T10:35:17+00:00",
+   "summary": "Calibre 9.19 open-source e-book manager is now available for download with grammar checking and suggestions for rewriting sentences and other changes.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "365f69766ca2",
+   "title": "FBI reportedly investigating apparent hack of its criminal database",
+   "url": "https://www.bbc.com/news/articles/cvze7de86pk3o",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T10:33:57+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "101fc3518e5f",
+   "title": "New open model Inkling 2 Mini thinks in loops to solve problems with fewer words and still runs on a laptop",
+   "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+   "source": "The Decoder",
+   "source_category": "IT industry",
+   "published": "2026-11-21T10:33:02+00:00",
+   "summary": "Thinking Machines has released Inkling 2 Mini, an open looped transformer that runs 12 of its 24 layers three times per token. This lets the model reason internally for longer without generating extra text. On Artificial Analysis's Intelligence Index, it ties with Qwen3.8 27B at roughly six times lower cost.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "42a92566031f",
+   "title": "SanDisk 512GB MicroSD Express deal slashes Switch 2 storage by 24% in Amazon Black Friday offer — price hits under $100 amid storage squeeze",
+   "url": "https://www.tomshardware.com/pc-components/microsd-cards/sandisk-512gb-microsd-express-deal-slashes-switch-2-storage-by-24-percent-in-amazon-black-friday-offer-price-hits-under-usd100-amid-storage-squeeze",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-21T10:32:35+00:00",
+   "summary": "SanDisk's large 512 GB MicroSD Express card has dropped to just $98 at Amazon, marking a 24% discount when compared to its original list price in a rare storage offer.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
    "id": "31739de0b0b3",
    "title": "US technology stocks suffer their worst weekly loss since the pandemic as AI doubts pile up",
    "url": "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/",
@@ -2501,6 +2566,32 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "cc5cd7ae5cb4",
+   "title": "FreeBSD 15.2 Beta 3 Released Following 17 Security Advisories",
+   "url": "https://www.phoronix.com/news/FreeBSD-15.2-Beta-3",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-21T10:26:22+00:00",
+   "summary": "The third weekly beta release of FreeBSD 15.2 is now available for testing. This comes with various bug fixes, updated OpenZFS code, and fixes for 17 FreeBSD security advisories that were made public this week...",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "db41059e7aba",
+   "title": "CTech's Book Review: The gap between where consumers are and where the infrastructure is",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PU0dxLWM2UUp4c21FTmZFZE8ydFZReUZDaVd5NHJHc21WMHllVFZJUklHX1lPNzF1U2V5S1BoQkphcDMzZGxhUng2NDEyMDFwY0pGcHhUdUpGTXlCQ1cyLWdHcEV5WWs?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-21T10:21:00+00:00",
+   "summary": "CTech's Book Review: The gap between where consumers are and where the infrastructure is CTech",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2652,6 +2743,19 @@
     "Cloud & infrastructure",
     "Networking",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "5b0646ccc78c",
+   "title": "Exascale fusion simulation team named finalist for 2026 Gordon Bell Prize",
+   "url": "https://www.alcf.anl.gov/news/exascale-fusion-simulation-team-named-finalist-2026-gordon-bell-prize",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T08:32:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
