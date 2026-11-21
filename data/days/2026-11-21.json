@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T21:47:13+00:00",
+ "generated": "2026-11-21T22:02:16+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 16,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -557,20 +557,20 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -630,7 +630,7 @@
   {
    "source": "Data Center Knowledge",
    "fetched": 50,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 54,
+   "recent": 53,
    "error": null
   },
   {
@@ -1008,7 +1008,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 5,
+   "recent": 3,
    "error": null
   },
   {
@@ -1026,7 +1026,7 @@
   {
    "source": "Scrum.org blog",
    "fetched": 42,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1266,7 +1266,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 6,
+   "recent": 4,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1632,7 +1632,7 @@
   {
    "source": "OpenAI News",
    "fetched": 1421,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
+   "fetched": 90,
    "recent": 10,
    "error": null
   },
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
+   "fetched": 18,
    "recent": 3,
    "error": null
   },
@@ -2490,12 +2490,53 @@
  ],
  "items": [
   {
+   "id": "eddb1c570cab",
+   "title": "“It is a rollercoaster ride”: Angie Jones of the Agentic AI Foundation on keeping up with AI agents",
+   "url": "https://thenewstack.io/junior-developers-ai-agents-block/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-21T21:58:14+00:00",
+   "summary": "Only a few years ago, it would have been impossible to picture this scenario: A lead developer once gave 10",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "731b74a98fd8",
+   "title": "Sovereignty starts with data, not chips, says Stuttgart AI factory chief",
+   "url": "https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-21T21:48:11+00:00",
+   "summary": "A sovereign AI factory is only as valuable as the companies that can actually get onto it. Across Europe, publicly funded AI factories are racing to give startups and small manufacturers supercomputer-class GPUs without pushing them into lock-in or loose data handling.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "187dad26ad22",
    "title": "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers",
    "url": "https://tasklet.ai/careers",
    "source": "Hacker News",
    "source_category": "Development",
    "published": "2026-11-21T21:11:08+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ad13744bae5f",
+   "title": "The Emergence of Inequality in the Czech Corded Ware Culture",
+   "url": "https://www.jna.uni-kiel.de/index.php/jna/article/view/1560/1746",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T21:06:14+00:00",
    "summary": "Comments",
    "also_covered_by": [],
    "topics": [
