@@ -1,12 +1,12 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T18:02:15+00:00",
+ "generated": "2026-11-21T18:16:13+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 82,
-   "recent": 2,
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 75,
+   "recent": 79,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
+   "fetched": 90,
    "recent": 14,
    "error": null
   },
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 17,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,22 @@
   }
  ],
  "items": [
+  {
+   "id": "e975666d955a",
+   "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-21T18:01:58+00:00",
+   "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Microsoft & Windows",
+    "System administration"
+   ]
+  },
   {
    "id": "b6e8deae3e27",
    "title": "Automation For The Swimming Pool",
@@ -5196,6 +5212,19 @@
    ]
   },
   {
+   "id": "4746aad7e3f3",
+   "title": "AWS Quick now supports plugins to bundle agents, skills, connectors and flows",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-21T02:58:00+00:00",
+   "summary": "AWS Quick now supports plugins, agents, skills, connectors, and flows built for a specific task, role, or use case. Most work draws on several of these at once: connectors to reach your systems, skills for how your team works, agents to reason through tasks, and flows to orchestrate each process.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "559696db3dbc",
    "title": "SEC Investigates NVIDIA's Accounting as Congress Discloses Export Licenses for 879,868 AI Chips to China",
    "url": "https://joho-todai.com/en/nvidia-sec-investigation-ai-chip-export-china/",
@@ -5203,11 +5232,32 @@
    "source_category": "IT industry",
    "published": "2026-11-21T01:15:05+00:00",
    "summary": "The U.S. Securities and Exchange Commission is investigating NVIDIA's accounting practices, while California has also issued an investigative subpoena and Congress has released records of AI chip export licenses for China. The issues surrounding Huang are expanding into corporate governance.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "405b0dbddac6",
+     "source": "Slashdot",
+     "title": "Nvidia's Accounting Practices Now Being Investigated by America's SEC",
+     "url": "https://yro.slashdot.org/story/26/11/21/0445220/nvidias-accounting-practices-now-being-investigated-by-americas-sec?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    }
+   ],
    "topics": [
     "AI",
     "Hardware",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a951a5231e7f",
+   "title": "AWS Quick launches a new web experience with updated browser extension and Microsoft 365 add-ins",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-launches-new-web-experience-updated-browser-extension-microsoft-365-add-ins/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-21T00:27:00+00:00",
+   "summary": "The AWS Quick web app now brings the Quick desktop experience to your browser. Create, share, and use the same agents and skills as on desktop, with the same connectors. Start each day with a daily briefing and a prioritized feed of the email and messages that need your attention.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -5258,6 +5308,20 @@
    ]
   },
   {
+   "id": "0dfa01a71a64",
+   "title": "Build more capable automations through chat with Flows in AWS Quick",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-flows-automations-chat/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T23:59:00+00:00",
+   "summary": "Flows in AWS Quick now lets users build, run, and refine automations for themselves and their teams, all through conversation. Users describe a process in chat, and Quick builds the flow, with no coding needed. Flows can now orchestrate agents, skills, and tools, with access to structured data, knowledge, and apps.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Development"
+   ]
+  },
+  {
    "id": "e62855519231",
    "title": "Catching Crumbs from the Table [pdf]",
    "url": "https://gwern.net/doc/fiction/science-fiction/2000-chiang.pdf",
@@ -5281,6 +5345,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d881fe7b7cb4",
+   "title": "AWS Quick now supports Japanese, German, Vietnamese, and Chinese",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-japanese-german-chinese-vietnamese/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T22:11:00+00:00",
+   "summary": "Today, AWS announces that AWS Quick, the AI workspace for business users, now supports Japanese, German, Vietnamese, and Chinese (Simplified and Traditional). AWS Quick now displays its interface in these languages and responds in the language each user chooses.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
    ]
   },
   {
