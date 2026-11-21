@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "generated": "2026-11-21T01:02:10+00:00",
+ "generated": "2026-11-21T01:16:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 29,
+   "recent": 30,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 24,
+   "recent": 22,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -750,7 +750,7 @@
   {
    "source": "Embedded Computing Design",
    "fetched": 82,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 89,
+   "recent": 97,
    "error": null
   },
   {
@@ -870,7 +870,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 9,
+   "recent": 11,
    "error": null
   },
   {
@@ -1086,7 +1086,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1488,13 +1488,13 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 58,
+   "recent": 53,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 93,
-   "recent": 14,
+   "recent": 12,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,48 @@
   }
  ],
  "items": [
+  {
+   "id": "9a3ad65b71b3",
+   "title": "Tech Now",
+   "url": "https://www.bbc.co.uk/iplayer/episode/m0034tjc?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-21T01:00:00+00:00",
+   "summary": "Alasdair Keane is in Naples exploring how tech is transforming the America's Cup race.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f03764e801e5",
+   "title": "[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code",
+   "url": "https://azure.microsoft.com/updates?id=581463",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-21T00:45:13+00:00",
+   "summary": "Microsoft Foundry governance guidance is now available in Foundry Canvas and the Foundry Toolkit for Visual Studio Code. As developers build agents, both experiences surface relevant policies for agent types, models, toolboxes, and guardrails, with warnin",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
+   "id": "a461f9a68ffb",
+   "title": "[In preview] Public Preview: Microsoft Copilot harness support in Foundry Toolkit for VS Code",
+   "url": "https://azure.microsoft.com/updates?id=581468",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-21T00:43:13+00:00",
+   "summary": "Agent Builder in Microsoft Foundry Toolkit for Visual Studio Code supports prompt agents that use the Microsoft Copilot harness in public preview. Developers can configure tools and skills, edit local YAML definitions, deploy changes to Foundry, and run d",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Development"
+   ]
+  },
   {
    "id": "573a216a902f",
    "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -2580,6 +2622,19 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "ff7662c8d0d6",
+   "title": "Web Search on Amazon Bedrock expands language support and country-aware search",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-search-amazon-bedrock/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-21T00:17:00+00:00",
+   "summary": "Web Search on Amazon Bedrock, the tool that grounds AI agents and applications in cited, current web information, now supports five new languages, plus non-US English, on Amazon Bedrock AgentCore and Amazon Bedrock: Spanish, French, German, Italian, and Japanese.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2752,6 +2807,19 @@
    ]
   },
   {
+   "id": "fb22898936be",
+   "title": "Amazon's split personality: AWS embraces bot commerce while main site enforces bans",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/20/amazons-split-personality-aws-embraces-bot-commerce-while-main-site-enforces-bans/5311493",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-20T23:41:14+00:00",
+   "summary": "Bot-based buying is here or not, depending on where you stand in the Amazon empire",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "47a6f16c9760",
    "title": "JEDEC Previews DDR6 Memory Standard: 2.35x More Bandwidth, 44% Narrower DIMMs",
    "url": "https://www.servethehome.com/jedec-previews-ddr6-memory-standard-2-35x-more-bandwidth-44-narrower-dimms/",
@@ -2778,6 +2846,19 @@
    ]
   },
   {
+   "id": "d147fa847b3b",
+   "title": "Uncontacted Indigenous people emerge from Amazon forest to ask for food",
+   "url": "https://www.washingtonpost.com/world/2026/11/19/uncontacted-indigenous-people-emerge-amazon-forest-ask-food/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-20T23:31:27+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a999a6c6b25c",
    "title": "The Storm Is Over, but Costs Keep Coming: How Utilities Can Strengthen Financial Oversight Throughout a Storm Response",
    "url": "https://intelligence.theregister.com/paper/view/21319",
@@ -2785,6 +2866,19 @@
    "source_category": "Hardware",
    "published": "2026-11-20T23:30:30+00:00",
    "summary": "When a major storm threatens a utility's service territory, the financial response begins before the first outage.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9b2dca1639f7",
+   "title": "PHP 8.6: Things are gonna get a lot more strict around here",
+   "url": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-20T23:28:47+00:00",
+   "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3333,6 +3427,19 @@
     "Cloud & infrastructure",
     "AI",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "70e9253be237",
+   "title": "Amazon RDS for Oracle now supports Replica First Patching for reduced downtime",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-replica-first-patching/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T22:00:00+00:00",
+   "summary": "Amazon Relational Database Service (Amazon RDS) for Oracle now supports Replica First Patching, which reduces downtime during minor version upgrades. Replica First Patching is available for Enterprise Edition DB instances.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -3969,7 +4076,14 @@
    "source_category": "IT industry",
    "published": "2026-11-20T20:25:00+00:00",
    "summary": "Reuters : Sources: the US SEC is probing Nvidia's accounting practices; last year, Nvidia changed how it reports revenue, removing Singapore from geographical breakdowns — The US Securities and Exchange Commission is probing Nvidia's accounting practices, said two people briefed on the matter …",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c72cb9838d98",
+     "source": "Hacker News",
+     "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
+     "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -4251,7 +4365,14 @@
    "source_category": "Cloud",
    "published": "2026-11-20T20:05:17+00:00",
    "summary": "Azure Firewall for Containers extends Azure Firewall protection to containerized workloads, providing a centralized approach to securing network traffic for container environments. Customers can use Azure Firewall capabilities as part of their container n",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "2754ace54c41",
+     "source": "AWS What's New",
+     "title": "AWS Network Firewall introduces automated Internet firewall in public preview",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-automated-internet/"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "DevOps & SRE",
@@ -10141,6 +10262,19 @@
    ]
   },
   {
+   "id": "a7bf8983ebbb",
+   "title": "AWS CloudFormation increases the default stacks per account quota to 300,000",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-stacks-per-account-quota/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T12:35:00+00:00",
+   "summary": "AWS CloudFormation now supports up to 300,000 stacks in each AWS account and Region by default (previously 2,000), which enables you to add stacks as your workloads grow without requesting a quota increase. CloudFormation manages related AWS resources as a stack that you create, update, and delete as one unit.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "8794a6f3860d",
    "title": "Connect a USB Zigbee Device to HAOS",
    "url": "https://shkspr.mobi/blog/2026/11/connect-a-usb-zigbee-device-to-haos/",
@@ -11156,6 +11290,12 @@
      "source": "Linuxiac",
      "title": "Rust Coreutils 0.13 Reaches 96% GNU Compatibility",
      "url": "https://linuxiac.com/rust-coreutils-0-13-reaches-96-percent-gnu-compatibility/"
+    },
+    {
+     "id": "ce27e8495e94",
+     "source": "AWS What's New",
+     "title": "Amazon Neptune Serverless now delivers up to 30% better performance and smarter scaling",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-neptune-serverless-r8g-generally-available"
     }
    ],
    "topics": [
@@ -14690,6 +14830,47 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "d66c982cadd9",
+   "title": "Announcing a new skill for AI agents in Amazon Textract Core",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-textract-core-skill-ai-agents/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "Amazon Textract Core now lets AI agents extract text, tables, forms, and other data from documents through a skill, with no server to run or infrastructure to deploy.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "abd70d73a541",
+   "title": "Amazon Route 53 private hosted zones now support public DNS fallback",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-public-dns-fallback/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "Amazon Route 53 private hosted zones now support public DNS fallback. When a query for a name in your private hosted zone's domain doesn't match a record in the zone, Route 53 returns the answer from public DNS instead of a \"name not found\" (NXDOMAIN) error.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "a0626faa689d",
+   "title": "Announcing Test Insights for AWS Device Farm",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-test-insights/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-20T08:00:00+00:00",
+   "summary": "AWS Device Farm , a service for testing mobile and web apps, now provides Test Insights for Appium, Espresso, and XCUITest runs across multiple devices. Test Insights helps you and AI agents understand the health of your tests and resolve failures faster by providing a detailed breakdown of your test suite by device…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Identity & access"
    ]
   },
   {
