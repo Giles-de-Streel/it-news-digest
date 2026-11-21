@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T14:32:11+00:00",
+ "generated": "2026-11-21T14:46:11+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 28,
+   "recent": 29,
    "error": null
   },
   {
@@ -228,13 +228,13 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1662,7 +1662,7 @@
   {
    "source": "Le Monde in English (Pixels)",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 9,
+   "fetched": 90,
+   "recent": 12,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2411,9 +2411,9 @@
   },
   {
    "source": "Zscaler ThreatLabz",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "Recorded Future",
@@ -2490,6 +2490,58 @@
  ],
  "items": [
   {
+   "id": "fd5ab31a0b48",
+   "title": "AWS got hit by an outage too. Here's why you didn't hear about it",
+   "url": "https://www.theregister.com/columnists/2026/11/21/aws-got-hit-by-an-outage-too-heres-why-you-didnt-hear-about-it/5311511",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-21T14:35:00+00:00",
+   "summary": "If a service falls in the forest and nobody hears it...",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "15263e8e6298",
+   "title": "ext4 Returns Successful Saves but Loses Data; Regression Traced to Linux 7.0",
+   "url": "https://joho-todai.com/en/ext4-data-loss-linux-7-regression/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T14:34:35+00:00",
+   "summary": "A regression has been reported in Linux's ext4 file system that can lose part of a file even after writes and synchronization return success. It can occur with default settings when the disk is not full, surfacing only during a later read.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "289fcdc7601b",
+   "title": "Gigabyte MO27Q2A 27-inch QHD 280 Hz QD-OLED gaming monitor review: Another price buster from Gigabyte",
+   "url": "https://www.tomshardware.com/monitors/gaming-monitors/gigabyte-mo27q2a-27-inch-qhd-280-hz-qd-oled-gaming-monitor-review",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-21T14:30:00+00:00",
+   "summary": "Gigabyte brings excellent value while delivering premium performance and build quality with its MO27Q2A. This QD-OLED panel sports QHD resolution, 280 Hz, Adaptive-Sync, DisplayHDR 400, and wide-gamut color in a stylish and full-featured package.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "4916fd0e11d0",
+   "title": "Grafana 13.3 Adds Shared Dashboard Variables and Notebooks",
+   "url": "https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-21T14:30:00+00:00",
+   "summary": "Grafana 13.3 introduces shared variables across dashboards and adds Notebooks to record investigations. Both features are in public preview and require feature toggles for self-managed installations. By Mark Silvester",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "bcc0c6aa4ac2",
    "title": "LLVM Wraps Up Eight-Year Transition to Apache 2.0 Licensing",
    "url": "https://linuxiac.com/llvm-wraps-up-eight-year-transition-to-apache-2-0-licensing/",
@@ -2513,6 +2565,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "42dba4af3681",
+   "title": "GTA VI Generates $3.79 Billion on Day One, About 4.7x GTA V; 32.5 Million Copies Sold Before Launch",
+   "url": "https://joho-todai.com/en/gta-vi-3-79-billion-first-day/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T14:15:55+00:00",
+   "summary": "GTA VI generated an estimated $3.79 billion in first-day retail sales. Take-Two calls it the biggest first-day launch in entertainment history, with 32.5 million copies sold before release; here is what lies behind a figure roughly 4.7x the previous game's.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2700,6 +2765,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "System administration"
+   ]
+  },
+  {
+   "id": "aaaedd31c43d",
+   "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
+   "url": "https://simple-bench.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T13:16:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
