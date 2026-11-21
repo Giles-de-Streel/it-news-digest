@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T11:17:20+00:00",
+ "generated": "2026-11-21T11:32:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 11,
+   "recent": 13,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 82,
-   "recent": 2,
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -828,7 +828,7 @@
   {
    "source": "Patch My PC",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -870,7 +870,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 34,
+   "recent": 33,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -1650,7 +1650,7 @@
   {
    "source": "Joho no Todai (English)",
    "fetched": 20,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1662,7 +1662,7 @@
   {
    "source": "Le Monde in English (Pixels)",
    "fetched": 20,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2490,6 +2490,61 @@
  ],
  "items": [
   {
+   "id": "448eb5722ff8",
+   "title": "EU proposes Big Tech tax to boost budget",
+   "url": "https://www.lemonde.fr/en/economy/article/2026/11/21/eu-proposes-big-tech-tax-to-boost-budget_6786068_19.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T11:23:35+00:00",
+   "summary": "The draft revealed by European Council President Antonio Costa on Saturday will concern companies with an annual turnover for digital activities of at least €50 million in the EU as well as a global turnover of more than €750 million.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0d7a88494d96",
+   "title": "Intune Software Compliance Policy: How It Works",
+   "url": "https://patchmypc.com/blog/how-the-intune-software-compliance-policy-checks-installed-apps/?utm_term=rss",
+   "source": "Patch My PC",
+   "source_category": "Endpoint management",
+   "published": "2026-11-21T11:15:50+00:00",
+   "summary": "An installed app can now make a Windows device noncompliant. Microsoft announced Software Compliance Policy in public preview at Ignite. Here is how Windows checks for restricted software and reports the result to Intune, where it can affect compliance and access to company resources.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Endpoint management"
+   ]
+  },
+  {
+   "id": "761885e6c02d",
+   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+   "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-21T11:05:53+00:00",
+   "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "16765aea3bd9",
+   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+   "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-21T11:03:17+00:00",
+   "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Higher education"
+   ]
+  },
+  {
    "id": "f5022eb10131",
    "title": "Fair-weather Silicon Valley pivots away from the right after blue wave: ‘I’m not Maga’",
    "url": "https://www.theguardian.com/us-news/2026/nov/21/silicon-valley-pivot-us-midterms",
@@ -2569,6 +2624,12 @@
      "source": "Linuxiac",
      "title": "Debian 13.7 Released with 150 Security Updates and 122 Bug Fixes",
      "url": "https://linuxiac.com/debian-13-7-released-with-150-security-updates-and-122-bug-fixes/"
+    },
+    {
+     "id": "a8f1083d02e8",
+     "source": "Phoronix",
+     "title": "Debian 13.8 Released With 150+ Security Updates",
+     "url": "https://www.phoronix.com/news/Debian-13.8-Released"
     }
    ],
    "topics": [
@@ -3639,6 +3700,12 @@
      "source": "Slashdot",
      "title": "Anthropic Mathematician Claims to Prove Riemann Hypothesis",
      "url": "https://science.slashdot.org/story/26/11/21/028221/anthropic-mathematician-claims-to-prove-riemann-hypothesis?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+    },
+    {
+     "id": "ac3df93f97de",
+     "source": "The Decoder",
+     "title": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+     "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/"
     }
    ],
    "topics": [
