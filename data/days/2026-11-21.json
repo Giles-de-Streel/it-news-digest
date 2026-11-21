@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T17:16:15+00:00",
+ "generated": "2026-11-21T17:32:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 36,
-   "recent": 36,
+   "fetched": 46,
+   "recent": 46,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -1662,7 +1662,7 @@
   {
    "source": "Le Monde in English (Pixels)",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
+   "fetched": 90,
    "recent": 14,
    "error": null
   },
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,264 @@
   }
  ],
  "items": [
+  {
+   "id": "7b5839bc1ba1",
+   "title": "Opposition to data centers grows worldwide, from India to Chile, via Ireland and Japan",
+   "url": "https://www.lemonde.fr/en/international/article/2026/11/21/opposition-to-data-centers-grows-worldwide-from-india-to-chile-via-ireland-and-japan_6786331_4.html",
+   "source": "Le Monde in English (Pixels)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T17:26:21+00:00",
+   "summary": "These gigantic facilities do not provoke anger just in the United States. They have appeared on every continent, where they have raised the same concerns: excessive exploitation of natural resources, voracious energy consumption and a lack of transparency.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e69e43cae95f",
+   "title": "If we stop reading the code, what do we read?",
+   "url": "https://thenewstack.io/ai-agent-code-review/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-21T17:23:05+00:00",
+   "summary": "“Human beings are too slow when dealing with code. So if we’re going to move at the speed of the",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6c4c8f27060a",
+   "title": "CVE-2026-134352: Rclone from 1.51.0 before 1.76.0 contains an authentication bypass vulnerability in serve sftp --auth-proxy…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134352",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:56.200000+00:00",
+   "summary": "Rclone from 1.51.0 before 1.76.0 contains an authentication bypass vulnerability in serve sftp --auth-proxy because the generateCacheKey cache key omits the authentication method.",
+   "kind": "cve",
+   "cve": "CVE-2026-134352",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134352",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "47559b083c1f",
+   "title": "CVE-2026-134292: SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134292",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:48.897000+00:00",
+   "summary": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks.",
+   "kind": "cve",
+   "cve": "CVE-2026-134292",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134292",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "0d1de18f8c10",
+   "title": "CVE-2026-134287: OpenRemote core before 1.34.0 contains an authentication bypass vulnerability in…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134287",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:48.030000+00:00",
+   "summary": "OpenRemote core before 1.34.0 contains an authentication bypass vulnerability in UserAssetProvisioningMQTTHandler that allows unauthenticated attackers to impersonate provisioned devices without proof of private key possession.",
+   "kind": "cve",
+   "cve": "CVE-2026-134287",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134287",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ecd9e040f375",
+   "title": "CVE-2026-134262: Admidio 5.0.0 before 5.0.18 contains a stored cross-site scripting vulnerability that allows role…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134262",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:44.420000+00:00",
+   "summary": "Admidio 5.0.0 before 5.0.18 contains a stored cross-site scripting vulnerability that allows role administrators to inject JavaScript by placing quote-breaking payloads in role names rendered unencoded in the data-message attribute in modules/profile/roles_functions.php.",
+   "kind": "cve",
+   "cve": "CVE-2026-134262",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134262",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "7a5ac3a26284",
+   "title": "CVE-2026-134258: Admidio 5.0.0 before 5.0.18 contains a path traversal vulnerability in the Documents & Files renameFile()…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134258",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:43.747000+00:00",
+   "summary": "Admidio 5.0.0 before 5.0.18 contains a path traversal vulnerability in the Documents & Files renameFile() action that allows authenticated users with folder upload rights to move files outside adm_my_files by supplying ../ sequences in adm_new_name.",
+   "kind": "cve",
+   "cve": "CVE-2026-134258",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134258",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3561a575e93e",
+   "title": "CVE-2026-133867: @fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133867",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:40.663000+00:00",
+   "summary": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.7 through 4.0.9, the plugin does not rewrite regular-expression mount paths to account for a parameterized plugin prefix, so when middleware is mounted with a regular expression inside a plugin…",
+   "kind": "cve",
+   "cve": "CVE-2026-133867",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133867",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "b3e177156d0f",
+   "title": "CVE-2026-133250: @fastify/middie is the middleware engine for the Fastify web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133250",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:40.293000+00:00",
+   "summary": "@fastify/middie is the middleware engine for the Fastify web framework. In versions up to and including 9.3.7, middie matches path-scoped middleware against its own reading of the request path, which can differ from the path Fastify's router uses to dispatch the request.",
+   "kind": "cve",
+   "cve": "CVE-2026-133250",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133250",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "c2558f0d0c33",
+   "title": "CVE-2026-133120: @fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133120",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:40.170000+00:00",
+   "summary": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions before 4.0.10, the plugin passes Express a request URL that does not always match the path Fastify's router dispatched, so path-scoped Express middleware can be skipped while the route handler still…",
+   "kind": "cve",
+   "cve": "CVE-2026-133120",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133120",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "127b2ea7d65c",
+   "title": "CVE-2026-129504: @fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129504",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:39.920000+00:00",
+   "summary": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.0 through 4.0.9, the plugin joins a path-scoped middleware's mount path to the Fastify plugin prefix by string concatenation, so when the plugin prefix ends with a slash or the mount path omits…",
+   "kind": "cve",
+   "cve": "CVE-2026-129504",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-129504",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6b6c4ebeea50",
+   "title": "CVE-2026-124626: @fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124626",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-21T17:16:39.777000+00:00",
+   "summary": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.5 through 4.0.9, the plugin matches path-scoped Express middleware with a matcher that requires a non-empty value for a dynamic segment, while Fastify's router accepts an empty parameter or…",
+   "kind": "cve",
+   "cve": "CVE-2026-124626",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124626",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
   {
    "id": "739cb256ef8c",
    "title": "Backblaze customers worried of personal data sale/sharing after policy update",
@@ -2527,6 +2785,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "1c83a91ee04f",
+   "title": "PostgreSQL Extensions in Go",
+   "url": "https://jespino.github.io/gopgext/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-21T17:08:04+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
    ]
   },
   {
@@ -3950,6 +4221,12 @@
      "source": "BleepingComputer",
      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+    },
+    {
+     "id": "c75aad69646d",
+     "source": "CNBC Technology",
+     "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
+     "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html"
     }
    ],
    "topics": [
