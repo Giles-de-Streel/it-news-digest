@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T13:16:58+00:00",
+ "generated": "2026-11-21T13:32:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 19,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 37,
-   "recent": 37,
+   "fetched": 36,
+   "recent": 36,
    "error": null
   },
   {
@@ -222,13 +222,13 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 23,
+   "recent": 24,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 20,
+   "recent": 21,
    "error": null
   },
   {
@@ -708,7 +708,7 @@
   {
    "source": "Risky Business News",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1098,7 +1098,7 @@
   {
    "source": "Microsoft 365 Roadmap",
    "fetched": 2401,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "Arctic Wolf",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2490,6 +2490,73 @@
  ],
  "items": [
   {
+   "id": "85fe615594ed",
+   "title": "KDE Plasma 6.9 to Improve Performance, NVIDIA Efficiency, and CJK Input",
+   "url": "https://linuxiac.com/kde-plasma-6-9-to-improve-performance-nvidia-efficiency-and-cjk-input/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-21T13:28:18+00:00",
+   "summary": "KDE Plasma 6.9 will improve KWin performance, reduce NVIDIA GPU power consumption, and add better Chinese, Japanese, and Korean text input.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a4cd465b3ca1",
+   "title": "IETF Standardizes Group OSCORE for Secure IoT Group Communications, Replacing a 12-Year-Old Experimental Specification",
+   "url": "https://joho-todai.com/en/ietf-group-oscore-iot-standard/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T13:19:04+00:00",
+   "summary": "The IETF has published RFC 10020 for group communication among IoT devices and Group OSCORE (RFC 10021) to encrypt and authenticate that traffic. The new standards replace a 2014 experimental specification issued without security, adding encryption and source authentication after 12 years.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "0f1e45d3179e",
+   "title": "Probabilistic data structures in Go, part 2",
+   "url": "https://antonz.org/probabilistic-data-structures-2/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-21T13:18:02+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d52c03bd18a4",
+   "title": "Apache security advisory (AV26-1188)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-21T13:17:12+00:00",
+   "summary": "Serial number: AV26-1188 Date: November 21, 2026 As of November 19, 2026, Apache is affected by a vulnerability in the following product: Apache Tomcat Prior to or equal to 10.1.62 Prior or equal to 9.0.124 Prior to or equal to 11.0.29 The Cyber Centre encourages users and administrators to review the provided web…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration"
+   ]
+  },
+  {
+   "id": "158994b8ae4e",
+   "title": "International talks on controlling use of autonomous weapons collapse",
+   "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-21T13:15:29+00:00",
+   "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control on the use of autonomous weapons collapsed just before 5am on Saturday morning, after all night talks failed to…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "6bb85e995767",
    "title": "MSI Crosshair A16 HX RTX 5070, Ryzen 9-equipped gaming laptop gets $400 discount at Amazon",
    "url": "https://www.tomshardware.com/laptops/gaming-laptops/msi-crosshair-a16-hx-rtx-5070-ryzen-9-equipped-gaming-laptop-gets-usd400-discount-at-amazon-system-comes-with-a-free-game-in-early-black-friday-offer",
@@ -2514,6 +2581,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "0382cab26d50",
+   "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
+   "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-21T13:00:01+00:00",
+   "summary": "Anthropic held its historic Nasdaq debut a day before Nvidia's stock closed out its longest weekly losing streak since 2008.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
