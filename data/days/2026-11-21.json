@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-21T23:31:10+00:00",
+ "generated": "2026-11-21T23:46:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 17,
+   "recent": 19,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -582,7 +582,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 157,
-   "recent": 19,
+   "fetched": 152,
+   "recent": 17,
    "error": null
   },
   {
@@ -1902,7 +1902,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 17,
    "recent": 1,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,58 @@
  ],
  "items": [
   {
+   "id": "0af62c42b738",
+   "title": "AI is building me a web browser",
+   "url": "https://blog.senko.net/ai-is-building-me-a-web-browser",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-21T23:42:43+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "f382f86b81a2",
+   "title": "DietPi 10.9 Released with Support for Five New Single-Board Computers",
+   "url": "https://linuxiac.com/dietpi-10-9-released-with-support-for-five-new-single-board-computers/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-21T23:42:10+00:00",
+   "summary": "DietPi 10.9 adds support for new Odroid and Orange Pi boards, expands its software catalog, and improves Raspberry Pi management.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "d8143851654f",
+   "title": "port scanning for mojang",
+   "url": "https://sipacid.com/blog/port-scanning-for-mojang/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-21T23:40:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e2dbe8dab32a",
+   "title": "Europe-Japan Mercury Probe BepiColombo Passes Scheduled Orbit-Insertion Burn Window After Eight-Year Journey",
+   "url": "https://joho-todai.com/en/bepicolumbo-mercury-orbit-insertion/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T23:30:54+00:00",
+   "summary": "The joint European-Japanese BepiColombo mission has passed the scheduled window for a 37-minute burn to enter orbit around Mercury. ESA is awaiting renewed contact with the spacecraft, and flight data will determine whether orbit insertion succeeded.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "ba639674b72f",
    "title": "KDE Releases Kwi 0.1, Its New GPU-Accelerated Terminal Emulator",
    "url": "https://linuxiac.com/kde-releases-kwi-0-1-its-new-gpu-accelerated-terminal-emulator/",
@@ -2500,6 +2552,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "874e93f8baa2",
+   "title": "Gemini Adds GIF Generation, Creating Roughly Three-Second Loops from Text; Free in Japan",
+   "url": "https://joho-todai.com/en/gemini-gif-generation-loop-video/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T23:16:44+00:00",
+   "summary": "Google has added a feature to Gemini that generates roughly three-second animated GIFs from text instructions. It is available to free users in eight countries, including Japan.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2556,6 +2621,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "91d2da1120fd",
+   "title": "OpenRouter Warns Customers of Possible AI Prompt Exposure via MiniMax; Study of 2 Million Requests Also Finds Intermediary Breaches",
+   "url": "https://joho-todai.com/en/openrouter-minimax-ai-prompt-leak-notification/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-21T22:21:53+00:00",
+   "summary": "AI routing service OpenRouter has warned customers that third parties may have read prompts sent to MiniMax models. A Dragos tracking experiment covering roughly 2 million prompts found breaches at three AI providers and cases in which \"zero data retention\" settings were ignored.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI",
+    "Networking"
    ]
   },
   {
@@ -3130,7 +3210,14 @@
    "source_category": "Security",
    "published": "2026-11-21T18:01:58+00:00",
    "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "59046c071986",
+     "source": "Joho no Todai (English)",
+     "title": "Entra Connect Health API Vulnerability Exposed Admin Emails and Tenant Configuration for 109 Days",
+     "url": "https://joho-todai.com/en/entra-connect-health-api-vulnerability-109-days/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Ransomware & breaches",
@@ -4525,7 +4612,14 @@
    "source_category": "IT industry",
    "published": "2026-11-21T13:15:29+00:00",
    "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control on the use of autonomous weapons collapsed just before 5am on Saturday morning, after all night talks failed to…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "dea3d06bf6cd",
+     "source": "Joho no Todai (English)",
+     "title": "UN Review Conference Fails to Launch Talks on Autonomous Weapons Rules Sought by 163 Countries",
+     "url": "https://joho-todai.com/en/autonomous-weapons-regulation-un-talks-stall/"
+    }
+   ],
    "topics": [
     "AI"
    ]
