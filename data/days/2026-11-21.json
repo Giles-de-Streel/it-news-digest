@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-22T00:46:52+00:00",
+ "generated": "2026-11-22T01:01:03+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -186,7 +186,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 149,
+   "fetched": 148,
    "recent": 17,
    "error": null
   },
@@ -726,7 +726,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 81,
+   "fetched": 80,
    "recent": 2,
    "error": null
   },
@@ -881,9 +881,9 @@
   },
   {
    "source": "Google Cloud Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 20,
+   "recent": 9,
+   "error": null
   },
   {
    "source": "Okta Security",
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -1590,7 +1590,7 @@
   {
    "source": "Prajwal Desai",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 92,
-   "recent": 9,
+   "fetched": 93,
+   "recent": 8,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 16,
-   "recent": 1,
+   "fetched": 19,
+   "recent": 3,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -2489,6 +2489,20 @@
   }
  ],
  "items": [
+  {
+   "id": "8a3de2b0d7e3",
+   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+   "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-22T00:53:02+00:00",
+   "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "c98f7cdb49db",
    "title": "NixOS bring-up on an Alibaba RISC-V board",
@@ -3242,7 +3256,14 @@
    "source_category": "Development",
    "published": "2026-11-21T18:29:29+00:00",
    "summary": "Comments",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5d87055f8941",
+     "source": "Lobsters",
+     "title": "GhostScript CVE 2026-125396: \"Upload2Shell\"",
+     "url": "https://pwn.ai/upload2shell/research.html"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches"
    ],
