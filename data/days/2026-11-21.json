@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-22T01:46:50+00:00",
+ "generated": "2026-11-22T02:01:16+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -54,7 +54,7 @@
   {
    "source": "Tenable Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -354,7 +354,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -426,13 +426,13 @@
   {
    "source": "Huntress",
    "fetched": 767,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -606,13 +606,13 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
    "source": "IEEE Spectrum",
    "fetched": 30,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 148,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 52,
+   "recent": 51,
    "error": null
   },
   {
@@ -900,7 +900,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 16,
+   "fetched": 17,
    "recent": 1,
    "error": null
   },
@@ -2490,6 +2490,36 @@
  ],
  "items": [
   {
+   "id": "5abee79f50fa",
+   "title": "Ghostscript Upload2Shell Vulnerability Turns Image and PDF Conversion into Server-Side Code Execution",
+   "url": "https://joho-todai.com/en/ghostscript-upload2shell-vulnerability-rce/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T01:53:17+00:00",
+   "summary": "Ghostscript vulnerability CVE-2026-125396 creates a path from image and PDF conversion to command execution on servers, demonstrated in CUPS, Roundcube, WordPress plugins, and other products. A fix for the root cause has been available since September.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-125396",
+     "score": 8.5,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "VulnCheck"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-125396",
+     "score": 0.00164,
+     "percentile": 0.05606,
+     "date": "2026-11-21"
+    }
+   }
+  },
+  {
    "id": "17767ff347fb",
    "title": "Why Firefox on iPhone Still Doesn't Use Gecko: Mozilla Criticizes Apple's 'Separate App' Barrier",
    "url": "https://joho-todai.com/en/why-iphone-firefox-lacks-gecko-mozilla-criticizes-apple/",
@@ -2551,6 +2581,19 @@
    "source_category": "Development",
    "published": "2026-11-22T01:12:15+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cd181f1fb3f0",
+   "title": "Dan Langille: Galène: fixing double-encoded port files",
+   "url": "https://postgr.es/p/9Dd",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-22T01:07:41+00:00",
+   "summary": "If you looked at the Makefile for www/galene on FreshPorts, you would have seen COMMENT= The GalÃ¨ne videoconference server. The port itself says Galène. This post explains how that happened, the fix I just pushed, how I will test it on dev, and how I plan to repair the text that is already wrong. What […]",
    "also_covered_by": [],
    "topics": [
     "General IT"
