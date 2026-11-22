@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-22T01:01:03+00:00",
+ "generated": "2026-11-22T01:16:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -186,7 +186,7 @@
   {
    "source": "Data Center Dynamics",
    "fetched": 20,
-   "recent": 19,
+   "recent": 17,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -594,7 +594,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 148,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
+   "fetched": 81,
    "recent": 2,
    "error": null
   },
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -1794,7 +1794,7 @@
   {
    "source": "Smithsonian Magazine",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 93,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 19,
-   "recent": 3,
+   "fetched": 16,
+   "recent": 1,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,34 @@
   }
  ],
  "items": [
+  {
+   "id": "ce75fe09745d",
+   "title": "Third Party Accessed GSS File-Sharing Service for About Three and a Half Months; Cause Undisclosed",
+   "url": "https://joho-todai.com/en/gss-file-sharing-unauthorized-access-three-months/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T01:07:36+00:00",
+   "summary": "Japan's Digital Agency announced on November 20 that a third party other than an authorized recipient had accessed files in a Government Solution Service file-sharing system. The access occurred between July 30 and November 12, creating a possibility that files were leaked.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "ee6e016471cd",
+   "title": "Intel Nova Lake-H 16-Core Specifications Surface in Industrial Board Data Sheet: DDR5-8000 Support and 25W TDP",
+   "url": "https://joho-todai.com/en/intel-nova-lake-h-16-core-specs-ddr5-8000/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T00:56:16+00:00",
+   "summary": "A preliminary Advantech data sheet lists key specifications for a 16-core Nova Lake-H processor. A benchmark database also shows a 28-core desktop engineering sample operating at 5.2GHz.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Databases"
+   ]
+  },
   {
    "id": "8a3de2b0d7e3",
    "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
@@ -3503,7 +3531,14 @@
    "source_category": "Hardware",
    "published": "2026-11-21T17:49:14+00:00",
    "summary": "The Google-developed Sashiko for agentic AI code review initially focused on the Linux kernel continues helping to uncover new bugs and issues as new patches hit the kernel mailing list as well as those manually running this open-source AI software.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b1e296c232ca",
+     "source": "Joho no Todai (English)",
+     "title": "Linux AI Code Reviewer Sashiko Raises Performance Regression Detection from 15% to 70% in Developer Evaluation",
+     "url": "https://joho-todai.com/en/sashiko-ai-code-review-linux-detection-improvement/"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
