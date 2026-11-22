@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T14:45:56+00:00",
+ "generated": "2026-11-22T15:01:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 36,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 77,
+   "fetched": 78,
    "recent": 0,
    "error": null
   },
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1098,7 +1098,7 @@
   {
    "source": "Microsoft 365 Roadmap",
    "fetched": 2392,
-   "recent": 3,
+   "recent": 0,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 87,
+   "fetched": 85,
    "recent": 16,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 21,
-   "recent": 2,
+   "fetched": 18,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,49 @@
   }
  ],
  "items": [
+  {
+   "id": "0655536384ba",
+   "title": "Neuralink trial participant ditches mouth stick to play GTA 6 with his mind",
+   "url": "https://www.tomshardware.com/peripherals/wearable-tech/neuralink-trial-participant-ditches-mouth-stick-to-play-gta-6-with-his-mind-brain-computer-interface-maps-imagined-ring-finger-taps-and-hand-slides-to-a-playstation-5-controller",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-22T14:49:48+00:00",
+   "summary": "This is one of the most complicated games yet to be played using Neuralink, with the patient using imagined movements like tapping a finger or sliding a hand to simulate commands on the PS5 controller.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "12e4b46c9447",
+   "title": "What If Netscape Did SSL the HTTP Way?",
+   "url": "https://owl.billpg.com/what-if-netscape-did-ssl-the-http-way/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-22T14:48:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "025b3f6dd159",
+   "title": "Satya Nadella on Microsoft’s Outlook outage, AI strategy, security and buyouts",
+   "url": "https://4sysops.com/archives/satya-nadella-on-microsofts-outlook-outage-ai-strategy-security-and-buyouts/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-22T14:47:44+00:00",
+   "summary": "Microsoft CEO Satya Nadella discusses an Outlook outage and AI-driven security risks, Microsoft’s multi-model strategy, AI alignment and safety controls, and data center spending. He also addresses Microsoft’s buyout offer to 60,000 employees and describes how AI is changing software engineering. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Cloud status"
+   ]
+  },
   {
    "id": "4f086395c2b5",
    "title": "UGREEN’s excellent liquid cooled 25W MagSafe battery for iPhone is now 40% off",
@@ -3363,7 +3406,14 @@
    "source_category": "IT industry",
    "published": "2026-11-22T09:41:37+00:00",
    "summary": "OpenAI's GPT-6.2 Astra and Sol give much shorter, more direct answers than their predecessors, but they are also less willing to admit uncertainty. Anthropic's Claude models score well ahead on transparency.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "d596d8592281",
+     "source": "The New Stack",
+     "title": "GPT-6.2 Astra vs. Claude Fable 5.2: Astra’s launch got mixed reviews, but it tested well here",
+     "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/"
+    }
+   ],
    "topics": [
     "AI"
    ]
