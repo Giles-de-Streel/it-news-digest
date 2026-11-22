@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "generated": "2026-11-22T01:30:51+00:00",
+ "generated": "2026-11-22T01:46:50+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
+   "fetched": 92,
    "recent": 7,
    "error": null
   },
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
+   "fetched": 16,
    "recent": 1,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,33 @@
   }
  ],
  "items": [
+  {
+   "id": "17767ff347fb",
+   "title": "Why Firefox on iPhone Still Doesn't Use Gecko: Mozilla Criticizes Apple's 'Separate App' Barrier",
+   "url": "https://joho-todai.com/en/why-iphone-firefox-lacks-gecko-mozilla-criticizes-apple/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T01:37:06+00:00",
+   "summary": "Nearly three years after the EU's Digital Markets Act and about a year after Japan's Mobile Software Competition Act, not a single iOS browser using an engine other than WebKit has launched anywhere in the world. Mozilla published a statement on November 20 calling for the conditions to be revised.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "116ed0b5772d",
+   "title": "NVIDIA and Researchers Propose Memory Controller Design That Cuts Area by 73% While Nearly Preserving Performance in Future GPUs",
+   "url": "https://joho-todai.com/en/nvidia-memory-controller-73-percent-reduction/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T01:30:16+00:00",
+   "summary": "Researchers from NVIDIA and UC Berkeley have presented MS-PARE, a compact GPU memory controller design for future high-bandwidth memory. It reduces control-circuit area per channel by 73.3% compared with a conventional design while nearly preserving performance in HPC and LLM inference.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
   {
    "id": "a84f5a2d8bb3",
    "title": "Linux 7.4 To Remove NVMe Namespaces In Parallel For Faster Results",
@@ -5486,6 +5513,12 @@
      "source": "CNBC Technology",
      "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
      "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html"
+    },
+    {
+     "id": "fbd0c24903ce",
+     "source": "Joho no Todai (English)",
+     "title": "Apparent Intrusion into FBI's NCIC Criminal Database Targets Nationwide System for Wanted Persons and Criminal Histories",
+     "url": "https://joho-todai.com/en/fbi-ncic-database-breach-wanted-criminal-records/"
     }
    ],
    "topics": [
