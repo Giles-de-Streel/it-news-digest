@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T19:16:13+00:00",
+ "generated": "2026-11-22T19:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 15,
-   "recent": 15,
+   "fetched": 16,
+   "recent": 16,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 21,
+   "recent": 20,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 123,
+   "fetched": 115,
    "recent": 6,
    "error": null
   },
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 76,
    "recent": 0,
    "error": null
   },
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1638,7 +1638,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 91,
-   "recent": 17,
+   "fetched": 90,
+   "recent": 16,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,41 @@
  ],
  "items": [
   {
+   "id": "baf03ab26583",
+   "title": "KaOS 2026.11 Drops KDE Plasma and Qt 5, Moves Forward with Niri",
+   "url": "https://linuxiac.com/kaos-2026-11-drops-kde-plasma-and-qt-5-moves-forward-with-niri/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-22T19:22:49+00:00",
+   "summary": "KaOS 2026.11 removes KDE Plasma and Qt 5, adopting Niri and Noctalia while continuing its transition away from systemd.",
+   "also_covered_by": [],
+   "topics": [
+    "System administration"
+   ]
+  },
+  {
+   "id": "ec74917988ec",
+   "title": "CVE-2026-134624: N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-22T19:16:32.163000+00:00",
+   "summary": "N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP synchronisation connection check performed when a relay is configured.",
+   "kind": "cve",
+   "cve": "CVE-2026-134624",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134624",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "29a2dafbb6c1",
    "title": "scriptura: a cozy corner for your scripts",
    "url": "https://alanpearce.eu/post/scriptura/",
@@ -2500,6 +2535,32 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "9d92f9e566bc",
+   "title": "65 Years of Human Spaceflight at NASA Johnson",
+   "url": "https://www.nasa.gov/centers-and-facilities/johnson/65-years-of-human-spaceflight-at-nasa-johnson/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-22T19:13:25+00:00",
+   "summary": "For 65 years, NASA’s Johnson Space Center in Houston has helped shape human spaceflight, from the Gemini missions that demonstrated rendezvous and docking techniques needed for Apollo to the research conducted aboard the International Space Station, which has supported a continuous human presence for more than 26…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ef741366627e",
+   "title": "\"A government that 'gets it'\": Canada recommits to federal funding for news",
+   "url": "https://www.niemanlab.org/2026/11/a-government-that-gets-it-canada-recommits-to-federal-funding-for-news/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-22T19:10:38+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
    ]
   },
   {
@@ -2539,6 +2600,19 @@
    "also_covered_by": [],
    "topics": [
     "Game development"
+   ]
+  },
+  {
+   "id": "2e34b198714b",
+   "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+   "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-22T18:55:05+00:00",
+   "summary": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3002,6 +3076,19 @@
    "topics": [
     "Development",
     "Game development"
+   ]
+  },
+  {
+   "id": "861a8c93b5e8",
+   "title": "Fascism and Monopoly",
+   "url": "https://repository.law.umich.edu/mlr/vol118/iss7/2/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-22T15:25:29+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
