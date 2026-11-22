@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T19:31:06+00:00",
+ "generated": "2026-11-22T19:45:58+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 42,
+   "recent": 43,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 115,
+   "fetched": 111,
    "recent": 6,
    "error": null
   },
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 76,
+   "fetched": 77,
    "recent": 0,
    "error": null
   },
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 13,
+   "recent": 15,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 90,
-   "recent": 16,
+   "fetched": 91,
+   "recent": 17,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,86 @@
   }
  ],
  "items": [
+  {
+   "id": "a9096a982ddf",
+   "title": "Congressional maneuvering aims to extend FISA’s “Section 702”",
+   "url": "https://www.heise.de/en/news/Congressional-maneuvering-aims-to-extend-FISA-s-Section-702-11533759.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T19:38:00+00:00",
+   "summary": "Before a new U.S. Congress could force stricter rules, Democrats are expected to help quickly extend the controversial NSA spying program.",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "d3afc8c1d9e6",
+   "title": "Nvidia faces mounting pressure as US tech stocks enter bear market",
+   "url": "https://www.heise.de/en/news/Nvidia-faces-mounting-pressure-as-US-tech-stocks-enter-bear-market-11533863.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T19:38:00+00:00",
+   "summary": "Nvidia investigations and scandals involving Huang weigh on stocks. US tech stocks slide into a bear market after steep losses.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7793da344a1a",
+   "title": "GL.iNet finds vulnerability; patch available",
+   "url": "https://www.heise.de/en/news/GL-iNet-finds-vulnerability-patch-available-11533733.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T19:36:00+00:00",
+   "summary": "A vulnerability in cloud-based remote management services is already being exploited. Admins should act quickly.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "System administration"
+   ]
+  },
+  {
+   "id": "1932955795f6",
+   "title": "An under-desk headphone hanger with three charging ports (up to 20W) for less than $10",
+   "url": "https://www.tomshardware.com/peripherals/usb/under-desk-headphone-hanger-with-three-charging-ports-drops-below-usd10-cozoos-20w-combo-device-has-been-a-useful-addition-to-my-standing-desk-since-2023",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-22T19:34:47+00:00",
+   "summary": "With two hanging hooks, notches for six cables and 20W of charging, Cozoo's quirky combo device has been a useful addition to my standing desk since 2023.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cab3780fe233",
+   "title": "Mats Kindahl: Building a Table Access Method, Part 9: UNLOGGED tables and surviving a restart",
+   "url": "https://postgr.es/p/9Dg",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-22T19:25:18+00:00",
+   "summary": "Everything that pg_memtable stores lives in shared memory, and a restart of the server destroys it, but the handle is left in the catalog. Since nothing special is done to inform Postgres that tables that use the memtable table access method (MemTables) do not survive a restart, it will treat the table as permanent,…",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "17913b212da9",
+   "title": "The race to stay young is over. The real goal is to stay healthy until we die - www.calcalistech.com",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aNEo2bjN0SWx5V2tHMHBHckp3WkFfOC02VmVMM05nb1QweXNoOEZ2VTB4OTc3MFZBUHROU1l3WmpXbnRjajdJOXd5eXR1cGdXYVdrd1JTbld2SVY5dUtwMkFBd1BsT0E?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-22T19:25:00+00:00",
+   "summary": "The race to stay young is over. The real goal is to stay healthy until we die www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "baf03ab26583",
    "title": "KaOS 2026.11 Drops KDE Plasma and Qt 5, Moves Forward with Niri",
@@ -2610,6 +2690,19 @@
    "source_category": "IT industry",
    "published": "2026-11-22T18:55:05+00:00",
    "summary": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bf1ab164c3b9",
+   "title": "Dirac's Theorem at a Dinner Party",
+   "url": "https://prideout.net/blog/dirac-dinner-party/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-22T18:50:27+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
