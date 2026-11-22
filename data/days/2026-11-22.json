@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T12:46:01+00:00",
+ "generated": "2026-11-22T13:01:00+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -96,7 +96,7 @@
   {
    "source": "Network World",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 84,
-   "recent": 13,
+   "fetched": 86,
+   "recent": 14,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 22,
-   "recent": 2,
+   "fetched": 18,
+   "recent": 0,
    "error": null
   },
   {
@@ -2490,6 +2490,32 @@
  ],
  "items": [
   {
+   "id": "d4beb6b35fc5",
+   "title": "CrowdStrike-Zscaler Acquisition Talks Reported: 5 Things To Know",
+   "url": "https://www.crn.com/news/security/2026/crowdstrike-zscaler-acquisition-talks-reported-5-things-to-know",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-22T12:50:00+00:00",
+   "summary": "CrowdStrike is in talks to acquire Zscaler in a potential blockbuster combination that would bring together two of the cybersecurity industry’s largest vendors and intensify competition with Palo Alto Networks, according to media reports.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "bb891dc2bb33",
+   "title": "The next Middle East power struggle is over internet cables, data and AI",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tZk9PTUZjMVNpTDdYY2VrQVRucFg1ODV0WUVXb20zVzZ0MGtOQ3B1cGozcHFuMnB0aHptb3BuQ0lKRnM3eHJqV0Q5VXVXZUhOWUZFZHVMLVJ4WktKVE5sUGNjZXNFdzQ?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-22T12:49:00+00:00",
+   "summary": "The next Middle East power struggle is over internet cables, data and AI CTech",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "b70506cff4bf",
    "title": "Anthropic’s record hypocrisy",
    "url": "https://4sysops.com/archives/anthropics-record-hypocrisy/",
@@ -2659,7 +2685,14 @@
    "source_category": "Hardware",
    "published": "2026-11-22T11:55:29+00:00",
    "summary": "After teasing the CachyOS Package Installer 2.0 in recent weeks, today the CachyOS developers formally rolled out the CachyOS Package Installer 2.0 update. This provides a fresh UI/UX for managing packages on this Arch Linux based distribution...",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e200897fd14a",
+     "source": "9to5Linux",
+     "title": "CachyOS November 2026 ISO Release Brings CachyOS Package Installer 2.0",
+     "url": "https://9to5linux.com/cachyos-november-2026-iso-release-brings-cachyos-package-installer-2-0"
+    }
+   ],
    "topics": [
     "Linux & open source",
     "Development"
@@ -3611,6 +3644,12 @@
      "source": "4sysops",
      "title": "Microsoft confirms Outlook emails to inactive accounts were lost in November 12 outage",
      "url": "https://4sysops.com/archives/microsoft-confirms-outlook-emails-to-inactive-accounts-were-lost-in-november-12-outage/"
+    },
+    {
+     "id": "89a31765c1e6",
+     "source": "Joho no Todai (English)",
+     "title": "Microsoft 365 Final Report Reveals Some Email Delivery Failures and Security Feature Impact During Major Outage",
+     "url": "https://joho-todai.com/en/microsoft-365-outage-email-delivery-security-impact/"
     }
    ],
    "topics": [
@@ -3696,7 +3735,14 @@
    "source_category": "Security",
    "published": "2026-11-22T05:06:55+00:00",
    "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "abedda0de30a",
+     "source": "4sysops",
+     "title": "OpenRouter drops three AI providers after researchers uncover prompt theft",
+     "url": "https://4sysops.com/archives/openrouter-drops-three-ai-providers-after-researchers-uncover-prompt-theft/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "AI",
