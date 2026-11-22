@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T16:31:03+00:00",
+ "generated": "2026-11-22T16:45:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 78,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -768,7 +768,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1206,7 +1206,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 88,
+   "fetched": 90,
    "recent": 17,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 21,
-   "recent": 2,
+   "fetched": 17,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,33 @@
   }
  ],
  "items": [
+  {
+   "id": "b08ef931ada6",
+   "title": "Falsehoods Programmers Believe About ATProto",
+   "url": "https://reiver.link/atproto/falsehoods-programmers-believe/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-22T16:37:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "48bf4c58c5b0",
+   "title": "Python Devs Document 'De-fanging Dangerous Triggers In GitHub Actions'",
+   "url": "https://it.slashdot.org/story/26/11/22/0625233/python-devs-document-de-fanging-dangerous-triggers-in-github-actions?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-22T16:34:00+00:00",
+   "summary": "\"A handful of GitHub Actions triggers let a stranger on the internet start a workflow that may have access to your secrets,\" warn two security developers at the Python Software Foundation. Have dangerous triggers caused real incidents? Yes, repeatedly... The maintainers behind these projects weren't careless.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
   {
    "id": "1dfd9b587adb",
    "title": "El Al and Arkia prepare to resume flights to Morocco after security suspensions - www.calcalistech.com",
@@ -4612,6 +4639,36 @@
    "topics": [
     "Accessibility"
    ]
+  },
+  {
+   "id": "dd355347dd50",
+   "title": "DSA-6647-1 webkit2gtk - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00569.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "The following vulnerabilities have been discovered in the WebKitGTK web engine: CVE-2026-86973 Narendra Singh and an anonymous researcher discovered that processing maliciously crafted web content may lead to an unexpected process crash.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-86973",
+     "score": 6.5,
+     "severity": "Medium",
+     "version": "3.1",
+     "scored_by": "CISA-ADP"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-86973",
+     "score": 0.00461,
+     "percentile": 0.40785,
+     "date": "2026-11-22"
+    }
+   }
   },
   {
    "id": "c1675fe83fc0",
