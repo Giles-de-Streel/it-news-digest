@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T20:31:13+00:00",
+ "generated": "2026-11-22T20:47:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 50,
-   "recent": 5,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Ars Technica IT",
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -749,9 +749,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 76,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Electronic Design",
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -1589,15 +1589,15 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1775,9 +1775,9 @@
   },
   {
    "source": "ManageEngine blogs",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Kagi Blog",
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 7,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Terence Tao",
@@ -1889,9 +1889,9 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 92,
-   "recent": 16,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Game Developer",
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2009,9 +2009,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Microsoft 365 status",
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,19 @@
   }
  ],
  "items": [
+  {
+   "id": "0630dd45234b",
+   "title": "First performance benchmarks of Windows 11 vs LiberNT, a free 64-bit alternative, teased",
+   "url": "https://www.neowin.net/news/first-performance-benchmarks-of-windows-11-vs-libernt-a-free-64-bit-alternative-teased/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-22T20:36:01+00:00",
+   "summary": "LiberNT devs have teased the first direct comparison against Windows 11 as they feel their free 64-bit alternative OS is ready to challenge the real thing.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
   {
    "id": "c34e624f8b26",
    "title": "Gliver completes the Guix desktop",
@@ -3022,6 +3035,19 @@
    ]
   },
   {
+   "id": "04153d6b534d",
+   "title": "Was software just always too complex for humans?",
+   "url": "https://anil.recoil.org/notes/software-too-complex-for-humans",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-22T17:32:41+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "b5cfab92999a",
    "title": "Sources: amid leak fears, Anthropic limited some IPO banks to four-person teams, used a view-logging file platform, and sought six-month bans on advising rivals (Reuters)",
    "url": "https://www.techmeme.com/261122/p8#a261122p8",
@@ -3082,7 +3108,14 @@
    "source_category": "IT industry",
    "published": "2026-11-22T16:53:20+00:00",
    "summary": "Clayton’s warning comes ahead of Thanksgiving travel, after separate outages disrupted air travel, Microsoft 365 and some bank transactions.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "5607ef34ec23",
+     "source": "Techmeme",
+     "title": "After FAA, Microsoft, and bank outages, DNI Jay Clayton says Americans should prepare for \"bumps in the road\" as systems are upgraded to adapt to the AI age (Garrett Downs/CNBC)",
+     "url": "https://www.techmeme.com/261122/p11#a261122p11"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Cloud status"
