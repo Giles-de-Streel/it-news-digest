@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-23T04:32:12+00:00",
+ "generated": "2026-11-23T04:46:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 118,
-   "recent": 33,
+   "fetched": 119,
+   "recent": 34,
    "error": null
   },
   {
@@ -954,7 +954,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1049,9 +1049,9 @@
   },
   {
    "source": "Lean Enterprise Institute",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Agile Pain Relief",
@@ -1091,13 +1091,13 @@
   },
   {
    "source": "Office 365 for IT Pros",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2391,
+   "fetched": 2390,
    "recent": 0,
    "error": null
   },
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 93,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 17,
    "recent": 0,
    "error": null
   },
@@ -2064,7 +2064,7 @@
   {
    "source": "Akamai status",
    "fetched": 24,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2196,7 +2196,7 @@
   {
    "source": "Unsung (Marcin Wichary)",
    "fetched": 630,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2490,6 +2490,60 @@
  ],
  "items": [
   {
+   "id": "844b6d0c4e73",
+   "title": "RHSA-2026:102154: Important: fence-agents security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102154",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T04:41:06+00:00",
+   "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "52b91796be28",
+   "title": "Do AI Payment Signatures Guarantee Order Terms? Examining the Gap With Transfer Authority",
+   "url": "https://joho-todai.com/en/ai-payment-signature-order-guarantee/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T04:40:08+00:00",
+   "summary": "Even when an AI agent shops according to a user's approval, a cryptocurrency transfer may not verify every condition in the order. A research team analyzed multiple authorization schemes and USDC payments on Base to examine the difference between what a signature guarantees and what the user approved in the commercial…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "909ef07e07fb",
+   "title": "South Korean PE firm MBK Partners agrees to take Japan's Wacom private, in a deal valuing the digital pen tech company at ~$860M, with Samsung participating (Kim Woo-young/CHOSUNBIZ)",
+   "url": "https://www.techmeme.com/261122/p20#a261122p20",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-23T04:40:00+00:00",
+   "summary": "Kim Woo-young / CHOSUNBIZ : South Korean PE firm MBK Partners agrees to take Japan's Wacom private, in a deal valuing the digital pen tech company at ~$860M, with Samsung participating — 조선비즈 구글 검색 먼저 보기",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0a06f4127295",
+   "title": "Customer Security Advisory: Remote code execution vulnerability in the Apache HTTP Server's HTTP/2 module",
+   "url": "https://www.akamaistatus.com/incidents/jkbdjhj81cx5",
+   "source": "Akamai status",
+   "source_category": "Cloud status",
+   "published": "2026-11-23T04:34:02+00:00",
+   "summary": "Nov 23 , 04:34 UTC Monitoring - Our investigation revealed that there is no externally exposed impact on the Akamai platform/product. As of this time, we have no evidence that this vulnerability has been exploited on any Akamai platform/products.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud status"
+   ]
+  },
+  {
    "id": "c979d960db43",
    "title": "Chrome's Built-In Gemini Nano Repurposed to Search Compromised Devices for Sensitive Data, Exposing Limits of Network Monitoring",
    "url": "https://joho-todai.com/en/chrome-gemini-nano-security-privacy-risk/",
@@ -2640,6 +2694,19 @@
    "topics": [
     "AI",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "35cfea2e7f27",
+   "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+   "url": "https://github.com/AFK-surf/xnulinux",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-23T03:49:24+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
