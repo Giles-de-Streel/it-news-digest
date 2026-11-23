@@ -5,7 +5,8 @@
 
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
-  const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
+  const LS_SCENE = "ind.scene"; // header scene: "sun" (day) or "moon" (night); unset/false = animation off
+  const SCENES = ["off", "sun", "moon"]; // the sun/moon icon steps through these in order
   const LS_THEME = "ind.theme"; // "dark", "medium", "light" or "chrome"; unset = chrome (the first-visit default)
   const THEMES = ["dark", "medium", "light", "chrome"]; // the colour-mode match steps through these in order
   const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources are shown
@@ -964,12 +965,28 @@
     location.assign(location.pathname); // drops ?filters and #tab
   }
 
-  // Header animation on/off (match icon). The class is set before first paint by a script in <head>.
+  // Header scene (sun/moon icon): off -> sun (day) -> moon (night). html.scene-off and html[data-scene]
+  // are set before first paint by a script in <head>.
+  const SCENE_NAME = { off: "off", sun: "day", moon: "night" };
+  const sceneNow = () => {
+    const d = document.documentElement;
+    return d.classList.contains("scene-off") ? "off" : (SCENES.includes(d.dataset.scene) ? d.dataset.scene : "sun");
+  };
   function syncSceneToggle() {
-    const on = !document.documentElement.classList.contains("scene-off");
+    const s = sceneNow(), next = SCENES[(SCENES.indexOf(s) + 1) % SCENES.length];
     const b = $("#scene-toggle");
-    b.setAttribute("aria-pressed", String(on));
-    b.title = on ? "extinguish!" : "ignite!";
+    b.dataset.scene = s;
+    b.setAttribute("aria-pressed", String(s !== "off"));
+    b.title = s === "off" ? "Header animation off: click for the day scene"
+      : `${SCENE_NAME[s][0].toUpperCase()}${SCENE_NAME[s].slice(1)} scene: click for ${next === "off" ? "animation off" : `the ${SCENE_NAME[next]} scene`}`;
+    b.setAttribute("aria-label", `Header scene: ${SCENE_NAME[s]}. Switch to ${SCENE_NAME[next]}`);
+  }
+  function setScene(s) {
+    const d = document.documentElement;
+    d.classList.toggle("scene-off", s === "off");
+    if (s === "off") d.removeAttribute("data-scene"); else d.dataset.scene = s;
+    store.set(LS_SCENE, s === "off" ? false : s);
+    syncSceneToggle();
   }
 
   // Colour mode (second match). html[data-theme] is set before first paint by a script in <head>.
@@ -1058,11 +1075,7 @@
       store.set(LS_THEME, next);
       setTheme(next);
     });
-    $("#scene-toggle").addEventListener("click", () => {
-      const off = document.documentElement.classList.toggle("scene-off");
-      store.set(LS_SCENE, !off);
-      syncSceneToggle();
-    });
+    $("#scene-toggle").addEventListener("click", () => setScene(SCENES[(SCENES.indexOf(sceneNow()) + 1) % SCENES.length]));
     document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
     window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS.includes(v) && v !== state.view) setView(v); });
     $("#cve-search").addEventListener("input", (e) => { state.cveQuery = e.target.value; render(); });
@@ -1184,19 +1197,17 @@
     track.prepend(s);
     return s;
   };
-  // Sun by day, moon by night (viewer's local time). It crosses the sky as the day or night goes on:
-  // rising at the left, setting at the right (day 06:00-19:00, night 19:00-06:00).
+  // Both a sun and a moon are drawn; html[data-scene] (the sun/moon icon) picks which one shows.
+  // Whichever matches the viewer's clock crosses the sky as the day or night goes on, rising at the left
+  // and setting at the right (day 06:00-19:00, night 19:00-06:00); the other sits somewhere mid-sky.
   const now = new Date();
   const hrs = now.getHours() + now.getMinutes() / 60;
   const isDay = hrs >= 6 && hrs < 19;
   const progress = isDay ? (hrs - 6) / 13 : ((hrs + 24 - 19) % 24) / 11;
-  const skyX = `${(6 + progress * 88).toFixed(1)}%`;
-  if (isDay) {
-    const rays = Array.from({ length: 8 }, (_, i) => { const a = (i * Math.PI) / 4; return `M${(6 * Math.cos(a)).toFixed(1)} ${(6 * Math.sin(a)).toFixed(1)}L${(8.6 * Math.cos(a)).toFixed(1)} ${(8.6 * Math.sin(a)).toFixed(1)}`; }).join("");
-    sky("sky-sun", "-9 -9 18 18", `<path class="ray" d="${rays}"/><circle r="4.2"/>`, { "--x": skyX, "--s": `${Math.round(rand(11, 15))}px` });
-  } else {
-    sky("sky-moon", "-6 -6 12 12", '<path d="M2.2-5.2A5.6 5.6 0 1 0 5.4 2.6 4.4 4.4 0 0 1 2.2-5.2z"/>', { "--x": skyX, "--s": `${Math.round(rand(9, 12))}px` });
-  }
+  const clockX = `${(6 + progress * 88).toFixed(1)}%`, midX = `${rand(30, 70).toFixed(1)}%`;
+  const rays = Array.from({ length: 8 }, (_, i) => { const a = (i * Math.PI) / 4; return `M${(6 * Math.cos(a)).toFixed(1)} ${(6 * Math.sin(a)).toFixed(1)}L${(8.6 * Math.cos(a)).toFixed(1)} ${(8.6 * Math.sin(a)).toFixed(1)}`; }).join("");
+  sky("sky-sun", "-9 -9 18 18", `<path class="ray" d="${rays}"/><circle r="4.2"/>`, { "--x": isDay ? clockX : midX, "--s": `${Math.round(rand(11, 15))}px` });
+  sky("sky-moon", "-6 -6 12 12", '<path d="M2.2-5.2A5.6 5.6 0 1 0 5.4 2.6 4.4 4.4 0 0 1 2.2-5.2z"/>', { "--x": isDay ? midX : clockX, "--s": `${Math.round(rand(9, 12))}px` });
   const clouds = 1 + Math.floor(Math.random() * 3);
   for (let i = 0; i < clouds; i++) {
     sky("sky-cloud", "0 0 24 10", '<path d="M5 9.5h14.5a3.6 3.6 0 0 0 .4-7.2 4.6 4.6 0 0 0-8.6-.9A3.4 3.4 0 0 0 6.6 4 2.8 2.8 0 0 0 5 9.5z"/>',

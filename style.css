@@ -309,16 +309,15 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 /* smaller bursts while the runner shakes the Updated text (desktop) or waves at the track's end (phones) */
 .updated-wrap { position: relative; display: inline-flex; }
 .shake-group { display: inline-flex; align-items: center; gap: 5px; }
-/* match toggle: lit = header animation on, unlit = off (html.scene-off, saved as ind.scene) */
+/* scene toggle (sun/moon icon) and colour-mode match share the bare icon-button look */
 .scene-toggle, .theme-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0; border: 0; background: none;
                 cursor: pointer; border-radius: 4px; line-height: 0; }
 .scene-toggle svg, .theme-toggle svg { width: 13px; height: 17px; overflow: visible; }
 .scene-toggle:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
-.scene-toggle .match-stick, .theme-toggle .match-stick { stroke: var(--match-stick); stroke-width: 1.9; stroke-linecap: round; }
-.scene-toggle .match-head, .theme-toggle .match-head { fill: var(--match-head); }
-.scene-toggle .flame-out, .theme-toggle .flame-out { fill: var(--flame-out); }
-.scene-toggle .flame-in, .theme-toggle .flame-in { fill: var(--flame-in); }
-.scene-toggle .match-flame, .theme-toggle .match-flame { transform-origin: 10px 6px; animation: match-flicker .9s ease-in-out infinite alternate; }
+.theme-toggle .match-stick { stroke: var(--match-stick); stroke-width: 1.9; stroke-linecap: round; }
+.theme-toggle .flame-out { fill: var(--flame-out); }
+.theme-toggle .flame-in { fill: var(--flame-in); }
+.theme-toggle .match-flame { transform-origin: 10px 6px; animation: match-flicker .9s ease-in-out infinite alternate; }
 /* colour-mode match: the flame shows the current mode, a small ember in dark, half size in medium, full in light */
 .theme-toggle .match-head { fill: var(--theme-match-head); }
 .theme-toggle .flame-size { transform-origin: 10px 6px; transition: transform .2s; }
@@ -377,13 +376,26 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes tux-waddle { 0%, 76%, 100% { transform: none; } 80% { transform: rotate(-9deg); } 86% { transform: rotate(9deg); } 92% { transform: rotate(-5deg); } 96% { transform: rotate(2deg); } }
 @media (prefers-reduced-motion: reduce) { .tux-toggle[aria-pressed="true"] .tux-body { animation: none; } .tux-toggle .tux-body { transition: none; } }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
-.scene-off .scene-toggle .match-flame { display: none; }
-.scene-off .scene-toggle .match-head { fill: var(--match-burnt); }
+/* sun/moon icon: shows the current header scene (off, sun = day, moon = night), saved as ind.scene */
+.scene-toggle .si-sun, .scene-toggle .si-moon, .scene-toggle .si-off { display: none; }
+.scene-toggle[data-scene="sun"] .si-sun, .scene-toggle[data-scene="moon"] .si-moon, .scene-toggle[data-scene="off"] .si-off { display: inline; }
+.scene-toggle .si-disc { fill: var(--sun); }
+.scene-toggle .si-rays { stroke: var(--sun); stroke-width: 1.4; stroke-linecap: round; }
+.scene-toggle .si-sun { transform-origin: 7px 9px; animation: si-spin 24s linear infinite; }
+.scene-toggle .si-crescent { fill: var(--moon); stroke: color-mix(in srgb, var(--moon) 55%, var(--text)); stroke-width: .6; }
+.scene-toggle .si-star { fill: var(--sun); animation: si-twinkle 2.4s ease-in-out infinite alternate; }
+.scene-toggle .si-star + .si-star { animation-delay: -1.2s; }
+.scene-toggle .si-ring { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.scene-toggle .si-slash { stroke: var(--muted); stroke-width: 1.4; stroke-linecap: round; }
+@keyframes si-spin { to { transform: rotate(360deg); } }
+@keyframes si-twinkle { from { opacity: .35; } to { opacity: 1; } }
+/* day/night scene: only the matching body shows in the sky */
+:root[data-scene="sun"] .sky-moon, :root[data-scene="moon"] .sky-sun { display: none; }
 /* animation off: the scenery is hidden (the track keeps its space) and the hit/shake effects stop */
 .scene-off .runner-track > * { display: none !important; }
 .scene-off .pow { display: none !important; }
 .scene-off .brand-icon, .scene-off .shake-group { animation: none !important; }
-@media (prefers-reduced-motion: reduce) { .scene-toggle .match-flame { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .scene-toggle .si-sun, .scene-toggle .si-star { animation: none; } }
 .pow.pow-shake { left: 0; width: 22px; height: 22px; display: none; animation-name: pow-shake; }
 .pow.pow-wave { left: calc(100% - 8px); top: calc(50% - 9.5px); width: 16px; height: 16px; display: none; animation-name: pow-wave; }
 @media (min-width: 701px) { .pow.pow-shake { display: block; } }
@@ -871,14 +883,14 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   22.6%, 100% { opacity: 0; transform: translate(-60%, -35%) scale(1.4) rotate(10deg); }
 }
 /* Desktop: the runner alternates on a 32s loop (two 16s laps). Lap 1 shakes the Updated text as before;
-   lap 2 it takes the match from the toggle and waves it overhead instead (the toggle's own match is hidden
+   lap 2 it takes the match from the colour-mode toggle and waves it overhead instead (that match is hidden
    meanwhile, the button stays clickable). 19-23% / 69-73% of 32s = 38-46% of each 16s lap. */
 @media (min-width: 701px) {
   .shake-group { animation: updated-shake-alt 32s linear infinite; }
   .pow.pow-shake { animation-name: pow-shake-alt; animation-duration: 32s; }
   .runner .shake-pose { animation: runner-show-shake-alt 32s step-end infinite; }
   .runner .match-pose { animation: runner-show-match 32s step-end infinite; }
-  .scene-toggle svg { animation: toggle-match-taken 32s step-end infinite; }
+  .theme-toggle svg { animation: toggle-match-taken 32s step-end infinite; }
 }
 .runner .match-pose { visibility: hidden; }
 .runner .match-arm { transform-box: view-box; transform-origin: 10.8px 9px; animation: runner-match-wave .45s ease-in-out infinite alternate; }
@@ -892,4 +904,4 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes runner-show-match { 0% { visibility: hidden; } 69% { visibility: visible; } 73% { visibility: hidden; } }
 @keyframes toggle-match-taken { 0% { opacity: 1; } 69% { opacity: 0; } 73% { opacity: 1; } }
 .scene-off .runner .match-pose { display: none; }
-.scene-off .scene-toggle svg { animation: none; opacity: 1; }
+.scene-off .theme-toggle svg { animation: none; opacity: 1; }
