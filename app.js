@@ -79,6 +79,8 @@
     msCache = null;
     appleCache = null;
     advCache = null;
+    weightCache = null;
+    firehoseCache = null;
   }
   async function loadSuggestions() {
     try {
@@ -121,10 +123,33 @@
   const coverage = (it) => 1 + (it.also_covered_by || []).length;
 
   // Most-reported first; ties go to the most recent
-  // Front-page stories carry a score (weighted outlets, halving every 12 hours) and weighted outlets
-  // (aggregators count half, sister publications once); day files in History rank by source count
-  const rank = (a, b) => (b.score ?? coverage(b)) - (a.score ?? coverage(a)) || (b.published || "").localeCompare(a.published || "");
-  const isTop = (it) => (it.outlets != null ? it.outlets >= 2 : coverage(it) > 1);
+  // Weighted outlets, the same rule the fetcher uses for the front page: one vote per outlet,
+  // sister publications ("publisher") once, link aggregators ("aggregator") half. Front-page stories
+  // carry it (and a recency score); day files in History are weighted here from the catalog.
+  let weightCache = null;
+  function weightedOutlets(it) {
+    if (it.outlets != null) return it.outlets;
+    if (!weightCache) {
+      weightCache = new Map(state.catalog.map((s) => [s.name, { group: s.publisher || s.name, w: s.aggregator ? 0.5 : 1 }]));
+    }
+    const groups = new Map();
+    for (const name of sourcesOf(it)) {
+      const { group, w } = weightCache.get(name) || { group: name, w: 1 };
+      groups.set(group, Math.max(groups.get(group) || 0, w));
+    }
+    return [...groups.values()].reduce((a, b) => a + b, 0);
+  }
+  // Front page: by recency score. History (a finished day, where recency within it means little):
+  // by weighted outlets, then newest
+  const rank = (a, b) => (b.score ?? weightedOutlets(b)) - (a.score ?? weightedOutlets(a)) || (b.published || "").localeCompare(a.published || "");
+  const isTop = (it) => weightedOutlets(it) >= 2;
+  // High-volume update streams ("firehose": true: release notes, advisory feeds) that rarely overlap
+  // with other coverage; on the unfiltered front page their single-outlet posts get their own block
+  let firehoseCache = null;
+  const isFirehose = (it) => {
+    if (!firehoseCache) firehoseCache = new Set(state.catalog.filter((s) => s.firehose).map((s) => s.name));
+    return firehoseCache.has(it.source);
+  };
 
   const isCve = (it) => it.kind === "cve";
   // Tux mode keeps a story or CVE when a source that covered it is an open-source project or community
@@ -372,10 +397,18 @@
     // "Other stories"; multi-source ones also stay in "Most reported".
     const vulns = main.filter(hasCvssBadge)
       .sort((a, b) => b.cves[0].score - a.cves[0].score || (b.published || "").localeCompare(a.published || ""));
-    const rest = main.filter((it) => !isTop(it) && !hasCvssBadge(it));
     // Keep busy sources from crowding the list: show each source's newest few, fold the rest.
     // Picking that source or searching shows everything.
     const capped = !state.source && !state.query;
+    const single = main.filter((it) => !isTop(it) && !hasCvssBadge(it));
+    // Update streams go to their own collapsed block unless a topic, source or search is picked
+    const streamed = capped && !state.topic ? single.filter(isFirehose) : [];
+    const rest = streamed.length ? single.filter((it) => !isFirehose(it)) : single;
+    const byStream = new Map();
+    for (const it of streamed) byStream.set(it.source, [...(byStream.get(it.source) || []), it]);
+    const streams = [...byStream].sort((a, b) => a[0].localeCompare(b[0])).map(([src, items]) => el("details", { class: "more", ontoggle: (e) => addMoreToggles(e.target) },
+      el("summary", { text: `${items.length} from ${src}` }),
+      storyList(items)));
     const shown = [], folded = new Map(), perSource = {};
     for (const it of rest) {
       perSource[it.source] = (perSource[it.source] || 0) + 1;
@@ -399,6 +432,10 @@
       rest.length ? section(top.length || vulns.length ? "Other stories" : "Stories",
         `${rest.length} from a single outlet${state.dayData?.front_page ? " (or one outlet and a link aggregator)" : ""}, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
         shown, more, capped) : null,
+      streams.length ? el("section", { class: "news-section" },
+        el("div", { class: "section-head" }, el("h2", { text: "Release notes and advisories" }),
+          el("span", { class: "muted", text: `${streamed.length} posts from high-volume update feeds, newest first; picking a topic or source lists them with the other stories` })),
+        ...streams) : null,
       cveFirst ? null : cveBlock,
     ].filter(Boolean));
     addMoreToggles(box);
