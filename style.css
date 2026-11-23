@@ -37,7 +37,7 @@
   color-scheme: light;
 }
 /* Colour mode: html[data-theme] is light, medium or dark. A script in index.html's <head> sets it before
-   first paint from the saved choice (ind.theme) or, until one is picked, from the system setting.
+   first paint from the saved choice (ind.theme) or, until one is picked, chrome.
    The second match in the header cycles dark -> medium -> light. */
 :root[data-theme="medium"] {
   /* mid grey with dark text: dimmer than light, without going to a dark page */

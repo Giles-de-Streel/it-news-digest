@@ -6,7 +6,7 @@
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
-  const LS_THEME = "ind.theme"; // "dark", "medium", "light" or "chrome"; unset = follow the system setting
+  const LS_THEME = "ind.theme"; // "dark", "medium", "light" or "chrome"; unset = chrome (the first-visit default)
   const THEMES = ["dark", "medium", "light", "chrome"]; // the colour-mode match steps through these in order
   const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources are shown
   const LS_APPLE = "ind.apple"; // true = apple on: only Apple / Mac stories, CVEs and sources are shown
@@ -1057,10 +1057,6 @@
       const next = THEMES[(THEMES.indexOf(themeNow()) + 1) % THEMES.length];
       store.set(LS_THEME, next);
       setTheme(next);
-    });
-    // Until a mode is picked, follow the system setting when it changes
-    window.matchMedia?.("(prefers-color-scheme: dark)").addEventListener?.("change", (e) => {
-      if (!THEMES.includes(store.get(LS_THEME, ""))) setTheme(e.matches ? "dark" : "light");
     });
     $("#scene-toggle").addEventListener("click", () => {
       const off = document.documentElement.classList.toggle("scene-off");
