@@ -1165,7 +1165,7 @@
   // Clicking the sun or moon in the sky moves to the next season (see cycleSeason below).
   let season = document.documentElement.dataset.season || "summer";
   const roundColour = (t) => ({
-    spring: t < 0.3 ? "blossom" : t < 0.45 ? "blossom2" : t < 0.75 ? "green2" : "",
+    spring: t < 0.22 ? "blossom" : t < 0.34 ? "blossom2" : t < 0.47 ? "blossom3" : t < 0.6 ? "blossom4" : t < 0.82 ? "green2" : "",
     summer: t < 0.35 ? "green2" : t < 0.6 ? "green3" : "",
     autumn: t < 0.25 ? "yellow" : t < 0.5 ? "orange" : t < 0.7 ? "red" : t < 0.85 ? "brown" : "green3",
     winter: "", // snow-covered in CSS whatever the colour
@@ -1318,7 +1318,52 @@
   // Seasonal extras, in front of the scenery: snow (winter), drifting blossom petals (spring), butterflies
   // by day and fireflies by night (summer), falling leaves (autumn). Butterflies reuse the birds' flight.
   home.dataset.tint = Math.random().toFixed(3);
-  const SEASON_COLOURS = ["yellow", "brown", "orange", "red", "blossom", "blossom2", "green2", "green3"];
+  const SEASON_COLOURS = ["yellow", "brown", "orange", "red", "blossom", "blossom2", "blossom3", "blossom4", "green2", "green3"];
+  // Ground-level extras (snow piles, wildflowers) sit in front of the grass but behind the dogs and runners
+  const ground = (cls, viewBox, inner, styles) => {
+    const s = document.createElementNS(NS, "svg");
+    s.setAttribute("class", cls);
+    s.setAttribute("viewBox", viewBox);
+    s.setAttribute("aria-hidden", "true");
+    s.innerHTML = inner; // generated shapes, no feed data
+    Object.entries(styles).forEach(([k, v]) => s.style.setProperty(k, v));
+    track.insertBefore(s, track.querySelector(".pet"));
+  };
+  // Winter: lumpy snow piles from small drifts to big mounds
+  const snowPiles = () => {
+    const n = 6 + Math.floor(Math.random() * 6); // 6-11
+    for (let i = 0; i < n; i++) {
+      const big = Math.random() < 0.3;
+      const w = big ? rand(18, 34) : rand(5, 16);
+      const h = w * rand(0.22, big ? 0.42 : 0.5);
+      const bumps = 2 + Math.floor(w / 9);
+      // a soft mound: flat base, a few rounded bumps over the top
+      let d = `M0 ${h.toFixed(1)}`;
+      for (let k = 0; k < bumps; k++) {
+        const x1 = (w * (k + 0.5)) / bumps, x2 = (w * (k + 1)) / bumps;
+        const peak = h * (1 - rand(0.65, 1) * Math.sin(Math.PI * (k + 0.5) / bumps));
+        const end = k === bumps - 1 ? h : h * (1 - rand(0.45, 0.8) * Math.sin(Math.PI * (k + 1) / bumps));
+        d += `Q${x1.toFixed(1)} ${(peak - h * 0.25).toFixed(1)} ${x2.toFixed(1)} ${end.toFixed(1)}`;
+      }
+      d += "Z";
+      ground(`snowpile${!big && Math.random() < 0.35 ? " far" : ""}`, `0 0 ${w.toFixed(1)} ${h.toFixed(1)}`, `<path d="${d}"/>`,
+        { "--x": `${rand(0, 100).toFixed(1)}%`, "--w": `${w.toFixed(1)}px`, "--h": `${h.toFixed(1)}px` });
+    }
+  };
+  // Spring: little wildflowers on stems along the grass, in mixed colours
+  const wildflowers = () => {
+    const n = 12 + Math.floor(Math.random() * 10); // 12-21
+    for (let i = 0; i < n; i++) {
+      const h = rand(4, 7.5);
+      const petals = Array.from({ length: 5 }, (_, k) => {
+        const a = (k * 2 * Math.PI) / 5;
+        return `<circle class="petals" cx="${(3 + 1.25 * Math.cos(a)).toFixed(2)}" cy="${(2.5 + 1.25 * Math.sin(a)).toFixed(2)}" r="1.05"/>`;
+      }).join("");
+      ground(`wildflower f${1 + Math.floor(Math.random() * 5)}${Math.random() < 0.35 ? " far" : ""}`, `0 0 6 ${(h + 2.5).toFixed(1)}`,
+        `<path class="stem" d="M3 2.5V${(h + 2.5).toFixed(1)}"/>${petals}<circle class="centre" cx="3" cy="2.5" r=".75"/>`,
+        { "--x": `${rand(1, 99).toFixed(1)}%`, "--h": `${(h + 2.5).toFixed(1)}px` });
+    }
+  };
   const fx = (cls, styles, html = "") => {
     const e = document.createElement("div");
     e.className = cls;
@@ -1343,9 +1388,9 @@
       const c = roundColour(parseFloat(t.dataset.tint ?? Math.random()));
       if (c) t.classList.add(c);
     });
-    track.querySelectorAll(".fall, .butterfly, .firefly").forEach((e) => e.remove());
-    if (season === "winter") faller("snow", 18 + Math.floor(Math.random() * 10), [1.6, 3.2], 5, 11);
-    if (season === "spring") faller("petal", 7 + Math.floor(Math.random() * 5), [2.4, 3.6], 7, 13);
+    track.querySelectorAll(".fall, .butterfly, .firefly, .snowpile, .wildflower").forEach((e) => e.remove());
+    if (season === "winter") { snowPiles(); faller("snow", 18 + Math.floor(Math.random() * 10), [1.6, 3.2], 5, 11); }
+    if (season === "spring") { wildflowers(); faller("petal", 9 + Math.floor(Math.random() * 6), [2.4, 3.6], 7, 13); }
     if (season === "autumn") faller("leaf", 7 + Math.floor(Math.random() * 5), [3.2, 4.6], 6, 11);
     if (season === "summer") {
       const WINGS = '<svg viewBox="0 0 10 8"><path class="wing" d="M5 4C3.6 .4.6.2.6 2.4.6 4.2 2.6 4.6 5 4Zm0 0C6.4.4 9.4.2 9.4 2.4 9.4 4.2 7.4 4.6 5 4ZM5 4C3.8 5 1.8 7.4 3.2 7.6 4.2 7.8 4.8 5.6 5 4Zm0 0C6.2 5 8.2 7.4 6.8 7.6 5.8 7.8 5.2 5.6 5 4Z"/></svg>';
