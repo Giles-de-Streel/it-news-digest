@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg?v=2026102906" type="image/svg+xml">
   <link rel="icon" href="icon-192.png?v=2026102906" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="icon-192.png?v=2026102906">
-  <link rel="stylesheet" href="style.css?v=2026112309">
+  <link rel="stylesheet" href="style.css?v=2026112310">
   <script>
     // Before first paint: colour mode (saved ind.theme, else chrome on a first visit) and the header animation switch
     (function () {
@@ -26,9 +26,11 @@
       try { on = !!JSON.parse(localStorage.getItem("ind.scene") || "false"); } catch (e) {}
       if (!on) d.classList.add("scene-off");
       // Season for the header scenery, from the viewer's own date (northern hemisphere):
-      // Dec-Feb winter, Mar-May spring, Jun-Aug summer, Sep-Nov autumn. ?season=<name> previews another one.
+      // Dec-Feb winter, Mar-May spring, Jun-Aug summer, Sep-Nov autumn. ?season=<name> previews another one;
+      // clicking the sun or moon in the scenery cycles the seasons for this tab only (sessionStorage ind.season).
       var seasons = ["winter", "spring", "summer", "autumn"], q = "";
       try { q = new URLSearchParams(location.search).get("season") || ""; } catch (e) {}
+      try { if (seasons.indexOf(q) < 0) q = sessionStorage.getItem("ind.season") || ""; } catch (e) {}
       d.setAttribute("data-season", seasons.indexOf(q) >= 0 ? q : seasons[Math.floor(((new Date().getMonth() + 1) % 12) / 3)]);
     })();
   </script>
@@ -241,6 +243,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=2026112311"></script>
+  <script src="app.js?v=2026112312"></script>
 </body>
 </html>

@@ -1161,8 +1161,9 @@
     round: '<svg viewBox="0 0 16 22"><rect class="trunk" x="7" y="13" width="2" height="9" rx=".6"/><path class="leaves" d="M8 1.5a4.2 4.2 0 0 1 4 3 3.6 3.6 0 0 1 2.2 6 3.4 3.4 0 0 1-3.4 4H5.2a3.4 3.4 0 0 1-3.4-4 3.6 3.6 0 0 1 2.2-6 4.2 4.2 0 0 1 4-3z"/></svg>',
   };
   const rand = (lo, hi) => lo + Math.random() * (hi - lo);
-  // Season (html[data-season], set in <head> from the viewer's date) picks the leaf colours and the extras
-  const season = document.documentElement.dataset.season || "summer";
+  // Season (html[data-season], set in <head> from the viewer's date) picks the leaf colours and the extras.
+  // Clicking the sun or moon in the sky moves to the next season (see cycleSeason below).
+  let season = document.documentElement.dataset.season || "summer";
   const roundColour = (t) => ({
     spring: t < 0.3 ? "blossom" : t < 0.45 ? "blossom2" : t < 0.75 ? "green2" : "",
     summer: t < 0.35 ? "green2" : t < 0.6 ? "green3" : "",
@@ -1188,6 +1189,7 @@
     t.className = cls.filter(Boolean).join(" ");
     t.style.setProperty("--x", `${x.toFixed(1)}%`);
     t.style.setProperty("--h", `${Math.round(rand(12, 26))}px`);
+    if (!conifer) t.dataset.tint = tint.toFixed(3); // kept so a season change can recolour the tree
     t.innerHTML = conifer ? SVG.conifer : SVG.round; // constant markup, no feed data
     track.insertBefore(t, home);
   }
@@ -1315,9 +1317,8 @@
 
   // Seasonal extras, in front of the scenery: snow (winter), drifting blossom petals (spring), butterflies
   // by day and fireflies by night (summer), falling leaves (autumn). Butterflies reuse the birds' flight.
-  home.classList.remove("yellow", "brown");
-  const homeColour = roundColour(Math.random());
-  if (homeColour) home.classList.add(homeColour);
+  home.dataset.tint = Math.random().toFixed(3);
+  const SEASON_COLOURS = ["yellow", "brown", "orange", "red", "blossom", "blossom2", "green2", "green3"];
   const fx = (cls, styles, html = "") => {
     const e = document.createElement("div");
     e.className = cls;
@@ -1335,24 +1336,49 @@
         "--sway": `${(rand(4, 14) * (Math.random() < 0.5 ? -1 : 1)).toFixed(1)}px`, "--spin": `${Math.round(rand(180, 540))}deg` });
     }
   };
-  if (season === "winter") faller("snow", 18 + Math.floor(Math.random() * 10), [1.6, 3.2], 5, 11);
-  if (season === "spring") faller("petal", 7 + Math.floor(Math.random() * 5), [2.4, 3.6], 7, 13);
-  if (season === "autumn") faller("leaf", 7 + Math.floor(Math.random() * 5), [3.2, 4.6], 6, 11);
-  if (season === "summer") {
-    const WINGS = '<svg viewBox="0 0 10 8"><path class="wing" d="M5 4C3.6 .4.6.2.6 2.4.6 4.2 2.6 4.6 5 4Zm0 0C6.4.4 9.4.2 9.4 2.4 9.4 4.2 7.4 4.6 5 4ZM5 4C3.8 5 1.8 7.4 3.2 7.6 4.2 7.8 4.8 5.6 5 4Zm0 0C6.2 5 8.2 7.4 6.8 7.6 5.8 7.8 5.2 5.6 5 4Z"/></svg>';
-    const butterflies = 2 + Math.floor(Math.random() * 2);
-    for (let i = 0; i < butterflies; i++) {
-      const dur = Math.round(rand(26, 44));
-      fx(`bird butterfly b${1 + (i % 3)}`, { "--y": `${rand(13, 22).toFixed(1)}px`, "--bw": `${Math.round(rand(6, 8))}px`,
-        "--dur": `${dur}s`, "--delay": `${(-rand(0, dur)).toFixed(1)}s`, "--dir": Math.random() < 0.5 ? "normal" : "reverse",
-        "--flap": `${rand(0.12, 0.2).toFixed(2)}s` }, WINGS);
+  // (Re)paints the current season: round-tree colours from each tree's saved tint, then fresh extras
+  const paintSeason = () => {
+    track.querySelectorAll(".tree:not(.conifer)").forEach((t) => {
+      t.classList.remove(...SEASON_COLOURS);
+      const c = roundColour(parseFloat(t.dataset.tint ?? Math.random()));
+      if (c) t.classList.add(c);
+    });
+    track.querySelectorAll(".fall, .butterfly, .firefly").forEach((e) => e.remove());
+    if (season === "winter") faller("snow", 18 + Math.floor(Math.random() * 10), [1.6, 3.2], 5, 11);
+    if (season === "spring") faller("petal", 7 + Math.floor(Math.random() * 5), [2.4, 3.6], 7, 13);
+    if (season === "autumn") faller("leaf", 7 + Math.floor(Math.random() * 5), [3.2, 4.6], 6, 11);
+    if (season === "summer") {
+      const WINGS = '<svg viewBox="0 0 10 8"><path class="wing" d="M5 4C3.6 .4.6.2.6 2.4.6 4.2 2.6 4.6 5 4Zm0 0C6.4.4 9.4.2 9.4 2.4 9.4 4.2 7.4 4.6 5 4ZM5 4C3.8 5 1.8 7.4 3.2 7.6 4.2 7.8 4.8 5.6 5 4Zm0 0C6.2 5 8.2 7.4 6.8 7.6 5.8 7.8 5.2 5.6 5 4Z"/></svg>';
+      const butterflies = 2 + Math.floor(Math.random() * 2);
+      for (let i = 0; i < butterflies; i++) {
+        const dur = Math.round(rand(26, 44));
+        fx(`bird butterfly b${1 + (i % 3)}`, { "--y": `${rand(13, 22).toFixed(1)}px`, "--bw": `${Math.round(rand(6, 8))}px`,
+          "--dur": `${dur}s`, "--delay": `${(-rand(0, dur)).toFixed(1)}s`, "--dir": Math.random() < 0.5 ? "normal" : "reverse",
+          "--flap": `${rand(0.12, 0.2).toFixed(2)}s` }, WINGS);
+      }
+      for (let i = 0; i < 7; i++) {
+        fx("firefly", { "--x": `${rand(2, 98).toFixed(1)}%`, "--y": `${rand(8, 26).toFixed(1)}px`,
+          "--dur": `${rand(2.2, 4.2).toFixed(1)}s`, "--delay": `${(-rand(0, 4)).toFixed(1)}s`,
+          "--drift": `${(rand(4, 12) * (Math.random() < 0.5 ? -1 : 1)).toFixed(1)}px` });
+      }
     }
-    for (let i = 0; i < 7; i++) {
-      fx("firefly", { "--x": `${rand(2, 98).toFixed(1)}%`, "--y": `${rand(8, 26).toFixed(1)}px`,
-        "--dur": `${rand(2.2, 4.2).toFixed(1)}s`, "--delay": `${(-rand(0, 4)).toFixed(1)}s`,
-        "--drift": `${(rand(4, 12) * (Math.random() < 0.5 ? -1 : 1)).toFixed(1)}px` });
-    }
-  }
+  };
+  paintSeason();
+  // Hidden season switch: clicking the sun or moon steps winter -> spring -> summer -> autumn; four clicks
+  // come back to the real season. The override lasts for this tab only (sessionStorage, read in <head>).
+  const SEASONS = ["winter", "spring", "summer", "autumn"];
+  const realSeason = SEASONS[Math.floor(((new Date().getMonth() + 1) % 12) / 3)];
+  const cycleSeason = () => {
+    season = SEASONS[(SEASONS.indexOf(season) + 1) % SEASONS.length];
+    document.documentElement.dataset.season = season;
+    try {
+      if (season === realSeason) sessionStorage.removeItem("ind.season");
+      else sessionStorage.setItem("ind.season", season);
+    } catch { /* storage blocked: the change still applies until reload */ }
+    paintSeason();
+  };
+  sun.addEventListener("click", cycleSeason);
+  moon.addEventListener("click", cycleSeason);
 
   // The pup picks one of these trees to pee on while running back left (the first dog uses the middle
   // tree on the way right). Prefer trees that stay visible on phones and aren't too near either end.

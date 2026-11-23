@@ -484,6 +484,8 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .sky-cloud { position: absolute; top: var(--y); left: calc(var(--x)); width: var(--w); height: calc(var(--w) * 10 / 24);
              fill: var(--cloud); stroke: var(--cloud-edge); stroke-width: .8; animation: cloud-drift var(--dur) ease-in-out infinite alternate; }
 @keyframes cloud-drift { from { transform: translateX(0); } to { transform: translateX(var(--drift)); } }
+/* the sun and moon take clicks (hidden season switch, app.js cycleSeason); nothing drifting past may block them */
+.sky-cloud, .bird, .firefly { pointer-events: none; }
 .grass { position: absolute; left: calc(var(--x) - var(--w) / 2); top: calc(50% + 12.5px - var(--h)); width: var(--w); height: var(--h);
          overflow: visible; fill: none; stroke-width: 1; stroke-linecap: round; }
 .grass.g1 { stroke: var(--heat-1); }
