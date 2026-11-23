@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-22T23:46:13+00:00",
+ "generated": "2026-11-23T00:01:05+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 37,
+   "recent": 36,
    "error": null
   },
   {
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1206,7 +1206,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 2,
+   "recent": 6,
    "error": null
   },
   {
@@ -1343,9 +1343,9 @@
   },
   {
    "source": "Graham Cluley",
-   "fetched": 0,
+   "fetched": 20,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Bot Verification\"); likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Have I Been Pwned breaches",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 13,
+   "fetched": 91,
+   "recent": 15,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 21,
-   "recent": 2,
+   "fetched": 18,
+   "recent": 0,
    "error": null
   },
   {
@@ -4564,7 +4564,14 @@
    "source_category": "Linux admin",
    "published": "2026-11-22T12:24:52+00:00",
    "summary": "9to5Linux Weekly Roundup for November 22nd, 2026, brings news about AlmaLinux OS 10.3, FFmpeg 9.1, Rocky Linux 10.3, Shotcut 26.11, AV Linux 25.3, Wireshark 4.6.10, Peppermint OS Debian, Calibre 9.19, BackBox Linux 10, Shelly 3.4, Debian 13.8, ClamAV 1.5.5, DietPi 10.9, fwupd 2.1.10, CachyOS Package Installer 2.0,…",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fe70e11cd2d8",
+     "source": "Linuxiac",
+     "title": "Linuxiac Weekly Wrap-Up: Week 47, 2026 (November 16 – 22)",
+     "url": "https://linuxiac.com/linuxiac-weekly-wrap-up-week-47-2026-november-16-22/"
+    }
+   ],
    "topics": [
     "Linux & open source"
    ]
@@ -5925,11 +5932,70 @@
    "exploit": {
     "epss": {
      "id": "CVE-2026-125396",
-     "score": 0.00164,
-     "percentile": 0.05606,
-     "date": "2026-11-21"
+     "score": 0.00347,
+     "percentile": 0.28835,
+     "date": "2026-11-22"
     }
    }
+  },
+  {
+   "id": "791eea4767a7",
+   "title": "DSA-6652-1 linux - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00574.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6652-1",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Pen testing & red team"
+   ]
+  },
+  {
+   "id": "c73a940946e5",
+   "title": "DSA-6651-1 libeot - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00573.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "Multiple security vulnerabilities were discovered in Libeot, a library for parsing Embedded OpenType files and converting them to other formats, which could result in denial of service or potentially the execution of arbitrary code. https://security-tracker.debian.org/tracker/DSA-6651-1",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "031f5183f1f8",
+   "title": "DSA-6650-1 krb5 - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00572.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "Multiple security vulnerabilities were discovered in the MIT reference implementation of Kerberos, which could result in authorisation bypass, denial of service or information disclosure. https://security-tracker.debian.org/tracker/DSA-6650-1",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "System administration"
+   ]
+  },
+  {
+   "id": "395e87441ed0",
+   "title": "DSA-6649-1 anope - security update",
+   "url": "https://lists.debian.org/debian-security-announce/2026/msg00571.html",
+   "source": "Debian security advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-22T00:00:00+00:00",
+   "summary": "Several vulnerabilities were discovered in anope, a set of IRC services designed for flexibility and ease of use, which could result in nickname impersonation/takeover, account takeovers, information leaks, email confirmation bypass, SQL injections, LDAP injections and denial of service.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
   },
   {
    "id": "c1675fe83fc0",
