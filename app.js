@@ -282,7 +282,7 @@
   function renderFilterHead(count, cveCount = 0) {
     const head = $("#filter-head");
     const filtered = state.topic || state.source || state.query || state.tux || state.clippy || state.apple;
-    if (!filtered) { head.hidden = true; return; }
+    if (!filtered) { head.hidden = true; head.dataset.mode = ""; return; }
     const [name, desc] = state.topic === ADVISORIES ? advisoryInfo()
       : state.topic ? (TOPIC_INFO[state.topic] || [state.topic, ""]) : ["All topics", ""];
     const extra = [
@@ -313,8 +313,11 @@
     const mode = state.clippy ? "clippy" : state.tux ? "tux" : state.apple ? "apple" : "";
     const mascot = mode ? $(`#${mode}-toggle svg`)?.cloneNode(true) : null;
     head.classList.toggle("mode-only", onlyTux || onlyClippy || onlyApple);
+    // the icon pops in only when a mode is switched on (or changed), not on every re-render while it stays on
+    const popIn = mode && head.dataset.mode !== mode;
+    head.dataset.mode = mode;
     head.replaceChildren(
-      ...(mascot ? [el("span", { class: `filter-mascot ${mode}-toggle`, "aria-pressed": "true", "aria-hidden": "true" }, mascot)] : []),
+      ...(mascot ? [el("span", { class: `filter-mascot ${mode}-toggle${popIn ? " pop" : ""}`, "aria-pressed": "true", "aria-hidden": "true" }, mascot)] : []),
       el("div", { class: "filter-head-text" },
         el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : onlyClippy ? "Microsoft only" : onlyApple ? "Apple only" : "Filtered" }),
         el("h2", { text: name }),
