@@ -408,21 +408,14 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .dice-result.win { color: var(--good); }
 .dice-pop .dice-opt { padding: 1px 8px; font-size: 12px; border-radius: 999px; min-width: 24px; }
 .dice-pop .dice-opt[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+/* a picked tree takes its dog's colour: grey for the grey dog, brown for the pup */
+.dice-pop .dice-dog .dice-opt[aria-pressed="true"] { background: var(--muted); border-color: var(--muted); color: var(--surface); }
+.dice-pop .dice-pup .dice-opt[aria-pressed="true"] { background: var(--pup); border-color: var(--pup); color: #fff; }
 .dice-pop .dice-opt:disabled { opacity: .35; cursor: default; }
 .dice-note { margin: 6px 0; color: var(--muted); font-size: 12px; }
 .dice-pop .dice-go { width: 100%; padding: 4px 10px; font-size: 13px; font-weight: 600; }
 .dice-pop .dice-go:disabled { opacity: .6; cursor: default; }
 .dice-result { margin: 4px 0 0; font-weight: 600; font-size: 12.5px; }
-/* tree numbers shown in the scenery while the betting card is open */
-.tree-tag { position: absolute; left: calc(var(--x) - 5px); top: max(0px, calc(50% + 12px - var(--h) - 12px)); width: 10px; height: 10px;
-            font: 700 8px/10px system-ui, sans-serif; text-align: center; color: var(--surface); background: var(--muted);
-            border-radius: 3px; pointer-events: none; }
-.tree-tag.mine { background: var(--muted); box-shadow: 0 0 0 1.5px var(--accent); }
-.tree-tag.hit { background: var(--good); }
-/* which dog went there: a dot in its colour under the number (grey dog left, pup right) */
-.tree-tag.by-dog::before, .tree-tag.by-pup::after { content: ""; position: absolute; top: 11px; width: 4px; height: 4px; border-radius: 50%; }
-.tree-tag.by-dog::before { left: 0; background: var(--muted); }
-.tree-tag.by-pup::after { right: 0; background: var(--pup); }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
 /* sun/moon icon: animation on/off (html.scene-off, saved as ind.scene); when on it shows the sun by day
    and the moon by night, from html[data-scene] (local clock) */

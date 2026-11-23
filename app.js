@@ -1489,7 +1489,7 @@
   // ---- Hidden dice game (dice icon right of Tux): bet a treat on which tree a dog will pee on. Treats are
   // pretend points saved in this browser (ind.treats). A bet re-picks both dogs' trees and restarts the lap
   // so the round can be watched; a lost bet costs 1 treat and a correct pick pays the odds (one tree out of N
-  // wins N-1 treats). The trees' numbers only show in the scenery once the bet is called.
+  // wins N-1 treats). Trees are counted left to right; no numbers are drawn in the scenery.
   const diceBtn = document.getElementById("dice-toggle");
   const wrap = diceBtn && diceBtn.closest(".updated-wrap");
   if (!diceBtn || !wrap) return;
@@ -1499,8 +1499,8 @@
   const numOf = (o) => numbered.indexOf(o) + 1;
   const getTreats = () => { try { const v = JSON.parse(localStorage.getItem("ind.treats") || "10"); return Number.isFinite(v) ? v : 10; } catch { return 10; } };
   const setTreats = (v) => { try { localStorage.setItem("ind.treats", JSON.stringify(v)); } catch { /* not saved */ } };
-  // picks: the tree bet on for each dog (null = no bet on that dog); hits: where each dog went last round
-  const bet = { picks: { dog: null, pup: null }, running: false, results: [], hits: null };
+  // picks: the tree bet on for each dog (null = no bet on that dog)
+  const bet = { picks: { dog: null, pup: null }, running: false, results: [] };
   const make = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const pop = make("div", "dice-pop");
   pop.hidden = true;
@@ -1509,29 +1509,12 @@
   wrap.appendChild(pop);
   const plural = (n) => `${n} ${Math.abs(n) === 1 ? "treat" : "treats"}`;
 
-  // Tree numbers in the scenery, shown only once a round has been called: green for where a dog peed, an
-  // outline for your picks, and a small dot in each dog's colour saying which dog went there
-  const showTags = (on) => {
-    track.querySelectorAll(".tree-tag").forEach((e) => e.remove());
-    if (!on || !bet.hits) return;
-    numbered.forEach((o, i) => {
-      const tag = make("span", "tree-tag", String(i + 1));
-      tag.style.setProperty("--x", `${o.x}%`);
-      tag.style.setProperty("--h", o.t.style.getPropertyValue("--h"));
-      if (bet.picks.dog === o || bet.picks.pup === o) tag.classList.add("mine");
-      if (bet.hits.dog === o || bet.hits.pup === o) tag.classList.add("hit");
-      if (bet.hits.dog === o) tag.classList.add("by-dog");
-      if (bet.hits.pup === o) tag.classList.add("by-pup");
-      track.appendChild(tag);
-    });
-  };
   const sceneOn = () => !document.documentElement.classList.contains("scene-off");
   const render = () => {
     pop.replaceChildren();
     pop.appendChild(make("div", "dice-title", "Place your bets"));
     if (!sceneOn()) {
       pop.appendChild(make("p", "dice-note", "The dogs are asleep. Turn on the header animation (the little stick figure) to play."));
-      showTags(false);
       return;
     }
     pop.appendChild(make("p", "dice-note", "Pick the tree you think each dog will pee on: one dog or both. Trees are numbered left to right."));
@@ -1553,7 +1536,6 @@
           : `The ${NAMES[k]} never goes to this tree`;
         b.addEventListener("click", () => {
           bet.picks[k] = bet.picks[k] === o ? null : o; // click the picked tree again to take the bet back
-          bet.hits = null; // a new pick hides the numbers again
           render();
         });
         trees.appendChild(b);
@@ -1570,7 +1552,6 @@
     go.addEventListener("click", play);
     pop.appendChild(go);
     bet.results.forEach((r) => pop.appendChild(make("p", `dice-result ${r.win ? "win" : "loss"}`, r.text)));
-    showTags(!bet.running);
   };
   function play() {
     const ks = ["dog", "pup"].filter((k) => bet.picks[k]);
@@ -1578,7 +1559,6 @@
     if (getTreats() < ks.length) setTreats(getTreats() + 3); // running low: the dogs feel sorry for you
     bet.running = true;
     bet.results = [];
-    bet.hits = null;
     peeAt = pickTrees();
     // restart every lap-synced animation (16 s runner/dogs, 32 s alternating gags) so the round starts now
     document.getAnimations().forEach((an) => {
@@ -1599,7 +1579,6 @@
       const now = getTreats() + change;
       setTreats(now);
       bet.results.push({ win: change > 0, text: `${change > 0 ? "+" : ""}${change} this round. You have ${plural(now)}.` });
-      bet.hits = { ...chosen };
       bet.running = false;
       if (!pop.hidden) render();
     }, Math.max(...ks.map((k) => when[k])) + 700);
@@ -1607,7 +1586,7 @@
   const open = (on) => {
     pop.hidden = !on;
     diceBtn.setAttribute("aria-expanded", String(on));
-    if (on) render(); else showTags(false);
+    if (on) render();
   };
   diceBtn.setAttribute("aria-expanded", "false");
   diceBtn.addEventListener("click", (e) => { e.stopPropagation(); open(pop.hidden); });
