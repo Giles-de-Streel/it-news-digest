@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-23T03:31:14+00:00",
+ "generated": "2026-11-23T03:46:14+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -101,9 +101,9 @@
   },
   {
    "source": "Slashdot",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: no element found: line 261, column 54"
+   "fetched": 15,
+   "recent": 15,
+   "error": null
   },
   {
    "source": "CircleID",
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 108,
-   "recent": 24,
+   "fetched": 114,
+   "recent": 29,
    "error": null
   },
   {
@@ -1884,13 +1884,13 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 13,
+   "fetched": 93,
+   "recent": 15,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,104 @@
   }
  ],
  "items": [
+  {
+   "id": "4212129a2b7e",
+   "title": "RHSA-2026:102182: Important: kernel security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102182",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:44:25+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "3b9c3a437fb1",
+   "title": "RHSA-2026:102172: Important: thunderbird security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102172",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:41:10+00:00",
+   "summary": "An update for thunderbird is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ad8dcb865a09",
+   "title": "RHSA-2026:102162: Important: libgsf security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102162",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:35:40+00:00",
+   "summary": "An update for libgsf is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "8fb1319afc44",
+   "title": "RHSA-2026:102186: Important: git-lfs security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102186",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:32:40+00:00",
+   "summary": "An update for git-lfs is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "f2cff95baf29",
+   "title": "RHSA-2026:102180: Important: nodejs22 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102180",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:32:15+00:00",
+   "summary": "An update for nodejs22 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "a88e54c5d7a4",
+   "title": "RHSA-2026:102176: Important: xdg-desktop-portal security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102176",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:30:25+00:00",
+   "summary": "An update for xdg-desktop-portal is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "6a280240d18d",
+   "title": "AI Demand Tightens PCB Supply as Raw Material Shortages Outpace Factory Expansion",
+   "url": "https://joho-todai.com/en/ai-demand-pcb-supply-shortage-materials/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T03:27:57+00:00",
+   "summary": "High-layer-count boards for AI servers consume large volumes of glass fabric, resin, and copper foil, with the effects spreading to supplies for automotive and medical equipment.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
   {
    "id": "9a72118eb07d",
    "title": "RHSA-2026:102165: Important: xdg-desktop-portal security update",
@@ -2570,6 +2668,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "4eadd743e891",
+   "title": "South Korean Education Minister Resigns Over Last-Minute AI Cheating Rule Changes; President Approves Resignation and Orders Follow-Up",
+   "url": "https://joho-todai.com/en/korean-education-minister-resigns-ai-cheating-policy/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T03:10:57+00:00",
+   "summary": "Measures against generative AI cheating in South Korea's college entrance exam were changed through the day before the test, causing confusion among examinees and teachers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education"
    ]
   },
   {
@@ -2784,6 +2896,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "4a3c44379f80",
+   "title": "OpenAI Chief Scientist Proposes Shared Limits on AI Development Using Prediction Loss as a Cross-Company Metric",
+   "url": "https://joho-todai.com/en/openai-chief-scientist-ai-development-common-ceiling-proposal/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T02:06:06+00:00",
+   "summary": "OpenAI's chief scientist proposed making pretraining prediction loss a shared industry progress metric and setting development limits that companies would not cross until technology for understanding and monitoring AI behavior reaches a defined level.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -4646,7 +4771,14 @@
    "source_category": "Security",
    "published": "2026-11-22T15:43:04+00:00",
    "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "b2f7c7c4ba9b",
+     "source": "Joho no Todai (English)",
+     "title": "Cleverbridge Payment Card Breach Exposed CVVs, Customer Notice Shows; Some Malwarebytes Customers Affected",
+     "url": "https://joho-todai.com/en/cleverbridge-payment-card-breach-cvv-malwarebytes/"
+    }
+   ],
    "topics": [
     "Ransomware & breaches"
    ]
@@ -5211,6 +5343,12 @@
      "source": "Phoronix",
      "title": "CachyOS November 2026 Released With EAC Linux v2 Support, New Recovery Tool",
      "url": "https://www.phoronix.com/news/CachyOS-November-2026"
+    },
+    {
+     "id": "3119442e0e15",
+     "source": "Joho no Todai (English)",
+     "title": "CachyOS November Release Adds Dedicated linux-cachyos-eac Kernel and USB-Free Btrfs Recovery",
+     "url": "https://joho-todai.com/en/cachyos-november-eac-kernel-btrfs-recovery/"
     }
    ],
    "topics": [
