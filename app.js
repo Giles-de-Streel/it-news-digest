@@ -1426,17 +1426,17 @@
   moon.addEventListener("click", cycleSeason);
 
   // ---- Dogs: each picks a random tree to pee on, the grey dog on the way right and the pup on the way back
-  // left. Trees that stay visible on phones and aren't too near either end are used. The grey dog's tree is
+  // left, from any tree not too near either end (those trees are kept visible on phones too). The grey dog's tree is
   // kept left of ~62% because it jumps at 30% of the lap at a fixed spot (~70% across).
   const dog = track.querySelector(".pet:not(.pup)");
   const pup = track.querySelector(".pet.pup");
-  const allTrees = [...track.querySelectorAll(".tree[style]")].map((t) => ({ t, x: parseFloat(t.style.getPropertyValue("--x")) }));
+  // every tree, including the fixed one in the middle (no inline --x: CSS puts it at 50%)
+  const allTrees = [...track.querySelectorAll(".tree")].map((t) => ({ t, x: parseFloat(t.style.getPropertyValue("--x")) || 50 }));
   if (!dog || !pup || !allTrees.length) return;
   const pick = (list) => list[Math.floor(Math.random() * list.length)];
   const poolFor = (lo, hi) => {
     const inRange = allTrees.filter((o) => o.x >= lo && o.x <= hi);
-    const near = inRange.filter((o) => !o.t.classList.contains("far"));
-    const list = near.length >= 2 ? near : inRange.length ? inRange : allTrees;
+    const list = inRange.length ? inRange : allTrees;
     list.forEach((o) => o.t.classList.remove("far")); // a tree a dog can pick must be there on phones too
     return [...list].sort((p, q) => p.x - q.x);
   };
@@ -1495,8 +1495,10 @@
   if (!diceBtn || !wrap) return;
   const LAP = 16000, DOG_DELAY = 15500; // ms: lap length, and the grey dog's head start (animation-delay -15.5s)
   const NAMES = { dog: "grey dog", pup: "brown pup" };
-  const numbered = [...new Set([...POOLS.dog, ...POOLS.pup])].sort((p, q) => p.x - q.x); // trees 1..N, left to right
-  const numOf = (o) => numbered.indexOf(o) + 1;
+  // trees 1..N = every tree you can see, left to right (some faint ones are hidden on phones); the ones a dog
+  // never visits (near either end) are greyed out in its row
+  const visibleTrees = () => allTrees.filter((o) => getComputedStyle(o.t).display !== "none").sort((p, q) => p.x - q.x);
+  const numOf = (o) => visibleTrees().indexOf(o) + 1;
   const getTreats = () => { try { const v = JSON.parse(localStorage.getItem("ind.treats") || "10"); return Number.isFinite(v) ? v : 10; } catch { return 10; } };
   const setTreats = (v) => { try { localStorage.setItem("ind.treats", JSON.stringify(v)); } catch { /* not saved */ } };
   // picks: the tree bet on for each dog (null = no bet on that dog)
@@ -1525,7 +1527,7 @@
       label.append(make("i", "dice-swatch"), NAMES[k][0].toUpperCase() + NAMES[k].slice(1));
       row.appendChild(label);
       const trees = make("span", "dice-trees");
-      numbered.forEach((o) => {
+      visibleTrees().forEach((o) => {
         const can = pool.includes(o);
         const b = make("button", "dice-opt dice-tree", String(numOf(o)));
         b.type = "button";
