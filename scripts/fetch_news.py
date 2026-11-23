@@ -831,6 +831,58 @@ def relead(items, sources):
     return changed
 
 
+# Follow-ups: single-source pieces that react to a big story (aggregators such as Techmeme post a
+# headline for each quote, reaction and side detail: "President Trump says Nvidia made the correct
+# decision", "Source: Trump dialed into the board meeting"). They're marked follow_up_of the big
+# story and the page lists them under it instead of as separate stories.
+FOLLOW_UP_MIN_SOURCES = 4      # only stories this widely covered collect follow-ups
+FOLLOW_UP_CORE_SHARE = 0.4     # a core word appears in at least this share of the story's headlines
+FOLLOW_UP_CONCENTRATION = 0.5  # ...and at least this share of the day's uses of the word are in the story
+FOLLOW_UP_SKIP_CATEGORIES = {"Vendor advisories", "Cloud status", "Vulnerabilities"}  # stay listed on their own
+
+
+def mark_follow_ups(items, sources):
+    """Set follow_up_of (the big story's id) on single-source stories whose headline contains at least
+    half (and at least 2) of a big story's distinctive core words; clear it everywhere else. Recomputed
+    from scratch every run, so it follows headline changes. Returns the number of follow-ups."""
+    cat_of = {s["name"]: s.get("category", "") for s in sources}
+    for it in items:
+        it.pop("follow_up_of", None)
+    day_freq = {}
+    for s in items:
+        for m in _members(s):
+            for w in title_tokens(m["title"]):
+                day_freq[w] = day_freq.get(w, 0) + 1
+    cores = []
+    for big in items:
+        if big.get("kind") == "cve" or 1 + len(big.get("also_covered_by", [])) < FOLLOW_UP_MIN_SOURCES:
+            continue
+        heads = [title_tokens(m["title"]) for m in _members(big)]
+        count = {}
+        for toks in heads:
+            for w in toks:
+                count[w] = count.get(w, 0) + 1
+        core = {w for w, c in count.items()
+                if c >= FOLLOW_UP_CORE_SHARE * len(heads) and c >= FOLLOW_UP_CONCENTRATION * day_freq[w]}
+        if len(core) >= 2:
+            cores.append((big, core))
+    marked = 0
+    for it in items:
+        if (it.get("also_covered_by") or it.get("kind") == "cve"
+                or (it.get("source_category") or cat_of.get(it["source"], "")) in FOLLOW_UP_SKIP_CATEGORIES):
+            continue
+        toks = title_tokens(it["title"])
+        best, best_hits = None, 0
+        for big, core in cores:
+            hits = len(toks & core)
+            if hits >= max(2, math.ceil(len(core) / 2)) and hits > best_hits:
+                best, best_hits = big, hits
+        if best is not None:
+            it["follow_up_of"] = best["id"]
+            marked += 1
+    return marked
+
+
 def retag(items, sources):
     """Re-run topic tagging on every story of the day, so stories saved by earlier runs follow the
     current TOPICS/CATEGORY_TOPICS rules and pick up categories of sources merged in later.
@@ -905,6 +957,7 @@ def main():
     merged = merge_day(existing, clustered)
     merged, _ = dedupe_articles(merged)
     relead(merged, sources)
+    follow_ups = mark_follow_ups(merged, sources)
     retag(merged, sources)
     cve_note = add_cve_scores(merged)
     exploit_note = add_exploit_signals(merged, sources)
@@ -925,7 +978,7 @@ def main():
     (ROOT / "data" / "index.json").write_text(json.dumps({"days": index}, indent=1) + "\n", encoding="utf-8")
 
     failed = [s for s in status if s["error"]]
-    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources); {cve_note}; {exploit_note}; {discovery_note}")
+    print(f"{day}: {len(merged)} stories ({len(items)} recent articles from {len(sources) - len(failed)}/{len(sources)} sources, {follow_ups} follow-ups); {cve_note}; {exploit_note}; {discovery_note}")
     for s in failed:
         print(f"  FAILED {s['source']}: {s['error']}", file=sys.stderr)
     # Fail the run only if every source failed

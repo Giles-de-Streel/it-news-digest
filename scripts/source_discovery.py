@@ -57,6 +57,20 @@ DECLINED = {
     "artificialanalysis.ai": "AI benchmark site, no feed",
     "ign.com": "consumer gaming and entertainment news (Game development covers the industry side)",
     "andros.dev": "personal hobby blog, about one post a month on mixed topics",
+    # Reviewed 2026-11-23
+    "mit.edu": "links spread across unrelated subdomains (math, OCW, CSAIL papers), no single news feed",
+    "phys.org": "general science news, not IT",
+    "kottke.org": "general culture blog",
+    "lithub.com": "literature",
+    "umich.edu": "law school repository",
+    "colossus.com": "investor interviews, one feed item",
+    "claude.ai": "product pages, 403 to scripts",
+    "borretti.me": "personal essays, mostly non-IT",
+    "computer.rip": "computing-history essays, occasional",
+    "linebender.org": "niche Rust GUI project blog",
+    "alperenkeles.com": "personal testing/verification essays, no feed",
+    "pwn.ai": "vulnerability research, no feed (posts reach the digest via Hacker News and Lobsters)",
+    "thinkingmachines.ai": "AI lab news, no feed (releases reach the digest via Techmeme and Hacker News)",
 }
 # Outlets with a paywall or registration wall on most articles; never suggested or checked
 PAYWALLED = {

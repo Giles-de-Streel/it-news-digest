@@ -321,9 +321,14 @@
     $("#topics-toggle").textContent = state.topic ? `Topic: ${state.topic}` : "Topics";
   }
 
+  // Follow-up pieces (follow_up_of: a big story's id, set by the fetcher) listed under that story;
+  // filled by renderNews, read by row() and card()
+  let followUps = new Map();
+
   function renderNews() {
     const items = newsItems();
     renderTopicNav(items);
+    followUps = new Map();
 
     const list = visibleItems();
     const cves = searchedCves();
@@ -345,12 +350,19 @@
       addMoreToggles(box);
       return;
     }
-    const top = list.filter((it) => coverage(it) > 1);
+    // Follow-ups move under their story while it's on the list; a search shows them as stories again
+    const ids = new Set(list.map((it) => it.id));
+    const main = state.query ? list : list.filter((it) => {
+      if (!it.follow_up_of || !ids.has(it.follow_up_of)) return true;
+      followUps.set(it.follow_up_of, [...(followUps.get(it.follow_up_of) || []), it]);
+      return false;
+    });
+    const top = main.filter((it) => coverage(it) > 1);
     // Every story with a CVSS badge, highest score first. Single-source ones move here from
     // "Other stories"; multi-source ones also stay in "Most reported".
-    const vulns = list.filter(hasCvssBadge)
+    const vulns = main.filter(hasCvssBadge)
       .sort((a, b) => b.cves[0].score - a.cves[0].score || (b.published || "").localeCompare(a.published || ""));
-    const rest = list.filter((it) => coverage(it) === 1 && !hasCvssBadge(it));
+    const rest = main.filter((it) => coverage(it) === 1 && !hasCvssBadge(it));
     // Keep busy sources from crowding the list: show each source's newest few, fold the rest.
     // Picking that source or searching shows everything.
     const capped = !state.source && !state.query;
@@ -581,9 +593,10 @@
     : el("div", { class: "cards" }, ...items.map(card)));
 
   // Every outlet covering a story, each linked to its own article (lead source first); starts hidden
-  function sourcesPanel(it) {
+  function sourcesPanel(it, fu = []) {
     const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || []), ...(it.extra_articles || [])];
-    const ul = el("ul", { class: "also-list source-list" }, ...all.map(sourceLine));
+    const ul = el("ul", { class: "also-list source-list" }, ...all.map(sourceLine),
+      ...(fu.length ? [el("li", { class: "also-head follow-head", text: "Follow-ups" }), ...fu.map(sourceLine)] : []));
     ul.hidden = true;
     return ul;
   }
@@ -598,13 +611,14 @@
   const heat = (n) => (n >= 6 ? "heat-4" : n >= 4 ? "heat-3" : n === 3 ? "heat-2" : "heat-1");
 
   // The "N sources" pill in List layout: a button that shows or hides the sources panel
-  function sourcesToggle(n, panel) {
-    const btn = el("button", { class: `count count-btn ${heat(n)}`, type: "button", "aria-expanded": "false", title: "Show the sources reporting this", text: `${n} sources ▾` });
+  function sourcesToggle(n, panel, fuCount = 0) {
+    const label = `${n} sources${fuCount ? ` · ${fuCount} follow-up${fuCount === 1 ? "" : "s"}` : ""}`;
+    const btn = el("button", { class: `count count-btn ${heat(n)}`, type: "button", "aria-expanded": "false", title: "Show the sources reporting this", text: `${label} ▾` });
     btn.addEventListener("click", () => {
       const open = panel.hidden;
       panel.hidden = !open;
       btn.setAttribute("aria-expanded", String(open));
-      btn.textContent = `${n} sources ${open ? "▴" : "▾"}`;
+      btn.textContent = `${label} ${open ? "▴" : "▾"}`;
     });
     return btn;
   }
@@ -613,8 +627,9 @@
   function row(it) {
     const also = it.also_covered_by || [];
     const n = coverage(it);
-    const panel = n > 1 ? sourcesPanel(it) : null;
-    const badges = [n > 1 ? sourcesToggle(n, panel) : null, kevBadge(it), cvssBadge(it), epssBadge(it)].filter(Boolean);
+    const fu = followUps.get(it.id) || [];
+    const panel = n > 1 ? sourcesPanel(it, fu) : null;
+    const badges = [n > 1 ? sourcesToggle(n, panel, fu.length) : null, kevBadge(it), cvssBadge(it), epssBadge(it)].filter(Boolean);
     return el("li", { class: `row${n > 1 ? " multi" : ""}` },
       el("div", { class: "row-main" },
         badges.length ? el("span", { class: "meta row-badges" }, ...badges) : null,
@@ -671,6 +686,7 @@
   function card(it) {
     // Other outlets, then follow-up articles from outlets already listed (not counted as sources)
     const also = [...(it.also_covered_by || []), ...(it.extra_articles || [])];
+    const fu = followUps.get(it.id) || [];
     const n = coverage(it);
     return el("article", { class: `card${n > 1 ? " multi" : ""}` },
       el("div", { class: "meta" },
@@ -685,6 +701,8 @@
       it.summary ? el("p", { class: "summary clamp", text: it.summary }) : null,
       also.length ? el("div", { class: "also-head", text: "Also reported by" }) : null,
       also.length ? el("ul", { class: "also-list" }, ...also.map(sourceLine)) : null,
+      fu.length ? el("div", { class: "also-head", text: "Follow-ups" }) : null,
+      fu.length ? el("ul", { class: "also-list" }, ...fu.map(sourceLine)) : null,
       el("div", { class: "tags" }, ...it.topics.map((t) => el("span", { class: "tag", text: t }))),
     );
   }
