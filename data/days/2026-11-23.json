@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T07:16:14+00:00",
+ "generated": "2026-11-23T07:31:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 7,
-   "recent": 7,
+   "fetched": 6,
+   "recent": 6,
    "error": null
   },
   {
@@ -329,9 +329,9 @@
   },
   {
    "source": "SQLServerCentral",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "fetched": 10,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "Oracle Security Alerts",
@@ -354,7 +354,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1140,7 +1140,7 @@
   {
    "source": "AskWoody",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1182,7 +1182,7 @@
   {
    "source": "Linux kernel releases",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1440,7 +1440,7 @@
   {
    "source": "ipSpace.net",
    "fetched": 1024,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 19,
    "recent": 0,
    "error": null
   },
@@ -2490,6 +2490,46 @@
  ],
  "items": [
   {
+   "id": "df1fd1dee01e",
+   "title": "Oracle 12c support in GoldenGate 26.4",
+   "url": "https://www.dbi-services.com/blog/oracle-12c-support-in-goldengate-26-4/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-23T07:22:00+00:00",
+   "summary": "While reading the certification matrix of GoldenGate 26ai, I noticed that it lists one 12c version for 26ai: 12.1.0.2. It appears in the row of the latest October 2026 minor release, 23.26.4.0.0.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1222c37e7365",
+   "title": "netlab 26.11: More Platforms, Less Ansible",
+   "url": "https://blog.ipspace.net/2026/11/netlab-26-11/?utm_source=atom_feed",
+   "source": "ipSpace.net",
+   "source_category": "Networking",
+   "published": "2026-11-23T07:22:00+00:00",
+   "summary": "netlab release 26.11 adds two new platforms: IP Infusion OcNOS by @victorkhgith , partially based on previous work by @roc-ops Extreme VOSS by @sdargoeuves Other major features include: The new netlab node command to start, stop, pause, or restart containers (by @Muddyblack ) Ansible-free operations for FRRouting,…",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "6e4ba48cae15",
+   "title": "How AI is redefining the speed, cost and efficiency of application modernization initiatives",
+   "url": "https://www.cio.com/article/4251205/how-ai-is-redefining-the-speed-cost-and-efficiency-of-application-modernization-initiatives.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-23T07:17:32+00:00",
+   "summary": "Mainframes have provided high reliability, availability and security to organisations for several decades, across industries. In fact, many mission-critical workloads still run on these systems, and they have continued to play a critical role even in the digital world.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "59e3ba68ba00",
    "title": "Ant Group Adds Video Health Checks and Wearables to AQ",
    "url": "https://pandaily.com/ant-group-aq-video-health-checks-wearables-international-plans",
@@ -2500,6 +2540,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "439adffe461e",
+   "title": "5.10.275: longterm",
+   "url": "https://www.kernel.org/",
+   "source": "Linux kernel releases",
+   "source_category": "Linux admin",
+   "published": "2026-11-23T07:08:40+00:00",
+   "summary": "Version: 5.10.275 (longterm) Released: 2026-11-23 Source: linux-5.10.275.tar.xz PGP Signature: linux-5.10.275.tar.sign Patch: full ( incremental ) ChangeLog: ChangeLog-5.10.275",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -2716,6 +2770,19 @@
    "source_category": "IT industry",
    "published": "2026-11-23T06:35:00+00:00",
    "summary": "With the flick of a switch, he smoked out competent PC maintenance skills",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7d63199dff84",
+   "title": "Spain Stops NoName057(16) From Getting a Physical Foothold",
+   "url": "https://securityaffairs.com/203756/hacktivism/spain-stops-noname05716-from-getting-a-physical-foothold.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-23T06:30:26+00:00",
+   "summary": "Spanish police arrested the alleged leader of NoName057(16) ‘s first physical cell in Spain, seizing weapons, ammunition and crypto wallets. Spain’s National Police arrested a man in Burgos last Tuesday, calling him the main instigator behind what would have been NoName057(16)’s first physical cell in the country.",
    "also_covered_by": [],
    "topics": [
     "General IT"
