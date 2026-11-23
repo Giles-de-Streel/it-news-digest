@@ -1,12 +1,12 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T09:02:19+00:00",
+ "generated": "2026-11-23T09:16:59+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -564,13 +564,13 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 3,
+   "recent": 0,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 98,
-   "recent": 55,
+   "fetched": 80,
+   "recent": 57,
    "error": null
   },
   {
@@ -804,7 +804,7 @@
   {
    "source": "Inside Higher Ed",
    "fetched": 10,
-   "recent": 0,
+   "recent": 10,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 10,
+   "recent": 8,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 15,
+   "fetched": 96,
+   "recent": 17,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -2411,9 +2411,9 @@
   },
   {
    "source": "Zscaler ThreatLabz",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Recorded Future",
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,63 @@
  ],
  "items": [
   {
+   "id": "a4c859e1aa57",
+   "title": "RHSA-2026:102232: Important: liblerc security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102232",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T09:12:11+00:00",
+   "summary": "An update for liblerc is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "b0e51417b8a4",
+   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-23T09:11:15+00:00",
+   "summary": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "d30e655ef2cb",
+   "title": "A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use (Rafe Rosner-Uddin/Financial Times)",
+   "url": "https://www.techmeme.com/261123/p6#a261123p6",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-23T09:05:00+00:00",
+   "summary": "Rafe Rosner-Uddin / Financial Times : A look at AECJ, an Amazon employee group with over 1,000 members that is stepping up efforts to slow Amazon's data center expansion and spark debate over AI use — Tech company's plans for rapid expansion face opposition from the public and its own employees",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "59276772156f",
+   "title": "RHSA-2026:102230: Important: liblerc security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102230",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T09:04:21+00:00",
+   "summary": "An update for liblerc is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "699a4d0989e0",
    "title": "Repairing a Cheap Rotary Evaporator for the Home Lab",
    "url": "https://hackaday.com/2026/11/23/repairing-a-cheap-rotary-evaporator-for-the-home-lab/",
@@ -2497,6 +2554,76 @@
    "source_category": "Embedded",
    "published": "2026-11-23T09:00:28+00:00",
    "summary": "After running through the chemical reactions required to get whatever substance you were targeting, it’ll often still be mixed in with a lot of solvent. Getting rid of this solvent …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "63a1d9ff6617",
+   "title": "Robotics component maker coprod raises $6M to take on robotics ‘integration hell’",
+   "url": "https://siliconangle.com/2026/11/23/robotics-component-maker-coprod-raises-6m-to-take-on-robotics-integration-hell/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-23T09:00:09+00:00",
+   "summary": "Robotics component maker coprod Inc. announced today that it has raised $6 million in new funding to reduce the time and costs associated with building new robotic platforms. The funding is intended to enable the company to bring its first line of components to market.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6da4b1a49d2b",
+   "title": "Your unit tests are paying an unnecessary DOM tax",
+   "url": "https://www.infoworld.com/article/4251136/your-unit-tests-are-paying-an-unnecessary-dom-tax.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-23T09:00:00+00:00",
+   "summary": "Open the test configuration of almost any front-end project and you’ll find one line that decides more about your CI bill than most of the code around it: environment: 'jsdom' . Unit and component tests for React, Vue, Angular, Svelte, and Solid apps rarely run in a real browser.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "55bfe7005266",
+   "title": "Could AI data centers help with the US senior housing crisis?",
+   "url": "https://www.cio.com/article/4251439/could-ai-data-centers-help-with-the-us-senior-housing-crisis.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-23T09:00:00+00:00",
+   "summary": "Two seemingly unrelated trends are creating major infrastructure challenges in the United States. One is familiar to virtually every CIO; the other may be less so. Less familiar, America’s demand for senior living communities is rising faster than developers are building them.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "f5e3bbc399cb",
+   "title": "Microsoft SQL Server Failover Clustering on VCF 9.1 VM Service: VCF Automation Manual Implementation (Part 3)",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/23/microsoft-sql-server-failover-clustering-on-vcf-9-1-vm-service-vcf-automation-manual-implementation-part-3/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-23T09:00:00+00:00",
+   "summary": "Introduction In this part of the series, we will build the two nodes MSSQL FCI Cluster via VMware Cloud Foundation (VCF) Automation and its IaaS Services Console. Part 1 focuses on Requirements, Topology and Methods. Part 2 focuses on the Supervisor direct implementation.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "Databases"
+   ]
+  },
+  {
+   "id": "750f9dacc2df",
+   "title": "“Investing in Israel is not charity, and it's not because people are Jewish. It's because it's good business” - www.calcalistech.com",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1mMVpQckFjSGxjd1ozY0xTY2tCelpmTUpzdG1xVDdraThtNk1YMlp4UnRHNzdtZUVIT2VFdDdOUUszYmt0VlRRRXZTS1A0T0VVN2xxSlFrNmlTUlVWdk1xUHBkdUxldTFI?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-23T08:59:00+00:00",
+   "summary": "“Investing in Israel is not charity, and it's not because people are Jewish. It's because it's good business” www.calcalistech.com",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2993,6 +3120,136 @@
    "source_category": "IT industry",
    "published": "2026-11-23T08:00:00+00:00",
    "summary": "This color laser from HP can deliver decent performance and strong results, but only if you don't mind tweaking its settings",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9e1a831cc649",
+   "title": "Arizona Universities Push Rush to Spring Semester",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/23/arizona-universities-defer-rush-spring-semester",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "ef0d772fdac1",
+   "title": "Purdue Professor and Family Found Dead of Gunshot Wounds",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/23/purdue-professor-and-family-found-dead-gunshot-wounds",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "92cef78e55f4",
+   "title": "Virginia Foxx Loses House Seat, Ending 20-Year Reign",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/23/virginia-foxx-loses-house-seat-ending-20-year-reign",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "79a14d5b63fd",
+   "title": "Tenured Auburn Faculty Must Undergo Review Every 6 Years",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/23/tenured-auburn-faculty-must-undergo-review-every-6-years",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "97aec4e37c9b",
+   "title": "Readers Respond",
+   "url": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/11/23/readers-respond",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b0b5231f2f6b",
+   "title": "It Is a Small Math Program. Yet There Are Those Who Love It.",
+   "url": "https://www.insidehighered.com/opinion/columns/public-scholar/2026/11/23/it-small-math-program-yet-there-are-those-who-love-it",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "587aaaa0e06a",
+   "title": "Student Mental Health Improving, but Slowly",
+   "url": "https://www.insidehighered.com/news/student-success/health-wellness/2026/11/23/student-mental-health-improving-slowly",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fc56d688704d",
+   "title": "The Number of Students From Crisis-Stricken Countries Rose This Year",
+   "url": "https://www.insidehighered.com/news/global/international-students-us/2026/11/23/number-students-crisis-stricken-countries-rising",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "93e0a0e29ef6",
+   "title": "Vaccine Injuries, 5G Harms and More: The Research Trump Is Funding",
+   "url": "https://www.insidehighered.com/news/government/science-research-policy/2026/11/23/vaccine-injuries-5g-harms-and-more-research",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "28131f5d3c28",
+   "title": "Florida Aims to Compel ‘Call to Action’ Response",
+   "url": "https://www.insidehighered.com/news/governance/state-oversight/2026/11/23/florida-aims-compel-call-action-response",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "",
    "also_covered_by": [],
    "topics": [
     "General IT"
