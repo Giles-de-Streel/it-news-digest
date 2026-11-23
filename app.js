@@ -6,8 +6,8 @@
   const LS_VIEW = "ind.view";
   const LS_LAYOUT = "ind.layout"; // "cards" or "list" (compact, one row per story)
   const LS_SCENE = "ind.scene"; // true = header animation turned on by lighting the match; off until then
-  const LS_THEME = "ind.theme"; // "dark", "medium" or "light"; unset = follow the system setting
-  const THEMES = ["dark", "medium", "light"]; // the colour-mode match steps through these in order
+  const LS_THEME = "ind.theme"; // "dark", "medium", "light" or "chrome"; unset = follow the system setting
+  const THEMES = ["dark", "medium", "light", "chrome"]; // the colour-mode match steps through these in order
   const LS_CLIPPY = "ind.clippy"; // true = paperclip on: only Microsoft/Windows stories, CVEs and sources are shown
   const LS_APPLE = "ind.apple"; // true = apple on: only Apple / Mac stories, CVEs and sources are shown
   const LS_TUX = "ind.tux"; // true = Tux on: only open-source stories, CVEs and sources are shown

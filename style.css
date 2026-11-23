@@ -98,6 +98,81 @@
     --heat-4-pill: #3b82f6; --heat-4-on: #030b1f;
     color-scheme: dark;
 }
+/* Chrome: polished-metal mode. Silver gradients with a bright top highlight on the page, header, cards,
+   rows and buttons, plus a slow sheen sweeping across the header. Text stays dark for contrast. */
+:root[data-theme="chrome"] {
+  --bg: #b9bec5;
+  --surface: #e9ecef;
+  --text: #111418;
+  --muted: #3d444d;
+  --border: #8e959e;
+  --accent: #0b4aa8;
+  --accent-soft: #c9d6ea;
+  --good: #0f5a2b;
+  --bad: #8e1b15;
+  --bad-strong: #a3221b;
+  --warn-strong: #9a4505;
+  --warn: #6e3404;
+  --kev: #7f1d1d;
+  --heat-1: #0f5a2b; --heat-1-soft: #c3dccb;
+  --heat-2: #4f4200; --heat-2-soft: #e4dcb4;
+  --heat-3: #6e3404; --heat-3-soft: #e6d0bc;
+  --heat-4: #8e1b15; --heat-4-soft: #e6c8c4;
+  --match-head: #9aa3ad; --theme-match-head: #c9ced4;
+  --chrome-hi: rgba(255, 255, 255, .95);
+  --chrome-lo: rgba(40, 46, 54, .35);
+  --chrome-metal: linear-gradient(180deg, #fbfcfd 0%, #e3e7eb 38%, #c7cdd4 52%, #dde2e7 70%, #f3f5f7 100%);
+  --chrome-card: linear-gradient(180deg, #f9fafb 0%, #eceff2 45%, #dfe3e7 55%, #eef0f3 100%);
+  color-scheme: light;
+}
+:root[data-theme="chrome"] body {
+  background: linear-gradient(160deg, #d9dde2 0%, #a7adb5 22%, #e8ebee 40%, #9ca3ab 58%, #d3d7dc 78%, #aeb4bb 100%) fixed;
+}
+:root[data-theme="chrome"] .topbar {
+  background: var(--chrome-metal);
+  border-bottom-color: #7d848d;
+  box-shadow: inset 0 1px 0 var(--chrome-hi), 0 2px 10px rgba(20, 24, 30, .25);
+  overflow: hidden;
+}
+:root[data-theme="chrome"] .topbar::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, .75) 50%, transparent 60%);
+  background-size: 250% 100%;
+  animation: chrome-sheen 7s ease-in-out infinite;
+}
+@keyframes chrome-sheen { 0% { background-position: 130% 0; } 60%, 100% { background-position: -30% 0; } }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="chrome"] .topbar::after { animation: none; display: none; } }
+:root[data-theme="chrome"] .card, :root[data-theme="chrome"] .cve, :root[data-theme="chrome"] .rows,
+:root[data-theme="chrome"] .src-table {
+  background: var(--chrome-card);
+  box-shadow: inset 0 1px 0 var(--chrome-hi), inset 0 -1px 0 var(--chrome-lo), 0 2px 6px rgba(20, 24, 30, .22);
+}
+/* plain buttons and fields only: the header icon toggles, nav items, More links and search clear stay bare */
+:root[data-theme="chrome"] button:not(.scene-toggle, .theme-toggle, .clippy-toggle, .apple-toggle, .tux-toggle, .more-toggle, .search-clear, .nav-item, .tabs button, .seg button, .count-btn, .chip.on),
+:root[data-theme="chrome"] select, :root[data-theme="chrome"] input:not([type="checkbox"], [type="radio"]) {
+  background: var(--chrome-metal);
+  box-shadow: inset 0 1px 0 var(--chrome-hi), 0 1px 2px rgba(20, 24, 30, .25);
+}
+:root[data-theme="chrome"] .tabs, :root[data-theme="chrome"] .seg {
+  background: linear-gradient(180deg, #a9b0b8, #c9ced4);
+  box-shadow: inset 0 1px 3px rgba(20, 24, 30, .35);
+}
+:root[data-theme="chrome"] .tabs button, :root[data-theme="chrome"] .seg button { background: transparent; box-shadow: none; }
+:root[data-theme="chrome"] .tabs button[aria-selected="true"], :root[data-theme="chrome"] .seg button[aria-pressed="true"] {
+  background: var(--chrome-metal);
+  box-shadow: inset 0 1px 0 var(--chrome-hi), 0 1px 3px rgba(20, 24, 30, .35);
+}
+/* source-count pills keep their colour, with a glossy top half */
+:root[data-theme="chrome"] .meta .count[class*="heat-"] {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .45) 0%, rgba(255, 255, 255, .12) 50%, rgba(0, 0, 0, .12) 51%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 2px rgba(20, 24, 30, .3);
+}
+:root[data-theme="chrome"] .chip.on {
+  background: linear-gradient(180deg, #3d7fd9 0%, #0b4aa8 55%, #083a85 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5);
+}
+/* keep the header content above the sheen */
+:root[data-theme="chrome"] .topbar-inner { position: relative; z-index: 1; }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -250,6 +325,10 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .theme-toggle[data-mode="dark"] .flame-size { transform: scale(.45); }
 .theme-toggle[data-mode="medium"] .flame-size { transform: scale(.72); }
 .theme-toggle[data-mode="light"] .flame-size { transform: scale(1.08); }
+/* chrome mode: full flame turned silver-white */
+.theme-toggle[data-mode="chrome"] .flame-size { transform: scale(1.08); }
+.theme-toggle[data-mode="chrome"] .flame-out { fill: #c3cad2; }
+.theme-toggle[data-mode="chrome"] .flame-in { fill: #ffffff; }
 @media (prefers-reduced-motion: reduce) { .theme-toggle .match-flame { animation: none; } .theme-toggle .flame-size { transition: none; } }
 /* paperclip toggle: on = every headline reads "It looks like you're ..." (ind.clippy) */
 .clippy-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 2px; border: 0; background: none; cursor: pointer; line-height: 0; }
