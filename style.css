@@ -25,6 +25,9 @@
   --sun: #f4b400; --moon: #b9c0cc; --cloud: #dfe4ea; --cloud-edge: #c4cbd4;
   --rock-1: #8d939b; --rock-2: #6f757d; --rock-3: #9c8468; --rock-4: #b7ab94; --rock-5: #5d6670; --bird: #3b4048;
   --shrub-1: #2f7d3b; --shrub-2: #6a9a2e; --shrub-3: #8c3b3b; --shrub-4: #6d5a8c; --shrub-5: #a8892a; --shrub-6: #3f6b5c;
+  /* seasonal scenery: autumn leaves, spring blossom, winter snow (edge keeps white snow visible on light pages) */
+  --tree-orange: #d9661a; --tree-red: #b8322a; --blossom: #f2a7c3; --blossom-2: #fbe3ec; --blossom-edge: #d77fa3;
+  --snow: #ffffff; --snow-edge: #9aabbd; --butterfly-1: #e8902a; --butterfly-2: #3f7fd6; --butterfly-3: #d6c22e; --firefly: #f6e05e;
   --heat-2: #6b5a00; --heat-2-soft: #f7efc9;
   --heat-3: #9a4a06; --heat-3-soft: #fbe6d2;
   --heat-4: #b3261e; --heat-4-soft: #f9dfdc;
@@ -89,6 +92,8 @@
     --sun: #f2c14e; --moon: #e9e4c9; --cloud: #3a414c; --cloud-edge: #4b5361;
     --rock-1: #9aa1aa; --rock-2: #7c838d; --rock-3: #a88f72; --rock-4: #c4b9a2; --rock-5: #6c7682; --bird: #c9ced6;
     --shrub-1: #4fae5f; --shrub-2: #93c95a; --shrub-3: #c46a6a; --shrub-4: #a08cc4; --shrub-5: #d4b24e; --shrub-6: #6fa596;
+    --tree-orange: #ec8a3c; --tree-red: #e0574c; --blossom: #f5b3cc; --blossom-2: #f7e6ee; --blossom-edge: #c0819c;
+    --snow: #e9eff6; --snow-edge: #7d8da0; --butterfly-1: #f2a64a; --butterfly-2: #6aa6e8; --butterfly-3: #e8d65a; --firefly: #fff27a;
     --heat-2: #e2c25a; --heat-2-soft: #332c10;
     --heat-3: #f0a960; --heat-3-soft: #3a2513;
     --heat-4: #f08a80; --heat-4-soft: #3d1c1a;
@@ -492,6 +497,46 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .rock.r1 { fill: var(--rock-1); } .rock.r2 { fill: var(--rock-2); } .rock.r3 { fill: var(--rock-3); }
 .rock.r4 { fill: var(--rock-4); } .rock.r5 { fill: var(--rock-5); }
 @media (max-width: 700px) { .rock.far { display: none; } }
+/* ---- seasons: html[data-season] (winter, spring, summer, autumn) from the viewer's date; the runner,
+   dogs, birds, sky and grass layout stay the same and only the scenery colours and extras change ---- */
+.tree.orange .leaves { fill: var(--tree-orange); }
+.tree.red .leaves { fill: var(--tree-red); }
+.tree.blossom .leaves { fill: var(--blossom); stroke: var(--blossom-edge); stroke-width: .5; }
+.tree.blossom2 .leaves { fill: var(--blossom-2); stroke: var(--blossom-edge); stroke-width: .5; }
+/* winter: round trees and shrubs snow-covered, snow on the conifers, frosty grass */
+:root[data-season="winter"] .tree:not(.conifer) .leaves { fill: var(--snow); stroke: var(--snow-edge); stroke-width: .6; }
+:root[data-season="winter"] .tree.conifer .leaves { stroke: var(--snow); stroke-width: 1; paint-order: stroke; }
+:root[data-season="winter"] .shrub { fill: var(--snow); stroke: var(--snow-edge); stroke-width: .5; }
+:root[data-season="winter"] .grass { stroke: var(--snow-edge); }
+/* spring: flowering shrubs in pinks and lilacs */
+:root[data-season="spring"] .shrub.s3, :root[data-season="spring"] .shrub.s5 { fill: var(--blossom); }
+/* autumn: shrubs turn too, grass goes straw */
+:root[data-season="autumn"] .shrub.s1, :root[data-season="autumn"] .shrub.s6 { fill: var(--tree-orange); }
+:root[data-season="autumn"] .shrub.s2 { fill: var(--tree-yellow); }
+:root[data-season="autumn"] .grass.g2 { stroke: var(--tree-yellow); }
+/* falling things (snow, petals, leaves): drop from the top to the ground line, swaying, then fade */
+.fall { position: absolute; top: -6px; left: var(--x); width: var(--sz); height: var(--sz); pointer-events: none;
+        animation: fall-drop var(--dur) linear var(--delay) infinite; }
+.fall::before { content: ""; display: block; width: 100%; height: 100%; animation: fall-sway calc(var(--dur) / 3) ease-in-out var(--delay) infinite alternate; }
+.fall.snow::before { border-radius: 50%; background: var(--snow); box-shadow: 0 0 0 .5px var(--snow-edge); }
+.fall.petal::before { border-radius: 60% 0 60% 0; background: var(--blossom); box-shadow: 0 0 0 .4px var(--blossom-edge); }
+.fall.leaf::before { border-radius: 0 70% 0 70%; background: var(--tree-orange); }
+.fall.leaf:nth-child(3n)::before { background: var(--tree-red); }
+.fall.leaf:nth-child(3n+1)::before { background: var(--tree-yellow); }
+@keyframes fall-drop { 0% { top: -6px; opacity: 0; } 8% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(50% + 10px); opacity: 0; } }
+@keyframes fall-sway { from { transform: translateX(calc(var(--sway) * -1)) rotate(0deg); } to { transform: translateX(var(--sway)) rotate(var(--spin)); } }
+/* summer: butterflies fly like the birds (same bird-fly path) by day; fireflies blink by night */
+.bird.butterfly svg { fill: var(--butterfly-1); stroke: none; transform-origin: 50% 50%; }
+.bird.butterfly.b2 svg { fill: var(--butterfly-2); }
+.bird.butterfly.b3 svg { fill: var(--butterfly-3); }
+.bird.butterfly { height: calc(var(--bw) * .8); }
+.bird.butterfly svg { animation-name: butterfly-flap; }
+@keyframes butterfly-flap { from { transform: scaleX(1); } to { transform: scaleX(.2); } }
+.firefly { position: absolute; left: var(--x); top: var(--y); width: 2.4px; height: 2.4px; border-radius: 50%; background: var(--firefly);
+           box-shadow: 0 0 4px 1px var(--firefly); animation: firefly var(--dur) ease-in-out var(--delay) infinite alternate; }
+@keyframes firefly { 0%, 30% { opacity: 0; transform: translate(0, 0); } 60% { opacity: 1; } 100% { opacity: .15; transform: translate(var(--drift), -4px); } }
+:root[data-scene="sun"] .firefly, :root[data-scene="moon"] .bird.butterfly { display: none; }
+/* no reduced-motion opt-out here: like the rest of the header scene, these only run after the viewer turns the scene on */
 /* birds fly the full width of the track (reverse = right to left), bobbing a little and flapping */
 .bird { position: absolute; top: var(--y); left: -12px; width: var(--bw); height: calc(var(--bw) * .4);
         animation: bird-fly var(--dur) linear var(--delay) infinite var(--dir); }
