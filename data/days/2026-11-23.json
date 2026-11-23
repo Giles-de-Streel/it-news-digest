@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T21:46:18+00:00",
+ "generated": "2026-11-23T22:01:30+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 45,
+   "recent": 44,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 101,
-   "recent": 95,
+   "fetched": 102,
+   "recent": 96,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 78,
+   "recent": 2,
    "error": null
   },
   {
@@ -870,7 +870,7 @@
   {
    "source": "Azure Updates",
    "fetched": 200,
-   "recent": 12,
+   "recent": 18,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "AWS Security Bulletins",
    "fetched": 37,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 39,
+   "recent": 40,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 28,
+   "recent": 30,
    "error": null
   },
   {
@@ -1794,7 +1794,7 @@
   {
    "source": "Smithsonian Magazine",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 28,
+   "recent": 23,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 21,
-   "recent": 3,
+   "fetched": 24,
+   "recent": 4,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,71 @@
  ],
  "items": [
   {
+   "id": "937f2fa1bad0",
+   "title": "CVE-2026-134069 - Use of a default cryptographic key in the instance registration of Amazon SSM Agent on AWS Windows Server AMIs",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T21:54:18+00:00",
+   "summary": "Bulletin ID: 2026-197-AWS Publication Date: 11/23/2026 13:30 PM PST Description: Amazon SSM Agent is the AWS Systems Manager agent that runs on EC2 instances so they can be managed through Systems Manager.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Cloud & infrastructure",
+    "System administration",
+    "TLS & PKI"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-134069",
+     "score": 8.2,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
+   "id": "08cd82d967ee",
+   "title": "ChatGPT expands GPT-6.2 Sol as OpenAI sets retirement date for two models",
+   "url": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-23T21:51:18+00:00",
+   "summary": "OpenAI is bringing GPT-6.2 Sol to the Chat tab in ChatGPT today, less than a week after the model debuted in Work and Codex . The company also set a retirement date for two older models. more…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9114b0747c8c",
+   "title": "DLR report: Cycling is becoming more important in Germany",
+   "url": "https://www.heise.de/en/news/DLR-report-Cycling-is-becoming-more-important-in-Germany-11535301.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T21:51:00+00:00",
+   "summary": "Cycling’s share of all trips has remained constant, but the distance traveled by bike has increased, the DLR says.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a80a2013f389",
+   "title": "YouTube’s iconic iOS app icon may soon return with new customizable icons [Gallery]",
+   "url": "https://9to5google.com/2026/11/23/youtube-custom-icons-ios-tv-return/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-23T21:46:26+00:00",
+   "summary": "The iconic YouTube app icon that looked like a retro TV found on iOS might be making a comeback, with new customizable icons showing up behind the scenes of a new YouTube update. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "fef5219c4256",
    "title": "Tech stocks rally as Jensen Huang returns as Nvidia CEO; the Nasdaq 100 jumped 7%, a Magnificent Seven basket rose 8%, CoreWeave 22%, Tesla 11%, and AMD 7%",
    "url": "https://www.techmeme.com/261123/p42#a261123p42",
@@ -2526,6 +2591,19 @@
     "Hardware"
    ],
    "follow_up_of": "4fff5ab96248"
+  },
+  {
+   "id": "655380d957a9",
+   "title": "Peggy Guggenheim's First Art Gallery Lasted Just 18 Months. But Its 21 Exhibitions Showed a Multitude of Modern Art Masterpieces",
+   "url": "https://www.smithsonianmag.com/smart-news/peggy-guggenheims-first-art-gallery-lasted-just-18-months-but-its-21-exhibitions-showed-a-multitude-of-modern-art-masterpieces-180989930/",
+   "source": "Smithsonian Magazine",
+   "source_category": "Science & space",
+   "published": "2026-11-23T21:39:51+00:00",
+   "summary": "A new exhibition at the Royal Academy of the Arts in London revisits Guggenheim Jeune, the short-lived art gallery where the American socialite introduced a skeptical British public to surrealism and abstraction",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
   },
   {
    "id": "ef9c9e698d0d",
@@ -2637,6 +2715,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "8b7c474bc893",
+   "title": "[In preview] Public Preview: Enterprise Knowledge Graph in Foundry IQ",
+   "url": "https://azure.microsoft.com/updates?id=581333",
+   "source": "Azure Updates",
+   "source_category": "Cloud",
+   "published": "2026-11-23T21:16:32+00:00",
+   "summary": "Foundry IQ adds Enterprise Knowledge Graph as a knowledge source for questions that depend on relationships across your content.During indexing, it extracts entities and relationships from unstructured content, guided by an ontology you provide. Agents ca",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3221,6 +3312,21 @@
    "topics": [
     "Microsoft & Windows",
     "Networking"
+   ]
+  },
+  {
+   "id": "3b91cc36b80b",
+   "title": "RHSA-2026:102648: Important: sqlite security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102648",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T20:28:21+00:00",
+   "summary": "An update for sqlite is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Databases"
    ]
   },
   {
@@ -8879,20 +8985,29 @@
    ]
   },
   {
-   "id": "4d329d197433",
-   "title": "LibreOffice 27.2 Alpha 1 Released For Testing",
-   "url": "https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1",
-   "source": "Phoronix",
-   "source_category": "Hardware",
+   "id": "e82796adc98a",
+   "title": "Ladybird is now in alpha",
+   "url": "https://ladybird.org/posts/alpha/",
+   "source": "Lobsters",
+   "source_category": "Development",
    "published": "2026-11-23T13:04:56+00:00",
-   "summary": "Ahead of the official roll-out in February, LibreOffice 27.2 Alpha 1 is now available for testing this updated open-source office suite...",
+   "summary": "Comments",
    "also_covered_by": [
     {
-     "id": "e82796adc98a",
-     "source": "Lobsters",
-     "title": "Ladybird is now in alpha",
-     "url": "https://ladybird.org/posts/alpha/",
-     "summary": "Comments"
+     "id": "4d329d197433",
+     "source": "Phoronix",
+     "title": "LibreOffice 27.2 Alpha 1 Released For Testing",
+     "url": "https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1",
+     "summary": "Ahead of the official roll-out in February, LibreOffice 27.2 Alpha 1 is now available for testing this updated open-source office suite...",
+     "published": "2026-11-23T13:04:56+00:00"
+    },
+    {
+     "id": "b7fc35d5ccf0",
+     "source": "Simon Willison",
+     "title": "Ladybird's first alpha release",
+     "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+     "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly.",
+     "published": "2026-11-23T21:46:35+00:00"
     }
    ],
    "topics": [
@@ -10894,6 +11009,14 @@
      "url": "https://siliconangle.com/2026/11/23/crowdstrike-to-buy-zscaler-in-record-setting-43-9b-cybersecurity-deal/",
      "summary": "CrowdStrike Holdings Inc. today announced plans to acquire Zscaler Inc., a fellow provider of cybersecurity software, for about $43.9 billion. The all-stock deal values the latter company at $260.4 per share.",
      "published": "2026-11-23T21:29:30+00:00"
+    },
+    {
+     "id": "adc0fa1468e4",
+     "source": "Dark Reading",
+     "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+     "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+     "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
+     "published": "2026-11-23T21:21:42+00:00"
     }
    ],
    "topics": [
@@ -13369,6 +13492,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "128d65e3df20",
+   "title": "Top Accessibility Testing Interview Questions for 2027 | What's Your Score?",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBOMmJxWnhfMVRsX1BvVlVYSmExLXVUeGhCQk9VWFY2WjdhNzJTWDhCWUpSbkNYYUJ3eDB5Y2lRcDZwdw?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-23T08:00:00+00:00",
+   "summary": "Top Accessibility Testing Interview Questions for 2027 | What's Your Score? YouTube",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
    ]
   },
   {
