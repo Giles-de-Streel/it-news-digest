@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-23T03:02:17+00:00",
+ "generated": "2026-11-23T03:15:56+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 103,
-   "recent": 19,
+   "fetched": 104,
+   "recent": 20,
    "error": null
   },
   {
@@ -749,9 +749,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 0,
+   "fetched": 78,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Electronic Design",
@@ -1589,15 +1589,15 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "OpenSSL News",
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 0,
+   "fetched": 7,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Terence Tao",
@@ -1884,14 +1884,14 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 93,
+   "recent": 15,
+   "error": null
   },
   {
    "source": "Game Developer",
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "URLError: <urlopen error timed out>"
+   "error": null
   },
   {
    "source": "Level Access blog",
@@ -2009,9 +2009,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 0,
+   "fetched": 18,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Microsoft 365 status",
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2489,6 +2489,47 @@
   }
  ],
  "items": [
+  {
+   "id": "20f0c61df85e",
+   "title": "RHSA-2026:102193: Important: mingw-expat security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102193",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T03:06:20+00:00",
+   "summary": "An update for mingw-expat is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "79a997b49ea0",
+   "title": "I Heard There Was a Secret Port…",
+   "url": "https://hackaday.com/2026/11/22/i-heard-there-was-a-secret-port/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-23T03:00:47+00:00",
+   "summary": "TPC specifies 2^16 ports, 65536, much more than are typically used. In fact, the port zero is almost never used, or, as [Acid Vegas] found out, about 0.25% of hosts …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0a3fb6858275",
+   "title": "Microsoft SQL Server Failover Clustering on VCF 9.1 VM Service: Supervisor Direct Implementation (Part 2)",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/22/microsoft-sql-server-failover-clustering-on-vcf-9-1-vm-service-supervisor-direct-implementation-part-2/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-23T03:00:00+00:00",
+   "summary": "Introduction In this part of the series, we will build the two nodes MSSQL FCI Cluster via the vSphere Supervisor and the Local Consumption Interface service. Part 1 focuses on Requirements, Topology, and Methods. Part 2 (this article) focuses on the Supervisor Direct Implementation.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
   {
    "id": "4a9d6e9b0d08",
    "title": "Chinese EV brand JMEV shuts Singapore showroom 16 months after launch",
@@ -4377,7 +4418,14 @@
    "source_category": "IT industry",
    "published": "2026-11-22T16:34:00+00:00",
    "summary": "\"A handful of GitHub Actions triggers let a stranger on the internet start a workflow that may have access to your secrets,\" warn two security developers at the Python Software Foundation. Have dangerous triggers caused real incidents? Yes, repeatedly... The maintainers behind these projects weren't careless.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c1224af28569",
+     "source": "Lobsters",
+     "title": "De-fanging dangerous triggers in GitHub Actions across an organization",
+     "url": "https://pyfound.blogspot.com/2026/11/de-fanging-dangerous-triggers-in-github.html"
+    }
+   ],
    "topics": [
     "Development",
     "DevOps & SRE"
