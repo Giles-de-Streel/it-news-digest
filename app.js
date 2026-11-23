@@ -1523,12 +1523,7 @@
   };
   const render = () => {
     pop.replaceChildren();
-    pop.appendChild(make("div", "dice-title", "Place your bets"));
-    if (!sceneOn()) {
-      pop.appendChild(make("p", "dice-note", "The dogs are asleep. Turn on the header animation (the little stick figure) to play."));
-      place();
-      return;
-    }
+    pop.appendChild(make("div", "dice-title", "Who let the dogs out?"));
     pop.appendChild(make("p", "dice-note", "Pick the tree you think each dog will pee on: one dog or both. Trees are numbered left to right."));
     for (const k of ["dog", "pup"]) {
       const pool = POOLS[k];
@@ -1596,7 +1591,14 @@
       if (!pop.hidden) render();
     }, Math.max(...ks.map((k) => when[k])) + 700);
   }
+  // with the header animation off the dogs aren't there: the dice only says so in its tooltip and won't open
+  const ASLEEP = "The dogs are asleep. Turn on the header animation (the little stick figure) to play.";
+  const syncDice = () => {
+    diceBtn.title = sceneOn() ? "Feeling lucky?" : ASLEEP;
+    if (!sceneOn() && !pop.hidden) open(false);
+  };
   const open = (on) => {
+    if (on && !sceneOn()) return;
     pop.hidden = !on;
     diceBtn.setAttribute("aria-expanded", String(on));
     if (on) render();
@@ -1608,5 +1610,6 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) open(false); });
   window.addEventListener("resize", place);
   // the stick-figure toggle changes whether there is anything to watch
-  new MutationObserver(() => { if (!pop.hidden) render(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  new MutationObserver(syncDice).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  syncDice();
 })();
