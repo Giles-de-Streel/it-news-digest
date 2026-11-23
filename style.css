@@ -404,6 +404,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .dice-bar:hover { background: color-mix(in srgb, var(--text) 6%, transparent); }
 .dice-pop .dice-close { border: 0; background: none; box-shadow: none; padding: 0 4px; font-size: 18px; line-height: 1; color: var(--muted); cursor: pointer; }
 .dice-pop .dice-close:hover { color: var(--text); }
+.dice-pop .dice-status { margin: 6px 0 2px; font-size: 12.5px; font-weight: 600; color: var(--text); }
+.dice-pop .dice-over { margin: 8px 0; font-size: 15px; font-weight: 700; color: var(--text); }
+.dice-pop .dice-total { margin-top: 4px; font-weight: 600; }
 .dice-pop.dragging { box-shadow: 0 12px 34px rgba(15, 23, 42, .28); }
 .dice-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0; }
 .dice-label { display: inline-flex; align-items: center; gap: 5px; width: 78px; flex: none; font-size: 12px; font-weight: 600; }
