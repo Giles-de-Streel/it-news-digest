@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T22:16:01+00:00",
+ "generated": "2026-11-23T22:31:03+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 23,
-   "recent": 23,
+   "fetched": 34,
+   "recent": 34,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Cisco PSIRT",
    "fetched": 50,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 102,
-   "recent": 96,
+   "fetched": 103,
+   "recent": 97,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 78,
+   "recent": 2,
    "error": null
   },
   {
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1176,7 +1176,7 @@
   {
    "source": "Ubuntu Blog",
    "fetched": 12,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 33,
+   "recent": 34,
    "error": null
   },
   {
@@ -1626,13 +1626,13 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 15,
+   "recent": 17,
    "error": null
   },
   {
    "source": "OpenAI News",
-   "fetched": 1424,
-   "recent": 2,
+   "fetched": 1425,
+   "recent": 3,
    "error": null
   },
   {
@@ -1787,8 +1787,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 76,
-   "recent": 4,
+   "fetched": 78,
+   "recent": 6,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -1944,7 +1944,7 @@
   {
    "source": "Steam news",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 24,
-   "recent": 4,
+   "fetched": 21,
+   "recent": 3,
    "error": null
   },
   {
@@ -2418,7 +2418,7 @@
   {
    "source": "Recorded Future",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2514,6 +2514,352 @@
  ],
  "items": [
   {
+   "id": "07449a548e59",
+   "title": "More Steam Community Market Updates",
+   "url": "https://store.steampowered.com/news/app/593110/view/678515036155545443",
+   "source": "Steam news",
+   "source_category": "Game development",
+   "published": "2026-11-23T22:26:31+00:00",
+   "summary": "In our last Community Market update we released a beta with new item pages, listings, and search to make better use of game-provided item data. Today we're launching a brand new Market Home page and a handful of improvements centered on tracking items and managing your listings.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "9f7dc5a8b2ba",
+   "title": "CVE-2026-93700: An authenticated WHMCS client could potentially leverage this flaw to read sensitive configuration files on…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93700",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:24:54.840000+00:00",
+   "summary": "An authenticated WHMCS client could potentially leverage this flaw to read sensitive configuration files on the WHMCS host, including database credentials, and to execute code on the server.",
+   "kind": "cve",
+   "cve": "CVE-2026-93700",
+   "cvss": {
+    "score": 9.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-93700",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "790628908851",
+   "title": "CVE-2026-70305: Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:22:50.890000+00:00",
+   "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-70305",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-70305",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking"
+   ]
+  },
+  {
+   "id": "d0a014829727",
+   "title": "CVE-2026-70193: Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:22:36.660000+00:00",
+   "summary": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-70193",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-70193",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking"
+   ]
+  },
+  {
+   "id": "3be30a97f9df",
+   "title": "Matters.AI raises $12M as it expands its data security business in North America",
+   "url": "https://siliconangle.com/2026/11/23/matters-ai-raises-12m-as-it-expands-its-data-security-business-in-north-america/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-23T22:22:23+00:00",
+   "summary": "Enterprise data security startup Matters.AI today announced that it has raised $12 million in new funding as it expands its business in North America. Matters.AI offers a platform called the AI Security Engineer for Data that is designed to protect sensitive data used by employees, artificial intelligence systems and…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "02f4f66a6aae",
+   "title": "CVE-2026-69899: Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:22:11.980000+00:00",
+   "summary": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-69899",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-69899",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "465fadc6233f",
+   "title": "CVE-2026-62841: Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:20:39.293000+00:00",
+   "summary": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-62841",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-62841",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "582d888261e6",
+   "title": "CVE-2026-50691: Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:20:16.553000+00:00",
+   "summary": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-50691",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-50691",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "9c2895076958",
+   "title": "Garmin Forerunner 265S gets a whopping 33% discount in a Black Friday sale",
+   "url": "https://www.neowin.net/deals/garmin-forerunner-265s-gets-a-whopping-33-discount-in-a-black-friday-sale/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-23T22:20:01+00:00",
+   "summary": "Amazon's Black Friday deal makes Garmin's lightweight Forerunner 265S more affordable, with fitness and smartwatch features for daily use.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bc70ebd01732",
+   "title": "Partners: Huang’s Return To Nvidia Brings ‘Stability’ And ‘Confidence’ To AI Market",
+   "url": "https://www.crn.com/news/components-peripherals/2026/partners-huang-s-return-to-nvidia-brings-stability-and-confidence-to-ai-market",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-23T22:20:00+00:00",
+   "summary": "Nvidia channel partners hailed the board’s surprise Monday decision to reinstate Jensen Huang as CEO and president, saying the move “adds some stability to the relationship” and creates “confidence” in the broader AI infrastructure market.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "a338e6e06ac8",
+   "title": "CVE-2026-118286: Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:19:30.903000+00:00",
+   "summary": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-118286",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118286",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking"
+   ]
+  },
+  {
+   "id": "4d3d6c5527ec",
+   "title": "CVE-2026-118285: Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:19:30.710000+00:00",
+   "summary": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-118285",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-118285",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "28d67ce0ac91",
+   "title": "CVE-2026-113824: Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:19:04.970000+00:00",
+   "summary": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-113824",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-113824",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Networking"
+   ]
+  },
+  {
+   "id": "653c10f557c5",
+   "title": "CVE-2026-109490: Improper neutralization of input during web page generation ('cross-site scripting') in Authentication…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:18:30.130000+00:00",
+   "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-109490",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109490",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3762b82b0293",
+   "title": "CVE-2026-109480: Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-23T22:18:29.133000+00:00",
+   "summary": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+   "kind": "cve",
+   "cve": "CVE-2026-109480",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-109480",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "a4dbe453ad16",
+   "title": "The Strength of the Record",
+   "url": "https://web.archive.org/web/20210329070928/https://opencrux.com/blog/crux-strength-of-the-record.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-23T22:18:18+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a3cfe28cbe36",
+   "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+   "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-23T22:15:26+00:00",
+   "summary": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "8a87b89b841a",
    "title": "Claude rolling out updated Android app with Material 3 Expressive redesign",
    "url": "https://9to5google.com/2026/11/23/claude-android-material-3-update/",
@@ -2524,6 +2870,22 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "4973822dd0db",
+   "title": "RHSA-2026:102668: Important: python-oauthlib security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102668",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T22:06:31+00:00",
+   "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development",
+    "Identity & access"
    ]
   },
   {
@@ -2550,6 +2912,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "6a57f5edfd55",
+   "title": "Industrial Serial Gateways Broadcast That They're Insecure",
+   "url": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-11-23T22:02:46+00:00",
+   "summary": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
    ]
   },
   {
@@ -2604,6 +2979,20 @@
      "scored_by": "AMZN"
     }
    ]
+  },
+  {
+   "id": "aa7582161f26",
+   "title": "Exclusive CNBC Transcript: See how Trump 'made the deal' to reinstate Huang as Nvidia CEO",
+   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang-reinstatement-cnbc-interview-transcript.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-23T21:53:49+00:00",
+   "summary": "Read CNBC’s exclusive interview with President Donald Trump on how he “made the deal” to reinstate Jensen Huang as Nvidia CEO.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ],
+   "follow_up_of": "4fff5ab96248"
   },
   {
    "id": "ef949789e56f",
@@ -2749,7 +3138,16 @@
    "source_category": "IT industry",
    "published": "2026-11-23T21:20:59+00:00",
    "summary": "Cybercriminals have gained the ability to discover vulnerabilities in software and take advantage of them in seconds, and it’s all thanks to artificial intelligence.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1d0c151fefed",
+     "source": "OpenAI News",
+     "title": "OpenAI and Cisco introduce Shirudo",
+     "url": "https://openai.com/index/introducing-shirudo",
+     "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+     "published": "2026-11-23T21:20:00+00:00"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "AI",
@@ -3074,20 +3472,6 @@
    "topics": [
     "General IT"
    ]
-  },
-  {
-   "id": "b792d64f327c",
-   "title": "Jensen Huang returns to applause from employees at Nvidia HQ",
-   "url": "https://www.tomshardware.com/tech-industry/big-tech/jensen-huang-returns-to-applause-from-employees-at-nvidia-hq-some-employees-reportedly-disgruntled-by-return-saying-this-is-the-worst-outcome",
-   "source": "Tom's Hardware",
-   "source_category": "",
-   "published": "2026-11-23T21:00:00+00:00",
-   "summary": "Jensen Huang returned to the office after being reinstated to CEO to cheers, according to videos spread on social media.",
-   "also_covered_by": [],
-   "topics": [
-    "Hardware"
-   ],
-   "follow_up_of": "4fff5ab96248"
   },
   {
    "id": "34893789ad9d",
@@ -3565,6 +3949,37 @@
    "topics": [
     "General IT"
    ]
+  },
+  {
+   "id": "f6c0a438eba7",
+   "title": "Vulnerability in PHP Affecting Cisco Products: November 2026",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerability%20in%20PHP%20Affecting%20Cisco%20Products:%20November%202026%26vs_k=1",
+   "source": "Cisco PSIRT",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T20:20:00+00:00",
+   "summary": "On November 19, 2026, the PHP Foundation announced the availability of security fixes that address a critical vulnerability that could lead to remote code execution. This vulnerability is identified by CVE-2026-126714. For information about this vulnerability, see the advisory GHSA-fm2m-fjf5-v3cp .",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-126714",
+     "score": 9.2,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "php"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-126714",
+     "score": 0.13297,
+     "percentile": 0.96489,
+     "date": "2026-11-23"
+    }
+   }
   },
   {
    "id": "109b28012a06",
@@ -4052,6 +4467,14 @@
      "url": "https://slashdot.org/story/26/11/23/216201/jensen-huang-says-hell-be-a-better-ceo-as-staff-applauds-his-return?utm_source=rss1.0mainlinkanon&utm_medium=feed",
      "summary": "Nvidia CEO Jensen Huang received a standing ovation from employees upon returning to the company's headquarters Monday, less than two weeks after resigning amid revelations of extramarital affairs, including one involving an alleged Chinese spy. \"Thank you all for the second chances.",
      "published": "2026-11-23T21:07:00+00:00"
+    },
+    {
+     "id": "b792d64f327c",
+     "source": "Tom's Hardware",
+     "title": "Jensen Huang returns to applause from employees at Nvidia HQ",
+     "url": "https://www.tomshardware.com/tech-industry/big-tech/jensen-huang-returns-to-applause-from-employees-at-nvidia-hq-some-employees-reportedly-disgruntled-by-return-saying-this-is-the-worst-outcome",
+     "summary": "Jensen Huang returned to the office after being reinstated to CEO to cheers, according to videos spread on social media.",
+     "published": "2026-11-23T21:00:00+00:00"
     }
    ],
    "topics": [
@@ -7129,7 +7552,16 @@
    "source_category": "Threat research",
    "published": "2026-11-23T15:16:27+00:00",
    "summary": "For the latest discoveries in cyber research for the week of 23rd November, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The FBI has reportedly experienced a second cyber incident in recent months, this time targeting its National Crime Information Center (NCIC).",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6b470a995143",
+     "source": "Recorded Future",
+     "title": "What are threat intelligence feeds?",
+     "url": "https://www.recordedfuture.com/blog/what-are-threat-intelligence-feeds",
+     "summary": "Threat intelligence feeds are continuous streams of data that provide up-to-the-minute details about cyber threats worldwide. Learn more!",
+     "published": "2026-11-23T00:00:00+00:00"
+    }
+   ],
    "topics": [
     "Ransomware & breaches"
    ]
@@ -11157,6 +11589,14 @@
      "url": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
      "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
      "published": "2026-11-23T21:21:42+00:00"
+    },
+    {
+     "id": "ddd567ff00b0",
+     "source": "Semafor Technology & Security",
+     "title": "CrowdStrike to buy Zscaler for $44B in cyber mega-merger",
+     "url": "https://www.semafor.com/article/11/23/2026/crowdstrike-to-buy-zscaler-for-44b-in-cyber-mega-merger",
+     "summary": "Demand for the firms’ expertise has surged on AI hacking fears.",
+     "published": "2026-11-23T22:26:24+00:00"
     }
    ],
    "topics": [
@@ -11482,6 +11922,19 @@
    "topics": [
     "Threats & malware",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "18fd76ec5ae5",
+   "title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
+   "url": "https://hermitcrm.io/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-23T10:09:02+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -12968,6 +13421,14 @@
      "url": "https://www.gamedeveloper.com/business/nvidia-reinstates-jensen-huang-as-ceo",
      "summary": "The ousted CEO has been reinstated by the board less than two weeks after his ouster, in consultation with senior officials from the United States government.",
      "published": "2026-11-23T21:07:02+00:00"
+    },
+    {
+     "id": "257c7d74b400",
+     "source": "Semafor Technology & Security",
+     "title": "Wall Street rallies on Nvidia CEO Huang's return",
+     "url": "https://www.semafor.com/article/11/23/2026/wall-street-rallies-on-nvidia-ceo-huangs-return",
+     "summary": "Nvidia’s stock soared more than 30% on Monday — its biggest jump in two decades — after Jensen Huang returned as CEO.",
+     "published": "2026-11-23T22:23:19+00:00"
     }
    ],
    "topics": [
@@ -13015,6 +13476,14 @@
      "title": "Markets rebound after Nvidia reinstates Jensen Huang",
      "url": "https://www.nbcnews.com/video/markets-rebound-after-nvidia-reinstates-jensen-huang-274019397940",
      "summary": "Major U.S. stock indexes soared after Jensen Huang was reinstated as Nvidia's CEO. NBC News' Allie Canal and Investopedia editor-in-chief Caleb Silver break down the numbers."
+    },
+    {
+     "id": "b9423ad1b9b8",
+     "source": "CNBC Technology",
+     "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
+     "summary": "Kress steered the company through billions in AI financing deals and during Huang's sudden departure. Now she's back to full-time CFO.",
+     "published": "2026-11-23T22:18:23+00:00"
     }
    ]
   },
