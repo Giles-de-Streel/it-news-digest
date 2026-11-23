@@ -447,16 +447,24 @@ def title_tokens(title):
 # unrelated stories that only share common words ("AI", "vulnerability"). 0.2 was tuned
 # against a real day of feeds: all clear duplicates merged, no false merges.
 SAME_STORY_THRESHOLD = 0.2
+# A second article from a source already in a story joins it only on a much closer match (an
+# outlet's follow-up or live-update post on the same event); anything looser stays its own story,
+# because two items from one source are usually two different stories.
+SAME_SOURCE_THRESHOLD = 0.35
 
 
-def same_story(a, b, idf):
-    ta, tb = a["_tokens"], b["_tokens"]
+def title_overlap(ta, tb, idf):
+    """Rarity-weighted share of headline words two token sets have in common (0..1)."""
     shared = ta & tb
     # A month name alone ("November") is not a shared subject
     if not shared - MONTHS:
-        return False
-    union = sum(idf[w] for w in ta | tb)
-    overlap = sum(idf[w] for w in shared) / union if union else 0
+        return 0.0
+    union = sum(idf.get(w, 0) for w in ta | tb)
+    return sum(idf.get(w, 0) for w in shared) / union if union else 0.0
+
+
+def same_story(a, b, idf):
+    overlap = title_overlap(a["_tokens"], b["_tokens"], idf)
     if overlap >= SAME_STORY_THRESHOLD:
         return True
     # Near-identical wording also counts, but only with some real word overlap: templated
@@ -478,35 +486,74 @@ def cluster(items):
         if item.get("kind") == "cve":
             groups.append([item])
             continue
+        # Join the group the headline matches best, not the first that matches at all: a big
+        # story often has a smaller side-angle story next to it that shares most of its words
+        best, best_score = None, 0.0
         for group in groups:
-            # A source reports a story once; two items from one source are different stories
-            # (e.g. two CISA KEV entries whose titles share a template)
-            if group[0].get("kind") == "cve" or any(other["source"] == item["source"] for other in group):
+            if group[0].get("kind") == "cve":
                 continue
             # Status pages reuse stock wording ("Elevated error rates", "Degraded performance"), so two
             # providers' status posts are never one story; a status post can still join a news story.
             if item.get("source_category") == "Cloud status" and any(other.get("source_category") == "Cloud status" for other in group):
                 continue
-            if any(same_story(item, other, idf) for other in group):
-                group.append(item)
-                break
+            others = [o for o in group if o["source"] != item["source"]]
+            score = max((title_overlap(item["_tokens"], o["_tokens"], idf) for o in others), default=0.0)
+            if len(others) < len(group):
+                # A source usually reports a story once; two items from one source are different
+                # stories (e.g. two CISA KEV entries whose titles share a template). Only a near
+                # restatement of what another outlet in the group reported joins as an extra article.
+                if item.get("source_category") == "Cloud status" or score < SAME_SOURCE_THRESHOLD:
+                    continue
+            elif not any(same_story(item, other, idf) for other in group):
+                continue
+            if best is None or score > best_score:
+                best, best_score = group, score
+        if best is not None:
+            best.append(item)
         else:
             groups.append([item])
     result = []
     for group in groups:
-        group.sort(key=lambda x: (-len(x["summary"]), x["published"] or ""))
-        primary = dict(group[0])
+        lead = pick_lead(group, idf)
+        primary = dict(lead)
         seen_sources = {primary["source"]}
         primary["also_covered_by"] = []
-        for other in group[1:]:
+        extras = []
+        for other in sorted(group, key=lambda x: x["published"] or ""):
+            if other is lead:
+                continue
             if other["source"] in seen_sources:
+                extras.append(_member(other))
                 continue
             seen_sources.add(other["source"])
-            primary["also_covered_by"].append({"id": other["id"], "source": other["source"], "title": other["title"], "url": other["url"]})
+            primary["also_covered_by"].append(_member(other))
+        if extras:
+            primary["extra_articles"] = extras
         primary.pop("_tokens", None)
         primary["topics"] = tag_topics(primary, {x.get("source_category", "") for x in group})
         result.append(primary)
     return result
+
+
+def pick_lead(group, idf):
+    """The headline that best represents the story: the article whose title overlaps most with
+    the rest of the group (one vote per other source), so an outlier angle that happened to join
+    (a long-summary follow-up on a side detail) doesn't become the headline. Ties go to the
+    richer summary, then the earliest report."""
+    if len(group) <= 2:
+        return min(group, key=lambda x: (-len(x.get("summary") or ""), x["published"] or ""))
+    sources = {x["source"] for x in group}
+
+    def score(cand):
+        best = {}
+        for other in group:
+            if other is cand or other["source"] == cand["source"]:
+                continue
+            o = title_overlap(cand["_tokens"], other["_tokens"], idf)
+            best[other["source"]] = max(best.get(other["source"], 0.0), o)
+        return sum(best.values()) / max(len(sources) - 1, 1)
+
+    return min(group, key=lambda x: (-round(score(x), 3), -len(x.get("summary") or ""), x["published"] or ""))
 
 
 def add_cve_scores(items):
@@ -595,7 +642,35 @@ def _article_keys(m):
 
 
 def _member(m):
-    return {k: m[k] for k in ("id", "source", "title", "url")}
+    """A story's non-lead article. The summary is kept (when there is one) so the article can
+    become the lead later if the story's best headline changes."""
+    out = {k: m[k] for k in ("id", "source", "title", "url")}
+    if m.get("summary"):
+        out["summary"] = m["summary"]
+    return out
+
+
+def _members(story):
+    """Every article of a story: the lead, one article per other source, and extra articles from
+    sources already in the story (follow-ups on the same event, not counted as extra coverage)."""
+    return [story] + story.get("also_covered_by", []) + story.get("extra_articles", [])
+
+
+def _solo(m, published):
+    """A story of its own for an article that was grouped with a story but doesn't belong in it
+    (e.g. a second article from a source the story already has, on a different angle)."""
+    return {"id": m["id"], "title": m["title"], "url": m["url"], "source": m["source"],
+            "source_category": m.get("source_category", ""), "published": m.get("published") or published,
+            "summary": m.get("summary", ""), "also_covered_by": [],
+            "topics": tag_topics({"title": m["title"], "summary": m.get("summary", "")}, {m.get("source_category", "")})}
+
+
+def _add_member(story, m):
+    """Attach an article to a story: as new coverage if its source isn't in the story yet,
+    otherwise as an extra article."""
+    known = {story["source"]} | {c["source"] for c in story.get("also_covered_by", [])}
+    key = "extra_articles" if m["source"] in known else "also_covered_by"
+    story.setdefault(key, []).append(_member(m))
 
 
 def merge_day(existing, fresh):
@@ -608,11 +683,14 @@ def merge_day(existing, fresh):
         for k in _article_keys(m):
             owner.setdefault(k, story)
 
+    size = lambda s: len(_members(s))
+    idf = day_idf(list(existing) + list(fresh))
+    fits = lambda story, m: same_source_fits(story, m, idf)
     for it in existing:
-        for m in [it] + it.get("also_covered_by", []):
+        for m in _members(it):
             claim(it, m)
     for it in fresh:
-        members = [it] + it.get("also_covered_by", [])
+        members = _members(it)
         owners = [owner[k] for m in members for k in _article_keys(m) if k in owner]
         if not owners:
             by_id[it["id"]] = it
@@ -620,17 +698,51 @@ def merge_day(existing, fresh):
                 claim(it, m)
             continue
         # Same story as one already listed (the one holding most of these articles): fold in new
-        # sources, keep the existing id. Articles another story already holds stay where they are.
+        # articles, keep the existing story. Articles another story already holds stay where they
+        # are, except the lead of a smaller story: this run's clustering says that story is this
+        # one, so its lead is listed here too and dedupe_articles() folds the smaller story in.
         old = max(set(map(id, owners)), key=lambda i: sum(1 for o in owners if id(o) == i))
         old = next(o for o in owners if id(o) == old)
-        known = {c["source"] for c in old.get("also_covered_by", [])} | {old["source"]}
         for m in members:
-            if m["source"] in known or any(k in owner for k in _article_keys(m)):
+            held = next((owner[k] for k in _article_keys(m) if k in owner), None)
+            if held is old:
                 continue
-            known.add(m["source"])
-            old.setdefault("also_covered_by", []).append(_member(m))
+            if not fits(old, m):
+                if held is None:
+                    solo = _solo(m, it["published"])
+                    by_id[solo["id"]] = solo
+                    claim(solo, m)
+                continue
+            if held is not None:
+                if size(held) < size(old) and _article_keys(m) & _article_keys(held):
+                    _add_member(old, m)
+                continue
+            _add_member(old, m)
             claim(old, m)
     return sorted(by_id.values(), key=lambda x: x["published"] or "", reverse=True)
+
+
+def day_idf(stories):
+    """Headline-word rarity over every article of the day (same weighting as cluster())."""
+    titles = [m["title"] for s in stories for m in _members(s)]
+    doc_freq = {}
+    for t in titles:
+        for w in title_tokens(t):
+            doc_freq[w] = doc_freq.get(w, 0) + 1
+    return {w: math.log((len(titles) + 1) / n) for w, n in doc_freq.items()}
+
+
+def same_source_fits(story, m, idf):
+    """An article from a source the story already has belongs in it only if it closely restates
+    another outlet's headline in the story (SAME_SOURCE_THRESHOLD)."""
+    known = {story["source"]} | {c["source"] for c in story.get("also_covered_by", [])}
+    if m["source"] not in known:
+        return True
+    if story.get("kind") == "cve" or story.get("source_category") == "Cloud status":
+        return False
+    tm = title_tokens(m["title"])
+    return any(o["source"] != m["source"] and title_overlap(tm, title_tokens(o["title"]), idf) >= SAME_SOURCE_THRESHOLD
+               for o in [story] + story.get("also_covered_by", []))
 
 
 def dedupe_articles(items):
@@ -639,32 +751,84 @@ def dedupe_articles(items):
     story's lead article belongs to the bigger one, it's the same story: its other articles
     move over (one per source) and it's dropped. Returns the number of stories changed or dropped."""
     size = lambda s: 1 + len(s.get("also_covered_by", []))
-    order = sorted(items, key=lambda s: (s.get("kind") == "cve", -size(s), s["published"] or ""))
+    order = sorted(items, key=lambda s: (s.get("kind") == "cve", -size(s), -len(_members(s)), s["published"] or ""))
     owner, keep, changed = {}, [], 0
+    idf = None
     for s in order:
         if s.get("kind") == "cve":
             keep.append(s)
             continue
         lead_owner = next((owner[k] for k in _article_keys(s) if k in owner), None)
         if lead_owner is not None:
-            known = {lead_owner["source"]} | {c["source"] for c in lead_owner.get("also_covered_by", [])}
-            for m in s.get("also_covered_by", []):
-                if m["source"] not in known and not any(k in owner for k in _article_keys(m)):
-                    known.add(m["source"])
-                    lead_owner.setdefault("also_covered_by", []).append(_member(m))
-                    for k in _article_keys(m):
-                        owner[k] = lead_owner
+            if idf is None:
+                idf = day_idf(items)
+            # Same story: move its other articles over (new sources as coverage, an extra article
+            # from a source already there only if it closely restates the story's headlines)
+            for m in s.get("also_covered_by", []) + s.get("extra_articles", []):
+                if any(k in owner for k in _article_keys(m)):
+                    continue
+                target = lead_owner
+                if not same_source_fits(lead_owner, m, idf):
+                    # Doesn't belong in the bigger story: keep it listed as a story of its own
+                    target = _solo(m, s["published"])
+                    keep.append(target)
+                else:
+                    _add_member(lead_owner, m)
+                for k in _article_keys(m):
+                    owner[k] = target
             changed += 1
             continue
-        before = len(s.get("also_covered_by", []))
-        s["also_covered_by"] = [m for m in s.get("also_covered_by", []) if not any(k in owner for k in _article_keys(m))]
-        changed += before != len(s["also_covered_by"])
-        for m in [s] + s["also_covered_by"]:
+        for key in ("also_covered_by", "extra_articles"):
+            if key not in s:
+                continue
+            before = len(s[key])
+            s[key] = [m for m in s[key] if not any(k in owner for k in _article_keys(m))]
+            changed += before != len(s[key])
+        if not s.get("extra_articles"):
+            s.pop("extra_articles", None)
+        for m in _members(s):
             for k in _article_keys(m):
                 owner.setdefault(k, s)
         keep.append(s)
     keep.sort(key=lambda x: x["published"] or "", reverse=True)
     return keep, changed
+
+
+RELEAD_MARGIN = 0.02  # a new headline must represent the story clearly better, so leads don't flip-flop
+
+
+def relead(items, sources):
+    """Re-pick each saved story's headline as it grows (see pick_lead): the lead an early run chose
+    can stop representing the story once other outlets join (e.g. a side-angle piece leading the
+    main news). The old lead stays in the story as one of its sources. Returns the number changed."""
+    cat_of = {s["name"]: s.get("category", "") for s in sources}
+    idf = day_idf(items)
+    changed = 0
+    for story in items:
+        also = story.get("also_covered_by", [])
+        if story.get("kind") == "cve" or len(also) < 2:
+            continue
+        cands = [dict(story, _tokens=title_tokens(story["title"]))]
+        cands += [dict(m, _tokens=title_tokens(m["title"]), published=None) for m in also]
+        best = pick_lead(cands, idf)
+        if best is cands[0]:
+            continue
+        sources_n = len(cands)
+
+        def score(c):
+            return sum(max((title_overlap(c["_tokens"], o["_tokens"], idf) for o in cands if o["source"] == src), default=0)
+                       for src in {o["source"] for o in cands if o["source"] != c["source"]}) / (sources_n - 1)
+
+        if score(best) < score(cands[0]) + RELEAD_MARGIN:
+            continue
+        i = next(n for n, m in enumerate(also) if m["id"] == best["id"] and m["source"] == best["source"])
+        also[i] = _member(story)
+        for k in ("id", "title", "url", "source"):
+            story[k] = best[k]
+        story["summary"] = best.get("summary") or ""
+        story["source_category"] = cat_of.get(best["source"], story.get("source_category", ""))
+        changed += 1
+    return changed
 
 
 def retag(items, sources):
@@ -730,7 +894,7 @@ def main():
         if week_before <= path.stem < day:
             for it in json.loads(path.read_text(encoding="utf-8")).get("items", []):
                 earlier_ids.add(it["id"])
-                earlier_ids.update(c.get("id", "") for c in it.get("also_covered_by", []))
+                earlier_ids.update(c.get("id", "") for c in it.get("also_covered_by", []) + it.get("extra_articles", []))
     items = [it for it in items if it["id"] not in earlier_ids]
 
     # Earlier-published items first, so the first report of a story is clustered against later ones
@@ -740,6 +904,7 @@ def main():
     existing = json.loads(day_path.read_text(encoding="utf-8")).get("items", []) if day_path.exists() else []
     merged = merge_day(existing, clustered)
     merged, _ = dedupe_articles(merged)
+    relead(merged, sources)
     retag(merged, sources)
     cve_note = add_cve_scores(merged)
     exploit_note = add_exploit_signals(merged, sources)

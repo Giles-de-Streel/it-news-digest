@@ -582,7 +582,7 @@
 
   // Every outlet covering a story, each linked to its own article (lead source first); starts hidden
   function sourcesPanel(it) {
-    const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || [])];
+    const all = [{ source: it.source, title: it.title, url: it.url }, ...(it.also_covered_by || []), ...(it.extra_articles || [])];
     const ul = el("ul", { class: "also-list source-list" }, ...all.map(sourceLine));
     ul.hidden = true;
     return ul;
@@ -669,7 +669,8 @@
   }
 
   function card(it) {
-    const also = it.also_covered_by || [];
+    // Other outlets, then follow-up articles from outlets already listed (not counted as sources)
+    const also = [...(it.also_covered_by || []), ...(it.extra_articles || [])];
     const n = coverage(it);
     return el("article", { class: `card${n > 1 ? " multi" : ""}` },
       el("div", { class: "meta" },
