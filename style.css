@@ -514,6 +514,20 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
         left: calc(var(--x) - var(--h) * 8 / 22); top: calc(50% + 12px - var(--h)); }
 .tree.conifer { width: calc(var(--h) / 2); left: calc(var(--x) - var(--h) / 4); }
 .tree svg { display: block; width: 100%; height: 100%; }
+/* dice game: the tree you're betting on glows in that dog's colour (both colours when both dogs are on it) */
+.tree.bet-dog { filter: drop-shadow(0 0 1.5px var(--muted)) drop-shadow(0 0 1.5px var(--muted)); }
+.tree.bet-pup { filter: drop-shadow(0 0 1.5px var(--pup)) drop-shadow(0 0 1.5px var(--pup)); }
+.tree.bet-dog.bet-pup { filter: drop-shadow(-1px 0 1.5px var(--muted)) drop-shadow(1px 0 1.5px var(--pup)) drop-shadow(0 0 1px var(--pup)); }
+/* plus a small bobbing arrow over it in the dog's colour (two side by side when both dogs are on it) */
+.tree.bet-dog::before, .tree.bet-pup::after {
+  content: ""; position: absolute; bottom: calc(100% + 1px); left: 50%; width: 0; height: 0;
+  border: 4px solid transparent; border-bottom: 0; border-top: 6px solid var(--muted);
+  translate: -50% 0; animation: bet-bob .9s ease-in-out infinite alternate; pointer-events: none;
+}
+.tree.bet-pup::after { border-top-color: var(--pup); }
+.tree.bet-dog.bet-pup::before { translate: calc(-50% - 5px) 0; }
+.tree.bet-dog.bet-pup::after { translate: calc(-50% + 5px) 0; }
+@keyframes bet-bob { from { margin-bottom: 0; } to { margin-bottom: 3px; } }
 .tree .leaves { fill: var(--heat-1); }
 .tree.conifer .leaves { fill: var(--tree-conifer); }
 .tree.yellow .leaves { fill: var(--tree-yellow); }

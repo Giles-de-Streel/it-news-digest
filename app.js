@@ -1577,9 +1577,17 @@
     bet.results.forEach((r) => pop.appendChild(make("p", `dice-result ${r.win ? "win" : "loss"}`, r.text)));
     if (bet.rounds) pop.appendChild(make("p", "dice-note dice-total", `Total: ${signed(bet.net)} over ${bet.rounds} ${bet.rounds === 1 ? "round" : "rounds"}.`));
   };
+  // the trees picked in the window glow in that dog's colour in the scenery (only while the window is open)
+  const markTrees = () => {
+    allTrees.forEach((o) => {
+      o.t.classList.toggle("bet-dog", !pop.hidden && bet.picks.dog === o);
+      o.t.classList.toggle("bet-pup", !pop.hidden && bet.picks.pup === o);
+    });
+  };
   const render = () => {
     pop.replaceChildren();
     statusEl = null;
+    markTrees();
     const bar = make("div", "dice-bar");
     bar.title = "Drag to move";
     bar.appendChild(make("span", "dice-title", "Who let the dogs out?"));
@@ -1690,7 +1698,7 @@
     clearTimeout(settleTimer);
     clearInterval(tickTimer);
     bet.locked = null; // closing calls off a round still being watched: no treats change
-    if (!on) return;
+    if (!on) { markTrees(); return; }
     render();
     schedule();
     tickTimer = setInterval(() => { if (statusEl) statusEl.textContent = statusText(); }, 500);
