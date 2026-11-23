@@ -308,7 +308,13 @@
       syncUrl(true);
       render();
     };
+    // Clippy / Tux / Apple on: a big copy of its header icon (same on-state look and animation) beside the text,
+    // and with no other filter the mode name becomes the large line and "All topics" the smaller one under it
+    const mode = state.clippy ? "clippy" : state.tux ? "tux" : state.apple ? "apple" : "";
+    const mascot = mode ? $(`#${mode}-toggle svg`)?.cloneNode(true) : null;
+    head.classList.toggle("mode-only", onlyTux || onlyClippy || onlyApple);
     head.replaceChildren(
+      ...(mascot ? [el("span", { class: `filter-mascot ${mode}-toggle`, "aria-pressed": "true", "aria-hidden": "true" }, mascot)] : []),
       el("div", { class: "filter-head-text" },
         el("span", { class: "filter-kicker", text: state.topic ? `Topic: ${state.topic}` : onlyTux ? "Open source only" : onlyClippy ? "Microsoft only" : onlyApple ? "Apple only" : "Filtered" }),
         el("h2", { text: name }),
