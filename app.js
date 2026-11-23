@@ -1591,10 +1591,10 @@
       if (!pop.hidden) render();
     }, Math.max(...ks.map((k) => when[k])) + 700);
   }
-  // with the header animation off the dogs aren't there: the dice only says so in its tooltip and won't open
-  const ASLEEP = "The dogs are asleep. Turn on the header animation (the little stick figure) to play.";
+  // no hints: with the animation on the dice has no tooltip; with it off it only says the dogs are asleep
+  // and won't open
   const syncDice = () => {
-    diceBtn.title = sceneOn() ? "Feeling lucky?" : ASLEEP;
+    if (sceneOn()) diceBtn.removeAttribute("title"); else diceBtn.title = "The dogs are asleep.";
     if (!sceneOn() && !pop.hidden) open(false);
   };
   const open = (on) => {
