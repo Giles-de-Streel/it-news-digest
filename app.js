@@ -1507,22 +1507,62 @@
   pop.hidden = true;
   pop.setAttribute("role", "dialog");
   pop.setAttribute("aria-label", "Dog betting");
-  wrap.appendChild(pop);
+  // a small floating window: fixed on screen, dragged by its title bar, closed with its X, the dice or Escape.
+  // It lives in <body> so the header's own layering can't clip it or hold it behind the page.
+  document.body.appendChild(pop);
   const plural = (n) => `${n} ${Math.abs(n) === 1 ? "treat" : "treats"}`;
 
   const sceneOn = () => !document.documentElement.classList.contains("scene-off");
-  // keep the card on screen: it hangs from the right edge of the header icons, which on phones isn't the
-  // right edge of the screen, so slide it back inside an 8px margin when it would run off either side
-  const place = () => {
-    pop.style.transform = "";
-    if (pop.hidden) return;
-    const r = pop.getBoundingClientRect(), vw = document.documentElement.clientWidth;
-    const dx = r.left < 8 ? 8 - r.left : r.right > vw - 8 ? vw - 8 - r.right : 0;
-    if (dx) pop.style.transform = `translateX(${Math.round(dx)}px)`;
+  // Where the window sits: under the dice the first time, then wherever it was dragged to (kept for this tab).
+  // Always kept inside the screen with an 8px margin, title bar reachable.
+  let pos = null;
+  try { pos = JSON.parse(sessionStorage.getItem("ind.dicePos") || "null"); } catch { /* none saved */ }
+  const clampPos = (l, t) => {
+    const vw = document.documentElement.clientWidth, vh = document.documentElement.clientHeight;
+    return { l: Math.round(Math.min(Math.max(8, l), Math.max(8, vw - pop.offsetWidth - 8))),
+      t: Math.round(Math.min(Math.max(8, t), Math.max(8, vh - 44))) };
   };
+  const place = () => {
+    if (pop.hidden) return;
+    let p = pos;
+    if (!p) { const d = diceBtn.getBoundingClientRect(); p = { l: d.right - pop.offsetWidth, t: d.bottom + 8 }; }
+    const c = clampPos(p.l, p.t);
+    pop.style.left = `${c.l}px`;
+    pop.style.top = `${c.t}px`;
+  };
+  pop.addEventListener("pointerdown", (e) => {
+    if (!e.target.closest(".dice-bar") || e.target.closest(".dice-close") || e.button !== 0) return;
+    const r = pop.getBoundingClientRect(), dx = e.clientX - r.left, dy = e.clientY - r.top;
+    pop.classList.add("dragging");
+    pop.setPointerCapture(e.pointerId);
+    const move = (ev) => {
+      pos = clampPos(ev.clientX - dx, ev.clientY - dy);
+      pop.style.left = `${pos.l}px`;
+      pop.style.top = `${pos.t}px`;
+    };
+    const up = () => {
+      pop.classList.remove("dragging");
+      pop.removeEventListener("pointermove", move);
+      pop.removeEventListener("pointerup", up);
+      pop.removeEventListener("pointercancel", up);
+      try { sessionStorage.setItem("ind.dicePos", JSON.stringify(pos)); } catch { /* not kept */ }
+    };
+    pop.addEventListener("pointermove", move);
+    pop.addEventListener("pointerup", up);
+    pop.addEventListener("pointercancel", up);
+    e.preventDefault();
+  });
   const render = () => {
     pop.replaceChildren();
-    pop.appendChild(make("div", "dice-title", "Who let the dogs out?"));
+    const bar = make("div", "dice-bar");
+    bar.title = "Drag to move";
+    bar.appendChild(make("span", "dice-title", "Who let the dogs out?"));
+    const close = make("button", "dice-close", "×");
+    close.type = "button";
+    close.setAttribute("aria-label", "Close");
+    close.addEventListener("click", () => open(false));
+    bar.appendChild(close);
+    pop.appendChild(bar);
     pop.appendChild(make("p", "dice-note", "Pick the tree you think each dog will pee on: one dog or both. Trees are numbered left to right."));
     for (const k of ["dog", "pup"]) {
       const pool = POOLS[k];
@@ -1604,8 +1644,6 @@
   };
   diceBtn.setAttribute("aria-expanded", "false");
   diceBtn.addEventListener("click", (e) => { e.stopPropagation(); open(pop.hidden); });
-  pop.addEventListener("click", (e) => e.stopPropagation());
-  document.addEventListener("click", () => { if (!pop.hidden) open(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) open(false); });
   window.addEventListener("resize", place);
   // the stick-figure toggle changes whether there is anything to watch
