@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T05:01:11+00:00",
+ "generated": "2026-11-23T05:16:53+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 119,
-   "recent": 34,
+   "fetched": 123,
+   "recent": 38,
    "error": null
   },
   {
@@ -1049,9 +1049,9 @@
   },
   {
    "source": "Lean Enterprise Institute",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Agile Pain Relief",
@@ -1097,7 +1097,7 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2391,
+   "fetched": 2390,
    "recent": 0,
    "error": null
   },
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -1764,7 +1764,7 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 93,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -2489,6 +2489,103 @@
   }
  ],
  "items": [
+  {
+   "id": "ae609ffd33bd",
+   "title": "Marches & Gnats programming challenges",
+   "url": "https://mng.quest/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-23T05:12:52+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "e53f2005f5cd",
+   "title": "RHSA-2026:102168: Important: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102168",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T05:06:16+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "9e2b811544ba",
+   "title": "RHSA-2026:102181: Important: flatpak security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102181",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T05:04:56+00:00",
+   "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "b14b5200e2ad",
+   "title": "Study Examines 19 AI Video API Models; BytePlus Was the Only Provider Whose Contract Tier Could Be Verified by Signature",
+   "url": "https://joho-todai.com/en/ai-video-api-19-byteplus-contract/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T05:03:28+00:00",
+   "summary": "A study of 605 videos from 19 commercial video-generation API models found that source-attribution accuracy based on file characteristics varied with testing conditions. Under the researchers' trust policy, BytePlus's Seedance family was the only one whose signed tier names could be matched to the ordered tiers.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a850d6729474",
+   "title": "AI Automatically Improves RISC-V CPU Circuits, Delivering 2.34x Performance in Research Evaluation by Jointly Optimizing IPC and Clock Speed",
+   "url": "https://joho-todai.com/en/ai-riscv-cpu-optimization-performance-2x/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T04:59:28+00:00",
+   "summary": "A research team at UC Berkeley used AI to improve BOOM, a RISC-V CPU, producing a design called BLOOM. On SPEC CPU2017, its estimated execution performance combining IPC with a synthesized frequency for a 130nm process reached 2.34x the baseline, improving instruction efficiency and circuit delay together.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "b7eaa05d6b8d",
+   "title": "RHSA-2026:102171: Important: thunderbird security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102171",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T04:55:08+00:00",
+   "summary": "An update for thunderbird is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "1ba46d1fa621",
+   "title": "RHSA-2026:102178: Important: xdg-desktop-portal security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102178",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T04:54:46+00:00",
+   "summary": "An update for xdg-desktop-portal is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
   {
    "id": "dbcd81c2e987",
    "title": "Lao TikTok star hands out free iPhones, iPads to strangers in Vietnam",
