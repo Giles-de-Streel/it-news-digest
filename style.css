@@ -398,8 +398,9 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .scene-toggle .si-crescent { fill: var(--moon); stroke: color-mix(in srgb, var(--moon) 55%, var(--text)); stroke-width: .6; }
 .scene-toggle .si-star { fill: var(--sun); animation: si-twinkle 2.4s ease-in-out infinite alternate; }
 .scene-toggle .si-star + .si-star { animation-delay: -1.2s; }
-.scene-toggle .si-ring { fill: none; stroke: var(--muted); stroke-width: 1.4; }
-.scene-toggle .si-slash { stroke: var(--muted); stroke-width: 1.4; stroke-linecap: round; }
+/* off: a static stick figure walking right, in the muted colour */
+.scene-toggle .si-head { fill: var(--muted); }
+.scene-toggle .si-limbs { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 @keyframes si-spin { to { transform: rotate(360deg); } }
 @keyframes si-twinkle { from { opacity: .35; } to { opacity: 1; } }
 /* sky: only the body for the current time of day shows */
