@@ -968,9 +968,11 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
   .nav-sheet-head { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; padding: 4px 0 8px; font-weight: 700; }
   .nav-close { padding: 4px 12px; font-size: 14px; }
 }
-/* Phones: the topbar scrolls away so only the compact filter bar stays pinned */
+/* Phones: the topbar scrolls away so only the compact filter bar stays pinned. It stays positioned (relative,
+   z-index 5 from the base rule) so its betting card can open over the pinned filters and stories below it;
+   the topics sheet (fixed, z-index 6) still covers it. */
 @media (max-width: 600px) {
-  .topbar { position: static; }
+  .topbar { position: relative; }
   .news-main .filters { top: 0; margin-top: 4px; }
   .news-main .filters .topics-toggle { flex: none; }
   .news-main .filters input[type="search"], .news-main .filters .search-wrap { flex: 1 1 150px; }

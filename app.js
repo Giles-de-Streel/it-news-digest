@@ -1512,11 +1512,21 @@
   const plural = (n) => `${n} ${Math.abs(n) === 1 ? "treat" : "treats"}`;
 
   const sceneOn = () => !document.documentElement.classList.contains("scene-off");
+  // keep the card on screen: it hangs from the right edge of the header icons, which on phones isn't the
+  // right edge of the screen, so slide it back inside an 8px margin when it would run off either side
+  const place = () => {
+    pop.style.transform = "";
+    if (pop.hidden) return;
+    const r = pop.getBoundingClientRect(), vw = document.documentElement.clientWidth;
+    const dx = r.left < 8 ? 8 - r.left : r.right > vw - 8 ? vw - 8 - r.right : 0;
+    if (dx) pop.style.transform = `translateX(${Math.round(dx)}px)`;
+  };
   const render = () => {
     pop.replaceChildren();
     pop.appendChild(make("div", "dice-title", "Place your bets"));
     if (!sceneOn()) {
       pop.appendChild(make("p", "dice-note", "The dogs are asleep. Turn on the header animation (the little stick figure) to play."));
+      place();
       return;
     }
     pop.appendChild(make("p", "dice-note", "Pick the tree you think each dog will pee on: one dog or both. Trees are numbered left to right."));
@@ -1554,6 +1564,7 @@
     go.addEventListener("click", play);
     pop.appendChild(go);
     bet.results.forEach((r) => pop.appendChild(make("p", `dice-result ${r.win ? "win" : "loss"}`, r.text)));
+    place();
   };
   function play() {
     const ks = ["dog", "pup"].filter((k) => bet.picks[k]);
@@ -1595,6 +1606,7 @@
   pop.addEventListener("click", (e) => e.stopPropagation());
   document.addEventListener("click", () => { if (!pop.hidden) open(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) open(false); });
+  window.addEventListener("resize", place);
   // the stick-figure toggle changes whether there is anything to watch
   new MutationObserver(() => { if (!pop.hidden) render(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 })();
