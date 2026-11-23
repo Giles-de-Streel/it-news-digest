@@ -141,7 +141,6 @@
   background: var(--chrome-metal);
   border-bottom-color: #7d848d;
   box-shadow: inset 0 1px 0 var(--chrome-hi), 0 2px 10px rgba(20, 24, 30, .25);
-  overflow: hidden;
 }
 :root[data-theme="chrome"] .topbar::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
@@ -157,7 +156,7 @@
   box-shadow: inset 0 1px 0 var(--chrome-hi), inset 0 -1px 0 var(--chrome-lo), 0 2px 6px rgba(20, 24, 30, .22);
 }
 /* plain buttons and fields only: the header icon toggles, nav items, More links and search clear stay bare */
-:root[data-theme="chrome"] button:not(.scene-toggle, .theme-toggle, .clippy-toggle, .apple-toggle, .tux-toggle, .more-toggle, .search-clear, .nav-item, .tabs button, .seg button, .count-btn, .chip.on),
+:root[data-theme="chrome"] button:not(.scene-toggle, .theme-toggle, .clippy-toggle, .apple-toggle, .tux-toggle, .dice-toggle, .dice-opt[aria-pressed="true"], .more-toggle, .search-clear, .nav-item, .tabs button, .seg button, .count-btn, .chip.on),
 :root[data-theme="chrome"] select, :root[data-theme="chrome"] input:not([type="checkbox"], [type="radio"]) {
   background: var(--chrome-metal);
   box-shadow: inset 0 1px 0 var(--chrome-hi), 0 1px 2px rgba(20, 24, 30, .25);
@@ -386,6 +385,34 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .tux-toggle[aria-pressed="true"] .tux-body { filter: none; opacity: 1; animation: tux-waddle 3s ease-in-out infinite; }
 @keyframes tux-waddle { 0%, 76%, 100% { transform: none; } 80% { transform: rotate(-9deg); } 86% { transform: rotate(9deg); } 92% { transform: rotate(-5deg); } 96% { transform: rotate(2deg); } }
 @media (prefers-reduced-motion: reduce) { .tux-toggle[aria-pressed="true"] .tux-body { animation: none; } .tux-toggle .tux-body { transition: none; } }
+/* dice (right of Tux): opens the hidden dog-betting card; muted so it stays an easter egg */
+.dice-toggle { display: inline-flex; align-items: center; padding: 1px 2px; margin: 0 0 0 3px; border: 0; background: none; cursor: pointer; line-height: 0; }
+.dice-toggle svg { width: 13px; height: 17px; overflow: visible; }
+.dice-toggle:focus-visible { outline: 2px solid var(--accent, #3b82f6); outline-offset: 1px; }
+.dice-toggle .die { fill: none; stroke: var(--muted); stroke-width: 1.1; }
+.dice-toggle .pip { fill: var(--muted); }
+.dice-toggle svg { opacity: .65; transition: opacity .2s, transform .3s; }
+.dice-toggle:hover svg, .dice-toggle[aria-expanded="true"] svg { opacity: 1; transform: rotate(-12deg); }
+.dice-pop { position: absolute; top: calc(100% + 8px); right: 0; z-index: 20; width: 270px; padding: 10px 12px;
+            background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px;
+            box-shadow: 0 6px 22px rgba(15, 23, 42, .18); font-size: 13px; line-height: 1.4; white-space: normal; }
+.dice-pop[hidden] { display: none; }
+.dice-title { font-weight: 700; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.dice-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0; }
+.dice-label { width: 34px; color: var(--muted); font-size: 12px; }
+.dice-pop .dice-opt { padding: 1px 8px; font-size: 12px; border-radius: 999px; min-width: 24px; }
+.dice-pop .dice-opt[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.dice-pop .dice-opt:disabled { opacity: .35; cursor: default; }
+.dice-note { margin: 6px 0; color: var(--muted); font-size: 12px; }
+.dice-pop .dice-go { width: 100%; padding: 4px 10px; font-size: 13px; font-weight: 600; }
+.dice-pop .dice-go:disabled { opacity: .6; cursor: default; }
+.dice-result { margin: 6px 0 0; font-weight: 600; }
+/* tree numbers shown in the scenery while the betting card is open */
+.tree-tag { position: absolute; left: calc(var(--x) - 5px); top: max(0px, calc(50% + 12px - var(--h) - 12px)); width: 10px; height: 10px;
+            font: 700 8px/10px system-ui, sans-serif; text-align: center; color: var(--surface); background: var(--muted);
+            border-radius: 3px; pointer-events: none; }
+.tree-tag.mine { background: var(--accent); }
+.tree-tag.hit { background: var(--good); box-shadow: 0 0 0 2px color-mix(in srgb, var(--good) 35%, transparent); }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
 /* sun/moon icon: animation on/off (html.scene-off, saved as ind.scene); when on it shows the sun by day
    and the moon by night, from html[data-scene] (local clock) */

@@ -1425,38 +1425,182 @@
   sun.addEventListener("click", cycleSeason);
   moon.addEventListener("click", cycleSeason);
 
-  // The pup picks one of these trees to pee on while running back left (the first dog uses the middle
-  // tree on the way right). Prefer trees that stay visible on phones and aren't too near either end.
+  // ---- Dogs: each picks a random tree to pee on, the grey dog on the way right and the pup on the way back
+  // left. Trees that stay visible on phones and aren't too near either end are used. The grey dog's tree is
+  // kept left of ~62% because it jumps at 30% of the lap at a fixed spot (~70% across).
+  const dog = track.querySelector(".pet:not(.pup)");
   const pup = track.querySelector(".pet.pup");
-  const trees = [...track.querySelectorAll(".tree[style]")].map((t) => ({ t, x: parseFloat(t.style.getPropertyValue("--x")) }));
-  if (!pup || !trees.length) return;
+  const allTrees = [...track.querySelectorAll(".tree[style]")].map((t) => ({ t, x: parseFloat(t.style.getPropertyValue("--x")) }));
+  if (!dog || !pup || !allTrees.length) return;
   const pick = (list) => list[Math.floor(Math.random() * list.length)];
-  const mid = trees.filter((o) => o.x >= 12 && o.x <= 88);
-  const pool = mid.filter((o) => !o.t.classList.contains("far"));
-  const tree = pick(pool.length ? pool : mid.length ? mid : trees);
-  tree.t.classList.remove("far"); // its tree must be there on phones too
-  const x = Math.min(88, Math.max(12, tree.x));
-  // runner turns at 46% and is back at the left by 86%: the pup runs left 46-84% with a 6% pee stop,
-  // split so it keeps the same speed before and after the stop
-  const a = +(46 + 32 * (100 - x) / 100).toFixed(2);
-  const b = +(a + 6).toFixed(2);
-  const spot = `calc(${x}% - 12px)`; // rear end (facing left) over the trunk
+  const poolFor = (lo, hi) => {
+    const inRange = allTrees.filter((o) => o.x >= lo && o.x <= hi);
+    const near = inRange.filter((o) => !o.t.classList.contains("far"));
+    const list = near.length >= 2 ? near : inRange.length ? inRange : allTrees;
+    list.forEach((o) => o.t.classList.remove("far")); // a tree a dog can pick must be there on phones too
+    return [...list].sort((p, q) => p.x - q.x);
+  };
+  const POOLS = { dog: poolFor(12, 62), pup: poolFor(12, 88) };
+  const f2 = (n) => +n.toFixed(2);
   const nods = (from, to) => { let s = ""; for (let p = from, up = true; p < to; p += 0.4, up = !up) s += `${p.toFixed(1)}% { transform: rotate(${up ? 62 : 72}deg); } `; return s; };
-  const css = `
+  const dogStyle = document.createElement("style");
+  document.head.appendChild(dogStyle);
+  let chosen = {};
+  // Picks both dogs' trees and writes their keyframes; returns when each one starts peeing (% of the lap)
+  const pickTrees = () => {
+    chosen = { dog: pick(POOLS.dog), pup: pick(POOLS.pup) };
+    // grey dog: steady pace from the left (~2%) to its jump spot (~70%) by 30% of the lap, with a 7% stop
+    const dx = Math.min(62, Math.max(12, chosen.dog.x));
+    const a1 = f2(Math.max(3, ((dx - 2) / 68) * 23)), b1 = f2(a1 + 7), p1 = f2(a1 + 2.5);
+    // pup: runner turns at 46% and is back at the left by 86%: the pup runs left 46-84% with a 6% pee stop
+    const x = Math.min(88, Math.max(12, chosen.pup.x));
+    const a = f2(46 + 32 * (100 - x) / 100), b = f2(a + 6);
+    dogStyle.textContent = `
+@keyframes pet-pace {
+  0% { left: 24px; transform: scaleX(1); }
+  ${a1}%, ${b1}% { left: calc(${dx}% + 1px); transform: scaleX(1); }
+  30% { left: calc(71.43% - 17.43px); transform: scaleX(1); }
+  38%, 45.99% { left: calc(100% - 42px); transform: scaleX(1); }
+  46% { left: calc(100% - 42px); transform: scaleX(-1); }
+  86%, 99.99% { left: 24px; transform: scaleX(-1); }
+  100% { left: 24px; transform: scaleX(1); }
+}
+@keyframes pet-show-run { 0% { visibility: visible; } ${a1}% { visibility: hidden; } ${b1}% { visibility: visible; } 38% { visibility: hidden; } 46% { visibility: visible; } 86% { visibility: hidden; } }
+@keyframes pet-show-stand { 0% { visibility: hidden; } ${a1}% { visibility: visible; } ${p1}% { visibility: hidden; } 38% { visibility: visible; } 46% { visibility: hidden; } 86% { visibility: visible; } }
+@keyframes pet-show-pee { 0% { visibility: hidden; } ${p1}% { visibility: visible; } ${b1}% { visibility: hidden; } }
+@keyframes pet-sniff { 0%, ${a1}% { transform: rotate(0deg); } ${nods(a1 + 0.3, a1 + 2.3)} ${f2(a1 + 2.4)}%, 39% { transform: rotate(0deg); } ${nods(39.5, 45)} 45.5%, 96% { transform: rotate(0deg); } ${nods(96.5, 99)} 99.7%, 100% { transform: rotate(0deg); } }
 @keyframes pup-pace {
   0% { left: 4px; transform: scaleX(1); }
   36%, 45.99% { left: calc(100% - 60px); transform: scaleX(1); }
   46% { left: calc(100% - 60px); transform: scaleX(-1); }
-  ${a}%, ${b}% { left: ${spot}; transform: scaleX(-1); }
+  ${a}%, ${b}% { left: calc(${x}% - 12px); transform: scaleX(-1); }
   84%, 99.99% { left: 4px; transform: scaleX(-1); }
   100% { left: 4px; transform: scaleX(1); }
 }
 @keyframes pup-show-run { 0% { visibility: visible; } 36% { visibility: hidden; } 46% { visibility: visible; } ${a}% { visibility: hidden; } ${b}% { visibility: visible; } 84% { visibility: hidden; } }
-@keyframes pup-show-stand { 0% { visibility: hidden; } 36% { visibility: visible; } 46% { visibility: hidden; } ${a}% { visibility: visible; } ${a + 1}% { visibility: hidden; } ${b - 0.5}% { visibility: visible; } ${b}% { visibility: hidden; } 84% { visibility: visible; } }
-@keyframes pup-show-pee { 0% { visibility: hidden; } ${a + 1}% { visibility: visible; } ${b - 0.5}% { visibility: hidden; } }
+@keyframes pup-show-stand { 0% { visibility: hidden; } 36% { visibility: visible; } 46% { visibility: hidden; } ${a}% { visibility: visible; } ${f2(a + 1)}% { visibility: hidden; } ${f2(b - 0.5)}% { visibility: visible; } ${b}% { visibility: hidden; } 84% { visibility: visible; } }
+@keyframes pup-show-pee { 0% { visibility: hidden; } ${f2(a + 1)}% { visibility: visible; } ${f2(b - 0.5)}% { visibility: hidden; } }
 @keyframes pup-sniff { 0%, 36.8% { transform: rotate(0deg); } ${nods(37, 44.6)} 45%, 85.8% { transform: rotate(0deg); } ${nods(86, 98)} 98.6%, 100% { transform: rotate(0deg); } }`;
-  const style = document.createElement("style");
-  style.textContent = css;
-  document.head.appendChild(style);
+    return { dog: p1, pup: f2(a + 1) };
+  };
+  let peeAt = pickTrees();
   pup.classList.add("ready");
+
+  // ---- Hidden dice game (dice icon right of Tux): bet a treat on which tree a dog will pee on. Treats are
+  // pretend points saved in this browser (ind.treats). A bet re-picks both dogs' trees and restarts the lap
+  // so the round can be watched; a correct pick pays the odds (one tree out of N wins N-1 treats).
+  const diceBtn = document.getElementById("dice-toggle");
+  const wrap = diceBtn && diceBtn.closest(".updated-wrap");
+  if (!diceBtn || !wrap) return;
+  const LAP = 16000, DOG_DELAY = 15500; // ms: lap length, and the grey dog's head start (animation-delay -15.5s)
+  const NAMES = { dog: "grey dog", pup: "brown pup" };
+  const numbered = [...new Set([...POOLS.dog, ...POOLS.pup])].sort((p, q) => p.x - q.x); // trees 1..N, left to right
+  const numOf = (o) => numbered.indexOf(o) + 1;
+  const getTreats = () => { try { const v = JSON.parse(localStorage.getItem("ind.treats") || "10"); return Number.isFinite(v) ? v : 10; } catch { return 10; } };
+  const setTreats = (v) => { try { localStorage.setItem("ind.treats", JSON.stringify(v)); } catch { /* not saved */ } };
+  const bet = { dog: "dog", tree: null, running: false, last: "" };
+  const make = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const pop = make("div", "dice-pop");
+  pop.hidden = true;
+  pop.setAttribute("role", "dialog");
+  pop.setAttribute("aria-label", "Dog betting");
+  wrap.appendChild(pop);
+
+  const showTags = (on) => {
+    track.querySelectorAll(".tree-tag").forEach((e) => e.remove());
+    if (!on) return;
+    numbered.forEach((o, i) => {
+      const tag = make("span", "tree-tag", String(i + 1));
+      tag.style.setProperty("--x", `${o.x}%`);
+      tag.style.setProperty("--h", o.t.style.getPropertyValue("--h"));
+      if (bet.tree === o) tag.classList.add("mine");
+      track.appendChild(tag);
+    });
+  };
+  const sceneOn = () => !document.documentElement.classList.contains("scene-off");
+  const render = () => {
+    pop.replaceChildren();
+    pop.appendChild(make("div", "dice-title", "Place your bets"));
+    if (!sceneOn()) {
+      pop.appendChild(make("p", "dice-note", "The dogs are asleep. Turn on the header animation (the little stick figure) to play."));
+      showTags(false);
+      return;
+    }
+    const pool = POOLS[bet.dog];
+    if (bet.tree && !pool.includes(bet.tree)) bet.tree = null;
+    const dogs = make("div", "dice-row");
+    dogs.appendChild(make("span", "dice-label", "Dog"));
+    for (const k of ["dog", "pup"]) {
+      const b = make("button", `dice-opt dice-${k}`, NAMES[k][0].toUpperCase() + NAMES[k].slice(1));
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(bet.dog === k));
+      b.disabled = bet.running;
+      b.addEventListener("click", () => { bet.dog = k; render(); });
+      dogs.appendChild(b);
+    }
+    pop.appendChild(dogs);
+    const trees = make("div", "dice-row dice-trees");
+    trees.appendChild(make("span", "dice-label", "Tree"));
+    numbered.forEach((o) => {
+      const b = make("button", "dice-opt dice-tree", String(numOf(o)));
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(bet.tree === o));
+      b.disabled = bet.running || !pool.includes(o);
+      b.title = pool.includes(o) ? `Tree ${numOf(o)}` : `The ${NAMES[bet.dog]} never goes to this tree`;
+      b.addEventListener("click", () => { bet.tree = o; render(); });
+      trees.appendChild(b);
+    });
+    pop.appendChild(trees);
+    const treats = getTreats();
+    pop.appendChild(make("p", "dice-note", `${pool.length} trees for the ${NAMES[bet.dog]}: a win pays ${pool.length - 1} ${pool.length - 1 === 1 ? "treat" : "treats"}. You have ${treats} ${treats === 1 ? "treat" : "treats"}.`));
+    const go = make("button", "dice-go", bet.running ? `Watching the ${NAMES[bet.dog]}...` : "Bet 1 treat");
+    go.type = "button";
+    go.disabled = bet.running || !bet.tree;
+    go.addEventListener("click", play);
+    pop.appendChild(go);
+    if (bet.last) pop.appendChild(make("p", "dice-result", bet.last));
+    showTags(true);
+  };
+  function play() {
+    if (bet.running || !bet.tree) return;
+    let treats = getTreats();
+    if (treats < 1) treats = 3; // out of treats: the dogs feel sorry for you
+    setTreats(treats - 1);
+    bet.running = true;
+    bet.last = "";
+    peeAt = pickTrees();
+    // restart every lap-synced animation (16 s runner/dogs, 32 s alternating gags) so the round starts now
+    document.getAnimations().forEach((an) => {
+      const d = an.effect && an.effect.getTiming ? an.effect.getTiming().duration : 0;
+      if (d === LAP || d === 2 * LAP) an.currentTime = 0;
+    });
+    const k = bet.dog, pool = POOLS[k];
+    const wait = k === "dog" ? (peeAt.dog / 100) * LAP - DOG_DELAY + LAP : (peeAt.pup / 100) * LAP;
+    render();
+    setTimeout(() => {
+      const got = chosen[k], win = got === bet.tree;
+      const now = getTreats() + (win ? pool.length : 0); // the stake comes back with the winnings
+      setTreats(now);
+      bet.last = win ? `The ${NAMES[k]} picked tree ${numOf(got)}. You win ${pool.length - 1}! (${now} treats)`
+        : `The ${NAMES[k]} picked tree ${numOf(got)}, not ${numOf(bet.tree)}. (${now} treats)`;
+      bet.running = false;
+      if (!pop.hidden) {
+        render();
+        const hit = [...track.querySelectorAll(".tree-tag")][numOf(got) - 1];
+        if (hit) hit.classList.add("hit");
+      }
+    }, (wait % LAP) + 700);
+  }
+  const open = (on) => {
+    pop.hidden = !on;
+    diceBtn.setAttribute("aria-expanded", String(on));
+    if (on) render(); else showTags(false);
+  };
+  diceBtn.setAttribute("aria-expanded", "false");
+  diceBtn.addEventListener("click", (e) => { e.stopPropagation(); open(pop.hidden); });
+  pop.addEventListener("click", (e) => e.stopPropagation());
+  document.addEventListener("click", () => { if (!pop.hidden) open(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) open(false); });
+  // the stick-figure toggle changes whether there is anything to watch
+  new MutationObserver(() => { if (!pop.hidden) render(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 })();
