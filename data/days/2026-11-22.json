@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-23T00:01:05+00:00",
+ "generated": "2026-11-23T00:15:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "The Record",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 90,
-   "recent": 6,
+   "fetched": 92,
+   "recent": 8,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 77,
+   "fetched": 78,
    "recent": 0,
    "error": null
   },
@@ -768,7 +768,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1680,7 +1680,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 17,
    "recent": 0,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,120 @@
   }
  ],
  "items": [
+  {
+   "id": "3248a5688448",
+   "title": "RHSA-2026:102088: Important: openvswitch2.15 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102088",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T00:14:27+00:00",
+   "summary": "An update for openvswitch2.15 is now available for Fast Datapath for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "3f2ad0a06070",
+   "title": "RHSA-2026:102087: Important: openvswitch3.6 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102087",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-23T00:12:58+00:00",
+   "summary": "An update for openvswitch3.6 is now available for Fast Datapath for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "c47ad89c7012",
+   "title": "ReactOS Fork Beats Windows 11 in 112 Tests After Six Months? Reading LiberNT's Benchmarks",
+   "url": "https://joho-todai.com/en/reactos-fork-windows-11-benchmark-liberni/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T00:10:14+00:00",
+   "summary": "The LiberNT team claims its OS outperformed Windows 11 in 112 of 132 kernel tests. The free OS derived from ReactOS has grown rapidly through AI-assisted development, but the tests were conducted by the developers themselves and the project remains far from practical use.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "8fce329df41e",
+   "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+   "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-23T00:08:00+00:00",
+   "summary": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "d78ab3f576f6",
+   "title": "MiniMax founder Yan Junjie loses billionaire status as fortune falls $11.6B",
+   "url": "https://e.vnexpress.net/news/tech/personalities/minimax-founder-yan-junjie-loses-billionaire-status-as-fortune-falls-11-6b-5147397.html",
+   "source": "VnExpress International (Tech)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T00:07:00+00:00",
+   "summary": "Yan Junjie, the 37-year-old founder of Chinese AI developer MiniMax, has lost his billionaire status as the company’s shares slide on concerns about mounting competition and its prospects for turning a profit.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "1dcfeb7fe30f",
+   "title": "AMD EPYC Embedded 9006 Series embedded processors offer up to 256 Zen 6c cores, PCIe Gen 6, and CXL 3.1",
+   "url": "https://www.cnx-software.com/2026/11/23/amd-epyc-embedded-9006-series-embedded-processors-offer-up-to-256-zen-6c-cores-pcie-gen-6-and-cxl-3-1/",
+   "source": "CNX Software",
+   "source_category": "Embedded",
+   "published": "2026-11-23T00:00:51+00:00",
+   "summary": "AMD has introduced the EPYC Embedded 9006 Series SP7, a family of high-performance x86 SoCs built around the Zen 6 and Zen 6c architectures using a 2nm CPU process.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "be91b38c52ec",
+   "title": "Hackaday Links: November 22, 2026",
+   "url": "https://hackaday.com/2026/11/22/hackaday-links-november-22-2026/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-23T00:00:30+00:00",
+   "summary": "While Hackaday is not a publication that generally concerns itself with the latest and greatest in gaming, the release of Grand Theft Auto 6 this week is hard to ignore. …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "3ead80b8d408",
+   "title": "Microsoft Plans to Move Wi-Fi Drivers Out of the Windows Kernel in 2027",
+   "url": "https://joho-todai.com/en/windows-removing-wifi-driver-kernel-2027/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-22T23:36:24+00:00",
+   "summary": "A single Wi-Fi driver bug can bring down the entire OS with a blue screen. To change that at a fundamental level, Microsoft plans to move Wi-Fi drivers from the kernel to user mode in 2027.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Networking"
+   ]
+  },
   {
    "id": "66698fc98329",
    "title": "Have Investors Lost Their Faith in the AI Boom?",
