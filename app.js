@@ -91,8 +91,15 @@
     const res = await fetch(`data/days/${day}.json`, { cache: "no-store" });
     return res.ok ? await res.json() : { date: day, items: [], sources: [] };
   }
+  // The News, CVEs and Sources tabs read the front page (data/latest.json: the last 24 hours across
+  // midnight, with scores); the day file is the fallback if it's missing or from another day
   async function loadDay(day) {
-    state.dayData = await fetchDay(day);
+    let front = null;
+    try {
+      const res = await fetch("data/latest.json", { cache: "no-store" });
+      if (res.ok) front = await res.json();
+    } catch { /* fall back to the day file */ }
+    state.dayData = front && front.date === day ? front : await fetchDay(day);
     state.day = day;
   }
 
@@ -100,7 +107,7 @@
   // News tab's copy. A failed fetch is dropped from the cache so the next visit retries it.
   const dayCache = new Map();
   function historyDay(date) {
-    if (date === state.day && state.dayData) return Promise.resolve(state.dayData);
+    if (date === state.day && state.dayData && !state.dayData.front_page) return Promise.resolve(state.dayData);
     if (!dayCache.has(date)) {
       dayCache.set(date, fetchDay(date).catch((e) => { dayCache.delete(date); throw e; }));
     }
@@ -114,7 +121,10 @@
   const coverage = (it) => 1 + (it.also_covered_by || []).length;
 
   // Most-reported first; ties go to the most recent
-  const rank = (a, b) => coverage(b) - coverage(a) || (b.published || "").localeCompare(a.published || "");
+  // Front-page stories carry a score (weighted outlets, halving every 12 hours) and weighted outlets
+  // (aggregators count half, sister publications once); day files in History rank by source count
+  const rank = (a, b) => (b.score ?? coverage(b)) - (a.score ?? coverage(a)) || (b.published || "").localeCompare(a.published || "");
+  const isTop = (it) => (it.outlets != null ? it.outlets >= 2 : coverage(it) > 1);
 
   const isCve = (it) => it.kind === "cve";
   // Tux mode keeps a story or CVE when a source that covered it is an open-source project or community
@@ -357,12 +367,12 @@
       followUps.set(it.follow_up_of, [...(followUps.get(it.follow_up_of) || []), it]);
       return false;
     });
-    const top = main.filter((it) => coverage(it) > 1);
+    const top = main.filter(isTop);
     // Every story with a CVSS badge, highest score first. Single-source ones move here from
     // "Other stories"; multi-source ones also stay in "Most reported".
     const vulns = main.filter(hasCvssBadge)
       .sort((a, b) => b.cves[0].score - a.cves[0].score || (b.published || "").localeCompare(a.published || ""));
-    const rest = main.filter((it) => coverage(it) === 1 && !hasCvssBadge(it));
+    const rest = main.filter((it) => !isTop(it) && !hasCvssBadge(it));
     // Keep busy sources from crowding the list: show each source's newest few, fold the rest.
     // Picking that source or searching shows everything.
     const capped = !state.source && !state.query;
@@ -381,11 +391,13 @@
     // replaceChildren() turns a null argument into the text "null", so drop the empty section
     box.replaceChildren(...[
       cveFirst ? cveBlock : null,
-      top.length ? section("Most reported", `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top, [], capped) : null,
+      top.length ? section("Most reported", state.dayData?.front_page
+        ? `${top.length} ${top.length === 1 ? "story" : "stories"} reported by two or more outlets in the last 24 hours, most widely and most recently covered first`
+        : `${top.length} ${top.length === 1 ? "story" : "stories"} covered by more than one source`, top, [], capped) : null,
       vulns.length ? section("Current vulnerabilities",
         `${vulns.length} ${vulns.length === 1 ? "story mentions" : "stories mention"} a CVE scored High (7.0+) or Critical (9.0+), highest score first`, vulns, [], capped) : null,
       rest.length ? section(top.length || vulns.length ? "Other stories" : "Stories",
-        `${rest.length} from a single source, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
+        `${rest.length} from a single outlet${state.dayData?.front_page ? " (or one outlet and a link aggregator)" : ""}, newest first${folded.size ? `; at most ${SOURCE_CAP} per source shown, the rest are folded below` : ""}`,
         shown, more, capped) : null,
       cveFirst ? null : cveBlock,
     ].filter(Boolean));
@@ -518,7 +530,7 @@
       return;
     }
     const token = ++histToken;
-    const pending = dates.filter((d) => !dayCache.has(d) && d !== state.day).length;
+    const pending = dates.filter((d) => !dayCache.has(d) && !(d === state.day && !state.dayData?.front_page)).length;
     if (pending) {
       $("#hist-meta").textContent = `Loading ${plural(pending, "day", "days")}...`;
       box.replaceChildren();

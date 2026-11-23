@@ -67,9 +67,19 @@ jobs:
             exit 0
           fi
           git commit -m "News for $(TZ=America/New_York date +%F)"
-          # Another push may have landed in the meantime; rebase onto it
+          # Another push may have landed in the meantime (a code change, or a run started by another
+          # trigger): rebase onto it. The day file and index can't be merged line by line, so on a
+          # conflict start again from the latest commit and redo this run's merge on top of it.
           for i in 1 2 3; do
-            git pull --rebase --quiet && git push && exit 0
-            sleep 5
+            git push --quiet && exit 0
+            git fetch --quiet origin main
+            git rebase --quiet origin/main && continue
+            git rebase --abort
+            echo "Conflict with a newer commit; merging this run again on top of it"
+            git reset --hard --quiet origin/main
+            python -I scripts/fetch_news.py --hours "${{ github.event.inputs.hours || '36' }}"
+            git add -A data
+            git diff --cached --quiet && exit 0
+            git commit --quiet -m "News for $(TZ=America/New_York date +%F)"
           done
           exit 1

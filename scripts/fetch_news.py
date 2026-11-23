@@ -647,6 +647,8 @@ def _member(m):
     out = {k: m[k] for k in ("id", "source", "title", "url")}
     if m.get("summary"):
         out["summary"] = m["summary"]
+    if m.get("published"):
+        out["published"] = m["published"]  # each outlet's own time, for recency weighting on the front page
     return out
 
 
@@ -883,6 +885,92 @@ def mark_follow_ups(items, sources):
     return marked
 
 
+# ---------- front page: the last 24 hours across the day boundary ----------
+FRONT_HOURS = 24          # the News tab shows stories with an article this recent
+FRONT_HALF_LIFE = 12.0    # hours for an outlet's weight in a story's score to halve
+AGGREGATOR_WEIGHT = 0.5   # link aggregators ("aggregator": true) mostly point at other outlets' articles
+MOST_REPORTED_OUTLETS = 2.0  # weighted outlets a story needs for "Most reported"
+
+
+def _article_time(m, story):
+    t = m.get("published") or story.get("published")
+    return datetime.fromisoformat(t) if t else None
+
+
+def score_story(story, weight_of, group_of, now):
+    """Weighted outlets and recency score. One vote per outlet group (sister publications that share
+    articles count once); an aggregator counts AGGREGATOR_WEIGHT unless a regular outlet of the same
+    group covered it; each vote halves every FRONT_HALF_LIFE hours after that outlet's article."""
+    groups = {}
+    for m in [story] + story.get("also_covered_by", []):
+        g = group_of(m["source"])
+        t = _article_time(m, story)
+        age = max((now - t).total_seconds() / 3600, 0) if t else FRONT_HOURS
+        w = weight_of(m["source"])
+        prev = groups.get(g)
+        groups[g] = (max(w, prev[0]), min(age, prev[1])) if prev else (w, age)
+    outlets = sum(w for w, _ in groups.values())
+    score = sum(w * 0.5 ** (age / FRONT_HALF_LIFE) for w, age in groups.values())
+    return round(outlets, 2), round(score, 4)
+
+
+def _same_event(a, b, idf):
+    """Two saved stories (from consecutive days) report the same event: some pair of their headlines
+    from different outlets closely restate each other (SAME_SOURCE_THRESHOLD)."""
+    ta = [(m["source"], title_tokens(m["title"])) for m in [a] + a.get("also_covered_by", [])]
+    tb = [(m["source"], title_tokens(m["title"])) for m in [b] + b.get("also_covered_by", [])]
+    return any(sa != sb and title_overlap(x, y, idf) >= SAME_SOURCE_THRESHOLD for sa, x in ta for sb, y in tb)
+
+
+def build_latest(today_items, yesterday_items, sources, now):
+    """The front page: every story with an article in the last FRONT_HOURS from today's and
+    yesterday's day files, a story that continues across midnight merged into one, each scored
+    (score_story) and follow-ups marked. Day files are not changed."""
+    cat_of = {s["name"]: s.get("category", "") for s in sources}
+    aggregators = {s["name"] for s in sources if s.get("aggregator")}
+    weight_of = lambda name: AGGREGATOR_WEIGHT if name in aggregators else 1.0
+    pub_of = {s["name"]: s.get("publisher") for s in sources}
+    group_of = lambda name: pub_of.get(name) or name
+    cutoff = now - timedelta(hours=FRONT_HOURS)
+
+    def recent(story):
+        times = [_article_time(m, story) for m in _members(story)]
+        return any(t and t >= cutoff for t in times)
+
+    today = [json.loads(json.dumps(s)) for s in today_items if recent(s)]
+    older = [json.loads(json.dumps(s)) for s in yesterday_items if recent(s)]
+    news_today = [s for s in today if s.get("kind") != "cve"]
+    idf = day_idf(today + older)
+    out = list(today)
+    for y in older:
+        if y.get("kind") == "cve" or y.get("source_category") == "Cloud status":
+            out.append(y)
+            continue
+        match = next((t for t in news_today if t.get("source_category") != "Cloud status" and _same_event(t, y, idf)), None)
+        if match is None:
+            out.append(y)
+            continue
+        # Continues today: fold yesterday's articles into today's story (it keeps today's id)
+        have = {k for m in _members(match) for k in _article_keys(m)}
+        for m in _members(y):
+            if not (_article_keys(m) & have):
+                _add_member(match, m)
+                have |= _article_keys(m)
+        firsts = [p for p in (match.get("published"), y.get("published")) if p]
+        if firsts:
+            match["published"] = min(firsts, key=datetime.fromisoformat)
+    relead(out, sources)
+    mark_follow_ups(out, sources)
+    retag(out, sources)
+    for s in out:
+        if s.get("kind") == "cve":
+            continue
+        s["outlets"], s["score"] = score_story(s, weight_of, group_of, now)
+        s.setdefault("source_category", cat_of.get(s["source"], ""))
+    out.sort(key=lambda x: x.get("published") or "", reverse=True)
+    return out
+
+
 def retag(items, sources):
     """Re-run topic tagging on every story of the day, so stories saved by earlier runs follow the
     current TOPICS/CATEGORY_TOPICS rules and pick up categories of sources merged in later.
@@ -970,6 +1058,14 @@ def main():
         "items": merged,
     }
     day_path.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    # Front page: the last 24 hours across midnight (the News tab reads this; History reads day files)
+    yesterday_path = days_dir / f"{(datetime.fromisoformat(day) - timedelta(days=1)).date().isoformat()}.json"
+    yesterday = json.loads(yesterday_path.read_text(encoding="utf-8")).get("items", []) if yesterday_path.exists() else []
+    front = build_latest(merged, yesterday, sources, datetime.now(timezone.utc))
+    (ROOT / "data" / "latest.json").write_text(json.dumps(
+        {**payload, "window_hours": FRONT_HOURS, "front_page": True, "items": front},
+        indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
     index = []
     for path in sorted(days_dir.glob("*.json"), reverse=True):
