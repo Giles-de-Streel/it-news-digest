@@ -376,9 +376,11 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 @keyframes tux-waddle { 0%, 76%, 100% { transform: none; } 80% { transform: rotate(-9deg); } 86% { transform: rotate(9deg); } 92% { transform: rotate(-5deg); } 96% { transform: rotate(2deg); } }
 @media (prefers-reduced-motion: reduce) { .tux-toggle[aria-pressed="true"] .tux-body { animation: none; } .tux-toggle .tux-body { transition: none; } }
 @keyframes match-flicker { from { transform: scale(1) rotate(-3deg); } to { transform: scale(.88, 1.08) rotate(4deg); } }
-/* sun/moon icon: shows the current header scene (off, sun = day, moon = night), saved as ind.scene */
+/* sun/moon icon: animation on/off (html.scene-off, saved as ind.scene); when on it shows the sun by day
+   and the moon by night, from html[data-scene] (local clock) */
 .scene-toggle .si-sun, .scene-toggle .si-moon, .scene-toggle .si-off { display: none; }
-.scene-toggle[data-scene="sun"] .si-sun, .scene-toggle[data-scene="moon"] .si-moon, .scene-toggle[data-scene="off"] .si-off { display: inline; }
+:root:not(.scene-off)[data-scene="sun"] .scene-toggle .si-sun, :root:not(.scene-off)[data-scene="moon"] .scene-toggle .si-moon,
+.scene-off .scene-toggle .si-off { display: inline; }
 .scene-toggle .si-disc { fill: var(--sun); }
 .scene-toggle .si-rays { stroke: var(--sun); stroke-width: 1.4; stroke-linecap: round; }
 .scene-toggle .si-sun { transform-origin: 7px 9px; animation: si-spin 24s linear infinite; }
@@ -389,7 +391,7 @@ button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px s
 .scene-toggle .si-slash { stroke: var(--muted); stroke-width: 1.4; stroke-linecap: round; }
 @keyframes si-spin { to { transform: rotate(360deg); } }
 @keyframes si-twinkle { from { opacity: .35; } to { opacity: 1; } }
-/* day/night scene: only the matching body shows in the sky */
+/* sky: only the body for the current time of day shows */
 :root[data-scene="sun"] .sky-moon, :root[data-scene="moon"] .sky-sun { display: none; }
 /* animation off: the scenery is hidden (the track keeps its space) and the hit/shake effects stop */
 .scene-off .runner-track > * { display: none !important; }
