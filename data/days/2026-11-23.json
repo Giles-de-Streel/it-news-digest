@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-23T08:46:31+00:00",
+ "generated": "2026-11-23T09:02:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -36,7 +36,7 @@
   {
    "source": "Help Net Security",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -354,7 +354,7 @@
   {
    "source": "dbi services",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 0,
+   "recent": 3,
    "error": null
   },
   {
@@ -846,7 +846,7 @@
   {
    "source": "Yellow Bricks",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1272,7 +1272,7 @@
   {
    "source": "Pulumi Blog",
    "fetched": 50,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 0,
+   "fetched": 6,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "error": null
   },
   {
    "source": "Terence Tao",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 96,
-   "recent": 16,
+   "fetched": 100,
+   "recent": 15,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2490,6 +2490,86 @@
  ],
  "items": [
   {
+   "id": "699a4d0989e0",
+   "title": "Repairing a Cheap Rotary Evaporator for the Home Lab",
+   "url": "https://hackaday.com/2026/11/23/repairing-a-cheap-rotary-evaporator-for-the-home-lab/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-23T09:00:28+00:00",
+   "summary": "After running through the chemical reactions required to get whatever substance you were targeting, it’ll often still be mixed in with a lot of solvent. Getting rid of this solvent …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "add53d13291a",
+   "title": "Find Out If ChatGPT and Gemini Recommend Your Brand for $49",
+   "url": "https://www.techrepublic.com/article/ai-mentions-brand-visibility-monitor/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-23T08:58:53+00:00",
+   "summary": "AI Mentions tracks how 300+ AI models answer your buyers’ questions and turns each lost mention into a fix.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "afd084b9d201",
+   "title": "SQL Server: what is really happening when a TLS certificate expires?",
+   "url": "https://www.dbi-services.com/blog/sql-server-what-is-really-happening-when-a-tls-certificate-expires/",
+   "source": "dbi services",
+   "source_category": "Databases",
+   "published": "2026-11-23T08:55:25+00:00",
+   "summary": "An expired TLS certificate on SQL Server does not break every client at once. Measured, then proven with Wireshark and Schannel.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases",
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "3b0db6a9a685",
+   "title": "Signal blocks AI assistants from peeking at your private messages",
+   "url": "https://www.helpnetsecurity.com/2026/11/23/signal-blocks-ai-assistants-screenshots/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-23T08:53:49+00:00",
+   "summary": "Signal, the encrypted messaging app, is restricting AI assistants built into mobile operating systems from capturing the content of users’ conversations. The protections target Siri AI on iOS 27 and AI assistants on supported Android devices, including Google’s Gemini.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "4befcdfa60a5",
+   "title": "#131 – Frank Denneman giving a primer to Agentic AI and all it’s components!",
+   "url": "https://www.yellow-bricks.com/2026/11/23/131-frank-denneman-giving-a-primer-to-agentic-ai-and-all-its-components/",
+   "source": "Yellow Bricks",
+   "source_category": "Virtualization",
+   "published": "2026-11-23T08:52:56+00:00",
+   "summary": "Recently Frank released a great blog post series that provided a fantastic primer for Agentic AI. It literally describes what Agentic AI is, provides various usecases, and then delves into the various components / processes that are part of it.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "b67ab34abe54",
+   "title": "BlackBerry's new Windows browser aims to make work on your personal PC safer",
+   "url": "https://www.neowin.net/news/blackberrys-new-windows-browser-aims-to-make-work-on-your-personal-pc-safer/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-23T08:50:01+00:00",
+   "summary": "BlackBerry wants to make personal Windows PCs a safer option for work, with a new browser aimed at businesses balancing data protection and employee privacy.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
    "id": "43b1e9776139",
    "title": "ArtCraft — Before you try this at home",
    "url": "https://www.askwoody.com/2026/artcraft-before-you-try-this-at-home/",
@@ -2501,6 +2581,19 @@
    "topics": [
     "Cloud & infrastructure",
     "AI"
+   ]
+  },
+  {
+   "id": "aee43b9479c8",
+   "title": "Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners (Katherine Davis/Axios)",
+   "url": "https://www.techmeme.com/261123/p5#a261123p5",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-23T08:45:00+00:00",
+   "summary": "Katherine Davis / Axios : Boston-based Aevius, whose foundation models analyze patient health using medical records, imaging, and other data, raised a $22M seed led by Insight Partners — Clinical intelligence startup Aevius raised $22 million in seed funding from Insight Partners, CEO Rowland Pettit exclusively tells…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2556,6 +2649,19 @@
    "also_covered_by": [],
    "topics": [
     "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "6b2945ea55e7",
+   "title": "OpenAI’s Reported AI Phone: What We Know So Far",
+   "url": "https://www.techrepublic.com/article/news-openai-ai-phone-foxconn-fih-mobile-report/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-23T08:35:00+00:00",
+   "summary": "Foxconn subsidiary FIH Mobile will reportedly help assemble OpenAI’s AI phone. See what’s known about timing, hardware, and what IT teams should watch.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2652,6 +2758,19 @@
    "topics": [
     "Threats & malware",
     "AI"
+   ]
+  },
+  {
+   "id": "82f3c6b746d3",
+   "title": "Trump Taps Pentagon CIO Kirsten Davies to Lead White House Cyber Office",
+   "url": "https://www.techrepublic.com/article/news-trump-kirsten-davies-national-cyber-director/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-23T08:20:43+00:00",
+   "summary": "Trump selected Pentagon CIO Kirsten Davies to lead the White House cyber office. Here’s what the transition means for federal cybersecurity coordination.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3923,6 +4042,21 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "70a515890aa4",
+   "title": "Least privilege by default: what's new in Pulumi Cloud RBAC",
+   "url": "https://www.pulumi.com/blog/pulumi-cloud-rbac-least-privilege-by-default/",
+   "source": "Pulumi Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-23T00:00:00+00:00",
+   "summary": "Access control in Pulumi Cloud now starts from least privilege. Every organization gets three new built-in roles, you can share a single stack or environment with a teammate, and you can create service principals to give your automated workloads their own identity. Why change how access works?",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "Identity & access"
    ]
   },
   {
