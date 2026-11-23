@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "generated": "2026-11-23T01:01:36+00:00",
+ "generated": "2026-11-23T01:16:12+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -563,9 +563,9 @@
   },
   {
    "source": "CIO.com",
-   "fetched": 0,
+   "fetched": 20,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "source": "SiliconANGLE",
@@ -1343,9 +1343,9 @@
   },
   {
    "source": "Graham Cluley",
-   "fetched": 20,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Bot Verification\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Have I Been Pwned breaches",
@@ -1493,7 +1493,7 @@
   },
   {
    "source": "Guardian Technology",
-   "fetched": 32,
+   "fetched": 36,
    "recent": 11,
    "error": null
   },
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 17,
    "recent": 0,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2489,6 +2489,36 @@
   }
  ],
  "items": [
+  {
+   "id": "68abd4aad2e0",
+   "title": "Researchers Report Malware Patterns on GL.iNet Routers and KVMs That Official Indicators Miss",
+   "url": "https://joho-todai.com/en/gl-inet-router-malware-undetected-pattern/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-23T01:02:05+00:00",
+   "summary": "GL.iNet's GoodCloud remote management service was abused to install malware on routers and remote KVM devices. The manufacturer provided one indicator of compromise, but an independent investigation found multiple infections that passed that check.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Cloud & infrastructure",
+    "Networking"
+   ]
+  },
+  {
+   "id": "5a54ed1045a4",
+   "title": "Nikolay Samokhvalov: PGAIBench and AAA: can AI safely change production Postgres?",
+   "url": "https://postgr.es/p/9Dh",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-23T01:00:27+00:00",
+   "summary": "Across 949 live Postgres 18.7 runs (10 models), 13 of 408 scored primary changes caused harm. Replaying them through AAA would have blocked 12 of 13 while approving 377 of 378 safe or unclassified changes.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Databases"
+   ]
+  },
   {
    "id": "a7686534b100",
    "title": "Sources: Jay Clayton, director of national intelligence and AI czar, will also be acting national cyber director pending Kirsten A. Davies' Senate confirmation (Axios)",
@@ -2593,6 +2623,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "1561e5319092",
+   "title": "'It's greed': Zohran Mamdani blasts Amazon over new $5 fee hike in NYC",
+   "url": "https://finance.yahoo.com/economy/policy/articles/greed-zohran-mamdani-blasts-amazon-121000124.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-23T00:23:37+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
