@@ -980,8 +980,7 @@
     const on = sceneOn();
     const b = $("#scene-toggle");
     b.setAttribute("aria-pressed", String(on));
-    b.title = on ? "Header animation on: sun by day, moon by night (your local time). Click to turn it off"
-      : "Header animation off: click to turn it on";
+    b.title = "Walk, don't run"; // same tooltip on and off
   }
   function setScene(on) {
     document.documentElement.classList.toggle("scene-off", !on);
