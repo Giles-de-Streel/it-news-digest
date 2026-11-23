@@ -1488,7 +1488,8 @@
 
   // ---- Hidden dice game (dice icon right of Tux): bet a treat on which tree a dog will pee on. Treats are
   // pretend points saved in this browser (ind.treats). A bet re-picks both dogs' trees and restarts the lap
-  // so the round can be watched; a correct pick pays the odds (one tree out of N wins N-1 treats).
+  // so the round can be watched; a lost bet costs 1 treat and a correct pick pays the odds (one tree out of N
+  // wins N-1 treats). The trees' numbers only show in the scenery once the bet is called.
   const diceBtn = document.getElementById("dice-toggle");
   const wrap = diceBtn && diceBtn.closest(".updated-wrap");
   if (!diceBtn || !wrap) return;
@@ -1498,22 +1499,29 @@
   const numOf = (o) => numbered.indexOf(o) + 1;
   const getTreats = () => { try { const v = JSON.parse(localStorage.getItem("ind.treats") || "10"); return Number.isFinite(v) ? v : 10; } catch { return 10; } };
   const setTreats = (v) => { try { localStorage.setItem("ind.treats", JSON.stringify(v)); } catch { /* not saved */ } };
-  const bet = { dog: "dog", tree: null, running: false, last: "" };
+  // picks: the tree bet on for each dog (null = no bet on that dog); hits: where each dog went last round
+  const bet = { picks: { dog: null, pup: null }, running: false, results: [], hits: null };
   const make = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const pop = make("div", "dice-pop");
   pop.hidden = true;
   pop.setAttribute("role", "dialog");
   pop.setAttribute("aria-label", "Dog betting");
   wrap.appendChild(pop);
+  const plural = (n) => `${n} ${Math.abs(n) === 1 ? "treat" : "treats"}`;
 
+  // Tree numbers in the scenery, shown only once a round has been called: green for where a dog peed, an
+  // outline for your picks, and a small dot in each dog's colour saying which dog went there
   const showTags = (on) => {
     track.querySelectorAll(".tree-tag").forEach((e) => e.remove());
-    if (!on) return;
+    if (!on || !bet.hits) return;
     numbered.forEach((o, i) => {
       const tag = make("span", "tree-tag", String(i + 1));
       tag.style.setProperty("--x", `${o.x}%`);
       tag.style.setProperty("--h", o.t.style.getPropertyValue("--h"));
-      if (bet.tree === o) tag.classList.add("mine");
+      if (bet.picks.dog === o || bet.picks.pup === o) tag.classList.add("mine");
+      if (bet.hits.dog === o || bet.hits.pup === o) tag.classList.add("hit");
+      if (bet.hits.dog === o) tag.classList.add("by-dog");
+      if (bet.hits.pup === o) tag.classList.add("by-pup");
       track.appendChild(tag);
     });
   };
@@ -1526,70 +1534,75 @@
       showTags(false);
       return;
     }
-    const pool = POOLS[bet.dog];
-    if (bet.tree && !pool.includes(bet.tree)) bet.tree = null;
-    const dogs = make("div", "dice-row");
-    dogs.appendChild(make("span", "dice-label", "Dog"));
+    pop.appendChild(make("p", "dice-note", "Pick the tree you think each dog will pee on: one dog or both. Trees are numbered left to right."));
     for (const k of ["dog", "pup"]) {
-      const b = make("button", `dice-opt dice-${k}`, NAMES[k][0].toUpperCase() + NAMES[k].slice(1));
-      b.type = "button";
-      b.setAttribute("aria-pressed", String(bet.dog === k));
-      b.disabled = bet.running;
-      b.addEventListener("click", () => { bet.dog = k; render(); });
-      dogs.appendChild(b);
+      const pool = POOLS[k];
+      const row = make("div", `dice-row dice-dogrow dice-${k}`);
+      const label = make("span", "dice-label");
+      label.append(make("i", "dice-swatch"), NAMES[k][0].toUpperCase() + NAMES[k].slice(1));
+      row.appendChild(label);
+      const trees = make("span", "dice-trees");
+      numbered.forEach((o) => {
+        const can = pool.includes(o);
+        const b = make("button", "dice-opt dice-tree", String(numOf(o)));
+        b.type = "button";
+        b.setAttribute("aria-pressed", String(bet.picks[k] === o));
+        b.setAttribute("aria-label", `${NAMES[k]}: tree ${numOf(o)}`);
+        b.disabled = bet.running || !can;
+        b.title = can ? (bet.picks[k] === o ? "Click again to take this bet back" : `Bet that the ${NAMES[k]} picks tree ${numOf(o)}`)
+          : `The ${NAMES[k]} never goes to this tree`;
+        b.addEventListener("click", () => {
+          bet.picks[k] = bet.picks[k] === o ? null : o; // click the picked tree again to take the bet back
+          bet.hits = null; // a new pick hides the numbers again
+          render();
+        });
+        trees.appendChild(b);
+      });
+      row.appendChild(trees);
+      row.appendChild(make("span", "dice-pays", `wins ${pool.length - 1}`));
+      pop.appendChild(row);
     }
-    pop.appendChild(dogs);
-    const trees = make("div", "dice-row dice-trees");
-    trees.appendChild(make("span", "dice-label", "Tree"));
-    numbered.forEach((o) => {
-      const b = make("button", "dice-opt dice-tree", String(numOf(o)));
-      b.type = "button";
-      b.setAttribute("aria-pressed", String(bet.tree === o));
-      b.disabled = bet.running || !pool.includes(o);
-      b.title = pool.includes(o) ? `Tree ${numOf(o)}` : `The ${NAMES[bet.dog]} never goes to this tree`;
-      b.addEventListener("click", () => { bet.tree = o; render(); });
-      trees.appendChild(b);
-    });
-    pop.appendChild(trees);
-    const treats = getTreats();
-    pop.appendChild(make("p", "dice-note", `${pool.length} trees for the ${NAMES[bet.dog]}: a win pays ${pool.length - 1} ${pool.length - 1 === 1 ? "treat" : "treats"}. You have ${treats} ${treats === 1 ? "treat" : "treats"}.`));
-    const go = make("button", "dice-go", bet.running ? `Watching the ${NAMES[bet.dog]}...` : "Bet 1 treat");
+    const stake = ["dog", "pup"].filter((k) => bet.picks[k]).length;
+    pop.appendChild(make("p", "dice-note", `Each lost bet costs 1 treat. You have ${plural(getTreats())}.`));
+    const go = make("button", "dice-go", bet.running ? "Watching the dogs..." : stake ? `Bet ${plural(stake)}` : "Pick a tree to bet");
     go.type = "button";
-    go.disabled = bet.running || !bet.tree;
+    go.disabled = bet.running || !stake;
     go.addEventListener("click", play);
     pop.appendChild(go);
-    if (bet.last) pop.appendChild(make("p", "dice-result", bet.last));
-    showTags(true);
+    bet.results.forEach((r) => pop.appendChild(make("p", `dice-result ${r.win ? "win" : "loss"}`, r.text)));
+    showTags(!bet.running);
   };
   function play() {
-    if (bet.running || !bet.tree) return;
-    let treats = getTreats();
-    if (treats < 1) treats = 3; // out of treats: the dogs feel sorry for you
-    setTreats(treats - 1);
+    const ks = ["dog", "pup"].filter((k) => bet.picks[k]);
+    if (bet.running || !ks.length) return;
+    if (getTreats() < ks.length) setTreats(getTreats() + 3); // running low: the dogs feel sorry for you
     bet.running = true;
-    bet.last = "";
+    bet.results = [];
+    bet.hits = null;
     peeAt = pickTrees();
     // restart every lap-synced animation (16 s runner/dogs, 32 s alternating gags) so the round starts now
     document.getAnimations().forEach((an) => {
       const d = an.effect && an.effect.getTiming ? an.effect.getTiming().duration : 0;
       if (d === LAP || d === 2 * LAP) an.currentTime = 0;
     });
-    const k = bet.dog, pool = POOLS[k];
-    const wait = k === "dog" ? (peeAt.dog / 100) * LAP - DOG_DELAY + LAP : (peeAt.pup / 100) * LAP;
+    // called once the last dog that was bet on has peed (the grey dog runs 15.5 s ahead of the lap start)
+    const when = { dog: ((peeAt.dog / 100) * LAP - DOG_DELAY + LAP) % LAP, pup: (peeAt.pup / 100) * LAP };
     render();
     setTimeout(() => {
-      const got = chosen[k], win = got === bet.tree;
-      const now = getTreats() + (win ? pool.length : 0); // the stake comes back with the winnings
+      let change = 0;
+      bet.results = ks.map((k) => {
+        const got = chosen[k], mine = bet.picks[k], win = got === mine, pays = POOLS[k].length - 1;
+        change += win ? pays : -1;
+        const name = NAMES[k][0].toUpperCase() + NAMES[k].slice(1);
+        return { win, text: win ? `${name} picked tree ${numOf(got)}: you win ${plural(pays)}!` : `${name} picked tree ${numOf(got)}, not ${numOf(mine)}: you lose 1 treat.` };
+      });
+      const now = getTreats() + change;
       setTreats(now);
-      bet.last = win ? `The ${NAMES[k]} picked tree ${numOf(got)}. You win ${pool.length - 1}! (${now} treats)`
-        : `The ${NAMES[k]} picked tree ${numOf(got)}, not ${numOf(bet.tree)}. (${now} treats)`;
+      bet.results.push({ win: change > 0, text: `${change > 0 ? "+" : ""}${change} this round. You have ${plural(now)}.` });
+      bet.hits = { ...chosen };
       bet.running = false;
-      if (!pop.hidden) {
-        render();
-        const hit = [...track.querySelectorAll(".tree-tag")][numOf(got) - 1];
-        if (hit) hit.classList.add("hit");
-      }
-    }, (wait % LAP) + 700);
+      if (!pop.hidden) render();
+    }, Math.max(...ks.map((k) => when[k])) + 700);
   }
   const open = (on) => {
     pop.hidden = !on;
