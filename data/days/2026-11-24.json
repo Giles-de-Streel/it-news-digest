@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T21:16:09+00:00",
+ "generated": "2026-11-24T21:31:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 133,
-   "recent": 133,
+   "fetched": 131,
+   "recent": 131,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -443,9 +443,9 @@
   },
   {
    "source": "Schneier on Security",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "fetched": 10,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "Google Project Zero",
@@ -636,7 +636,7 @@
   {
    "source": "Cisco PSIRT",
    "fetched": 50,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 182,
-   "recent": 123,
+   "recent": 122,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -726,7 +726,7 @@
   {
    "source": "Industrial Cyber",
    "fetched": 9,
-   "recent": 9,
+   "recent": 7,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 80,
+   "recent": 4,
    "error": null
   },
   {
@@ -1542,7 +1542,7 @@
   {
    "source": "RIPE Labs",
    "fetched": 15,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1631,8 +1631,8 @@
   },
   {
    "source": "OpenAI News",
-   "fetched": 1428,
-   "recent": 4,
+   "fetched": 1429,
+   "recent": 5,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 80,
+   "recent": 78,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
-   "recent": 4,
+   "fetched": 22,
+   "recent": 5,
    "error": null
   },
   {
@@ -2514,6 +2514,107 @@
  ],
  "items": [
   {
+   "id": "f56fc6cfa036",
+   "title": "Camera glasses: Consumer group takes Meta and Ray-Ban to court",
+   "url": "https://www.heise.de/en/news/Camera-glasses-Consumer-group-takes-Meta-and-Ray-Ban-to-court-11536877.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:26:00+00:00",
+   "summary": "The consumer advocacy group is taking legal action against Meta and Luxottica. The case focuses on how their camera glasses are marketed and designed.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a51547f8e36e",
+   "title": "Podcast #158: DapuStor’s Roger Peene on 512TB SSDs, Storage Class Memory, and PCIe Gen6",
+   "url": "https://www.storagereview.com/podcast/podcast-158-dapustor-roger-peene-512tb-ssd-scm-pcie-gen6-sc26",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-24T21:21:24+00:00",
+   "summary": "Brian caught up with Roger Peene, GM, Americas at DapuStor, at the company’s SC26 booth in Chicago for a short episode recorded over a table of enterprise SSDs. The centerpiece was the R6060 at 512TB in the E2 form factor, and the conversation moved from there to storage class memory, form factors, and the PCIe",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bb7f00566237",
+   "title": "CVE-2026-136522: CubeWP Forms before 1.1.13 contains an unauthenticated stored cross-site scripting vulnerability that allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136522",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T21:18:20.433000+00:00",
+   "summary": "CubeWP Forms before 1.1.13 contains an unauthenticated stored cross-site scripting vulnerability that allows attackers to inject malicious JavaScript by submitting unregistered field names through the public REST route cubewp-custom-form/v1/submit/, which bypasses its own nonce check and saves unsanitized values due…",
+   "kind": "cve",
+   "cve": "CVE-2026-136522",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136522",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3efda66d8d2e",
+   "title": "CVE-2026-133453: AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133453",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T21:18:18.070000+00:00",
+   "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.7.1 through 0.10.0, a user can add a version under another user's workflow ID and take over its Marketplace listing.",
+   "kind": "cve",
+   "cve": "CVE-2026-133453",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133453",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
+   ]
+  },
+  {
+   "id": "25d1c56f9793",
+   "title": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20and%20Brotli%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+   "source": "Cisco PSIRT",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T21:17:47+00:00",
+   "summary": "On October 21, 2026, Node.js announced the availability of fixes for multiple vulnerabilities across the following supported release lines: 22.x, 24.x, and 26.x. These vulnerabilities impact critical operations such as the Brotli decoder, DNS resolution, and TLS certificate validation.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "TLS & PKI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "68be6562e75c",
+   "title": "NASA seeks concepts for a lunar nuclear power plant",
+   "url": "https://www.heise.de/en/news/NASA-seeks-concepts-for-a-lunar-nuclear-power-plant-11536873.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:12:00+00:00",
+   "summary": "NASA is soliciting concepts for a lunar nuclear power plant. Companies can submit proposals for Lunar Reactor-1 through Dec. 21.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "3002a378c3a5",
    "title": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
    "url": "https://9to5google.com/2026/11/24/gemini-history-ai-training/",
@@ -2636,6 +2737,19 @@
    "id": "1c46ac3bcd19",
    "title": "Tech Life",
    "url": "https://www.bbc.co.uk/sounds/play/w3ct8jyx?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:00:00+00:00",
+   "summary": "Experts from around the world plot the progress of AI development every five years.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "9f48ad608ffd",
+   "title": "Tech Life",
+   "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_west_africa?at_medium=RSS&at_campaign=rss",
    "source": "BBC Technology",
    "source_category": "IT industry",
    "published": "2026-11-24T21:00:00+00:00",
@@ -10882,6 +10996,19 @@
    ]
   },
   {
+   "id": "3c6728c1bfd1",
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "source": "OpenAI News",
+   "source_category": "IT industry",
+   "published": "2026-11-24T13:00:00+00:00",
+   "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f328a95c846e",
    "title": "SUSE Linux security advisory (AV26-1198)",
    "url": "https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198",
@@ -14522,6 +14649,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "17e1095916e2",
+   "title": "Gödel Enigma",
+   "url": "https://www.helsinki.fi/en/researchgroups/godel-enigma/research/project-description",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-24T08:16:02+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
