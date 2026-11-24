@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T23:17:12+00:00",
+ "generated": "2026-11-24T23:32:14+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 50,
+   "recent": 31,
+   "error": null
   },
   {
    "source": "Ars Technica IT",
@@ -114,7 +114,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 135,
+   "recent": 135,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
-   "recent": 0,
+   "fetched": 80,
+   "recent": 4,
    "error": null
   },
   {
@@ -1097,7 +1097,7 @@
   },
   {
    "source": "Microsoft 365 Roadmap",
-   "fetched": 2401,
+   "fetched": 2397,
    "recent": 13,
    "error": null
   },
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
-   "recent": 1,
+   "fetched": 10,
+   "recent": 0,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 30,
+   "fetched": 94,
+   "recent": 29,
    "error": null
   },
   {
@@ -1943,8 +1943,8 @@
   },
   {
    "source": "Steam news",
-   "fetched": 0,
-   "recent": 0,
+   "fetched": 10,
+   "recent": 2,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 19,
+   "fetched": 21,
    "recent": 4,
    "error": null
   },
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 7,
+   "recent": 1,
    "error": null
   },
   {
@@ -2513,6 +2513,108 @@
   }
  ],
  "items": [
+  {
+   "id": "21ea68fc8b48",
+   "title": "WiseTech says Australian police took no action against founder Richard White after probing allegations he exploited a woman's immigration status for sex",
+   "url": "https://www.techmeme.com/261124/p43#a261124p43",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-24T23:25:08+00:00",
+   "summary": "Angus Whitley / Bloomberg : WiseTech says Australian police took no action against founder Richard White after probing allegations he exploited a woman's immigration status for sex — WiseTech Global Ltd. said Australian police ended an investigation and took no action against founder Richard White …",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "68a514a91e8b",
+   "title": "CVE-2026-132726: Deserialization of Untrusted Data vulnerability in Wikimedia Foundation MediaWiki - Echo Extension.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132726",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T23:17:28.767000+00:00",
+   "summary": "Deserialization of Untrusted Data vulnerability in Wikimedia Foundation MediaWiki - Echo Extension. This vulnerability is associated with program files includes/Model/Event.php. This issue affects MediaWiki - Echo Extension: from 1.43.0 before 1.43.12, from 1.45.0 before 1.45.7, from 1.46.0 before 1.46.3, 1.47.",
+   "kind": "cve",
+   "cve": "CVE-2026-132726",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-132726",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "72db2acb4e40",
+   "title": "CVE-2026-132697: Missing Authorization vulnerability in Wikimedia Foundation MediaWiki - EmailAuth Extension.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132697",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T23:17:25.073000+00:00",
+   "summary": "Missing Authorization vulnerability in Wikimedia Foundation MediaWiki - EmailAuth Extension. This vulnerability is associated with program files includes/EmailAuthSecondaryAuthenticationProvider.php. This issue affects MediaWiki - EmailAuth Extension: 1.43, 1.45, 1.46, 1.47.",
+   "kind": "cve",
+   "cve": "CVE-2026-132697",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-132697",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "77a19db76b9a",
+   "title": "CVE-2026-132694: Vulnerability in Wikimedia Foundation MediaWiki - OATHAuth Extension.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132694",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T23:17:24.687000+00:00",
+   "summary": "Vulnerability in Wikimedia Foundation MediaWiki - OATHAuth Extension. This vulnerability is associated with program files src/Key/WebAuthnKey.php. This issue affects MediaWiki - OATHAuth Extension: from 1.46.0 before 1.46.3, 1.47.",
+   "kind": "cve",
+   "cve": "CVE-2026-132694",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-132694",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6961e4ec336c",
+   "title": "CVE-2026-132669: Improper Access Control vulnerability in Wikimedia Foundation MediaWiki - EditAccount Extension.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132669",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T23:17:21.517000+00:00",
+   "summary": "Improper Access Control vulnerability in Wikimedia Foundation MediaWiki - EditAccount Extension.",
+   "kind": "cve",
+   "cve": "CVE-2026-132669",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-132669",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "09a5ca8ce3f4",
    "title": "Pokemon Childhood Version: A romhack where Mew is under the truck",
