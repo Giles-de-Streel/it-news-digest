@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T18:46:05+00:00",
+ "generated": "2026-11-24T19:01:27+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -101,9 +101,9 @@
   },
   {
    "source": "Slashdot",
-   "fetched": 15,
-   "recent": 15,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: no element found: line 324, column 27"
   },
   {
    "source": "CircleID",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 27,
+   "recent": 26,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -660,7 +660,7 @@
   {
    "source": "Palo Alto Networks advisories",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 171,
-   "recent": 123,
+   "recent": 122,
    "error": null
   },
   {
@@ -719,8 +719,8 @@
   },
   {
    "source": "Wiz Research",
-   "fetched": 729,
-   "recent": 2,
+   "fetched": 730,
+   "recent": 3,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
-   "recent": 4,
+   "fetched": 100,
+   "recent": 0,
    "error": null
   },
   {
@@ -947,8 +947,8 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1861,
-   "recent": 3,
+   "fetched": 1862,
+   "recent": 4,
    "error": null
   },
   {
@@ -984,7 +984,7 @@
   {
    "source": "Socket",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1092,7 +1092,7 @@
   {
    "source": "Office 365 for IT Pros",
    "fetched": 100,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
-   "recent": 0,
+   "fetched": 9,
+   "recent": 1,
    "error": null
   },
   {
@@ -1236,7 +1236,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1278,7 +1278,7 @@
   {
    "source": "Datadog Blog",
    "fetched": 97,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1398,7 +1398,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 6,
+   "recent": 9,
    "error": null
   },
   {
@@ -1415,14 +1415,14 @@
   },
   {
    "source": "AWS Security Bulletins",
-   "fetched": 35,
-   "recent": 3,
+   "fetched": 34,
+   "recent": 4,
    "error": null
   },
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1668,7 +1668,7 @@
   {
    "source": "TechNode",
    "fetched": 1998,
-   "recent": 14,
+   "recent": 7,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 45,
+   "recent": 46,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -2514,6 +2514,124 @@
  ],
  "items": [
   {
+   "id": "99ccfc2d0741",
+   "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+   "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-24T18:59:52+00:00",
+   "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "270fc51bff02",
+   "title": "Dedicated Clusters per Workload: When Shared Stops Paying",
+   "url": "https://cloudnativenow.com/contributed-content/dedicated-clusters-per-workload-when-shared-stops-paying/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-24T18:54:08+00:00",
+   "summary": "A shared Kubernetes cluster is the right default. It has one control plane to upgrade, one set of policies, one monitoring stack and one place for on-call to look. Many teams start there and should stay there. Some workloads outgrow it. At a streaming platform we recently moved test environments",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "be63cf16beb4",
+   "title": "Legendary Cooler Master Hyper 212 Halo CPU air cooler drops to an all-time low of $15 — keep your AMD or Intel processor running cool on the cheap",
+   "url": "https://www.tomshardware.com/pc-components/air-cooling/legendary-cooler-master-hyper-212-halo-cpu-air-cooler-drops-to-an-all-time-low-of-usd15-keep-your-amd-or-intel-processor-running-cool-on-the-cheap",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-24T18:53:17+00:00",
+   "summary": "Cooler Master's Hyper 212 Halo air cooler is on sale for $15, making it one of the most affordable name-brandnd tower-style CPU coolers available right now.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "3eb84d3007fd",
+   "title": "Skip the knockoffs: Real PITAKA aramid fiber cases start at $18.99 this Black Friday",
+   "url": "https://9to5mac.com/2026/11/24/skip-the-knockoffs-real-pitaka-aramid-fiber-cases-start-at-18-99-this-black-friday/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-24T18:51:21+00:00",
+   "summary": "Scroll through Amazon for five minutes and you’ll find dozens of $10–20 cases that look, through a thumbnail, almost identical to $50+ aramid fiber ones. Same dark weave, same slim profile, same pitch. Once you actually snap one onto a phone, the differences are obvious.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "538af54463e9",
+   "title": "Industrial internet of things satellite platform Myriota raises $40M to scale its constellation and expand",
+   "url": "https://siliconangle.com/2026/11/24/industrial-internet-of-things-satellite-platform-myriota-raises-40m-to-scale-its-constellation-and-expand/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-24T18:50:57+00:00",
+   "summary": "Australia-based Myriota Pty. Ltd., a global satellite platform for the industrial internet of things, today announced it raised $40 million in the first portion of its Series C to launch next-generation satellites and accelerate customer adoption across international markets.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "85fc02ce703e",
+   "title": "Mellanox founder backs Jensen Huang: \"He will be a much better CEO now\"",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8wb3h1TEFSYi1QR0RDcV9lTDNaVEhFQ2ZqeUdSTlpyR2dPVHZ2b2VjU0tBSWJzWlJ6N01SVXpWWVQ1V3VLV3BrVjRJZU9aTHROYUFGdmlhOFBIZ3FMVGIwZjcyaF90VFU?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-24T18:50:00+00:00",
+   "summary": "Mellanox founder backs Jensen Huang: \"He will be a much better CEO now\" www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ed6e3bd0b34c",
+   "title": "The \"Security Tax\": Reclaiming 30% Performance in WSL 2",
+   "url": "https://tonym.us/wsl2-security-tax-reclaiming-performance",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-24T18:45:22+00:00",
+   "summary": "A significant WSL2 performance issue I wrote about in march now has a better RCA and reproduction steps. You can get 50+% better build performance with kernelCommandLine=spec_rstack_overflow=off see also https://github.com/microsoft/WSL/issues/41827 Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "24cb2f6d4746",
+   "title": "CVE-2026-134066 - Query injection via schema-derived identifiers in Graph Explorer",
+   "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/",
+   "source": "AWS Security Bulletins",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T18:44:47+00:00",
+   "summary": "Bulletin ID: 2026-199-AWS Publication Date: 11/24/2026 10:30 AM PST Description: Graph Explorer is an open-source tool for browsing and searching graph data, which customers self-host against Amazon Neptune or other graph databases.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Databases"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-134066",
+     "score": 8.5,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "AMZN"
+    }
+   ]
+  },
+  {
    "id": "fa063cc320d4",
    "title": "Apple Home accessories: Here are my five top picks for your smart home",
    "url": "https://9to5mac.com/2026/11/24/apple-home-accessories-here-are-my-five-top-picks-for-your-smart-home/",
@@ -2527,6 +2645,33 @@
    ]
   },
   {
+   "id": "24dda7695830",
+   "title": "VMware security advisory (AV26-1203)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T18:43:41+00:00",
+   "summary": "Serial number: AV26-1203 Date: November 24, 2026 As of November 24, 2026, VMware is affected by vulnerabilities in the following products: VMware Cloud Foundation / VMware vSphere Foundation - vCenter 9.1.x.x versions prior to 9.1.2 9.0.x.x versions prior to 9.0.2.0300 VMware vCenter 8.0 versions prior to 8.0 U3m…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "ea6b7411d41d",
+   "title": "In the Heart of Harlem, a New Museum Tells the Overlooked Story of the Civil Rights Movement in the North",
+   "url": "https://www.smithsonianmag.com/smart-news/in-the-heart-of-harlem-a-new-museum-tells-the-overlooked-story-of-civil-rights-movement-in-the-north-180989934/",
+   "source": "Smithsonian Magazine",
+   "source_category": "Science & space",
+   "published": "2026-11-24T18:42:38+00:00",
+   "summary": "The Urban Civil Rights Museum bills itself as the first museum to focus on the struggle for racial equality in the cities of the northern United States. It is also the first civil rights museum in New York City",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "08f2cde50157",
    "title": "Hands-on: Sony’s Walkman-revival USB-C headphones are back in stock and worth a look",
    "url": "https://9to5google.com/2026/11/24/sony-walkman-mdr-3r-usb-c-headphones-hands-on/",
@@ -2534,6 +2679,19 @@
    "source_category": "IT industry",
    "published": "2026-11-24T18:41:11+00:00",
    "summary": "Sony’s iconic Walkman headphones are back in the USB-C MDR-3R and, after quickly selling out on launch day, they’ve now been restocked . And, after using them, I can see why they sold out so quickly. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "8ca27e7fcc03",
+   "title": "Analog geeks in a digital world: Gift guide 2026",
+   "url": "https://www.techtarget.com/news/analog-geeks-in-a-digital-world-gift-guide-2026/875647/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-24T18:41:00+00:00",
+   "summary": "In 2026, geeks wanted gifts that have very little to do with the internet.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2566,6 +2724,35 @@
    ]
   },
   {
+   "id": "677414fed8f4",
+   "title": "“Do Good Security” and Other Lessons from Wiz’s FedRAMP VDR & VER Event",
+   "url": "https://www.wiz.io/blog/fedramp-vdr-ver-event-key-takeaways",
+   "source": "Wiz Research",
+   "source_category": "Threat research",
+   "published": "2026-11-24T18:36:13+00:00",
+   "summary": "Key highlights from government leaders, industry experts, and the Wiz FedRAMP team from our November 12th event on modernizing vulnerability management to meet FedRAMP’s new requirements.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "a59ad9dedfa2",
+   "title": "PP136: How FireMon’s Agentic AI Helps Turn Back the Vulnerability Deluge (Sponsored)",
+   "url": "https://packetpushers.net/podcasts/packet-protector/pp136-how-firemons-agentic-ai-helps-turn-back-the-vulnerability-deluge-sponsored/",
+   "source": "Packet Pushers",
+   "source_category": "Networking",
+   "published": "2026-11-24T18:31:56+00:00",
+   "summary": "If you’ve ever inherited a firewall ruleset built by five different people over fifteen years — with rules nobody can explain, objects named after people who left the company in 1998, and policies that everyone’s afraid to touch — you already understand the problem FireMon helps solve.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Networking"
+   ]
+  },
+  {
    "id": "470b9c004cd6",
    "title": "3D printer tool changers are cheaper than ever, now starting at just $599 with multiple models at lowest-ever pricing",
    "url": "https://www.tomshardware.com/3d-printing/3d-printer-tool-changers-are-cheaper-than-ever-now-starting-at-just-usd599-with-multiple-models-at-lowest-ever-pricing-these-game-changing-multi-material-multi-color-filament-saving-printers-are-all-on-sale",
@@ -2589,6 +2776,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "1e82285f7c83",
+   "title": "Chrome Beta for Desktop Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0422009936.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T18:28:33.237000+00:00",
+   "summary": "The Beta channel has been updated to 159.0.8154.33 for Windows, Mac and Linux. A partial list of changes is available in the Git log . Interested in switching release channels? Find out how . If you find a new issue, please let us know by filing a bug .",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -3191,6 +3393,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "877e65933548",
+   "title": "Chrome for Android Update",
+   "url": "http://chromereleases.googleblog.com/2026/11/chrome-for-android-update_082592203.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T18:12:30.107000+00:00",
+   "summary": "Hello Everyone! We've just released Chrome 159 (159.0.8154.33) for Android to a small percentage of users. It'll become available on Google Play over the next few days. You can find more details about early Stable releases here . This release includes stability and performance improvements.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -7320,6 +7535,14 @@
      "url": "https://www.tomshardware.com/pc-components/gpus/best-gaming-graphics-card-gpu-deals-nvidia-amd-intel",
      "summary": "Save money on GeForce, Radeon, and Arc graphics cards. We're constantly updating this list with the best Black Friday GPU deals across all sales at all retailers.",
      "published": "2026-11-24T16:59:36+00:00"
+    },
+    {
+     "id": "870e04329583",
+     "source": "9to5Mac",
+     "title": "Disney+, HBO Max, Apple TV, more: Here are the best Black Friday deals",
+     "url": "https://9to5mac.com/2026/11/24/hbo-max-peacock-apple-tv-more-here-are-the-best-black-friday-deals/",
+     "summary": "The holidays are often the best time to subscribe to streaming services at deep discounts, and that’s true again this year. Here are the best Black Friday deals that are already live for HBO Max, Peacock, Apple TV, and more. [ Updated to add Disney+ and Hulu deal.] more…",
+     "published": "2026-11-24T18:54:37+00:00"
     }
    ],
    "topics": [
@@ -14450,6 +14673,19 @@
    ]
   },
   {
+   "id": "1d080cb32450",
+   "title": "Introducing Bits Maintenance, your AI teammate for infrastructure patching and upgrades",
+   "url": "https://www.datadoghq.com/blog/bits-maintenance/",
+   "source": "Datadog Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-24T00:00:00+00:00",
+   "summary": "Learn how Bits Maintenance helps you automate infrastructure maintenance, working 24/7 within guardrails you define.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "84ef199962b0",
    "title": "Do-it-yourself meta-analysis",
    "url": "https://entropicthoughts.com/diy-meta-analysis",
@@ -14827,7 +15063,16 @@
    "source_category": "Linux admin",
    "published": "2026-11-23T07:13:01+00:00",
    "summary": "Version: 5.15.226 (longterm) Released: 2026-11-23 Source: linux-5.15.226.tar.xz PGP Signature: linux-5.15.226.tar.sign Patch: full ( incremental ) ChangeLog: ChangeLog-5.15.226",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "30711a4f8973",
+     "source": "Chrome Releases",
+     "title": "Early Stable Update for Desktop",
+     "url": "http://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_027920431.html",
+     "summary": "The Stable channel has been updated to 159.0.8154.33/.34 for Windows , Mac as part of our early stable release to a small percentage of users. A full list of changes in this build is available in the log . You can find more details about early Stable releases here . Interested in switching release channels?",
+     "published": "2026-11-24T18:36:59.123000+00:00"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source"
