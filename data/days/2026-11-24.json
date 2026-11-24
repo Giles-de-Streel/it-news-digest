@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T10:01:23+00:00",
+ "generated": "2026-11-24T10:16:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -378,7 +378,7 @@
   {
    "source": "Percona Blog",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 10,
+   "recent": 12,
    "error": null
   },
   {
@@ -678,7 +678,7 @@
   {
    "source": "NCSC UK",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -1049,9 +1049,9 @@
   },
   {
    "source": "Lean Enterprise Institute",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Agile Pain Relief",
@@ -1428,7 +1428,7 @@
   {
    "source": "Higher Ed Dive",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -1590,7 +1590,7 @@
   {
    "source": "Prajwal Desai",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 97,
+   "fetched": 96,
    "recent": 28,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
-   "recent": 5,
+   "fetched": 22,
+   "recent": 6,
    "error": null
   },
   {
@@ -2190,7 +2190,7 @@
   {
    "source": "NPR Technology",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,47 @@
  ],
  "items": [
   {
+   "id": "419ae3acbec3",
+   "title": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
+   "url": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks",
+   "source": "NCSC UK",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T10:15:36+00:00",
+   "summary": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "5552b00a2d09",
+   "title": "SCCM 2603 Hotfix KB40345593 Resolves Bulk Registration Token Verification Failures",
+   "url": "https://www.prajwaldesai.com/sccm-2603-hotfix-kb40345593/",
+   "source": "Prajwal Desai",
+   "source_category": "Endpoint management",
+   "published": "2026-11-24T10:14:06+00:00",
+   "summary": "Microsoft has released a new hotfix KB40345593 for Configuration Manager version 2603, specifically addressing bulk registration token verification failures that arise...",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "Endpoint management"
+   ]
+  },
+  {
+   "id": "34eb5ec9d7f5",
+   "title": "Ally Financial reinvents customer personas with agentic AI",
+   "url": "https://www.cio.com/article/4249853/ally-financial-reinvents-customer-personas-with-agentic-ai.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-24T10:01:00+00:00",
+   "summary": "When the bottom line depends on robust, personalized digital experiences, anticipating how customers and prospects will respond to new services or offerings or to changes in existing customer journeys is paramount.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "8a5c7408eb1b",
    "title": "Enthusiast gets GTA V running on a 2007 Radeon with just 64MB of VRAM",
    "url": "https://www.tomshardware.com/video-games/pc-gaming/enthusiast-gets-gta-v-running-on-a-2007-radeon-with-just-64mb-of-vram-config-edits-windows-8-and-an-overclock-lift-it-from-1-fps-to-20-fps-but-most-cars-stop-rendering",
@@ -2524,6 +2565,45 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "6a9c57f7a844",
+   "title": "Changing the engine while flying: How to turn AI productivity gains into business transformation",
+   "url": "https://www.cio.com/article/4252232/changing-the-engine-while-flying-how-to-turn-ai-productivity-gains-into-business-transformation.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-24T10:00:00+00:00",
+   "summary": "I’ve seen plenty of companies roll out copilots and AI assistants and expect individual productivity gains to translate into enterprise-level results. But it doesn’t usually work that way.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a78fc39dbe3a",
+   "title": "Federal student lending caps are ‘blunt instrument’ to prevent defaults, researchers say",
+   "url": "https://www.highereddive.com/news/federal-student-lending-caps-are-blunt-instrument-to-prevent-defaults-re/875555/",
+   "source": "Higher Ed Dive",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T10:00:00+00:00",
+   "summary": "Criteria such as program earnings and credit profiles would better address that risk, according to research from the Federal Reserve Bank of Philadelphia.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e977e39ac60b",
+   "title": "Alabama lawmaker eyes 3-year bachelor’s degrees for public colleges",
+   "url": "https://www.highereddive.com/news/alabama-lawmaker-eyes-3-year-bachelors-degrees-for-public-colleges/875537/",
+   "source": "Higher Ed Dive",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T10:00:00+00:00",
+   "summary": "The forthcoming proposal would allow the state’s universities and community colleges to create reduced-credit programs in high-demand fields.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
    ]
   },
   {
@@ -2593,6 +2673,20 @@
    ]
   },
   {
+   "id": "6b1e013d1d37",
+   "title": "FCC Chair Proposes Expanding Mandatory Blocking of Scam Calls Before They Ring and Banning Separate Fees for Landline Protection",
+   "url": "https://joho-todai.com/en/fcc-proposes-expanded-spam-call-blocking-free-landline-protection/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:44:59+00:00",
+   "summary": "The chair of the U.S. Federal Communications Commission has proposed requiring more carriers to block calls that are highly likely to be illegal before they reach users. He also proposed rules preventing separate additional charges for network-based call screening and blocking on landlines and basic mobile phones.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "92348d406be2",
    "title": "Jobin Augustine: Pre-Calculating HugePages for PostgreSQL",
    "url": "https://postgr.es/p/9Dr",
@@ -2612,6 +2706,19 @@
    ],
    "topics": [
     "Databases"
+   ]
+  },
+  {
+   "id": "e0ad3efb80c2",
+   "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
+   "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-24T09:39:50+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3232,6 +3339,21 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "06ddd1a68807",
+   "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+   "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-24T08:34:20+00:00",
+   "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases",
+    "System administration",
+    "Identity & access"
    ]
   },
   {
@@ -4571,6 +4693,14 @@
      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime.",
      "published": "2026-11-24T06:02:57+00:00"
+    },
+    {
+     "id": "95dec23f0f69",
+     "source": "Joho no Todai (English)",
+     "title": "OpenAI and Cisco Release Shirudo, Adding Temporary Protection Without Stopping Linux",
+     "url": "https://joho-todai.com/en/openai-cisco-shiruedo-linux-security-patch/",
+     "summary": "OpenAI and Cisco have released Shirudo, an open-source platform that adds temporary protections to running Linux systems. AI generates safeguards and operators approve their deployment; in a Java4Shell test, it blocked an attack without restarting the service.",
+     "published": "2026-11-24T09:58:19+00:00"
     }
    ],
    "topics": [
@@ -4738,6 +4868,14 @@
      "url": "https://www.lemonde.fr/en/economy/article/2026/11/24/jensen-huang-s-spectacular-comeback-at-nvidia-under-pressure-from-trump-and-markets_6787686_19.html",
      "summary": "Forced to resign 11 days ago after the revelation of his extramarital affair with a woman suspected of passing information to Chinese intelligence services, the CEO was reinstated on Monday by the chip giant's board.",
      "published": "2026-11-24T09:34:57+00:00"
+    },
+    {
+     "id": "56b318040a52",
+     "source": "NPR Technology",
+     "title": "For workplace culture champions, Jensen Huang's return is 'unfathomable'",
+     "url": "https://www.npr.org/2026/11/24/nx-s1-6051583/nvidia-huang-dei-trump-women",
+     "summary": "Some who have worked to promote diversity and inclusion in Silicon Valley say Jensen Huang's reinstatement as Nvidia's CEO sends a message that all that matters is money.",
+     "published": "2026-11-24T10:00:00+00:00"
     }
    ],
    "topics": [
@@ -5121,6 +5259,19 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "89805270f453",
+   "title": "Amazon OpenSearch Service now supports OpenSearch version 3.9",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-opensearch-3-9",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-23T19:30:00+00:00",
+   "summary": "You can now run OpenSearch version 3.9 on Amazon OpenSearch Service. OpenSearch 3.9 helps you reduce vector memory and storage, evaluate search quality with more large language model (LLM) providers, build more responsive AI agents, and control access to shared resources.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
