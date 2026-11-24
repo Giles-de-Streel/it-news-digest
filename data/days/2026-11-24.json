@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T08:16:14+00:00",
+ "generated": "2026-11-24T08:32:05+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -642,7 +642,7 @@
   {
    "source": "VMware Security Advisories (Broadcom)",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 123,
-   "recent": 117,
+   "fetched": 125,
+   "recent": 119,
    "error": null
   },
   {
@@ -1026,7 +1026,7 @@
   {
    "source": "Scrum.org blog",
    "fetched": 42,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1595,9 +1595,9 @@
   },
   {
    "source": "Adrian Roselli",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "OpenSSL News",
@@ -1871,8 +1871,8 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 6,
-   "recent": 1,
+   "fetched": 5,
+   "recent": 0,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 21,
+   "recent": 22,
    "error": null
   },
   {
@@ -1973,9 +1973,9 @@
   },
   {
    "source": "Aras Pranckevičius",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "source": "Level Access blog",
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
-   "recent": 5,
+   "fetched": 23,
+   "recent": 6,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,104 @@
  ],
  "items": [
   {
+   "id": "3728b2668cd7",
+   "title": "VMSA-2026-0011: VMware ESX, vCenter, Workstation, Fusion, and, Avi Load Balancer updates address multiple vulnerabilities",
+   "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39626",
+   "source": "VMware Security Advisories (Broadcom)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T08:30:35+00:00",
+   "summary": "Critical. Products: VMware Avi Load Balancer,.... CVEs: CVE-2026-123903, CVE-2026-123904, CVE-2026-123905, CVE-2026-123906, CVE-2026-123907, CVE-2026-123908, CVE-2026-123909, CVE-2026-123910, CVE-2026-123911, CVE-2026-123912, CVE-2026-123913, CVE-2026-123914, CVE-2026-123915, CVE-2026-123916, CVE-2026-123918,…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure",
+    "Hardware",
+    "Networking"
+   ],
+   "cves": []
+  },
+  {
+   "id": "4492ec4c08f1",
+   "title": "The Ultimate AI Toolbox for Scrum Teams",
+   "url": "https://www.scrum.org/resources/blog/ultimate-ai-toolbox-scrum-teams",
+   "source": "Scrum.org blog",
+   "source_category": "Agile & delivery",
+   "published": "2026-11-24T08:27:14+00:00",
+   "summary": "Image The Scrum way of working is being elevated with the advent of AI. So, we will be seeing a new generation of AI-enabled Scrum Teams. If you want to upgrade your Scrum way of working with the power of AI, this guide is a powerful starting point. It shows you how to setup an AI-enabled Scrum Team.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Agile & delivery"
+   ]
+  },
+  {
+   "id": "4a97cb966651",
+   "title": "Stalwart 1.2.0 lets Outlook keep working after an Exchange move",
+   "url": "https://4sysops.com/archives/stalwart-1-2-0-lets-outlook-keep-working-after-an-exchange-move/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-24T08:17:10+00:00",
+   "summary": "Stalwart is an open-source mail server for organizations that want to host email themselves. Version 1.2.0 adds Exchange client protocols, letting users keep Outlook while their mailboxes move to Stalwart. The new compatibility is included in the free Community edition. Source",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d14a02e4bca9",
+   "title": "GPT-6.2 reaches regular ChatGPT, while free users wait",
+   "url": "https://4sysops.com/archives/gpt-6-2-reaches-regular-chatgpt-while-free-users-wait/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-24T08:17:09+00:00",
+   "summary": "OpenAI is rolling out GPT-6.2, a chat-focused model for everyday conversations, in ChatGPT’s standard chat experience. The move follows the GPT-6.2 Astra and Sol launch , which initially brought the models to ChatGPT Work and Codex.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ef49627923b1",
+   "title": "Microsoft tests a compact Edge first-run setup on Windows 11",
+   "url": "https://4sysops.com/archives/microsoft-tests-a-compact-edge-first-run-setup-on-windows-11/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-24T08:17:08+00:00",
+   "summary": "Microsoft is testing a redesigned first-run experience for Edge that replaces full-screen setup pages with smaller windows. The experimental flow keeps familiar setup choices and adds an option to import browsing data from a Google account.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
+   ]
+  },
+  {
+   "id": "cdb989a1d08e",
+   "title": "Microsoft Teams will flag voice phishing in external calls with AI",
+   "url": "https://4sysops.com/archives/microsoft-teams-will-flag-voice-phishing-in-external-calls-with-ai/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-24T08:17:07+00:00",
+   "summary": "Microsoft Teams is slated to add AI-powered Voice Phishing Detection for one-to-one calls with people outside an organization. The feature will analyze what callers say and warn users about possible social engineering, with preview planned for December 2026 and general availability in January 2027 on desktop, Android,…",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "1ab0e6dd369f",
+   "title": "Why is Amazon paying $7.5 billion for a three-year-old Israeli AI startup?",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9HVU80S0IyQ3lEN3V1RWlQRE5NS3QtejJUZHRkZmtDQ09KUEtuRXdsY19GLV93LTlYZkRHOUhadGQ3N25kSzBMemVSR0RYcmhyaHJkTGNKUHg1OVZ1ZklKTWlxV25uS28?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:17:00+00:00",
+   "summary": "Why is Amazon paying $7.5 billion for a three-year-old Israeli AI startup? www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "a1a978bc2f82",
    "title": "TinyWifiDongle Arduino library turns ESP32-S3 and Raspberry Pi Pico 2 W boards into USB WiFi adapters",
    "url": "https://www.cnx-software.com/2026/11/24/tinywifidongle-arduino-library-turns-esp32-s3-and-raspberry-pi-pico-2-w-boards-into-usb-wifi-adapters/",
@@ -2540,6 +2638,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "530eaa08afbc",
+   "title": "Trump, Nvidia and power: could we be nearing the end of tech’s Gilded Age?",
+   "url": "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:00:11+00:00",
+   "summary": "Oligarchs believe they’re untouchable – the blue wave offers hope that the rampant corruption of the Trump era may soon be over One can imagine high-fives all around Nvidia’s boardroom after the board reinstated Jensen Huang to the CEO suite.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2901,7 +3012,16 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-24T07:00:00+00:00",
    "summary": "In August 2026, Microsoft published news of the new Invoke-ChangeMeetingOrganizer cmdlet to change meeting organizers. Now Outlook and the Teams calendar app get the UX wrapped around the cmdlet to make the feature more accessible to end users.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "339f1032b72c",
+     "source": "4sysops",
+     "title": "Outlook and Teams add a simpler way to change meeting organizers",
+     "url": "https://4sysops.com/archives/outlook-and-teams-add-a-simpler-way-to-change-meeting-organizers/",
+     "summary": "Microsoft is rolling out a meeting-organizer transfer option in classic Outlook, new Outlook, Outlook on the web, and Teams. It builds on the Exchange cmdlet that could move calendar ownership but leave the online meeting with the former organizer, a limitation covered in the cmdlet’s initial rollout .",
+     "published": "2026-11-24T08:17:06+00:00"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
    ]
@@ -3757,6 +3877,20 @@
    ]
   },
   {
+   "id": "4d2155bb69a3",
+   "title": "RHSA-2026:102802: Important: libXi security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102802",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T04:22:55+00:00",
+   "summary": "An update for libXi is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "6b060db5086f",
    "title": "CrowdStrike Signs Definitive Agreement to Acquire Zscaler; Monitoring Data Will Also Train Security AI",
    "url": "https://joho-todai.com/en/crowdstrike-acquires-zscaler-ai-security/",
@@ -3831,6 +3965,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "c14d3033a5e2",
+   "title": "RHSA-2026:102715: Critical: ruby security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102715",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T03:09:47+00:00",
+   "summary": "An update for ruby is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
