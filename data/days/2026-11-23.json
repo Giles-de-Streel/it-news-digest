@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-24T02:16:07+00:00",
+ "generated": "2026-11-24T02:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,14 +161,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 38,
-   "recent": 38,
+   "fetched": 41,
+   "recent": 41,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 35,
+   "recent": 34,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 20,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -749,8 +749,8 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 78,
-   "recent": 2,
+   "fetched": 79,
+   "recent": 3,
    "error": null
   },
   {
@@ -1469,9 +1469,9 @@
   },
   {
    "source": "Backblaze Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "fetched": 9,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "ZDNet",
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 20,
+   "fetched": 96,
+   "recent": 22,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 22,
-   "recent": 5,
+   "fetched": 25,
+   "recent": 6,
    "error": null
   },
   {
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 71,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -2514,6 +2514,53 @@
  ],
  "items": [
   {
+   "id": "b47e28ce6934",
+   "title": "CVE-2026-18530: OS command injection in the a3cli restricted shell in Lantronix S2220 Series 2 allows an authenticated…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18530",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T02:17:47.313000+00:00",
+   "summary": "OS command injection in the a3cli restricted shell in Lantronix S2220 Series 2 allows an authenticated attacker to bypass shell restrictions and execute arbitrary operating system commands via unsanitized command substitution metacharacters, including backticks and $(), in parameters of permitted commands over SSH.",
+   "kind": "cve",
+   "cve": "CVE-2026-18530",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-18530",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f086986599fb",
+   "title": "CVE-2026-114203: An Improper Neutralization of Special Elements used in an OS Command（'OS Command Injection') in the ASUS GPU…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114203",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T02:17:46.410000+00:00",
+   "summary": "An Improper Neutralization of Special Elements used in an OS Command（'OS Command Injection') in the ASUS GPU Tweak III allows a remote user to execute arbitrary OS commands via a crafted request to an HTTP endpoint of the service.",
+   "kind": "cve",
+   "cve": "CVE-2026-114203",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-114203",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware"
+   ]
+  },
+  {
    "id": "7cdacec2a6e6",
    "title": "Filing: the former OpenAI engineer charged with bugging an exec conference room had dozens of OpenAI meeting recordings, many involving possible trade secrets",
    "url": "https://www.techmeme.com/261123/p49#a261123p49",
@@ -2524,6 +2571,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "37309e904459",
+   "title": "CEO Antonio Neri Says HPE Circuit To Packet Device Worked ‘As Configured’ In FAA Network Shutdown: CRN Exclusive",
+   "url": "https://www.crn.com/news/networking/2026/ceo-antonio-neri-says-hpe-circuit-to-packet-device-worked-as-configured-in-faa-network-shutdown-crn-exclusive",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-24T02:09:00+00:00",
+   "summary": "Here's a look at why HPE CEO Antonio Neri says that the HPE device involved in a network issue that led to an FAA ground stop earlier this month was not a router but an HPE Juniper Circuit to Packet platform that worked as configured.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -2911,6 +2971,28 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "bacee9f053e6",
+   "title": "CVE-2026-134401: Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-24T00:17:30.460000+00:00",
+   "summary": "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+   "kind": "cve",
+   "cve": "CVE-2026-134401",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134401",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
