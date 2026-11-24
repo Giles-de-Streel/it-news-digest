@@ -1,12 +1,12 @@
 {
  "date": "2026-11-23",
- "generated": "2026-11-24T03:31:58+00:00",
+ "generated": "2026-11-24T03:46:25+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -725,9 +725,9 @@
   },
   {
    "source": "Industrial Cyber",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 9,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "Siemens ProductCERT advisories",
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -1817,9 +1817,9 @@
   },
   {
    "source": "Mozilla Security Blog",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 504: Gateway Timeout"
   },
   {
    "source": "Google Online Security Blog",
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 24,
+   "fetched": 25,
    "recent": 6,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,43 @@
  ],
  "items": [
   {
+   "id": "ed44e8675584",
+   "title": "Multi-Monitor Displays Still Freeze With NVIDIA Linux Driver 620.73.04; Downgrade Restores Output in One Case",
+   "url": "https://joho-todai.com/en/nvidia-linux-driver-multi-display-issue-620-73-04/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T03:32:20+00:00",
+   "summary": "Display problems have been reported with NVIDIA's R620 Linux drivers on multi-monitor systems using several GeForce RTX 30-, 40-, and 50-series models. NVIDIA is investigating page-flip timeouts occurring with version 620.70.06 under internal bug 7126445.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "8ca82ff4ccd6",
+   "title": "New York Bans Subscription and Post-Purchase Fees On Cars",
+   "url": "https://tech.slashdot.org/story/26/11/24/0233203/new-york-bans-subscription-and-post-purchase-fees-on-cars?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-24T03:30:00+00:00",
+   "summary": "An anonymous reader quotes a report from WGNA-FM: On November 23rd, New York State Governor Kathy Hochul announced Bill S.9348A/A.10411A. This bill aims to put money back in New Yorkers pockets by prohibiting any vehicle manufacturers, dealers, or third-party providers from charging consumers more money for locked…",
+   "also_covered_by": [
+    {
+     "id": "028a4f922290",
+     "source": "Hacker News",
+     "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+     "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+     "summary": "Comments",
+     "published": "2026-11-24T02:27:02+00:00"
+    }
+   ],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "8ea92a3caa65",
    "title": "Sources: Jensen Huang disclosed additional affairs beyond the two already reported during his Sunday meeting with Nvidia's board, but was remorseful about them",
    "url": "https://www.techmeme.com/261123/p51#a261123p51",
@@ -2538,6 +2575,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "0b444b5e2cc6",
+   "title": "xnulinux Runs macOS on Linux, Reports Desktop Boot on Physical NVIDIA DGX Spark Hardware",
+   "url": "https://joho-todai.com/en/linux-macos-xnulinux-nvidia-dgx-spark-desktop/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T03:10:40+00:00",
+   "summary": "Experimental project xnulinux has run the macOS XNU kernel on Linux and reported booting the desktop on physical NVIDIA DGX Spark hardware. XNU controls the CPU directly while using Linux capabilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
    ]
   },
   {
@@ -2580,6 +2631,19 @@
     "Vulnerabilities & patches",
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "0d84432f471c",
+   "title": "Google Search AI Expands to Payment Data and Personal Documents; Ad-Use Terms Also Merit Attention",
+   "url": "https://joho-todai.com/en/google-search-ai-payment-personal-documents/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T02:40:49+00:00",
+   "summary": "Google Search's AI Mode is expanding the range of personal information it can reference. Google Wallet payment data, Google Drive documents, and conversation history from the Gemini app have been added as new connection options, while an advertising exception in the privacy policy revised in October also merits…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -11463,6 +11527,14 @@
      "url": "https://www.neowin.net/news/ladybirds-first-alpha-brings-a-truly-independent-browser-to-macos-and-linux/?utm_source=rss",
      "summary": "Ladybird's alpha offers macOS and Linux users something different from the usual browser choices, if they can tolerate broken websites and the odd crash.",
      "published": "2026-11-24T01:26:02+00:00"
+    },
+    {
+     "id": "76cf5ff821e4",
+     "source": "Joho no Todai (English)",
+     "title": "Ladybird Releases First Alpha of Its Independent Browser Engine, With No Chromium or Gecko Dependency",
+     "url": "https://joho-todai.com/en/ladybird-independent-browser-alpha-release/",
+     "summary": "Open-source web browser Ladybird released its first alpha on November 23. It uses an independent engine derived from none of Chromium, Gecko, or WebKit and is available to try on macOS and Linux.",
+     "published": "2026-11-24T02:23:09+00:00"
     }
    ],
    "topics": [
