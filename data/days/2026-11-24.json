@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T21:31:10+00:00",
+ "generated": "2026-11-24T21:46:01+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -24,7 +24,7 @@
   {
    "source": "Dark Reading",
    "fetched": 50,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 34,
+   "recent": 33,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 182,
+   "fetched": 183,
    "recent": 122,
    "error": null
   },
@@ -768,7 +768,7 @@
   {
    "source": "CNX Software",
    "fetched": 32,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 78,
+   "recent": 75,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 96,
+   "fetched": 100,
    "recent": 32,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 22,
-   "recent": 5,
+   "fetched": 19,
+   "recent": 4,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,116 @@
   }
  ],
  "items": [
+  {
+   "id": "8d9f5ee23e53",
+   "title": "RHSA-2026:103194: Important: mariadb:10.11 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103194",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T21:41:45+00:00",
+   "summary": "An update for the mariadb:10.11 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Databases"
+   ]
+  },
+  {
+   "id": "1a2f60d55e4c",
+   "title": "Rackspace shuts down Spot cloud platform after security breach",
+   "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-24T21:37:30+00:00",
+   "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "3b8d0a7e0d03",
+   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+   "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+   "source": "Dark Reading",
+   "source_category": "Security",
+   "published": "2026-11-24T21:36:11+00:00",
+   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "a0e5b43d1d97",
+   "title": "Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5",
+   "url": "https://www.techmeme.com/261124/p38#a261124p38",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:35:02+00:00",
+   "summary": "Will Knight / Wired : Anthropic details Siren, a honeypot test that tempts AI agents to escape sandboxes; its newer models fell for it 0.6%-1.6% of the time, vs. 25.8% for Mythos 5 — A new test assumes AI agents can go rogue—and asks whether they can resist temptation. — Leather-clad billionaires …",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "2217aa215eb1",
+   "title": "Germany’s network regulator: Müller set for second term",
+   "url": "https://www.heise.de/en/news/Germany-s-network-regulator-Mueller-set-for-second-term-11536903.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:33:00+00:00",
+   "summary": "Politicians value pragmatist Klaus Müller and have nominated him for another term. The regulator faces major challenges.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "811bb68a9592",
+   "title": "Docs: Grubhub is on track for ~$6.4B in GTV and a $97M EBITDA loss in 2026, reflecting heavy marketing and operating costs; Wonder says it's not pursuing a sale",
+   "url": "https://www.techmeme.com/261124/p37#a261124p37",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:30:52+00:00",
+   "summary": "Valida Pau / The Information : Docs: Grubhub is on track for ~$6.4B in GTV and a $97M EBITDA loss in 2026, reflecting heavy marketing and operating costs; Wonder says it's not pursuing a sale — Marc Lore's Wonder is not pursuing a sale of Grubhub, Wonder says, after preliminary sales talks with Amazon and Walmart.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e843084d8ca3",
+   "title": "Best Black Friday gaming laptop PC deals 2026",
+   "url": "https://www.tomshardware.com/laptops/gaming-laptops/best-gaming-laptop-deals-dell-msi-alienware-rog",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-24T21:30:19+00:00",
+   "summary": "Here are the best Black Friday gaming laptop deals. We're constantly updating this list with the best deals still available across all of the major retailers.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "2962e094166d",
+   "title": "More art, less artificial: Seattle Art Museum billboards troll tech ads and tell people to look up",
+   "url": "https://www.geekwire.com/2026/more-art-less-artificial-seattle-art-museum-billboards-troll-tech-ads-and-tell-people-to-look-up/",
+   "source": "GeekWire",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:27:29+00:00",
+   "summary": "SAM's \"Dear Seattle\" campaign takes a swipe at Anthropic's Claude and the algorithm while urging people to get off their phones and see art in person. Read More",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI"
+   ]
+  },
   {
    "id": "f56fc6cfa036",
    "title": "Camera glasses: Consumer group takes Meta and Ray-Ban to court",
@@ -2599,6 +2709,19 @@
     "Vulnerabilities & patches",
     "TLS & PKI",
     "Networking"
+   ]
+  },
+  {
+   "id": "ae7bb2247802",
+   "title": "NASA+ Content Coming to Big Screen at Greenbelt, Maryland Cinema",
+   "url": "https://www.nasa.gov/nasa/nasa-content-coming-to-big-screen-at-greenbelt-maryland-cinema/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-24T21:14:36+00:00",
+   "summary": "NASA announced Monday that NASA+ content has found its first theatrical home at The Greenbelt Cinema in Greenbelt, Maryland, expanding the agency’s reach across major viewing platforms and bringing space even closer to home.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -13995,6 +14118,28 @@
    ]
   },
   {
+   "id": "6a5031d62bcd",
+   "title": "Your AI agent shouldn’t get to grade its own work",
+   "url": "https://www.infoworld.com/article/4251743/your-ai-agent-shouldnt-get-to-define-done.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:00:00+00:00",
+   "summary": "In a recent experiment , Claude Opus 4.8 built an invoice checker, revised it, and raised its score from just over 45 out of 100 to a perfect 100. That’s roughly a 122% improvement. Banish the humans! The robots have won. Well, maybe not. Remember that math teacher in eighth grade who let you grade your own tests?",
+   "also_covered_by": [
+    {
+     "id": "07b4e95a0768",
+     "source": "Hacker News",
+     "title": "Working with AI",
+     "url": "https://www.anthropic.com/research/working-with-ai",
+     "summary": "Comments",
+     "published": "2026-11-24T21:07:38+00:00"
+    }
+   ],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "e31d4afe2143",
    "title": "The SaaS resiliency bill is coming due",
    "url": "https://www.infoworld.com/article/4252431/the-saas-resiliency-bill-is-coming-due.html",
@@ -14017,19 +14162,6 @@
    "source_category": "IT industry",
    "published": "2026-11-24T09:00:00+00:00",
    "summary": "Early in my career, I helped build a healthcare platform for patient-reported outcomes. It exchanged data with a federal health system and several EHR vendors. The hard question with those integrations was never whether the data moved. It was who started the access, and under what authority.",
-   "also_covered_by": [],
-   "topics": [
-    "AI"
-   ]
-  },
-  {
-   "id": "6a5031d62bcd",
-   "title": "Your AI agent shouldn’t get to grade its own work",
-   "url": "https://www.infoworld.com/article/4251743/your-ai-agent-shouldnt-get-to-define-done.html",
-   "source": "InfoWorld",
-   "source_category": "IT industry",
-   "published": "2026-11-24T09:00:00+00:00",
-   "summary": "In a recent experiment , Claude Opus 4.8 built an invoice checker, revised it, and raised its score from just over 45 out of 100 to a perfect 100. That’s roughly a 122% improvement. Banish the humans! The robots have won. Well, maybe not. Remember that math teacher in eighth grade who let you grade your own tests?",
    "also_covered_by": [],
    "topics": [
     "AI"
