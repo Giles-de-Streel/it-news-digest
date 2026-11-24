@@ -1635,7 +1635,7 @@
         trees.appendChild(b);
       });
       row.appendChild(trees);
-      row.appendChild(make("span", "dice-pays", `wins ${pool.length - 1}`));
+      row.appendChild(make("span", "dice-pays", `earns ${plural(pool.length - 1)}`));
       pop.appendChild(row);
     }
     pop.appendChild(make("p", "dice-note", `Each lost bet costs 1 treat. You have ${plural(getTreats())}.`));
