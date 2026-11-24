@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-24T09:00:57+00:00",
+ "generated": "2026-11-24T09:15:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -90,7 +90,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 2,
+   "recent": 5,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 16,
+   "recent": 20,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 134,
-   "recent": 128,
+   "fetched": 135,
+   "recent": 129,
    "error": null
   },
   {
@@ -816,7 +816,7 @@
   {
    "source": "Intune Customer Success",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 52,
+   "recent": 54,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 97,
+   "fetched": 96,
    "recent": 26,
    "error": null
   },
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 19,
+   "fetched": 18,
    "recent": 5,
    "error": null
   },
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 71,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,46 @@
  ],
  "items": [
   {
+   "id": "ac5a415230a9",
+   "title": "RHSA-2026:102854: Critical: ruby security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:102854",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T09:09:06+00:00",
+   "summary": "An update for ruby is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "64b74004db73",
+   "title": "qBittorrent 5.3.1 BitTorrent Client Is Out with Various Bug Fixes and Improvements",
+   "url": "https://9to5linux.com/qbittorrent-5-3-1-bittorrent-client-is-out-with-various-bug-fixes-and-improvements",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-24T09:06:27+00:00",
+   "summary": "qBittorrent 5.3.1 open-source BitTorrent client is now available for download addressing a number of bug fixes across the application, Web UI, and Web API.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9e4b006ee802",
+   "title": "Claude Ship gives AI a seat on both sides of code review",
+   "url": "https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-24T09:02:02+00:00",
+   "summary": "Anthropic launched Claude Ship in beta, a suite of agents that reviews pull requests, fixes issues and approves changes permitted by a team’s policy. Teams decide where it runs and which changes require human approval. Anthropic said Claude writes most of the code on its Claude Code team.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "d90660b8a438",
    "title": "RF Remote Cloning Without the Benefit of an SDR",
    "url": "https://hackaday.com/2026/11/24/rf-remote-cloning-without-the-benefit-of-an-sdr/",
@@ -2521,6 +2561,73 @@
    "source_category": "Embedded",
    "published": "2026-11-24T09:00:27+00:00",
    "summary": "It’s difficult to overstate just how transformative the RTL-SDR project was for the hobbyist. It wasn’t that software-defined radios didn’t exist before that, of course. It’s that folks like us …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e31d4afe2143",
+   "title": "The SaaS resiliency bill is coming due",
+   "url": "https://www.infoworld.com/article/4252431/the-saas-resiliency-bill-is-coming-due.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:00:00+00:00",
+   "summary": "The latest Microsoft outage should give enterprise architects pause. Widespread disruptions to Microsoft 365—including Outlook, Teams, and Copilot—affected users across many countries, with reports of sharp spikes in outages.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "6a3eb8358cf7",
+   "title": "When five AI agents make one mistake, which one’s at fault?",
+   "url": "https://www.infoworld.com/article/4252189/when-five-ai-agents-make-one-mistake-which-one-is-at-fault.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:00:00+00:00",
+   "summary": "Early in my career, I helped build a healthcare platform for patient-reported outcomes. It exchanged data with a federal health system and several EHR vendors. The hard question with those integrations was never whether the data moved. It was who started the access, and under what authority.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6a5031d62bcd",
+   "title": "Your AI agent shouldn’t get to grade its own work",
+   "url": "https://www.infoworld.com/article/4251743/your-ai-agent-shouldnt-get-to-define-done.html",
+   "source": "InfoWorld",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:00:00+00:00",
+   "summary": "In a recent experiment , Claude Opus 4.8 built an invoice checker, revised it, and raised its score from just over 45 out of 100 to a perfect 100. That’s roughly a 122% improvement. Banish the humans! The robots have won. Well, maybe not. Remember that math teacher in eighth grade who let you grade your own tests?",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "8c42b9609d88",
+   "title": "More control, fewer dependencies: Why DORA is forcing a connectivity rethink",
+   "url": "https://www.cio.com/article/4252226/more-control-fewer-dependencies-why-dora-is-forcing-a-connectivity-rethink.html",
+   "source": "CIO.com",
+   "source_category": "IT industry",
+   "published": "2026-11-24T09:00:00+00:00",
+   "summary": "If a bank spread its investments across several funds, only to find they were all heavily exposed to the same company, its risk team would have some difficult questions to answer. I think it’s high time CIOs brought that same level of curiosity and skepticism to their network architecture.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "d8aecb9d8f8a",
+   "title": "Killer robot dispute: Civil society calls for a coalition of the willing",
+   "url": "https://www.heise.de/en/news/Killer-robot-dispute-Civil-society-calls-for-a-coalition-of-the-willing-11535697.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:57:00+00:00",
+   "summary": "U.N. experts will spend two more years negotiating graduated rules for autonomous weapons, with no guaranteed outcome.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2853,6 +2960,19 @@
    ]
   },
   {
+   "id": "66354e19405c",
+   "title": "Apple May Delay or Scrap Its OLED iMac, Report Says",
+   "url": "https://www.techrepublic.com/article/news-apple-oled-imac-delay/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:40:20+00:00",
+   "summary": "Apple may delay or cancel its OLED iMac, according to a supply chain report. Here’s what Mac buyers should check before their next desktop refresh.",
+   "also_covered_by": [],
+   "topics": [
+    "Supply chain security"
+   ]
+  },
+  {
    "id": "acc64be55746",
    "title": "There's no reason for software to be slow anymore",
    "url": "https://danluu.com/no-slow/",
@@ -2876,6 +2996,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "2bf44f33e408",
+   "title": "GTA 6 Hits $3.79B on Day One as Comcast Sets a Traffic Record",
+   "url": "https://www.techrepublic.com/article/news-gta-6-launch-sales-comcast-traffic/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:34:48+00:00",
+   "summary": "Rockstar estimates $3.79 billion in first-day GTA 6 retail sales. At peak, the console launch accounted for 24% of traffic on Comcast’s network.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -2907,6 +3040,19 @@
    "topics": [
     "AI",
     "Agile & delivery"
+   ]
+  },
+  {
+   "id": "68e68fd04681",
+   "title": "Students Sue Omnilert Over False AI Gun Alert in Baltimore County",
+   "url": "https://www.techrepublic.com/article/news-omnilert-false-ai-gun-alert-lawsuit/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:26:41+00:00",
+   "summary": "Four current and former students sued Omnilert and Baltimore County after a canceled AI gun alert led to an armed police response at a Maryland high school.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3079,6 +3225,19 @@
    ]
   },
   {
+   "id": "92d45527be41",
+   "title": "GM Plans Apple Wallet Car Keys for Tahoe and Yukon in December",
+   "url": "https://www.techrepublic.com/article/news-gm-apple-wallet-car-keys-december/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T08:00:40+00:00",
+   "summary": "GM plans to bring Apple Wallet car keys to more Cadillac, Chevrolet, and GMC vehicles in December. Check eligible model years, devices, and setup requirements.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "530eaa08afbc",
    "title": "Trump, Nvidia and power: could we be nearing the end of tech’s Gilded Age?",
    "url": "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age",
@@ -3133,6 +3292,137 @@
    ]
   },
   {
+   "id": "d1632c6ad8d3",
+   "title": "Princeton Ph.D. Student Remains in ICE Custody",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/24/princeton-phd-student-remains-ice-custody",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3c2ebb70fa56",
+   "title": "Loan Limits Unlikely to Reduce Defaults, New Data Shows",
+   "url": "https://www.insidehighered.com/news/government/student-aid-policy/2026/11/24/loan-limits-unlikely-reduce-defaults-new-data-shows",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "bdb5a69918f9",
+   "title": "What’s Really Fueling Higher Ed’s AI ‘Witch Hunt’?",
+   "url": "https://www.insidehighered.com/news/faculty/2026/11/24/whats-really-fueling-higher-eds-ai-witch-hunt",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "710680058219",
+   "title": "Courts Deal Blows to Trump’s Key International Ed Policies",
+   "url": "https://www.insidehighered.com/news/global/international-students-us/2026/11/24/where-trumps-international-student-crackdown",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "73bcb9bea535",
+   "title": "Report: Texas Tech Regent Sought Deal With University Tenant",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/24/report-texas-tech-regent-sought-deal-university-tenant",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "9a3c8380638a",
+   "title": "5 Findings on Gen Z’s Changing Priorities",
+   "url": "https://www.insidehighered.com/news/student-success/college-experience/2026/11/24/5-findings-gen-zs-changing-priorities",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "29f55b9ff512",
+   "title": "New, Full-Time Enrollees in Science, Health Grad Programs Dropped 10% Last Year",
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/11/24/new-enrollees-science-health-grad-programs-dropped-10",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "51d4bd1bfe05",
+   "title": "Book Explores ‘New American Frontier’ of Training for Tech Jobs",
+   "url": "https://www.insidehighered.com/news/tech-innovation/teaching-learning/2026/11/24/book-explores-new-american-frontier-tech-job",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d6d14121f5a2",
+   "title": "What Does AI Leadership Even Mean?",
+   "url": "https://www.insidehighered.com/opinion/views/2026/11/24/what-does-ai-leadership-even-mean-opinion",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "97a82c51a1b5",
+   "title": "3 Questions for Kristen Bourgault on QU’s M.S. in Instructional Design, Technology",
+   "url": "https://www.insidehighered.com/opinion/columns/learning-innovation/2026/11/24/3-questions-qus-ms-instructional-design-technology",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-24T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "6593c4ee6713",
    "title": "RHSA-2026:102851: Important: python-oauthlib security update",
    "url": "https://access.redhat.com/errata/RHSA-2026:102851",
@@ -3156,6 +3446,19 @@
    "source_category": "IT industry",
    "published": "2026-11-24T07:54:00+00:00",
    "summary": "Decart's founders will stay at Amazon for five years to secure their billion-dollar payday www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fa626f234dcd",
+   "title": "Motorola Lists 29 Phones for Android 17 in Brazil",
+   "url": "https://www.techrepublic.com/article/news-motorola-android-17-update-list-brazil/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T07:53:52+00:00",
+   "summary": "Motorola lists 29 phones for Android 17 in Brazil. See the nine models it says are getting the update and how to check availability for your exact device.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3210,6 +3513,19 @@
    "topics": [
     "Vulnerabilities & patches",
     "Databases"
+   ]
+  },
+  {
+   "id": "f0f468b16af5",
+   "title": "I'm not excited about tech anymore",
+   "url": "https://www.coryd.dev/posts/2026/im-not-excited-about-tech-anymore",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-24T07:46:12+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3268,6 +3584,19 @@
    ]
   },
   {
+   "id": "7657839f3ff8",
+   "title": "Google Brings Gemini Computer Use to Mac, Expanding Its AI Agent Capabilities",
+   "url": "https://www.techrepublic.com/article/news-google-gemini-mac-computer-use/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T07:38:46+00:00",
+   "summary": "Gemini can click through apps, work with local files, and complete tasks on a Mac. See who can use it and what to check before giving it access.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "89d7dce13f66",
    "title": "Asynchronous programming, Part 5: Efficient concurrency with Rust and Tokio",
    "url": "https://www.heise.de/en/background/Asynchronous-programming-Part-5-Efficient-concurrency-with-Rust-and-Tokio-11530836.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
@@ -3278,6 +3607,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "34570f8b23cf",
+   "title": "Amazon Cuts Google Pixel 11 Pro to $749 for Black Friday",
+   "url": "https://www.techrepublic.com/article/news-google-pixel-11-pro-black-friday-deal/",
+   "source": "TechRepublic",
+   "source_category": "IT industry",
+   "published": "2026-11-24T07:33:42+00:00",
+   "summary": "Amazon’s US Black Friday sale puts the unlocked Google Pixel 11 Pro at $749, just $50 above the Pixel 11. Compare three models and see what the upgrade buys.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3889,7 +4231,16 @@
    "source_category": "IT industry",
    "published": "2026-11-24T06:10:38+00:00",
    "summary": "Nothing plans to launch Ear (note), a pair of earbuds with AI recording and transcription features, on December 8. Co-founder and CEO Carl Pei demonstrated the product to Bloomberg, showing how microphones in the earbuds and charging case can capture phone calls and in-person conversations.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "75b82950d69c",
+     "source": "heise online (English)",
+     "title": "Nothing unveils Ear (note) AI earbuds with recording on Dec. 8",
+     "url": "https://www.heise.de/en/news/Nothing-unveils-Ear-note-AI-earbuds-with-recording-on-Dec-8-11535717.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "Nothing will unveil its first AI-native product on Dec. 8: The “Ear (note)” are earbuds with a charging case for recording and transcription.",
+     "published": "2026-11-24T08:59:00+00:00"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -4141,6 +4492,14 @@
      "url": "https://e.vnexpress.net/news/tech/personalities/nvidia-employees-cheer-jensen-huang-s-return-as-ceo-5148396.html",
      "summary": "Nvidia employees cheered and chanted Jensen Huang’s name as he arrived at the chipmaker’s headquarters in Santa Clara, California, on Monday, 11 days after his resignation.",
      "published": "2026-11-24T08:05:12+00:00"
+    },
+    {
+     "id": "ae2e8e2caf29",
+     "source": "Guardian Technology",
+     "title": "Trump made up to $15m on Nvidia stock after Huang’s return",
+     "url": "https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market",
+     "summary": "Asia-Pacific stock markets rise after US president says he ‘convinced’ chipmaker’s board to reinstate CEO Comment: Nvidia’s humiliated board should resign out of embarrassment Business live – latest updates Donald Trump made up to $15m (£11.5m) on his holdings of Nvidia stock after the US chipmaker’s share price…",
+     "published": "2026-11-24T08:28:00+00:00"
     }
    ],
    "topics": [
