@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T21:17:05+00:00",
+ "generated": "2026-11-25T21:31:13+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 33,
+   "recent": 32,
    "error": null
   },
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 122,
+   "recent": 122,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -1151,7 +1151,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 98,
+   "fetched": 100,
    "recent": 32,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 16,
-   "recent": 1,
+   "fetched": 17,
+   "recent": 3,
    "error": null
   },
   {
@@ -2213,8 +2213,8 @@
   },
   {
    "source": "sunshowers",
-   "fetched": 25,
-   "recent": 0,
+   "fetched": 26,
+   "recent": 1,
    "error": null
   },
   {
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2514,6 +2514,65 @@
  ],
  "items": [
   {
+   "id": "17a805c0d69c",
+   "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+   "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-25T21:18:00+00:00",
+   "summary": "An AI tool implicated in several high-profile breaches is rapidly being integrated into the hacking suites of groups from China and North Korea, Microsoft said.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows",
+    "AI"
+   ]
+  },
+  {
+   "id": "8fa1ab056f28",
+   "title": "CVE-2026-136822: A vulnerability has been found in D-Link R32 1.10B02.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T21:17:19.850000+00:00",
+   "summary": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-136822",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136822",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "971c8b2382c3",
+   "title": "CVE-2026-136821: A flaw has been found in D-Link R32 1.10B02.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136821",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T21:17:19.630000+00:00",
+   "summary": "A flaw has been found in D-Link R32 1.10B02. The affected element is the function SetTimeSettings of the component DHMAPI Action Handler. This manipulation of the argument TZLocation causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-136821",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136821",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "48e1fbf950f9",
    "title": "AI infrastructure stocks continue their slide, but Anthropic closes higher",
    "url": "https://siliconangle.com/2026/11/25/ai-infrastructure-stocks-continue-their-slide-but-anthropic-closes-higher/",
@@ -2525,6 +2584,34 @@
    "topics": [
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "3b02fcba6277",
+   "title": "Nvidia agrees to pay $290M to settle a 2018 class action lawsuit alleging it misled shareholders about how much crypto mining fueled its GPU sales",
+   "url": "https://www.techmeme.com/261125/p36#a261125p36",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T21:15:01+00:00",
+   "summary": "Mike Scarcella / Reuters : Nvidia agrees to pay $290M to settle a 2018 class action lawsuit alleging it misled shareholders about how much crypto mining fueled its GPU sales — Nvidia (NVDA.O) has agreed to pay $290 million to settle a long-running investor lawsuit alleging the chipmaker misled shareholders …",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "db939befce2e",
+   "title": "USN-9198-1: HTTP::Tiny vulnerability",
+   "url": "https://ubuntu.com/security/notices/USN-9198-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T21:14:58+00:00",
+   "summary": "It was discovered that HTTP::Tiny incorrectly forwarded credential headers supplied by the caller, such as Authorization, Cookie and Proxy-Authorization, when following cross-origin redirects, including redirects from HTTPS to HTTP. An attacker could possibly use this issue to obtain sensitive information.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
    ]
   },
   {
@@ -3236,6 +3323,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "31a6090ca55a",
+   "title": "Talksign unveils AI model to transform sign language video production, expand digital accessibility",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTkRqMGQtQ0xLWnZld1JYZkFPSEtGOFl3RmUtMkNJLW1vVVpXVWlnUXNEWk9tMVpIZ0Y2QWtXRy1EWV82czFjWERsX1ZpSnZFMTlicjNqYWpVb0gwNVJYOTlaa0M3b1RWUkNSMm1kRmd2UEZSMnE0dG0zZTJFbGdhUjM2OEdQRkU0ampfa1p4Wno4cGNjVnZ6X1l5bGNFZS10bHRIek1pc0RDcmVOakEzYU56dHpJZjlyNXFjbnFPeTBCRFJWWmNXUzEtUk81X2k50gHWAUFVX3lxTE1pQXljREtxeE9yOVZPa1VLTnBRNi1VcGF3U3JrVU9jd2E0LUpZT1l5X1FOa3pYV0lKSjVkcy1ZR0VEUFR1TVRCVmpvMVhINHpqWm1LSUprVUx3T2xNRnd3LVBkcE9lOGZnMElQemsxTkhiQnM3b0dzWlFHVXc4VjB0cmpCZGZFZ1VGYl9sQ2JYeUhpMXRmNWJ2Y1pKeEJ2N0M2TW9tOGF1Sk5ZQUlGSWpHSHJJNGJ5WVA1WldqVWt0YU9YRWl4c3NVMVdzcGVoc3pfaUdsOUE?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-25T19:28:42+00:00",
+   "summary": "Talksign unveils AI model to transform sign language video production, expand digital accessibility Vanguard News",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Accessibility"
    ]
   },
   {
@@ -9547,20 +9648,6 @@
    ]
   },
   {
-   "id": "43cc72ab2d1b",
-   "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
-   "url": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
-   "source": "Infosecurity Magazine",
-   "source_category": "Security",
-   "published": "2026-11-25T11:45:00+00:00",
-   "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
-   "also_covered_by": [],
-   "topics": [
-    "Ransomware & breaches",
-    "Networking"
-   ]
-  },
-  {
    "id": "6069ebc63820",
    "title": "Futures sink further into the red as tech worries resurge",
    "url": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
@@ -13668,6 +13755,14 @@
      "url": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
      "summary": "FinCEN has extended deadlines for filers affected by the disruptions while it is investigating the incident.",
      "published": "2026-11-25T13:39:21+00:00"
+    },
+    {
+     "id": "43cc72ab2d1b",
+     "source": "Infosecurity Magazine",
+     "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
+     "url": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
+     "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
+     "published": "2026-11-25T11:45:00+00:00"
     }
    ],
    "topics": [
@@ -13838,6 +13933,19 @@
    "also_covered_by": [],
    "topics": [
     "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "f5ef4adf8b99",
+   "title": "When science communicators spread misinformation",
+   "url": "https://sunshowers.io/posts/science-communicator-misinformation/",
+   "source": "sunshowers",
+   "source_category": "Development",
+   "published": "2026-11-25T00:00:00+00:00",
+   "summary": "In response to Levent Alpöge’s Claude-assisted Lean certificate showing the Riemann Hypothesis is true, many people have had doubts about the validity of the certificate. This has not been helped by influential science communicators spreading misinformation.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
