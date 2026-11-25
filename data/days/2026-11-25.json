@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T14:31:14+00:00",
+ "generated": "2026-11-25T14:45:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -222,19 +222,19 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 3,
+   "recent": 5,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 199,
-   "recent": 93,
+   "fetched": 202,
+   "recent": 95,
    "error": null
   },
   {
@@ -1608,7 +1608,7 @@
   {
    "source": "Proxmox Announcements",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 31,
+   "recent": 34,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
+   "fetched": 18,
    "recent": 3,
    "error": null
   },
@@ -2237,8 +2237,8 @@
   },
   {
    "source": "Proxmox press releases",
-   "fetched": 96,
-   "recent": 0,
+   "fetched": 97,
+   "recent": 1,
    "error": null
   },
   {
@@ -2286,7 +2286,7 @@
   {
    "source": "Virtualization Howto",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2340,7 +2340,7 @@
   {
    "source": "HAProxy Blog",
    "fetched": 10,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,203 @@
   }
  ],
  "items": [
+  {
+   "id": "f8fc2ed243f3",
+   "title": "DoorDash Scales Dispatch 10x While Maintaining 99.99% Peak Availability",
+   "url": "https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-25T14:44:00+00:00",
+   "summary": "DoorDash has redesigned its real-time dispatch platform, replacing a monolithic optimization engine with a distributed architecture that separates coordination from computation. The new system delivers 10x higher throughput and more than 99.99% peak availability.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "2b6117d6e5f6",
+   "title": "Proxmox Virtual Environment 9.3 released!",
+   "url": "https://forum.proxmox.com/threads/proxmox-virtual-environment-9-3-released.187799/",
+   "source": "Proxmox Announcements",
+   "source_category": "Virtualization",
+   "published": "2026-11-25T14:42:22+00:00",
+   "summary": "We are excited to announce the release of Proxmox Virtual Environment 9.3! This release focuses on simplifying SAN and multipath setups across clusters, enabling reliable guest tracking across migrations and backups via unique guest identities, improving routine maintenance and troubleshooting in the web UI, and…",
+   "also_covered_by": [
+    {
+     "id": "705bb1bd9f36",
+     "source": "Proxmox press releases",
+     "title": "Proxmox Virtual Environment 9.3 with focus on improved Enterprise storage experience",
+     "url": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-virtual-environment-9-3",
+     "published": "2026-11-25T12:57:58+00:00"
+    }
+   ],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "9eb456443c9e",
+   "title": "Strauss plans up to 200 layoffs as it launches another NIS 100 million cost-cutting drive",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wODg0V3BYYlJTMnpTOHQ4bnUzLU4tVTRCZWI3VU5KVzJGRVo5OGxMS3BDaVR0ZmdWUzdqSEFhWDd2c0g1UnUxTG1WSDZpR2U5QU9UcGFMdDBUUUE4TW11OGl1M3QxYnc?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T14:38:00+00:00",
+   "summary": "Strauss plans up to 200 layoffs as it launches another NIS 100 million cost-cutting drive www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b83399b02c70",
+   "title": "[$] Tainting (or not) on manual driver binding",
+   "url": "https://lwn.net/Articles/1103714/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-25T14:36:07+00:00",
+   "summary": "Early in the 7.4 merge window , Greg Kroah-Hartman applied a patch that caused the kernel to be marked as tainted whenever user space manually binds or unbinds a device driver to a device.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "b10074e25bcb",
+   "title": "RHSA-2026:103503: Important: flatpak security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103503",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T14:34:45+00:00",
+   "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "8ff4bea6b343",
+   "title": "Signal blocks AI screen readers as banks and airlines restrict agents",
+   "url": "https://4sysops.com/archives/signal-blocks-ai-screen-readers-as-banks-and-airlines-restrict-agents/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T14:33:58+00:00",
+   "summary": "Signal is adding safeguards to stop AI assistants from reading private messages displayed in its app, as banks and United Airlines also curb third-party agents. Signal will block screenshots on iOS and enable screen security on Android when it detects an assistant trying to read the display.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Accessibility"
+   ]
+  },
+  {
+   "id": "4ada686bfd04",
+   "title": "Huang says Trump didn’t get him rehired at Nvidia",
+   "url": "https://4sysops.com/archives/huang-says-trump-didnt-get-him-rehired-at-nvidia/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T14:33:57+00:00",
+   "summary": "Jensen Huang told Nvidia employees that Donald Trump did not bring him back as CEO, contradicting Trump’s claim of involvement; Huang credited the board’s review and government assurances on national security. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "d813d461c7d0",
+   "title": "ChatGPT can dig up forgotten projects and promises in your chat history",
+   "url": "https://4sysops.com/archives/chatgpt-can-dig-up-forgotten-projects-and-promises-in-your-chat-history/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T14:33:56+00:00",
+   "summary": "ChatGPT may help recover unfinished work hiding in old conversations: ask it to list active projects, check for open commitments, or find promises others made to you. Source",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6b6b16ce55a7",
+   "title": "Anthropic’s post-IPO slide puts AI valuations to the test",
+   "url": "https://4sysops.com/archives/anthropics-post-ipo-slide-puts-ai-valuations-to-the-test/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T14:33:55+00:00",
+   "summary": "Anthropic’s shares have slipped below their $83 IPO price after soaring above $115 on debut, putting a spotlight on whether AI stocks can justify their lofty prices. Source",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "fc89267de793",
+   "title": "Anthropic and OpenAI weigh whether their strongest AI models are safe to release",
+   "url": "https://4sysops.com/archives/anthropic-and-openai-weigh-whether-their-strongest-ai-models-are-safe-to-release/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T14:33:54+00:00",
+   "summary": "Unreleased models from Anthropic and OpenAI are impressing in tests—and raising doubts about whether safety controls can keep up. Source",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "22c7e39b0789",
+   "title": "RHSA-2026:103497: Important: grafana security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103497",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T14:33:32+00:00",
+   "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "e8231416eb10",
+   "title": "RHSA-2026:103502: Important: raptor2 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103502",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T14:32:00+00:00",
+   "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "2804a17edd7b",
+   "title": "Israel's defense industry warns government debt is threatening its ability to develop next-generation weapons",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5IaDkydUNPWGFHQTc3SktWaUxwR1B2S1VOeG1BSG9fZmZxVF9Cb21EMGVWTmQyZ1VYSEVkU1dlUkdlXzRXbXBsbnlwUXJXWkN3cm5FQTZ0dXVaYWM1V3JCN3l1cGxONFE?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T14:29:00+00:00",
+   "summary": "Israel's defense industry warns government debt is threatening its ability to develop next-generation weapons www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3145038397d8",
+   "title": "Robotics startup hits $1.6 billion valuation amid China funding slowdown",
+   "url": "https://www.techtarget.com/news/robotics-startup-hits-16-billion-valuation-amid-china-funding-slowdown/875732/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-25T14:26:46+00:00",
+   "summary": "Chinese investors are narrowing their focus rather than pulling out of robotics entirely.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "bb0e335564f2",
    "title": "Nexent Capital launches $1 billion AI and energy infrastructure fund",
@@ -2880,7 +3077,16 @@
    "source_category": "Hardware",
    "published": "2026-11-25T13:58:00+00:00",
    "summary": "The Rust-based Servo open-source web browser engine and Servoshell demo browser enjoyed a lot of new features in October. Servo 0.8 debuted recently with all of their October changes and out today is a blog post to highlight their latest round of improvements...",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fd13d2bf75d7",
+     "source": "Lobsters",
+     "title": "October in Servo: video captions and inert content",
+     "url": "https://servo.org/blog/2026/11/25/october-in-servo/",
+     "summary": "Comments",
+     "published": "2026-11-25T14:31:31+00:00"
+    }
+   ],
    "topics": [
     "Development"
    ]
@@ -4448,6 +4654,37 @@
    "topics": [
     "AI"
    ]
+  },
+  {
+   "id": "59443e435bbe",
+   "title": "HAProxy Enterprise WAF protects against Java4Shell (CVE-2026-114938)",
+   "url": "https://www.haproxy.com/blog/haproxy-enterprise-waf-protects-against-java4shell-cve-2026-114938",
+   "source": "HAProxy Blog",
+   "source_category": "Networking",
+   "published": "2026-11-25T12:00:00+00:00",
+   "summary": "HAProxy Technologies products are not affected by Java4Shell (CVE-2026-114938), because HAProxy does not run a JVM.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-114938",
+     "score": 8.1,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "oracle"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-114938",
+     "score": 0.59265,
+     "percentile": 0.99133,
+     "date": "2026-11-24"
+    }
+   }
   },
   {
    "id": "a8e9387c88ed",
@@ -6170,13 +6407,13 @@
    ]
   },
   {
-   "id": "2d90c3cc3619",
-   "title": "Pop!_OS 26.04 LTS makes giving your whole desktop a new look far easier",
-   "url": "https://www.neowin.net/news/popos-2604-lts-makes-giving-your-whole-desktop-a-new-look-far-easier/?utm_source=rss",
-   "source": "Neowin",
-   "source_category": "Windows & M365 admin",
+   "id": "08f27ed27d08",
+   "title": "Pop!_OS 26.04 LTS released",
+   "url": "https://lwn.net/Articles/1109662/",
+   "source": "LWN.net",
+   "source_category": "Development",
    "published": "2026-11-25T09:02:01+00:00",
-   "summary": "Pop!_OS 26.04 LTS is here with COSMIC desktop, and a fresh install is needed for now if you want every feature. Upgrades come in December.",
+   "summary": "System76 has announced the release of Pop!_OS 26.04 LTS, which is based on Ubuntu 26.04 LTS. Notable features in this release include drawing tablet support, automatic updates, a number of new COSMIC applications, and more. Updates for users on Pop!_OS 24.04 LTS will be enabled in December.",
    "also_covered_by": [
     {
      "id": "df3fa76614de",
@@ -6185,10 +6422,18 @@
      "url": "https://feed.itsfoss.com/link/24361/17540275/pop-os-26-04-release",
      "summary": "Pop!_OS 26.04 LTS is based on Ubuntu 26.04 with Linux 7.2 and COSMIC 1.11. You get a redesigned store, automatic updates and a frosted glass look.",
      "published": "2026-11-25T13:18:52+00:00"
+    },
+    {
+     "id": "2d90c3cc3619",
+     "source": "Neowin",
+     "title": "Pop!_OS 26.04 LTS makes giving your whole desktop a new look far easier",
+     "url": "https://www.neowin.net/news/popos-2604-lts-makes-giving-your-whole-desktop-a-new-look-far-easier/?utm_source=rss",
+     "summary": "Pop!_OS 26.04 LTS is here with COSMIC desktop, and a fresh install is needed for now if you want every feature. Upgrades come in December.",
+     "published": "2026-11-25T09:02:01+00:00"
     }
    ],
    "topics": [
-    "General IT"
+    "Linux & open source"
    ]
   },
   {
@@ -8660,6 +8905,19 @@
     "Development",
     "Supply chain security",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "d64ba19cd011",
+   "title": "Pinocchio at 200: a tale of hunger, greed and Italy's culinary history",
+   "url": "https://www.repubblica.it/en/europe/food-travel/2026/11/24/news/carlo_collodi_pinocchio_pellegrino_artusi_italian_literature-425744069/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-24T09:06:47+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
