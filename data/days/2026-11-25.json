@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T11:31:22+00:00",
+ "generated": "2026-11-25T11:46:13+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 86,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Data Center Dynamics",
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 15,
+   "recent": 17,
    "error": null
   },
   {
@@ -288,13 +288,13 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 19,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 191,
-   "recent": 91,
+   "recent": 90,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -930,7 +930,7 @@
   {
    "source": "Inside Java",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1050,7 +1050,7 @@
   {
    "source": "Lean Enterprise Institute",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
-   "recent": 1,
+   "fetched": 10,
+   "recent": 0,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
+   "fetched": 96,
    "recent": 29,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,49 @@
  ],
  "items": [
   {
+   "id": "43cc72ab2d1b",
+   "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
+   "url": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-25T11:45:00+00:00",
+   "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "59686df2e42f",
+   "title": "Linux 7.5 Whitelisting Intel Xeon Server CPUs For Peer-To-Peer DMA \"P2PDMA\"",
+   "url": "https://www.phoronix.com/news/Linux-7.5-Intel-Xeon-P2PDMA",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-25T11:38:18+00:00",
+   "summary": "For those making use of VMware virtualization or other scenarios, the upcoming Linux 7.5 kernel will see that peer-to-peer DMA \"P2PDMA\" is properly enabled for modern Intel Xeon servers. This follows a similar change already in place for AMD Zen-based platforms to ensure P2PDMA usage is properly whitelisted...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "c2b8a4f51f84",
+   "title": "Fluidstack launches modular data center product, Blackbird",
+   "url": "https://www.datacenterdynamics.com/en/news/fluidstack-launches-modular-data-center-product-blackbird/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-25T11:36:38+00:00",
+   "summary": "System is designed for rapid deployment",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
    "id": "313e08100998",
    "title": "Automatic App Updates Expand Enterprise App Management Capabilities in Microsoft Intune",
    "url": "https://www.anoopcnair.com/automatic-app-updates-expand-enterprise-intune/",
@@ -2528,6 +2571,20 @@
    ]
   },
   {
+   "id": "278bf1e704c6",
+   "title": "Nvidia's board reinstating Jensen Huang as CEO under pressure from President Trump represents \"another installment of his regrettable state capitalism\"",
+   "url": "https://www.techmeme.com/261125/p16#a261125p16",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T11:30:05+00:00",
+   "summary": "Wall Street Journal : Nvidia's board reinstating Jensen Huang as CEO under pressure from President Trump represents “another installment of his regrettable state capitalism” — Restoring Jensen Huang as CEO will have major national security and political costs. — The Nvidia soap opera took another …",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
    "id": "7a295ee99125",
    "title": "AMD's Radeon RX 9060 XT sets new GPU frequency world record of 4.837 GHz",
    "url": "https://www.tomshardware.com/pc-components/gpus/radeon-rx-9060-xt-sets-new-gpu-frequency-world-record-of-4-837-ghz-amd-overclocking-team-pushes-mid-range-rdna-4-gpu-to-the-max-under-liquid-nitrogen",
@@ -2538,6 +2595,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "45282ddf7bba",
+   "title": "Linux 7.4 Disables LLVM Profi Usage To Avoid Performance Hit, Pathological Build Times",
+   "url": "https://www.phoronix.com/news/Linux-Kernel-Disable-Profi",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-25T11:27:04+00:00",
+   "summary": "A change merged this week to the Linux 7.4 kernel and also set to be back-ported to stable kernel branches is to disable use of LLVM's Profi flow-based profile inference algorithm when leveraing AutoFDO...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -2954,6 +3024,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "7dbdf4294136",
+   "title": "Mellum2.1 Instruct Is Out, Bringing Faster Answers for Coding Agents",
+   "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+   "source": "JetBrains Blog",
+   "source_category": "Development",
+   "published": "2026-11-25T11:00:00+00:00",
+   "summary": "The faster sibling of Mellum2.1 Thinking, built for sub-agents, tool loops, and chat. In October, we released Mellum2.1 Thinking, an open 12B mixture-of-experts model with 2.5B active parameters, trained to work as a coding agent. Today, we are releasing its sibling, Mellum2.1 Instruct.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
    ]
   },
   {
@@ -5043,7 +5126,16 @@
    "source_category": "Security",
    "published": "2026-11-25T06:50:19+00:00",
    "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "6fd8119d6a47",
+     "source": "Security Affairs",
+     "title": "GT13: AI-Assisted Hackers Target 22 Organizations Through Check Point Servers",
+     "url": "https://securityaffairs.com/203946/hacking/gt13-ai-assisted-hackers-target-22-organizations-through-check-point-servers.html",
+     "summary": "GreyNoise tracks GT13, an unattributed, probably AI-assisted campaign that hit 22 organizations via Check Point management servers. It may still be running. GreyNoise detailed an intrusion campaign against Check Point Security Management Servers.",
+     "published": "2026-11-25T10:47:10+00:00"
+    }
+   ],
    "topics": [
     "Ransomware & breaches",
     "Threats & malware",
@@ -5957,6 +6049,19 @@
    "source_category": "Security",
    "published": "2026-11-25T00:00:00+00:00",
    "summary": "The Treasury Department has taken some systems offline after a cyberattack after a cybersecurity incident which “resulted in unauthorized access to a limited subset of its systems.”",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "12344ee012d5",
+   "title": "JDK 28: New jlink Security Properties Plugin - Quality Outreach Heads-up",
+   "url": "https://inside.java/2026/11/25/quality-heads-up/",
+   "source": "Inside Java",
+   "source_category": "Java & web servers",
+   "published": "2026-11-25T00:00:00+00:00",
+   "summary": "This Heads-Up is part of the regular communication sent to the projects involved; it covers a new jlink plugin to set security properties in custom runtimes.",
    "also_covered_by": [],
    "topics": [
     "General IT"
