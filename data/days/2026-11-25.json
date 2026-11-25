@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T06:16:09+00:00",
+ "generated": "2026-11-25T06:31:19+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 2,
+   "recent": 0,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 119,
-   "recent": 119,
+   "fetched": 121,
+   "recent": 121,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -564,7 +564,7 @@
   {
    "source": "CIO.com",
    "fetched": 20,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -749,20 +749,20 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 80,
    "recent": 0,
    "error": null
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
    "source": "EE Times",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1343,9 +1343,9 @@
   },
   {
    "source": "Graham Cluley",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Bot Verification\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Have I Been Pwned breaches",
@@ -1434,7 +1434,7 @@
   {
    "source": "EdTech Magazine Higher Ed",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 22,
+   "fetched": 92,
+   "recent": 20,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
+   "fetched": 19,
    "recent": 3,
    "error": null
   },
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,101 @@
  ],
  "items": [
   {
+   "id": "d52512d72b3d",
+   "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+   "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-25T06:21:12+00:00",
+   "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Development"
+   ]
+  },
+  {
+   "id": "dd331a157b93",
+   "title": "QCon San Francisco 2026: Automating Spark Upgrades with Codex Agents at OpenAI",
+   "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-25T06:20:00+00:00",
+   "summary": "At QCon San Francisco 2026, Mouli Mukherjee, Engineering Manager for Data Infrastructure at OpenAI, argued that AI agents are most useful not for rebuilding a data platform, but for the open-ended operational work that is hard to turn into fixed playbooks. By Robert Krzaczyński",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "86468052ff5f",
+   "title": "CVE-2026-136550: A weakness has been identified in Tenda RX3 16.03.13.11_multi.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136550",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T06:17:15.807000+00:00",
+   "summary": "A weakness has been identified in Tenda RX3 16.03.13.11_multi. This affects the function fromAdvSetMacMtuWan of the file /goform/AdvSetMacMtuWan. This manipulation of the argument mac causes command injection. The attack is possible to be carried out remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-136550",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136550",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "357ef6e02938",
+   "title": "CVE-2026-136549: A security flaw has been discovered in Tenda RX3 16.03.13.11_multi.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136549",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T06:17:15.597000+00:00",
+   "summary": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely.",
+   "kind": "cve",
+   "cve": "CVE-2026-136549",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136549",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "70e0e93bfa91",
+   "title": "CVE-2026-136548: A vulnerability was identified in Tenda RX3 16.03.13.11.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136548",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T06:17:13.967000+00:00",
+   "summary": "A vulnerability was identified in Tenda RX3 16.03.13.11. The affected element is an unknown function of the file /bin/auto_discover of the component GBK-to-UTF-8 Conversion. The manipulation of the argument Hostname leads to stack-based buffer overflow. Remote exploitation of the attack is possible.",
+   "kind": "cve",
+   "cve": "CVE-2026-136548",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136548",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "d0c9bda24095",
    "title": "Flat/non-higher-order construction of ANF via mutable holes",
    "url": "https://blueberrywren.dev/blog/anf-mutable/",
@@ -2524,6 +2619,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "72c0ef09bab8",
+   "title": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
+   "url": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
+   "source": "CNBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-25T06:09:44+00:00",
+   "summary": "Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup talent potentially returning to crypto afterward.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
