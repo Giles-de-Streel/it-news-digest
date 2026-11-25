@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T23:01:53+00:00",
+ "generated": "2026-11-25T23:17:15+00:00",
  "window_hours": 24,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 212,
-   "recent": 77,
+   "recent": 76,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 12,
+   "recent": 15,
    "error": null
   },
   {
@@ -905,7 +905,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 6,
    "recent": 0,
    "error": null
   },
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 1,
    "error": null
   },
   {
@@ -1158,13 +1158,13 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "Arctic Wolf",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1505,9 +1505,9 @@
   },
   {
    "source": "Neowin",
-   "fetched": 40,
-   "recent": 40,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "NIST Cybersecurity Insights",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 31,
+   "fetched": 98,
+   "recent": 30,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
-   "recent": 2,
+   "fetched": 15,
+   "recent": 3,
    "error": null
   },
   {
@@ -2070,7 +2070,7 @@
   {
    "source": "Zscaler trust",
    "fetched": 136,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2124,7 +2124,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 7,
+   "recent": 1,
    "error": null
   },
   {
@@ -2514,6 +2514,53 @@
  ],
  "items": [
   {
+   "id": "ced5dd1c8aa9",
+   "title": "LFS degradation for some customers",
+   "url": "https://www.githubstatus.com/incidents/m0wvf9pt3l0l",
+   "source": "GitHub Status",
+   "source_category": "Cloud status",
+   "published": "2026-11-25T23:10:38+00:00",
+   "summary": "Nov 25 , 23:10 UTC Update - We have identified an issue that impacts Large File Storage (LFS) for a small number of customers. We are working on mitigation. Nov 25 , 23:06 UTC Investigating - We are investigating reports of impacted performance for some GitHub services.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Cloud status"
+   ],
+   "outlets": 1.0,
+   "score": 0.9936
+  },
+  {
+   "id": "b214c448b98c",
+   "title": "Black Friday Cyber Threats — Part Two: Retailers",
+   "url": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
+   "source": "Arctic Wolf",
+   "source_category": "Threat research",
+   "published": "2026-11-25T23:02:23+00:00",
+   "summary": "In Part One of our Black Friday Cyber Threats blog series, we examined how Black Friday creates opportunities for attackers to target consumers through fraud, impersonation, credential theft, and malware.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Identity & access"
+   ],
+   "outlets": 1.0,
+   "score": 0.9858
+  },
+  {
+   "id": "a04dac6c8689",
+   "title": "Suspected Chinese Agents Are Trying to Dupe Americans with Fake Listings on Job Platforms",
+   "url": "https://tech.slashdot.org/story/26/11/25/069227/suspected-chinese-agents-are-trying-to-dupe-americans-with-fake-listings-on-job-platforms?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-25T23:00:00+00:00",
+   "summary": "\"LinkedIn is probably the greatest intelligence tool that's ever been created,\" CNN heard from Holden Triplett, director of counterintelligence at the National Security Council in the first Trump administration.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ],
+   "outlets": 0.5,
+   "score": 0.4918
+  },
+  {
    "id": "aedc158a55a9",
    "title": "SSH is a GUI framework",
    "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
@@ -2526,7 +2573,7 @@
     "System administration"
    ],
    "outlets": 0.5,
-   "score": 0.4971
+   "score": 0.4898
   },
   {
    "id": "8bf79136542c",
@@ -2541,7 +2588,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.4967
+   "score": 0.4894
   },
   {
    "id": "5b0b0f9a0ea0",
@@ -2556,7 +2603,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4937
+   "score": 0.4865
   },
   {
    "id": "71a8319e5c77",
@@ -2571,7 +2618,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9828
+   "score": 0.9684
   },
   {
    "id": "51fa0101547e",
@@ -2586,7 +2633,22 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.491
+   "score": 0.4838
+  },
+  {
+   "id": "b565ae52e56b",
+   "title": "USN-9203-1: libpcap vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9203-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T22:41:37+00:00",
+   "summary": "Jin Wei, Kunwei Qian, and Ping Chen discovered that libpcap did not properly validate the format of MAC addresses passed to the pcap_ether_aton() function, leading to an out-of-bounds read and write.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "outlets": 1.0,
+   "score": 0.9663
   },
   {
    "id": "9c04ed8cca64",
@@ -2601,7 +2663,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9748
+   "score": 0.9605
   },
   {
    "id": "4e902cbf27eb",
@@ -2616,7 +2678,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9701
+   "score": 0.9558
   },
   {
    "id": "22659dfcc734",
@@ -2631,7 +2693,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4835
+   "score": 0.4764
   },
   {
    "id": "f1e99a6fbb8c",
@@ -2648,7 +2710,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.9635
+   "score": 0.9493
   },
   {
    "id": "984606b56ca0",
@@ -2663,7 +2725,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9628
+   "score": 0.9486
   },
   {
    "id": "f045d9e87aa4",
@@ -2678,7 +2740,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9624
+   "score": 0.9482
   },
   {
    "id": "c0d40e212e2d",
@@ -2693,7 +2755,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9587
+   "score": 0.9446
   },
   {
    "id": "ae17b91be354",
@@ -2730,7 +2792,22 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.957
+   "score": 0.9429
+  },
+  {
+   "id": "fd05ac9119bf",
+   "title": "Diagnostics for VMware Cloud Foundation Operations – Newest Findings",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/25/diagnostics-for-vmware-cloud-foundation-operations-newest-findings-3/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-25T22:16:01+00:00",
+   "summary": "Diagnostics for VMware Cloud Foundation is a centralized platform that monitors the overall operational status of the VMware Cloud Foundation (VCF) software stack.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
+   ],
+   "outlets": 1.0,
+   "score": 0.9427
   },
   {
    "id": "4a6ca35f170a",
@@ -2745,7 +2822,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9534
+   "score": 0.9394
   },
   {
    "id": "14f43b6169f7",
@@ -2760,7 +2837,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.952
+   "score": 0.938
   },
   {
    "id": "a5ff9c9fc95a",
@@ -2775,7 +2852,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.9513
+   "score": 0.9373
   },
   {
    "id": "9f2819ed103b",
@@ -2790,7 +2867,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9504
+   "score": 0.9364
   },
   {
    "id": "fc2d6c964ef6",
@@ -2805,7 +2882,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.9494
+   "score": 0.9355
   },
   {
    "id": "c06aa7c27ebb",
@@ -2821,7 +2898,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.4734
+   "score": 0.4664
   },
   {
    "id": "a1837b82946d",
@@ -2836,7 +2913,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.9467
+   "score": 0.9328
   },
   {
    "id": "bf4adf31c689",
@@ -2851,7 +2928,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.9464
+   "score": 0.9325
   },
   {
    "id": "3172b6175eff",
@@ -2866,7 +2943,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9443
+   "score": 0.9304
   },
   {
    "id": "506372c042c8",
@@ -2882,7 +2959,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.9404
+   "score": 0.9265
   },
   {
    "id": "e8a17c6b5fa3",
@@ -2897,7 +2974,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.9385
+   "score": 0.9248
   },
   {
    "id": "b1df52445a36",
@@ -2912,7 +2989,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9385
+   "score": 0.9248
   },
   {
    "id": "3cda140f5c0c",
@@ -2927,7 +3004,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.9376
+   "score": 0.9239
   },
   {
    "id": "fe0c9000bb99",
@@ -2943,7 +3020,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.9367
+   "score": 0.923
   },
   {
    "id": "c491591af03d",
@@ -2960,7 +3037,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.9363
+   "score": 0.9225
   },
   {
    "id": "fbc752d0fd6a",
@@ -2975,7 +3052,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9358
+   "score": 0.9221
   },
   {
    "id": "98c6648112b4",
@@ -2990,7 +3067,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.934
+   "score": 0.9203
   },
   {
    "id": "445564a2fb99",
@@ -3005,7 +3082,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9331
+   "score": 0.9194
   },
   {
    "id": "de6d46193598",
@@ -3020,7 +3097,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.933
+   "score": 0.9193
   },
   {
    "id": "f63f4cad1468",
@@ -3035,7 +3112,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4657
+   "score": 0.4589
   },
   {
    "id": "104ed042dee0",
@@ -3050,7 +3127,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4653
+   "score": 0.4585
   },
   {
    "id": "4cfeead0ecab",
@@ -3065,7 +3142,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.9296
+   "score": 0.9159
   },
   {
    "id": "14e025fdb097",
@@ -3080,7 +3157,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9278
+   "score": 0.9141
   },
   {
    "id": "6bbce0cd7451",
@@ -3095,7 +3172,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.927
+   "score": 0.9134
   },
   {
    "id": "b58bc7c8a24a",
@@ -3113,7 +3190,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.9269
+   "score": 0.9133
   },
   {
    "id": "eff34fc6e81a",
@@ -3129,7 +3206,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.9269
+   "score": 0.9133
   },
   {
    "id": "429d49f28bb4",
@@ -3145,7 +3222,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.9269
+   "score": 0.9133
   },
   {
    "id": "e1a6a4de5d10",
@@ -3160,7 +3237,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.9251
+   "score": 0.9115
   },
   {
    "id": "dc654e66350e",
@@ -3175,7 +3252,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.9206
+   "score": 0.9071
   },
   {
    "id": "c863f4e9c474",
@@ -3190,7 +3267,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9189
+   "score": 0.9054
   },
   {
    "id": "d9686f8c635b",
@@ -3205,7 +3282,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.4577
+   "score": 0.451
   },
   {
    "id": "e24e3ec72108",
@@ -3220,7 +3297,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4524
+   "score": 0.4458
   },
   {
    "id": "17a805c0d69c",
@@ -3237,7 +3314,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.9048
+   "score": 0.8915
   },
   {
    "id": "8fa1ab056f28",
@@ -3297,7 +3374,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.9027
+   "score": 0.8894
   },
   {
    "id": "3b02fcba6277",
@@ -3313,7 +3390,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.4511
+   "score": 0.4445
   },
   {
    "id": "db939befce2e",
@@ -3329,7 +3406,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.9022
+   "score": 0.8889
   },
   {
    "id": "d291c7256a46",
@@ -3346,7 +3423,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.8992
+   "score": 0.886
   },
   {
    "id": "0a824e449922",
@@ -3361,7 +3438,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8954
+   "score": 0.8822
   },
   {
    "id": "e333803fc668",
@@ -3378,7 +3455,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.895
+   "score": 0.8819
   },
   {
    "id": "9ace30340dec",
@@ -3393,7 +3470,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.8933
+   "score": 0.8802
   },
   {
    "id": "6bbfefbd13a9",
@@ -3408,7 +3485,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8927
+   "score": 0.8796
   },
   {
    "id": "524ccce05108",
@@ -3423,7 +3500,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4451
+   "score": 0.4385
   },
   {
    "id": "089665b819a0",
@@ -3438,7 +3515,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.8897
+   "score": 0.8767
   },
   {
    "id": "a26b51ba227a",
@@ -3453,7 +3530,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8894
+   "score": 0.8763
   },
   {
    "id": "edfba83ff362",
@@ -3470,7 +3547,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.8893
+   "score": 0.8762
   },
   {
    "id": "6cbf584e5eb5",
@@ -3485,7 +3562,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8874
+   "score": 0.8744
   },
   {
    "id": "e99bede8482e",
@@ -3501,7 +3578,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.8816
+   "score": 0.8687
   },
   {
    "id": "f4dcfddb59ba",
@@ -3519,7 +3596,7 @@
     "Endpoint management"
    ],
    "outlets": 1.0,
-   "score": 0.8808
+   "score": 0.8678
   },
   {
    "id": "b07a683dafc4",
@@ -3534,7 +3611,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4391
+   "score": 0.4326
   },
   {
    "id": "66786bb3ed76",
@@ -3549,7 +3626,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.876
+   "score": 0.8631
   },
   {
    "id": "d5f7cf6b424c",
@@ -3564,7 +3641,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8751
+   "score": 0.8622
   },
   {
    "id": "dbfa2402c895",
@@ -3580,7 +3657,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.8723
+   "score": 0.8595
   },
   {
    "id": "5ebd88967339",
@@ -3596,7 +3673,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.8702
+   "score": 0.8574
   },
   {
    "id": "754401092b60",
@@ -3630,7 +3707,7 @@
     "Identity & access"
    ],
    "outlets": 3.0,
-   "score": 2.7072
+   "score": 2.6674
   },
   {
    "id": "0e01e5db69b9",
@@ -3645,7 +3722,7 @@
     "Linux & open source"
    ],
    "outlets": 0.5,
-   "score": 0.4344
+   "score": 0.428
   },
   {
    "id": "a3c4b7a5455a",
@@ -3660,7 +3737,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4343
+   "score": 0.428
   },
   {
    "id": "66d966b3fa7f",
@@ -3676,7 +3753,7 @@
     "System administration"
    ],
    "outlets": 0.5,
-   "score": 0.4325
+   "score": 0.4262
   },
   {
    "id": "311e68901f1b",
@@ -3691,7 +3768,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8643
+   "score": 0.8516
   },
   {
    "id": "454a205cd90a",
@@ -3706,7 +3783,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.432
+   "score": 0.4256
   },
   {
    "id": "f43d238e705a",
@@ -3721,7 +3798,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8636
+   "score": 0.851
   },
   {
    "id": "00e68d185acb",
@@ -3736,7 +3813,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8599
+   "score": 0.8473
   },
   {
    "id": "28488177ec7d",
@@ -3751,7 +3828,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.8579
+   "score": 0.8453
   },
   {
    "id": "23e16762cbfc",
@@ -3766,7 +3843,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8577
+   "score": 0.8451
   },
   {
    "id": "3d7b3806dd3d",
@@ -3782,7 +3859,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.8554
+   "score": 0.8429
   },
   {
    "id": "6f1205eee199",
@@ -3869,7 +3946,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.8523
+   "score": 0.8397
   },
   {
    "id": "458db8716a56",
@@ -3884,7 +3961,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.8491
+   "score": 0.8367
   },
   {
    "id": "651cf8343472",
@@ -3924,7 +4001,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.8483
+   "score": 0.8358
   },
   {
    "id": "bc2737d3be64",
@@ -3939,7 +4016,7 @@
     "Linux & open source"
    ],
    "outlets": 0.5,
-   "score": 0.4239
+   "score": 0.4177
   },
   {
    "id": "dbb0acaed611",
@@ -3954,7 +4031,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.8469
+   "score": 0.8344
   },
   {
    "id": "d09dd756e09b",
@@ -3969,7 +4046,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8465
+   "score": 0.8341
   },
   {
    "id": "980e0056f2e2",
@@ -3985,7 +4062,7 @@
     "Identity & access"
    ],
    "outlets": 0.5,
-   "score": 0.4217
+   "score": 0.4155
   },
   {
    "id": "caa8150939c3",
@@ -4000,7 +4077,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.8411
+   "score": 0.8288
   },
   {
    "id": "1702a56181d8",
@@ -4015,7 +4092,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.8398
+   "score": 0.8275
   },
   {
    "id": "5c095d3a4335",
@@ -4030,7 +4107,24 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.4197
+   "score": 0.4135
+  },
+  {
+   "id": "e2c5bf857dad",
+   "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T20:00:00+00:00",
+   "summary": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident workflows.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "ITSM"
+   ],
+   "outlets": 1.0,
+   "score": 0.827
   },
   {
    "id": "a958e935c2c7",
@@ -4045,7 +4139,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4185
+   "score": 0.4124
   },
   {
    "id": "ffe99d40d4ed",
@@ -4060,7 +4154,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.8366
+   "score": 0.8243
   },
   {
    "id": "aa6ee1735a47",
@@ -4076,7 +4170,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.8276
+   "score": 0.8154
   },
   {
    "id": "6c36d99da915",
@@ -4091,7 +4185,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.4137
+   "score": 0.4076
   },
   {
    "id": "fb94baa28487",
@@ -4116,7 +4210,7 @@
     }
    ],
    "outlets": 1.0,
-   "score": 0.8244
+   "score": 0.8123
   },
   {
    "id": "9398c1750b17",
@@ -4131,7 +4225,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.8236
+   "score": 0.8115
   },
   {
    "id": "e95c737e128d",
@@ -4147,7 +4241,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.823
+   "score": 0.8109
   },
   {
    "id": "812fc3498230",
@@ -4172,7 +4266,7 @@
     "ICS / OT"
    ],
    "outlets": 2.0,
-   "score": 1.7182
+   "score": 1.693
   },
   {
    "id": "a9684e2a7e8c",
@@ -4187,7 +4281,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8222
+   "score": 0.8101
   },
   {
    "id": "2ca69a612ccd",
@@ -4202,7 +4296,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8178
+   "score": 0.8058
   },
   {
    "id": "694af41b82cc",
@@ -4217,7 +4311,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8158
+   "score": 0.8038
   },
   {
    "id": "78aaf6a66fd1",
@@ -4232,7 +4326,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8149
+   "score": 0.8029
   },
   {
    "id": "31a6090ca55a",
@@ -4248,7 +4342,7 @@
     "Accessibility"
    ],
    "outlets": 1.0,
-   "score": 0.8145
+   "score": 0.8025
   },
   {
    "id": "c01dee74697d",
@@ -4264,7 +4358,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.8112
+   "score": 0.7993
   },
   {
    "id": "f4d602856026",
@@ -4279,7 +4373,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8108
+   "score": 0.7989
   },
   {
    "id": "5119ee1c6a62",
@@ -4295,7 +4389,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.8099
+   "score": 0.798
   },
   {
    "id": "48ce230304fe",
@@ -4311,7 +4405,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.8099
+   "score": 0.798
   },
   {
    "id": "31c94dc3d5aa",
@@ -4327,7 +4421,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.8099
+   "score": 0.798
   },
   {
    "id": "655e9ca6c0df",
@@ -4343,7 +4437,7 @@
    ],
    "cves": [],
    "outlets": 1.0,
-   "score": 0.809
+   "score": 0.7971
   },
   {
    "id": "fb0cf0a78508",
@@ -4358,7 +4452,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8079
+   "score": 0.796
   },
   {
    "id": "ae1fbce616c8",
@@ -4419,7 +4513,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.8046
+   "score": 0.7927
   },
   {
    "id": "0ffba2eb2624",
@@ -4443,7 +4537,7 @@
     "General IT"
    ],
    "outlets": 1.5,
-   "score": 1.2434
+   "score": 1.2252
   },
   {
    "id": "b9cccd69167a",
@@ -4460,7 +4554,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.8014
+   "score": 0.7896
   },
   {
    "id": "c31465abe4a5",
@@ -4475,7 +4569,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.4005
+   "score": 0.3946
   },
   {
    "id": "fa5a030e98ed",
@@ -4490,7 +4584,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7999
+   "score": 0.7882
   },
   {
    "id": "8af5aa2944d0",
@@ -4505,7 +4599,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7976
+   "score": 0.7859
   },
   {
    "id": "469d51d5a16e",
@@ -4521,7 +4615,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7961
+   "score": 0.7844
   },
   {
    "id": "e91939e15f3f",
@@ -4536,7 +4630,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7946
+   "score": 0.7829
   },
   {
    "id": "c54244a7d939",
@@ -4551,7 +4645,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.3964
+   "score": 0.3906
   },
   {
    "id": "42d1a0512ac0",
@@ -4566,7 +4660,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7924
+   "score": 0.7807
   },
   {
    "id": "e856b7df17f6",
@@ -4581,7 +4675,7 @@
     "Threats & malware"
    ],
    "outlets": 1.0,
-   "score": 0.7923
+   "score": 0.7806
   },
   {
    "id": "1f8a31c38bec",
@@ -4596,7 +4690,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.7923
+   "score": 0.7806
   },
   {
    "id": "9a600e4e675c",
@@ -4612,7 +4706,7 @@
     "Networking"
    ],
    "outlets": 0.5,
-   "score": 0.3961
+   "score": 0.3903
   },
   {
    "id": "6513a5565584",
@@ -4628,7 +4722,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.7907
+   "score": 0.7791
   },
   {
    "id": "3beb23652c74",
@@ -4643,7 +4737,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.7883
+   "score": 0.7767
   },
   {
    "id": "0d23d198632d",
@@ -4659,7 +4753,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.7883
+   "score": 0.7767
   },
   {
    "id": "df7dae3aa4ec",
@@ -4674,7 +4768,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7873
+   "score": 0.7758
   },
   {
    "id": "37b5c9ba9326",
@@ -4689,7 +4783,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7869
+   "score": 0.7753
   },
   {
    "id": "43b9ea3168c2",
@@ -4705,7 +4799,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7865
+   "score": 0.775
   },
   {
    "id": "0f51f3612a5a",
@@ -4720,7 +4814,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.7863
+   "score": 0.7747
   },
   {
    "id": "a471d5b07f5e",
@@ -4735,7 +4829,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7849
+   "score": 0.7733
   },
   {
    "id": "3267fb17301f",
@@ -4750,7 +4844,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7832
+   "score": 0.7717
   },
   {
    "id": "0081bacb6e74",
@@ -4765,7 +4859,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7802
+   "score": 0.7687
   },
   {
    "id": "9671aa621779",
@@ -4780,7 +4874,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7799
+   "score": 0.7684
   },
   {
    "id": "45e1e19ee751",
@@ -4795,7 +4889,7 @@
     "Backup & recovery"
    ],
    "outlets": 1.0,
-   "score": 0.776
+   "score": 0.7646
   },
   {
    "id": "f872f0baf241",
@@ -4810,7 +4904,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7717
+   "score": 0.7604
   },
   {
    "id": "41745c48fca9",
@@ -4825,7 +4919,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7715
+   "score": 0.7602
   },
   {
    "id": "329c39660cdf",
@@ -4840,7 +4934,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7712
+   "score": 0.7599
   },
   {
    "id": "c24a380f215c",
@@ -4860,7 +4954,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.7695
+   "score": 0.7582
   },
   {
    "id": "10b8d016760f",
@@ -4875,7 +4969,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7682
+   "score": 0.757
   },
   {
    "id": "a8ffde7ff600",
@@ -4890,7 +4984,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.767
+   "score": 0.7557
   },
   {
    "id": "23dfe617f224",
@@ -4906,7 +5000,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.383
+   "score": 0.3774
   },
   {
    "id": "35ce48e126bd",
@@ -4930,7 +5024,7 @@
     "AI"
    ],
    "outlets": 1.5,
-   "score": 1.2093
+   "score": 1.1916
   },
   {
    "id": "32865a308770",
@@ -4945,7 +5039,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7638
+   "score": 0.7526
   },
   {
    "id": "ab82de111cf5",
@@ -4960,7 +5054,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7627
+   "score": 0.7515
   },
   {
    "id": "e4da96413382",
@@ -4976,7 +5070,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.7623
+   "score": 0.7511
   },
   {
    "id": "3e22f945c216",
@@ -5018,7 +5112,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.76
+   "score": 0.7489
   },
   {
    "id": "b98a3d2f0d30",
@@ -5033,7 +5127,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.758
+   "score": 0.7469
   },
   {
    "id": "817e482ac6da",
@@ -5048,7 +5142,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7562
+   "score": 0.7451
   },
   {
    "id": "3794f2cb4934",
@@ -5064,7 +5158,7 @@
     "Accessibility"
    ],
    "outlets": 1.0,
-   "score": 0.7553
+   "score": 0.7442
   },
   {
    "id": "60ec93cdd0b8",
@@ -5080,7 +5174,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.7552
+   "score": 0.7441
   },
   {
    "id": "e75850ec5e2a",
@@ -5096,7 +5190,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.7546
+   "score": 0.7435
   },
   {
    "id": "1ac188ae4a04",
@@ -5112,7 +5206,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.7532
+   "score": 0.7422
   },
   {
    "id": "ccd3ac8a37c7",
@@ -5127,7 +5221,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7532
+   "score": 0.7421
   },
   {
    "id": "b155a6b5e6e7",
@@ -5142,7 +5236,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7529
+   "score": 0.7418
   },
   {
    "id": "b9aab145e68f",
@@ -5159,7 +5253,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.7525
+   "score": 0.7414
   },
   {
    "id": "6e2a0636509d",
@@ -5174,7 +5268,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.7501
+   "score": 0.7391
   },
   {
    "id": "7a4008254274",
@@ -5189,7 +5283,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7492
+   "score": 0.7382
   },
   {
    "id": "888c19017591",
@@ -5221,7 +5315,7 @@
     "Game development"
    ],
    "outlets": 3.0,
-   "score": 2.3139
+   "score": 2.2799
   },
   {
    "id": "5e88d9c2d82e",
@@ -5236,7 +5330,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7481
+   "score": 0.7371
   },
   {
    "id": "b45d58e25dc6",
@@ -5252,7 +5346,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7478
+   "score": 0.7368
   },
   {
    "id": "fd343022e30d",
@@ -5267,7 +5361,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7449
+   "score": 0.734
   },
   {
    "id": "49eb7a0b7b8e",
@@ -5282,7 +5376,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3719
+   "score": 0.3665
   },
   {
    "id": "53061b318e3f",
@@ -5297,7 +5391,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7433
+   "score": 0.7324
   },
   {
    "id": "1ce30de094ee",
@@ -5312,7 +5406,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7405
+   "score": 0.7296
   },
   {
    "id": "4c60ab043562",
@@ -5327,7 +5421,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7402
+   "score": 0.7293
   },
   {
    "id": "d5ed7afc057b",
@@ -5342,7 +5436,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7395
+   "score": 0.7287
   },
   {
    "id": "30e35bd4b095",
@@ -5357,7 +5451,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.7377
+   "score": 0.7269
   },
   {
    "id": "ce70a336ccd0",
@@ -5372,7 +5466,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.3685
+   "score": 0.3631
   },
   {
    "id": "37494e9ffc32",
@@ -5387,7 +5481,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7371
+   "score": 0.7262
   },
   {
    "id": "75221d69d897",
@@ -5402,7 +5496,7 @@
     "ITSM"
    ],
    "outlets": 1.0,
-   "score": 0.7371
+   "score": 0.7262
   },
   {
    "id": "2c6427517fe9",
@@ -5417,7 +5511,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3681
+   "score": 0.3627
   },
   {
    "id": "c4e57f739606",
@@ -5433,7 +5527,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.736
+   "score": 0.7252
   },
   {
    "id": "0655cf6578a5",
@@ -5448,7 +5542,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7348
+   "score": 0.724
   },
   {
    "id": "7a59468b59b0",
@@ -5464,7 +5558,7 @@
     "Supply chain security"
    ],
    "outlets": 1.0,
-   "score": 0.7337
+   "score": 0.7229
   },
   {
    "id": "9728702e699d",
@@ -5479,7 +5573,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3658
+   "score": 0.3604
   },
   {
    "id": "c4e2c8a10943",
@@ -5496,7 +5590,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.7305
+   "score": 0.7198
   },
   {
    "id": "2d9eb8959450",
@@ -5511,7 +5605,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.73
+   "score": 0.7193
   },
   {
    "id": "3e11caea3c27",
@@ -5526,7 +5620,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3649
+   "score": 0.3595
   },
   {
    "id": "9828ae8aa111",
@@ -5541,7 +5635,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7286
+   "score": 0.7179
   },
   {
    "id": "d2d747f79e0b",
@@ -5559,7 +5653,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.7285
+   "score": 0.7178
   },
   {
    "id": "52f91f349def",
@@ -5574,7 +5668,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7276
+   "score": 0.7169
   },
   {
    "id": "52970a93e85f",
@@ -5589,7 +5683,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7275
+   "score": 0.7169
   },
   {
    "id": "bf3dcda9ffcb",
@@ -5604,7 +5698,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7271
+   "score": 0.7164
   },
   {
    "id": "d71cbf26a999",
@@ -5619,7 +5713,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7267
+   "score": 0.7161
   },
   {
    "id": "df6498f6a0a8",
@@ -5643,7 +5737,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 1.648
+   "score": 1.6238
   },
   {
    "id": "5ee6a8fb0c6c",
@@ -5658,7 +5752,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7265
+   "score": 0.7158
   },
   {
    "id": "4fcf01c31362",
@@ -5673,7 +5767,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.7265
+   "score": 0.7158
   },
   {
    "id": "fb8a335a5a6e",
@@ -5689,7 +5783,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7254
+   "score": 0.7147
   },
   {
    "id": "2ebeafb1fc2d",
@@ -5704,7 +5798,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7235
+   "score": 0.7129
   },
   {
    "id": "b8e65de04b89",
@@ -5730,6 +5824,14 @@
      "url": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html",
      "summary": "The FCC-authorized approval, valid until 2040, comes as tech giants and startups race to move AI computing into space to tap into continuous solar power.",
      "published": "2026-11-25T20:43:37+00:00"
+    },
+    {
+     "id": "49abc8361bec",
+     "source": "SiliconANGLE",
+     "title": "FCC clears SpaceX to put up to 1 million Starmind data centers in space",
+     "url": "https://siliconangle.com/2026/11/25/fcc-clears-spacex-to-put-up-to-1-million-starmind-data-centers-in-space/",
+     "summary": "Elon Musk’s Space Exploration Technologies Corp. today received approval from the U.S. Federal Communications Commission to deploy up to 1 million Starmind satellites designed to operate as data centers in orbit.",
+     "published": "2026-11-25T23:00:53+00:00"
     }
    ],
    "topics": [
@@ -5737,8 +5839,8 @@
     "Hardware",
     "Policy & regulation"
    ],
-   "outlets": 2.5,
-   "score": 1.9599
+   "outlets": 3.5,
+   "score": 2.9155
   },
   {
    "id": "ad5ba0913a11",
@@ -5754,7 +5856,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7222
+   "score": 0.7116
   },
   {
    "id": "c4fb115905ad",
@@ -5769,7 +5871,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7195
+   "score": 0.709
   },
   {
    "id": "99591fd17f68",
@@ -5784,7 +5886,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7195
+   "score": 0.709
   },
   {
    "id": "5b1be06edfb2",
@@ -5799,7 +5901,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.7191
+   "score": 0.7085
   },
   {
    "id": "17cf274e573b",
@@ -5823,7 +5925,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 1.4515
+   "score": 1.4302
   },
   {
    "id": "2da10ebf7215",
@@ -5838,7 +5940,7 @@
     "Identity & access"
    ],
    "outlets": 0.5,
-   "score": 0.3592
+   "score": 0.354
   },
   {
    "id": "f0a31195b9bf",
@@ -5853,7 +5955,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3592
+   "score": 0.3539
   },
   {
    "id": "e73b9b54ec16",
@@ -5941,7 +6043,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.7164
+   "score": 0.7059
   },
   {
    "id": "21061913e111",
@@ -5965,7 +6067,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 2.0,
-   "score": 1.4893
+   "score": 1.4674
   },
   {
    "id": "8463994a91b3",
@@ -5981,7 +6083,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7161
+   "score": 0.7056
   },
   {
    "id": "782fa81d4817",
@@ -5997,7 +6099,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.7159
+   "score": 0.7054
   },
   {
    "id": "f0dec996b47a",
@@ -6012,7 +6114,7 @@
     "Supply chain security"
    ],
    "outlets": 1.0,
-   "score": 0.7127
+   "score": 0.7022
   },
   {
    "id": "91244f3c396f",
@@ -6028,7 +6130,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7127
+   "score": 0.7022
   },
   {
    "id": "784736ad0194",
@@ -6054,7 +6156,7 @@
     }
    ],
    "outlets": 1.0,
-   "score": 0.7117
+   "score": 0.7012
   },
   {
    "id": "3b9057743175",
@@ -6069,7 +6171,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.711
+   "score": 0.7006
   },
   {
    "id": "b93540ef2a5b",
@@ -6084,7 +6186,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.7106
+   "score": 0.7002
   },
   {
    "id": "4ecc65cf5309",
@@ -6100,7 +6202,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.3546
+   "score": 0.3494
   },
   {
    "id": "e51f0bdfdce2",
@@ -6115,7 +6217,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.709
+   "score": 0.6986
   },
   {
    "id": "243e00599201",
@@ -6131,7 +6233,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.7065
+   "score": 0.6961
   },
   {
    "id": "25c3664c73b0",
@@ -6146,7 +6248,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7064
+   "score": 0.6961
   },
   {
    "id": "0ae5e2cdd3a9",
@@ -6171,7 +6273,7 @@
     "Hardware"
    ],
    "outlets": 2.0,
-   "score": 1.5759
+   "score": 1.5528
   },
   {
    "id": "88ce0dfd16e2",
@@ -6186,7 +6288,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.7062
+   "score": 0.6958
   },
   {
    "id": "e9e0378b2649",
@@ -6201,7 +6303,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7058
+   "score": 0.6955
   },
   {
    "id": "116cf8b0d0de",
@@ -6217,7 +6319,7 @@
     "Networking"
    ],
    "outlets": 0.5,
-   "score": 0.3529
+   "score": 0.3477
   },
   {
    "id": "fe449b0f5803",
@@ -6232,7 +6334,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.7058
+   "score": 0.6955
   },
   {
    "id": "906af3a47390",
@@ -6249,7 +6351,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7058
+   "score": 0.6955
   },
   {
    "id": "ac2874ff8aa6",
@@ -6264,7 +6366,7 @@
     "ITSM"
    ],
    "outlets": 1.0,
-   "score": 0.7058
+   "score": 0.6955
   },
   {
    "id": "918120f4e3e2",
@@ -6279,7 +6381,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.7048
+   "score": 0.6945
   },
   {
    "id": "20cfc938493f",
@@ -6298,7 +6400,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.7038
+   "score": 0.6935
   },
   {
    "id": "a5e277b40435",
@@ -6315,7 +6417,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.7011
+   "score": 0.6908
   },
   {
    "id": "7d8bce5f2fea",
@@ -6331,7 +6433,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.6998
+   "score": 0.6896
   },
   {
    "id": "25580fdca239",
@@ -6347,7 +6449,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6984
+   "score": 0.6881
   },
   {
    "id": "ad5b3ffbf4c5",
@@ -6362,7 +6464,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6975
+   "score": 0.6872
   },
   {
    "id": "248da3af7b68",
@@ -6377,7 +6479,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6974
+   "score": 0.6871
   },
   {
    "id": "7deeca46c74d",
@@ -6392,7 +6494,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.6925
+   "score": 0.6824
   },
   {
    "id": "11aa2f50eb87",
@@ -6407,7 +6509,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6924
+   "score": 0.6822
   },
   {
    "id": "9991e42cd175",
@@ -6423,7 +6525,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.692
+   "score": 0.6818
   },
   {
    "id": "b9ce89bf1ea8",
@@ -6438,7 +6540,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6907
+   "score": 0.6806
   },
   {
    "id": "787f60c2ec17",
@@ -6453,7 +6555,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6902
+   "score": 0.6801
   },
   {
    "id": "a986a0163507",
@@ -6468,7 +6570,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6884
+   "score": 0.6783
   },
   {
    "id": "704d7a8b0cc3",
@@ -6483,7 +6585,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6875
+   "score": 0.6774
   },
   {
    "id": "d49bddd61e30",
@@ -6499,7 +6601,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.6874
+   "score": 0.6773
   },
   {
    "id": "c3804ec721e7",
@@ -6514,7 +6616,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.687
+   "score": 0.677
   },
   {
    "id": "c8942214573f",
@@ -6532,7 +6634,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.6865
+   "score": 0.6765
   },
   {
    "id": "cfae00097c4f",
@@ -6547,7 +6649,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6863
+   "score": 0.6763
   },
   {
    "id": "330bbed283fe",
@@ -6562,7 +6664,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6863
+   "score": 0.6762
   },
   {
    "id": "fa533b0190ce",
@@ -6577,7 +6679,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6851
+   "score": 0.675
   },
   {
    "id": "9e640d54cb60",
@@ -6592,7 +6694,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.3424
+   "score": 0.3373
   },
   {
    "id": "7dac5fab0823",
@@ -6607,7 +6709,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6799
+   "score": 0.6699
   },
   {
    "id": "fa6078e0b3ec",
@@ -6622,7 +6724,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6798
+   "score": 0.6698
   },
   {
    "id": "687113d4f79f",
@@ -6639,7 +6741,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6792
+   "score": 0.6692
   },
   {
    "id": "b22da0718652",
@@ -6654,7 +6756,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6791
+   "score": 0.6692
   },
   {
    "id": "36836a784ff9",
@@ -6669,7 +6771,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6783
+   "score": 0.6683
   },
   {
    "id": "b2503f681a96",
@@ -6709,7 +6811,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.6772
+   "score": 0.6673
   },
   {
    "id": "777d8b2f378c",
@@ -6724,7 +6826,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6761
+   "score": 0.6662
   },
   {
    "id": "b6b2f0789e29",
@@ -6739,7 +6841,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6759
+   "score": 0.666
   },
   {
    "id": "82de10c3a753",
@@ -6755,7 +6857,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.675
+   "score": 0.6651
   },
   {
    "id": "35c83e4dc773",
@@ -6770,7 +6872,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6732
+   "score": 0.6633
   },
   {
    "id": "56d397251f14",
@@ -6786,7 +6888,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6701
+   "score": 0.6602
   },
   {
    "id": "27afb72179ed",
@@ -6802,7 +6904,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.6697
+   "score": 0.6598
   },
   {
    "id": "49ee48d5da3d",
@@ -6818,7 +6920,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "02dcbf95ed19",
@@ -6833,7 +6935,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "18bf3ddfd263",
@@ -6848,7 +6950,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.3331
+   "score": 0.3282
   },
   {
    "id": "29b73a821ce7",
@@ -6865,7 +6967,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "1a948417af87",
@@ -6880,7 +6982,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "35fb1bec138f",
@@ -6895,7 +6997,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "a011ff7ff121",
@@ -6910,7 +7012,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "41f22a5ce5d6",
@@ -6925,7 +7027,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "b00c2239653e",
@@ -6942,7 +7044,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "3bf5164eed66",
@@ -6957,7 +7059,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6662
+   "score": 0.6564
   },
   {
    "id": "ebc86becc2d3",
@@ -6973,7 +7075,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.666
+   "score": 0.6563
   },
   {
    "id": "4aed6306b5b6",
@@ -6988,7 +7090,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.666
+   "score": 0.6562
   },
   {
    "id": "cb21e78b58bc",
@@ -7004,7 +7106,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.665
+   "score": 0.6552
   },
   {
    "id": "f1acbf0fc320",
@@ -7019,7 +7121,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.665
+   "score": 0.6552
   },
   {
    "id": "f01842307932",
@@ -7035,7 +7137,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6649
+   "score": 0.6552
   },
   {
    "id": "7306e94d0ae3",
@@ -7051,7 +7153,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.3315
+   "score": 0.3266
   },
   {
    "id": "28d5b0bc7a52",
@@ -7066,7 +7168,7 @@
     "TLS & PKI"
    ],
    "outlets": 1.0,
-   "score": 0.663
+   "score": 0.6533
   },
   {
    "id": "9008ae62881e",
@@ -7082,7 +7184,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6626
+   "score": 0.6529
   },
   {
    "id": "8fd00a3579f2",
@@ -7097,7 +7199,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6617
+   "score": 0.652
   },
   {
    "id": "ce4ebda43150",
@@ -7112,7 +7214,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.6589
+   "score": 0.6492
   },
   {
    "id": "24abf2d3032c",
@@ -7127,7 +7229,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.6589
+   "score": 0.6492
   },
   {
    "id": "75d3be5138a9",
@@ -7143,7 +7245,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.6586
+   "score": 0.6489
   },
   {
    "id": "fa387c1c0718",
@@ -7159,7 +7261,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6586
+   "score": 0.6489
   },
   {
    "id": "32217b6d2021",
@@ -7174,7 +7276,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6573
+   "score": 0.6476
   },
   {
    "id": "2312f76db6b8",
@@ -7189,7 +7291,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6571
+   "score": 0.6474
   },
   {
    "id": "fb9f48eb9529",
@@ -7205,7 +7307,7 @@
     "Agile & delivery"
    ],
    "outlets": 1.0,
-   "score": 0.6552
+   "score": 0.6456
   },
   {
    "id": "5c4e0dcae2cc",
@@ -7222,7 +7324,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.6514
+   "score": 0.6418
   },
   {
    "id": "5a8f454f9c1a",
@@ -7240,7 +7342,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.6513
+   "score": 0.6417
   },
   {
    "id": "ade8cd2e35f1",
@@ -7256,7 +7358,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.6488
+   "score": 0.6392
   },
   {
    "id": "1d46574ed2f5",
@@ -7273,7 +7375,7 @@
     "Backup & recovery"
    ],
    "outlets": 1.0,
-   "score": 0.6487
+   "score": 0.6392
   },
   {
    "id": "159be7f95d0b",
@@ -7288,7 +7390,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6486
+   "score": 0.639
   },
   {
    "id": "d3ccba3bb6f4",
@@ -7304,7 +7406,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6485
+   "score": 0.639
   },
   {
    "id": "aa6e28598c02",
@@ -7321,7 +7423,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.6478
+   "score": 0.6383
   },
   {
    "id": "fcbf147fa89e",
@@ -7336,7 +7438,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6472
+   "score": 0.6377
   },
   {
    "id": "671298c24537",
@@ -7352,7 +7454,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6472
+   "score": 0.6377
   },
   {
    "id": "2b88ab1d6b51",
@@ -7367,7 +7469,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.6472
+   "score": 0.6377
   },
   {
    "id": "c6de0aeb8ff3",
@@ -7384,7 +7486,7 @@
    ],
    "cves": [],
    "outlets": 1.0,
-   "score": 0.6469
+   "score": 0.6374
   },
   {
    "id": "16e4a7d7fbb2",
@@ -7400,7 +7502,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6468
+   "score": 0.6373
   },
   {
    "id": "7b640d38b8e1",
@@ -7416,7 +7518,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.6466
+   "score": 0.6371
   },
   {
    "id": "b0994b5ebc77",
@@ -7432,7 +7534,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.6458
+   "score": 0.6363
   },
   {
    "id": "59124dbb7ece",
@@ -7447,7 +7549,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.6455
+   "score": 0.636
   },
   {
    "id": "f385d4274c92",
@@ -7462,7 +7564,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6442
+   "score": 0.6347
   },
   {
    "id": "21d647873c2f",
@@ -7477,7 +7579,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.6442
+   "score": 0.6347
   },
   {
    "id": "600a3c02bdc0",
@@ -7502,7 +7604,7 @@
     "Hardware"
    ],
    "outlets": 2.0,
-   "score": 1.3567
+   "score": 1.3367
   },
   {
    "id": "e27d715bc0f4",
@@ -7517,7 +7619,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6431
+   "score": 0.6336
   },
   {
    "id": "b9ceb0be3004",
@@ -7533,7 +7635,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.643
+   "score": 0.6336
   },
   {
    "id": "146c6ea2046b",
@@ -7548,7 +7650,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6424
+   "score": 0.633
   },
   {
    "id": "029faa3c4b98",
@@ -7563,7 +7665,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6421
+   "score": 0.6326
   },
   {
    "id": "848e9d1febba",
@@ -7578,7 +7680,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6417
+   "score": 0.6323
   },
   {
    "id": "7bd7391061fc",
@@ -7593,7 +7695,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6416
+   "score": 0.6322
   },
   {
    "id": "c1ac9b2bec60",
@@ -7608,7 +7710,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.3206
+   "score": 0.3159
   },
   {
    "id": "269b0ab198c6",
@@ -7623,7 +7725,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.641
+   "score": 0.6316
   },
   {
    "id": "bbc63cfb6b92",
@@ -7638,7 +7740,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.6408
+   "score": 0.6314
   },
   {
    "id": "d1622baedc91",
@@ -7653,7 +7755,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6402
+   "score": 0.6308
   },
   {
    "id": "3a8dfb5120d2",
@@ -7714,7 +7816,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6387
+   "score": 0.6293
   },
   {
    "id": "c0de150414cb",
@@ -7729,7 +7831,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6386
+   "score": 0.6292
   },
   {
    "id": "e84e9761111c",
@@ -7744,7 +7846,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6386
+   "score": 0.6292
   },
   {
    "id": "cecc47ce72fb",
@@ -7769,7 +7871,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 2.0,
-   "score": 1.1668
+   "score": 1.1497
   },
   {
    "id": "7df80db3eb20",
@@ -7784,7 +7886,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3188
+   "score": 0.3142
   },
   {
    "id": "30061bea4c50",
@@ -7799,7 +7901,7 @@
     "Forensics & IR"
    ],
    "outlets": 1.0,
-   "score": 0.6362
+   "score": 0.6269
   },
   {
    "id": "909f13f949ef",
@@ -7816,7 +7918,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.3175
+   "score": 0.3128
   },
   {
    "id": "bc6b364e0b70",
@@ -7831,7 +7933,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3171
+   "score": 0.3124
   },
   {
    "id": "cf8d5f3c0f92",
@@ -7849,7 +7951,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.6312
+   "score": 0.6219
   },
   {
    "id": "e93c1976ed78",
@@ -7867,7 +7969,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.6308
+   "score": 0.6215
   },
   {
    "id": "5265d3f089df",
@@ -7882,7 +7984,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6292
+   "score": 0.6199
   },
   {
    "id": "2b2d0872452c",
@@ -7897,7 +7999,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6291
+   "score": 0.6199
   },
   {
    "id": "57a5f1122dac",
@@ -7912,7 +8014,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6291
+   "score": 0.6198
   },
   {
    "id": "c27bc29bbb5b",
@@ -7928,7 +8030,7 @@
     "Pen testing & red team"
    ],
    "outlets": 1.0,
-   "score": 0.6289
+   "score": 0.6197
   },
   {
    "id": "15259d9b42f5",
@@ -7943,7 +8045,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6289
+   "score": 0.6197
   },
   {
    "id": "3ae03c86dd4c",
@@ -7958,7 +8060,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.6288
+   "score": 0.6196
   },
   {
    "id": "82e0d2056deb",
@@ -7973,7 +8075,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6281
+   "score": 0.6188
   },
   {
    "id": "94e9e51a621f",
@@ -7988,7 +8090,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6269
+   "score": 0.6177
   },
   {
    "id": "7c4e3e102ead",
@@ -8003,7 +8105,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6269
+   "score": 0.6177
   },
   {
    "id": "07527e261ff6",
@@ -8019,7 +8121,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6263
+   "score": 0.6171
   },
   {
    "id": "8d4ad6492846",
@@ -8034,7 +8136,7 @@
     "Supply chain security"
    ],
    "outlets": 1.0,
-   "score": 0.6258
+   "score": 0.6166
   },
   {
    "id": "1d3ca8ef143e",
@@ -8049,7 +8151,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6252
+   "score": 0.616
   },
   {
    "id": "e5158d43f3f3",
@@ -8064,7 +8166,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.6246
+   "score": 0.6154
   },
   {
    "id": "d48209cc4cea",
@@ -8079,7 +8181,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.622
+   "score": 0.6129
   },
   {
    "id": "e9d43d5ff2b0",
@@ -8094,7 +8196,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.6198
+   "score": 0.6107
   },
   {
    "id": "0d89b0a53720",
@@ -8110,7 +8212,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.6198
+   "score": 0.6107
   },
   {
    "id": "f8fc2ed243f3",
@@ -8125,7 +8227,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.6192
+   "score": 0.6101
   },
   {
    "id": "786ad59fbbda",
@@ -8140,7 +8242,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6192
+   "score": 0.6101
   },
   {
    "id": "2b6117d6e5f6",
@@ -8163,7 +8265,7 @@
     "Backup & recovery"
    ],
    "outlets": 2.0,
-   "score": 1.1774
+   "score": 1.1601
   },
   {
    "id": "dc41d2961057",
@@ -8180,7 +8282,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.6165
+   "score": 0.6074
   },
   {
    "id": "b0301b7e4019",
@@ -8190,12 +8292,21 @@
    "source_category": "DevOps & automation",
    "published": "2026-11-25T14:39:00+00:00",
    "summary": "This post walks through moving the bulk of query compute to AWS Lambda Managed Instances, the misread telemetry, the utilization math, and the months of performance engineering that turned the switch into a 40-56% cost reduction.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c94d258cf5d6",
+     "source": "AWS What's New",
+     "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+     "summary": "Today, AWS announces a developer preview of a new extension for orchestrating Lambda MicroVMs with Lambda durable functions . The extension adds durable operations for running work on MicroVMs and managing their lifecycle.",
+     "published": "2026-11-25T20:00:00+00:00"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure"
    ],
-   "outlets": 1.0,
-   "score": 0.6162
+   "outlets": 2.0,
+   "score": 1.4342
   },
   {
    "id": "9eb456443c9e",
@@ -8210,7 +8321,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6156
+   "score": 0.6066
   },
   {
    "id": "6f3c3c0e00e5",
@@ -8226,7 +8337,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.6154
+   "score": 0.6063
   },
   {
    "id": "7e10d42e267b",
@@ -8243,7 +8354,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.6153
+   "score": 0.6063
   },
   {
    "id": "ae5493d15244",
@@ -8258,7 +8369,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6153
+   "score": 0.6063
   },
   {
    "id": "b83399b02c70",
@@ -8274,7 +8385,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.6145
+   "score": 0.6055
   },
   {
    "id": "b10074e25bcb",
@@ -8290,7 +8401,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.6137
+   "score": 0.6047
   },
   {
    "id": "8ff4bea6b343",
@@ -8306,7 +8417,7 @@
     "Accessibility"
    ],
    "outlets": 1.0,
-   "score": 0.6133
+   "score": 0.6042
   },
   {
    "id": "4ada686bfd04",
@@ -8322,7 +8433,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6132
+   "score": 0.6042
   },
   {
    "id": "d813d461c7d0",
@@ -8337,7 +8448,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6132
+   "score": 0.6042
   },
   {
    "id": "6b6b16ce55a7",
@@ -8352,7 +8463,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6132
+   "score": 0.6042
   },
   {
    "id": "fc89267de793",
@@ -8376,7 +8487,7 @@
     "AI"
    ],
    "outlets": 1.5,
-   "score": 1.0843
+   "score": 1.0684
   },
   {
    "id": "22c7e39b0789",
@@ -8393,7 +8504,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.613
+   "score": 0.604
   },
   {
    "id": "e8231416eb10",
@@ -8409,7 +8520,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.6121
+   "score": 0.6031
   },
   {
    "id": "b50b00f50f2b",
@@ -8424,7 +8535,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.612
+   "score": 0.603
   },
   {
    "id": "4a352108346b",
@@ -8439,7 +8550,7 @@
     "TLS & PKI"
    ],
    "outlets": 1.0,
-   "score": 0.6112
+   "score": 0.6022
   },
   {
    "id": "5f071cab73ef",
@@ -8454,7 +8565,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.6109
+   "score": 0.602
   },
   {
    "id": "2804a17edd7b",
@@ -8469,7 +8580,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.6103
+   "score": 0.6014
   },
   {
    "id": "740d7d05042d",
@@ -8484,7 +8595,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6092
+   "score": 0.6002
   },
   {
    "id": "3145038397d8",
@@ -8499,7 +8610,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.609
+   "score": 0.6001
   },
   {
    "id": "2ecf424fe11b",
@@ -8516,7 +8627,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.6076
+   "score": 0.5986
   },
   {
    "id": "bb0e335564f2",
@@ -8531,7 +8642,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6054
+   "score": 0.5965
   },
   {
    "id": "c06edd004f5d",
@@ -8547,7 +8658,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.6053
+   "score": 0.5964
   },
   {
    "id": "8593e287d0da",
@@ -8562,7 +8673,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.3023
+   "score": 0.2979
   },
   {
    "id": "38651a6cb149",
@@ -8580,7 +8691,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.6031
+   "score": 0.5942
   },
   {
    "id": "4b03d3f1c48a",
@@ -8595,7 +8706,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.6024
+   "score": 0.5936
   },
   {
    "id": "2f03f3fcbd2d",
@@ -8610,7 +8721,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.6022
+   "score": 0.5933
   },
   {
    "id": "4544ed9592ee",
@@ -8626,7 +8737,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5996
+   "score": 0.5908
   },
   {
    "id": "466f09fc7b7d",
@@ -8643,7 +8754,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5975
+   "score": 0.5888
   },
   {
    "id": "19dbb983cc8a",
@@ -8660,7 +8771,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5972
+   "score": 0.5884
   },
   {
    "id": "ffff3b9e0b18",
@@ -8675,7 +8786,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.2982
+   "score": 0.2938
   },
   {
    "id": "6d68ebdd8d78",
@@ -8691,7 +8802,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5957
+   "score": 0.587
   },
   {
    "id": "32cb1f9975a9",
@@ -8707,7 +8818,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5952
+   "score": 0.5864
   },
   {
    "id": "29ce0ce16feb",
@@ -8724,7 +8835,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.5944
+   "score": 0.5857
   },
   {
    "id": "37a9824f6569",
@@ -8740,7 +8851,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5941
+   "score": 0.5854
   },
   {
    "id": "576ece26031d",
@@ -8756,7 +8867,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5938
+   "score": 0.5851
   },
   {
    "id": "90c045ac1208",
@@ -8771,7 +8882,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5938
+   "score": 0.5851
   },
   {
    "id": "4bbaff712547",
@@ -8786,7 +8897,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5938
+   "score": 0.585
   },
   {
    "id": "7c0a30093497",
@@ -8801,7 +8912,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "a1e4531e0933",
@@ -8816,7 +8927,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "16626deb555d",
@@ -8831,7 +8942,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "c15c5e3e976f",
@@ -8847,7 +8958,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "d49fa9692e4c",
@@ -8863,7 +8974,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "fc90cdb7a663",
@@ -8880,7 +8991,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "170ba12c1bad",
@@ -8895,7 +9006,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "2b20043c281c",
@@ -8911,7 +9022,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "ecdcb14ede51",
@@ -8926,7 +9037,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "e9489b4bc835",
@@ -8943,7 +9054,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5935
+   "score": 0.5848
   },
   {
    "id": "a18b507df354",
@@ -8958,7 +9069,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.593
+   "score": 0.5843
   },
   {
    "id": "2486db0c4e4a",
@@ -8973,7 +9084,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5926
+   "score": 0.5839
   },
   {
    "id": "daceee4b1fb9",
@@ -8989,7 +9100,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5926
+   "score": 0.5839
   },
   {
    "id": "54bb651d07ab",
@@ -9013,7 +9124,7 @@
     "Development"
    ],
    "outlets": 1.5,
-   "score": 0.8983
+   "score": 0.8851
   },
   {
    "id": "d62142fe9950",
@@ -9028,7 +9139,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5918
+   "score": 0.5831
   },
   {
    "id": "f57f5f068c59",
@@ -9044,7 +9155,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.5918
+   "score": 0.5831
   },
   {
    "id": "769b191e5702",
@@ -9059,7 +9170,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5911
+   "score": 0.5825
   },
   {
    "id": "40b36077692f",
@@ -9074,7 +9185,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.5894
+   "score": 0.5807
   },
   {
    "id": "c23aca8ea8c7",
@@ -9089,7 +9200,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5883
+   "score": 0.5797
   },
   {
    "id": "d94be309b462",
@@ -9104,7 +9215,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5876
+   "score": 0.5789
   },
   {
    "id": "2711bc02467a",
@@ -9119,7 +9230,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5873
+   "score": 0.5786
   },
   {
    "id": "425c4a1ba1c0",
@@ -9134,7 +9245,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5871
+   "score": 0.5785
   },
   {
    "id": "bbcf5ee51112",
@@ -9149,7 +9260,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.5869
+   "score": 0.5782
   },
   {
    "id": "11eddf65b912",
@@ -9166,7 +9277,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.586
+   "score": 0.5774
   },
   {
    "id": "4d8d78f7da37",
@@ -9181,7 +9292,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5853
+   "score": 0.5767
   },
   {
    "id": "3e0d3c40e047",
@@ -9196,7 +9307,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.584
+   "score": 0.5754
   },
   {
    "id": "b82bf949fcfe",
@@ -9213,7 +9324,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.5837
+   "score": 0.5752
   },
   {
    "id": "4edafcd25335",
@@ -9229,7 +9340,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.583
+   "score": 0.5745
   },
   {
    "id": "ee6f70db6db4",
@@ -9244,7 +9355,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5827
+   "score": 0.5741
   },
   {
    "id": "33e311156763",
@@ -9259,7 +9370,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.5822
+   "score": 0.5737
   },
   {
    "id": "16a8641fe4ad",
@@ -9274,7 +9385,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5811
+   "score": 0.5726
   },
   {
    "id": "b2c2f201dff1",
@@ -9290,7 +9401,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.5805
+   "score": 0.572
   },
   {
    "id": "600752659034",
@@ -9305,7 +9416,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5803
+   "score": 0.5718
   },
   {
    "id": "c1001e30276d",
@@ -9321,7 +9432,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.58
+   "score": 0.5715
   },
   {
    "id": "14ce487c6bbb",
@@ -9336,7 +9447,7 @@
     "Threats & malware"
    ],
    "outlets": 1.0,
-   "score": 0.5799
+   "score": 0.5714
   },
   {
    "id": "601343e434a1",
@@ -9351,7 +9462,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2897
+   "score": 0.2855
   },
   {
    "id": "fb819a10120d",
@@ -9366,7 +9477,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5794
+   "score": 0.5709
   },
   {
    "id": "1eeb22be3c5a",
@@ -9381,7 +9492,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5788
+   "score": 0.5703
   },
   {
    "id": "abef7dcffe0c",
@@ -9396,7 +9507,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2892
+   "score": 0.2849
   },
   {
    "id": "577f31acc307",
@@ -9411,7 +9522,7 @@
     "Threats & malware"
    ],
    "outlets": 1.0,
-   "score": 0.5777
+   "score": 0.5693
   },
   {
    "id": "2e2425847825",
@@ -9428,7 +9539,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5775
+   "score": 0.5691
   },
   {
    "id": "92d5bc0d8075",
@@ -9444,7 +9555,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5772
+   "score": 0.5687
   },
   {
    "id": "d318f646af50",
@@ -9459,7 +9570,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.5772
+   "score": 0.5687
   },
   {
    "id": "8aecfebcb487",
@@ -9474,7 +9585,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5766
+   "score": 0.5682
   },
   {
    "id": "fa1f50764b02",
@@ -9490,7 +9601,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5766
+   "score": 0.5682
   },
   {
    "id": "be6a4778331d",
@@ -9507,7 +9618,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.5766
+   "score": 0.5682
   },
   {
    "id": "4ea155fd6924",
@@ -9522,7 +9633,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5766
+   "score": 0.5682
   },
   {
    "id": "3a7e59cd7412",
@@ -9537,7 +9648,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5761
+   "score": 0.5676
   },
   {
    "id": "5c62ef25a52f",
@@ -9553,7 +9664,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5758
+   "score": 0.5673
   },
   {
    "id": "96b88014096e",
@@ -9572,7 +9683,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5755
+   "score": 0.5671
   },
   {
    "id": "2fee860cc8ea",
@@ -9588,7 +9699,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5755
+   "score": 0.567
   },
   {
    "id": "d2b4f6f850ac",
@@ -9604,7 +9715,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.575
+   "score": 0.5665
   },
   {
    "id": "475ea6f180ee",
@@ -9620,7 +9731,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.5744
+   "score": 0.566
   },
   {
    "id": "6bac70b0e180",
@@ -9635,7 +9746,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5731
+   "score": 0.5647
   },
   {
    "id": "befc49c82927",
@@ -9651,7 +9762,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5731
+   "score": 0.5646
   },
   {
    "id": "a7221c5189cb",
@@ -9675,7 +9786,7 @@
     "AI"
    ],
    "outlets": 1.5,
-   "score": 0.9221
+   "score": 0.9086
   },
   {
    "id": "4c48973a8f13",
@@ -9691,7 +9802,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.5727
+   "score": 0.5643
   },
   {
    "id": "cb5bd036cbec",
@@ -9707,7 +9818,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5722
+   "score": 0.5638
   },
   {
    "id": "c40a15c24159",
@@ -9723,7 +9834,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5722
+   "score": 0.5638
   },
   {
    "id": "457aa77f0b37",
@@ -9738,7 +9849,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5719
+   "score": 0.5635
   },
   {
    "id": "9332c443e84a",
@@ -9755,7 +9866,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5716
+   "score": 0.5632
   },
   {
    "id": "b98cb7d68171",
@@ -9772,7 +9883,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.5705
+   "score": 0.5621
   },
   {
    "id": "e1cd68d23b4e",
@@ -9876,7 +9987,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5691
+   "score": 0.5608
   },
   {
    "id": "baf324ac4948",
@@ -9893,7 +10004,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5685
+   "score": 0.5601
   },
   {
    "id": "6a5575189b4d",
@@ -9908,7 +10019,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5683
+   "score": 0.56
   },
   {
    "id": "1b6d3c2b4285",
@@ -9923,7 +10034,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5682
+   "score": 0.5599
   },
   {
    "id": "8625dd519ff7",
@@ -9938,7 +10049,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5681
+   "score": 0.5597
   },
   {
    "id": "a0df52f861a1",
@@ -9953,7 +10064,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5667
+   "score": 0.5584
   },
   {
    "id": "dc570705d828",
@@ -9968,7 +10079,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5667
+   "score": 0.5584
   },
   {
    "id": "6a0714a89a88",
@@ -9984,7 +10095,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.5662
+   "score": 0.5579
   },
   {
    "id": "9a548cf8973d",
@@ -9999,7 +10110,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5656
+   "score": 0.5573
   },
   {
    "id": "b7553e4ed95d",
@@ -10014,7 +10125,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5656
+   "score": 0.5573
   },
   {
    "id": "299bf5c1fa45",
@@ -10031,7 +10142,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.5655
+   "score": 0.5571
   },
   {
    "id": "045130688435",
@@ -10046,7 +10157,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2826
+   "score": 0.2785
   },
   {
    "id": "1aa344f94baf",
@@ -10061,7 +10172,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5652
+   "score": 0.5569
   },
   {
    "id": "c19231a12efb",
@@ -10079,7 +10190,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5651
+   "score": 0.5568
   },
   {
    "id": "0a0a941bd6ca",
@@ -10096,7 +10207,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5644
+   "score": 0.5561
   },
   {
    "id": "1da2151842b1",
@@ -10112,7 +10223,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5622
+   "score": 0.554
   },
   {
    "id": "321260c49805",
@@ -10127,7 +10238,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5608
+   "score": 0.5525
   },
   {
    "id": "cba6f6d26b3d",
@@ -10142,7 +10253,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.2804
+   "score": 0.2762
   },
   {
    "id": "ece4be84ecbc",
@@ -10157,7 +10268,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5602
+   "score": 0.552
   },
   {
    "id": "16293f09d90d",
@@ -10172,7 +10283,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5602
+   "score": 0.552
   },
   {
    "id": "793f1a014aae",
@@ -10187,7 +10298,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5557
+   "score": 0.5476
   },
   {
    "id": "d89af08104fd",
@@ -10203,7 +10314,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5553
+   "score": 0.5472
   },
   {
    "id": "7bd757555e72",
@@ -10219,7 +10330,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5552
+   "score": 0.547
   },
   {
    "id": "09fa7f41e853",
@@ -10234,7 +10345,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.555
+   "score": 0.5468
   },
   {
    "id": "ce7f01aef996",
@@ -10249,7 +10360,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2774
+   "score": 0.2734
   },
   {
    "id": "d6181706b251",
@@ -10265,7 +10376,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5548
+   "score": 0.5467
   },
   {
    "id": "92db407f26f0",
@@ -10292,7 +10403,7 @@
    ],
    "cves": [],
    "outlets": 2.0,
-   "score": 1.1831
+   "score": 1.1657
   },
   {
    "id": "8f7dd70db687",
@@ -10307,7 +10418,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5529
+   "score": 0.5447
   },
   {
    "id": "d78410d1774d",
@@ -10322,7 +10433,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.5515
+   "score": 0.5434
   },
   {
    "id": "229957ec0d1f",
@@ -10338,7 +10449,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.5506
+   "score": 0.5425
   },
   {
    "id": "ed66ac3f5042",
@@ -10354,7 +10465,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5485
+   "score": 0.5405
   },
   {
    "id": "644044ea0fe9",
@@ -10370,7 +10481,7 @@
    ],
    "cves": [],
    "outlets": 1.0,
-   "score": 0.5475
+   "score": 0.5395
   },
   {
    "id": "20283013b737",
@@ -10385,7 +10496,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5467
+   "score": 0.5386
   },
   {
    "id": "b41fd99f1498",
@@ -10400,7 +10511,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5458
+   "score": 0.5378
   },
   {
    "id": "c326f745b99b",
@@ -10418,7 +10529,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.5455
+   "score": 0.5375
   },
   {
    "id": "780f9d498cc1",
@@ -10435,7 +10546,7 @@
     "ICS / OT"
    ],
    "outlets": 1.0,
-   "score": 0.5446
+   "score": 0.5366
   },
   {
    "id": "9ec089ff71fe",
@@ -10453,7 +10564,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.5443
+   "score": 0.5363
   },
   {
    "id": "1848fef936ef",
@@ -10469,7 +10580,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5443
+   "score": 0.5363
   },
   {
    "id": "3e284afab613",
@@ -10484,7 +10595,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5416
+   "score": 0.5336
   },
   {
    "id": "136fb70ad1bb",
@@ -10499,7 +10610,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5415
+   "score": 0.5336
   },
   {
    "id": "4d94e7f90521",
@@ -10516,7 +10627,7 @@
     "Endpoint management"
    ],
    "outlets": 1.0,
-   "score": 0.5392
+   "score": 0.5313
   },
   {
    "id": "3b82626aa8a0",
@@ -10531,7 +10642,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.5392
+   "score": 0.5313
   },
   {
    "id": "c2d9c9d48347",
@@ -10573,7 +10684,7 @@
     }
    },
    "outlets": 2.0,
-   "score": 1.4898
+   "score": 1.4679
   },
   {
    "id": "32a0ae0f6ecb",
@@ -10588,7 +10699,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5387
+   "score": 0.5308
   },
   {
    "id": "816cf27975d6",
@@ -10623,7 +10734,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5383
+   "score": 0.5304
   },
   {
    "id": "a07adcea76bb",
@@ -10638,7 +10749,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.5374
+   "score": 0.5295
   },
   {
    "id": "0f3c241a59d5",
@@ -10679,7 +10790,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5364
+   "score": 0.5285
   },
   {
    "id": "82803f78695d",
@@ -10696,7 +10807,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5351
+   "score": 0.5272
   },
   {
    "id": "97f2b8403b12",
@@ -10711,7 +10822,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5325
+   "score": 0.5247
   },
   {
    "id": "3aea974af38a",
@@ -10727,7 +10838,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5322
+   "score": 0.5244
   },
   {
    "id": "cca9084f9953",
@@ -10751,7 +10862,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5336
+   "score": 0.5258
   },
   {
    "id": "a7eb060edbe4",
@@ -10767,7 +10878,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.5305
+   "score": 0.5228
   },
   {
    "id": "33f3ae7ee28d",
@@ -10791,7 +10902,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 0.7945
+   "score": 0.7828
   },
   {
    "id": "b55803fe7028",
@@ -10808,7 +10919,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5299
+   "score": 0.5222
   },
   {
    "id": "3ac6bf5f8367",
@@ -10824,7 +10935,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5293
+   "score": 0.5215
   },
   {
    "id": "62a22fdb6ce8",
@@ -10839,7 +10950,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.5293
+   "score": 0.5215
   },
   {
    "id": "643f4a12f6b9",
@@ -10854,7 +10965,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2645
+   "score": 0.2606
   },
   {
    "id": "17966653fdae",
@@ -10869,7 +10980,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5289
+   "score": 0.5211
   },
   {
    "id": "f9fd04624f27",
@@ -10893,7 +11004,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 1.1177
+   "score": 1.1013
   },
   {
    "id": "8e9c5388f611",
@@ -10921,7 +11032,7 @@
     "Policy & regulation"
    ],
    "outlets": 2.0,
-   "score": 1.4227
+   "score": 1.4018
   },
   {
    "id": "bbd6b8659313",
@@ -10936,7 +11047,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "59443e435bbe",
@@ -10969,7 +11080,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "375390acfceb",
@@ -11010,7 +11121,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "572924241b90",
@@ -11051,7 +11162,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "9be7385a0d24",
@@ -11091,7 +11202,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "55254ad04764",
@@ -11131,7 +11242,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "2f79e0b49840",
@@ -11172,7 +11283,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "b1a94c395587",
@@ -11213,7 +11324,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "eb7934885f30",
@@ -11254,7 +11365,7 @@
     }
    },
    "outlets": 1.0,
-   "score": 0.5288
+   "score": 0.521
   },
   {
    "id": "a8e9387c88ed",
@@ -11271,7 +11382,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.5282
+   "score": 0.5204
   },
   {
    "id": "09107771d0ee",
@@ -11296,7 +11407,7 @@
     "System administration"
    ],
    "outlets": 2.0,
-   "score": 1.2046
+   "score": 1.1869
   },
   {
    "id": "831ebca6c5ef",
@@ -11312,7 +11423,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.527
+   "score": 0.5192
   },
   {
    "id": "00dde0b4d4da",
@@ -11327,7 +11438,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5266
+   "score": 0.5189
   },
   {
    "id": "8a76d47d48ae",
@@ -11342,7 +11453,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5249
+   "score": 0.5172
   },
   {
    "id": "b678a9f766b4",
@@ -11357,7 +11468,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5246
+   "score": 0.5169
   },
   {
    "id": "6a8ceb0f7d1b",
@@ -11372,7 +11483,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.5246
+   "score": 0.5169
   },
   {
    "id": "86a6835d51db",
@@ -11397,7 +11508,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 2.0,
-   "score": 1.5033
+   "score": 1.4812
   },
   {
    "id": "9f7af04addd7",
@@ -11413,7 +11524,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5217
+   "score": 0.514
   },
   {
    "id": "cb9645554def",
@@ -11430,7 +11541,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.2606
+   "score": 0.2568
   },
   {
    "id": "6069ebc63820",
@@ -11445,7 +11556,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5205
+   "score": 0.5129
   },
   {
    "id": "59686df2e42f",
@@ -11462,7 +11573,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5178
+   "score": 0.5102
   },
   {
    "id": "3b84381193f3",
@@ -11477,7 +11588,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.5174
+   "score": 0.5098
   },
   {
    "id": "c2b8a4f51f84",
@@ -11493,7 +11604,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.517
+   "score": 0.5094
   },
   {
    "id": "ffad66169d8c",
@@ -11509,7 +11620,7 @@
     "Reverse engineering"
    ],
    "outlets": 0.5,
-   "score": 0.258
+   "score": 0.2542
   },
   {
    "id": "313e08100998",
@@ -11525,7 +11636,7 @@
     "Endpoint management"
    ],
    "outlets": 1.0,
-   "score": 0.5138
+   "score": 0.5062
   },
   {
    "id": "278bf1e704c6",
@@ -11541,7 +11652,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.2569
+   "score": 0.2531
   },
   {
    "id": "7a295ee99125",
@@ -11556,7 +11667,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5137
+   "score": 0.5062
   },
   {
    "id": "45282ddf7bba",
@@ -11571,7 +11682,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.5123
+   "score": 0.5047
   },
   {
    "id": "2c9ebeae46e0",
@@ -11586,7 +11697,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.5101
+   "score": 0.5026
   },
   {
    "id": "559fb368d5b0",
@@ -11605,7 +11716,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.51
+   "score": 0.5025
   },
   {
    "id": "eef8abd8d727",
@@ -11620,7 +11731,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5095
+   "score": 0.502
   },
   {
    "id": "2b9bfa4ea0b8",
@@ -11636,7 +11747,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.5094
+   "score": 0.5019
   },
   {
    "id": "1b663386bf60",
@@ -11654,7 +11765,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5088
+   "score": 0.5013
   },
   {
    "id": "2ee9fe367477",
@@ -11716,7 +11827,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.507
+   "score": 0.4995
   },
   {
    "id": "b9ec4a379004",
@@ -11733,7 +11844,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.5065
+   "score": 0.4991
   },
   {
    "id": "e6d213505698",
@@ -11748,7 +11859,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 0.5,
-   "score": 0.2532
+   "score": 0.2495
   },
   {
    "id": "52968e51f402",
@@ -11763,7 +11874,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.5052
+   "score": 0.4978
   },
   {
    "id": "86b02c14d460",
@@ -11779,7 +11890,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.5039
+   "score": 0.4965
   },
   {
    "id": "a0adf0fecb9a",
@@ -11812,7 +11923,7 @@
     "TLS & PKI"
    ],
    "outlets": 3.0,
-   "score": 1.5828
+   "score": 1.5595
   },
   {
    "id": "3735e1e58bd7",
@@ -11828,7 +11939,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.5012
+   "score": 0.4938
   },
   {
    "id": "db642432022c",
@@ -11843,7 +11954,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.501
+   "score": 0.4937
   },
   {
    "id": "aeb656df6cbf",
@@ -11858,7 +11969,7 @@
     "ITSM"
    ],
    "outlets": 1.0,
-   "score": 0.4995
+   "score": 0.4922
   },
   {
    "id": "dd390125b4c4",
@@ -11873,7 +11984,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4995
+   "score": 0.4921
   },
   {
    "id": "eda72d83b7b2",
@@ -11889,7 +12000,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.2497
+   "score": 0.2461
   },
   {
    "id": "63d3b91ac76d",
@@ -11904,7 +12015,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "3109f2654645",
@@ -11920,7 +12031,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "a78c2fd43786",
@@ -11935,7 +12046,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "7b3c7839f037",
@@ -11951,7 +12062,7 @@
     "ITSM"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "ae9d2c415a69",
@@ -11967,7 +12078,7 @@
     "Agile & delivery"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "0b824e83879e",
@@ -11982,7 +12093,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "5271300b31f1",
@@ -11998,7 +12109,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "16f8a715f364",
@@ -12013,7 +12124,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.2495
+   "score": 0.2459
   },
   {
    "id": "877f6516f01a",
@@ -12028,7 +12139,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "a30b28eb8dde",
@@ -12043,7 +12154,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "2c2d043d21fc",
@@ -12058,7 +12169,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "7dbdf4294136",
@@ -12073,7 +12184,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "0b2b7a9ff992",
@@ -12090,7 +12201,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.4991
+   "score": 0.4918
   },
   {
    "id": "427e595e6ee0",
@@ -12105,7 +12216,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4986
+   "score": 0.4913
   },
   {
    "id": "c11d5c0a6bb7",
@@ -12122,7 +12233,7 @@
     "TLS & PKI"
    ],
    "outlets": 1.0,
-   "score": 0.4984
+   "score": 0.4911
   },
   {
    "id": "055ffb768a6e",
@@ -12138,7 +12249,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.4979
+   "score": 0.4906
   },
   {
    "id": "4401024d7648",
@@ -12153,7 +12264,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2478
+   "score": 0.2442
   },
   {
    "id": "8af87129436b",
@@ -12169,7 +12280,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4957
+   "score": 0.4884
   },
   {
    "id": "5046515b3993",
@@ -12184,7 +12295,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4937
+   "score": 0.4865
   },
   {
    "id": "86b2ef6090e4",
@@ -12218,7 +12329,7 @@
     "System administration"
    ],
    "outlets": 3.0,
-   "score": 1.5336
+   "score": 1.5111
   },
   {
    "id": "6d2775bbc9ca",
@@ -12233,7 +12344,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4933
+   "score": 0.486
   },
   {
    "id": "1fdd6cf147c9",
@@ -12248,7 +12359,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.4919
+   "score": 0.4847
   },
   {
    "id": "fb7504ad92eb",
@@ -12263,7 +12374,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4919
+   "score": 0.4847
   },
   {
    "id": "38c818552b20",
@@ -12278,7 +12389,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4919
+   "score": 0.4847
   },
   {
    "id": "3885183f3278",
@@ -12294,7 +12405,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.491
+   "score": 0.4838
   },
   {
    "id": "b13b824aeea2",
@@ -12309,7 +12420,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4896
+   "score": 0.4824
   },
   {
    "id": "aadae9eebf9c",
@@ -12324,7 +12435,7 @@
     "Accessibility"
    ],
    "outlets": 1.0,
-   "score": 0.4877
+   "score": 0.4805
   },
   {
    "id": "f91c2952f646",
@@ -12339,7 +12450,7 @@
     "Accessibility"
    ],
    "outlets": 1.0,
-   "score": 0.4877
+   "score": 0.4805
   },
   {
    "id": "f69c6b86c153",
@@ -12354,7 +12465,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2429
+   "score": 0.2394
   },
   {
    "id": "f9aaee52f08c",
@@ -12370,7 +12481,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4856
+   "score": 0.4784
   },
   {
    "id": "aeb959b9d1c9",
@@ -12386,7 +12497,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4849
+   "score": 0.4778
   },
   {
    "id": "e296e70a1d47",
@@ -12401,7 +12512,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.4831
+   "score": 0.476
   },
   {
    "id": "84600a8dc990",
@@ -12416,7 +12527,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4824
+   "score": 0.4754
   },
   {
    "id": "b8d272cc0d05",
@@ -12432,7 +12543,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4819
+   "score": 0.4749
   },
   {
    "id": "d0a3a7f662b5",
@@ -12447,7 +12558,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4812
+   "score": 0.4742
   },
   {
    "id": "2fc744766498",
@@ -12485,7 +12596,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4784
+   "score": 0.4714
   },
   {
    "id": "2800b072733f",
@@ -12509,7 +12620,7 @@
     "AI"
    ],
    "outlets": 1.5,
-   "score": 0.9344
+   "score": 0.9207
   },
   {
    "id": "5b58b1242765",
@@ -12524,7 +12635,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4779
+   "score": 0.4709
   },
   {
    "id": "b536b61b7be9",
@@ -12539,7 +12650,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4779
+   "score": 0.4709
   },
   {
    "id": "53edf59442c9",
@@ -12580,7 +12691,7 @@
     "Game development"
    ],
    "outlets": 3.5,
-   "score": 1.8604
+   "score": 1.8331
   },
   {
    "id": "0150236c95b6",
@@ -12595,7 +12706,7 @@
     "ICS / OT"
    ],
    "outlets": 1.0,
-   "score": 0.4755
+   "score": 0.4685
   },
   {
    "id": "7a104d192ae9",
@@ -12611,7 +12722,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.4752
+   "score": 0.4682
   },
   {
    "id": "172f16064c25",
@@ -12626,7 +12737,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.2367
+   "score": 0.2332
   },
   {
    "id": "ce540fe3c3f1",
@@ -12643,7 +12754,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.4729
+   "score": 0.4659
   },
   {
    "id": "0774f534f2f8",
@@ -12659,7 +12770,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4725
+   "score": 0.4656
   },
   {
    "id": "cfe6bd3f2417",
@@ -12674,7 +12785,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.472
+   "score": 0.4651
   },
   {
    "id": "2f7ccc3b52c7",
@@ -12689,7 +12800,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.4714
+   "score": 0.4645
   },
   {
    "id": "d2926690090a",
@@ -12704,7 +12815,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "6e8f3d05d793",
@@ -12728,7 +12839,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 1.2255
+   "score": 1.2075
   },
   {
    "id": "e76e8335a81f",
@@ -12744,7 +12855,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "6b3f3725d89f",
@@ -12759,7 +12870,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "f9afd9e2494c",
@@ -12775,7 +12886,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "7690c093688c",
@@ -12790,7 +12901,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "7aa7cfaa1fa5",
@@ -12805,7 +12916,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "570b39bfa866",
@@ -12820,7 +12931,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4711
+   "score": 0.4642
   },
   {
    "id": "95c51f34be17",
@@ -12835,7 +12946,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4695
+   "score": 0.4626
   },
   {
    "id": "4adecccaa2fd",
@@ -12851,7 +12962,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4675
+   "score": 0.4606
   },
   {
    "id": "8a2ac1ca05f8",
@@ -12868,7 +12979,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.4652
+   "score": 0.4584
   },
   {
    "id": "070e4b865ac3",
@@ -12884,7 +12995,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.4648
+   "score": 0.458
   },
   {
    "id": "2a5b8190f252",
@@ -12909,7 +13020,7 @@
     "Cloud status"
    ],
    "outlets": 2.0,
-   "score": 1.1486
+   "score": 1.1317
   },
   {
    "id": "3f77aac35f43",
@@ -12924,7 +13035,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4647
+   "score": 0.4579
   },
   {
    "id": "95c165fb360b",
@@ -12939,7 +13050,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4644
+   "score": 0.4575
   },
   {
    "id": "ba3d0e76a973",
@@ -12954,7 +13065,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2311
+   "score": 0.2277
   },
   {
    "id": "3be0c298734e",
@@ -12972,7 +13083,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4621
+   "score": 0.4553
   },
   {
    "id": "9226f0797834",
@@ -12987,7 +13098,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4581
+   "score": 0.4513
   },
   {
    "id": "ac676207e95a",
@@ -13002,7 +13113,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.4579
+   "score": 0.4512
   },
   {
    "id": "2a481acb1508",
@@ -13017,7 +13128,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4577
+   "score": 0.4509
   },
   {
    "id": "b7e4bb6b9f74",
@@ -13032,7 +13143,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4572
+   "score": 0.4505
   },
   {
    "id": "32ab21f73703",
@@ -13048,7 +13159,7 @@
     "Backup & recovery"
    ],
    "outlets": 1.0,
-   "score": 0.457
+   "score": 0.4503
   },
   {
    "id": "fb8e6cf0e9cb",
@@ -13063,7 +13174,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4559
+   "score": 0.4492
   },
   {
    "id": "aa382ae68200",
@@ -13079,7 +13190,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.4545
+   "score": 0.4478
   },
   {
    "id": "ff369cfaa463",
@@ -13094,7 +13205,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4537
+   "score": 0.4471
   },
   {
    "id": "7f828d759542",
@@ -13110,7 +13221,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.4537
+   "score": 0.447
   },
   {
    "id": "6a3187eeafd9",
@@ -13143,7 +13254,7 @@
     "AI"
    ],
    "outlets": 3.0,
-   "score": 1.4066
+   "score": 1.386
   },
   {
    "id": "3d270e9bad93",
@@ -13158,7 +13269,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.4533
+   "score": 0.4466
   },
   {
    "id": "92c073de60bf",
@@ -13174,7 +13285,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4533
+   "score": 0.4466
   },
   {
    "id": "9347d50df86d",
@@ -13189,7 +13300,7 @@
     "Game development"
    ],
    "outlets": 1.0,
-   "score": 0.4515
+   "score": 0.4448
   },
   {
    "id": "abda819fca03",
@@ -13204,7 +13315,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4485
+   "score": 0.4419
   },
   {
    "id": "916629091cfd",
@@ -13221,7 +13332,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.4476
+   "score": 0.4411
   },
   {
    "id": "8b97d2850edc",
@@ -13237,7 +13348,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.446
+   "score": 0.4395
   },
   {
    "id": "0f0280185c60",
@@ -13253,7 +13364,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.4459
+   "score": 0.4394
   },
   {
    "id": "5cda110a7697",
@@ -13287,7 +13398,7 @@
     "Identity & access"
    ],
    "outlets": 3.0,
-   "score": 1.8582
+   "score": 1.8309
   },
   {
    "id": "761ee2a26d17",
@@ -13302,7 +13413,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.4458
+   "score": 0.4393
   },
   {
    "id": "a474aa41036f",
@@ -13317,7 +13428,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4452
+   "score": 0.4387
   },
   {
    "id": "6a7e61e33726",
@@ -13334,7 +13445,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.445
+   "score": 0.4385
   },
   {
    "id": "0184739fbd0a",
@@ -13349,7 +13460,7 @@
     "ICS / OT"
    ],
    "outlets": 1.0,
-   "score": 0.4449
+   "score": 0.4384
   },
   {
    "id": "b52dc7f65636",
@@ -13366,7 +13477,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.4449
+   "score": 0.4384
   },
   {
    "id": "955ae8909238",
@@ -13381,7 +13492,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4448
+   "score": 0.4383
   },
   {
    "id": "b201d1c1406a",
@@ -13396,7 +13507,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4446
+   "score": 0.4381
   },
   {
    "id": "daed918994ab",
@@ -13411,7 +13522,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4446
+   "score": 0.4381
   },
   {
    "id": "2165383e8d61",
@@ -13428,7 +13539,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4446
+   "score": 0.4381
   },
   {
    "id": "9b0befc9a206",
@@ -13443,7 +13554,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4446
+   "score": 0.4381
   },
   {
    "id": "72b237b4019e",
@@ -13458,7 +13569,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4446
+   "score": 0.438
   },
   {
    "id": "a6c71747e896",
@@ -13473,7 +13584,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4445
+   "score": 0.4379
   },
   {
    "id": "5d7f4dc8cc8f",
@@ -13489,7 +13600,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.4389
+   "score": 0.4324
   },
   {
    "id": "220a3cafe31f",
@@ -13505,7 +13616,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4387
+   "score": 0.4322
   },
   {
    "id": "b65c5a805b67",
@@ -13521,7 +13632,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4345
+   "score": 0.4281
   },
   {
    "id": "f304464fd8d8",
@@ -13536,7 +13647,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4341
+   "score": 0.4277
   },
   {
    "id": "9ab0c6675af7",
@@ -13551,7 +13662,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4331
+   "score": 0.4268
   },
   {
    "id": "53b09fe0862f",
@@ -13566,7 +13677,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4299
+   "score": 0.4236
   },
   {
    "id": "cb0207958353",
@@ -13581,7 +13692,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2147
+   "score": 0.2115
   },
   {
    "id": "f851dd1be767",
@@ -13597,7 +13708,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.4292
+   "score": 0.4228
   },
   {
    "id": "55951673b49a",
@@ -13612,7 +13723,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4284
+   "score": 0.4221
   },
   {
    "id": "5a00294273b7",
@@ -13627,7 +13738,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4264
+   "score": 0.4202
   },
   {
    "id": "eaa3d6916475",
@@ -13642,7 +13753,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4262
+   "score": 0.4199
   },
   {
    "id": "fe54c04d810a",
@@ -13657,7 +13768,7 @@
     "ICS / OT"
    ],
    "outlets": 1.0,
-   "score": 0.4249
+   "score": 0.4186
   },
   {
    "id": "a17886d936d3",
@@ -13691,7 +13802,7 @@
     "Networking"
    ],
    "outlets": 3.0,
-   "score": 2.0004
+   "score": 1.971
   },
   {
    "id": "90dc54880e94",
@@ -13707,7 +13818,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4238
+   "score": 0.4176
   },
   {
    "id": "ac348dbe5a0d",
@@ -13722,7 +13833,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4213
+   "score": 0.4151
   },
   {
    "id": "1a1e12592b0f",
@@ -13780,7 +13891,7 @@
     ]
    },
    "outlets": 5.0,
-   "score": 2.4885
+   "score": 2.4519
   },
   {
    "id": "318b340e0317",
@@ -13795,7 +13906,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "a12336f7e0fd",
@@ -13810,7 +13921,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "e32fc517ad05",
@@ -13826,7 +13937,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "b148682bb7fb",
@@ -13842,7 +13953,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "ad3dfb689e91",
@@ -13857,7 +13968,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "510005df2a32",
@@ -13872,7 +13983,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "fbca22de7619",
@@ -13887,7 +13998,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "3299a9d6f1a5",
@@ -13902,7 +14013,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "a4915d631e96",
@@ -13918,7 +14029,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "271b697964eb",
@@ -13934,7 +14045,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "9fa176bc4670",
@@ -13949,7 +14060,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "c0800776025e",
@@ -13964,7 +14075,7 @@
     "Higher education"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "f5fa6230077d",
@@ -13979,7 +14090,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "298170ad04c3",
@@ -13995,7 +14106,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
   },
   {
    "id": "3375e613fb0d",
@@ -14012,7 +14123,22 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.4197
+   "score": 0.4135
+  },
+  {
+   "id": "28b29443782f",
+   "title": "Amazon Transcribe Turbo: more accurate transcripts and natural turn-taking for voice agents, now in public preview",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "Amazon Transcribe Turbo, our next-generation speech-to-text model, is now in public preview in US East (Ohio) for batch and streaming. Turbo improves accuracy, supports custom vocabulary, and formats numbers, dates, currency, phone numbers and addresses following each locale's conventions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ],
+   "outlets": 1.0,
+   "score": 0.4135
   },
   {
    "id": "abc7365bcfac",
@@ -14027,7 +14153,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.4189
+   "score": 0.4128
   },
   {
    "id": "33b26cdc480d",
@@ -14042,7 +14168,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4161
+   "score": 0.41
   },
   {
    "id": "a0b367ca530d",
@@ -14057,7 +14183,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.4161
+   "score": 0.41
   },
   {
    "id": "1591ed86462d",
@@ -14084,7 +14210,7 @@
     "Game development"
    ],
    "outlets": 2.0,
-   "score": 0.9073
+   "score": 0.894
   },
   {
    "id": "470bf4b31c4d",
@@ -14099,7 +14225,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4145
+   "score": 0.4084
   },
   {
    "id": "1f0f577d6114",
@@ -14114,7 +14240,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.2072
+   "score": 0.2041
   },
   {
    "id": "94afaa10929e",
@@ -14129,7 +14255,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.4137
+   "score": 0.4076
   },
   {
    "id": "2cd8043be1cb",
@@ -14146,7 +14272,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.4125
+   "score": 0.4065
   },
   {
    "id": "3ef91f0d29c3",
@@ -14161,7 +14287,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4121
+   "score": 0.406
   },
   {
    "id": "9bfc38e518b6",
@@ -14176,7 +14302,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4115
+   "score": 0.4054
   },
   {
    "id": "abc06b583178",
@@ -14191,7 +14317,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.2049
+   "score": 0.2018
   },
   {
    "id": "59c9454cbfe7",
@@ -14206,7 +14332,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.4082
+   "score": 0.4022
   },
   {
    "id": "48412aac531b",
@@ -14222,7 +14348,7 @@
     "Supply chain security"
    ],
    "outlets": 1.0,
-   "score": 0.4073
+   "score": 0.4014
   },
   {
    "id": "057900c18ef2",
@@ -14238,7 +14364,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.4066
+   "score": 0.4006
   },
   {
    "id": "98ef517b6548",
@@ -14254,7 +14380,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.2029
+   "score": 0.1999
   },
   {
    "id": "9a77a653142c",
@@ -14339,7 +14465,7 @@
     }
    },
    "outlets": 5.0,
-   "score": 2.5447
+   "score": 2.5073
   },
   {
    "id": "46c9b8e77ff2",
@@ -14354,7 +14480,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.2019
+   "score": 0.199
   },
   {
    "id": "67882a984274",
@@ -14369,7 +14495,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4038
+   "score": 0.3979
   },
   {
    "id": "fe4bfa951d94",
@@ -14384,7 +14510,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.4034
+   "score": 0.3975
   },
   {
    "id": "a612df9013c5",
@@ -14445,7 +14571,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.4019
+   "score": 0.396
   },
   {
    "id": "9496b013ed53",
@@ -14477,7 +14603,7 @@
     "General IT"
    ],
    "outlets": 3.0,
-   "score": 1.0459
+   "score": 1.0305
   },
   {
    "id": "139d99c8ad00",
@@ -14502,7 +14628,7 @@
     "Identity & access"
    ],
    "outlets": 2.0,
-   "score": 0.943
+   "score": 0.9291
   },
   {
    "id": "a6c4f6496a07",
@@ -14517,7 +14643,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.2
+   "score": 0.197
   },
   {
    "id": "ce1752053033",
@@ -14532,7 +14658,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3998
+   "score": 0.3939
   },
   {
    "id": "eba2af4c9443",
@@ -14547,7 +14673,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3978
+   "score": 0.3919
   },
   {
    "id": "10efc87f125e",
@@ -14562,7 +14688,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1988
+   "score": 0.1959
   },
   {
    "id": "80276960a290",
@@ -14577,7 +14703,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3975
+   "score": 0.3917
   },
   {
    "id": "b6fdacd2f7ab",
@@ -14592,7 +14718,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3973
+   "score": 0.3915
   },
   {
    "id": "52af0fb3d87a",
@@ -14607,7 +14733,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.3969
+   "score": 0.3911
   },
   {
    "id": "35b6f0d4e3d4",
@@ -14622,7 +14748,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3964
+   "score": 0.3906
   },
   {
    "id": "ba446bc3dae5",
@@ -14638,7 +14764,7 @@
     "Networking"
    ],
    "outlets": 0.5,
-   "score": 0.1982
+   "score": 0.1953
   },
   {
    "id": "6532dcde81f8",
@@ -14653,7 +14779,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3963
+   "score": 0.3904
   },
   {
    "id": "0d490977e6fe",
@@ -14669,7 +14795,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.3962
+   "score": 0.3904
   },
   {
    "id": "bede548f512c",
@@ -14684,7 +14810,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3962
+   "score": 0.3904
   },
   {
    "id": "0a19371d82a6",
@@ -14708,7 +14834,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 2.0,
-   "score": 0.8573
+   "score": 0.8447
   },
   {
    "id": "052a7e53e56f",
@@ -14723,7 +14849,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1981
+   "score": 0.1952
   },
   {
    "id": "a94e096c2253",
@@ -14738,7 +14864,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1971
+   "score": 0.1942
   },
   {
    "id": "be8229fa8688",
@@ -14772,7 +14898,7 @@
     "AI"
    ],
    "outlets": 3.0,
-   "score": 1.4508
+   "score": 1.4295
   },
   {
    "id": "1df356839e3e",
@@ -14788,7 +14914,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.3911
+   "score": 0.3854
   },
   {
    "id": "5aa7458c5285",
@@ -14803,7 +14929,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3905
+   "score": 0.3847
   },
   {
    "id": "7a5ea8907df3",
@@ -14821,7 +14947,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.3875
+   "score": 0.3818
   },
   {
    "id": "551598a3bf53",
@@ -14838,7 +14964,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.3851
+   "score": 0.3795
   },
   {
    "id": "c240038ba66a",
@@ -14853,7 +14979,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1924
+   "score": 0.1896
   },
   {
    "id": "9674129fb9aa",
@@ -14869,7 +14995,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3848
+   "score": 0.3791
   },
   {
    "id": "39aa0ff9651d",
@@ -14884,7 +15010,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1912
+   "score": 0.1884
   },
   {
    "id": "d52512d72b3d",
@@ -14901,7 +15027,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.3816
+   "score": 0.376
   },
   {
    "id": "dd331a157b93",
@@ -14917,7 +15043,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.3812
+   "score": 0.3756
   },
   {
    "id": "86468052ff5f",
@@ -14999,7 +15125,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.3781
+   "score": 0.3726
   },
   {
    "id": "d0c9bda24095",
@@ -15014,7 +15140,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1891
+   "score": 0.1863
   },
   {
    "id": "72c0ef09bab8",
@@ -15029,7 +15155,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3774
+   "score": 0.3719
   },
   {
    "id": "33a622b7c138",
@@ -15044,7 +15170,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.3764
+   "score": 0.3709
   },
   {
    "id": "67f0d5afa383",
@@ -15059,7 +15185,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.1879
+   "score": 0.1851
   },
   {
    "id": "cba423331337",
@@ -15077,7 +15203,7 @@
    ],
    "cves": [],
    "outlets": 1.0,
-   "score": 0.3757
+   "score": 0.3701
   },
   {
    "id": "65afd63f74d0",
@@ -15101,7 +15227,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 0.9792
+   "score": 0.9648
   },
   {
    "id": "16004642bbb5",
@@ -15116,7 +15242,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3739
+   "score": 0.3684
   },
   {
    "id": "c469431d6602",
@@ -15134,7 +15260,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3739
+   "score": 0.3684
   },
   {
    "id": "2bc4a13738be",
@@ -15150,7 +15276,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.3739
+   "score": 0.3684
   },
   {
    "id": "2ef5674148e9",
@@ -15168,7 +15294,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3707
+   "score": 0.3653
   },
   {
    "id": "bcc8de7e9a10",
@@ -15183,7 +15309,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1852
+   "score": 0.1825
   },
   {
    "id": "ee3fc0cfbd96",
@@ -15198,7 +15324,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1834
+   "score": 0.1807
   },
   {
    "id": "5d05ee81d7ab",
@@ -15213,7 +15339,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3665
+   "score": 0.3611
   },
   {
    "id": "4b85f2b916b0",
@@ -15229,7 +15355,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.3641
+   "score": 0.3588
   },
   {
    "id": "7d0696db9482",
@@ -15244,7 +15370,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.3634
+   "score": 0.3581
   },
   {
    "id": "a2eae7197e65",
@@ -15259,7 +15385,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3631
+   "score": 0.3578
   },
   {
    "id": "0b12b3009dde",
@@ -15274,7 +15400,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3611
+   "score": 0.3558
   },
   {
    "id": "cacffacb25b1",
@@ -15289,7 +15415,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1798
+   "score": 0.1772
   },
   {
    "id": "3dee3a8c3060",
@@ -15363,7 +15489,7 @@
    ],
    "cves": [],
    "outlets": 4.0,
-   "score": 2.5081
+   "score": 2.4713
   },
   {
    "id": "331bfcb2926d",
@@ -15378,7 +15504,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.3577
+   "score": 0.3524
   },
   {
    "id": "2af3b832ed88",
@@ -15393,7 +15519,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3577
+   "score": 0.3524
   },
   {
    "id": "864d146ce100",
@@ -15408,7 +15534,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3575
+   "score": 0.3523
   },
   {
    "id": "ce59a11279a4",
@@ -15423,7 +15549,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3574
+   "score": 0.3521
   },
   {
    "id": "d3c0d24c699a",
@@ -15439,7 +15565,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.3572
+   "score": 0.352
   },
   {
    "id": "1b65d62b4aa9",
@@ -15454,7 +15580,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3569
+   "score": 0.3516
   },
   {
    "id": "c2d571996e82",
@@ -15469,7 +15595,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3567
+   "score": 0.3515
   },
   {
    "id": "32ad3debcf5d",
@@ -15484,7 +15610,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1783
+   "score": 0.1757
   },
   {
    "id": "35ffa850cc7f",
@@ -15499,7 +15625,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3564
+   "score": 0.3511
   },
   {
    "id": "b32432d0a26e",
@@ -15514,7 +15640,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.356
+   "score": 0.3508
   },
   {
    "id": "120b86fe539f",
@@ -15529,7 +15655,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3559
+   "score": 0.3506
   },
   {
    "id": "89feea798d94",
@@ -15544,7 +15670,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3557
+   "score": 0.3505
   },
   {
    "id": "3db553574ad6",
@@ -15559,7 +15685,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3546
+   "score": 0.3494
   },
   {
    "id": "65d8c50495e7",
@@ -15574,7 +15700,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3533
+   "score": 0.3481
   },
   {
    "id": "dac387b44297",
@@ -15589,7 +15715,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3529
+   "score": 0.3477
   },
   {
    "id": "40eaea74cad6",
@@ -15604,7 +15730,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3529
+   "score": 0.3477
   },
   {
    "id": "8e06e260029e",
@@ -15619,7 +15745,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.3529
+   "score": 0.3477
   },
   {
    "id": "a5da4c3104da",
@@ -15635,7 +15761,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3529
+   "score": 0.3477
   },
   {
    "id": "b8dde6a9f1a8",
@@ -15650,7 +15776,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1759
+   "score": 0.1733
   },
   {
    "id": "da949411b653",
@@ -15665,7 +15791,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.3486
+   "score": 0.3435
   },
   {
    "id": "4725c6b729b9",
@@ -15680,7 +15806,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3473
+   "score": 0.3422
   },
   {
    "id": "9174e1b86371",
@@ -15696,7 +15822,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3454
+   "score": 0.3404
   },
   {
    "id": "9bcbce3e3200",
@@ -15711,7 +15837,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1723
+   "score": 0.1698
   },
   {
    "id": "9a9294d39772",
@@ -15726,7 +15852,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.1717
+   "score": 0.1692
   },
   {
    "id": "57a9de6dd641",
@@ -15741,7 +15867,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.343
+   "score": 0.338
   },
   {
    "id": "e6d5f2bd76ba",
@@ -15756,7 +15882,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1711
+   "score": 0.1686
   },
   {
    "id": "31f0280641f3",
@@ -15771,7 +15897,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3407
+   "score": 0.3357
   },
   {
    "id": "a098dfa9ed35",
@@ -15786,7 +15912,7 @@
     "Linux & open source"
    ],
    "outlets": 0.5,
-   "score": 0.1703
+   "score": 0.1678
   },
   {
    "id": "667dc5917d6e",
@@ -15802,7 +15928,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.3402
+   "score": 0.3352
   },
   {
    "id": "209d34fc1e7f",
@@ -15818,7 +15944,7 @@
     "Embedded & IoT"
    ],
    "outlets": 1.0,
-   "score": 0.3402
+   "score": 0.3352
   },
   {
    "id": "2b6b70b07c79",
@@ -15859,7 +15985,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.169
+   "score": 0.1666
   },
   {
    "id": "b02f83ddda2e",
@@ -15875,7 +16001,7 @@
     "Policy & regulation"
    ],
    "outlets": 0.5,
-   "score": 0.169
+   "score": 0.1665
   },
   {
    "id": "fc2061a84e45",
@@ -15891,7 +16017,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.3367
+   "score": 0.3318
   },
   {
    "id": "dd3a17fb7bd1",
@@ -15906,7 +16032,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1671
+   "score": 0.1647
   },
   {
    "id": "28ea49ea7d92",
@@ -15921,7 +16047,7 @@
     "Threats & malware"
    ],
    "outlets": 1.0,
-   "score": 0.3331
+   "score": 0.3282
   },
   {
    "id": "0a926c3e4690",
@@ -15936,7 +16062,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3331
+   "score": 0.3282
   },
   {
    "id": "71ae0ea740db",
@@ -15952,7 +16078,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.3304
+   "score": 0.3255
   },
   {
    "id": "58d27ed84273",
@@ -15968,7 +16094,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.1646
+   "score": 0.1622
   },
   {
    "id": "4058659f9111",
@@ -15985,7 +16111,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.3269
+   "score": 0.3221
   },
   {
    "id": "4211b2b68760",
@@ -16000,7 +16126,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3244
+   "score": 0.3196
   },
   {
    "id": "9f1e5b190ed1",
@@ -16015,7 +16141,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 0.5,
-   "score": 0.1618
+   "score": 0.1594
   },
   {
    "id": "ebaf1c30665d",
@@ -16030,7 +16156,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 0.5,
-   "score": 0.1615
+   "score": 0.1591
   },
   {
    "id": "731330eec3a0",
@@ -16045,7 +16171,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1607
+   "score": 0.1584
   },
   {
    "id": "0564d0389038",
@@ -16061,7 +16187,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3209
+   "score": 0.3161
   },
   {
    "id": "6c62196917ec",
@@ -16077,7 +16203,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3209
+   "score": 0.3161
   },
   {
    "id": "ddb6dd13fa8a",
@@ -16093,7 +16219,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.3209
+   "score": 0.3161
   },
   {
    "id": "02d58d6f577c",
@@ -16110,7 +16236,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3208
+   "score": 0.3161
   },
   {
    "id": "6b0979d7a5d1",
@@ -16125,7 +16251,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3202
+   "score": 0.3155
   },
   {
    "id": "fbebf84452de",
@@ -16140,7 +16266,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3184
+   "score": 0.3138
   },
   {
    "id": "e10691c54f4f",
@@ -16155,7 +16281,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1588
+   "score": 0.1564
   },
   {
    "id": "9095f70c750e",
@@ -16170,7 +16296,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1579
+   "score": 0.1556
   },
   {
    "id": "a2687a7463d5",
@@ -16185,7 +16311,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1575
+   "score": 0.1552
   },
   {
    "id": "43311174327e",
@@ -16200,7 +16326,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1574
+   "score": 0.1551
   },
   {
    "id": "f0e6ddfdcbf1",
@@ -16215,7 +16341,7 @@
     "Networking"
    ],
    "outlets": 0.5,
-   "score": 0.1573
+   "score": 0.155
   },
   {
    "id": "99a168579810",
@@ -16230,7 +16356,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.1572
+   "score": 0.1549
   },
   {
    "id": "678adf795ae6",
@@ -16245,7 +16371,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3144
+   "score": 0.3098
   },
   {
    "id": "922ff19e7db4",
@@ -16260,7 +16386,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.312
+   "score": 0.3075
   },
   {
    "id": "e21ae28083d6",
@@ -16275,7 +16401,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 1.0,
-   "score": 0.3102
+   "score": 0.3056
   },
   {
    "id": "fa72093c8076",
@@ -16290,7 +16416,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.3079
+   "score": 0.3034
   },
   {
    "id": "71749bce5986",
@@ -16306,7 +16432,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3072
+   "score": 0.3027
   },
   {
    "id": "f728c93fcdb7",
@@ -16323,7 +16449,7 @@
     "Identity & access"
    ],
    "outlets": 1.0,
-   "score": 0.3069
+   "score": 0.3024
   },
   {
    "id": "30d463386b15",
@@ -16338,7 +16464,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1534
+   "score": 0.1511
   },
   {
    "id": "2c2f00149ae2",
@@ -16355,7 +16481,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.3064
+   "score": 0.3019
   },
   {
    "id": "8075ae67fda5",
@@ -16371,7 +16497,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.306
+   "score": 0.3015
   },
   {
    "id": "6bdf1cf2ca67",
@@ -16386,7 +16512,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.153
+   "score": 0.1507
   },
   {
    "id": "6642415128a9",
@@ -16401,7 +16527,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1527
+   "score": 0.1505
   },
   {
    "id": "48e6eb0f71e2",
@@ -16416,7 +16542,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3054
+   "score": 0.3009
   },
   {
    "id": "058034f50874",
@@ -16432,7 +16558,7 @@
     "Agile & delivery"
    ],
    "outlets": 1.0,
-   "score": 0.3031
+   "score": 0.2987
   },
   {
    "id": "5b815313129d",
@@ -16447,7 +16573,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3022
+   "score": 0.2977
   },
   {
    "id": "b8cb763fdb92",
@@ -16462,7 +16588,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3021
+   "score": 0.2977
   },
   {
    "id": "a7e8e53354bd",
@@ -16477,7 +16603,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.3021
+   "score": 0.2977
   },
   {
    "id": "4244a7e9ac6d",
@@ -16492,7 +16618,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3021
+   "score": 0.2977
   },
   {
    "id": "b34449e45ef9",
@@ -16507,7 +16633,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3016
+   "score": 0.2972
   },
   {
    "id": "0b553fb1922e",
@@ -16522,7 +16648,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3013
+   "score": 0.2969
   },
   {
    "id": "2ffc1293395e",
@@ -16538,7 +16664,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.2996
+   "score": 0.2952
   },
   {
    "id": "f602147f8615",
@@ -16553,7 +16679,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1491
+   "score": 0.1469
   },
   {
    "id": "e0fe83478b91",
@@ -16568,7 +16694,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.2981
+   "score": 0.2937
   },
   {
    "id": "ff80ebd62932",
@@ -16583,7 +16709,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1484
+   "score": 0.1462
   },
   {
    "id": "f3fa36a7a7e1",
@@ -16598,7 +16724,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2968
+   "score": 0.2924
   },
   {
    "id": "419db48c235e",
@@ -16613,7 +16739,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.2954
+   "score": 0.2911
   },
   {
    "id": "1436064d5531",
@@ -16628,7 +16754,7 @@
     "Development"
    ],
    "outlets": 0.5,
-   "score": 0.1456
+   "score": 0.1435
   },
   {
    "id": "f7559f2bbcb0",
@@ -16646,7 +16772,7 @@
     "Cloud & infrastructure"
    ],
    "outlets": 1.0,
-   "score": 0.2912
+   "score": 0.2869
   },
   {
    "id": "2a43d962dc94",
@@ -16662,7 +16788,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.2889
+   "score": 0.2847
   },
   {
    "id": "74b608e4c0cf",
@@ -16694,7 +16820,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 3.0,
-   "score": 0.8986
+   "score": 0.8854
   },
   {
    "id": "5f74570ab96e",
@@ -16710,7 +16836,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.2885
+   "score": 0.2842
   },
   {
    "id": "4936b0952188",
@@ -16725,7 +16851,7 @@
     "Ransomware & breaches"
    ],
    "outlets": 0.5,
-   "score": 0.1428
+   "score": 0.1407
   },
   {
    "id": "5ee45fc63309",
@@ -16749,7 +16875,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.3023
+   "score": 0.2979
   },
   {
    "id": "3ebdbeda3a29",
@@ -16764,7 +16890,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2849
+   "score": 0.2807
   },
   {
    "id": "d6102c4729e1",
@@ -16780,7 +16906,7 @@
     "Hardware"
    ],
    "outlets": 0.5,
-   "score": 0.1422
+   "score": 0.1401
   },
   {
    "id": "1e188628b6a0",
@@ -16795,7 +16921,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2828
+   "score": 0.2787
   },
   {
    "id": "1c1dd84ca1dc",
@@ -16811,7 +16937,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.2824
+   "score": 0.2783
   },
   {
    "id": "4b3e60516481",
@@ -16826,7 +16952,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.2823
+   "score": 0.2781
   },
   {
    "id": "0d558864a036",
@@ -16841,7 +16967,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2801
+   "score": 0.276
   },
   {
    "id": "232d4b677e7a",
@@ -16856,7 +16982,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.2801
+   "score": 0.276
   },
   {
    "id": "a58808d0bc10",
@@ -16871,7 +16997,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1394
+   "score": 0.1373
   },
   {
    "id": "69e97627ff95",
@@ -16886,7 +17012,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2753
+   "score": 0.2712
   },
   {
    "id": "c3856eba54ae",
@@ -16901,7 +17027,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2751
+   "score": 0.2711
   },
   {
    "id": "3d23d39d603b",
@@ -16957,7 +17083,7 @@
     "General IT"
    ],
    "outlets": 5.5,
-   "score": 1.5993
+   "score": 1.5759
   },
   {
    "id": "2846c992d67b",
@@ -16972,7 +17098,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1369
+   "score": 0.1349
   },
   {
    "id": "4f8c17aea6fc",
@@ -16989,7 +17115,7 @@
     "Networking"
    ],
    "outlets": 1.0,
-   "score": 0.2735
+   "score": 0.2695
   },
   {
    "id": "d55d4faa0275",
@@ -17004,7 +17130,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2732
+   "score": 0.2692
   },
   {
    "id": "66886085dc89",
@@ -17019,7 +17145,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.2723
+   "score": 0.2683
   },
   {
    "id": "e643c17fe4d1",
@@ -17034,7 +17160,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2718
+   "score": 0.2678
   },
   {
    "id": "3bde51724944",
@@ -17050,7 +17176,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2711
+   "score": 0.2671
   },
   {
    "id": "08874dd78a41",
@@ -17066,7 +17192,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.2701
+   "score": 0.2661
   },
   {
    "id": "4e73c0d9e4e7",
@@ -17081,7 +17207,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2696
+   "score": 0.2656
   },
   {
    "id": "959a3f90da43",
@@ -17119,7 +17245,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1342
+   "score": 0.1323
   },
   {
    "id": "4efc3b90ad5c",
@@ -17134,7 +17260,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2683
+   "score": 0.2643
   },
   {
    "id": "64110912f130",
@@ -17158,7 +17284,7 @@
     "Supply chain security"
    ],
    "outlets": 2.0,
-   "score": 0.5525
+   "score": 0.5444
   },
   {
    "id": "5f565bffb187",
@@ -17173,7 +17299,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "6ad25711533d",
@@ -17188,7 +17314,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "bd224febf019",
@@ -17203,7 +17329,7 @@
     "Policy & regulation"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "a9cf41ce87af",
@@ -17218,7 +17344,7 @@
     "Supply chain security"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "475d981e95ec",
@@ -17234,7 +17360,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "07ae32870996",
@@ -17249,7 +17375,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "5d1710f6d6ad",
@@ -17264,7 +17390,7 @@
     "Pen testing & red team"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "e4f784838a0d",
@@ -17279,7 +17405,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "de1e88765c66",
@@ -17294,7 +17420,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "539482f89cce",
@@ -17309,7 +17435,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "0bf32c549a64",
@@ -17324,7 +17450,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "663e0fdc2cc1",
@@ -17339,7 +17465,7 @@
     "System administration"
    ],
    "outlets": 1.0,
-   "score": 0.2671
+   "score": 0.2632
   },
   {
    "id": "a4acd196b77a",
@@ -17355,7 +17481,7 @@
     "Cloud status"
    ],
    "outlets": 1.0,
-   "score": 0.2665
+   "score": 0.2626
   },
   {
    "id": "fdba7517b012",
@@ -17370,7 +17496,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1325
+   "score": 0.1306
   },
   {
    "id": "b80c0004495c",
@@ -17386,7 +17512,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.2645
+   "score": 0.2607
   },
   {
    "id": "d4ba1a463fca",
@@ -17402,7 +17528,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.2645
+   "score": 0.2607
   },
   {
    "id": "44ee8f3c7483",
@@ -17450,7 +17576,7 @@
     "General IT"
    ],
    "outlets": 5.0,
-   "score": 2.4738
+   "score": 2.4375
   },
   {
    "id": "12344ee012d5",
@@ -17465,7 +17591,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "528bcf5e706f",
@@ -17480,7 +17606,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "68744da5f0d8",
@@ -17495,7 +17621,7 @@
     "Databases"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "e4e7a29ce6d9",
@@ -17512,7 +17638,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "dc9eed7d2583",
@@ -17529,7 +17655,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "a572ae008ae0",
@@ -17545,7 +17671,7 @@
     "Development"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "bb2050cbbac9",
@@ -17561,7 +17687,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "e8027b74e523",
@@ -17578,7 +17704,7 @@
     "TLS & PKI"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "d8d6777ecf09",
@@ -17593,7 +17719,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "2b428066fe9b",
@@ -17609,7 +17735,7 @@
     "DevOps & SRE"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "625428ced86c",
@@ -17625,7 +17751,7 @@
     "Linux & open source"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "c1bec0db9a67",
@@ -17640,7 +17766,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "f5ef4adf8b99",
@@ -17655,7 +17781,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "88dba377bdc4",
@@ -17670,7 +17796,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "51a6f86849b9",
@@ -17685,7 +17811,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2644
+   "score": 0.2605
   },
   {
    "id": "c15d0d15cfcc",
@@ -17700,7 +17826,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2641
+   "score": 0.2602
   },
   {
    "id": "4da9c42b329f",
@@ -17715,7 +17841,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2634
+   "score": 0.2596
   },
   {
    "id": "f3c9c3e082a4",
@@ -17730,7 +17856,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2633
+   "score": 0.2594
   },
   {
    "id": "782141a15709",
@@ -17745,7 +17871,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.263
+   "score": 0.2591
   },
   {
    "id": "1fd2059b43d5",
@@ -17760,7 +17886,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2626
+   "score": 0.2588
   },
   {
    "id": "711061c701cb",
@@ -17775,7 +17901,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1313
+   "score": 0.1294
   },
   {
    "id": "153047cc5a2f",
@@ -17790,7 +17916,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1313
+   "score": 0.1293
   },
   {
    "id": "a02ea2be6c53",
@@ -17806,7 +17932,7 @@
     "Hardware"
    ],
    "outlets": 1.0,
-   "score": 0.2617
+   "score": 0.2579
   },
   {
    "id": "3a19e725e005",
@@ -17821,7 +17947,7 @@
     "AI"
    ],
    "outlets": 1.0,
-   "score": 0.2614
+   "score": 0.2576
   },
   {
    "id": "e37ec4ce914b",
@@ -17836,7 +17962,7 @@
     "Microsoft & Windows"
    ],
    "outlets": 1.0,
-   "score": 0.2609
+   "score": 0.257
   },
   {
    "id": "2e945b65701f",
@@ -17851,7 +17977,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1304
+   "score": 0.1285
   },
   {
    "id": "f5effb135aa7",
@@ -17866,7 +17992,7 @@
     "AI"
    ],
    "outlets": 0.5,
-   "score": 0.1297
+   "score": 0.1278
   },
   {
    "id": "9f461f2ff3a9",
@@ -17900,7 +18026,7 @@
     "DevOps & SRE"
    ],
    "outlets": 2.5,
-   "score": 0.7129
+   "score": 0.7024
   },
   {
    "id": "21ea68fc8b48",
@@ -17915,7 +18041,7 @@
     "Vulnerabilities & patches"
    ],
    "outlets": 0.5,
-   "score": 0.1278
+   "score": 0.126
   },
   {
    "id": "22eff119b1a7",
@@ -17930,7 +18056,7 @@
     "General IT"
    ],
    "outlets": 0.5,
-   "score": 0.1276
+   "score": 0.1258
   },
   {
    "id": "374cb6a66d48",
@@ -17945,7 +18071,7 @@
     "General IT"
    ],
    "outlets": 1.0,
-   "score": 0.2553
+   "score": 0.2515
   },
   {
    "id": "68a514a91e8b",
@@ -18037,37 +18163,6 @@
    ]
   },
   {
-   "id": "09a5ca8ce3f4",
-   "title": "Pokemon Childhood Version: A romhack where Mew is under the truck",
-   "url": "https://wheybags.com/blog/pokemon_childhood_version.html",
-   "source": "Lobsters",
-   "source_category": "Development",
-   "published": "2026-11-24T23:14:50+00:00",
-   "summary": "Comments",
-   "also_covered_by": [],
-   "topics": [
-    "General IT"
-   ],
-   "outlets": 0.5,
-   "score": 0.1266
-  },
-  {
-   "id": "34c0ed31b895",
-   "title": "Torvalds Warns After 40,000 Lines of AI-Generated Code Land in EXT4 Late in the rc Cycle",
-   "url": "https://joho-todai.com/en/ext4-ai-generated-code-linus-warning/",
-   "source": "Joho no Todai (English)",
-   "source_category": "IT industry",
-   "published": "2026-11-24T23:10:16+00:00",
-   "summary": "An EXT4 maintainer submitted a 41,197-line pull request for Linux 7.4-rc5. Most of it consisted of AI-generated tests and fixes; Linus Torvalds merged it but warned that he would ignore a similar request next time.",
-   "also_covered_by": [],
-   "topics": [
-    "Linux & open source",
-    "AI"
-   ],
-   "outlets": 1.0,
-   "score": 0.252
-  },
-  {
    "id": "6627a2b50015",
    "title": "Trump says a pardon for Jensen Huang is \"always an option\" but likely unnecessary, and it's \"probably not too late\" for the US to take an equity stake in Nvidia",
    "url": "https://www.techmeme.com/261124/p42#a261124p42",
@@ -18089,38 +18184,7 @@
     "Hardware"
    ],
    "outlets": 1.5,
-   "score": 0.4285
-  },
-  {
-   "id": "cbf6a14bae67",
-   "title": "PAN-SA-2026-0015 Security Bulletin: OSS CVEs Fixed in PAN-OS (Severity: INFORMATIONAL)",
-   "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0015",
-   "source": "Palo Alto Networks advisories",
-   "source_category": "Vendor advisories",
-   "published": "2026-11-24T23:10:00+00:00",
-   "summary": "",
-   "also_covered_by": [],
-   "topics": [
-    "General IT"
-   ],
-   "outlets": 1.0,
-   "score": 0.252
-  },
-  {
-   "id": "6ff348e652c9",
-   "title": "Three LLM inflection points in twelve months",
-   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
-   "source": "Simon Willison",
-   "source_category": "Development",
-   "published": "2026-11-24T23:02:07+00:00",
-   "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk.",
-   "also_covered_by": [],
-   "topics": [
-    "AI",
-    "Development"
-   ],
-   "outlets": 1.0,
-   "score": 0.2501
+   "score": 0.4222
   },
   {
    "id": "f908bdf6559d",
@@ -18160,7 +18224,7 @@
     "Networking"
    ],
    "outlets": 3.5,
-   "score": 1.4232
+   "score": 1.4023
   },
   {
    "id": "08f27ed27d08",
@@ -18234,7 +18298,7 @@
     }
    ],
    "outlets": 7.0,
-   "score": 2.6302
+   "score": 2.5916
   },
   {
    "id": "7d3205587f2d",
@@ -18258,7 +18322,7 @@
     "AI"
    ],
    "outlets": 2.0,
-   "score": 0.5139
+   "score": 0.5064
   },
   {
    "id": "abb8f452df88",
@@ -18355,7 +18419,7 @@
     "AI"
    ],
    "outlets": 10.5,
-   "score": 4.5123
+   "score": 4.446
   },
   {
    "id": "80a5acb9a177",
@@ -18387,7 +18451,7 @@
     "AI"
    ],
    "outlets": 2.5,
-   "score": 0.5911
+   "score": 0.5824
   },
   {
    "id": "e964696ed876",
@@ -18411,7 +18475,7 @@
     "AI"
    ],
    "outlets": 2.0,
-   "score": 0.463
+   "score": 0.4562
   },
   {
    "id": "0f64ef477057",
@@ -18436,7 +18500,7 @@
     "Development"
    ],
    "outlets": 2.0,
-   "score": 0.5235
+   "score": 0.5158
   },
   {
    "id": "99ccfc2d0741",
@@ -18460,7 +18524,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 0.476
+   "score": 0.469
   },
   {
    "id": "f796e127a00b",
@@ -18484,7 +18548,7 @@
     "General IT"
    ],
    "outlets": 1.5,
-   "score": 0.3238
+   "score": 0.3191
   },
   {
    "id": "66c547d23175",
@@ -18574,7 +18638,7 @@
     "Cloud status"
    ],
    "outlets": 8.5,
-   "score": 1.8797
+   "score": 1.8521
   },
   {
    "id": "e213ef04a870",
@@ -18622,7 +18686,7 @@
     "AI"
    ],
    "outlets": 4.5,
-   "score": 1.0048
+   "score": 0.99
   },
   {
    "id": "70c9d3ab394b",
@@ -18647,7 +18711,7 @@
     "Databases"
    ],
    "outlets": 2.0,
-   "score": 0.4874
+   "score": 0.4803
   },
   {
    "id": "8e7625bcdc80",
@@ -18680,7 +18744,7 @@
     "Hardware"
    ],
    "outlets": 3.0,
-   "score": 0.6396
+   "score": 0.6302
   },
   {
    "id": "307ee10e5100",
@@ -18720,7 +18784,7 @@
     "Networking"
    ],
    "outlets": 4.0,
-   "score": 0.7828
+   "score": 0.7713
   },
   {
    "id": "10d0f05f1882",
@@ -18792,7 +18856,7 @@
     "Hardware"
    ],
    "outlets": 7.0,
-   "score": 1.26
+   "score": 1.2415
   },
   {
    "id": "4a97cb966651",
@@ -18816,7 +18880,7 @@
     "General IT"
    ],
    "outlets": 2.0,
-   "score": 0.4027
+   "score": 0.3968
   },
   {
    "id": "cdb989a1d08e",
@@ -18842,7 +18906,7 @@
     "AI"
    ],
    "outlets": 2.0,
-   "score": 0.3737
+   "score": 0.3683
   },
   {
    "id": "d832383bf687",
@@ -18957,7 +19021,7 @@
     "Networking"
    ],
    "outlets": 12.0,
-   "score": 1.6661
+   "score": 1.6417
   }
  ],
  "front_page": true

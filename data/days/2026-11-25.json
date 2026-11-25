@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T23:01:53+00:00",
+ "generated": "2026-11-25T23:17:15+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -90,7 +90,7 @@
   {
    "source": "InfoWorld",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 212,
-   "recent": 77,
+   "recent": 76,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 80,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 12,
+   "recent": 15,
    "error": null
   },
   {
@@ -905,7 +905,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 6,
    "recent": 0,
    "error": null
   },
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 3,
+   "recent": 1,
    "error": null
   },
   {
@@ -1158,13 +1158,13 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1386,7 +1386,7 @@
   {
    "source": "Arctic Wolf",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1505,9 +1505,9 @@
   },
   {
    "source": "Neowin",
-   "fetched": 40,
-   "recent": 40,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "NIST Cybersecurity Insights",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 31,
+   "fetched": 98,
+   "recent": 30,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
-   "recent": 2,
+   "fetched": 15,
+   "recent": 3,
    "error": null
   },
   {
@@ -2070,7 +2070,7 @@
   {
    "source": "Zscaler trust",
    "fetched": 136,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2124,7 +2124,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 7,
+   "recent": 1,
    "error": null
   },
   {
@@ -2514,6 +2514,47 @@
  ],
  "items": [
   {
+   "id": "ced5dd1c8aa9",
+   "title": "LFS degradation for some customers",
+   "url": "https://www.githubstatus.com/incidents/m0wvf9pt3l0l",
+   "source": "GitHub Status",
+   "source_category": "Cloud status",
+   "published": "2026-11-25T23:10:38+00:00",
+   "summary": "Nov 25 , 23:10 UTC Update - We have identified an issue that impacts Large File Storage (LFS) for a small number of customers. We are working on mitigation. Nov 25 , 23:06 UTC Investigating - We are investigating reports of impacted performance for some GitHub services.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Cloud status"
+   ]
+  },
+  {
+   "id": "b214c448b98c",
+   "title": "Black Friday Cyber Threats — Part Two: Retailers",
+   "url": "https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/",
+   "source": "Arctic Wolf",
+   "source_category": "Threat research",
+   "published": "2026-11-25T23:02:23+00:00",
+   "summary": "In Part One of our Black Friday Cyber Threats blog series, we examined how Black Friday creates opportunities for attackers to target consumers through fraud, impersonation, credential theft, and malware.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a04dac6c8689",
+   "title": "Suspected Chinese Agents Are Trying to Dupe Americans with Fake Listings on Job Platforms",
+   "url": "https://tech.slashdot.org/story/26/11/25/069227/suspected-chinese-agents-are-trying-to-dupe-americans-with-fake-listings-on-job-platforms?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-25T23:00:00+00:00",
+   "summary": "\"LinkedIn is probably the greatest intelligence tool that's ever been created,\" CNN heard from Holden Triplett, director of counterintelligence at the National Security Council in the first Trump administration.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "aedc158a55a9",
    "title": "SSH is a GUI framework",
    "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
@@ -2576,6 +2617,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "b565ae52e56b",
+   "title": "USN-9203-1: libpcap vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9203-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T22:41:37+00:00",
+   "summary": "Jin Wei, Kunwei Qian, and Ping Chen discovered that libpcap did not properly validate the format of MAC addresses passed to the pcap_ether_aton() function, leading to an out-of-bounds read and write.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
    ]
   },
   {
@@ -2704,6 +2758,19 @@
    "also_covered_by": [],
    "topics": [
     "Development"
+   ]
+  },
+  {
+   "id": "fd05ac9119bf",
+   "title": "Diagnostics for VMware Cloud Foundation Operations – Newest Findings",
+   "url": "https://blogs.vmware.com/cloud-foundation/2026/11/25/diagnostics-for-vmware-cloud-foundation-operations-newest-findings-3/",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-25T22:16:01+00:00",
+   "summary": "Diagnostics for VMware Cloud Foundation is a centralized platform that monitors the overall operational status of the VMware Cloud Foundation (VCF) software stack.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure"
    ]
   },
   {
@@ -3856,6 +3923,21 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "e2c5bf857dad",
+   "title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T20:00:00+00:00",
+   "summary": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows. This reduces mean time to resolution (MTTR) by eliminating manual notification steps and ensuring consistent incident workflows.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "DevOps & SRE",
+    "ITSM"
    ]
   },
   {
@@ -5356,6 +5438,14 @@
      "url": "https://www.lemonde.fr/en/science/article/2026/11/25/us-clears-spacex-to-launch-up-to-one-million-orbital-data-center-satellites_6788575_10.html",
      "summary": "The FCC-authorized approval, valid until 2040, comes as tech giants and startups race to move AI computing into space to tap into continuous solar power.",
      "published": "2026-11-25T20:43:37+00:00"
+    },
+    {
+     "id": "49abc8361bec",
+     "source": "SiliconANGLE",
+     "title": "FCC clears SpaceX to put up to 1 million Starmind data centers in space",
+     "url": "https://siliconangle.com/2026/11/25/fcc-clears-spacex-to-put-up-to-1-million-starmind-data-centers-in-space/",
+     "summary": "Elon Musk’s Space Exploration Technologies Corp. today received approval from the U.S. Federal Communications Commission to deploy up to 1 million Starmind satellites designed to operate as data centers in orbit.",
+     "published": "2026-11-25T23:00:53+00:00"
     }
    ],
    "topics": [
@@ -7526,7 +7616,16 @@
    "source_category": "DevOps & automation",
    "published": "2026-11-25T14:39:00+00:00",
    "summary": "This post walks through moving the bulk of query compute to AWS Lambda Managed Instances, the misread telemetry, the utilization math, and the months of performance engineering that turned the switch into a 40-56% cost reduction.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "c94d258cf5d6",
+     "source": "AWS What's New",
+     "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+     "summary": "Today, AWS announces a developer preview of a new extension for orchestrating Lambda MicroVMs with Lambda durable functions . The extension adds durable operations for running work on MicroVMs and managing their lifecycle.",
+     "published": "2026-11-25T20:00:00+00:00"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure"
    ]
@@ -12784,6 +12883,19 @@
     "Cloud & infrastructure",
     "Embedded & IoT",
     "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "28b29443782f",
+   "title": "Amazon Transcribe Turbo: more accurate transcripts and natural turn-taking for voice agents, now in public preview",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "Amazon Transcribe Turbo, our next-generation speech-to-text model, is now in public preview in US East (Ohio) for batch and streaming. Turbo improves accuracy, supports custom vocabulary, and formats numbers, dates, currency, phone numbers and addresses following each locale's conventions.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
