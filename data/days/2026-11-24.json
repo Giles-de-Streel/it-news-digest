@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "generated": "2026-11-25T01:46:41+00:00",
+ "generated": "2026-11-25T02:01:29+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -42,7 +42,7 @@
   {
    "source": "SANS ISC",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "source": "Windows IT Pro Blog",
    "fetched": 20,
-   "recent": 0,
+   "recent": 2,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -426,7 +426,7 @@
   {
    "source": "Huntress",
    "fetched": 770,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 20,
+   "recent": 17,
    "error": null
   },
   {
@@ -900,7 +900,7 @@
   {
    "source": "Commvault",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -960,13 +960,13 @@
   {
    "source": "Cloudflare Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
-   "recent": 1,
+   "fetched": 10,
+   "recent": 0,
    "error": null
   },
   {
@@ -1374,7 +1374,7 @@
   {
    "source": "Qualys Blog",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1470,7 +1470,7 @@
   {
    "source": "Backblaze Blog",
    "fetched": 9,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1716,7 +1716,7 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 14,
+   "recent": 13,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 94,
+   "fetched": 100,
    "recent": 25,
    "error": null
   },
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 19,
+   "fetched": 18,
    "recent": 4,
    "error": null
   },
@@ -2160,7 +2160,7 @@
   {
    "source": "Linode (Akamai Cloud) status",
    "fetched": 13,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,32 @@
   }
  ],
  "items": [
+  {
+   "id": "f3fa36a7a7e1",
+   "title": "ISC Stormcast For Wednesday, November 25th, 2026",
+   "url": "https://isc.sans.edu/diary/rss/33554",
+   "source": "SANS ISC",
+   "source_category": "Security",
+   "published": "2026-11-25T02:00:03+00:00",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "419db48c235e",
+   "title": "Quantifying The Performance Benefit Of FRED On AMD Zen 6",
+   "url": "https://www.phoronix.com/news/AMD-Zen-6-FRED-Benefits",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-25T01:55:19+00:00",
+   "summary": "With the new EPYC 9006 SP7 Venice processors now shipping, one of the curious follow-up benchmarks I have been wanting to pursue is around quantifying the performance impact of Flexible Return and Event Delivery \"FRED\". After all, FRED showed very nice gains for Intel Panther Lake for first featuring FRED.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
   {
    "id": "f7559f2bbcb0",
    "title": "Risky Bulletin: Card stealer found on 80 major US news sites",
@@ -2581,6 +2607,19 @@
    "also_covered_by": [],
    "topics": [
     "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "5ee45fc63309",
+   "title": "Matrix Multiplication is O(n^2.25) [pdf]",
+   "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-25T01:19:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3275,7 +3314,16 @@
    "source_category": "IT industry",
    "published": "2026-11-24T23:36:00+00:00",
    "summary": "Nutanix CEO Rajiv Ramaswami plans to step down after six years as the cloud and AI company searches for his successor.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "2f7b2c38a506",
+     "source": "SiliconANGLE",
+     "title": "Rajiv Ramaswami to step down as Nutanix begins hunt for its next CEO",
+     "url": "https://siliconangle.com/2026/11/24/rajiv-ramaswami-to-step-down-as-nutanix-begins-hunt-for-its-next-ceo/",
+     "summary": "Rajiv Ramaswami is stepping down from his role as the Chief Executive Officer of Nutanix Inc., six years after he joined the hyperconverged cloud infrastructure company from its rival VMware Inc.",
+     "published": "2026-11-25T01:54:05+00:00"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI",
