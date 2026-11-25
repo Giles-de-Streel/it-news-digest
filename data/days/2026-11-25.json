@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T19:16:03+00:00",
+ "generated": "2026-11-25T19:30:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 113,
-   "recent": 113,
+   "fetched": 115,
+   "recent": 115,
    "error": null
   },
   {
@@ -396,7 +396,7 @@
   {
    "source": "Microsoft Security Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -648,7 +648,7 @@
   {
    "source": "Proxmox Security Advisories",
    "fetched": 76,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -905,7 +905,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 7,
+   "fetched": 6,
    "recent": 0,
    "error": null
   },
@@ -984,7 +984,7 @@
   {
    "source": "Socket",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 12,
+   "recent": 14,
    "error": null
   },
   {
@@ -1554,7 +1554,7 @@
   {
    "source": "Rapid7 Blog",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 36,
+   "recent": 37,
    "error": null
   },
   {
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
-   "recent": 1,
+   "fetched": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,105 @@
  ],
  "items": [
   {
+   "id": "694af41b82cc",
+   "title": "The Curious Case of the Second Spacebar",
+   "url": "https://hackaday.com/2026/11/25/the-curious-case-of-the-second-spacebar/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-25T19:30:21+00:00",
+   "summary": "[Adrian] shared a very unusual Commodore 64 he came across with some unique modifications made to it. Not only did it have an unexplained DIP socket on the back, it …read more",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "929a4a4488a8",
+   "title": "Black Friday Deal: Nothing Headphone (a) 2026 is selling at a 45% discount",
+   "url": "https://www.neowin.net/deals/black-friday-deal-nothing-headphone-a-2026-is-selling-at-a-45-discount/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T19:30:01+00:00",
+   "summary": "The Nothing Headphone (a) 2026 with Adaptive Active Noise Cancelling is available at its all-time low price with a 45% Black Friday deal.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "655e9ca6c0df",
+   "title": "Drupal security advisory (AV26-1209)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:21:44+00:00",
+   "summary": "Serial number: AV26-1209 Date: November 25, 2026 As of November 25, 2026, Drupal is affected by a vulnerability in the following product: Drupal core Prior to 10.6.23 Prior to 11.3.23 Prior to 11.4.14 Drupal indicates that CVE-2026-136716 is exploited in the wild.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ],
+   "cves": []
+  },
+  {
+   "id": "ae1fbce616c8",
+   "title": "CVE-2026-77230: Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77230",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T19:17:39.077000+00:00",
+   "summary": "Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an…",
+   "kind": "cve",
+   "cve": "CVE-2026-77230",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-77230",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "208a7767275c",
+   "title": "CVE-2026-133464: SeaweedFS is a distributed storage system for files and blobs.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133464",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T19:17:32.660000+00:00",
+   "summary": "SeaweedFS is a distributed storage system for files and blobs. Prior to version 4.46, FileStore.ValidatePassword in the SFTP server does not reject zero-length secrets before comparing them, causing an empty login password to match any account configured without one, such as public-key-only or certificate-only users.",
+   "kind": "cve",
+   "cve": "CVE-2026-133464",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133464",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "ce57c7c02922",
+   "title": "Israel could collect nearly $2 billion in taxes from Amazon's Decart deal",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yNEtldktwZmxVVktXZWdqTDk1WTJmd1pxM1RWcGl4dWZGZkdxMlB0RFRSOUJ0b1NBRHpqcUNITV9KWDJMUlRpV0szaGZOdkF6M1RVdVRpUnZZWFd3dzBMYzhMa3lpSVU?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T19:16:00+00:00",
+   "summary": "Israel could collect nearly $2 billion in taxes from Amazon's Decart deal www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "0ffba2eb2624",
    "title": "You can now schedule messages ahead of time in WhatsApp chats",
    "url": "https://www.neowin.net/news/you-can-now-schedule-messages-ahead-of-time-in-whatsapp-chats/?utm_source=rss",
@@ -2521,6 +2620,34 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-25T19:14:01+00:00",
    "summary": "WhatsApp is getting a feature its competitors already offer: the ability to schedule messages in advance.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b9cccd69167a",
+   "title": "[Control systems] Hitachi security advisory (AV26-1208)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:11:51+00:00",
+   "summary": "Serial number: AV26-1208 Date: November 25, 2026 As of November 24, 2026, Hitachi Energy is affected by a vulnerability in the following product: RTU500 series CMU firmware Prior to or equal to 13.9.1 Prior to or equal to 12.7.8 Prior to or equal to 13.5.4 Prior to or equal to 13.6.3 Prior to or equal to 13.7.8 Prior…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c31465abe4a5",
+   "title": "Holy Shit Holy Shit Holy Shit Holy Shit [Algorithmic Complexity Lower Bounds]",
+   "url": "https://scottaaronson.blog/?p=10379",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-25T19:11:27+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2697,6 +2824,20 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "43b9ea3168c2",
+   "title": "Introducing Socket Calm: A Syntax Highlighting Theme for VS Code, Vim, and Neovim",
+   "url": "https://socket.dev/blog/socket-syntax-highlighting-theme?utm_medium=feed",
+   "source": "Socket",
+   "source_category": "Supply chain security",
+   "published": "2026-11-25T18:52:26.336000+00:00",
+   "summary": "Socket Calm is a free, open source syntax highlighting theme for VS Code, Vim, and Neovim, inspired by Socket's design system.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Development"
    ]
   },
   {
@@ -3332,6 +3473,19 @@
    ]
   },
   {
+   "id": "3e11caea3c27",
+   "title": "The polynomial Hirsch conjecture is false [pdf]",
+   "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-25T17:34:34+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "9828ae8aa111",
    "title": "Galaxy S26 FE vs. Pixel 11 Pro: Is the Pixel Worth $249 More on Black Friday?",
    "url": "https://www.techrepublic.com/article/news-galaxy-s26-fe-vs-pixel-11-pro-black-friday/",
@@ -3681,7 +3835,16 @@
    "source_category": "Threat research",
    "published": "2026-11-25T17:15:00+00:00",
    "summary": "We're honored to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security, for the second consecutive year.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1c7c6dd2f39f",
+     "source": "Rapid7 Blog",
+     "title": "Rapid7 Named a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems",
+     "url": "https://www.rapid7.com/blog/post/so-rapid7-named-leader-2026-gartner-magic-quadrant-integrated-security-operations-center-systems-isocs",
+     "summary": "Recognized for Completeness of Vision and Ability to Execute. We are proud to share that Rapid7 has been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems.",
+     "published": "2026-11-25T18:34:43+00:00"
+    }
+   ],
    "topics": [
     "Microsoft & Windows"
    ]
@@ -9343,7 +9506,16 @@
    "source_category": "Security",
    "published": "2026-11-25T10:00:00+00:00",
    "summary": "UK’s National Cyber Security Centre urges “strong operational discipline” to manage agentic offensive frameworks",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a66545deae9c",
+     "source": "Microsoft Security Blog",
+     "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+     "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation.",
+     "published": "2026-11-25T18:09:06+00:00"
+    }
+   ],
    "topics": [
     "General IT"
    ]
