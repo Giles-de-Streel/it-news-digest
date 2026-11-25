@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T07:16:08+00:00",
+ "generated": "2026-11-25T07:31:07+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -161,14 +161,14 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 121,
-   "recent": 121,
+   "fetched": 123,
+   "recent": 123,
    "error": null
   },
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 43,
+   "recent": 42,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 0,
+   "fetched": 50,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "error": null
   },
   {
    "source": "CIO.com",
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 14,
+   "recent": 20,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
-   "recent": 0,
+   "fetched": 9,
+   "recent": 1,
    "error": null
   },
   {
@@ -1686,7 +1686,7 @@
   {
    "source": "AhnLab ASEC",
    "fetched": 30,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 41,
+   "recent": 40,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 89,
-   "recent": 19,
+   "fetched": 93,
+   "recent": 21,
    "error": null
   },
   {
@@ -1980,7 +1980,7 @@
   {
    "source": "Level Access blog",
    "fetched": 378,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
+   "fetched": 18,
    "recent": 3,
    "error": null
   },
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,168 @@
   }
  ],
  "items": [
+  {
+   "id": "98ef517b6548",
+   "title": "Chinese EDA software provider Phlexing says it has been collaborating with Huawei since 2019 to develop a suite of EDA tools based on Huawei's Tau Scaling Law",
+   "url": "https://www.techmeme.com/261125/p9#a261125p9",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:25:01+00:00",
+   "summary": "Nikkei Asia : Chinese EDA software provider Phlexing says it has been collaborating with Huawei since 2019 to develop a suite of EDA tools based on Huawei's Tau Scaling Law — TAIPEI — China's Huawei Technologies and a local partner say they have overcome a U.S. crackdown on its use of advanced chip design tools …",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "9a77a653142c",
+   "title": "Exploited: Abandoned Idunno.AntiCsrf library opens legacy ASP.NET apps to RCE (CVE-2026-131914)",
+   "url": "https://www.helpnetsecurity.com/2026/11/25/idunno-anticsrf-rce-cve-2026-131914-exploited/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-25T07:22:32+00:00",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency added three new vulnerabilities to its Known Exploited Vulnerabilities catalog: CVE-2026-132224, an Optimizely Web Experimentation vulnerability attackers leveraged to plant malicious JavaScript on high-profile websites; a Drupal core remote code execution bug…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-131914",
+     "score": 9.3,
+     "severity": "Critical",
+     "version": "4.0",
+     "scored_by": "Mandiant"
+    },
+    {
+     "id": "CVE-2026-132224",
+     "score": 7.1,
+     "severity": "High",
+     "version": "4.0",
+     "scored_by": "mitre"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-131914",
+      "added": "2026-11-24",
+      "ransomware": false
+     },
+     {
+      "id": "CVE-2026-132224",
+      "added": "2026-11-24",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-131914",
+     "score": 0.00614,
+     "percentile": 0.50152,
+     "date": "2026-11-24"
+    }
+   }
+  },
+  {
+   "id": "46c9b8e77ff2",
+   "title": "EU officials say the EC is pressing Pornhub, Stripchat, XNXX, and XVideos to introduce tougher age checks as it develops a bloc-wide age verification app",
+   "url": "https://www.techmeme.com/261125/p8#a261125p8",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:20:02+00:00",
+   "summary": "Barbara Moens / Financial Times : EU officials say the EC is pressing Pornhub, Stripchat, XNXX, and XVideos to introduce tougher age checks as it develops a bloc-wide age verification app — Adult websites seek to make deal with European Commission to minimise looming fines — Four large adult content websites are…",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "67882a984274",
+   "title": "\"Today, go-to-market is the moat, and GTM is capital intensive\"",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jeUZZMXFEdDg4SFJsNXhOSXgtdGMzSmhvZjcycFdmekVHT0RRZFFWZzE4Qnl6YWVYNHQ5OXZPQmlSM2J1M0lJaTFxcTBOcEZUTTN3ZDRBazJYcm5jZ1FuX1NfWTJ1VVk?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:20:00+00:00",
+   "summary": "\"Today, go-to-market is the moat, and GTM is capital intensive\" www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fe4bfa951d94",
+   "title": "\"AI itself is not a moat\"",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zMWw1dlowV0tqcjBlNzNGV3d0aURUYTYyTUNqZDVpTUdYRUQxdUo0bjcxLWZNekdSZkhnMmdKUDhqckFyNGpubER0MUNDWW8zZDVpRWpnZThZMGY0WWp2c01HQ0pOOFE?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:19:00+00:00",
+   "summary": "\"AI itself is not a moat\" www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "a612df9013c5",
+   "title": "CVE-2026-136553: A vulnerability was detected in Tenda RX3 16.03.13.11_multi.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136553",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T07:17:18.930000+00:00",
+   "summary": "A vulnerability was detected in Tenda RX3 16.03.13.11_multi. Affected is an unknown function of the file /goform/fast_setting_wifi_set. Performing a manipulation of the argument loginPwd results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+   "kind": "cve",
+   "cve": "CVE-2026-136553",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136553",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "22ff39592757",
+   "title": "CVE-2026-136552: A security vulnerability has been detected in Tenda RX3 16.03.13.11_multi.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136552",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T07:17:18.643000+00:00",
+   "summary": "A security vulnerability has been detected in Tenda RX3 16.03.13.11_multi. This impacts the function formSetIPv6status of the file /goform/setIPv6Status of the component multiWAN. Such manipulation of the argument remoteIP leads to command injection. The attack may be performed from remote.",
+   "kind": "cve",
+   "cve": "CVE-2026-136552",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136552",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "bd5cb4d23ad2",
+   "title": "R-Squared raises $50 million to build a bridge between Israeli startups and Silicon Valley",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GaHFnS3ZNZUFoYzQ3X2JnRnZrQVktdWxIMkFyLWl0TWJRVjJyUVhSZ0lPdUlKYnBybEdicktqWjYzNENXVFRtODk3R0MzcThDLWFVeXlNRUpmRUt2S0tseUVDZnNPZFdv?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:15:00+00:00",
+   "summary": "R-Squared raises $50 million to build a bridge between Israeli startups and Silicon Valley www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "9496b013ed53",
    "title": "Best Black Friday 2026 tech deals",
@@ -2683,6 +2845,19 @@
    "topics": [
     "AI",
     "Databases"
+   ]
+  },
+  {
+   "id": "bede548f512c",
+   "title": "‘It’s been really a mess’: Meta insiders concerned over push to AI content moderation",
+   "url": "https://www.theguardian.com/technology/2026/nov/25/meta-insiders-concerned-push-to-ai-content-moderation",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-25T07:00:08+00:00",
+   "summary": "Several employees say rapid speed at which algorithms work means mistakes can happen at greater scale Meta employees have expressed concern at the company’s push to replace human moderators with artificial intelligence, claiming the technology is leading to mistakes with the potential for sweeping political…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3552,6 +3727,19 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source"
+   ]
+  },
+  {
+   "id": "9473500c0716",
+   "title": "Ransom & Dark Web Issues Week 4, November 2026",
+   "url": "https://asec.ahnlab.com/en/96757/",
+   "source": "AhnLab ASEC",
+   "source_category": "Threat research",
+   "published": "2026-11-24T15:00:00+00:00",
+   "summary": "ASEC Blog publishes Ransom & Dark Web Issues Week 4, November 2026 Large-Scale Data Leak Claimed at a South Korean Energy Organization [1] [2] Ukrainian Police and FBI Arrest Four Suspects Linked to Chaos Ransomware ShinyHunters Announces New Onion Site and PGP Key INC Ransom Targets a Japanese HR Software […]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
    ]
   },
   {
