@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T21:01:23+00:00",
+ "generated": "2026-11-25T21:17:05+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 121,
-   "recent": 121,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "source": "Tom's Hardware",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Cisco PSIRT",
    "fetched": 50,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 205,
-   "recent": 77,
+   "fetched": 212,
+   "recent": 82,
    "error": null
   },
   {
@@ -749,14 +749,14 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 80,
    "recent": 0,
    "error": null
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 11,
+   "recent": 13,
    "error": null
   },
   {
@@ -905,7 +905,7 @@
   },
   {
    "source": "Red Hat Ansible blog",
-   "fetched": 6,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1236,7 +1236,7 @@
   {
    "source": "Container Journal",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 99,
-   "recent": 33,
+   "fetched": 98,
+   "recent": 32,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
-   "recent": 2,
+   "fetched": 16,
+   "recent": 1,
    "error": null
   },
   {
@@ -2316,7 +2316,7 @@
   {
    "source": "Red Hat OpenShift blog",
    "fetched": 7,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "fetched": 100,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,102 @@
  ],
  "items": [
   {
+   "id": "48e1fbf950f9",
+   "title": "AI infrastructure stocks continue their slide, but Anthropic closes higher",
+   "url": "https://siliconangle.com/2026/11/25/ai-infrastructure-stocks-continue-their-slide-but-anthropic-closes-higher/",
+   "source": "SiliconANGLE",
+   "source_category": "IT industry",
+   "published": "2026-11-25T21:15:32+00:00",
+   "summary": "Investors continued to offload artificial intelligence infrastructure stocks today, but Anthropic PBC recouped some of its losses from earlier this week. The AI selloff reportedly began in August. It accelerated on Nov. 17, the day Nvidia Corp.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d291c7256a46",
+   "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Informational%20for%20Emergency%20Distrust%20of%20eMudhra%20Root%20and%20Intermediate%20Certificate%20Authorities%26vs_k=1",
+   "source": "Cisco PSIRT",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T21:11:32+00:00",
+   "summary": "Between October 17 and October 20, 2026, a critical security compromise involving Certificate Authorities that are managed by eMudhra was uncovered. A security researcher demonstrated that the private keys for eight eMudhra intermediate certificates were fundamentally broken due to an unprecedented error in their Key…",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "TLS & PKI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "0a824e449922",
+   "title": "Razer China partners up with Durex for a limited-edition kit of mousepad and condoms",
+   "url": "https://www.tomshardware.com/peripherals/razer-china-partners-up-with-durex-for-a-limited-edition-kit-with-a-mousepad-and-condoms-long-lasting-battle-armor-meets-heavy-armored-beetle",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-25T21:07:05+00:00",
+   "summary": "Razer China partners up with Durex for a limited-edition kit of mousepad and condoms — Long-Lasting Battle Armor meets Heavy Armored Beetle",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e333803fc668",
+   "title": "GitLab security advisory (AV26-1210)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T21:06:40+00:00",
+   "summary": "Serial number: AV26-1210 Date: November 25, 2026 As of November 25, 2026, GitLab is affected by vulnerabilities in the following product: GitLab Community Edition (CE) and Enterprise Edition (EE) Prior to 19.6.2 Prior to 19.5.9 Prior to 19.4.11 Prior to 19.3.10 Prior to 19.2.11 Prior to 19.1.11 Prior to 19.0.12 Prior…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "9ace30340dec",
+   "title": "What Changed When I Hardened an Internal MCP Server Image",
+   "url": "https://cloudnativenow.com/contributed-content/what-changed-when-i-hardened-an-internal-mcp-server-image/",
+   "source": "Container Journal",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-25T21:04:41+00:00",
+   "summary": "For years, “use a minimal base image” has been standard security advice that most teams nod at and don’t quite quantify. That’s changed. A growing set of hardened-image options — Google’s distroless project, Chainguard Images and Docker’s now-free-and-open-source Hardened Images — all make the same underlying claim:…",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "524ccce05108",
+   "title": "Sources: the DOJ didn't formally investigate Jensen Huang before his reinstatement; AG Todd Blanche cleared him based on probes into Super Micro and Megaspeed",
+   "url": "https://www.techmeme.com/261125/p35#a261125p35",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T21:01:00+00:00",
+   "summary": "Reuters : Sources: the DOJ didn't formally investigate Jensen Huang before his reinstatement; AG Todd Blanche cleared him based on probes into Super Micro and Megaspeed — The US Justice Department did not conduct a formal investigation into Jensen Huang before US President Donald Trump pushed …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "089665b819a0",
+   "title": "Daisy Chaining Stepper Motors",
+   "url": "https://hackaday.com/2026/11/25/daisy-chaining-stepper-motors/",
+   "source": "Hackaday",
+   "source_category": "Embedded",
+   "published": "2026-11-25T21:00:31+00:00",
+   "summary": "Let’s say you want to control a whole bunch of stepper motors. You can use a multi-channel controller board, or whip something up with a microcontroller or two. Or, you …read more",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
+   ]
+  },
+  {
    "id": "a26b51ba227a",
    "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
    "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
@@ -2524,6 +2620,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "edfba83ff362",
+   "title": "FPGAs: Co-Processors of the Future for Edge AI?",
+   "url": "https://www.electronicdesign.com/technologies/embedded/article/55421667/lattice-semiconductor-fpgas-as-everywhere-companion-chips-for-edge-ai",
+   "source": "Electronic Design",
+   "source_category": "Embedded",
+   "published": "2026-11-25T21:00:00+00:00",
+   "summary": "By taking on security, control, and sensor duties, FPGAs are emerging as the glue for increasingly complex edge AI systems.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Embedded & IoT"
    ]
   },
   {
@@ -3128,6 +3239,20 @@
    ]
   },
   {
+   "id": "c01dee74697d",
+   "title": "RHSA-2026:103537: Critical: Satellite 6.16 EUS security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103537",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:24:30+00:00",
+   "summary": "A security update for Red Hat Satellite 6.16 EUS is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "f4d602856026",
    "title": "“The idea was so cool, I just had to try it.”",
    "url": "https://unsung.aresluna.org/the-idea-was-so-cool-i-just-had-to-try-it",
@@ -3138,6 +3263,48 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5119ee1c6a62",
+   "title": "RHSA-2026:103536: Critical: Satellite 6.17 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103536",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:22:51+00:00",
+   "summary": "A security update for Red Hat Satellite 6.17 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "48ce230304fe",
+   "title": "RHSA-2026:103534: Critical: Satellite 6.19 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103534",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:22:51+00:00",
+   "summary": "A security update for Red Hat Satellite 6.19 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "31c94dc3d5aa",
+   "title": "RHSA-2026:103535: Critical: Satellite 6.18 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103535",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T19:22:50+00:00",
+   "summary": "A security update for Red Hat Satellite 6.19 is now available. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE links in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
    ]
   },
   {
@@ -3314,6 +3481,19 @@
    "topics": [
     "AI",
     "Development"
+   ]
+  },
+  {
+   "id": "e91939e15f3f",
+   "title": "McMahon Eyes Potential Settlement with ‘Ring Boys’",
+   "url": "https://www.insidehighered.com/news/government/politics-elections/2026/11/25/mcmahon-eyes-potential-settlement-ring-boys",
+   "source": "Inside Higher Ed",
+   "source_category": "Higher ed",
+   "published": "2026-11-25T19:03:00+00:00",
+   "summary": "McMahon Eyes Potential Settlement with ‘Ring Boys’ Josh Moody Wed, 11/25/2026 - 02:03 PM Education Secretary Linda McMahon and co-defendants have agreed to private mediation in a child sexual abuse case that centers on allegations dating to her time as a WWE executive.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3646,7 +3826,16 @@
    "source_category": "IT industry",
    "published": "2026-11-25T18:23:12+00:00",
    "summary": "Alfozan, a former OpenAI engineer, is expected to be fitted with an ankle monitor, his attorney, David Rizk, previously told CNBC.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3978060e41ec",
+     "source": "Slashdot",
+     "title": "Saudi National Charged In OpenAI Bugging To Be Released On $1 Million Bond",
+     "url": "https://yro.slashdot.org/story/26/11/25/0633231/saudi-national-charged-in-openai-bugging-to-be-released-on-1-million-bond?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+     "summary": "CNBC reports: Abdulrahman Alfozan, the Saudi national accused of bugging an OpenAI executive conference room, will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.",
+     "published": "2026-11-25T21:00:00+00:00"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -4186,6 +4375,22 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d2d747f79e0b",
+   "title": "USN-9199-1: authd vulnerability",
+   "url": "https://ubuntu.com/security/notices/USN-9199-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T17:32:51+00:00",
+   "summary": "Adrian Dombeck discovered that authd incorrectly assigned user and group identifiers during first-time SSH logins. A remote authenticated user could possibly use this issue to access or modify files belonging to another user, potentially leading to account takeover or privilege escalation.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team",
+    "System administration",
+    "Identity & access"
    ]
   },
   {
@@ -6519,6 +6724,35 @@
    ]
   },
   {
+   "id": "6f3c3c0e00e5",
+   "title": "RHSA-2026:103501: Important: raptor2 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103501",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T14:37:32+00:00",
+   "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "7e10d42e267b",
+   "title": "RHSA-2026:103498: Important: grafana security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103498",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T14:37:27+00:00",
+   "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "ae5493d15244",
    "title": "Amazon to start selling cars in the UK next year",
    "url": "https://www.theguardian.com/uk-news/2026/nov/25/amazon-motors-into-uk-car-market",
@@ -8825,6 +9059,32 @@
    ]
   },
   {
+   "id": "8e9c5388f611",
+   "title": "Best IT Asset Management Software For Banks in 2027",
+   "url": "https://blog.invgate.com/best-it-asset-management-software-for-banks",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-25T12:00:00+00:00",
+   "summary": "Specific IT Asset Management (ITAM) software for banks solves a problem that no spreadsheet can: maintaining a continuously updated, classified inventory of every hardware and software asset across every branch, ATM network, and data center , ready whenever a regulator asks for it.",
+   "also_covered_by": [
+    {
+     "id": "00122a957f24",
+     "source": "Tom's Hardware",
+     "title": "Best USB charger and power bank deals 2026",
+     "url": "https://www.tomshardware.com/peripherals/usb/best-usb-charger-and-power-bank-deals-for-black-friday-2026-from-tiny-single-port-smartphone-chargers-to-large-power-banks-for-laptops-weve-found-the-best-deals",
+     "summary": "From single-port 15W chargers to 25K mAh 220W power banks, we found some of the best deals to keep your electronics charged and ready to go.",
+     "published": "2026-11-25T21:05:22+00:00"
+    }
+   ],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "ITSM",
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
    "id": "bbd6b8659313",
    "title": "Google DeepMind AI engineers conjure mathematical proof of Signal's encryption protocol — AlphaProof Code framework powered human-bot cooperation for speedy work",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-deepmind-ai-engineers-conjure-mathematical-proof-of-signals-encryption-protocol-alphaproof-code-framework-powered-human-bot-cooperation-for-speedy-work",
@@ -8906,23 +9166,6 @@
      "date": "2026-11-25"
     }
    }
-  },
-  {
-   "id": "8e9c5388f611",
-   "title": "Best IT Asset Management Software For Banks in 2027",
-   "url": "https://blog.invgate.com/best-it-asset-management-software-for-banks",
-   "source": "InvGate blog",
-   "source_category": "ITSM",
-   "published": "2026-11-25T12:00:00+00:00",
-   "summary": "Specific IT Asset Management (ITAM) software for banks solves a problem that no spreadsheet can: maintaining a continuously updated, classified inventory of every hardware and software asset across every branch, ATM network, and data center , ready whenever a regulator asks for it.",
-   "also_covered_by": [],
-   "topics": [
-    "Cloud & infrastructure",
-    "Hardware",
-    "ITSM",
-    "Networking",
-    "Policy & regulation"
-   ]
   },
   {
    "id": "572924241b90",
@@ -9272,29 +9515,6 @@
    "topics": [
     "Threats & malware",
     "Microsoft & Windows"
-   ]
-  },
-  {
-   "id": "c9c094cf81ce",
-   "title": "U.S. CISA adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog",
-   "url": "https://securityaffairs.com/203965/uncategorized/u-s-cisa-adds-drupal-core-idunno-anticsrf-and-optimizely-web-experimentation-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-   "source": "Security Affairs",
-   "source_category": "Security",
-   "published": "2026-11-25T11:46:54+00:00",
-   "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog. The U.S.",
-   "also_covered_by": [
-    {
-     "id": "1a2adfc413f2",
-     "source": "heise online (English)",
-     "title": "Attack warning: Drupal Core, AntiCsrf and Optimizely",
-     "url": "https://www.heise.de/en/news/Attack-warning-Drupal-Core-AntiCsrf-and-Optimizely-11537446.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
-     "summary": "Some exploits were already known, but CISA is now warning of observed attacks on Drupal Core, AntiCsrf and Optimizely.",
-     "published": "2026-11-25T13:25:00+00:00"
-    }
-   ],
-   "topics": [
-    "Vulnerabilities & patches",
-    "Policy & regulation"
    ]
   },
   {
@@ -11666,6 +11886,35 @@
    ]
   },
   {
+   "id": "298170ad04c3",
+   "title": "AWS IoT Core now uses dedicated IPv6 address ranges for the HTTP rule action",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-dedicated-ipv6-ranges/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "AWS IoT Core can now send traffic to HTTPS endpoints within a dedicated, published IPv6 address range. This launch enables you to configure your HTTPS endpoints to accept requests only from AWS IoT Core and block all other traffic, thereby reducing your endpoint's exposure to public internet.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "3375e613fb0d",
+   "title": "AWS IoT Core quotas and usage are now visible in AWS Service Quotas console",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/",
+   "source": "AWS What's New",
+   "source_category": "Cloud",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "AWS IoT Core now publishes its most used service quotas and your current usage against the quotas in AWS Service Quotas console , improving observability and monitoring of API limits and quotas.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Embedded & IoT",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "abc7365bcfac",
    "title": "I-O DATA Announces HDL-LH NAS for Businesses, Protecting the Admin Console with a Physical Button",
    "url": "https://joho-todai.com/en/io-data-hdl-lh-nas-physical-button-security/",
@@ -11901,6 +12150,22 @@
      "url": "https://joho-todai.com/en/cve-2026-131914-aspnet-csrf-vulnerability-exploit/",
      "summary": "Exploitation has been confirmed in Idunno.AntiCsrf for ASP.NET, whose last release was in December 2008. No official fix is available, requiring affected organizations to replace the CSRF protection and investigate whether they were previously compromised.",
      "published": "2026-11-25T14:06:02+00:00"
+    },
+    {
+     "id": "c9c094cf81ce",
+     "source": "Security Affairs",
+     "title": "U.S. CISA adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog",
+     "url": "https://securityaffairs.com/203965/uncategorized/u-s-cisa-adds-drupal-core-idunno-anticsrf-and-optimizely-web-experimentation-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+     "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog. The U.S.",
+     "published": "2026-11-25T11:46:54+00:00"
+    },
+    {
+     "id": "1a2adfc413f2",
+     "source": "heise online (English)",
+     "title": "Attack warning: Drupal Core, AntiCsrf and Optimizely",
+     "url": "https://www.heise.de/en/news/Attack-warning-Drupal-Core-AntiCsrf-and-Optimizely-11537446.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "Some exploits were already known, but CISA is now warning of observed attacks on Drupal Core, AntiCsrf and Optimizely.",
+     "published": "2026-11-25T13:25:00+00:00"
     }
    ],
    "topics": [
@@ -13676,6 +13941,21 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "37fe82508b3f",
+   "title": "RHSA-2026:103384: Important: grafana security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103384",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-24T19:53:50+00:00",
+   "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
    ]
   },
   {
