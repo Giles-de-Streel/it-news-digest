@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T05:16:15+00:00",
+ "generated": "2026-11-25T05:31:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 129,
-   "recent": 129,
+   "fetched": 119,
+   "recent": 119,
    "error": null
   },
   {
@@ -557,9 +557,9 @@
   },
   {
    "source": "Exploit-DB",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "CIO.com",
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -1151,8 +1151,8 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
-   "recent": 1,
+   "fetched": 10,
+   "recent": 0,
    "error": null
   },
   {
@@ -1440,7 +1440,7 @@
   {
    "source": "ipSpace.net",
    "fetched": 1024,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1476,7 +1476,7 @@
   {
    "source": "ZDNet",
    "fetched": 25,
-   "recent": 7,
+   "recent": 5,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1776,7 +1776,7 @@
   {
    "source": "ManageEngine blogs",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1878,7 +1878,7 @@
   {
    "source": "Terence Tao",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 20,
+   "fetched": 19,
    "recent": 3,
    "error": null
   },
@@ -2184,7 +2184,7 @@
   {
    "source": "9to5Google",
    "fetched": 74,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -2411,9 +2411,9 @@
   },
   {
    "source": "Zscaler ThreatLabz",
-   "fetched": 50,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 502: Bad Gateway"
   },
   {
    "source": "Recorded Future",
@@ -2460,14 +2460,14 @@
   {
    "source": "Hugging Face blog",
    "fetched": 916,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,68 @@
   }
  ],
  "items": [
+  {
+   "id": "a2eae7197e65",
+   "title": "G.R.H. Polymath",
+   "url": "https://terrytao.wordpress.com/2026/11/24/g-r-h-polymath/",
+   "source": "Terence Tao",
+   "source_category": "Science & space",
+   "published": "2026-11-25T05:29:41+00:00",
+   "summary": "[This is a guest post by Anurag Sahai, Will Sawin, and Lior Silberman – T.] Last Friday Levent Alpöge announced a Lean certicate containing a proof of the Generalized Riemann hypothesis.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "cacffacb25b1",
+   "title": "Invisible Wave Hits California, Oregon and Canada as Towns Evacuate",
+   "url": "https://www.abovethenormnews.com/2026/11/24/king-tides-california/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-25T05:19:28+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "3dee3a8c3060",
+   "title": "CVE-2026-136547: A vulnerability was determined in Tenda RX3 16.03.13.11_multi.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136547",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-25T05:18:35.270000+00:00",
+   "summary": "A vulnerability was determined in Tenda RX3 16.03.13.11_multi. Impacted is the function R7WebsSecurityHandler of the component httpd. Executing a manipulation can lead to improper authentication. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+   "kind": "cve",
+   "cve": "CVE-2026-136547",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-136547",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "331bfcb2926d",
+   "title": "BFD on IBGP Sessions? Why Exactly?",
+   "url": "https://blog.ipspace.net/2026/11/bfd-ibgp/?utm_source=atom_feed",
+   "source": "ipSpace.net",
+   "source_category": "Networking",
+   "published": "2026-11-25T05:14:00+00:00",
+   "summary": "A friend of mine sent me an email with a weird observation: In the last year, I’ve seen a number of networks configure BFD on their iBGP sessions with very aggressive timers, including a network with 300 msec BFD timers (900 msec holddown).",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
   {
    "id": "2af3b832ed88",
    "title": "Insta360 sets December 1 Ace Pro 3 launch, teasing interchangeable lenses",
@@ -2737,6 +2799,19 @@
    ]
   },
   {
+   "id": "e6d5f2bd76ba",
+   "title": "Taking over US Treasury subdomains for $3 each",
+   "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-25T04:27:55+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "31f0280641f3",
    "title": "ShellBench Measures AI Agents' Real-World Performance—even Correct Answers Can Fail",
    "url": "https://joho-todai.com/en/ai-agent-shellbench-benchmark/",
@@ -2757,6 +2832,19 @@
    "source_category": "Development",
    "published": "2026-11-25T04:03:33+00:00",
    "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "257bafaba4b6",
+   "title": "Tech Life",
+   "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_south_asia?at_medium=RSS&at_campaign=rss",
+   "source": "BBC Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-24T21:00:00+00:00",
+   "summary": "Experts from around the world plot the progress of AI development every five years.",
    "also_covered_by": [],
    "topics": [
     "AI"
