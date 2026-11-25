@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "generated": "2026-11-25T13:32:02+00:00",
+ "generated": "2026-11-25T13:46:18+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -288,7 +288,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -306,7 +306,7 @@
   {
    "source": "SQL Server Tech Community",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -588,13 +588,13 @@
   {
    "source": "CRN",
    "fetched": 19,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 195,
-   "recent": 89,
+   "fetched": 198,
+   "recent": 92,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 80,
    "recent": 0,
    "error": null
   },
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -1356,7 +1356,7 @@
   {
    "source": "CrowdStrike Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1547,9 +1547,9 @@
   },
   {
    "source": "TechTarget News",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 10,
+   "recent": 10,
+   "error": null
   },
   {
    "source": "Rapid7 Blog",
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Adrian Roselli",
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 54,
+   "recent": 63,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 31,
+   "recent": 33,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 98,
-   "recent": 31,
+   "fetched": 100,
+   "recent": 30,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
+   "fetched": 17,
    "recent": 3,
    "error": null
   },
@@ -2286,7 +2286,7 @@
   {
    "source": "Virtualization Howto",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,264 @@
  ],
  "items": [
   {
+   "id": "b82bf949fcfe",
+   "title": "RHSA-2026:103496: Important: grafana security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103496",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T13:42:43+00:00",
+   "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "4edafcd25335",
+   "title": "RHSA-2026:103500: Important: raptor2 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103500",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T13:41:28+00:00",
+   "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "ee6f70db6db4",
+   "title": "Apple has iPads running macOS already, but don’t get too excited",
+   "url": "https://9to5mac.com/2026/11/25/apple-has-ipads-running-macos-already-but-dont-get-too-excited/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:40:50+00:00",
+   "summary": "With iPads running the same chips as Macs , many have wished Apple would give us the option of running macOS on them instead of the somewhat clunky iPadOS windowing system. Apple’s previous arguments against converging devices have been somewhat weakened by the launch of the touchscreen MacBook Pro .",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "33e311156763",
+   "title": "This crazy Asus ROG convertible with powerful gaming hardware has been discounted by $420",
+   "url": "https://www.neowin.net/deals/this-crazy-asus-rog-convertible-with-powerful-gaming-hardware-has-been-discounted-by-420/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-25T13:40:01+00:00",
+   "summary": "Want a powerful gaming device that doubles as a flexible productivity machine? Amazon has cut the price of Asus' premium 2-in-1.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "16a8641fe4ad",
+   "title": "Boom Supersonic tests supersonic engine and gas turbine",
+   "url": "https://www.heise.de/en/news/Boom-Supersonic-tests-supersonic-engine-and-gas-turbine-11537819.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:38:00+00:00",
+   "summary": "Boom Supersonic has fired up the engine core that will eventually power its Overture supersonic jet and Superpower gas turbine for the first time.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b2c2f201dff1",
+   "title": "1Password pushes users of its no-cloud legacy version to switch",
+   "url": "https://www.heise.de/en/news/1Password-pushes-users-of-its-no-cloud-legacy-version-to-switch-11537736.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:37:00+00:00",
+   "summary": "Many users still rely on 1Password 7 because it works without the company’s servers. Things are about to get even tougher for them.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "600752659034",
+   "title": "The best Black Friday VPN deals 2026, save up to 88%",
+   "url": "https://www.tomshardware.com/software/vpn/the-best-vpn-deals-2026",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-25T13:36:37+00:00",
+   "summary": "The best Black Friday VPN subscription deals to keep you safe online for less.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "c1001e30276d",
+   "title": "Too much AI: Atari homebrew retro competition canceled",
+   "url": "https://www.heise.de/en/news/Too-much-AI-Atari-homebrew-retro-competition-canceled-11537706.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:36:00+00:00",
+   "summary": "The organizer no longer sees a way to fairly assess human development work. Open-source projects face similar problems.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "601343e434a1",
+   "title": "Tether and Circle freezing $2B+ in crypto after Binance's $6.3B hack shows their centralized control and a shift from Circle's reliance on slow court orders",
+   "url": "https://www.techmeme.com/261125/p22#a261125p22",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:35:02+00:00",
+   "summary": "Bloomberg : Tether and Circle freezing $2B+ in crypto after Binance's $6.3B hack shows their centralized control and a shift from Circle's reliance on slow court orders — As North Korean cyberthieves were funneling billions out of Binance last month, the world's largest crypto exchange looked …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "fb819a10120d",
+   "title": "iOS browsers: Google joins Mozilla’s criticism of Apple",
+   "url": "https://www.heise.de/en/news/iOS-browsers-Google-joins-Mozilla-s-criticism-of-Apple-11537698.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:35:00+00:00",
+   "summary": "Mozilla wants the EU to take action against Apple. The supposed browser freedom isn’t real. A Google Chrome team responds — and so does the European Commission.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1eeb22be3c5a",
+   "title": "Apple accessory Black Friday deals: AirTag 2, Apple Pencil, CarPlay gear, more from $7",
+   "url": "https://9to5mac.com/2026/11/25/best-apple-accessory-black-friday-deals/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:33:51+00:00",
+   "summary": "Day 7 of the giant Amazon Black Friday sale is now underway, and it’s time to take a look at some of the deals you score on accessories for your Apple gear. Amazon’s wild deal on AirPods Pro 3 is still flying at $100 off , but we are also tracking some brilliant prices on even more affordable add-on gear, from AirTag…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "577f31acc307",
+   "title": "Red devices: Apple brings “(Product)RED” back",
+   "url": "https://www.heise.de/en/news/Red-devices-Apple-brings-Product-RED-back-11537628.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:32:00+00:00",
+   "summary": "For the 20th anniversary of its anti-AIDS campaign, Apple is releasing several products in red, including a special AirPods Max 2 edition.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
+   ]
+  },
+  {
+   "id": "2e2425847825",
+   "title": "US Army offers more land to private AI data centers, across nine sites - must include power generation",
+   "url": "https://www.datacenterdynamics.com/en/news/us-army-offers-more-land-to-private-ai-data-centers-across-nine-sites-must-include-power-generation/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-25T13:31:39+00:00",
+   "summary": "Land next to ammo dumps now available for data center development",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "92d5bc0d8075",
+   "title": "RHSA-2026:103494: Important: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103494",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-25T13:31:00+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "d318f646af50",
+   "title": "Deichmann online store breached, customer data accessed without authorization",
+   "url": "https://www.heise.de/en/news/Deichmann-online-store-breached-customer-data-accessed-without-authorization-11537606.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:31:00+00:00",
+   "summary": "Deichmann reports a cyberattack on its online store. Unauthorized parties accessed customer data.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "8aecfebcb487",
+   "title": "Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget",
+   "url": "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-25T13:30:00+00:00",
+   "summary": "Matthew Martin is Chief Information Security and Privacy Officer at Western Carolina University.",
+   "also_covered_by": [],
+   "topics": [
+    "Higher education"
+   ]
+  },
+  {
+   "id": "fa1f50764b02",
+   "title": "Suspected ransomware attack disrupts cancer treatments, surgeries at Guadeloupe hospital",
+   "url": "https://therecord.media/guadeloupe-ransomware-hospital-cyber",
+   "source": "The Record",
+   "source_category": "Security",
+   "published": "2026-11-25T13:30:00+00:00",
+   "summary": "France’s national cybersecurity agency is investigating a suspected ransomware attack that impaired the computer systems of the University Hospital of Guadeloupe, forcing doctors to postpone surgeries, suspend some cancer treatments and revert to pen and paper.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "be6a4778331d",
+   "title": "Sophos CEO On Why The Push To Prevent AI Attacks May Be Fueling Outages",
+   "url": "https://www.crn.com/news/security/2026/sophos-ceo-on-why-the-push-to-prevent-ai-attacks-may-be-fueling-outages",
+   "source": "CRN",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:30:00+00:00",
+   "summary": "The push to prepare for AI-powered cyberattacks may itself be contributing to the recent wave of technology outages—as businesses and governments have worked preemptively to patch systems and strengthen their defenses against the likelihood of a ‘more powerful’ wave of attacks utilizing AI and agents in the near…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "4ea155fd6924",
+   "title": "Galaxy Watch 8 gets One UI 9 Watch and new health features",
+   "url": "https://www.heise.de/en/news/Galaxy-Watch-8-gets-One-UI-9-Watch-and-new-health-features-11537592.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:30:00+00:00",
+   "summary": "Samsung has started rolling out One UI 9 Watch, based on Wear OS 7. The Galaxy Watch 8 models are first in line.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "5c62ef25a52f",
    "title": "RHSA-2026:103505: Important: rsync security, bug fix, and enhancement update",
    "url": "https://access.redhat.com/errata/RHSA-2026:103505",
@@ -2542,6 +2800,34 @@
     "Reverse engineering",
     "Embedded & IoT",
     "Networking"
+   ]
+  },
+  {
+   "id": "2fee860cc8ea",
+   "title": "Three data center projects planned around Phoenix, Arizona",
+   "url": "https://www.datacenterdynamics.com/en/news/three-data-center-projects-planned-around-phoenix-arizona/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-25T13:27:54+00:00",
+   "summary": "Projects planned in Buckeye, Eloy, and Casa Grande",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d2b4f6f850ac",
+   "title": "AI experiment: Anthropic tempts AI agents",
+   "url": "https://www.heise.de/en/news/AI-experiment-Anthropic-tempts-AI-agents-11537565.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:27:00+00:00",
+   "summary": "Anthropic tests how easily AI agents can be tempted to exploit security vulnerabilities.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "AI"
    ]
   },
   {
@@ -2878,6 +3164,19 @@
    ]
   },
   {
+   "id": "b7553e4ed95d",
+   "title": "The Download: AI swamping open records, and firefighting for permafrost",
+   "url": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
+   "source": "MIT Technology Review",
+   "source_category": "IT industry",
+   "published": "2026-11-25T13:10:00+00:00",
+   "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is straining America’s open records systems AI has intensified investors’ interest in public records.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "299bf5c1fa45",
    "title": "Analyst: Don't expect hardware price cuts until at least 2028",
    "url": "https://www.gamesindustry.biz/analyst-dont-expect-hardware-price-cuts-until-at-least-2028",
@@ -3044,6 +3343,19 @@
    ]
   },
   {
+   "id": "09fa7f41e853",
+   "title": "Electrolux Smart Boilers in Ukraine Connect to Russian Servers, Raising Privacy Concerns",
+   "url": "https://securityaffairs.com/203978/security/electrolux-smart-boilers-in-ukraine-connect-to-russian-servers-raising-privacy-concerns.html",
+   "source": "Security Affairs",
+   "source_category": "Security",
+   "published": "2026-11-25T12:50:15+00:00",
+   "summary": "Researchers found Electrolux-branded smart boilers connecting to Russian servers, raising concerns about household data and privacy. A router in Ukraine recorded a water heater doing something odd.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "ce7f01aef996",
    "title": "Sources: Walmart-backed Indian fintech PhonePe resumes its IPO preparations, targeting a Q1 2027 debut at a $12B to $15B valuation and raising $1.2B to $1.5B",
    "url": "https://www.techmeme.com/261125/p19#a261125p19",
@@ -3054,6 +3366,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "d6181706b251",
+   "title": "Leaving VMware Made Me Rethink My Entire Home Lab",
+   "url": "https://www.virtualizationhowto.com/2026/11/leaving-vmware-made-me-rethink-my-entire-home-lab/",
+   "source": "Virtualization Howto",
+   "source_category": "Virtualization",
+   "published": "2026-11-25T12:50:00+00:00",
+   "summary": "Like most virtualization enthusiasts, I spent quite a bit of my career early on knee deep in VMware across corporate enterprise data center environments. Many of us carried VMware technologies…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
    ]
   },
   {
@@ -3083,6 +3409,20 @@
    "also_covered_by": [],
    "topics": [
     "Game development"
+   ]
+  },
+  {
+   "id": "229957ec0d1f",
+   "title": "Ismaël Mejía: PostgreSQL 19 is now supported in pglayers",
+   "url": "https://postgr.es/p/9DF",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-25T12:42:05+00:00",
+   "summary": "PostgreSQL 19 support is now available in pglayers , with 62 extension layers , ready-to-use Full and Azure profile images , and builds for both amd64 and arm64 . The images use the official postgres:19 GA image.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
    ]
   },
   {
@@ -3124,6 +3464,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "b41fd99f1498",
+   "title": "AI governance starts with existing controls — but can’t stop there",
+   "url": "https://www.techtarget.com/news/ai-governance-starts-with-existing-controls-but-cant-stop-there/875091/",
+   "source": "TechTarget News",
+   "source_category": "IT industry",
+   "published": "2026-11-25T12:33:00+00:00",
+   "summary": "The old IT playbook still matters. A former CIO explains where AI strains risk reviews, third-party oversight and stop controls.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -3976,26 +4329,34 @@
    ]
   },
   {
-   "id": "ceb154a1b093",
-   "title": "EU plans €50 billion investment in AI and quantum computing",
-   "url": "https://www.lemonde.fr/en/economy/article/2026/11/25/eu-plans-50-billion-investment-in-ai-and-quantum-computing_6788115_19.html",
-   "source": "Le Monde in English (Pixels)",
+   "id": "a0adf0fecb9a",
+   "title": "EU Proposes Quantum Act With Investment Fund and Post-Quantum Cryptography Transition",
+   "url": "https://joho-todai.com/en/eu-quantum-tech-bill-investment-fund-post-quantum-cryptography/",
+   "source": "Joho no Todai (English)",
    "source_category": "IT industry",
    "published": "2026-11-25T11:06:30+00:00",
-   "summary": "EU tech chief Henna Virkkunen presented new rules to bolster quantum development in Europe as part of a broader effort to cut dependency on the United States and other non-European technologies.",
+   "summary": "The European Commission has proposed the Quantum Act. It seeks to coordinate research and industrial support across Member States, establish a new fund investing in quantum technology, AI, and other fields, and advance the transition to post-quantum cryptography through public procurement while supporting…",
    "also_covered_by": [
     {
-     "id": "a0adf0fecb9a",
-     "source": "Joho no Todai (English)",
-     "title": "EU Proposes Quantum Act With Investment Fund and Post-Quantum Cryptography Transition",
-     "url": "https://joho-todai.com/en/eu-quantum-tech-bill-investment-fund-post-quantum-cryptography/",
-     "summary": "The European Commission has proposed the Quantum Act. It seeks to coordinate research and industrial support across Member States, establish a new fund investing in quantum technology, AI, and other fields, and advance the transition to post-quantum cryptography through public procurement while supporting…",
-     "published": "2026-11-25T11:32:02+00:00"
+     "id": "ceb154a1b093",
+     "source": "Le Monde in English (Pixels)",
+     "title": "EU plans €50 billion investment in AI and quantum computing",
+     "url": "https://www.lemonde.fr/en/economy/article/2026/11/25/eu-plans-50-billion-investment-in-ai-and-quantum-computing_6788115_19.html",
+     "summary": "EU tech chief Henna Virkkunen presented new rules to bolster quantum development in Europe as part of a broader effort to cut dependency on the United States and other non-European technologies.",
+     "published": "2026-11-25T11:06:30+00:00"
+    },
+    {
+     "id": "537440a243f6",
+     "source": "heise online (English)",
+     "title": "EU wants to boost quantum industry and force crypto transition",
+     "url": "https://www.heise.de/en/news/EU-wants-to-boost-quantum-industry-and-force-crypto-transition-11537646.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "With a regulation, a tech fund and stricter IT procurement rules, Brussels wants to make Europe more independent in quantum computing and protect data.",
+     "published": "2026-11-25T13:33:00+00:00"
     }
    ],
    "topics": [
     "AI",
-    "Supply chain security"
+    "TLS & PKI"
    ]
   },
   {
@@ -5592,6 +5953,14 @@
      "url": "https://joho-todai.com/en/drupal-cve-2026-132165-anthropic-ai-exploit/",
      "summary": "A critical Drupal vulnerability has been exploited on live websites. Anthropic's OSS Scanner discovered the flaw. The US Cybersecurity and Infrastructure Security Agency (CISA) added it to the Known Exploited Vulnerabilities (KEV) Catalog and is also requiring affected federal agencies to conduct initial forensic…",
      "published": "2026-11-25T12:53:54+00:00"
+    },
+    {
+     "id": "96e0d4693ae7",
+     "source": "Help Net Security",
+     "title": "Critical Drupal installer flaw under active attack (CVE-2026-132165)",
+     "url": "https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/",
+     "summary": "Attackers have been exploiting CVE-2026-132165, a flaw that lets them take over unpatched Drupal sites without logging in, since at least November 19, the Drupal Security Team has warned.",
+     "published": "2026-11-25T13:37:28+00:00"
     }
    ],
    "topics": [
@@ -5766,6 +6135,19 @@
    "also_covered_by": [],
    "topics": [
     "Higher education"
+   ]
+  },
+  {
+   "id": "f5fa6230077d",
+   "title": "CrowdStrike Accelerates the Shift to the Agentic SOC",
+   "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-isoc/",
+   "source": "CrowdStrike Blog",
+   "source_category": "Threat research",
+   "published": "2026-11-25T08:00:00+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT"
    ]
   },
   {
@@ -7247,7 +7629,8 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
-   ]
+   ],
+   "follow_up_of": "44ee8f3c7483"
   },
   {
    "id": "31f0280641f3",
@@ -7351,6 +7734,14 @@
      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline.",
      "published": "2026-11-25T12:30:08+00:00"
+    },
+    {
+     "id": "42e5efc084c6",
+     "source": "SecurityWeek",
+     "title": "US Treasury’s FinCEN Disconnects Systems Following Cyber Incident",
+     "url": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
+     "summary": "FinCEN has extended deadlines for filers affected by the disruptions while it is investigating the incident.",
+     "published": "2026-11-25T13:39:21+00:00"
     }
    ],
    "topics": [
