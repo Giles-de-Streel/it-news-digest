@@ -1,12 +1,12 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T17:16:17+00:00",
+ "generated": "2026-11-26T17:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 77,
+   "fetched": 78,
    "recent": 0,
    "error": null
   },
@@ -1878,7 +1878,7 @@
   {
    "source": "Terence Tao",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 17,
-   "recent": 8,
+   "fetched": 19,
+   "recent": 9,
    "error": null
   },
   {
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,70 @@
   }
  ],
  "items": [
+  {
+   "id": "e71b6b244e9e",
+   "title": "Ubuntu 27.04 Snapshot 1 Released For Testing",
+   "url": "https://www.phoronix.com/news/Ubuntu-27.04-Snapshot-1",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-26T17:21:13+00:00",
+   "summary": "For those with extra time around the US Thanksgiving holiday, the first Tenacious Snapshot 1 was just released today as the first stepping stone toward Ubuntu 27.04...",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "b26dde8a021a",
+   "title": "CVE-2026-135279: @fastify/express is the plugin that lets an application run Express middleware and Express applications…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135279",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T17:17:06.490000+00:00",
+   "summary": "@fastify/express is the plugin that lets an application run Express middleware and Express applications inside the Fastify web framework. In versions before 4.0.14, a request with an empty dynamic route parameter reaches a Fastify route handler while middleware mounted for that path inside an Express Router or…",
+   "kind": "cve",
+   "cve": "CVE-2026-135279",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-135279",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "697fa7c86561",
+   "title": "QCon San Francisco 2026: How to Kill the Code Review",
+   "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-26T17:16:00+00:00",
+   "summary": "Ankit Jain of Aviator told QCon San Francisco 2026 that line-by-line code review is already fading, since most review comments concern knowledge sharing rather than defects and over 75% of PRs merge without human review. He proposed six layers: argue, capture, codify, prove, debate, own.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "06ce8cc99253",
+   "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+   "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-26T17:15:27+00:00",
+   "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Hardware",
+    "Identity & access"
+   ]
+  },
   {
    "id": "77c3b83c4c21",
    "title": "Tech's outage problem needs maintenance, not conspiracy theories",
@@ -2592,6 +2656,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "4fdce5f029af",
+   "title": "One guy is doing an hunger strike at Anthropic, currently in his 3rd day",
+   "url": "https://twitter.com/ElliotC1/status/2125689373337489419",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-26T16:55:15+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -6202,7 +6279,16 @@
    "source_category": "IT industry",
    "published": "2026-11-26T11:37:17+00:00",
    "summary": "",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "1d45997e4997",
+     "source": "Hacker News",
+     "title": "AMD Specific Patches for Llama.cpp",
+     "url": "https://devnull.land/amd-specific-llama-cpp",
+     "summary": "Comments",
+     "published": "2026-11-26T17:11:29+00:00"
+    }
+   ],
    "topics": [
     "Hardware"
    ]
@@ -8139,6 +8225,14 @@
      "url": "https://www.heise.de/en/news/OpenAI-corrects-billing-error-GPT-6-2-limits-arrive-sooner-11539518.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
      "summary": "OpenAI undercounted GPT-6.2 Astra and Sol usage. After the correction, paying users will hit their limits much sooner.",
      "published": "2026-11-26T15:45:00+00:00"
+    },
+    {
+     "id": "27f35f09a947",
+     "source": "The Decoder",
+     "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error",
+     "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+     "summary": "OpenAI says a billing bug gave GPT-6.2 users incorrect discounts. After the fix, Astra and Sol users hit their limits 40 and 25 percent faster than last week. As an apology, subscribers get an extra reset, and business users get free Fast Mode through year-end. OpenAI is also testing a Chat and Work mode merger.",
+     "published": "2026-11-26T17:28:56+00:00"
     }
    ],
    "topics": [
