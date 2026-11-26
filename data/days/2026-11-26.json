@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T14:00:57+00:00",
+ "generated": "2026-11-26T14:16:07+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 27,
+   "recent": 28,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -324,7 +324,7 @@
   {
    "source": "Erik Darling",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -347,9 +347,9 @@
   },
   {
    "source": "Oracle-Base",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "URLError: <urlopen error [Errno 111] Connection refused>"
   },
   {
    "source": "dbi services",
@@ -504,7 +504,7 @@
   {
    "source": "Forensic Focus",
    "fetched": 16,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -1680,7 +1680,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 30,
+   "recent": 31,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 33,
+   "fetched": 99,
+   "recent": 35,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 16,
+   "fetched": 17,
    "recent": 7,
    "error": null
   },
@@ -2183,7 +2183,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 78,
+   "fetched": 76,
    "recent": 14,
    "error": null
   },
@@ -2250,7 +2250,7 @@
   {
    "source": "Vates Blog",
    "fetched": 15,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,77 @@
  ],
  "items": [
   {
+   "id": "52c57e8edfac",
+   "title": "CISA Issues Alert After Danfoss Reveals Critical Flaw in Fridge Controllers",
+   "url": "https://www.infosecurity-magazine.com/news/cisa-alert-danfoss-critical-flaw/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-26T14:15:00+00:00",
+   "summary": "Food retailers are in the firing line again after manufacturer Danfoss issued an alert about a critical new flaw",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "6bfbd1a9970d",
+   "title": "How to improve AI agents over time with models, harnesses, and context",
+   "url": "https://4sysops.com/archives/how-to-improve-ai-agents-over-time-with-models-harnesses-and-context/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-26T14:14:37+00:00",
+   "summary": "Harrison Chase, the co-founder and CEO of LangChain — a company that develops an open-source framework and platform for creating and managing LLM-powered agents. He splits an agent into three parts, the model, the harness, and the context, and explains how each can improve over time.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "6defd67066e1",
+   "title": "Security updates for Thursday",
+   "url": "https://lwn.net/Articles/1109990/",
+   "source": "LWN.net",
+   "source_category": "Development",
+   "published": "2026-11-26T14:06:22+00:00",
+   "summary": "Security updates have been issued by AlmaLinux (cifs-utils, cjose, cockpit-machines, containernetworking-plugins, dhcp, edk2, firewalld, fltk, freerdp, gdm, ghostscript, grafana, kernel, librabbitmq, netpbm, nginx:1.24, nginx:1.26, openscap, openssl, php, python-botocore, qt6-qt3d, resource-agents, rsync, ruby,…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development",
+    "DevOps & SRE",
+    "TLS & PKI",
+    "Networking"
+   ]
+  },
+  {
+   "id": "2512a65d290b",
+   "title": "Wyoming uranium operation shuts down after cyberattack",
+   "url": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-26T14:02:00+00:00",
+   "summary": "Peninsula Energy says plant and wellfield control systems were affected, with no restart date yet",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "0d9cc4074b66",
+   "title": "Virtualization platform or orchestrator: who actually builds your hypervisor?",
+   "url": "https://vates.tech/blog/virtualization-platform-vs-orchestrator/",
+   "source": "Vates Blog",
+   "source_category": "Virtualization",
+   "published": "2026-11-26T14:00:53+00:00",
+   "summary": "Most virtualization products are management layers sitting on a hypervisor someone else develops. Here's how to tell a platform from an orchestrator, why the difference shows up the day a hypervisor vulnerability lands, and five questions to put to any vendor.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
    "id": "5e1ac3493a0d",
    "title": "Sketchy suggestion of ceramic iPhone 20 Pro",
    "url": "https://9to5mac.com/2026/11/26/sketchy-suggestion-of-ceramic-iphone-20-pro/",
@@ -2554,6 +2625,33 @@
    ]
   },
   {
+   "id": "d8547743f2a6",
+   "title": "Solo developer vibe codes a gallery hosting 36 classic GPU demos",
+   "url": "https://www.tomshardware.com/video-games/retro-gaming/solo-developer-vibe-codes-a-gallery-hosting-36-classic-gpu-demos-preservation-effort-includes-3dfx-voodoo-showcases-from-1997-nvidia-bubble-and-more",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T14:00:00+00:00",
+   "summary": "A solo developer known as arkits has created an online gallery to view classic 3D graphics demos live in the browser.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "91f824dd5bca",
+   "title": "How to Parse and Insert Blobs… Fast",
+   "url": "https://erikdarling.com/how-to-parse-and-insert-blobs-fast/",
+   "source": "Erik Darling",
+   "source_category": "Databases",
+   "published": "2026-11-26T14:00:00+00:00",
+   "summary": "How to Parse and Insert Blobs… Fast Chapters 00:00:00 – Introduction: The Blob Problem 00:05:05 – Temp Tables and Logging Setup 00:05:23 – Values Clause Approaches 00:06:03 – UNION ALL and XML 00:06:48 – OPENJSON 00:07:11 – Testing Every Method With a Cursor 00:08:43 – Results: Singleton, Values, and UNION ALL…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "5240bd51b9cd",
    "title": "CPU Price Index 2026",
    "url": "https://www.tomshardware.com/gift-guides-seasonal-sales/lowest-cpu-prices-2026",
@@ -2564,6 +2662,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "e1c8f93e3adc",
+   "title": "Claude-Assisted Formal Proof of the Riemann Hypothesis Cut to About 76,000 Lines and Independently Verified",
+   "url": "https://joho-todai.com/en/claude-riemann-hypothesis-formal-proof-76000-lines/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:56:09+00:00",
+   "summary": "A formal proof of the Riemann hypothesis that spanned about 17 million lines has been rewritten. A compact edition and a readability-focused edition are now public, and independent checks confirmed that they prove the same five theorems as the original.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2580,6 +2691,20 @@
    ]
   },
   {
+   "id": "a328e7dd0d6f",
+   "title": "Finding Victims Faster: Semantics 21 on the Hidden Clues in Digital Media",
+   "url": "https://www.forensicfocus.com/podcast/finding-victims-faster-semantics-21-on-the-hidden-clues-in-digital-media/",
+   "source": "Forensic Focus",
+   "source_category": "Forensics & IR",
+   "published": "2026-11-26T13:51:58+00:00",
+   "summary": "Tom Oldroyd of Semantics 21 joins the Forensic Focus Podcast to discuss how digital forensic investigators can uncover geolocation clues, detect AI-generated content and verify the authenticity of images, videos and PDFs.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Forensics & IR"
+   ]
+  },
+  {
    "id": "378a0aab9d2f",
    "title": "Google may have crossed a line as it's allegedly warning YouTubers for linking to Firefox",
    "url": "https://www.neowin.net/news/google-may-have-crossed-a-line-as-its-allegedly-warning-youtubers-for-linking-to-firefox/?utm_source=rss",
@@ -2590,6 +2715,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "dd2a31217c53",
+   "title": "FOSS Weekly #26.48: Owl OS, KDE's New Terminal, CachyOS' Gaming Kernel, Quoth and More Linux Stuff",
+   "url": "https://feed.itsfoss.com/link/24361/17541405/foss-weekly-26-48",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-11-26T13:48:28+00:00",
+   "summary": "Happy Thanksgiving, Linux folks.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Game development"
    ]
   },
   {
@@ -2605,6 +2744,35 @@
     "Threats & malware",
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "487094e875cc",
+   "title": "Dutch Government Works With EU, Germany, and France to Block U.S. Chip Equipment Bill and Weighs Options if It Passes",
+   "url": "https://joho-todai.com/en/netherlands-blocks-us-semiconductor-export-restrictions-china/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:42:59+00:00",
+   "summary": "The Dutch government is working with the European Commission, Germany, and France to keep the MATCH Act, which would restrict exports of chipmaking equipment to China, out of the U.S. defense authorization bill. If the measure becomes law, the Netherlands plans to ask the U.S. government not to enforce it.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "075a8ab577c1",
+   "title": "Steam's 64-Bit Linux Update Breaks Rendering on Some PCs: Missing /dev/nvidia-modeset May Be to Blame",
+   "url": "https://joho-todai.com/en/linux-steam-64bit-graphics-issue-nvidia-modeset/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:37:58+00:00",
+   "summary": "Some Linux systems combining integrated graphics with an NVIDIA GPU have reported rendering problems after Steam moved to 64-bit. Several users restored rendering by creating the missing device file, and games also ran normally with a proposed fix.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware",
+    "Backup & recovery"
    ]
   },
   {
@@ -6128,7 +6296,16 @@
    "source_category": "Hardware",
    "published": "2026-11-26T07:23:03+00:00",
    "summary": "All the best Black Friday deals for tech and PC hardware.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f1162232167a",
+     "source": "9to5Mac",
+     "title": "Best Apple Black Friday Thanksgiving deals: AirPods, MacBook, Apple Watch, AirTag 2, more",
+     "url": "https://9to5mac.com/2026/11/26/best-apple-black-friday-thanksgiving-deals/",
+     "summary": "Amazon has now launched its massive Thanksgiving Black Friday sale and the deals are seriously wild on Apple gear. Not only do we have AirPods Pro 3 at $100 off the list price, but you can now score M5 MacBook Air is at a insane $400 off the list price, MacBook Neo is $100 off , the brand M6 MacBook Pro is $220 off ,…",
+     "published": "2026-11-26T14:05:19+00:00"
+    }
+   ],
    "topics": [
     "General IT"
    ]
