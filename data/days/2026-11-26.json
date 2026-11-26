@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T12:16:07+00:00",
+ "generated": "2026-11-26T12:31:31+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 25,
+   "recent": 26,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 40,
-   "recent": 40,
+   "fetched": 39,
+   "recent": 39,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 19,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 149,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -749,9 +749,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 79,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Electronic Design",
@@ -1151,7 +1151,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -1680,7 +1680,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 26,
+   "recent": 29,
    "error": null
   },
   {
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 5,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Terence Tao",
@@ -1884,14 +1884,14 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 31,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Game Developer",
@@ -2009,9 +2009,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 16,
-   "recent": 7,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Microsoft 365 status",
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,116 @@
   }
  ],
  "items": [
+  {
+   "id": "74049334b023",
+   "title": "Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands",
+   "url": "https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/",
+   "source": "Infosecurity Magazine",
+   "source_category": "Security",
+   "published": "2026-11-26T12:30:00+00:00",
+   "summary": "Aikido found 42 phishing pages on Hugging Face Spaces, two-thirds made with its AI site builder",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "AI"
+   ]
+  },
+  {
+   "id": "d8ec8fb5b6ac",
+   "title": "Fortitude Capital plans 202MW AI data center campus in Sines, Portugal",
+   "url": "https://www.datacenterdynamics.com/en/news/fortitude-capital-plans-a-202-mw-ai-campus-in-sines/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-26T12:25:00+00:00",
+   "summary": "Fortitude Capital expands investment activities to include digital infrastructure",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Higher education"
+   ]
+  },
+  {
+   "id": "9d22bb49ad90",
+   "title": "Best Mac Black Friday deals: $400 off MacBook Air, Neo $100 off, $220 off M6, PROLED, more",
+   "url": "https://9to5mac.com/2026/11/26/best-mac-black-friday-deals/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:22:23+00:00",
+   "summary": "We are moving into Day 6 of the massive Amazon Black Friday sale with many of the best Apple deals of the year. Alongside the wild $100 price drop on AirPods Pro 3 and the new OLED iPad mini at $100 off , we are also catching some even lower MacBook deals headlined by the new M6 Pro at $220 off (All-time low) and an…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "d5409a330673",
+   "title": "X finally gets six parental controls for teen accounts, but kids must consent",
+   "url": "https://9to5mac.com/2026/11/26/x-finally-gets-six-parental-controls-for-teen-accounts-but-kids-must-consent/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:19:54+00:00",
+   "summary": "Most social media platforms have long had parental controls to give oversight into the ways teens are using the service and to ensure they get appropriate content in their feeds. X has finally joined the party.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e2a40aad6a42",
+   "title": "PS5 Reportedly Shut Down During GTA VI: Diagnostics Show APU Power and SSD Errors",
+   "url": "https://joho-todai.com/en/gta-vi-ps5-power-failure-apu-ssd-error/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:17:47+00:00",
+   "summary": "A repair technician published diagnostic results from a PS5 that reportedly shut down repeatedly during Grand Theft Auto VI (GTA VI). The technician said SSD controller errors followed errors in the APU's power supply circuitry.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Game development"
+   ]
+  },
+  {
+   "id": "3e7cbdc05736",
+   "title": "Trump administration pressured Intel into accepting gov’t stake in company, lawsuit documents allege",
+   "url": "https://www.datacenterdynamics.com/en/news/trump-administration-pressured-intel-into-accepting-govt-stake-in-company-lawsuit-documents-allege/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-26T12:17:06+00:00",
+   "summary": "Commerce Dep’t lawyer reportedly told chipmaker rejection of deal would have “consequences” he “cannot predict”",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "82194e560b81",
+   "title": "JR East to Install Film-Type Perovskite Solar Cells on a Shinagawa Station Platform Roof",
+   "url": "https://joho-todai.com/en/jr-east-shinagawa-station-perovskite-solar-cells/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:12:37+00:00",
+   "summary": "JR East will install film-type perovskite solar cells on the roof of the platform serving tracks 3 and 4 at Shinagawa Station. The cells are expected to power platform lighting and other equipment starting in the first half of fiscal 2027, testing how lightweight, flexible solar cells can be used at existing railway…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "b0f45703d03b",
+   "title": "Cornelia Biacsics: Contributions for week 46",
+   "url": "https://postgr.es/p/9DK",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-26T12:12:13+00:00",
+   "summary": "PGConf.Asia 2026 happened from 17-18 November 2026, organized by Grant Zhou Joanne Huang Bruce Momjian Hari Kiran Julyanto Sutandang Gavin Lyu Tatsuro Yamada Ioseph Kim Mark Wong Ashish Mehra Guohua Bai Henry Law Speakers: Agnafan Fortin Ajit Gadge Amelia Khoirurrahma Atsushi MITANI Avinash Vallarapu Bruce Momjian…",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
   {
    "id": "4f157e5196fc",
    "title": "Windows 11 Enhances Security Key Sign-In with NFC Tap Location Indicator",
@@ -2605,6 +2715,19 @@
    ]
   },
   {
+   "id": "e1ac73a69ed9",
+   "title": "Dressmaker review – delightful business sim is a cut above",
+   "url": "https://www.theguardian.com/games/2026/nov/26/dressmaker-review-delightful-business-sim-is-a-cut-above",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:00:34+00:00",
+   "summary": "PC; Cosy Lives/Free Lives Catering to the exacting whims of a small town preparing for some grand visitors presents absorbing, beautifully designed – and surprisingly thrilling – challenges The small town of Twillford is abuzz with intrigue and excitement.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "f4ac95dd7871",
    "title": "NASA’s Perseverance and Odyssey Teams Investigate Technical Issues",
    "url": "https://hackaday.com/2026/11/26/nasas-perseverance-and-odyssey-teams-investigate-technical-issues/",
@@ -2658,6 +2781,19 @@
    ]
   },
   {
+   "id": "ced3bb91d5cc",
+   "title": "Proton Pass is up to 60% off for Black Friday, and it does way more than just store your passwords",
+   "url": "https://9to5mac.com/2026/11/26/proton-pass-is-up-to-60-off-for-black-friday-and-it-does-way-more-than-just-store-your-passwords-sponsored/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:00:00+00:00",
+   "summary": "There’s a familiar interruption that comes with shopping online: you’ve found what you want, you’re ready to check out, and the store asks you to sign in. Was this the account with your usual password? Did you change it last time? Is it easier to reset it again?",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
    "id": "45713b1cdeba",
    "title": "NielsenIQ: GTA 6 boosts UK games retail revenue by 99% to £142m during launch period",
    "url": "https://www.gamesindustry.biz/nielseniq-gta-6-boosts-uk-games-retail-revenue-by-99-to-142m-during-launch-period",
@@ -2681,6 +2817,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "a4dbcc4f189e",
+   "title": "AI-Generated Case Citations and Statements in UK Courts Prompt Proposal to Protect Witnesses' Own Words",
+   "url": "https://joho-todai.com/en/ai-generated-fake-cases-uk-court-rules/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T11:52:06+00:00",
+   "summary": "Fabricated case citations and AI-drafted victim statements have raised concerns in courts in England and Wales. A Civil Justice Council working group has proposed requiring factual witnesses in civil cases to declare that AI did not generate or influence the substantive content of their statements.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -4184,6 +4333,19 @@
    ]
   },
   {
+   "id": "6c5ca138516e",
+   "title": "USN-9209-1: Simple DirectMedia Layer vulnerability",
+   "url": "https://ubuntu.com/security/notices/USN-9209-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T09:14:33+00:00",
+   "summary": "It was discovered that Simple DirectMedia Layer incorrectly handled memory when encountering errors during OpenGL ES streaming texture creation. An attacker could possibly use this issue to cause applications using Simple DirectMedia Layer to consume resources, resulting in a denial of service.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "a5a99e1eb73a",
    "title": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
    "url": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
@@ -5395,13 +5557,13 @@
    ]
   },
   {
-   "id": "4c3fd75bf8ee",
-   "title": "Unscheduled Windows Server 2025 update fixes crash bug",
-   "url": "https://www.heise.de/en/news/Unscheduled-Windows-Server-2025-update-fixes-crash-bug-11538692.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
-   "source": "heise online (English)",
+   "id": "16bed08c62d1",
+   "title": "Microsoft hotpatches hotpatch that could crash Windows Server 2025",
+   "url": "https://www.theregister.com/os-platforms/2026/11/26/microsoft-hotpatches-hotpatch-that-could-crash-windows-server-2025/5312301",
+   "source": "The Register",
    "source_category": "IT industry",
    "published": "2026-11-26T05:58:02+00:00",
-   "summary": "Windows Server 2025 systems with November Patch Tuesday hotpatches may crash with Stop error 0x139. An update fixes it.",
+   "summary": "Expiring IPv6 routes can bring affected systems down, though corrective update doesn't require a restart",
    "also_covered_by": [
     {
      "id": "f542346c83c5",
@@ -5418,6 +5580,14 @@
      "url": "https://4sysops.com/archives/windows-server-2025-hotpatch-fixes-ipv6-route-timer-crashes-without-a-reboot/",
      "summary": "Microsoft’s out-of-band KB5138318 hotpatch fixes a crash on Windows Server 2025 systems that use Router Advertisement and time-limited IPv6 routes. The failure can trigger stop error 0x139 when a route timer expires, following November’s KB5131077 hotpatch. The fix installs without a restart. Source",
      "published": "2026-11-26T10:01:00+00:00"
+    },
+    {
+     "id": "4c3fd75bf8ee",
+     "source": "heise online (English)",
+     "title": "Unscheduled Windows Server 2025 update fixes crash bug",
+     "url": "https://www.heise.de/en/news/Unscheduled-Windows-Server-2025-update-fixes-crash-bug-11538692.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "Windows Server 2025 systems with November Patch Tuesday hotpatches may crash with Stop error 0x139. An update fixes it.",
+     "published": "2026-11-26T05:58:02+00:00"
     }
    ],
    "topics": [
