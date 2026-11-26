@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T13:01:21+00:00",
+ "generated": "2026-11-26T13:15:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 26,
+   "recent": 27,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 49,
+   "recent": 50,
    "error": null
   },
   {
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 19,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -624,7 +624,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -647,8 +647,8 @@
   },
   {
    "source": "Proxmox Security Advisories",
-   "fetched": 77,
-   "recent": 2,
+   "fetched": 82,
+   "recent": 7,
    "error": null
   },
   {
@@ -696,7 +696,7 @@
   {
    "source": "Infosecurity Magazine",
    "fetched": 250,
-   "recent": 10,
+   "recent": 11,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 39,
+   "recent": 38,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "fetched": 5,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Terence Tao",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 32,
+   "fetched": 98,
+   "recent": 35,
    "error": null
   },
   {
@@ -2124,7 +2124,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
+   "fetched": 7,
    "recent": 0,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,152 @@
  ],
  "items": [
   {
+   "id": "93095fbd118b",
+   "title": "Stale links on UK public sector websites direct visitors to gambling dens",
+   "url": "https://www.theregister.com/public-sector/2026/11/26/stale-links-on-uk-public-sector-websites-direct-visitors-to-gambling-dens/5312049",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:15:00+00:00",
+   "summary": "Consultancy finds 93 routes to casino promotions across 26 orgs, with defunct enterprise partnership domains repurposed",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "e5af8b7017cb",
+   "title": "Proxmox Mail Gateway PSA-2026-00108-1: rrdcached arbitrary file write",
+   "url": "https://forum.proxmox.com/posts/876871/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:13:34+00:00",
+   "summary": "Packages: rrdcached. The rrdcached systemd integration used by Proxmox VE and Proxmox Mailgateway allowed arbitrary local users to write to the rrdcached socket, and the rrdcached instance was not configured with a basepath restriction in place.",
+   "also_covered_by": [],
+   "topics": [
+    "System administration"
+   ]
+  },
+  {
+   "id": "9c659a3f92e2",
+   "title": "Proxmox VE PSA-2026-00107-1: Identity confusion in authentication ticket handling",
+   "url": "https://forum.proxmox.com/posts/876869/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:11:49+00:00",
+   "summary": "Packages: pve-access-control. In some code paths, tickets created for authenticated users with a username starting with tfa! were interpreted as as TFA tickets for the corresponding user with the tfa! prefix stripped.",
+   "also_covered_by": [],
+   "topics": [
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "37fdd1bb853a",
+   "title": "The UK FCA says it plans to require DeFi platforms to obtain authorization, adopting a stricter stance than the US and the EU after the $6.3B Binance hack",
+   "url": "https://www.techmeme.com/261126/p17#a261126p17",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:10:04+00:00",
+   "summary": "Financial Times : The UK FCA says it plans to require DeFi platforms to obtain authorization, adopting a stricter stance than the US and the EU after the $6.3B Binance hack — FCA points to Binance heist and ‘lack of consumer protections’ as reasons for tighter regulation of decentralised finance than in US and EU",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "d4a6db7b3364",
+   "title": "PostgreSQL security advisory (AV26-1211)",
+   "url": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211",
+   "source": "Canadian Centre for Cyber Security",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:09:51+00:00",
+   "summary": "Serial Number: AV26-1211 Date: November 26, 2026 As of November 25, 2026, PostgreSQL is affected by vulnerabilities in the following product: psqlODBC Prior to or equal to 18.00.0006 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases",
+    "System administration"
+   ]
+  },
+  {
+   "id": "5751b3385fd4",
+   "title": "Proxmox VE PSA-2026-00106-1: Incomplete ACL checks during backup prune dry-run",
+   "url": "https://forum.proxmox.com/posts/876867/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:09:18+00:00",
+   "summary": "Packages: libpve-storage-perl. Incomplete ACL checks during execution of a backup pruning dry-run could leak the existence of backup archives that are otherwise not visible to an attacker. This issue was found internally, and was later reported independently by Yuliang Xiao xyl1509410143@outlook.com >.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "24f1ce0123a9",
+   "title": "Proxmox VE PSA-2026-00105-1: Missing redaction of sensitive information in system report",
+   "url": "https://forum.proxmox.com/posts/876866/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:08:41+00:00",
+   "summary": "Packages: pve-manager. Sensitive information such as cloud-init data is contained in the generated system report. An attacker with the Sys.Audit privilege on the node can leak information that they otherwise do not have access to. This issue was discovered internally. Fixed in : - pve-manager >= 9.2.29",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "fcc13771cbcf",
+   "title": "Proxmox VE PSA-2026-00104-1: Missing VM.PowerMgmt check during live restore and snapshot rollback",
+   "url": "https://forum.proxmox.com/posts/876865/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:06:32+00:00",
+   "summary": "Packages: qemu-server, pve-container. Incomplete privilege checks when triggering a live-restore or rollback to a snapshot with RAM state allowed a user without VM.PowerMgmt to start a VM. Conversely it was also possible to stop a running guest, when triggering a rollback to a snapshot without having VM.PowerMgmt .",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "f69b0ec4a4dd",
+   "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
+   "url": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "source_category": "Security",
+   "published": "2026-11-26T13:04:06+00:00",
+   "summary": "Tracked as CVE-2026-103406, the vulnerability allows remote attackers to execute arbitrary commands as root.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-103406",
+     "score": 9.8,
+     "severity": "Critical",
+     "version": "3.1",
+     "scored_by": "juniper"
+    }
+   ],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-103406",
+      "added": "2026-11-25",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-103406",
+     "score": 0.0086,
+     "percentile": 0.56019,
+     "date": "2026-11-25"
+    }
+   }
+  },
+  {
    "id": "91272e525867",
    "title": "Microchip AVR SD MCUs Achieve UL Recognition",
    "url": "https://www.embedded.com/microchip-avr-sd-mcus-achieve-ul-recognition/",
@@ -2524,6 +2670,19 @@
    "also_covered_by": [],
    "topics": [
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "84e2117a560c",
+   "title": "TSMC's A14 1.4nm-class node is ready for chip design",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-a14-1-4nm-class-node-is-ready-for-chip-design-boost-cells-promise-14-percent-performance-uplift-or-23-percent-power-cut-over-n2p",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T13:00:00+00:00",
+   "summary": "TSMC announces availability of its version 0.9 process design kit for its A14 manufacturing technology. Availability of the v0.9 version of PDK signals that the fabrication process is generally ready for design and production.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2552,6 +2711,19 @@
     "Threats & malware",
     "Hardware",
     "Embedded & IoT"
+   ]
+  },
+  {
+   "id": "c30e0defc77e",
+   "title": "Israeli investors' American property dream turns into a financial nightmare",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fRHhIcDNxYnM4aVRJSTlCWXY4dDQwY096a3ZVUjFLOTNsNWFnd1hTUHp1VWdMbFBDSWxrQ0ZVM2gzQllKbUxIMFVyUS1Namo5NWJRODBzZWN3T2dWNXhrYTJ3OEJ6U28?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:57:00+00:00",
+   "summary": "Israeli investors' American property dream turns into a financial nightmare CTech",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -4409,7 +4581,16 @@
    "source_category": "IT industry",
    "published": "2026-11-26T09:50:00+00:00",
    "summary": "Attackers are combining two security flaws to target Palo Alto firewalls. Security patches are available for download.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f44a4fe488ab",
+     "source": "CSO Online",
+     "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
+     "url": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
+     "summary": "Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux.",
+     "published": "2026-11-26T13:05:35+00:00"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Networking"
@@ -5228,7 +5409,16 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-26T07:38:01+00:00",
    "summary": "GPT-6.2 users face tighter allowances than last week, while OpenAI offers one banked reset to subscribers on Go, Plus, Pro, and Business.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "f11cc5e9cfc3",
+     "source": "Techmeme",
+     "title": "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster",
+     "url": "https://www.techmeme.com/261126/p16#a261126p16",
+     "summary": "Graham Barlow / TechRadar : OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster — Too little, too late?",
+     "published": "2026-11-26T13:01:08+00:00"
+    }
+   ],
    "topics": [
     "AI"
    ]
@@ -6217,6 +6407,14 @@
      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
      "summary": "Comments",
      "published": "2026-11-26T09:44:23+00:00"
+    },
+    {
+     "id": "b1964969476d",
+     "source": "Infosecurity Magazine",
+     "title": "Google Cloud Requires AI Agents to Access Workspace Through Approved Methods",
+     "url": "https://www.infosecurity-magazine.com/news/google-cloud-ai-agents-workspace/",
+     "summary": "Google Cloud users will soon be required to use Workspace MCP servers or command line interface to connect AI agents to tools like Gmail, Google Drive or Docs",
+     "published": "2026-11-26T13:15:00+00:00"
     }
    ],
    "topics": [
