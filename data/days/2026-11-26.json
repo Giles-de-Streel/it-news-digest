@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T11:31:14+00:00",
+ "generated": "2026-11-26T11:46:00+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 13,
+   "recent": 14,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 24,
+   "recent": 25,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 44,
+   "recent": 45,
    "error": null
   },
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -588,7 +588,7 @@
   {
    "source": "CRN",
    "fetched": 19,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 148,
-   "recent": 27,
+   "fetched": 149,
+   "recent": 28,
    "error": null
   },
   {
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1266,7 +1266,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
+   "fetched": 15,
    "recent": 6,
    "error": null
   },
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
-   "recent": 1,
+   "fetched": 8,
+   "recent": 0,
    "error": null
   },
   {
@@ -2460,14 +2460,14 @@
   {
    "source": "Hugging Face blog",
    "fetched": 917,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,113 @@
   }
  ],
  "items": [
+  {
+   "id": "b012433ec834",
+   "title": "UK government working 'around the clock' on Capita contingency plans",
+   "url": "https://www.theregister.com/public-sector/2026/11/26/uk-government-working-around-the-clock-on-capita-contingency-plans/5312298",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-26T11:45:00+00:00",
+   "summary": "Minister says outsourcer should be 'absolutely ashamed' of pensions failures after CEO exits and shares plunge",
+   "also_covered_by": [],
+   "topics": [
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "bfc3a2fb5a3c",
+   "title": "RHSA-2026:103805: Critical: ruby security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:103805",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T11:39:55+00:00",
+   "summary": "An update for ruby is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e1ba75e871bf",
+   "title": "Cloudflare new Search for Agents makes website indexing a toggle",
+   "url": "https://4sysops.com/archives/cloudflare-new-search-for-agents-makes-website-indexing-a-toggle/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-26T11:38:25+00:00",
+   "summary": "Cloudflare’s AI Search indexes website content so AI agents can find relevant pages. Its new Search for Agents feature automates setup: turn it on for a zone, and Cloudflare creates an index, starts crawling the site, and publishes a searchable endpoint under the site’s domain.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "02a088434703",
+   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "source": "Hugging Face blog",
+   "source_category": "IT industry",
+   "published": "2026-11-26T11:37:17+00:00",
+   "summary": "",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "f9d959173c03",
+   "title": "F2FS Getting Ready With Its Large Folios Support",
+   "url": "https://www.phoronix.com/news/F2FS-Large-Folios-Coming",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-26T11:37:14+00:00",
+   "summary": "In recent months there has been a lot of work done by developer Nanzhe Zhao on implementing support for large folios for most readable/writable files with the F2FS file-system in its buffered I/O paths.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "3b679be60b9b",
+   "title": "Cardiology Associates of Mobile and Teklinks Pay $1.25M to Settle Data Breach Lawsuit",
+   "url": "https://www.hipaajournal.com/cardiology-associates-mobile-teklinks-data-breach-settlement/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-26T11:30:42+00:00",
+   "summary": "Cardiology Associates of Mobile and its IT service provider, Teklinks, Inc., have agreed to pay $1,250,000 to settle a class […]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "3df21423ac86",
+   "title": "Understanding \"You are not expected to understand this.\"",
+   "url": "https://www.taniwha.com/~paul/not.html",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-26T11:30:21+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f611fa26b52c",
+   "title": "Take-Two wipes out 3,007 GTA 6 PC port repos from GitHub in massive DMCA crackdown",
+   "url": "https://www.tomshardware.com/video-games/pc-gaming/take-two-wipes-out-3-007-gta-6-pc-port-repos-from-github-in-massive-dmca-crackdown-as-ai-tools-fuel-wave-of-unofficial-builds",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T11:30:00+00:00",
+   "summary": "Despite Take-Two's effort to shut down projects to port GTA VI, multiple projects have reported progress and could now run the game at lower frame rates on PCs.",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
   {
    "id": "d290a1ccc034",
    "title": "Proxmox VE PSA-2026-00103-1: nfs2root: pre-auth root RCE via nfsd",
@@ -2803,7 +2910,16 @@
    "source_category": "Security",
    "published": "2026-11-26T11:05:00+00:00",
    "summary": "Microsoft has confirmed nation-state actors’ deployment of the ARTEX in their tooling, while the CSA described the emergence of the tool as part of a “third wave” of AI-driven threats",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "fa2f0df7cd76",
+     "source": "The Decoder",
+     "title": "Microsoft details how state-backed hackers use the ARTEX AI framework to automate cyberattacks",
+     "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+     "summary": "Microsoft has published the technical architecture of ARTEX, an AI framework in wide use since July 2026 that runs cyberattacks with specialized agents and almost no human involvement. State-backed groups from China and North Korea, along with criminal organizations, are already using the system.",
+     "published": "2026-11-26T11:30:06+00:00"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "AI"
@@ -2874,6 +2990,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "27c41b73faa5",
+   "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+   "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-26T10:57:55+00:00",
+   "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware"
    ]
   },
   {
@@ -5669,7 +5798,16 @@
    "source_category": "Threat research",
    "published": "2026-11-25T08:00:00+00:00",
    "summary": "Learn how three real-world attacks turn ordinary user actions into full Microsoft 365 compromise, and what to fix before they land in your inbox.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "201e6e4e92d7",
+     "source": "SecurityWeek",
+     "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+     "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+     "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign.",
+     "published": "2026-11-26T11:35:25+00:00"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Ransomware & breaches",
