@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T22:16:12+00:00",
+ "generated": "2026-11-26T22:31:24+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 57,
-   "recent": 57,
+   "fetched": 56,
+   "recent": 56,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 126,
+   "fetched": 125,
    "recent": 32,
    "error": null
   },
@@ -1458,7 +1458,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1787,8 +1787,8 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 79,
-   "recent": 8,
+   "fetched": 69,
+   "recent": 9,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 96,
-   "recent": 29,
+   "recent": 28,
    "error": null
   },
   {
@@ -2183,7 +2183,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 76,
+   "fetched": 75,
    "recent": 16,
    "error": null
   },
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2460,7 +2460,7 @@
   {
    "source": "Hugging Face blog",
    "fetched": 918,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -2903,7 +2903,16 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-26T20:28:01+00:00",
    "summary": "Linux Mint 27 Beta is here with a set of new features, and you can download it right now. See what's new:",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "770dae15730a",
+     "source": "OMG! Ubuntu",
+     "title": "Linux Mint 27 beta is available to download",
+     "url": "https://www.omgubuntu.co.uk/2026/11/linux-mint-27-beta-download",
+     "summary": "Beta builds of Linux Mint 27 ‘Adrien’ have hit the distro’s official download mirrors, though there’s been no official announcement yet. Linux Mint 27 is based on Ubuntu 26.04 LTS and Linux 7.0 kernel. The main edition ships with Cinnamon 6.8 desktop. Versions with Xfce 4.20 and MATE 1.26 desktops are available too.",
+     "published": "2026-11-26T22:17:05+00:00"
+    }
+   ],
    "topics": [
     "Linux & open source"
    ]
@@ -9768,6 +9777,19 @@
    ]
   },
   {
+   "id": "4100763ee289",
+   "title": "USN-9205-1: LibTIFF vulnerabilities",
+   "url": "https://ubuntu.com/security/notices/USN-9205-1",
+   "source": "Ubuntu security notices",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T06:53:32+00:00",
+   "summary": "Ariel Schön discovered that LibTIFF did not correctly handle parsing certain PixarLog-compressed images. If a user or automated system were tricked into opening a specially crafted file, an attacker could possibly use this issue to cause a denial of service or execute arbitrary code.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "ad15b502f875",
    "title": "Possible Intel Razor Lake-AX Prototype Exposes Four Sets of Apparent Memory Contacts",
    "url": "https://joho-todai.com/en/razor-lake-ax-prototype-memory-contact-points/",
@@ -10422,6 +10444,14 @@
      "url": "https://www.neowin.net/news/nvidia-reportedly-halts-ai-server-shipments-to-four-southeast-asian-countries/?utm_source=rss",
      "summary": "The restrictions target Chinese AI developers renting computing power in the region, with cloud providers facing a 90-day deadline to obtain a US license.",
      "published": "2026-11-26T15:34:01+00:00"
+    },
+    {
+     "id": "b241efd65803",
+     "source": "Semafor Technology & Security",
+     "title": "Nvidia halts chip shipments to Southeast Asian countries",
+     "url": "https://www.semafor.com/article/11/26/2026/nvidia-halts-chip-shipments-to-southeast-asian-countries",
+     "summary": "Orders have been frozen for buyers in Malaysia, Singapore, Thailand, and Indonesia.",
+     "published": "2026-11-26T22:15:23+00:00"
     }
    ],
    "topics": [
