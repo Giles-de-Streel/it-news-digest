@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T16:01:20+00:00",
+ "generated": "2026-11-26T16:16:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -102,7 +102,7 @@
   {
    "source": "Slashdot",
    "fetched": 15,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -624,7 +624,7 @@
   {
    "source": "CSO Online",
    "fetched": 20,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 127,
+   "fetched": 124,
    "recent": 33,
    "error": null
   },
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 79,
    "recent": 0,
    "error": null
   },
@@ -1151,7 +1151,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 9,
+   "fetched": 10,
    "recent": 0,
    "error": null
   },
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1344,7 +1344,7 @@
   {
    "source": "Graham Cluley",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 31,
+   "recent": 32,
    "error": null
   },
   {
@@ -1716,14 +1716,14 @@
   {
    "source": "NBC News Tech",
    "fetched": 25,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
+   "fetched": 99,
    "recent": 38,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,86 @@
  ],
  "items": [
   {
+   "id": "e75a6a337c39",
+   "title": "A developer ran 50 agents at once. Then his Mac became the bottleneck.",
+   "url": "https://thenewstack.io/ai-agents-remote-sandboxes/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-26T16:12:29+00:00",
+   "summary": "As developers move from working with individual AI coding agents to orchestrating dozens of concurrent sessions, the hardware they use",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "6ffd309fca6a",
+   "title": "Electronics manufacturers set up memory 'war rooms' to find, lock in DRAM supplies amid worst shortage in history",
+   "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T16:11:07+00:00",
+   "summary": "The memory chip shortage is forcing companies to find supplies using non-traditional avenues, such as online listings and the gray market. Some have even taken out loans just to have enough cash to buy chips as soon as they become available.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "527cb35fbff2",
+   "title": "DXVK 3.2 Released with Improved Frame Pacing on Wayland",
+   "url": "https://linuxiac.com/dxvk-3-2-released-with-improved-frame-pacing-on-wayland/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-26T16:10:32+00:00",
+   "summary": "DXVK 3.2 improves Linux gaming with Vulkan present timing support, reduced Direct3D 11 stuttering, and better graphics memory handling.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Game development"
+   ]
+  },
+  {
+   "id": "e660b000e079",
+   "title": "UK workers at Rockstar Games vote against a union recognition deal, with only 25% voting in favor; source: 1,544 employees, or 93.2% of eligible workers, voted",
+   "url": "https://www.techmeme.com/261126/p21#a261126p21",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-26T16:10:01+00:00",
+   "summary": "Chris Kerr / Vertical Slice : UK workers at Rockstar Games vote against a union recognition deal, with only 25% voting in favor; source: 1,544 employees, or 93.2% of eligible workers, voted — UK workers at Grand Theft Auto maker Rockstar Games have voted against a union recognition deal that would have seen …",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "568c6d8fb3b2",
+   "title": "London Meetup - 13th December 2026",
+   "url": "https://lobste.rs/s/l8cjcz/london_meetup_13th_december_2026",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-26T16:09:08+00:00",
+   "summary": "Pub Address: The Counting House, 50 Cornhill, London, EC3V 3PD Date: Sunday 13th December 2026. Time: 1pm. Please do send me a direct message if you want to be added to the London Lobsters Whatsapp group.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "5209cf8f8976",
+   "title": "MacBook Neo vs MacBook Air: Which should you buy right now?",
+   "url": "https://9to5mac.com/2026/11/26/macbook-air-vs-macbook-neo-buying-guide/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-26T16:05:25+00:00",
+   "summary": "Apple’s Mac lineup is stronger than ever this year, largely thanks to the new MacBook Neo. If you’re deciding between the MacBook Neo and the MacBook Air this holiday season, here’s everything you need to know. MacBook Neo 256GB: $599 (Reg. $699) MacBook Neo 512GB with Touch ID: $699 (Reg.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "3869b5cda55e",
    "title": "Epic Games Store makes brutal co-op platformer Bread & Fred free to keep",
    "url": "https://www.neowin.net/news/epic-games-store-makes-brutal-co-op-platformer-bread--fred-free-to-keep/?utm_source=rss",
@@ -2524,6 +2604,48 @@
    "also_covered_by": [],
    "topics": [
     "Game development"
+   ]
+  },
+  {
+   "id": "99f52b4e0ccc",
+   "title": "Exploring the Indium phosphide supply chain — the material constraint tightening the optical interconnect bottleneck",
+   "url": "https://www.tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T16:00:00+00:00",
+   "summary": "The AI industry's shift to optical interconnects is overwhelming the concentrated InP supply chain behind lasers, transceivers, and co-packaged optics.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Supply chain security"
+   ]
+  },
+  {
+   "id": "0168d37e92da",
+   "title": "Nvidia stops AI GPU shipments to Southeast Asia amid purported China cloud access ban, report claims",
+   "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-stops-ai-gpu-shipments-to-southeast-asia-report-claims-data-centers-in-singapore-other-countries-in-trouble-as-commerce-department-requires-cloud-providers-to-obtain-export-license",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T16:00:00+00:00",
+   "summary": "Data centers in Singapore, Malaysia, Thailand, and Indonesia are now required to obtain export licenses if they want to get their Nvidia AI GPUs delivered.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "4fc8ebcf47a0",
+   "title": "Sponsored: From pipeline to power: what will determine which data centre projects get built?",
+   "url": "https://www.datacenterdynamics.com/en/opinions/from-pipeline-to-power-what-will-determine-which-data-centre-projects-get-built/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-26T16:00:00+00:00",
+   "summary": "The data centre pipeline is booming, but proposed capacity does not automatically translate into electricity demand. Understanding which projects are credible, and which can realistically secure power, is becoming essential",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -8132,13 +8254,13 @@
    ]
   },
   {
-   "id": "c1505f8746ac",
-   "title": "Why New York is banning AI chatbot toys",
-   "url": "https://www.malwarebytes.com/blog/ai/2026/11/why-new-york-is-banning-ai-chatbot-toys",
-   "source": "Malwarebytes Labs",
-   "source_category": "Threat research",
+   "id": "9cb91195499a",
+   "title": "New York Bans AI Toys For 5 Years",
+   "url": "https://slashdot.org/story/26/11/25/0455230/new-york-bans-ai-toys-for-5-years?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
    "published": "2026-11-26T05:51:26+00:00",
-   "summary": "New York’s five-year ban on making, distributing, and selling AI chatbot toys starts February 22, after the holiday shopping season.",
+   "summary": "New York Gov. Kathy Hochul signed legislation Tuesday banning the manufacture, exchange, distribution and sale of toys powered by AI chatbots for five years. \"The law will take effect 90 days after signing, meaning the restrictions will not be in place during this year's holiday shopping season,\" reports FOX…",
    "also_covered_by": [
     {
      "id": "e435481884ab",
@@ -8155,10 +8277,27 @@
      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-york-governor-kathy-hochul-signs-ban-on-ai-chatbot-toys-backed-by-usd15-000-daily-fines-takes-effect-in-90-days-after-holiday-rush",
      "summary": "New York Governor Kathy Hochul has signed a bill that effectively bans the sale of toys with built-in AI chatbots within the state over concerns about what they might say to kids.",
      "published": "2026-11-26T13:30:00+00:00"
+    },
+    {
+     "id": "c1505f8746ac",
+     "source": "Malwarebytes Labs",
+     "title": "Why New York is banning AI chatbot toys",
+     "url": "https://www.malwarebytes.com/blog/ai/2026/11/why-new-york-is-banning-ai-chatbot-toys",
+     "summary": "New York’s five-year ban on making, distributing, and selling AI chatbot toys starts February 22, after the holiday shopping season.",
+     "published": "2026-11-26T05:51:26+00:00"
+    },
+    {
+     "id": "8cc63523ba5c",
+     "source": "Graham Cluley",
+     "title": "New York bans AI chatbot toys – but not in time for Christmas",
+     "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/new-york-bans-ai-chatbot-toys",
+     "summary": "Talking teddies that describe massacres and help kids break bedtime rules? New York has had enough, and has banned AI chatbot toys for five years. Just not in time for Christmas.",
+     "published": "2026-11-26T15:28:04+00:00"
     }
    ],
    "topics": [
-    "AI"
+    "AI",
+    "Policy & regulation"
    ]
   },
   {
