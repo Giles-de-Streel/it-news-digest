@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T13:15:57+00:00",
+ "generated": "2026-11-26T13:30:59+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 39,
-   "recent": 39,
+   "fetched": 43,
+   "recent": 43,
    "error": null
   },
   {
@@ -318,7 +318,7 @@
   {
    "source": "Brent Ozar",
    "fetched": 4,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -594,7 +594,7 @@
   {
    "source": "MIT Technology Review",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -647,8 +647,8 @@
   },
   {
    "source": "Proxmox Security Advisories",
-   "fetched": 82,
-   "recent": 7,
+   "fetched": 88,
+   "recent": 13,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 79,
    "recent": 0,
    "error": null
   },
@@ -954,7 +954,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 98,
+   "fetched": 99,
    "recent": 35,
    "error": null
   },
@@ -2286,7 +2286,7 @@
   {
    "source": "Virtualization Howto",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2514,6 +2514,236 @@
  ],
  "items": [
   {
+   "id": "14b3e60e10f9",
+   "title": "Company was religious about backups but sinned by leaving them exposed",
+   "url": "https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:22:00+00:00",
+   "summary": "Never put the backup server in the same Windows domain as production",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "d741bd341d55",
+   "title": "Proxmox VE PSA-2026-00111-1: Out of bounds read in pvefw-logger",
+   "url": "https://forum.proxmox.com/posts/876876/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:20:42+00:00",
+   "summary": "Packages: pve-firewall. The pvefw-logger nflog daemon handling logging for pve-firewall and proxmox-firewall could be tricked with a crafted icmpv6 packet to read information past a packet and leak the memory contents into /var/log/pve-firewall.log .",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Networking"
+   ]
+  },
+  {
+   "id": "c45dad0755da",
+   "title": "Hints and hazards: pg_plan_advice in PG19",
+   "url": "https://clickhouse.com/blog/pg-plan-advice-postgresql-19",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-26T13:20:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f6cdcc5fc98b",
+   "title": "US defense officials considered using Cold War law to force Nvidia to reinstate Jensen Huang as CEO following his resignation, report claims",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/us-defense-officials-considered-using-cold-war-law-to-force-nvidia-to-reinstate-jensen-huang-as-ceo-following-his-resignation-report-claims-1950-defense-production-act-was-floated-as-solution-to-president-trump",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-26T13:17:31+00:00",
+   "summary": "Pentagon leaders considered using the Cold War-era Defense Production Act to pressure Nvidia to reinstate founder Jensen Huang as CEO following his resignation over an affair with a suspected Chinese spy, with",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "742d97a4d9f8",
+   "title": "CVE-2026-134481: Deserialization of Untrusted Data vulnerability in Ultimate Member Ultimate Member ultimate-member allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134481",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T13:16:41.717000+00:00",
+   "summary": "Deserialization of Untrusted Data vulnerability in Ultimate Member Ultimate Member ultimate-member allows Object Injection.This issue affects Ultimate Member: from n/a through 2.14.1.",
+   "kind": "cve",
+   "cve": "CVE-2026-134481",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-134481",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "31a4becbecb6",
+   "title": "CVE-2026-131767: Deserialization of Untrusted Data vulnerability in Aman FunnelKit Automations wp-marketing-automations allows…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131767",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T13:16:40.023000+00:00",
+   "summary": "Deserialization of Untrusted Data vulnerability in Aman FunnelKit Automations wp-marketing-automations allows Object Injection.This issue affects FunnelKit Automations: from n/a through 3.9.0.1.",
+   "kind": "cve",
+   "cve": "CVE-2026-131767",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-131767",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "6b452f54bf7d",
+   "title": "CVE-2026-124843: SEPPmail Secure Email Gateway before 15.1.2 uses a source-visible hard-coded fallback secret for legacy GINA…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124843",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T13:16:38.143000+00:00",
+   "summary": "SEPPmail Secure Email Gateway before 15.1.2 uses a source-visible hard-coded fallback secret for legacy GINA token and Large File Transfer cryptographic operations when expected key material is unavailable or unusable.",
+   "kind": "cve",
+   "cve": "CVE-2026-124843",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124843",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "TLS & PKI"
+   ]
+  },
+  {
+   "id": "e69c141f9e8d",
+   "title": "CVE-2026-124840: SEPPmail Secure Email Gateway before 15.1.2 reuses a broad legacy GINA session purpose across registration…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124840",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T13:16:37.760000+00:00",
+   "summary": "SEPPmail Secure Email Gateway before 15.1.2 reuses a broad legacy GINA session purpose across registration and recovery workflows. A remote attacker who knows an account security answer can use a recovery session in a different account workflow to replace credentials and account recovery data, and may delete the…",
+   "kind": "cve",
+   "cve": "CVE-2026-124840",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-124840",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "769b1fbeebad",
+   "title": "Proxmox Backup Server PSA-2026-00110-1: XSS in certificate information view",
+   "url": "https://forum.proxmox.com/posts/876875/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:16:32+00:00",
+   "summary": "Packages: pmg-gui, proxmox-backup-server, pve-manager, proxmox-widget-toolkit. Missing encoding of the Subject/Issuer DNs allowed an attacker with sufficient access to upload/configure attacker-controlled certificates to execute an XSS exploit on the web UI.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Backup & recovery",
+    "Networking"
+   ]
+  },
+  {
+   "id": "1d45c579b1b7",
+   "title": "The harness is dead. Long live the agent harness.",
+   "url": "https://4sysops.com/archives/the-harness-is-dead-long-live-the-agent-harness/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-26T13:16:32+00:00",
+   "summary": "Jediah Katz joined Cursor in early 2025 as its longest-tenured engineer working on the agent harness and later moved to SpaceX as part of Cursor’s acquisition. Studies cited by Katz found that newer models could achieve similar coding benchmark scores across different harnesses, suggesting they may no longer need…",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "f534efd229e9",
+   "title": "Proxmox Mail Gateway PSA-2026-00110-1: XSS in certificate information view",
+   "url": "https://forum.proxmox.com/posts/876874/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:16:28+00:00",
+   "summary": "Packages: pmg-gui, proxmox-backup-server, pve-manager, proxmox-widget-toolkit. Missing encoding of the Subject/Issuer DNs allowed an attacker with sufficient access to upload/configure attacker-controlled certificates to execute an XSS exploit on the web UI.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Backup & recovery",
+    "Networking"
+   ]
+  },
+  {
+   "id": "9b7ef86bbd33",
+   "title": "Proxmox VE PSA-2026-00110-1: XSS in certificate information view",
+   "url": "https://forum.proxmox.com/posts/876873/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:16:15+00:00",
+   "summary": "Packages: pmg-gui, proxmox-backup-server, pve-manager, proxmox-widget-toolkit. Missing encoding of the Subject/Issuer DNs allowed an attacker with sufficient access to upload/configure attacker-controlled certificates to execute an XSS exploit on the web UI.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Backup & recovery",
+    "Networking"
+   ]
+  },
+  {
+   "id": "0c4b50ab9534",
+   "title": "[Video] Office Hours: Reflecting on Microsoft Ignite from Cabo",
+   "url": "https://www.brentozar.com/archive/2026/11/video-office-hours-reflecting-on-microsoft-ignite-from-cabo/",
+   "source": "Brent Ozar",
+   "source_category": "Databases",
+   "published": "2026-11-26T13:15:42+00:00",
+   "summary": "Microsoft’s annual conference has come and gone, and it’s time to look back on the surprisingly light database news before taking your top-voted questions from https://pollgab.com/room/brento. Prefer listening to this via podcast? Good news!",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Databases"
+   ]
+  },
+  {
+   "id": "2f67a3c94a6b",
+   "title": "Dutch Court Hears Bid to Halt Meta AI Glasses Sales: Groups Seek Changes to Glasses Already Sold",
+   "url": "https://joho-todai.com/en/meta-ai-glasses-netherlands-sales-ban-hearing/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:15:08+00:00",
+   "summary": "On November 26 local time, the Amsterdam District Court began hearing applications for interim relief over Meta's camera-equipped AI glasses. The applicants seek a halt to sales and changes that would prevent glasses already sold from recording people without their explicit consent.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "93095fbd118b",
    "title": "Stale links on UK public sector websites direct visitors to gambling dens",
    "url": "https://www.theregister.com/public-sector/2026/11/26/stale-links-on-uk-public-sector-websites-direct-visitors-to-gambling-dens/5312049",
@@ -2527,12 +2757,47 @@
    ]
   },
   {
+   "id": "673f1d80976c",
+   "title": "Proxmox VE PSA-2026-00109-1: XSS in storage/Ceph views",
+   "url": "https://forum.proxmox.com/posts/876872/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:14:25+00:00",
+   "summary": "Packages: proxmox-widget-toolkit, pve-manager. Missing encoding of configuration or storage-provided values allowed a malicious Ceph cluster or admin with storage configuration privileges to execute an XSS attack on the PVE web UI. Fixed in : - pve-manager >= 9.2.27 - proxmox-widget-toolkit >= 5.2.13",
+   "also_covered_by": [
+    {
+     "id": "da0ebbc1feac",
+     "source": "Virtualization Howto",
+     "title": "Proxmox VE 9.3 Is Here With a Big Upgrade for Shared Storage",
+     "url": "https://www.virtualizationhowto.com/2026/11/proxmox-ve-9-3-is-here-with-a-big-upgrade-for-shared-storage/",
+     "summary": "Proxmox has been on a roll with news events it seems every week. We knew this would be imminent due to some of the rumblings we have been hearing. Proxmox…",
+     "published": "2026-11-26T12:45:00+00:00"
+    }
+   ],
+   "topics": [
+    "System administration"
+   ]
+  },
+  {
    "id": "e5af8b7017cb",
    "title": "Proxmox Mail Gateway PSA-2026-00108-1: rrdcached arbitrary file write",
    "url": "https://forum.proxmox.com/posts/876871/",
    "source": "Proxmox Security Advisories",
    "source_category": "Vendor advisories",
    "published": "2026-11-26T13:13:34+00:00",
+   "summary": "Packages: rrdcached. The rrdcached systemd integration used by Proxmox VE and Proxmox Mailgateway allowed arbitrary local users to write to the rrdcached socket, and the rrdcached instance was not configured with a basepath restriction in place.",
+   "also_covered_by": [],
+   "topics": [
+    "System administration"
+   ]
+  },
+  {
+   "id": "f399d4be9791",
+   "title": "Proxmox VE PSA-2026-00108-1: rrdcached arbitrary file write",
+   "url": "https://forum.proxmox.com/posts/876870/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-26T13:13:23+00:00",
    "summary": "Packages: rrdcached. The rrdcached systemd integration used by Proxmox VE and Proxmox Mailgateway allowed arbitrary local users to write to the rrdcached socket, and the rrdcached instance was not configured with a basepath restriction in place.",
    "also_covered_by": [],
    "topics": [
@@ -2566,6 +2831,19 @@
    ]
   },
   {
+   "id": "09d649482d52",
+   "title": "The Download: Better bionic hands and AI’s natural-gas boom",
+   "url": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
+   "source": "MIT Technology Review",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:10:00+00:00",
+   "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The next generation of bionic hands is here—and they can feel Avi Davidson lost his left hand as a teenager. Since then, he’s cycled through a few prosthetics. But his latest…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "d4a6db7b3364",
    "title": "PostgreSQL security advisory (AV26-1211)",
    "url": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211",
@@ -2578,6 +2856,20 @@
     "Vulnerabilities & patches",
     "Databases",
     "System administration"
+   ]
+  },
+  {
+   "id": "80b227364c62",
+   "title": "Unofficial GTA VI Patch Raises the Cap to 60 FPS at 120 Hz on Modded PS5 Consoles and Changes In-Game Timing",
+   "url": "https://joho-todai.com/en/gta-6-ps5-mod-120hz-60fps-patch/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:09:48+00:00",
+   "summary": "An unofficial patch for modified PS5 and PS5 Pro consoles raises GTA VI's 30 fps cap. It sets a ceiling of 60 fps at 120 Hz output and also changes how the game handles timing to address speed problems at higher frame rates.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Game development"
    ]
   },
   {
@@ -2660,6 +2952,21 @@
    }
   },
   {
+   "id": "f6242438c09b",
+   "title": "Google Changes API Pricing: Syncovery to End Google Drive Support in Older Versions",
+   "url": "https://joho-todai.com/en/google-api-pricing-syncovery-google-drive-support-ending/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T13:02:08+00:00",
+   "summary": "In response to Google's new API pricing, file sync and backup software Syncovery plans to end Google Drive support in older versions in March 2027. For software that uses shared credentials, users' requests can generate costs for the developer.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "Backup & recovery",
+    "Identity & access"
+   ]
+  },
+  {
    "id": "91272e525867",
    "title": "Microchip AVR SD MCUs Achieve UL Recognition",
    "url": "https://www.embedded.com/microchip-avr-sd-mcus-achieve-ul-recognition/",
@@ -2724,6 +3031,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "fec6accfa559",
+   "title": "Steam for Linux Users Report Excessive Writes to workshop_log.txt Even Without Home Directory Encryption",
+   "url": "https://joho-todai.com/en/linux-steam-workshop-log-excessive-writing/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:53:58+00:00",
+   "summary": "Excessive Steam Workshop writes have been reported on Linux. In earlier cases, Steam repeatedly wrote to disk after failing to fetch controller configurations even when no game was downloading.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -2845,6 +3165,39 @@
    "topics": [
     "Development"
    ]
+  },
+  {
+   "id": "a895d6446adc",
+   "title": "Debian 12 Kernel 6.1.192 Triggers Bluetooth Restart Loops and Reported PC Freezes",
+   "url": "https://joho-todai.com/en/debian-12-kernel-bluetooth-restart-loop/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:43:08+00:00",
+   "summary": "After a Debian 12 kernel update, the Bluetooth daemon can get stuck in a restart loop, with some PCs freezing. A fix for CVE-2025-21969 is a suspected cause, and Debian has asked upstream Linux developers to investigate.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development",
+    "System administration"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2025-21969",
+     "score": 8.8,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2025-21969",
+     "score": 0.00373,
+     "percentile": 0.23186,
+     "date": "2026-11-25"
+    }
+   }
   },
   {
    "id": "d60f554fff2a",
@@ -2974,7 +3327,16 @@
    "source_category": "Linux admin",
    "published": "2026-11-26T12:31:30+00:00",
    "summary": "Clonezilla Live 3.3.5-3 adds experimental ZFS support, local MDRAID disk cloning, and improvements to LVM operations.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e3dcc7f04a5a",
+     "source": "9to5Linux",
+     "title": "Clonezilla Live 3.3.5 Disk Imaging Tool Released with Linux 7.3, ZFS Support",
+     "url": "https://9to5linux.com/clonezilla-live-3-3-5-disk-imaging-tool-released-with-linux-7-3-zfs-support",
+     "summary": "Clonezilla Live 3.3.5 disk imaging/cloning tool is now available for download with Linux kernel 7.3, ZFS file system support, MDRAID local disk-to-disk cloning, and more.",
+     "published": "2026-11-26T13:27:49+00:00"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -3024,6 +3386,21 @@
    ]
   },
   {
+   "id": "2858023354c5",
+   "title": "Drupal CVE-2026-136716 Leaves Some Sites at Risk of Takeover After Earlier Fix: Exploitation Confirmed",
+   "url": "https://joho-todai.com/en/drupal-cve-2026-136716-takeover-risk-active-exploits/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:29:57+00:00",
+   "summary": "Drupal disclosed a new vulnerability that is being actively exploited. Live sites that applied the earlier fix may still be affected. In addition to updating again, operators whose installers were publicly accessible after the previous advisory should check for compromise.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches"
+   ],
+   "cves": []
+  },
+  {
    "id": "696b1299b915",
    "title": "Vertiv expands 800VDC power portfolio for AI data center market",
    "url": "https://www.datacenterdynamics.com/en/news/vertiv-expands-800vdc-power-portfolio-for-ai-data-center-market/",
@@ -3036,6 +3413,19 @@
     "Cloud & infrastructure",
     "AI",
     "Hardware"
+   ]
+  },
+  {
+   "id": "27a799dce296",
+   "title": "South Korea Opens iPhone 16 AI Advertising Proceedings: Siri Rollout Timing at Issue",
+   "url": "https://joho-todai.com/en/iphone-16-ai-features-korea-antitrust-siri/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T12:26:57+00:00",
+   "summary": "The Korea Fair Trade Commission has opened proceedings over advertising for the iPhone 16's AI features. Investigators say Korean support for Siri's personal context features slipped from the advertised early April 2025 date to October 2026. They proposed corrective orders and a financial penalty.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -5071,6 +5461,20 @@
    "summary": "FITA marks 25 years of promoting digital accessibility and independent living TVMnews.mt",
    "also_covered_by": [],
    "topics": [
+    "Accessibility"
+   ]
+  },
+  {
+   "id": "8d9d1724976d",
+   "title": "AI accelerates development, but accessibility testing lags",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTXJVVTdKMVllRDlxUnZjZkQzZGZhYVFRdHJ4a0xjN21mZUwzLXR4QWFTbGYwZFl4anNUTVFsTmIxckVoME9XSmtqZDBCeElOWmVuT21xZGlabzhid0pTRXVfZ0s3U1dMX2JuUW5aOVhzdnBjXy1ldldpdDg0WEhTbVM4NVRiZTRTNk1JeWx4QnVrNnUycFMwd2dWaFhnYkJvYURlNU5BOE9Qbjk2Mk5ReFln?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-26T08:50:40+00:00",
+   "summary": "AI accelerates development, but accessibility testing lags TechGig",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
     "Accessibility"
    ]
   },
