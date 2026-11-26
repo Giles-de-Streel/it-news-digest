@@ -1,12 +1,12 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T08:16:00+00:00",
+ "generated": "2026-11-26T08:31:50+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 12,
+   "recent": 11,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 23,
+   "recent": 22,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 45,
-   "recent": 45,
+   "fetched": 42,
+   "recent": 42,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 86,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 163,
-   "recent": 32,
+   "recent": 31,
    "error": null
   },
   {
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 47,
+   "recent": 46,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
+   "fetched": 98,
    "recent": 27,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 18,
-   "recent": 5,
+   "fetched": 17,
+   "recent": 4,
    "error": null
   },
   {
@@ -2315,8 +2315,8 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 8,
-   "recent": 0,
+   "fetched": 7,
+   "recent": 1,
    "error": null
   },
   {
@@ -2513,6 +2513,68 @@
   }
  ],
  "items": [
+  {
+   "id": "ec438dcbbb8d",
+   "title": "Europol investigators follow crypto trail from illegal IPTV services",
+   "url": "https://www.heise.de/en/news/Europol-investigators-follow-crypto-trail-from-illegal-IPTV-services-11538548.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T08:25:00+00:00",
+   "summary": "Investigators from 11 countries tracked crypto payments to illegal IPTV services. They disrupted 57 services and traced more than €26 million.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "79a083000cf9",
+   "title": "Privacy-focused DNS service Quad9 blocks France",
+   "url": "https://www.heise.de/en/news/Privacy-focused-DNS-service-Quad9-blocks-France-11538428.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T08:21:00+00:00",
+   "summary": "The Swiss DNS provider has blocked queries from France since Tuesday, following a censorship ruling secured by Qatar-based beIN.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
+   "id": "15798fe9978c",
+   "title": "CVE-2026-133336: Joomla Extension - chronoengine.com - Unauthenticated arbitrary file upload in ChronoForms extension…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133336",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-26T08:17:06.870000+00:00",
+   "summary": "Joomla Extension - chronoengine.com - Unauthenticated arbitrary file upload in ChronoForms extension 8.0.0-8.0.53 - When the Filename Provider option of a file field is used, the file extension check is performed against the original client filename instead of the final stored filename, allowing unauthenticated users…",
+   "kind": "cve",
+   "cve": "CVE-2026-133336",
+   "cvss": {
+    "score": 9.5,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133336",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "9dae0382d977",
+   "title": "A Chinese takeover, wartime losses and a kibbutz's fight to save its factory",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1najB1bHpzN1dBNFlLaFBEUVNaRUN0NkpYdFdfbG5wYmlLNEwyN2NhSXo2MUdUOXFPa01sTGN0ZDZpYXMxcDJ4WkRWOEt3aXpEZkJPV0VJT3NlV0MwT2JKNnhVaU40a3M?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-26T08:17:00+00:00",
+   "summary": "A Chinese takeover, wartime losses and a kibbutz's fight to save its factory www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "dd168b1ec489",
    "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
@@ -3440,6 +3502,14 @@
      "url": "https://tech.slashdot.org/story/26/11/25/1936200/spacex-wins-fcc-approval-to-deploy-1-million-orbital-data-center-satellites?utm_source=rss1.0mainlinkanon&utm_medium=feed",
      "summary": "The Federal Communications Commission (FCC) has authorized SpaceX to deploy one million AI computing satellites into orbit as part of its solar-powered Starmind data center constellation. The approval comes despite opposition from Amazon, Viasat and the American Astronomical Society.",
      "published": "2026-11-26T07:00:00+00:00"
+    },
+    {
+     "id": "13d51a45ecc6",
+     "source": "heise online (English)",
+     "title": "US approves 1 million SpaceX satellites for orbital AI data centers",
+     "url": "https://www.heise.de/en/news/US-approves-1-million-SpaceX-satellites-for-orbital-AI-data-centers-11538446.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "SpaceX’s “Starmind” project has received official approval from U.S. regulators — on a massive scale. The first data center satellite must be in orbit by 2033.",
+     "published": "2026-11-26T08:23:00+00:00"
     }
    ],
    "topics": [
@@ -3705,6 +3775,19 @@
    ]
   },
   {
+   "id": "971f7afa718c",
+   "title": "Unconditional Integer Factorization in Subexponential Time",
+   "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-26T04:59:56+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "cf7d22a50ecc",
    "title": "Khronos Deprecates MoltenVK and Recommends KosmicKrisp for Vulkan on Apple Silicon Macs Running macOS 26 or Later",
    "url": "https://joho-todai.com/en/moltenvk-deprecated-kosmickrisp-vulkan-macos-26/",
@@ -3845,6 +3928,14 @@
      "url": "https://4sysops.com/archives/1password-says-breach-exposed-customer-details/",
      "summary": "1Password says attackers who broke into its internal systems copied limited account details from some customers, but could not access password vaults or the secrets protecting them. The company detected the intrusion on November 19 and says customers do not need to reset passwords or change account settings. Source",
      "published": "2026-11-26T05:51:28+00:00"
+    },
+    {
+     "id": "93ab92b0d0d1",
+     "source": "heise online (English)",
+     "title": "1Password: Customer data stolen",
+     "url": "https://www.heise.de/en/news/1Password-Customer-data-stolen-11538464.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+     "summary": "Why hack the database when you can rewrite the backend? 1Password customer data fell into unauthorized hands. Watch out for phishing!",
+     "published": "2026-11-26T08:24:00+00:00"
     }
    ],
    "topics": [
