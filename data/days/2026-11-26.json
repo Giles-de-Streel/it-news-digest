@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-26T06:01:00+00:00",
+ "generated": "2026-11-26T06:16:12+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "source": "The Next Platform",
    "fetched": 86,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 22,
+   "recent": 21,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -258,7 +258,7 @@
   {
    "source": ".NET Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -1151,7 +1151,7 @@
   },
   {
    "source": "RHEL Blog",
-   "fetched": 10,
+   "fetched": 9,
    "recent": 0,
    "error": null
   },
@@ -1398,7 +1398,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1416,7 +1416,7 @@
   {
    "source": "AWS Security Bulletins",
    "fetched": 31,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1764,7 +1764,7 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 97,
+   "fetched": 100,
    "recent": 24,
    "error": null
   },
@@ -2315,7 +2315,7 @@
   },
   {
    "source": "Red Hat OpenShift blog",
-   "fetched": 7,
+   "fetched": 8,
    "recent": 0,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,76 @@
  ],
  "items": [
   {
+   "id": "526324189db9",
+   "title": "MixMoMo Tests 80-Billion-Parameter Generative AI on Smartphones Using Both GPU and NPU",
+   "url": "https://joho-todai.com/en/smartphone-80-billion-parameter-ai-gpu-npu-mixmomo/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T06:08:27+00:00",
+   "summary": "Researchers have demonstrated large generative AI models on smartphones with 16GB of memory. MixMoMo adjusts weight-quantization precision based on the input and distributes computation between the GPU and NPU to balance response quality with generation speed.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7fcbebbe6634",
+   "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+   "source": "Simon Willison",
+   "source_category": "Development",
+   "published": "2026-11-26T06:08:25+00:00",
+   "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
+  {
+   "id": "a2e14b456f8c",
+   "title": "Proxmox 9.3 adds production snapshots for SAN-backed VMs",
+   "url": "https://www.helpnetsecurity.com/2026/11/26/proxmox-9-3-adds-production-snapshots-for-san-backed-vms/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-26T06:07:23+00:00",
+   "summary": "Proxmox Virtual Environment 9.3 adds production support for snapshots on shared LVM storage over iSCSI and Fibre Channel SANs. The open-source virtualization platform also gives each guest an identity that survives migration, backup and restore.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Backup & recovery",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "405965e68533",
+   "title": "More than 4,400 malicious domains are waiting for holiday shoppers",
+   "url": "https://www.helpnetsecurity.com/2026/11/26/fortinet-holiday-shopping-cyber-threats-report/",
+   "source": "Help Net Security",
+   "source_category": "Security",
+   "published": "2026-11-26T06:00:53+00:00",
+   "summary": "Cybercriminals are positioned to exploit the holiday shopping season through fraudulent storefronts, retailer impersonation, payment fraud and account takeover attacks, according to FortiGuard Labs’ Holiday Season Cyber Threats Report 2026.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "7381fa09d79e",
+   "title": "Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals",
+   "url": "https://www.techmeme.com/261126/p3#a261126p3",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-26T06:00:48+00:00",
+   "summary": "Jonathan Greig / The Record : Microsoft says state-backed hacking groups in China and North Korea, including Salt Typhoon, have added AI penetration testing tool ARTEX to their arsenals — State-backed hacking groups in China and North Korea are using a powerful AI hacking tool in attacks, according to a new report…",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Pen testing & red team"
+   ]
+  },
+  {
    "id": "06fb7b0b45ad",
    "title": "Sega Saturn Portable Pays Homage to the Sega CDX Design",
    "url": "https://hackaday.com/2026/11/25/sega-saturn-portable-pays-homage-to-the-sega-cdx-design/",
@@ -2524,6 +2594,19 @@
    "also_covered_by": [],
    "topics": [
     "Game development"
+   ]
+  },
+  {
+   "id": "a494b6c99129",
+   "title": "iQPS Releases First Images From QPS-SAR No. 20, Capturing Rainy Matsuyama in High Detail",
+   "url": "https://joho-todai.com/en/qps-sar20-first-image-rain-matsuyama/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:58:57+00:00",
+   "summary": "iQPS's 20th small SAR satellite has successfully conducted test observations of Matsuyama in Ehime Prefecture, Yakushima in Kagoshima Prefecture, New Zealand's Mahia Peninsula, and other locations.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2539,6 +2622,20 @@
     "Vulnerabilities & patches",
     "Microsoft & Windows",
     "System administration"
+   ]
+  },
+  {
+   "id": "55f138beec2f",
+   "title": "Microsoft Merges One-Line Fix for WSL DNS Failures in VPN Environments",
+   "url": "https://joho-todai.com/en/wsl-vpn-dns-issue-microsoft-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:53:47+00:00",
+   "summary": "When DNS tunneling is disabled in WSL2 mirrored mode, VPN DNS servers can occupy the available slots and cause name resolution to fail. Microsoft has merged a fix that applies a per-VPN-adapter limit to the combined IPv4 and IPv6 total.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Networking"
    ]
   },
   {
@@ -2584,6 +2681,59 @@
    ]
   },
   {
+   "id": "12f437d379ba",
+   "title": "Unauthorized Access Hits ENEOS Official App, Disrupting Mobile Payments and Coupons",
+   "url": "https://joho-todai.com/en/eneos-app-unauthorized-access-service-halt/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:50:37+00:00",
+   "summary": "ENEOS detected unauthorized access to its official app system and suspended the service at around 4:00 p.m. JST on November 25. Customers can still pay at service stations with cash, credit cards, and other methods. The company is investigating whether customer information was leaked and the scope of any impact.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "76e5702d2a6f",
+   "title": "CVE-2026-99288 and CVE-2026-99312 Remain Unfixed in Standard Kernels for Major Ubuntu Releases, While Debian 13 Offers Fixes",
+   "url": "https://joho-todai.com/en/ubuntu-kernel-cve-2026-99288-99312-debian-13-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:46:17+00:00",
+   "summary": "Fix availability differs between Ubuntu and Debian 13 for vulnerabilities in Linux kernel networking and virtualization. As of November 26, major Ubuntu standard kernels remained affected, also raising questions about maintenance practices.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Networking"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-99312",
+     "score": 8.8,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "Linux"
+    },
+    {
+     "id": "CVE-2026-99288",
+     "score": 7.5,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "Linux"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-99288",
+     "score": 0.00716,
+     "percentile": 0.49528,
+     "date": "2026-11-25"
+    }
+   }
+  },
+  {
    "id": "1d390b97ffde",
    "title": "Sources: Nvidia tells its manufacturing partners to halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia as the US steps up export controls",
    "url": "https://www.techmeme.com/261126/p2#a261126p2",
@@ -2614,6 +2764,20 @@
    ]
   },
   {
+   "id": "25fb48185ebe",
+   "title": "KDDI Signs Comprehensive Data Agreement With X, Plans Analysis Combining Foot Traffic and Demographic Data",
+   "url": "https://joho-todai.com/en/kddi-x-data-partnership-analysis/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:32:47+00:00",
+   "summary": "KDDI will begin analyzing X's real-time data alongside its own foot traffic and demographic data. It plans to use the results to improve network quality and, from 2027, offer enterprise services using its analytical expertise and AI platform.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Networking"
+   ]
+  },
+  {
    "id": "4fe1eae3fbd7",
    "title": "Google mandates MCP or CLI access for Workspace AI agents starting February 2027",
    "url": "https://www.helpnetsecurity.com/2026/11/26/google-ai-agent-security-requirements/",
@@ -2624,6 +2788,19 @@
    "also_covered_by": [],
    "topics": [
     "Cloud & infrastructure",
+    "AI"
+   ]
+  },
+  {
+   "id": "cdcd4231b234",
+   "title": "OpenAI Corrects GPT-6.2 Usage Calculations, Causing Astra and Sol Limits to Arrive Sooner",
+   "url": "https://joho-todai.com/en/openai-gpt-6-2-usage-calculation-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T05:20:07+00:00",
+   "summary": "OpenAI has corrected usage calculations used at the launch of GPT-6.2. Most users' Astra and Sol usage had been undercounted, so unchanged workloads will consume more of their allowance after the fix; affected subscribers are set to receive a reset.",
+   "also_covered_by": [],
+   "topics": [
     "AI"
    ]
   },
@@ -2654,6 +2831,19 @@
    ]
   },
   {
+   "id": "7c801712a80e",
+   "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+   "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-26T05:12:59+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "2532b5fe2fb0",
    "title": "MangoHud v0.8.5-rc1 Introduces a New Design That Runs Less Code Inside Linux Games",
    "url": "https://joho-todai.com/en/mangohud-v0-8-5-rc1-performance-monitoring-linux/",
@@ -2681,6 +2871,19 @@
    ]
   },
   {
+   "id": "b3f322b72fa1",
+   "title": "APOD: 2026 November 26 – Eye in the Sky: The Milky Way over Lençóis",
+   "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-26T05:05:00+00:00",
+   "summary": "APOD Science APOD APOD: 2026 November 26 – Eye… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos!",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "c42f5b84a90b",
    "title": "Microsoft Deprecates Windows Telnet Client telnet.exe Ahead of Future Removal",
    "url": "https://joho-todai.com/en/windows-telnet-client-deprecated-removal/",
@@ -2692,6 +2895,19 @@
    "topics": [
     "Microsoft & Windows",
     "System administration"
+   ]
+  },
+  {
+   "id": "c203e3484048",
+   "title": "Seeking Refuge on Resolution Island",
+   "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/",
+   "source": "NASA News Releases",
+   "source_category": "Science & space",
+   "published": "2026-11-26T05:01:00+00:00",
+   "summary": "New Zealanders have long envisioned the island as a predator-free zone for native birds, but swimming stoats have shown a resolve of their own.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2759,6 +2975,19 @@
    "topics": [
     "Hardware",
     "Game development"
+   ]
+  },
+  {
+   "id": "a8240420bcc5",
+   "title": "U.S. Proposes Tariffs of Up to 15% on Japan, Citing Semiconductor Support and NISA",
+   "url": "https://joho-todai.com/en/us-proposes-15-percent-tariffs-japan-semiconductor-support-nisa/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T04:50:16+00:00",
+   "summary": "The United States has proposed new tariff measures for 14 countries and regions, including Japan. The main proposal for Japan would cap ordinary and existing Section 301 tariffs at 15%, while U.S. authorities criticized support for semiconductors and optical fiber and also cited NISA.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2841,6 +3070,20 @@
     "Ransomware & breaches",
     "Development",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "f36576a4501b",
+   "title": "India’s government ponders cradle to grave AI oversight",
+   "url": "https://www.theregister.com/public-sector/2026/11/26/indias-government-ponders-cradle-to-grave-ai-oversight/5312275",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-26T03:42:56+00:00",
+   "summary": "Machines of loving grace to turn social media grumps into services, finger painting into career advice",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Policy & regulation"
    ]
   },
   {
