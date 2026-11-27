@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T13:01:10+00:00",
+ "generated": "2026-11-27T13:15:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 45,
+   "recent": 47,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 18,
+   "recent": 17,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 80,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 73,
    "recent": 0,
    "error": null
   },
@@ -791,9 +791,9 @@
   },
   {
    "source": "MongoDB blog",
-   "fetched": 150,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Campus Technology",
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1277,8 +1277,8 @@
   },
   {
    "source": "Datadog Blog",
-   "fetched": 97,
-   "recent": 0,
+   "fetched": 98,
+   "recent": 1,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 99,
-   "recent": 26,
+   "fetched": 100,
+   "recent": 25,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,102 @@
   }
  ],
  "items": [
+  {
+   "id": "0cc1dce93e1e",
+   "title": "Woodpecker CI 3.21 Enhances Security and Git Forge Integration",
+   "url": "https://linuxiac.com/woodpecker-ci-3-21-enhances-security-and-git-forge-integration/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-27T13:13:09+00:00",
+   "summary": "Woodpecker CI 3.21 delivers stronger security, improved GitHub, GitLab, and Forgejo integration, and more flexible pipeline configuration.",
+   "also_covered_by": [],
+   "topics": [
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "0cb332e798cb",
+   "title": "RHSA-2026:104044: Critical: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:104044",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T13:09:00+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "c07cf41b982a",
+   "title": "Exception Best Practices",
+   "url": "https://www.well-typed.com/blog/2026/11/exception-best-practices/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-27T13:05:30+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7ed515ee9b3c",
+   "title": "Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed",
+   "url": "https://www.techmeme.com/261127/p6#a261127p6",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-27T13:05:01+00:00",
+   "summary": "Bloomberg : Serial numbers in Chinese filings reveal that Nvidia's restricted Blackwell chips were installed at a Shanghai data center linked to Alice Huang and Megaspeed — A pair of Chinese firms installed Nvidia Corp.'s powerful Blackwell semiconductors in a Shanghai data center linked to Alice Huang …",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "4aa0739d730e",
+   "title": "The Swiss Army knife of USB docking DVD drives is on sale, also available with a built-in M.2 SSD slot or SATA hard drive dock",
+   "url": "https://www.tomshardware.com/desktops/pc-building/the-swiss-army-knife-of-dvd-drives-is-back-on-sale-usb-docking-hybrid-also-available-with-a-built-in-m-2-ssd-slot-or-sata-hard-drive-dock-usd28-for-the-dvd-writer-and-hub-usd37-gets-an-added-sata-dock-or-pay-usd39-for-the-m-2-version",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T13:02:56+00:00",
+   "summary": "Portable DVD writers with flash media reading, M.2, and SATA drive docking abilities are great Black Friday Deals with 20% off every model.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "1df6f91442f9",
+   "title": "FCC approves SpaceX application to deploy one million satellites for data centers in space",
+   "url": "https://www.datacenterdynamics.com/en/news/fcc-approves-spacex-application-to-deploy-one-million-satellites-for-data-centers-in-space/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-27T13:00:53+00:00",
+   "summary": "Regulator gives green light for massive constellation",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "b2b22398ee8b",
+   "title": "TSMC gives a sneap peak at AI Design Kit: Agentic AI with foundry expertise",
+   "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-gives-a-sneap-peak-at-ai-design-kit-agentic-ai-with-foundry-expertise",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T13:00:00+00:00",
+   "summary": "TSMC brings agentic AI to chip design as A14 design rule count hits 3.6X that of N5 while customers demand 33% shorter development cycle.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
   {
    "id": "08a10b14ab4e",
    "title": "Moving off Ingress-NGINX without rewriting your Ingress resources",
@@ -3034,6 +3130,19 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "d6b51fef844a",
+   "title": "Kimi for Science More scientific ideas, made possible",
+   "url": "https://www.kimi.ai/news/kimi-for-science-program",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T12:03:11+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -6320,6 +6429,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "0019ad0328c5",
+   "title": "Prioritize security findings with Datadog Crown Jewels",
+   "url": "https://www.datadoghq.com/blog/prioritize-security-findings-crown-jewels/",
+   "source": "Datadog Blog",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-27T00:00:00+00:00",
+   "summary": "Discover your most critical cloud resources automatically with Datadog Crown Jewels, then use business context to prioritize vulnerabilities and misconfigurations.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
    ]
   },
   {
