@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-27T03:31:15+00:00",
+ "generated": "2026-11-27T03:46:09+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 502: Bad Gateway"
+   "fetched": 53,
+   "recent": 53,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -702,7 +702,7 @@
   {
    "source": "Cybersecurity Dive",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -894,7 +894,7 @@
   {
    "source": "Veeam Blog",
    "fetched": 5,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1026,7 +1026,7 @@
   {
    "source": "Scrum.org blog",
    "fetched": 42,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1422,7 +1422,7 @@
   {
    "source": "Canadian Centre for Cyber Security",
    "fetched": 50,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 34,
+   "recent": 33,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
-   "recent": 21,
+   "fetched": 100,
+   "recent": 22,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
-   "recent": 8,
+   "fetched": 16,
+   "recent": 7,
    "error": null
   },
   {
@@ -2232,7 +2232,7 @@
   {
    "source": "VMware Blogs (Broadcom)",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,19 @@
   }
  ],
  "items": [
+  {
+   "id": "3e09d77e5753",
+   "title": "A Man In Denver Has Been Trapping Waymos",
+   "url": "https://tech.slashdot.org/story/26/11/25/2259238/a-man-in-denver-has-been-trapping-waymos?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+   "source": "Slashdot",
+   "source_category": "IT industry",
+   "published": "2026-11-27T03:30:00+00:00",
+   "summary": "An anonymous reader quotes a report from Wired: A bearded man with a brown ponytail has been on the hunt for Waymos in Denver, trapping the self-driving taxis so they can't pull away (source paywalled; alternative source) and hurling cartons of eggs at them, the police and company officials said.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "077203c46da2",
    "title": "China launches 6G trials across eight regions, eyes 2030 rollout",
@@ -2564,6 +2577,30 @@
    "also_covered_by": [],
    "topics": [
     "Networking"
+   ]
+  },
+  {
+   "id": "e3d2cbe9c64b",
+   "title": "CVE-2026-137706: Smart Portal developed by Direk Tech has a Missing Authorization vulnerability.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137706",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T03:17:04.263000+00:00",
+   "summary": "Smart Portal developed by Direk Tech has a Missing Authorization vulnerability. Authenticated remote attackers can add a specified account to the Active Directory Domain Admins group, thereby obtaining domain administrator privileges.",
+   "kind": "cve",
+   "cve": "CVE-2026-137706",
+   "cvss": {
+    "score": 9.9,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137706",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "System administration",
+    "Identity & access"
    ]
   },
   {
@@ -2698,6 +2735,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "97addf461287",
+   "title": "VMware Cloud Foundation 9.1.2 の一般提供（GA）を開始",
+   "url": "https://blogs.vmware.com/vmware-japan/2026/11/9-1-2-ga-release.html",
+   "source": "VMware Blogs (Broadcom)",
+   "source_category": "Virtualization",
+   "published": "2026-11-27T02:40:26+00:00",
+   "summary": "多くの企業がスピードの向上、コストの削減、セキュリティの強化を目指す一方で、新たな収益源を生み出すためにアプリケーションやワークロードの幅を広げ続けるプレッシャーにも直面しています。VMware Cloud Foundation（VCF）9.1.2 の一般提供（GA）は、こうした課題に直接応えるものであり、新たな AI 自動化機能に加え、VMware vSphere Kubernetes Service（VKS）の機能強化やセキュリティアップデートを提供します。これらのアップデートにより、プラットフォームチームは手動での構成作業にかける時間を減らし、ビジネス価値の創出により多くの時間を割けるようになります。 本記事では、VCF…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "DevOps & SRE"
    ]
   },
   {
