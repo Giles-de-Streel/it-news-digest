@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-27T02:16:24+00:00",
+ "generated": "2026-11-27T02:31:13+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 52,
-   "recent": 52,
+   "fetched": 54,
+   "recent": 54,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 0,
+   "fetched": 25,
    "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
+   "error": null
   },
   {
    "source": "Oracle-Base",
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 117,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -720,7 +720,7 @@
   {
    "source": "Wiz Research",
    "fetched": 733,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1548,7 +1548,7 @@
   {
    "source": "TechTarget News",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 18,
+   "recent": 16,
    "error": null
   },
   {
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 100,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,77 @@
  ],
  "items": [
   {
+   "id": "97b87d9cc844",
+   "title": "CVE-2026-115867: The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to Arbitrary…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115867",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T02:16:43.770000+00:00",
+   "summary": "The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.5.5 via the copy_files function.",
+   "kind": "cve",
+   "cve": "CVE-2026-115867",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-115867",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Databases"
+   ]
+  },
+  {
+   "id": "8509175f2d82",
+   "title": "CVE-2026-106125: The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106125",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T02:16:43.460000+00:00",
+   "summary": "The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 8.7 via the 'callback' parameter of the sneeit_compact_menu_mega_content AJAX action.",
+   "kind": "cve",
+   "cve": "CVE-2026-106125",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-106125",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "25bcca787f09",
+   "title": "Mitsui Shopping Park Discloses Data Breach Affecting About 3.12 Million Members, Including Phone Numbers and Gender",
+   "url": "https://joho-todai.com/en/mitsui-shopping-park-data-breach-3-million/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T02:14:41+00:00",
+   "summary": "Mitsui Shopping Park disclosed that unauthorized access to its app exposed personal information for about 3.119 million members. It plans to contact affected members directly. The public announcement serves as notice for those it cannot reach.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "fe1ea2c6df7d",
+   "title": "Researcher Uses GPT-6 Astra to Propose Quantizing Gravity From the Light Cone",
+   "url": "https://joho-todai.com/en/gpt-6-astra-quantum-gravity-light-cone/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T02:05:30+00:00",
+   "summary": "A Stanford researcher used GPT-6 Astra to propose a quantum theory of gravity. Expanding a graviton-pair calculation first yields a divergent term, while the original amplitude remains finite, the paper argues. A physicist has raised specific objections to the theory's consistency.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "db1a40ec7695",
    "title": "Christophe Pettus: All Your GUCs in a Row: segment_size",
    "url": "https://postgr.es/p/9D_",
@@ -2542,6 +2613,35 @@
    ]
   },
   {
+   "id": "330ce52da0ca",
+   "title": "Fedora Kernel 7.3.4 Reportedly Loses Sound Blaster X3: Driver Settings Restore Playback",
+   "url": "https://joho-todai.com/en/fedora-linux-kernel-sound-blaster-x3-not-recognized/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:55:00+00:00",
+   "summary": "A Fedora kernel update reportedly stopped the external Sound Blaster X3 USB audio device from registering. Changing USB audio driver settings restored recognition and playback at higher sample rates.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Backup & recovery",
+    "System administration"
+   ]
+  },
+  {
+   "id": "21c2c181f5d0",
+   "title": "Linux Proposal Standardizes Digital Pen Rotation With ABS_TWIST: Tested on Wacom Hardware",
+   "url": "https://joho-todai.com/en/linux-digital-pen-rotation-input-abs-twist/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:50:48+00:00",
+   "summary": "A proposed Linux patch standardizes input events for twisting a digital pen. It defines how to report a full 360 degrees of rotation and preserves compatibility with existing Wacom input behavior.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
    "id": "6dbdd6523f40",
    "title": "Black Friday 2026 deal: Sony WH-1000XM4C wireless headphones are 34% off",
    "url": "https://www.neowin.net/deals/black-friday-2026-deal-sony-wh-1000xm4c-wireless-headphones-are-34-off/?utm_source=rss",
@@ -2549,6 +2649,77 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-27T01:48:01+00:00",
    "summary": "If you're looking for a solid pair of headphones this Black Friday, check out the Sony WH-1000XM4C, which are currently under $200.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "6708baed6620",
+   "title": "Linux Patch Proposed for Freezes When Switching Split Screen on Radeon RX 9070 XT and 57-Inch Odyssey Neo G9",
+   "url": "https://joho-todai.com/en/radeon-rx-9070-xt-odyssey-neo-g9-pc-crash-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:44:44+00:00",
+   "summary": "A Linux test system with a Radeon RX 9070 XT and a 57-inch Odyssey Neo G9 froze each time its split-screen mode changed. The developer suspects that cleaning up the old stream shut down a shared link and has published proposed driver fixes.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Development"
+   ]
+  },
+  {
+   "id": "b188e215d1f0",
+   "title": "Windows ConPTY 1.25.260930003 Reportedly Fails to Start I/O Under Heavy Load: Microsoft Is Aware",
+   "url": "https://joho-todai.com/en/conpty-1-25-260930003-high-load-io-issue/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:44:03+00:00",
+   "summary": "Some Windows pseudoconsole (ConPTY) sessions reportedly failed to start text I/O when created concurrently under heavy CPU load. The report pointed to the order of initialization and connection handling. Microsoft had already found the problem internally.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "05f6fea1a66e",
+   "title": "NVIDIA GPU Monitoring in WSL2 Reportedly Leaks Windows Kernel Memory and Slows Responses",
+   "url": "https://joho-todai.com/en/wsl2-nvidia-gpu-memory-leak-response-delay/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:43:03+00:00",
+   "summary": "Several GeForce users report that repeated GPU monitoring in WSL2 leaves allocations in Windows kernel memory. In an RTX 5090 test, the Windows GPU monitoring command took longer to respond as allocations accumulated.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "bf2f36c641ff",
+   "title": "Intel RST/VMD 20.2.6.1025 Setup Reportedly Crashes With 0x139 During an SSD Information Query",
+   "url": "https://joho-todai.com/en/intel-rst-vmd-ssd-crash-0x139/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:35:43+00:00",
+   "summary": "An Acer laptop running Windows 11 26H2 with Intel RST/VMD reportedly showed a blue screen while retrieving NVMe SSD controller information. A diagnostic software build that skipped the operation reportedly avoided the crash.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "23476fb9c34e",
+   "title": "WinGet 1.29.380 Reportedly Misses Firefox Updates and Removes an App During a Mismatched UniGetUI Upgrade",
+   "url": "https://joho-todai.com/en/winget-1-29-380-firefox-update-issues-ungetui-app-deletion/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:34:03+00:00",
+   "summary": "Apps installed with vendor installers reportedly went missing from WinGet's bulk upgrade list. A separate upgrade through UniGetUI reportedly mistook an app from a different project for an update and removed the original app.",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -2566,6 +2737,74 @@
    "topics": [
     "Linux & open source",
     "AI"
+   ]
+  },
+  {
+   "id": "e6dfda92d131",
+   "title": "VS Code Merges Fixes for Out-of-Memory Crashes and Freezes When Restoring AI Agent Sessions",
+   "url": "https://joho-todai.com/en/vs-code-ai-agent-memory-freeze-fix/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:28:53+00:00",
+   "summary": "A bug caused VS Code's agent interface to crash whenever it reopened a session containing unusually long AI output. Microsoft merged fixes that narrow file path lookups and change how the regular expression searches.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Development"
+   ]
+  },
+  {
+   "id": "271ee98d368a",
+   "title": "Synspective Releases First Image From Its 13th SAR Satellite and Tracks New Land at Iwo Jima",
+   "url": "https://joho-todai.com/en/synspective-13th-sar-satellite-sulfur-island/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:23:52+00:00",
+   "summary": "Japan's Synspective released a test image of Chennai, India, from its 13th small synthetic aperture radar satellite. At Iwo Jima, it used several satellites to document how land formed by an eruption changed shape from day to day.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "f809947e587d",
+   "title": "Hard Drive pricing has gotten bad",
+   "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T01:13:49+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7e7b745a512e",
+   "title": "G.Skill Reportedly Denies F4-3200C16D-16GVKB Replacement Over PCB Corner Damage: What the Lifetime Warranty Covers",
+   "url": "https://joho-todai.com/en/gskill-f4-3200c16d-16gvkb-warranty-denied-damage/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:09:51+00:00",
+   "summary": "A user who sought a replacement for faulty G.Skill DDR4 memory under its lifetime warranty says the claim was denied because of damage to a corner of the circuit board. Japanese retailers also have terms excluding external damage from warranty service.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "cea6e6f074ad",
+   "title": "Sony Spinout Altair Reportedly Raises Funds to Mass-Produce Its Low-Power ALT1550 5G Chip",
+   "url": "https://joho-todai.com/en/altair-alt1550-5g-semiconductor-funding/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T01:05:01+00:00",
+   "summary": "Israeli communications chipmaker Altair has reportedly raised new funding after spinning out of Sony. The ALT1550 supports a lower-performance 5G standard designed to save power and is intended for small AI devices such as smart glasses.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
@@ -2598,6 +2837,21 @@
    ]
   },
   {
+   "id": "fa854375f2da",
+   "title": "AI Training on WSL2 Reportedly Hangs With GeForce 621.40 and Resumes After Rollback to 621.24",
+   "url": "https://joho-todai.com/en/geforce-621-40-wsl2-ai-learning-issue/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T00:40:40+00:00",
+   "summary": "AI training on an RTX 5090 under WSL2 reportedly hung after Windows Update installed driver 621.40. After rolling back to 621.24 and restarting the PC, the user resumed training from a saved checkpoint.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Endpoint management"
+   ]
+  },
+  {
    "id": "9ca1d19bd19c",
    "title": "Hong Kong to use skidding for the first time in heavy rail to build station on active line",
    "url": "https://e.vnexpress.net/news/tech/tech-news/hong-kong-to-use-skidding-for-the-first-time-in-heavy-rail-to-build-station-on-active-line-5148846.html",
@@ -2622,6 +2876,22 @@
    "topics": [
     "AI",
     "Policy & regulation"
+   ]
+  },
+  {
+   "id": "f3b03ed7533b",
+   "title": "Apple Music for Windows May Leak Kernel Memory When MiniPlayer Shows Lyrics on Intel Graphics",
+   "url": "https://joho-todai.com/en/windows-apple-music-intel-gpu-lyrics-kernel-memory-leak/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T00:17:00+00:00",
+   "summary": "A user reported that kernel memory kept growing while Apple Music for Windows displayed synced lyrics in MiniPlayer, even with playback paused. The issue occurred on Intel integrated graphics, and the growing allocations were associated with GPU memory management.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Microsoft & Windows",
+    "Linux & open source",
+    "Hardware"
    ]
   },
   {
@@ -2684,6 +2954,20 @@
     "Development",
     "System administration",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "17728199aeed",
+   "title": "SAP Reportedly Weighs Cutting at Least 10,000 Roles in AI Restructuring as Revenue and Profit Rise",
+   "url": "https://joho-todai.com/en/sap-workforce-reduction-ai-business-restructure/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T00:10:49+00:00",
+   "summary": "German business software maker SAP is reportedly considering a restructuring that would cut at least 10,000 roles worldwide. With its cloud business growing, the company is said to be reviewing product development and sales teams as part of an AI-focused strategy.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI"
    ]
   },
   {
@@ -3272,7 +3556,16 @@
    "source_category": "Hardware",
    "published": "2026-11-26T20:31:14+00:00",
    "summary": "Linux networking developers have previously said they've been \"completely overwhelmed\" with all the AI/LLM-driven activity from bug reports to patches over the past year. In an increasing number of cases, they end up diverting fixes to the next Linux kernel version due to the seemingly endless activity.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "0f86eb1bbae9",
+     "source": "Joho no Todai (English)",
+     "title": "Linux Adds a Networking Maintainer Alongside Fixes for 7.4-rc5",
+     "url": "https://joho-todai.com/en/linux-74-rc5-network-maintainer-fixes/",
+     "summary": "Willem de Bruijn, who has maintained key Linux networking protocols, joined the maintainers of the networking subsystem as a whole. Wi-Fi, Bluetooth, and other fixes were also merged into mainline.",
+     "published": "2026-11-26T23:18:38+00:00"
+    }
+   ],
    "topics": [
     "Vulnerabilities & patches",
     "Linux & open source",
@@ -4767,6 +5060,14 @@
      "url": "https://www.phoronix.com/news/DXVK-3.2-Released",
      "summary": "DXVK 3.2 is out today as the newest feature release for this Vulkan-based implementation of the Direct3D 8 through Direct3D 11 APIs that is used by Valve's Steam Play (Proton)...",
      "published": "2026-11-26T16:07:07+00:00"
+    },
+    {
+     "id": "11bd3a05bbb7",
+     "source": "Joho no Todai (English)",
+     "title": "DXVK 3.2 Improves Frame Pacing on Linux and Disables an Optimization by Default on AMD Windows Drivers",
+     "url": "https://joho-todai.com/en/dxvk-3-2-linux-display-amd-driver-optimization/",
+     "summary": "DXVK 3.2 adds smoother frame pacing on supported Linux setups. It disables an optimization by default on AMD's Windows drivers, which is expected to reduce performance in CPU-bound scenarios on RDNA 3 and 4 hardware.",
+     "published": "2026-11-26T23:42:08+00:00"
     }
    ],
    "topics": [
@@ -4790,6 +5091,14 @@
      "url": "https://www.gamesindustry.biz/staff-at-grand-theft-auto-maker-rockstar-vote-against-union-recognition-deal",
      "summary": "Workers at Grand Theft Auto maker Rockstar Games have voted against a union recognition deal.",
      "published": "2026-11-26T16:46:30+00:00"
+    },
+    {
+     "id": "c7c9b6690283",
+     "source": "Joho no Todai (English)",
+     "title": "UK Employees at GTA VI Developer Rockstar Games Reject Union Recognition Deal",
+     "url": "https://joho-todai.com/en/gta-vi-rockstar-games-uk-union-vote-rejected/",
+     "summary": "Rockstar Games' UK employees voted against a formal union recognition agreement in a ballot that spanned the launch of GTA VI. The union will continue pushing for better pay and overtime terms.",
+     "published": "2026-11-27T00:28:40+00:00"
     }
    ],
    "topics": [
