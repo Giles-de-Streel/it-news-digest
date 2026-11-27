@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-27T00:15:58+00:00",
+ "generated": "2026-11-27T00:31:20+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 54,
-   "recent": 54,
+   "fetched": 56,
+   "recent": 56,
    "error": null
   },
   {
@@ -288,7 +288,7 @@
   {
    "source": "JetBrains Blog",
    "fetched": 12,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 73,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1086,7 +1086,7 @@
   {
    "source": "Petri IT Knowledgebase",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1212,7 +1212,7 @@
   {
    "source": "CNCF Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1554,7 +1554,7 @@
   {
    "source": "Rapid7 Blog",
    "fetched": 20,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 39,
+   "recent": 38,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 15,
+   "fetched": 14,
    "recent": 8,
    "error": null
   },
@@ -2183,7 +2183,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 76,
+   "fetched": 75,
    "recent": 15,
    "error": null
   },
@@ -2514,6 +2514,52 @@
  ],
  "items": [
   {
+   "id": "5edcee06a9b6",
+   "title": "CVE-2026-135384: Improper authentication in OIDC bearer token verification in Canonical LXD before 5.0.12, 5.21.10, 6.10.2…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135384",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T00:16:43.450000+00:00",
+   "summary": "Improper authentication in OIDC bearer token verification in Canonical LXD before 5.0.12, 5.21.10, 6.10.2 allows a remote attacker holding a token signed by the configured identity provider to authenticate to the LXD API and gain unauthorized control or impersonate users via presenting tokens issued for other…",
+   "kind": "cve",
+   "cve": "CVE-2026-135384",
+   "cvss": {
+    "score": 9.2,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-135384",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "c38fbfd64fd2",
+   "title": "CVE-2026-127163: Improper certificate validation in websocket connections in Canonical pylxd before 2.4.3 allows a network…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127163",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T00:16:41.440000+00:00",
+   "summary": "Improper certificate validation in websocket connections in Canonical pylxd before 2.4.3 allows a network attacker to read command stdin and spoof command output via impersonating a remote LXD endpoint.",
+   "kind": "cve",
+   "cve": "CVE-2026-127163",
+   "cvss": {
+    "score": 9.1,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-127163",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Networking"
+   ]
+  },
+  {
    "id": "d7a47e87dde3",
    "title": "Risky Bulletin: Hackers breach Erlang and Elixir package manager",
    "url": "https://news.risky.biz/risky-bulletin-hackers-breach-erlang-and-elixir-package-manager/",
@@ -2527,6 +2573,19 @@
     "Development",
     "System administration",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "516a2f8ea247",
+   "title": "Dan Langille: Galène, part 2: tests passed, old data repaired",
+   "url": "https://postgr.es/p/9D-",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-27T00:02:22+00:00",
+   "summary": "In GalÃ¨ne: fixing double-encoded port files I described how FreshPorts had been storing UTF-8 port files double-encoded, so that www/galene's Makefile showed GalÃ¨ne instead of Galène. That post covered the fix, how I planned to test it, and how I plan to repair the text that is already wrong.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
