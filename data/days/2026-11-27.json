@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T16:15:59+00:00",
+ "generated": "2026-11-27T16:31:02+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -35,9 +35,9 @@
   },
   {
    "source": "Help Net Security",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently"
+   "fetched": 10,
+   "recent": 10,
+   "error": null
   },
   {
    "source": "SANS ISC",
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 53,
-   "recent": 53,
+   "fetched": 54,
+   "recent": 54,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
+   "error": null
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 0,
+   "fetched": 1864,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
+   "error": null
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
+   "error": null
   },
   {
    "source": "Scrum Inc",
@@ -1680,7 +1680,7 @@
   {
    "source": "VnExpress International (Tech)",
    "fetched": 60,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 27,
+   "recent": 29,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
+   "fetched": 20,
+   "recent": 2,
+   "error": null
   },
   {
    "source": "David Bushell",
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -2514,6 +2514,69 @@
  ],
  "items": [
   {
+   "id": "3e960a4ccfd5",
+   "title": "Black Friday deals: AirPods Pro 3 $100 off, M6 MacBook Pro now $250 off, M5 Air $400 off, Series 12, more",
+   "url": "https://9to5mac.com/2026/11/27/apple-black-friday-deals-airpods-macbook-watch/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-27T16:27:22+00:00",
+   "summary": "The official main event Black Friday sales are now live everywhere and the Apple deals are wild at Amazon. Alongside the brilliant deal on AirPods Pro 3 at a wild $100 off , the M5 MacBook Air offers at $400 off , and MacBook Neo models at $100 off , Amazon has also now dropped the price again on the brand new M6…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "c27b26bc31c4",
+   "title": "Build your own Paint",
+   "url": "https://www.buildyourownpaint.com/en",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-27T16:22:36+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "49f2e9c52ea0",
+   "title": "Prysmian cable-laying ship supports Med Emre vessel in rescue off coast of Ibiza",
+   "url": "https://www.datacenterdynamics.com/en/news/prysmian-cable-laying-ship-supports-med-emre-vessel-in-rescue-off-coast-of-ibiza/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-27T16:18:29+00:00",
+   "summary": "The company said that its Monna Lisa vessel was used in efforts to rescue the crew onboard the Med Emre",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "ba4720e2c4e4",
+   "title": "CVE-2026-137964: ToolJet before 3.21.96-LTS contains a command injection vulnerability in its GitHub Actions release workflow,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137964",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T16:18:09.053000+00:00",
+   "summary": "ToolJet before 3.21.96-LTS contains a command injection vulnerability in its GitHub Actions release workflow, which interpolates the pull request title directly into a shell run block.",
+   "kind": "cve",
+   "cve": "CVE-2026-137964",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137964",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "DevOps & SRE"
+   ]
+  },
+  {
    "id": "0fa8b3771461",
    "title": "Apple’s new ‘HomeView’ is exactly the home product I’ve been waiting for",
    "url": "https://9to5mac.com/2026/11/27/apples-new-homeview-is-exactly-the-home-product-ive-been-waiting-for/",
@@ -2524,6 +2587,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "00efe3fd373b",
+   "title": "These are the best gaming laptop deals we've found this Black Friday to suit all budgets",
+   "url": "https://www.tomshardware.com/laptops/gaming-laptops/these-are-the-best-gaming-laptop-deals-weve-found-this-black-friday-to-suit-all-budgets-save-up-to-usd1-200-off-a-range-of-portable-powerhouses",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T16:12:07+00:00",
+   "summary": "Looking to grab yourself a gaming laptop this Black Friday? These are the best deals that we've found so far, and you can net up to $1200 off MSRP on a range of systems across all reasonable budgets.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
    ]
   },
   {
@@ -2791,6 +2867,19 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "9b67ad13d338",
+   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+   "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T15:40:31+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3273,7 +3362,16 @@
    "source_category": "Hardware",
    "published": "2026-11-27T14:41:55+00:00",
    "summary": "We’ve got our sights set on Black Friday sales, and the bargains for some of the best 3D printers are hot!",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "a494ea9fac3b",
+     "source": "9to5Mac",
+     "title": "2026 tech gift guide for Apple users",
+     "url": "https://9to5mac.com/2026/11/27/2026-tech-gift-guide-for-apple-users-personally-tested-and-recommended/",
+     "summary": "It’s Black Friday, and I’ve updated my 2026 tech gift guide with today’s prices. These are products I’ve used myself and would give to the Apple users in my life. more…",
+     "published": "2026-11-27T16:00:00+00:00"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -3628,6 +3726,19 @@
    "source_category": "IT industry",
    "published": "2026-11-27T14:03:00+00:00",
    "summary": "True cost may be much higher for delayed SAP replacement that helped bankrupt the city",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "76dc290f5612",
+   "title": "Making a 3D fantasy map like a 16th-Century atlas",
+   "url": "https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T14:02:52+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -8460,6 +8571,19 @@
      "date": "2026-11-26"
     }
    }
+  },
+  {
+   "id": "04a2b6361a44",
+   "title": "Jianghua yang: One tree, two major versions: adapting pg_orca to PostgreSQL 19",
+   "url": "https://postgr.es/p/9Ez",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-27T00:00:00+00:00",
+   "summary": "How pg_orca added PostgreSQL 19.0 support in 13 #if guards across 6 files — without forking a branch — plus native SQL:2003 IGNORE NULLS support and the real optimizer bugs uncovered by PG 19's regression suite.",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
   },
   {
    "id": "d564ec4ea058",
