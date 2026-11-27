@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T19:31:49+00:00",
+ "generated": "2026-11-27T19:46:33+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -59,9 +59,9 @@
   },
   {
    "source": "The Register",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 50,
+   "recent": 26,
+   "error": null
   },
   {
    "source": "Ars Technica IT",
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
+   "fetched": 87,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "Data Center Dynamics",
@@ -192,7 +192,7 @@
   {
    "source": "StorageReview",
    "fetched": 30,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 30,
+   "recent": 29,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 74,
    "recent": 0,
    "error": null
   },
@@ -875,9 +875,9 @@
   },
   {
    "source": "Azure Blog",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Google Cloud Blog",
@@ -1398,7 +1398,7 @@
   {
    "source": "Chrome Releases",
    "fetched": 25,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 36,
+   "recent": 35,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 0,
+   "fetched": 10,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "source": "Adrian Roselli",
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 23,
+   "fetched": 95,
+   "recent": 22,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 12,
+   "fetched": 13,
    "recent": 4,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,61 @@
   }
  ],
  "items": [
+  {
+   "id": "162a1c2d6807",
+   "title": "Microsoft Ignite 2026: Azure Agents Can Now Change Resources Under Azure Policy, With 11,000 SRE Agents Running Inside Microsoft",
+   "url": "https://www.storagereview.com/news/microsoft-ignite-2026-azure-agentic-operations-arm-mcp-server-sre-agent",
+   "source": "StorageReview",
+   "source_category": "Hardware",
+   "published": "2026-11-27T19:40:40+00:00",
+   "summary": "Microsoft used Ignite 2026 to move Azure’s AI agents from reading infrastructure to changing it. The Azure Resource Manager (ARM) MCP Server, which already gave agents read access to more than 3,500 resource types, now lets them create, manage, and update resources, with each request evaluated by Azure Policy.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "AI",
+    "Hardware",
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "35b0ac736bf5",
+   "title": "Get the cheapest RTX 5070 around this Black Friday with Gigabyte's $839 Gaming OC card",
+   "url": "https://www.tomshardware.com/pc-components/gpus/get-the-cheapest-rtx-5070-around-this-black-friday-with-gigabytes-usd839-gaming-oc-card-midrange-blackwell-continues-to-shine-with-dlss-4-5-and-dlss-5",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T19:38:08+00:00",
+   "summary": "Looking for a midrange RTX 50-series upgrade this Black Friday? The Gigabyte Gaming RTX 5070 gets you a big cooler and RGB flair for the lowest price we've seen this week.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "468319cd6cf8",
+   "title": "This Silicon Power SSD is selling for a stunning 10 cents per GB — at only $209, this is the best 2TB SSD deal on Newegg",
+   "url": "https://www.tomshardware.com/pc-components/ssds/this-silicon-power-ssd-is-selling-for-a-stunning-10-cents-per-gb-at-only-usd209-this-is-the-best-2tb-ssd-deal-on-newegg",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T19:35:21+00:00",
+   "summary": "Grab 2TB of storage for 10 cents per GB at Newegg. Silicon Power's P34A60 is one of the best-value SSD deals during the Black Friday sales.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "1da91faa1cce",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T19:31:01+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "dbd1dec84628",
    "title": "PS3 Boomerang Controller Concept Flies Back Into Your Hands",
@@ -2721,6 +2776,44 @@
    ]
   },
   {
+   "id": "8f062da8f22a",
+   "title": "Long Term Support Channel Update for ChromeOS",
+   "url": "http://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for_01009121915.html",
+   "source": "Chrome Releases",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T18:52:47.009000+00:00",
+   "summary": "A new LTS-150 version 150.0.7871.290 (Platform Version: 16700.71.0), is being rolled out for most ChromeOS devices. This version includes selected security fixes including: 553155590 Medium CVE-2026-87626 Incorrect authorization in DeviceBoundSessionCredentials 578671521 Medium CVE-2026-121135 Security issue in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ],
+   "cves": [
+    {
+     "id": "CVE-2026-121135",
+     "score": 8.8,
+     "severity": "High",
+     "version": "3.1",
+     "scored_by": "CISA-ADP"
+    },
+    {
+     "id": "CVE-2026-87626",
+     "score": 6.5,
+     "severity": "Medium",
+     "version": "3.1",
+     "scored_by": "CISA-ADP"
+    }
+   ],
+   "exploit": {
+    "epss": {
+     "id": "CVE-2026-121135",
+     "score": 0.00348,
+     "percentile": 0.20822,
+     "date": "2026-11-27"
+    }
+   }
+  },
+  {
    "id": "8b2db1571276",
    "title": "Sources: Verizon is in talks to buy fiber-optic broadband operator Fidium for ~$6B, as part of its goal to expand its network to 50M US homes and businesses",
    "url": "https://www.techmeme.com/261127/p11#a261127p11",
@@ -2803,6 +2896,14 @@
      "url": "https://www.techmeme.com/261127/p12#a261127p12",
      "summary": "Financial Times : OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and “coercing and threatening” suppliers that work with both — The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
      "published": "2026-11-27T18:57:47+00:00"
+    },
+    {
+     "id": "fbf41e8b3541",
+     "source": "The Decoder",
+     "title": "OpenAI countersues Apple over trade secret theft and alleged coercion of shared suppliers",
+     "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+     "summary": "OpenAI is suing Apple in a California court, accusing it of trade secret theft and of coercing shared suppliers. The countersuit follows Apple's own lawsuit from the summer. Just two years ago, the two companies teamed up to bring ChatGPT to the iPhone.",
+     "published": "2026-11-27T19:38:37+00:00"
     }
    ],
    "topics": [
@@ -2857,6 +2958,19 @@
    "source_category": "Hardware",
    "published": "2026-11-27T18:30:12+00:00",
    "summary": "Retro tech is cool, and we've scoured the internet for the best deals on nostalgic technology.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "03c7729ee4f1",
+   "title": "Euclidean geometry in the asymptotic spectrum of tensors [pdf]",
+   "url": "https://github.com/openai/math/blob/main/preprints/Euclidean-geometry-in-the-asymptotic-spectrum-of-tensors-November-24-2026/paper.pdf",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T18:28:29+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3014,6 +3128,19 @@
    "source_category": "IT industry",
    "published": "2026-11-27T17:57:23+00:00",
    "summary": "Apple recently launched the iPhone 18 Pro and iPhone Duo, but three more new iPhone models will reportedly arrive in early 2027. Here’s what’s coming. more…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "783463322e3c",
+   "title": "Show HN: DragDropMath – Learn math by feel",
+   "url": "https://dragdropmath.com/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T17:56:28+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -4629,6 +4756,19 @@
    "topics": [
     "Cloud & infrastructure",
     "Hardware"
+   ]
+  },
+  {
+   "id": "b5a47895ab2c",
+   "title": "Rayshader 1.0: Exit the Matrix",
+   "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T14:30:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -9827,6 +9967,19 @@
    "source_category": "IT industry",
    "published": "2026-11-27T04:09:56+00:00",
    "summary": "Brave for iPhone can display an unverified connection warning even when an HTTPS site loads normally. Reloading sometimes clears it. On Privacy Guides, WebKit may be failing to pass certificate information to the browser.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "1a83b02fbbf3",
+   "title": "Citroën Hydraulic System",
+   "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T03:10:19+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
