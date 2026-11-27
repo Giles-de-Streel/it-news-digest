@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T23:16:46+00:00",
+ "generated": "2026-11-27T23:31:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -83,9 +83,9 @@
   },
   {
    "source": "The Decoder",
-   "fetched": 0,
-   "recent": 0,
-   "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+   "fetched": 10,
+   "recent": 10,
+   "error": null
   },
   {
    "source": "InfoWorld",
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 56,
-   "recent": 56,
+   "fetched": 52,
+   "recent": 52,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -582,7 +582,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 16,
+   "recent": 15,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -648,7 +648,7 @@
   {
    "source": "Proxmox Security Advisories",
    "fetched": 101,
-   "recent": 25,
+   "recent": 24,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 74,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1889,9 +1889,9 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 17,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Game Developer",
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 10,
-   "recent": 1,
+   "fetched": 11,
+   "recent": 3,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,41 @@
   }
  ],
  "items": [
+  {
+   "id": "ea2a27d3d182",
+   "title": "US insurance giant Allstate has been suffering an outage since November 23, affecting its website and app; the company hasn't said what is causing the outage",
+   "url": "https://www.techmeme.com/261127/p15#a261127p15",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-27T23:30:02+00:00",
+   "summary": "Jean Eaglesham / Wall Street Journal : US insurance giant Allstate has been suffering an outage since November 23, affecting its website and app; the company hasn't said what is causing the outage — The multiday outage has left customers struggling to reach the insurer during one of the year's busiest travel weeks",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2a7c3c001325",
+   "title": "CVE-2026-138004: A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138004",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T23:16:36.390000+00:00",
+   "summary": "A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01. Affected is the function soapcgi_main of the file /soap.cgi of the component UPnP Igd Control Endpoint. Such manipulation of the argument service leads to os command injection. The attack may be performed from remote.",
+   "kind": "cve",
+   "cve": "CVE-2026-138004",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-138004",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "e9ded438158a",
    "title": "Get a perfect Alienware 4K OLED 32\" display with RGB subpixels for $150 off",
