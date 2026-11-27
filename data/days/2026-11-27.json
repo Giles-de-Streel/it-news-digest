@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T21:01:43+00:00",
+ "generated": "2026-11-27T21:16:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 74,
    "recent": 0,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1002,7 +1002,7 @@
   {
    "source": "ITSM.tools",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1200,7 +1200,7 @@
   {
    "source": "Ubuntu security notices",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1656,7 +1656,7 @@
   {
    "source": "heise online (English)",
    "fetched": 150,
-   "recent": 63,
+   "recent": 64,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 40,
+   "recent": 41,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1758,7 +1758,7 @@
   {
    "source": "Resilience Media",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -2514,6 +2514,19 @@
  ],
  "items": [
   {
+   "id": "3be903e3ba89",
+   "title": "MacWhisper now remembers speakers’ voices across recordings",
+   "url": "https://9to5mac.com/2026/11/27/macwhisper-now-remembers-speakers-voices-across-recordings/",
+   "source": "9to5Mac",
+   "source_category": "IT industry",
+   "published": "2026-11-27T21:08:01+00:00",
+   "summary": "Dutch developer Jordi Bruin rolled out an update to his excellent transcription app MacWhisper this week with a much-requested feature: the ability to automatically identify previously named speakers in new recordings. Here are the details. more…",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
    "id": "79cb4501c567",
    "title": "How to Make a Nixie Tube",
    "url": "https://hackaday.com/2026/11/27/how-to-make-a-nixie-tube/",
@@ -2537,6 +2550,21 @@
    "also_covered_by": [],
    "topics": [
     "Hardware"
+   ]
+  },
+  {
+   "id": "d951957da212",
+   "title": "AI supply chain: Low-cost inference services steal secrets",
+   "url": "https://www.heise.de/en/news/AI-supply-chain-Low-cost-inference-services-steal-secrets-11541172.html?wt_mc=rss.red.ho.ho.rdf.beitrag.beitrag",
+   "source": "heise online (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T20:53:00+00:00",
+   "summary": "Prompt contents were siphoned off through AI router services that forward requests to low-cost inference engines. Model provider MiniMax ignored ZDR flags.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Supply chain security",
+    "Networking"
    ]
   },
   {
@@ -2717,7 +2745,16 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-27T20:12:02+00:00",
    "summary": "Looking for a beautiful 4K monitor for work and entertainment? This LG display just received a tempting Black Friday price cut.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "e0d97a3b3b94",
+     "source": "Tom's Hardware",
+     "title": "Samsung's 49-inch OLED gaming monitor drops to a new low price of $854",
+     "url": "https://www.tomshardware.com/monitors/gaming-monitors/samsungs-49-inch-oled-gaming-monitor-returns-to-its-lowest-price-ever-at-amazon-take-your-gpu-on-an-ultrawide-odyssey-for-usd854",
+     "summary": "Amazon is offering the Samsung Odyssey G9 G93SC at a price of $854, a new all-time low. The gaming monitor often sells for above $1,20",
+     "published": "2026-11-27T21:06:27+00:00"
+    }
+   ],
    "topics": [
     "General IT"
    ]
@@ -3116,6 +3153,19 @@
    ]
   },
   {
+   "id": "061346cb2f74",
+   "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
+   "url": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T18:59:55+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "ecfc55929575",
    "title": "New Boston Scientific data breach exposes personal, medical info",
    "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
@@ -3165,6 +3215,19 @@
      "date": "2026-11-27"
     }
    }
+  },
+  {
+   "id": "fd73c92e8ca2",
+   "title": "Scrapheap America",
+   "url": "https://dansinker.com/posts/2026-11-20-scrapheap/",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T18:50:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
   },
   {
    "id": "8b2db1571276",
