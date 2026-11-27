@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T12:46:16+00:00",
+ "generated": "2026-11-27T13:01:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 44,
+   "recent": 45,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 81,
-   "recent": 15,
+   "fetched": 80,
+   "recent": 16,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 73,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -936,7 +936,7 @@
   {
    "source": "NGINX Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1170,7 +1170,7 @@
   {
    "source": "It's FOSS",
    "fetched": 15,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 25,
+   "fetched": 99,
+   "recent": 26,
    "error": null
   },
   {
@@ -1902,7 +1902,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -2286,7 +2286,7 @@
   {
    "source": "Virtualization Howto",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,91 @@
   }
  ],
  "items": [
+  {
+   "id": "08a10b14ab4e",
+   "title": "Moving off Ingress-NGINX without rewriting your Ingress resources",
+   "url": "https://blog.nginx.org/blog/moving-off-ingress-nginx-without-rewriting-your-ingress-resources",
+   "source": "NGINX Blog",
+   "source_category": "Java & web servers",
+   "published": "2026-11-27T12:56:26+00:00",
+   "summary": "At KubeCon + CloudNativeCon North America 2026, we had a lot of conversations with users trying to move off the now-archived Ingress-NGINX project. Its final release, v1.15.1, shipped on March 19, 2026. Clusters that run it keep working, but nobody will fix its bugs or patch its security issues anymore.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "c711ee86d8bd",
+   "title": "Indie puzzle adventure Rhell beats GTA 6 to win Best Game Made in The North at the Game Republic Awards",
+   "url": "https://www.gamesindustry.biz/indie-puzzle-adventure-rhell-beats-gta-6-to-win-best-game-made-in-the-north-at-the-game-republic-awards",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-27T12:55:20+00:00",
+   "summary": "At the Game Republic Awards in Wakefield last night, the indie puzzle adventure Rhell: Warped Worlds and Troubled Times beat off competition from the likes of Grand Theft Auto 6, Lego Batman: Legacy of the Dark Knight, and Wardogs to take home the prize for Best Game Made in The North.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Game development"
+   ]
+  },
+  {
+   "id": "278105df6615",
+   "title": "RHSA-2026:104048: Critical: mysql8.4 security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:104048",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:52:32+00:00",
+   "summary": "An update for mysql8.4 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source",
+    "Databases"
+   ]
+  },
+  {
+   "id": "d4cdfefb798f",
+   "title": "UAE's BitHash targets AI data centers, eyes 250MW project in Oman",
+   "url": "https://www.datacenterdynamics.com/en/news/uaes-bithash-targets-ai-data-centers-eyes-250mw-project-in-oman/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-27T12:50:33+00:00",
+   "summary": "Another cryptominer plans AI capacity",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "4a34f9256b80",
+   "title": "5 Home Lab Projects to Try This Weekend: November 27, 2026",
+   "url": "https://www.virtualizationhowto.com/2026/11/5-home-lab-projects-to-try-this-weekend-november-27-2026/",
+   "source": "Virtualization Howto",
+   "source_category": "Virtualization",
+   "published": "2026-11-27T12:48:00+00:00",
+   "summary": "Well, it is Black Friday week and if you are anything like me, you have probably been looking at things you could upgrade in your home lab. Since RAM is…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "9c58b93cb445",
+   "title": "Handy TP-Link 5-port gigabit ethernet switch returns to all-time low of $8 at Amazon — perfect for homelabbers, office setups and IoT networking",
+   "url": "https://www.tomshardware.com/networking/network-switches/handy-tp-link-5-port-gigabit-ethernet-switch-returns-to-all-time-low-of-usd8-at-amazon-perfect-for-homelabbers-office-setups-and-iot-networking",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T12:47:52+00:00",
+   "summary": "The TP-Link LS1005G Lightwave 5-port unmanaged Ethernet switch is back down to its lowest-ever price at just $7.99 on Amazon as a part of their Black Friday sale. At over 53% off, an unmanaged switch buys you freedom and, crucially, more Ethernet ports to play around with.",
+   "also_covered_by": [],
+   "topics": [
+    "Embedded & IoT",
+    "Networking"
+   ]
+  },
   {
    "id": "6b8f0e6c0678",
    "title": "Proxmox Datacenter Manager PSA-2026-00118-1: Empty passwords forwarded to LDAP/AD servers",
@@ -2801,6 +2886,22 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "4b73f2c3b837",
+   "title": "A Better Black Friday Gift: Linux Foundation Certifications at Up to 65% Off",
+   "url": "https://feed.itsfoss.com/link/24361/17541993/lf-cyber-monday-offer-26",
+   "source": "It's FOSS",
+   "source_category": "Linux admin",
+   "published": "2026-11-27T12:22:28+00:00",
+   "summary": "Planning a career in Linux, cloud or DevOps? LFCS, CKA, Kubestronaut and other Linux Foundation certifications are up to 65% off for Cyber Monday. Offer ends December 4.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Cloud & infrastructure",
+    "Development",
+    "DevOps & SRE"
    ]
   },
   {
