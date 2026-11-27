@@ -1,12 +1,12 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T09:16:45+00:00",
+ "generated": "2026-11-27T09:31:12+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -48,7 +48,7 @@
   {
    "source": "The Record",
    "fetched": 5,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 47,
-   "recent": 47,
+   "fetched": 49,
+   "recent": 49,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 72,
    "recent": 0,
    "error": null
   },
@@ -791,9 +791,9 @@
   },
   {
    "source": "MongoDB blog",
-   "fetched": 0,
+   "fetched": 150,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Campus Technology",
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1787,7 +1787,7 @@
   },
   {
    "source": "Semafor Technology & Security",
-   "fetched": 69,
+   "fetched": 57,
    "recent": 4,
    "error": null
   },
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 95,
+   "fetched": 100,
    "recent": 22,
    "error": null
   },
@@ -1902,7 +1902,7 @@
   {
    "source": "GamesIndustry.biz",
    "fetched": 100,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -2514,6 +2514,110 @@
  ],
  "items": [
   {
+   "id": "7387e628eab7",
+   "title": "Modern Warfare 4 launch boosts Call of Duty HQ to top of Newzoo's PC revenue charts",
+   "url": "https://www.gamesindustry.biz/modern-warfare-4-launch-boosts-call-of-duty-hq-to-top-of-newzoos-pc-charts",
+   "source": "GamesIndustry.biz",
+   "source_category": "Game development",
+   "published": "2026-11-27T09:24:20+00:00",
+   "summary": "While October saw only a few new releases, the launch of Call of Duty: Modern Warfare 4 significantly increased revenue for game launcher Call of Duty HQ, moving it to first place on Newzoo's PC charts and second on console within a week.",
+   "also_covered_by": [],
+   "topics": [
+    "Game development"
+   ]
+  },
+  {
+   "id": "518996161fcd",
+   "title": "CVE-2026-59103: MONEO ERP exposes the Ping method of its _slave JSON-RPC service over WebSocket as @rpc.openpublic, so it can…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59103",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T09:17:02.453000+00:00",
+   "summary": "MONEO ERP exposes the Ping method of its _slave JSON-RPC service over WebSocket as @rpc.openpublic, so it can be called without a valid session. The method's only guard compares the calling application name with \"_login\", but that value is taken from the client-controlled params.appname field of the request.",
+   "kind": "cve",
+   "cve": "CVE-2026-59103",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-59103",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "3221053a6484",
+   "title": "CVE-2026-133941: The country manager page of the JTL-Shop administration backend (/admin/countries) writes the request…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133941",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T09:17:02.120000+00:00",
+   "summary": "The country manager page of the JTL-Shop administration backend (/admin/countries) writes the request parameter activeSortOrder without output encoding into a single-quoted JavaScript string and into HTML attributes. The overview page requires no CSRF token.",
+   "kind": "cve",
+   "cve": "CVE-2026-133941",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133941",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "a49f134b382b",
+   "title": "CVE-2026-133939: The OPC (OnPage Composer) start menu, which JTL-Shop shows to logged-in backend users on storefront pages,…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133939",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T09:17:01.753000+00:00",
+   "summary": "The OPC (OnPage Composer) start menu, which JTL-Shop shows to logged-in backend users on storefront pages, writes the current page identifier (which contains the search term on search pages) and further values into single-quoted JavaScript strings without escaping.",
+   "kind": "cve",
+   "cve": "CVE-2026-133939",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133939",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Development"
+   ]
+  },
+  {
+   "id": "4fa2a90f8d27",
+   "title": "CVE-2026-133938: The backend language switch action (quick_change_language) of the JTL-Shop administration backend is executed…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133938",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T09:17:01.530000+00:00",
+   "summary": "The backend language switch action (quick_change_language) of the JTL-Shop administration backend is executed without a CSRF token check, and the supplied language value is neither validated against the installed backend languages nor encoded on output.",
+   "kind": "cve",
+   "cve": "CVE-2026-133938",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-133938",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
    "id": "68361e4e6df4",
    "title": "Royal Navy orders £142M in minehunting drones from US supplier",
    "url": "https://www.theregister.com/offbeat/2026/11/27/royal-navy-orders-142m-in-minehunting-drones-from-us-supplier/5312291",
@@ -2524,6 +2628,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "492b879d4355",
+   "title": "Ubisoft Denies Mandating Generative AI: Do Game Pitches Have to Justify Leaving It Out?",
+   "url": "https://joho-todai.com/en/ubisoft-denies-mandatory-ai-use-game-planning/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T09:15:00+00:00",
+   "summary": "Ubisoft employees say teams pitching new games have to explain why they would leave out generative AI. Ubisoft denied requiring projects to use it and said development teams decide whether and how to use it.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
@@ -2538,6 +2655,34 @@
    "topics": [
     "Linux & open source",
     "Game development"
+   ]
+  },
+  {
+   "id": "c4f4c770d4bb",
+   "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-27T09:08:16+00:00",
+   "summary": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077). [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Microsoft & Windows",
+    "System administration"
+   ]
+  },
+  {
+   "id": "e07fb6e6d611",
+   "title": "Japan Proposes Mandatory Online Radio Licensing Applications for Basic Broadcast Station Licensees",
+   "url": "https://joho-todai.com/en/soumu-broadcast-stations-electronic-license-applications/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T09:02:00+00:00",
+   "summary": "On November 27, 2026, Japan's Ministry of Internal Affairs and Communications proposed requiring licensees of basic broadcasting stations, including TV and radio broadcasters, to file radio station licensing and related applications electronically.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -2732,6 +2877,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "138e1e18872d",
+   "title": "Claude sabotaging SOTA ML research tasks",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T08:28:08+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
    ]
   },
   {
