@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T17:30:59+00:00",
+ "generated": "2026-11-27T17:46:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 54,
-   "recent": 54,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "source": "Tom's Hardware",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 76,
-   "recent": 19,
+   "fetched": 65,
+   "recent": 20,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 74,
    "recent": 0,
    "error": null
   },
@@ -1008,7 +1008,7 @@
   {
    "source": "InvGate blog",
    "fetched": 10,
-   "recent": 9,
+   "recent": 10,
    "error": null
   },
   {
@@ -1374,7 +1374,7 @@
   {
    "source": "Qualys Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 16,
+   "recent": 17,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 35,
+   "recent": 36,
    "error": null
   },
   {
@@ -1626,7 +1626,7 @@
   {
    "source": "CNBC Technology",
    "fetched": 30,
-   "recent": 13,
+   "recent": 12,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 25,
+   "fetched": 95,
+   "recent": 26,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
-   "recent": 3,
+   "fetched": 12,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,46 @@
  ],
  "items": [
   {
+   "id": "9a5a2a9103b7",
+   "title": "RHSA-2026:104088: Important: kernel security, bug fix, and enhancement update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:104088",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T17:31:41+00:00",
+   "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the…",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "d1d1b44085cf",
+   "title": "iBuyPower’s Black Friday offers net you $650 off powerful RTX 5080 prebuilt PC",
+   "url": "https://www.tomshardware.com/desktops/gaming-pcs/ibuypowers-black-friday-offers-net-you-usd650-off-powerful-rtx-5080-prebuilt-pc-stackable-offer-code-can-net-you-a-bargain-bundle-with-a-free-monitor-and-peripherals",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T17:30:00+00:00",
+   "summary": "Prebuilt PC extraordinaires iBuyPower is having a huge Black Friday sale across a whole range of products, including a powerful bundle on an all-AMD Ryzen 9 7800X3D / RX 9070 XT build, which will also net you free bundled extras, including a set of Asus peripherals and a 144Hz FHD MSI gaming monitor, and a total of…",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
+   "id": "d00616698c47",
+   "title": "The best cordless vacuum cleaners for a spotless home: 10 tried and tested favourites",
+   "url": "https://www.theguardian.com/thefilter/2025/mar/28/best-cordless-vacuum-cleaners-uk",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-27T17:27:25+00:00",
+   "summary": "Stick vacuums are a convenient alternative to corded designs, but which model wins for overall cleaning prowess? Our expert reveals all • The best robot vacuums • How to make your vacuum last longer Choosing a cordless vacuum is a big decision.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "294cb5e162c7",
    "title": "Open Source Ticketing Systems: 8 Tools Compared (2027)",
    "url": "https://blog.invgate.com/open-source-ticketing-system",
@@ -2526,6 +2566,19 @@
     "Linux & open source",
     "Development",
     "ITSM"
+   ]
+  },
+  {
+   "id": "50da54dd9a74",
+   "title": "France Slips into Recession as Exports Sag",
+   "url": "https://www.wsj.com/world/europe/french-economy-slips-into-recession-as-exports-sag-47e934c5",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T17:21:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
    ]
   },
   {
@@ -3755,6 +3808,20 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "5febe200cf97",
+   "title": "AI Knowledge Base: How to Use AI for Knowledge Management",
+   "url": "https://blog.invgate.com/ai-knowledge-base",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-27T14:45:00+00:00",
+   "summary": "An AI knowledge base can change how an organization creates, maintains, and delivers knowledge. AI can help turn support interactions and existing information into useful content, keep that content current, and make it easier for employees or customers to find answers when they need them.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "ITSM"
    ]
   },
   {
