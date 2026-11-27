@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-27T04:16:08+00:00",
+ "generated": "2026-11-27T04:30:55+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -108,7 +108,7 @@
   {
    "source": "CircleID",
    "fetched": 15,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 53,
-   "recent": 53,
+   "fetched": 52,
+   "recent": 52,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 114,
+   "fetched": 110,
    "recent": 18,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -858,7 +858,7 @@
   {
    "source": "AWS What's New",
    "fetched": 100,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1482,7 +1482,7 @@
   {
    "source": "GeekWire",
    "fetched": 35,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1638,7 +1638,7 @@
   {
    "source": "NASA News Releases",
    "fetched": 10,
-   "recent": 6,
+   "recent": 5,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 31,
+   "recent": 30,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1764,7 +1764,7 @@
   {
    "source": "Variety Digital",
    "fetched": 10,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1884,13 +1884,13 @@
   {
    "source": "CBS News Tech",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 22,
+   "fetched": 94,
+   "recent": 21,
    "error": null
   },
   {
@@ -1907,9 +1907,9 @@
   },
   {
    "source": "GameFromScratch",
-   "fetched": 0,
-   "recent": 0,
-   "error": "NotAFeed: Got a web page instead of the feed (page title \"One moment, please...\"); likely a temporary error or bot-check page"
+   "fetched": 10,
+   "recent": 1,
+   "error": null
   },
   {
    "source": "GameDev.net",
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 15,
-   "recent": 6,
+   "recent": 7,
    "error": null
   },
   {
@@ -2064,7 +2064,7 @@
   {
    "source": "Akamai status",
    "fetched": 24,
-   "recent": 0,
+   "recent": 1,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,19 @@
   }
  ],
  "items": [
+  {
+   "id": "eada15a7e0c9",
+   "title": "Edge Delivery Issues",
+   "url": "https://www.akamaistatus.com/incidents/b0yvz1f8lw49",
+   "source": "Akamai status",
+   "source_category": "Cloud status",
+   "published": "2026-11-27T04:26:01+00:00",
+   "summary": "Nov 27 , 04:26 UTC Investigating - We are investigating an issue with HTTP/3 related to incomplete object delivery with HTTP 200 OK responses. We are actively investigating the issue and will provide another update within the next 60 minutes.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud status"
+   ]
+  },
   {
    "id": "8d2a271f1394",
    "title": "GitHub Highlights AnyPS5, a Project to Port PS5 Games to PC, Then Deletes the Post Hours Later",
