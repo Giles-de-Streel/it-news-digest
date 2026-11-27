@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T06:16:54+00:00",
+ "generated": "2026-11-27T06:31:14+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -12,7 +12,7 @@
   {
    "source": "The Hacker News",
    "fetched": 50,
-   "recent": 7,
+   "recent": 9,
    "error": null
   },
   {
@@ -84,7 +84,7 @@
   {
    "source": "The Decoder",
    "fetched": 10,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 49,
-   "recent": 49,
+   "fetched": 52,
+   "recent": 52,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 28,
+   "recent": 27,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -636,7 +636,7 @@
   {
    "source": "Cisco PSIRT",
    "fetched": 50,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 72,
    "recent": 0,
    "error": null
   },
@@ -1428,7 +1428,7 @@
   {
    "source": "Higher Ed Dive",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 39,
+   "recent": 38,
    "error": null
   },
   {
@@ -1518,7 +1518,7 @@
   {
    "source": "EFF Deeplinks",
    "fetched": 50,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 93,
-   "recent": 21,
+   "fetched": 100,
+   "recent": 22,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
-   "recent": 6,
+   "fetched": 12,
+   "recent": 7,
    "error": null
   },
   {
@@ -2514,6 +2514,154 @@
  ],
  "items": [
   {
+   "id": "a80beaca939b",
+   "title": "Eight Windows Terminal Proposals Target Overhead in Rendering and Text Processing",
+   "url": "https://joho-todai.com/en/windows-terminal-performance-improvements-rendering-text-processing/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T06:26:15+00:00",
+   "summary": "Windows Terminal developers published proposals to speed up render notifications, text processing, scrolling, and keyboard input. Benchmarks showed higher throughput and lower CPU time for sustained output and ASCII text.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware",
+    "Development"
+   ]
+  },
+  {
+   "id": "83895332188f",
+   "title": "Rust-Based Bash-Compatible Shell brush 0.5.0 Passes Over 96% of Completion Tests and Adds Windows Builds",
+   "url": "https://joho-todai.com/en/brush-shell-0-5-0-bash-compatible-windows/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T06:19:05+00:00",
+   "summary": "Version 0.5.0 of brush, a Bash-compatible shell written in Rust, passed 2,040 tests for Bash command completion scripts and improved pipeline execution. The project now distributes official Windows binaries.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "8438cf9715b8",
+   "title": "CVE-2026-137738: In RealVNC Server before 7.19.1, UDP-based connections could potentially be exploited without authentication…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137738",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T06:17:09.867000+00:00",
+   "summary": "In RealVNC Server before 7.19.1, UDP-based connections could potentially be exploited without authentication to execute code remotely or cause the software to crash. This could allow an attacker to remotely execute code as root on certain platforms or perform a denial of service attack.",
+   "kind": "cve",
+   "cve": "CVE-2026-137738",
+   "cvss": {
+    "score": 9.8,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137738",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "bb230b377b8b",
+   "title": "CVE-2026-137724: A vulnerability in the Platform component of Mitel OpenScape 4000, and OpenScape 4000 Manager could allow an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137724",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T06:17:09.727000+00:00",
+   "summary": "A vulnerability in the Platform component of Mitel OpenScape 4000, and OpenScape 4000 Manager could allow an unauthenticated attacker to conduct an unauthorized access attack due to improper authentication mechanisms.",
+   "kind": "cve",
+   "cve": "CVE-2026-137724",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137724",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a02042066861",
+   "title": "CVE-2026-137723: A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137723",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T06:17:09.587000+00:00",
+   "summary": "A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system.",
+   "kind": "cve",
+   "cve": "CVE-2026-137723",
+   "cvss": {
+    "score": 9.6,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137723",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "9120035b98c4",
+   "title": "CVE-2026-137721: A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137721",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-27T06:17:09.443000+00:00",
+   "summary": "A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system.",
+   "kind": "cve",
+   "cve": "CVE-2026-137721",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-137721",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "fb6e6c8a4ffd",
+   "title": "SAKURA Internet Aims to Keep Models Available Long Term With Flat-Rate Simple AI",
+   "url": "https://joho-todai.com/en/sakura-internet-fixed-price-ai-model-stability/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T06:07:54+00:00",
+   "summary": "SAKURA Internet plans to offer Simple AI, a generative AI service designed for integration into business systems, at a flat monthly rate. The company aims to define a long-term model availability policy to address changes in responses when models are replaced.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "bdba96d745bb",
+   "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+   "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-27T06:04:20+00:00",
+   "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "AI",
+    "ICS / OT"
+   ]
+  },
+  {
    "id": "bab123229796",
    "title": "Product showcase: Norton helps Claude users uncover the telltale signs of fraud",
    "url": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
@@ -2525,6 +2673,19 @@
    "topics": [
     "AI",
     "Identity & access"
+   ]
+  },
+  {
+   "id": "4d7c13b0cba9",
+   "title": "Tera Term Mac 0.7.0 Adds Search After Cutting Scrollback Memory Use, With the Original Author's Approval",
+   "url": "https://joho-todai.com/en/tera-term-mac-0-7-0-search-feature/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-27T06:00:53+00:00",
+   "summary": "Tera Term Mac 0.7.0, a port of the Windows terminal emulator, adds search for terminal scrollback and settings. It can reuse Windows settings and macros, and version 0.6.1 cut scrollback memory use.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows"
    ]
   },
   {
@@ -2552,6 +2713,21 @@
    "topics": [
     "Vulnerabilities & patches",
     "Threats & malware"
+   ]
+  },
+  {
+   "id": "706168821faa",
+   "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+   "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "source": "The Hacker News",
+   "source_category": "Security",
+   "published": "2026-11-27T05:48:20+00:00",
+   "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Pen testing & red team",
+    "Networking"
    ]
   },
   {
