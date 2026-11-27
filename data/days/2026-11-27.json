@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T11:30:52+00:00",
+ "generated": "2026-11-27T11:45:57+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 22,
+   "recent": 23,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 39,
+   "recent": 40,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -683,8 +683,8 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 85,
-   "recent": 12,
+   "fetched": 86,
+   "recent": 13,
    "error": null
   },
   {
@@ -954,7 +954,7 @@
   {
    "source": "APNIC Blog",
    "fetched": 30,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -1266,7 +1266,7 @@
   {
    "source": "PlatformEngineering.org",
    "fetched": 100,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 34,
+   "recent": 35,
    "error": null
   },
   {
@@ -1589,9 +1589,9 @@
   },
   {
    "source": "Prajwal Desai",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "source": "Adrian Roselli",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 24,
+   "fetched": 98,
+   "recent": 25,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
-   "recent": 4,
+   "fetched": 15,
+   "recent": 5,
    "error": null
   },
   {
@@ -2513,6 +2513,88 @@
   }
  ],
  "items": [
+  {
+   "id": "7923182a6f50",
+   "title": "RHSA-2026:104037: Critical: ruby security update",
+   "url": "https://access.redhat.com/errata/RHSA-2026:104037",
+   "source": "Red Hat security advisories (Important/Critical)",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T11:44:10+00:00",
+   "summary": "An update for ruby is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "e76cd6d2f509",
+   "title": "UK Department of Work and Pensions (DWP) online services down after cyberattack",
+   "url": "https://www.neowin.net/news/uk-department-of-work-and-pensions-dwp-online-services-down-after-cyberattack/?utm_source=rss",
+   "source": "Neowin",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-27T11:40:02+00:00",
+   "summary": "The UK Gov has confirmed a cyberattack has crippled UK DWP online services, leaving some of these platforms operations disrupted.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "7f97eea4c705",
+   "title": "One pull request, two walls: Onboarding teams onto a shared EKS platform",
+   "url": "https://platformengineering.org/blog/one-pull-request-two-walls-onboarding-teams-shared-eks-platform",
+   "source": "PlatformEngineering.org",
+   "source_category": "DevOps & automation",
+   "published": "2026-11-27T11:33:14+00:00",
+   "summary": "How one pull request onboards a team onto a shared EKS platform, with an Argo CD allow-list and RBAC sync impersonation as walls that CI proves every day.",
+   "also_covered_by": [],
+   "topics": [
+    "DevOps & SRE"
+   ]
+  },
+  {
+   "id": "ef71caf6baa6",
+   "title": "Europe's AI sovereignty push: Lots of cloud, not much silver lining",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/27/europes-ai-sovereignty-push-lots-of-cloud-not-much-silver-lining/5312120",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-27T11:32:00+00:00",
+   "summary": "Datacenter spending is booming but the models, the chips, and the clout all live in US and Asia",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "7b94770519ab",
+   "title": "Malaysia's Axiata Group to sell overseas Edotco tower units for combined value of $2.9bn",
+   "url": "https://www.datacenterdynamics.com/en/news/malaysias-axiata-group-to-sell-overseas-edotco-tower-units-for-combined-value-of-29bn/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-27T11:30:52+00:00",
+   "summary": "A Macquarie-led consortium has signed binding agreements to acquire the towers across five markets",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "496b6f326f12",
+   "title": "Nvidia agrees to $290 million settlement over 2018 crypto mining GPU sales",
+   "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-agrees-to-usd290-million-settlement-over-2018-crypto-mining-gpu-sales-ends-eight-year-investor-lawsuit-without-admitting-wrongdoing",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T11:30:00+00:00",
+   "summary": "Nvidia agrees to pay $290 million settlement for class action allegedly misleading investors that much of gaming GPU sales were actually driven by cryptocurrency mining demand.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware",
+    "Game development"
+   ]
+  },
   {
    "id": "da67260e3113",
    "title": "Tract plans second data center campus in the UK",
