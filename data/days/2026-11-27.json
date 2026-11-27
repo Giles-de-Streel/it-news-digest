@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T12:31:50+00:00",
+ "generated": "2026-11-27T12:46:16+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 23,
+   "recent": 25,
    "error": null
   },
   {
@@ -72,7 +72,7 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "source": "Tom's Hardware",
    "fetched": 50,
-   "recent": 43,
+   "recent": 44,
    "error": null
   },
   {
@@ -228,7 +228,7 @@
   {
    "source": "Lobsters",
    "fetched": 25,
-   "recent": 18,
+   "recent": 19,
    "error": null
   },
   {
@@ -432,7 +432,7 @@
   {
    "source": "Malwarebytes Labs",
    "fetched": 20,
-   "recent": 3,
+   "recent": 4,
    "error": null
   },
   {
@@ -582,7 +582,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 15,
+   "recent": 16,
    "error": null
   },
   {
@@ -647,8 +647,8 @@
   },
   {
    "source": "Proxmox Security Advisories",
-   "fetched": 92,
-   "recent": 16,
+   "fetched": 101,
+   "recent": 25,
    "error": null
   },
   {
@@ -749,9 +749,9 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 0,
+   "fetched": 73,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Electronic Design",
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 12,
+   "recent": 13,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1722,7 +1722,7 @@
   {
    "source": "Terence Eden's Blog",
    "fetched": 20,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1871,9 +1871,9 @@
   },
   {
    "source": "Sectigo",
-   "fetched": 0,
+   "fetched": 3,
    "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "error": null
   },
   {
    "source": "Terence Tao",
@@ -1889,9 +1889,9 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 100,
+   "recent": 25,
+   "error": null
   },
   {
    "source": "Game Developer",
@@ -2009,9 +2009,9 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 0,
-   "recent": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "fetched": 12,
+   "recent": 4,
+   "error": null
   },
   {
    "source": "Microsoft 365 status",
@@ -2124,7 +2124,7 @@
   {
    "source": "GitHub Status",
    "fetched": 25,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,256 @@
   }
  ],
  "items": [
+  {
+   "id": "6b8f0e6c0678",
+   "title": "Proxmox Datacenter Manager PSA-2026-00118-1: Empty passwords forwarded to LDAP/AD servers",
+   "url": "https://forum.proxmox.com/posts/877005/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:39:08+00:00",
+   "summary": "Packages: librust-proxmox-ldap-dev, proxmox-backup-server, proxmox-datacenter-manager. Empty passwords were forwarded to the LDAP/AD server when authenticating against an LDAP/AD-backed realm.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3088e1f2163b",
+   "title": "Proxmox Backup Server PSA-2026-00118-1: Empty passwords forwarded to LDAP/AD servers",
+   "url": "https://forum.proxmox.com/posts/877004/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:39:04+00:00",
+   "summary": "Packages: librust-proxmox-ldap-dev, proxmox-backup-server, proxmox-datacenter-manager. Empty passwords were forwarded to the LDAP/AD server when authenticating against an LDAP/AD-backed realm.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "f7b90ccaf15d",
+   "title": "UK government rejects national consultation on AI datacenters",
+   "url": "https://www.theregister.com/off-prem/2026/11/27/uk-government-rejects-national-consultation-on-ai-datacenters/5312501",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:38:00+00:00",
+   "summary": "Ministers point to project-level environmental checks as petition passes 39,000 signatures",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "AI",
+    "Hardware",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "722a1099399a",
+   "title": "Proxmox Datacenter Manager PSA-2026-00117-1: Newline injection in network configuration via parser misalignment",
+   "url": "https://forum.proxmox.com/posts/877002/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:37:20+00:00",
+   "summary": "Packages: libpve-common-perl, libpve-network-api-perl, proxmox-backup-manager, proxmox-datacenter-manager, pmg-api. Inconsistent handling of CR bytes in API parameters/network configuration options allowed an authenticated attacker with privileges that allow modifying the host network configuration to inject options…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "cd08f651deeb",
+   "title": "Proxmox Backup Server PSA-2026-00117-1: Newline injection in network configuration via parser misalignment",
+   "url": "https://forum.proxmox.com/posts/877001/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:37:16+00:00",
+   "summary": "Packages: libpve-common-perl, libpve-network-api-perl, proxmox-backup-manager, proxmox-datacenter-manager, pmg-api. Inconsistent handling of CR bytes in API parameters/network configuration options allowed an authenticated attacker with privileges that allow modifying the host network configuration to inject options…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "a4c77a135cfe",
+   "title": "Proxmox VE PSA-2026-00117-1: Newline injection in network configuration via parser misalignment",
+   "url": "https://forum.proxmox.com/posts/877000/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:37:13+00:00",
+   "summary": "Packages: libpve-common-perl, libpve-network-api-perl, proxmox-backup-manager, proxmox-datacenter-manager, pmg-api. Inconsistent handling of CR bytes in API parameters/network configuration options allowed an authenticated attacker with privileges that allow modifying the host network configuration to inject options…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "2b6ac91019fb",
+   "title": "Proxmox Mail Gateway PSA-2026-00117-1: Newline injection in network configuration via parser misalignment",
+   "url": "https://forum.proxmox.com/posts/876999/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:37:09+00:00",
+   "summary": "Packages: libpve-common-perl, libpve-network-api-perl, proxmox-backup-manager, proxmox-datacenter-manager, pmg-api. Inconsistent handling of CR bytes in API parameters/network configuration options allowed an authenticated attacker with privileges that allow modifying the host network configuration to inject options…",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Backup & recovery",
+    "Networking",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "3e47e2f23edb",
+   "title": "Meituan reports Q3 revenue up 21.6% YoY to ~$17.3B, above est., and an adjusted net profit of ~$285.1M, up from a ~$2.4B adjusted net loss",
+   "url": "https://www.techmeme.com/261127/p5#a261127p5",
+   "source": "Techmeme",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:35:01+00:00",
+   "summary": "Ben Jiang / South China Morning Post : Meituan reports Q3 revenue up 21.6% YoY to ~$17.3B, above est., and an adjusted net profit of ~$285.1M, up from a ~$2.4B adjusted net loss — Chinese food-delivery giant Meituan reported a second consecutive profitable quarter on Friday, as the company navigates intensifying…",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "714811a55e39",
+   "title": "Gadget Review: WiFi Carbon Monoxide Alarm (JKD-625W) ★★★★⯪",
+   "url": "https://shkspr.mobi/blog/2026/11/gadget-review-wifi-carbon-monoxide-alarm-jkd-625w/",
+   "source": "Terence Eden's Blog",
+   "source_category": "Development",
+   "published": "2026-11-27T12:34:56+00:00",
+   "summary": "I was rudely woken at 5AM by the death-throes of my Carbon Monoxide alarm. Apparently it is an iron-clad law of the Universe that their dying beeps must happen while you're asleep. Right, time for a new detector as I'd rather not die of CO poisoning.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking",
+    "Policy & regulation"
+   ]
+  },
+  {
+   "id": "8b66807d42f9",
+   "title": "Proxmox Datacenter Manager PSA-2026-00116-1: incomplete privilege checks for API token creation",
+   "url": "https://forum.proxmox.com/posts/876998/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:33:34+00:00",
+   "summary": "Packages: pve-access-control. For Proxmox VE, a user with privileges which allow modification of all existing users could create privilege-separated API tokens or regenerate the secret of existing tokens for arbitrary users.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "0753a904f697",
+   "title": "FIFA hit by data breach after suspected account compromise",
+   "url": "https://www.itpro.com/cyber-resilience/data-breaches/fifa-hit-by-data-breach-after-suspected-account-compromise",
+   "source": "ITPro",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:33:31+00:00",
+   "summary": "An emerging threat group has claimed responsibility, with 12GB of files supposedly accessed",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches"
+   ]
+  },
+  {
+   "id": "9f7935d3bbc9",
+   "title": "Proxmox Backup Server PSA-2026-00116-1: incomplete privilege checks for API token creation",
+   "url": "https://forum.proxmox.com/posts/876997/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:33:29+00:00",
+   "summary": "Packages: pve-access-control. For Proxmox VE, a user with privileges which allow modification of all existing users could create privilege-separated API tokens or regenerate the secret of existing tokens for arbitrary users.",
+   "also_covered_by": [],
+   "topics": [
+    "Backup & recovery"
+   ]
+  },
+  {
+   "id": "82205e703191",
+   "title": "Proxmox VE PSA-2026-00116-1: incomplete privilege checks for API token creation",
+   "url": "https://forum.proxmox.com/posts/876996/",
+   "source": "Proxmox Security Advisories",
+   "source_category": "Vendor advisories",
+   "published": "2026-11-27T12:33:24+00:00",
+   "summary": "Packages: pve-access-control. For Proxmox VE, a user with privileges which allow modification of all existing users could create privilege-separated API tokens or regenerate the secret of existing tokens for arbitrary users.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "a0c0751b0119",
+   "title": "Helios Solar and Galaxy Venus Data Center sign MoU to explore solar supply for data center in Perak, Malaysia",
+   "url": "https://www.datacenterdynamics.com/en/news/helios-solar-and-galaxy-venus-data-center-sign-mou-to-explore-solar-supply-for-data-center-in-perak-malaysia/",
+   "source": "Data Center Dynamics",
+   "source_category": "Hardware",
+   "published": "2026-11-27T12:30:57+00:00",
+   "summary": "Tied to Helios' up to 1GW solar project in Gua Musang, Malaysia",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "84e1559a9232",
+   "title": "Marmot, an alternative Go compiler",
+   "url": "https://marmot.gaurav.zip/",
+   "source": "Lobsters",
+   "source_category": "Development",
+   "published": "2026-11-27T12:30:42+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Development"
+   ]
+  },
+  {
+   "id": "dcf9162e5162",
+   "title": "Meta whistleblower calls on Burnham to go further with ban on NDAs",
+   "url": "https://www.theguardian.com/technology/2026/nov/27/meta-whistleblower-sarah-wynn-williams-calls-on-burnham-to-go-further-with-ban-on-non-disclosure-agreements",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:30:08+00:00",
+   "summary": "Sarah Wynn-Williams says tech insiders with concerns about AI are being silenced in system reminiscent of George Orwell’s 1984 The Meta whistleblower who made allegations about the social media company’s treatment of teenagers has urged Andy Burnham to go further in banning non-disclosure agreements, warning that tech…",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "2a8bd297ef4d",
+   "title": "AMD and Winbond vulnerabilities let attackers brute-force BitLocker PINs on millions of PCs",
+   "url": "https://www.tomshardware.com/tech-industry/cyber-security/amd-and-winbond-vulnerabilities-let-attackers-brute-force-bitlocker-pins-on-millions-of-pcs-cracking-a-six-digit-pin-drops-from-19-years-to-20-days",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T12:30:00+00:00",
+   "summary": "AMD and Winbond vulnerabilities let hacks let malfeasants guess Bitlocker PINs on millions of machines — brute-forcing a six-digit PIN takes 20 days instead of 19 years, at most",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Hardware"
+   ]
+  },
   {
    "id": "e20b489c2161",
    "title": "Amazon Kids Tablet 8 is a great choice for pre-teens, gets massive 43% Black Friday discount",
@@ -2569,6 +2819,19 @@
    ]
   },
   {
+   "id": "e5964d32149f",
+   "title": "Israel's AI founders are perfect optimizers - that's the problem",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PQVd0MFZWY3BwQzJWanktQkpNTEsxOENpTWV4eFEzM2xnOFhrcEJ5a0VCZlRKNXI3T05BeDByUXFVaTZJUi1rd1NHYUdwNWVfQXdSY1JId0cxa2Y4STBUV0VQZ3BOTkk?oc=5",
+   "source": "Calcalist Tech",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:16:00+00:00",
+   "summary": "Israel's AI founders are perfect optimizers - that's the problem www.calcalistech.com",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "4aff0f49dee3",
    "title": "Microsoft cancels several Copilot features for Edge",
    "url": "https://www.neowin.net/news/microsoft-cancels-several-copilot-features-for-edge/?utm_source=rss",
@@ -2590,7 +2853,16 @@
    "source_category": "IT industry",
    "published": "2026-11-27T12:11:37+00:00",
    "summary": "When SAP restructured roughly 10,000 roles in 2024, executives framed the move as a workforce transformation designed to prepare the company for cloud computing and AI. Two years later, SAP is reportedly considering eliminating another 10,000 positions, but this time the rationale appears different.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "3cdb9c54f5b5",
+     "source": "Computerworld",
+     "title": "Why SAP’s second 10,000-job overhaul in two years matters to CIOs",
+     "url": "https://www.computerworld.com/article/4253982/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios-2.html",
+     "summary": "When SAP restructured roughly 10,000 roles in 2024, executives framed the move as a workforce transformation designed to prepare the company for cloud computing and AI. Two years later, SAP is reportedly considering eliminating another 10,000 positions, but this time the rationale appears different.",
+     "published": "2026-11-27T12:38:03+00:00"
+    }
+   ],
    "topics": [
     "Cloud & infrastructure",
     "AI"
@@ -2624,6 +2896,33 @@
    ]
   },
   {
+   "id": "03428b46424a",
+   "title": "Malware steals Gmail messages using a fake Google Sheets extension",
+   "url": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
+   "source": "Malwarebytes Labs",
+   "source_category": "Threat research",
+   "published": "2026-11-27T12:09:14+00:00",
+   "summary": "Remus’s fake Chrome extension can read Gmail after a password change if you sign back in on the infected browser.",
+   "also_covered_by": [],
+   "topics": [
+    "Threats & malware",
+    "Identity & access"
+   ]
+  },
+  {
+   "id": "31b137af76ab",
+   "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
+   "url": "https://eprint.iacr.org/2026/3020.pdf",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-27T12:08:51+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
    "id": "a1ab4bcce520",
    "title": "EU Weighs Independent Evaluation of General-Purpose AI With Systemic Risk: Training Data Access on the Table",
    "url": "https://joho-todai.com/en/eu-general-ai-external-evaluation-training-data-access/",
@@ -2644,6 +2943,19 @@
    "source_category": "Threat research",
    "published": "2026-11-27T12:02:23+00:00",
    "summary": "This essay originally appeared in The Guardian . It’s an expanded version of the one I posted as “ We Get the Infrastructure We Pay For .” It’s been a bad week for our computerized infrastructure.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "2a70cad41c80",
+   "title": "Lloyds and Bank of Scotland apps fall over on payday",
+   "url": "https://www.theregister.com/applications/2026/11/27/lloyds-and-bank-of-scotland-apps-fall-over-on-payday/5312566",
+   "source": "The Register",
+   "source_category": "IT industry",
+   "published": "2026-11-27T12:01:27+00:00",
+   "summary": "Black horse down (again)",
    "also_covered_by": [],
    "topics": [
     "General IT"
