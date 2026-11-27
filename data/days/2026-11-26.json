@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "generated": "2026-11-27T02:01:05+00:00",
+ "generated": "2026-11-27T02:16:24+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -18,7 +18,7 @@
   {
    "source": "SecurityWeek",
    "fetched": 10,
-   "recent": 7,
+   "recent": 6,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 26,
+   "recent": 25,
    "error": null
   },
   {
@@ -246,7 +246,7 @@
   {
    "source": "LWN.net",
    "fetched": 15,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 7,
+   "recent": 8,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 13,
+   "recent": 20,
    "error": null
   },
   {
@@ -749,14 +749,14 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 73,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
   {
    "source": "Electronic Design",
    "fetched": 25,
-   "recent": 4,
+   "recent": 3,
    "error": null
   },
   {
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1548,7 +1548,7 @@
   {
    "source": "TechTarget News",
    "fetched": 10,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1889,7 +1889,7 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 94,
+   "fetched": 100,
    "recent": 24,
    "error": null
   },
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 14,
-   "recent": 8,
+   "fetched": 16,
+   "recent": 7,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,19 @@
   }
  ],
  "items": [
+  {
+   "id": "db1a40ec7695",
+   "title": "Christophe Pettus: All Your GUCs in a Row: segment_size",
+   "url": "https://postgr.es/p/9D_",
+   "source": "Planet PostgreSQL",
+   "source_category": "Databases",
+   "published": "2026-11-27T02:00:00+00:00",
+   "summary": "PostgreSQL divides large tables into 1GB segment files, but the server has no authoritative record of how many segments exist. (I consult on PostgreSQL through PGX Inc..)",
+   "also_covered_by": [],
+   "topics": [
+    "Databases"
+   ]
+  },
   {
    "id": "d2642156b6c2",
    "title": "Initial AMD RDNA5 Support To Appear In Linux 7.5",
@@ -2756,6 +2769,20 @@
    ]
   },
   {
+   "id": "1049dd1e6d1a",
+   "title": "PowerToys Command Palette Reportedly Triggers Error 448 in Developer Tools",
+   "url": "https://joho-todai.com/en/powertools-command-palette-error-448/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T23:29:58+00:00",
+   "summary": "Some developer tools reportedly fail in Windows Terminal when it is launched from the PowerToys Command Palette. Testing found that Windows applied different RedirectionGuard settings depending on how the terminal was launched.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
    "id": "3de24ee9b7a6",
    "title": "Five things I learned in five years of attending APNIC conferences",
    "url": "https://blog.apnic.net/2026/11/27/five-things-i-learned-in-five-years-of-attending-apnic-conferences/",
@@ -2806,6 +2833,20 @@
    "also_covered_by": [],
    "topics": [
     "Agile & delivery"
+   ]
+  },
+  {
+   "id": "9290e90620f1",
+   "title": "llama.cpp Merges Inkling 2 Memory Optimizations for NVIDIA and AMD: Weight Transfer Fix Proposed",
+   "url": "https://joho-todai.com/en/llama-cpp-inkling-2-nvidia-amd-memory-optimization/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-26T22:58:57+00:00",
+   "summary": "Open-source AI inference software llama.cpp now implements Flash Attention for Inkling 2 on CUDA and HIP. A separate proposed fix addresses memory use when transferring model weights to the GPU.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
    ]
   },
   {
