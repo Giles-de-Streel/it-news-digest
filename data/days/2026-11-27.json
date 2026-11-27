@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T18:01:15+00:00",
+ "generated": "2026-11-27T18:16:20+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -131,8 +131,8 @@
   },
   {
    "source": "CISA KEV",
-   "fetched": 1805,
-   "recent": 0,
+   "fetched": 1808,
+   "recent": 3,
    "error": null
   },
   {
@@ -294,7 +294,7 @@
   {
    "source": "Simon Willison",
    "fetched": 30,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -966,7 +966,7 @@
   {
    "source": "HIPAA Journal",
    "fetched": 10,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -1338,7 +1338,7 @@
   {
    "source": "Security Affairs",
    "fetched": 10,
-   "recent": 8,
+   "recent": 7,
    "error": null
   },
   {
@@ -1494,7 +1494,7 @@
   {
    "source": "Guardian Technology",
    "fetched": 36,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -1704,7 +1704,7 @@
   {
    "source": "9to5Mac",
    "fetched": 100,
-   "recent": 32,
+   "recent": 33,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 13,
+   "fetched": 12,
    "recent": 4,
    "error": null
   },
@@ -2183,7 +2183,7 @@
   },
   {
    "source": "9to5Google",
-   "fetched": 71,
+   "fetched": 70,
    "recent": 10,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,20 @@
  ],
  "items": [
   {
+   "id": "b948b472574b",
+   "title": "Ransomware Attacks Spike 23% in October with Recovery Taking Weeks",
+   "url": "https://www.hipaajournal.com/ransomware-attacks-spike-23-recovery-taking-weeks/",
+   "source": "HIPAA Journal",
+   "source_category": "Privacy & compliance",
+   "published": "2026-11-27T18:01:05+00:00",
+   "summary": "A recent analysis of ransomware attacks has revealed that while the digital forensic investigation is often completed within 48 hours […]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Forensics & IR"
+   ]
+  },
+  {
    "id": "67850f0d2147",
    "title": "Save big on a lifetime license for Microsoft Office 2024 Professional Plus via Neowin Deals",
    "url": "https://www.neowin.net/deals/save-big-on-a-lifetime-license-for-microsoft-office-2024-professional-plus-via-neowin-deals/?utm_source=rss",
@@ -2527,6 +2541,19 @@
    ]
   },
   {
+   "id": "c93517ec8a64",
+   "title": "Tons of motherboards are on sale right now, some over 40% off – we sorted through them for you and picked out a few of the best deals",
+   "url": "https://www.tomshardware.com/pc-components/tons-of-motherboards-are-on-sale-right-now-some-over-40-percent-off-we-sorted-through-them-for-you-and-picked-out-a-few-of-the-best-deals",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-27T18:00:00+00:00",
+   "summary": "We collated all of the motherboards down to these few which offer the some of the best combinations of hardware and cost during Black Friday",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "75d919a963d0",
    "title": "Three new iPhones will launch early next year, here’s what’s coming",
    "url": "https://9to5mac.com/2026/11/27/three-new-iphones-will-launch-early-next-year-heres-whats-coming/",
@@ -2537,6 +2564,19 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "53354c5781ee",
+   "title": "The Com: the global cybercrime network posing a ‘chilling threat’ to children",
+   "url": "https://www.theguardian.com/technology/2026/nov/27/the-com-global-cybercrime-network-posing-chilling-threat-to-children",
+   "source": "Guardian Technology",
+   "source_category": "IT industry",
+   "published": "2026-11-27T17:53:30+00:00",
+   "summary": "FBI estimates thousands of people identify as members, or recent members, of group linked to indecent images of girls and blackmail It sounds benign: the Com, short for the Community.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
    ]
   },
   {
@@ -5813,6 +5853,87 @@
    ]
   },
   {
+   "id": "284a8dbee52e",
+   "title": "CISA KEV adds CVE-2026-120705: OSGeo GeoServer XML Injection Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-11-27T12:00:00+00:00",
+   "summary": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter in the WFS 2.0 GetFeatureById stored query.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access",
+    "Policy & regulation"
+   ],
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-120705",
+      "added": "2026-11-27",
+      "ransomware": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "df885d426e95",
+   "title": "CISA KEV adds CVE-2026-129243: OSGeo GeoServer Incorrect Authorization Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-11-27T12:00:00+00:00",
+   "summary": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access",
+    "Policy & regulation"
+   ],
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-129243",
+      "added": "2026-11-27",
+      "ransomware": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "351b5c2f56fb",
+   "title": "CISA KEV adds CVE-2026-136716: Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
+   "source": "CISA KEV",
+   "source_category": "Security",
+   "published": "2026-11-27T12:00:00+00:00",
+   "summary": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual or incomplete installation states. Federal agencies must fix by 2026-11-30.",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Identity & access",
+    "Policy & regulation"
+   ],
+   "cves": [],
+   "exploit": {
+    "kev": [
+     {
+      "id": "CVE-2026-136716",
+      "added": "2026-11-27",
+      "ransomware": false
+     }
+    ],
+    "epss": {
+     "id": "CVE-2026-136716",
+     "score": 0.01014,
+     "percentile": 0.62273,
+     "date": "2026-11-26"
+    }
+   }
+  },
+  {
    "id": "adc41dcaa7b6",
    "title": "Tech rally lifts stock futures to wrap up a volatile week of trading",
    "url": "https://www.cnbc.com/2026/11/27/tech-rally-lifts-stock-futures-to-wrap-up-a-volatile-week-of-trading.html",
@@ -6947,6 +7068,20 @@
    "also_covered_by": [],
    "topics": [
     "Linux & open source",
+    "ITSM"
+   ]
+  },
+  {
+   "id": "93730accab19",
+   "title": "AI Prompts For IT Asset Management: Ready-to-Use Inventory Questions",
+   "url": "https://blog.invgate.com/ai-prompts-for-it-asset-management",
+   "source": "InvGate blog",
+   "source_category": "ITSM",
+   "published": "2026-11-27T10:00:00+00:00",
+   "summary": "AI prompts for IT Asset Management (ITAM) are the questions and instructions IT teams type into an AI assistant to get answers from their asset inventory. They're searched by IT asset managers, technicians and IT leaders whose assistant can already read inventory data and who want ready-made questions that return…",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
     "ITSM"
    ]
   },
@@ -8285,6 +8420,14 @@
      "url": "https://www.tomshardware.com/monitors/gaming-monitors/best-gaming-monitor-deals-oled",
      "summary": "Save big with one of these great Black Friday monitor deals. We’re hard at work updating this list with the best deals across all your favorite big tech retailers.",
      "published": "2026-11-27T16:59:53+00:00"
+    },
+    {
+     "id": "9ef1e339a9eb",
+     "source": "9to5Mac",
+     "title": "Here are the best Black Friday iPad deals",
+     "url": "https://9to5mac.com/2026/11/27/here-are-the-best-black-friday-ipad-deals/",
+     "summary": "The official Amazon Black Friday sale is flying right now with a bananas deal on AirPods Pro 3 at $100 off , an equally wild $400 off M5 MacBook Air , and now even lower prices on the new M6 MacBook Pro at $250 off , but there are some solid iPad discounts live today too.",
+     "published": "2026-11-27T18:03:10+00:00"
     }
    ]
   },
