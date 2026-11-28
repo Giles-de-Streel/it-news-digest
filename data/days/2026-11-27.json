@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-28T03:45:54+00:00",
+ "generated": "2026-11-28T04:01:17+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,9 +41,9 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
@@ -72,13 +72,13 @@
   {
    "source": "Computerworld",
    "fetched": 20,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
    "source": "eWeek",
    "fetched": 10,
-   "recent": 7,
+   "recent": 3,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "Slashdot",
    "fetched": 15,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 73,
    "recent": 0,
    "error": null
   },
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 38,
+   "recent": 37,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 606,
+   "fetched": 603,
    "recent": 0,
    "error": null
   },
@@ -1890,7 +1890,7 @@
   {
    "source": "Calcalist Tech",
    "fetched": 93,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -2537,6 +2537,19 @@
    "also_covered_by": [],
    "topics": [
     "Accessibility"
+   ]
+  },
+  {
+   "id": "7d5642ecb0f0",
+   "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+   "url": "https://unkernel.dev",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-28T03:19:20+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -9889,13 +9902,13 @@
    ]
   },
   {
-   "id": "66031971b632",
-   "title": "1Password data breach",
-   "url": "https://www.askwoody.com/2026/1password-data-breach/",
-   "source": "AskWoody",
-   "source_category": "Windows & M365 admin",
+   "id": "732fc2f930c6",
+   "title": "1Password data breach included some customer info, internal source code",
+   "url": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+   "source": "CSO Online",
+   "source_category": "Security",
    "published": "2026-11-27T09:00:19+00:00",
-   "summary": "You may have read in the news that 1Password recently had a data breach. Like many breaches these days, the attackers targeted an employee’s access. While your passwords are safe, the attackers did obtain email addresses of their users and thus if you are a customer of 1Password be on the alert for phishing attempts.",
+   "summary": "1Password is reassuring customers that their password vaults are safe after the theft of both account records for a subset of its users and source code from its private repositories.",
    "also_covered_by": [
     {
      "id": "116b3d4b1848",
@@ -9906,17 +9919,25 @@
      "published": "2026-11-27T15:49:40+00:00"
     },
     {
-     "id": "732fc2f930c6",
-     "source": "CSO Online",
+     "id": "66031971b632",
+     "source": "AskWoody",
+     "title": "1Password data breach",
+     "url": "https://www.askwoody.com/2026/1password-data-breach/",
+     "summary": "You may have read in the news that 1Password recently had a data breach. Like many breaches these days, the attackers targeted an employee’s access. While your passwords are safe, the attackers did obtain email addresses of their users and thus if you are a customer of 1Password be on the alert for phishing attempts.",
+     "published": "2026-11-27T09:00:19+00:00"
+    },
+    {
+     "id": "e537e6f5aa2d",
+     "source": "Computerworld",
      "title": "1Password data breach included some customer info, internal source code",
-     "url": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+     "url": "https://www.computerworld.com/article/4254145/1password-data-breach-included-some-customer-info-internal-source-code-2.html",
      "summary": "1Password is reassuring customers that their password vaults are safe after the theft of both account records for a subset of its users and source code from its private repositories.",
-     "published": "2026-11-28T03:44:01+00:00"
+     "published": "2026-11-28T03:49:00+00:00"
     }
    ],
    "topics": [
     "Ransomware & breaches",
-    "Threats & malware",
+    "Development",
     "Identity & access"
    ]
   },
