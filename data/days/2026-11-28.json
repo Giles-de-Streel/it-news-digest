@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "generated": "2026-11-28T10:17:01+00:00",
+ "generated": "2026-11-28T10:31:10+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -161,9 +161,9 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 0,
-   "recent": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "fetched": 29,
+   "recent": 29,
+   "error": null
   },
   {
    "source": "Tom's Hardware",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 19,
+   "recent": 18,
    "error": null
   },
   {
@@ -234,7 +234,7 @@
   {
    "source": "InfoQ",
    "fetched": 15,
-   "recent": 8,
+   "recent": 9,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 100,
+   "fetched": 73,
    "recent": 0,
    "error": null
   },
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 1,
+   "recent": 2,
    "error": null
   },
   {
@@ -1458,7 +1458,7 @@
   {
    "source": "OMG! Ubuntu",
    "fetched": 18,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 11,
+   "fetched": 93,
+   "recent": 12,
    "error": null
   },
   {
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 10,
-   "recent": 3,
+   "recent": 2,
    "error": null
   },
   {
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 0,
+   "fetched": 100,
    "recent": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "error": null
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,56 @@
   }
  ],
  "items": [
+  {
+   "id": "044e5570495e",
+   "title": "Debian 14 “Forky” Now Runs on the Steam Deck with Most Hardware Working",
+   "url": "https://9to5linux.com/debian-14-forky-now-runs-on-the-steam-deck-with-most-hardware-working",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-28T10:21:12+00:00",
+   "summary": "Debian 14 \"Forky\" is running on the Steam Deck handheld gaming PC after an effort led by YouTuber Jerko Cilas and Debian maintainer Aryan Karamtoth.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Game development"
+   ]
+  },
+  {
+   "id": "2687fafc06b8",
+   "title": "CVE-2026-138005: A vulnerability was detected in TRENDnet TEW-751DR 1.03B01.",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138005",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-28T10:17:00.010000+00:00",
+   "summary": "A vulnerability was detected in TRENDnet TEW-751DR 1.03B01. Affected by this vulnerability is the function gena.php::GENA_notify_init of the file htdocs/upnpinc/gena.php of the component UPnP Event Handler. Performing a manipulation of the argument uri results in os command injection.",
+   "kind": "cve",
+   "cve": "CVE-2026-138005",
+   "cvss": {
+    "score": 10.0,
+    "severity": "Critical",
+    "version": "3.1",
+    "scored_by": "NVD"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-138005",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
+  {
+   "id": "d1d82b0340b9",
+   "title": "Anthropic Introduces Claude Ship to Review, Fix, and Approve Pull Requests by Policy",
+   "url": "https://www.infoq.com/news/2026/11/anthropic-claude-ship/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+   "source": "InfoQ",
+   "source_category": "Development",
+   "published": "2026-11-28T10:08:00+00:00",
+   "summary": "Anthropic has introduced Claude Ship, a set of agents that can review GitHub pull requests, push fixes, and approve the changes a team's policy allows, on Claude Team and Enterprise plans. By Daniel Dominguez",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Development"
+   ]
+  },
   {
    "id": "dbe4aab9da76",
    "title": "Grand Theft Auto VI review on Xbox: Next-gen is finally here",
