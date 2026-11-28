@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "generated": "2026-11-28T11:31:13+00:00",
+ "generated": "2026-11-28T11:45:51+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -198,7 +198,7 @@
   {
    "source": "Phoronix",
    "fetched": 32,
-   "recent": 14,
+   "recent": 15,
    "error": null
   },
   {
@@ -570,7 +570,7 @@
   {
    "source": "SiliconANGLE",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -606,7 +606,7 @@
   {
    "source": "TechRepublic",
    "fetched": 20,
-   "recent": 17,
+   "recent": 18,
    "error": null
   },
   {
@@ -683,7 +683,7 @@
   },
   {
    "source": "Red Hat security advisories (Important/Critical)",
-   "fetched": 46,
+   "fetched": 40,
    "recent": 9,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1164,7 +1164,7 @@
   {
    "source": "Linuxiac",
    "fetched": 10,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1488,7 +1488,7 @@
   {
    "source": "BBC Technology",
    "fetched": 21,
-   "recent": 4,
+   "recent": 5,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1835,7 +1835,7 @@
   },
   {
    "source": "IETF Blog",
-   "fetched": 603,
+   "fetched": 606,
    "recent": 0,
    "error": null
   },
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 100,
-   "recent": 11,
+   "fetched": 93,
+   "recent": 12,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 9,
+   "fetched": 10,
    "recent": 2,
    "error": null
   },
@@ -2514,6 +2514,47 @@
  ],
  "items": [
   {
+   "id": "a5e27da4b13e",
+   "title": "Fastfetch 2.72 System Information Tool Adds NVMe Drive Health Monitoring",
+   "url": "https://linuxiac.com/fastfetch-2-72-system-information-tool-adds-nvme-drive-health-monitoring/",
+   "source": "Linuxiac",
+   "source_category": "Linux admin",
+   "published": "2026-11-28T11:41:16+00:00",
+   "summary": "Fastfetch 2.72 adds NVMe health reporting, physical memory detection without root privileges on Linux, and improved hardware identification.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "e6b60df71640",
+   "title": "Intel Contributes oneVPL AI Super Resolution Integration To FFmpeg",
+   "url": "https://www.phoronix.com/news/FFmpeg-oneVPL-Super-Resolution",
+   "source": "Phoronix",
+   "source_category": "Hardware",
+   "published": "2026-11-28T11:35:39+00:00",
+   "summary": "Intel contributed a new video filter to the upstream FFmpeg library for supporting oneVPL AI Super Resolution for video upscaling on modern Intel graphics hardware...",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware"
+   ]
+  },
+  {
+   "id": "229ce505de03",
+   "title": "Makita power tool battery pack adapter tested as portable laptop power solution",
+   "url": "https://www.tomshardware.com/peripherals/usb/makita-power-tool-battery-pack-adapter-tested-as-portable-laptop-power-solution-usd44-adp15-charges-a-thinkpad-at-60w-and-iphone-17-pro-max-at-37w",
+   "source": "Tom's Hardware",
+   "source_category": "Hardware",
+   "published": "2026-11-28T11:30:00+00:00",
+   "summary": "Leading power tool firm Makita has released an adapter for its battery packs, allowing them to be used for charging phones, tablets, and even laptops. A Japanese PC magazine has tested its laptop companion prowess.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "97bbdecf778e",
    "title": "AI & Reverse Engineering Lead To New Linux Driver For Microsoft's ReFS",
    "url": "https://www.phoronix.com/news/New-ReFS-FUSE-Driver-2026",
@@ -2564,6 +2605,19 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-28T11:08:01+00:00",
    "summary": "Google is reimagining Search with a bold new homepage design that loses the iconic search button. Here's why the company says it's doing so.",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
+  {
+   "id": "61fac31f26bb",
+   "title": "No perfect way to find the love of your life",
+   "url": "https://yappings.mikeluu.xyz/blogs/the-perfect-partner",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-28T11:07:49+00:00",
+   "summary": "Comments",
    "also_covered_by": [],
    "topics": [
     "General IT"
@@ -3510,7 +3564,16 @@
    "source_category": "IT industry",
    "published": "2026-11-27T23:28:50+00:00",
    "summary": "Lawsuit also alleging pressure on hardware suppliers comes after Apple sued OpenAI for allegedly poaching employees OpenAI sued Apple on Friday, accusing the company of ⁠stealing its trade secrets ​and discouraging hardware suppliers from working on future OpenAI devices.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "83723fd30aef",
+     "source": "BBC Technology",
+     "title": "OpenAI counter-sues Apple over alleged theft of trade secrets",
+     "url": "https://www.bbc.co.uk/news/articles/cm15ekqvlezeo?at_medium=RSS&at_campaign=rss",
+     "summary": "The ChatGPT-maker alleges that tech giant Apple stole trade secrets through a former employee.",
+     "published": "2026-11-28T11:35:34+00:00"
+    }
+   ],
    "topics": [
     "AI",
     "Policy & regulation"
