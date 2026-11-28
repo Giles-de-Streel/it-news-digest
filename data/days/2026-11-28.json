@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "generated": "2026-11-28T11:45:51+00:00",
+ "generated": "2026-11-28T12:00:54+00:00",
  "window_hours": 36,
  "sources": [
   {
@@ -41,14 +41,14 @@
   },
   {
    "source": "SANS ISC",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"SANS.edu Internet Storm Center - SANS Internet Storm Center\"); likely a temporary error or bot-check page"
   },
   {
    "source": "The Record",
    "fetched": 5,
-   "recent": 4,
+   "recent": 2,
    "error": null
   },
   {
@@ -102,7 +102,7 @@
   {
    "source": "Slashdot",
    "fetched": 15,
-   "recent": 9,
+   "recent": 8,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "source": "Red Hat Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -282,7 +282,7 @@
   {
    "source": "Rust Blog",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -372,7 +372,7 @@
   {
    "source": "Planet PostgreSQL",
    "fetched": 30,
-   "recent": 5,
+   "recent": 4,
    "error": null
   },
   {
@@ -582,7 +582,7 @@
   {
    "source": "ITPro",
    "fetched": 50,
-   "recent": 10,
+   "recent": 9,
    "error": null
   },
   {
@@ -732,7 +732,7 @@
   {
    "source": "Siemens ProductCERT advisories",
    "fetched": 2527,
-   "recent": 4,
+   "recent": 0,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 73,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -1080,7 +1080,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 19,
+   "recent": 20,
    "error": null
   },
   {
@@ -1146,7 +1146,7 @@
   {
    "source": "Red Hat Enable Sysadmin",
    "fetched": 10,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1206,7 +1206,7 @@
   {
    "source": "Debian security advisories",
    "fetched": 30,
-   "recent": 4,
+   "recent": 0,
    "error": null
   },
   {
@@ -1278,7 +1278,7 @@
   {
    "source": "Datadog Blog",
    "fetched": 98,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -2010,7 +2010,7 @@
   {
    "source": "Accessibility news (Google News)",
    "fetched": 10,
-   "recent": 2,
+   "recent": 4,
    "error": null
   },
   {
@@ -2460,14 +2460,14 @@
   {
    "source": "Hugging Face blog",
    "fetched": 919,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2513,6 +2513,50 @@
   }
  ],
  "items": [
+  {
+   "id": "37000b27aa7d",
+   "title": "Windows Server 2028 will remove 12 legacy features, including SMBv1 and BIOS",
+   "url": "https://4sysops.com/archives/windows-server-2028-will-remove-12-legacy-features-including-smbv1-and-bios/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-28T12:00:22+00:00",
+   "summary": "After marking BranchCache, WDS, Windows PowerShell 5.1, and Windows Sockets Direct for deprecation in its earlier Windows Server 2028 changes , Microsoft has now documented 12 components slated for removal.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Hardware",
+    "Development",
+    "System administration"
+   ]
+  },
+  {
+   "id": "a4e20942a68c",
+   "title": "US Air Force Cloud One hacked",
+   "url": "https://4sysops.com/archives/us-air-force-cloud-one-hacked/",
+   "source": "4sysops",
+   "source_category": "Windows & M365 admin",
+   "published": "2026-11-28T12:00:20+00:00",
+   "summary": "The US Air Force’s Cloud One platform was hacked, Reuters reports. The intrusion was discovered during “work to upgrade the system”; a source said hackers “exploited a software vulnerability”. The breach disrupted the platform, and investigators called in Cyber Command to assess the damage. Source",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches",
+    "Ransomware & breaches",
+    "Cloud & infrastructure"
+   ]
+  },
+  {
+   "id": "1b22e6e26759",
+   "title": "Farewell",
+   "url": "https://github.com/p-e-w/heretic/issues/601",
+   "source": "Hacker News",
+   "source_category": "Development",
+   "published": "2026-11-28T11:42:26+00:00",
+   "summary": "Comments",
+   "also_covered_by": [],
+   "topics": [
+    "General IT"
+   ]
+  },
   {
    "id": "a5e27da4b13e",
    "title": "Fastfetch 2.72 System Information Tool Adds NVMe Drive Health Monitoring",
@@ -2881,7 +2925,16 @@
    "source_category": "Windows & M365 admin",
    "published": "2026-11-28T09:46:02+00:00",
    "summary": "Some PCs fail to start after recent Windows 11 updates. A reported workaround could restore access, although recovery may require an extra step.",
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "id": "af121b64e3fe",
+     "source": "4sysops",
+     "title": "KB5132061 boot loops may involve an old Corel driver",
+     "url": "https://4sysops.com/archives/kb5132061-boot-loops-may-involve-an-old-corel-driver/",
+     "summary": "After Microsoft acknowledged KB5132061 installation failures and started an automatic repair rollout, reports have surfaced of a different problem: some PCs get stuck in a boot loop after October or November cumulative updates.",
+     "published": "2026-11-28T12:00:21+00:00"
+    }
+   ],
    "topics": [
     "Microsoft & Windows",
     "Backup & recovery"
@@ -3613,6 +3666,19 @@
    ],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "2523e68aa37c",
+   "title": "ICT Laboratory-cum-Digital Library Inaugurated at CRC Brookshabad to Promote Digital Accessibility for",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNZlh4S2VaOWZVNVNTQmdNd1h0VjRMa21yMTllSkN6cEk3VlZuVkNhUzdkaTF4ZFp4N0dQaE5ZNGZLcGpJV0FjMHl1UmJ6VDhrVGJrSlJ1bnhfN0pKZnNKT1daT1VxVGZEeEpHU2QtZm1SRlU3YjQyMnBwN2RGOUtBOTVUSHhxbjBLUXlqcy04RDlLYkdtWW5BZmhvZGl2emZoV3VsNm1qR2ZnZktGcTRCQ0FjbXNsU0ZwV1QySElXS2xKZ2hWcHBaWWctOF9MOE9RRUxJU3FQa2VCMWRHSko2ZVVOMnRlSzNlZTBlWjRSQzdkeWlGeWRQVdIB-AFBVV95cUxNZlh4S2VaOWZVNVNTQmdNd1h0VjRMa21yMTllSkN6cEk3VlZuVkNhUzdkaTF4ZFp4N0dQaE5ZNGZLcGpJV0FjMHl1UmJ6VDhrVGJrSlJ1bnhfN0pKZnNKT1daT1VxVGZEeEpHU2QtZm1SRlU3YjQyMnBwN2RGOUtBOTVUSHhxbjBLUXlqcy04RDlLYkdtWW5BZmhvZGl2emZoV3VsNm1qR2ZnZktGcTRCQ0FjbXNsU0ZwV1QySElXS2xKZ2hWcHBaWWctOF9MOE9RRUxJU3FQa2VCMWRHSko2ZVVOMnRlSzNlZTBlWjRSQzdkeWlGeWRQVQ?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-27T17:09:36+00:00",
+   "summary": "ICT Laboratory-cum-Digital Library Inaugurated at CRC Brookshabad to Promote Digital Accessibility for Nicobar Times",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
    ]
   },
   {
