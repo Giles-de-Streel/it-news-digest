@@ -1,12 +1,12 @@
 {
  "date": "2026-11-28",
- "generated": "2026-11-28T15:31:11+00:00",
+ "generated": "2026-11-28T15:46:20+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 11,
+   "recent": 12,
    "error": null
   },
   {
@@ -179,9 +179,9 @@
   },
   {
    "source": "The Next Platform",
-   "fetched": 87,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "NotAFeed: Got a web page instead of the feed (page title \"Are we human?\"); likely a temporary error or bot-check page"
   },
   {
    "source": "Data Center Dynamics",
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -240,7 +240,7 @@
   {
    "source": "The New Stack",
    "fetched": 26,
-   "recent": 5,
+   "recent": 6,
    "error": null
   },
   {
@@ -341,9 +341,9 @@
   },
   {
    "source": "Mike Dietrich (Oracle upgrades)",
-   "fetched": 25,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "NotAFeed: Got a web page instead of the feed; likely a temporary error or bot-check page"
   },
   {
    "source": "Oracle-Base",
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1158,7 +1158,7 @@
   {
    "source": "9to5Linux",
    "fetched": 10,
-   "recent": 2,
+   "recent": 3,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 2,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1889,8 +1889,8 @@
   },
   {
    "source": "Calcalist Tech",
-   "fetched": 95,
-   "recent": 14,
+   "fetched": 100,
+   "recent": 12,
    "error": null
   },
   {
@@ -2009,7 +2009,7 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 11,
+   "fetched": 10,
    "recent": 3,
    "error": null
   },
@@ -2465,9 +2465,9 @@
   },
   {
    "source": "Google DeepMind blog",
-   "fetched": 100,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   {
    "source": "SonicWall PSIRT",
@@ -2514,6 +2514,48 @@
  ],
  "items": [
   {
+   "id": "9f5cfe7bf8a2",
+   "title": "NixOS 26.11 “Zokor” Released with GNOME 51, KDE Plasma 6.8, and Linux 7.3",
+   "url": "https://9to5linux.com/nixos-26-11-zokor-released-with-gnome-51-kde-plasma-6-8-and-linux-7-3",
+   "source": "9to5Linux",
+   "source_category": "Linux admin",
+   "published": "2026-11-28T15:40:53+00:00",
+   "summary": "NixOS 26.11 independent distribution is now available for download with Linux 6.18 LTS and Linux 7.3 kernels, GNOME 51 and KDE Plasma 6.8 desktops, and other changes.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
+   ]
+  },
+  {
+   "id": "2074afbb611e",
+   "title": "Q-Dir and DesktopOK Windows utilities compromised to push Python RAT",
+   "url": "https://www.bleepingcomputer.com/news/security/q-dir-and-desktopok-windows-utilities-compromised-to-push-python-rat/",
+   "source": "BleepingComputer",
+   "source_category": "Security",
+   "published": "2026-11-28T15:32:49+00:00",
+   "summary": "Official distribution channels for the Q-Dir and DesktopOK Windows utilities were compromised to deliver trojanized installers containing Python-based remote access malware. [...]",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Threats & malware",
+    "Microsoft & Windows",
+    "Development"
+   ]
+  },
+  {
+   "id": "3f8992d7879f",
+   "title": "Andrej Karpathy let Claude Code run for 7 hours. It wrote 45,000 lines of code and skipped a few states.",
+   "url": "https://thenewstack.io/karpathy-claude-code-map/",
+   "source": "The New Stack",
+   "source_category": "Development",
+   "published": "2026-11-28T15:30:00+00:00",
+   "summary": "Andrej Karpathy asked Claude Code to populate a Civilization-style game map with real U.S. data. Seven hours and approximately 45,000",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "004b3dd90243",
    "title": "Banned Nvidia Blackwell AI racks surface in China — data center tied to $14M loan and alleged spy Alice Huang",
    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/banned-nvidia-blackwell-ai-racks-surface-in-china-data-center-tied-to-usd14m-loan-and-alleged-spy-alice-huang",
@@ -2539,6 +2581,20 @@
    "also_covered_by": [],
    "topics": [
     "Game development"
+   ]
+  },
+  {
+   "id": "d3be62ea7b92",
+   "title": "Razor Lake-S Leak Points to 120MB of bLLC on the 12-P-Core Die and 144MB on the 8+16 Design",
+   "url": "https://joho-todai.com/en/razor-lake-s-blcc-cache-p-cores/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T15:15:33+00:00",
+   "summary": "Reported cache sizes for Intel's next-generation Razor Lake-S desktop CPU put the 12-P-core compute die at 120MB of bLLC and the 8+16 configuration at 144MB, matching Nova Lake-S in the latter configuration.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Hardware"
    ]
   },
   {
@@ -2604,6 +2660,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "a6dd894725fb",
+   "title": "FFmpeg Adds AI Upscaling for Intel GPUs in 56 Lines With the Same Build Requirements",
+   "url": "https://joho-todai.com/en/ffmpeg-intel-gpu-ai-upscaling/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T14:44:42+00:00",
+   "summary": "FFmpeg merged support for AI super resolution on Intel GPUs on November 28. The 56 added lines let a Quick Sync Video filter call the oneVPL API while retaining the same minimum build dependency.",
+   "also_covered_by": [],
+   "topics": [
+    "AI",
+    "Hardware",
+    "Supply chain security"
    ]
   },
   {
@@ -2683,6 +2754,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "b82fb43bc68d",
+   "title": "Belgium Orders Google to Stop Data Center Construction After Work Continued Without a Permit",
+   "url": "https://joho-todai.com/en/google-belgium-data-center-construction-halted/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T14:14:52+00:00",
+   "summary": "Authorities in Belgium's Walloon Region ordered Google to stop work on a data center. A Greenpeace investigation found construction had continued after the permit was revoked. The regional government is preparing a report for prosecutors.",
+   "also_covered_by": [],
+   "topics": [
+    "Cloud & infrastructure",
+    "Hardware",
+    "Policy & regulation"
    ]
   },
   {
@@ -2794,6 +2880,19 @@
    ]
   },
   {
+   "id": "8ccff185d2da",
+   "title": "Intel Arc B580 Listed at $599.99 in the US, About 2.4 Times Intel's Recommended Price — Stock Is Drying Up in Japan, Too",
+   "url": "https://joho-todai.com/en/intel-arc-b580-prices-surge-599-dollars/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T13:50:45+00:00",
+   "summary": "An Intel Arc B580 with a $249 recommended customer price is listed at $599.99 on Newegg in the US. Major Japanese retailers are also running out of stock, making the budget GPU harder to find.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "eb35ff7f0def",
    "title": "UK Parliament demands unredacted METR safety report after Anthropic redacts most of the evidence",
    "url": "https://the-decoder.com/uk-parliament-demands-unredacted-metr-safety-report-after-anthropic-redacts-most-of-the-evidence/",
@@ -2884,6 +2983,21 @@
    "also_covered_by": [],
    "topics": [
     "General IT"
+   ]
+  },
+  {
+   "id": "0faa1b72956b",
+   "title": "How Do You Read Microsoft's Undocumented ReFS on Linux? linux-refs Uses a Clean-Room Approach and Claude",
+   "url": "https://joho-todai.com/en/refs-linux-cleanroom-claude-ai/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T13:16:15+00:00",
+   "summary": "The linux-refs project reads Microsoft's undocumented ReFS file system from Linux. Developed using a clean-room approach and Claude, it has entered long-term support as a complete read-only implementation.",
+   "also_covered_by": [],
+   "topics": [
+    "Microsoft & Windows",
+    "Linux & open source",
+    "AI"
    ]
   },
   {
@@ -2982,6 +3096,32 @@
    ]
   },
   {
+   "id": "bd1b4736d1a3",
+   "title": "Bot Bookings Bring Four Times the No-Shows — UK Restaurants Are Turning Back to the Phone",
+   "url": "https://joho-todai.com/en/ai-restaurant-booking-no-show-analog-return/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T12:49:54+00:00",
+   "summary": "The week Meta launched Muse in the UK, a London restaurant received a booking call from an AI. US data shows that reservations from bots and brokers had four times the normal no-show rate, while some UK restaurants are leaning back toward phone bookings. Muse is also available in Japan.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "ea83168856cc",
+   "title": "Musk Says Google Is Interested in Renting More SpaceX GPUs — Its Existing Deal Costs $920 Million a Month",
+   "url": "https://joho-todai.com/en/musk-google-spacex-gpu-contract/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T12:44:44+00:00",
+   "summary": "Elon Musk posted on X on November 28 that Google was interested in renting more computing capacity from SpaceX. The companies signed a deal in June for about 110,000 NVIDIA GPUs at $920 million per month.",
+   "also_covered_by": [],
+   "topics": [
+    "Hardware"
+   ]
+  },
+  {
    "id": "a1fdb353893c",
    "title": "Swiss Developer Built This Open Source App to Help His Wife Schedule Staff With AI",
    "url": "https://feed.itsfoss.com/link/24361/17542521/klacks-overview",
@@ -3050,6 +3190,19 @@
    ]
   },
   {
+   "id": "cf5be09a6c8d",
+   "title": "US Bars Russian-Founded Carrier RETN, an Official Reseller for JPNAP and JPIX",
+   "url": "https://joho-todai.com/en/us-excludes-retn-russian-carrier/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T12:30:24+00:00",
+   "summary": "The United States is barring Russian-founded network operator RETN from its market. The company must stop providing covered services, from IP transit to DDoS mitigation, on January 1, 2027. It is also an official reseller for JPNAP and JPIX.",
+   "also_covered_by": [],
+   "topics": [
+    "Networking"
+   ]
+  },
+  {
    "id": "7f24780e1703",
    "title": "This itch.io game has you stealing RAM as RAM Altman",
    "url": "https://www.tomshardware.com/video-games/pc-gaming/this-itch-io-game-has-you-stealing-ram-as-ram-altman-dodge-cars-outrun-unionized-gnomes-and-sneak-ram-grabs-into-a-terms-of-service-agreement",
@@ -3099,6 +3252,21 @@
    "also_covered_by": [],
    "topics": [
     "AI"
+   ]
+  },
+  {
+   "id": "b4549852d66f",
+   "title": "SAP Confirms GitHub Development Incident — Stolen Token Put Source Code at Risk of Modification",
+   "url": "https://joho-todai.com/en/sap-github-breach-authentication-token-stolen/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T12:12:53+00:00",
+   "summary": "SAP confirmed an incident affecting its GitHub development environment. An attacker reportedly obtained an employee's authentication token and could copy or alter source code. SAP's emergency response includes rotating signing keys and pausing automated development workflows.",
+   "also_covered_by": [],
+   "topics": [
+    "Ransomware & breaches",
+    "Development",
+    "Identity & access"
    ]
   },
   {
@@ -3186,6 +3354,19 @@
    "topics": [
     "Threats & malware",
     "AI"
+   ]
+  },
+  {
+   "id": "55f398faeb53",
+   "title": "unkernel Compiles Linux to WebAssembly and Boots the Kernel in 70 Milliseconds",
+   "url": "https://joho-todai.com/en/unkernel-linux-kernel-webassembly-70ms-startup/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T11:52:53+00:00",
+   "summary": "Open a browser tab and Linux starts, complete with a shell, package management, and a graphical desktop. The Linux kernel itself runs as compiled WebAssembly.",
+   "also_covered_by": [],
+   "topics": [
+    "Linux & open source"
    ]
   },
   {
@@ -3338,6 +3519,19 @@
    ]
   },
   {
+   "id": "f0ea3c6ede02",
+   "title": "Why People Follow AI Advice Even When They Dislike It — Experiments Separate Preference From Judgment",
+   "url": "https://joho-todai.com/en/why-people-obey-ai-despite-disliking-it/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T11:03:12+00:00",
+   "summary": "Participants who disliked AI gave its investment advice as much weight as advice from a person. A study involving 1,254 people found that factors other than preference drove their decisions.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
    "id": "24177e724289",
    "title": "The hidden reliability layer in data centers: why physical connections matter more than ever",
    "url": "https://www.datacenterdynamics.com/en/opinions/the-hidden-reliability-layer-in-data-centers-why-physical-connections-matter-more-than-ever/",
@@ -3413,6 +3607,19 @@
    "source_category": "IT industry",
    "published": "2026-11-28T10:48:18+00:00",
    "summary": "Embo raised $110 million in seed funding to build a universal robot brain with world models. Its AI learns how the physical world works from internet video and practices motor skills in simulation.",
+   "also_covered_by": [],
+   "topics": [
+    "AI"
+   ]
+  },
+  {
+   "id": "12e61371c9fc",
+   "title": "Google Said AI Couldn't Be Separated From Search — a District With 500,000 Students Did It",
+   "url": "https://joho-todai.com/en/google-ai-search-disabled-school-districts/",
+   "source": "Joho no Todai (English)",
+   "source_category": "IT industry",
+   "published": "2026-11-28T10:47:12+00:00",
+   "summary": "The Los Angeles Unified School District disabled Google's AI Overviews on school-issued devices. Google offers no official way to separate search from AI, so the district used a third-party filter without Google's involvement.",
    "also_covered_by": [],
    "topics": [
     "AI"
