@@ -1,12 +1,12 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-28T03:16:33+00:00",
+ "generated": "2026-11-28T03:31:06+00:00",
  "window_hours": 36,
  "sources": [
   {
    "source": "BleepingComputer",
    "fetched": 15,
-   "recent": 15,
+   "recent": 14,
    "error": null
   },
   {
@@ -60,7 +60,7 @@
   {
    "source": "The Register",
    "fetched": 50,
-   "recent": 17,
+   "recent": 16,
    "error": null
   },
   {
@@ -161,8 +161,8 @@
   },
   {
    "source": "NVD new CVEs",
-   "fetched": 45,
-   "recent": 45,
+   "fetched": 41,
+   "recent": 41,
    "error": null
   },
   {
@@ -222,7 +222,7 @@
   {
    "source": "Hacker News",
    "fetched": 30,
-   "recent": 24,
+   "recent": 23,
    "error": null
   },
   {
@@ -648,7 +648,7 @@
   {
    "source": "Proxmox Security Advisories",
    "fetched": 101,
-   "recent": 13,
+   "recent": 9,
    "error": null
   },
   {
@@ -684,7 +684,7 @@
   {
    "source": "Red Hat security advisories (Important/Critical)",
    "fetched": 46,
-   "recent": 11,
+   "recent": 10,
    "error": null
   },
   {
@@ -749,7 +749,7 @@
   },
   {
    "source": "Embedded Computing Design",
-   "fetched": 73,
+   "fetched": 100,
    "recent": 0,
    "error": null
   },
@@ -845,9 +845,9 @@
   },
   {
    "source": "Yellow Bricks",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Nutanix.dev",
@@ -947,9 +947,9 @@
   },
   {
    "source": "Packet Pushers",
-   "fetched": 1864,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "APNIC Blog",
@@ -1037,9 +1037,9 @@
   },
   {
    "source": "Johanna Rothman",
-   "fetched": 10,
+   "fetched": 0,
    "recent": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "Scrum Inc",
@@ -1080,7 +1080,7 @@
   {
    "source": "4sysops",
    "fetched": 20,
-   "recent": 20,
+   "recent": 19,
    "error": null
   },
   {
@@ -1344,7 +1344,7 @@
   {
    "source": "Graham Cluley",
    "fetched": 20,
-   "recent": 1,
+   "recent": 0,
    "error": null
   },
   {
@@ -1506,7 +1506,7 @@
   {
    "source": "Neowin",
    "fetched": 40,
-   "recent": 40,
+   "recent": 39,
    "error": null
   },
   {
@@ -1721,9 +1721,9 @@
   },
   {
    "source": "Terence Eden's Blog",
-   "fetched": 20,
-   "recent": 1,
-   "error": null
+   "fetched": 0,
+   "recent": 0,
+   "error": "HTTPError: HTTP Error 415: Unsupported Media Type"
   },
   {
    "source": "David Bushell",
@@ -1908,7 +1908,7 @@
   {
    "source": "GameFromScratch",
    "fetched": 10,
-   "recent": 2,
+   "recent": 1,
    "error": null
   },
   {
@@ -2009,8 +2009,8 @@
   },
   {
    "source": "Accessibility news (Google News)",
-   "fetched": 10,
-   "recent": 2,
+   "fetched": 11,
+   "recent": 3,
    "error": null
   },
   {
@@ -2513,6 +2513,41 @@
   }
  ],
  "items": [
+  {
+   "id": "bdd823efb7db",
+   "title": "Andaman CRC Opens Digital Library for Persons With Disabilities",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONkZMbDV5b2x4RVVPc2pnbkF4T2FGcUw0cU5tS3F4UEctN1hmQnFLQ1p2bk5rYVlERDZhamlUZi1EUno0d1B0YzJUX1hYRnpSaFpnRnl5LWdvb1hrX1h3QlJmRWlCeEJmMjBmTFVCYzYwU082ZlV5cDVRbWE0bnNDR082d2llMUYxek5PSlBDZ18tZw?oc=5",
+   "source": "Accessibility news (Google News)",
+   "source_category": "Accessibility",
+   "published": "2026-11-28T03:19:21+00:00",
+   "summary": "Andaman CRC Opens Digital Library for Persons With Disabilities The Wave Andaman",
+   "also_covered_by": [],
+   "topics": [
+    "Accessibility"
+   ]
+  },
+  {
+   "id": "74b12dc7c51f",
+   "title": "CVE-2026-138154: POSTAL 2 before build 26810491 contains a sandbox escape vulnerability that allows malicious Steam Workshop…",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-138154",
+   "source": "NVD new CVEs",
+   "source_category": "Vulnerabilities",
+   "published": "2026-11-28T03:17:06.863000+00:00",
+   "summary": "POSTAL 2 before build 26810491 contains a sandbox escape vulnerability that allows malicious Steam Workshop mods to execute code by calling ConsoleCommand with a start file URI.",
+   "kind": "cve",
+   "cve": "CVE-2026-138154",
+   "cvss": {
+    "score": 9.3,
+    "severity": "Critical",
+    "version": "4.0",
+    "scored_by": "CNA"
+   },
+   "cve_org_url": "https://www.cve.org/CVERecord?id=CVE-2026-138154",
+   "also_covered_by": [],
+   "topics": [
+    "Vulnerabilities & patches"
+   ]
+  },
   {
    "id": "a65221317c81",
    "title": "Wallonia halts Google data center after work continued despite permit revocation",
